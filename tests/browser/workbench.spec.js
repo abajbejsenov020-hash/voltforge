@@ -5,6 +5,7 @@ async function startModel(page, name) {
   await page.locator('#startBuild').click();
   await expect(page.locator('#startDialog')).not.toBeVisible();
   await expect(page.locator('#modelLabel')).toHaveText(name);
+  await page.locator('button[data-presentation="photo"]').click();
   await expect(page.locator('#vehiclePhoto')).toBeVisible();
   await expect
     .poll(() =>
@@ -46,6 +47,7 @@ test('rebuild G4, inspect a real controller, calculate scenarios and keep the sa
   await page.reload();
   await expect(page.locator('#buildName')).toContainText('KuKirin G4');
   await expect(page.locator('#partCount')).toContainText('1');
+  await page.locator('button[data-presentation="photo"]').click();
   await expect(page.locator('#vehiclePhoto')).toBeVisible();
   const duplicateIds = await page.evaluate(() => {
     const ids = [...document.querySelectorAll('[id]')].map((element) => element.id);
@@ -73,6 +75,7 @@ test('e-moto picker, alias finder, original LBX appearance and peak power', asyn
   await expect(page.locator('[data-vehicle="Sur-Ron Light Bee X"]')).toBeVisible();
   await page.locator('[data-vehicle="Sur-Ron Light Bee X"]').click();
   await page.locator('#startBuild').click();
+  await page.locator('button[data-presentation="photo"]').click();
   await expect(page.locator('#vehiclePhoto')).toHaveAttribute('src', /surron-light-bee-x/);
   await page.locator('#tunePerformance').click();
   const form = page.locator('#performanceForm');

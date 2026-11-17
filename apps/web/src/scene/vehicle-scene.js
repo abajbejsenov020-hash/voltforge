@@ -7,6 +7,13 @@ import { build as buildcommuterScooter } from './models/commuterScooter.js';
 import * as THREE from 'three';
 import { getVehicleVisual } from '@voltforge/shared/visuals';
 import { normalizeVehicleName } from '@voltforge/shared/vehicles';
+import { PartPreviews } from './components/index.js';
+import {
+  BLENDER_MODELS,
+  createBlenderLoader,
+  createBlenderAssembly,
+  disposeModelResources,
+} from './blender-models.js';
 /* Procedural concept geometry is approximate. Three.js uses its upstream MIT license. */
 export function createVehicleScene() {
   const T = THREE,
@@ -52,7 +59,45 @@ export function createVehicleScene() {
     drag = null,
     frameId = 0,
     pending = false,
-    view = 'overall';
+    view = 'overall',
+    assembly = null,
+    requestedProfile = '',
+    modelBounds = null,
+    disposed = false;
+  const basePositions = new Map();
+  const listeners = new AbortController();
+  const listen = (name, handler, options = {}) =>
+    canvas.addEventListener(name, handler, { ...options, signal: listeners.signal });
+  function modelState(source, state, text) {
+    for (const element of [canvas, canvas.closest('.stage')].filter(Boolean)) {
+      element.dataset.modelSource = source;
+      element.dataset.modelState = state;
+      element.dataset.modelProfile = visual.profile;
+    }
+    const status = document.querySelector('#sceneModelStatus');
+    if (status) status.textContent = text;
+    canvas.dispatchEvent(new CustomEvent('modelsourcechange'));
+  }
+  const blenderLoader = createBlenderLoader({
+    onReady(root) {
+      disposeModel();
+      scene.remove(model);
+      model = root;
+      scene.add(model);
+      assembly = createBlenderAssembly(model, (part) => PartPreviews.createModel(part, T));
+      assembly.setSelection(parts);
+      updateExplode();
+      modelBounds = new T.Box3().setFromObject(model);
+      modelState('blender', 'ready', 'Blender · photo-based 3D model');
+      setView(view);
+      resize();
+    },
+    onError(error) {
+      console.warn('Blender model unavailable; showing procedural concept', error);
+      modelState('fallback', 'error', '3D model unavailable · concept fallback');
+      requestDraw();
+    },
+  });
   scene.add(model);
   scene.add(new T.HemisphereLight(0xf4f3ef, 0x747678, 2.3));
   const key = new T.DirectionalLight(0xfff8e9, 4);
@@ -641,49 +686,45 @@ export function createVehicleScene() {
   }
 
   function disposeModel() {
-    model.traverse((o) => {
-      if (o.isMesh) {
-        o.geometry.dispose();
-        if (o.material && !Object.values(M).includes(o.material)) {
-          o.material.map?.dispose();
-          o.material.dispose();
-        }
-      }
-    });
+    assembly?.dispose();
+    assembly = null;
+    disposeModelResources(model, new Set(Object.values(M)));
     scene.remove(model);
     model = new T.Group();
     scene.add(model);
+    batteryGroup = controllerGroup = null;
+    basePositions.clear();
+    modelBounds = null;
+    camera.clearViewOffset();
   }
   function updateExplode() {
-    if (batteryGroup) {
-      const y =
-        kind === 'scooter'
-          ? visual.profile === 'kukirin-g4'
-            ? 0.245
-            : visual.profile === 'commuter-scooter'
-              ? 0.19
-              : 0.225
-          : visual.profile === 'surron-lbx'
-            ? 0.7
-            : 0.579;
-      batteryGroup.position.y = y + (explode ? 0.5 : 0);
-      batteryGroup.position.z = explode ? -0.24 : 0;
-    }
-    if (controllerGroup) {
-      controllerGroup.position.y =
-        (kind === 'scooter'
-          ? visual.profile === 'kukirin-g4'
-            ? 0.245
-            : visual.profile === 'commuter-scooter'
-              ? 0.19
-              : 0.224
-          : visual.profile === 'surron-lbx'
-            ? 0.665
-            : 0.403) + (explode ? 0.28 : 0);
-      controllerGroup.position.z = explode ? 0.27 : 0;
+    if (assembly) assembly.setExploded(explode);
+    else
+      for (const [node, offset] of [
+        [batteryGroup, [0, 0.5, -0.24]],
+        [controllerGroup, [0, 0.28, 0.27]],
+      ]) {
+        if (!node) continue;
+        if (!basePositions.has(node)) basePositions.set(node, node.position.clone());
+        node.position.copy(basePositions.get(node));
+        if (explode) node.position.add(new T.Vector3(...offset));
+      }
+    if (assembly) {
+      modelBounds = new T.Box3().setFromObject(model);
+      if (view === 'overall') distance = overallDistance();
     }
   }
   function build() {
+    if (assembly && requestedProfile === visual.profile) {
+      assembly.setSelection(parts);
+      updateExplode();
+      requestDraw();
+      return;
+    }
+    const loadingSameProfile =
+      requestedProfile === visual.profile && canvas.dataset.modelState === 'loading';
+    if (!loadingSameProfile) blenderLoader.cancel();
+    requestedProfile = visual.profile;
     disposeModel();
     M.frame.color.setHex(visual.frame);
     M.accent.color.setHex(visual.accent);
@@ -694,15 +735,22 @@ export function createVehicleScene() {
     } else if (visual.profile === 'surron-lbx') lightBee();
     else bicycle();
     updateExplode();
+    if (BLENDER_MODELS[visual.profile]) {
+      if (!loadingSameProfile) {
+        modelState('loading', 'loading', 'Loading Blender 3D model…');
+        void blenderLoader.load(visual.profile);
+      }
+    } else modelState('procedural', 'ready', '3D concept · approximate geometry');
     requestDraw();
   }
   function requestDraw() {
-    if (pending) return;
+    if (pending || disposed) return;
     pending = true;
     frameId = requestAnimationFrame(render);
   }
   function render() {
     pending = false;
+    if (disposed) return;
     const d = distance / zoom;
     if (view === 'overall') target.set(0, 0.62, 0);
     if (view === 'cockpit')
@@ -711,10 +759,24 @@ export function createVehicleScene() {
       target.set(kind === 'bike' ? -0.66 : -0.55, kind === 'bike' ? 0.34 : 0.16, 0);
     if (view === 'frame')
       target.set(kind === 'bike' ? -0.04 : -0.03, kind === 'bike' ? 0.66 : 0.34, 0);
+    if (modelBounds) {
+      const center = modelBounds.getCenter(new T.Vector3());
+      const size = modelBounds.getSize(new T.Vector3());
+      if (view === 'overall') target.copy(center);
+      if (view === 'cockpit')
+        target.set(center.x + size.x * 0.15, modelBounds.max.y - size.y * 0.08, center.z);
+      if (view === 'frame') target.copy(center).add(new T.Vector3(0, -size.y * 0.08, 0));
+      if (view === 'drivetrain') {
+        const wheel = model.getObjectByName('RearWheel') || model.getObjectByName('MotorMount');
+        if (wheel) new T.Box3().setFromObject(wheel).getCenter(target);
+        else
+          target.set(modelBounds.min.x + size.x * 0.2, modelBounds.min.y + size.y * 0.2, center.z);
+      }
+    }
     camera.position.set(
       target.x + Math.sin(azimuth) * d,
       target.y + Math.sin(elevation) * d,
-      Math.cos(azimuth) * d,
+      target.z + Math.cos(azimuth) * d,
     );
     camera.lookAt(target);
     renderer.render(scene, camera);
@@ -724,30 +786,34 @@ export function createVehicleScene() {
     }
   }
   function resize() {
+    if (disposed) return;
     const r = canvas.getBoundingClientRect();
     if (!r.width || !r.height) return;
     renderer.setSize(r.width, r.height, false);
     camera.aspect = r.width / r.height;
     camera.updateProjectionMatrix();
+    if (modelBounds && view === 'overall') distance = overallDistance();
     requestDraw();
   }
-  new ResizeObserver(resize).observe(canvas);
-  canvas.addEventListener('pointerdown', (e) => {
+  const resizeObserver = new ResizeObserver(resize);
+  resizeObserver.observe(canvas);
+  listen('pointerdown', (e) => {
     drag = [e.clientX, e.clientY];
     canvas.setPointerCapture(e.pointerId);
     auto = false;
     document.querySelector('#rotate').classList.remove('active');
   });
-  canvas.addEventListener('pointermove', (e) => {
+  listen('pointermove', (e) => {
     if (!drag) return;
     azimuth -= (e.clientX - drag[0]) * 0.009;
     elevation = Math.max(-0.12, Math.min(1.2, elevation + (e.clientY - drag[1]) * 0.006));
     drag = [e.clientX, e.clientY];
     requestDraw();
   });
-  canvas.addEventListener('pointerup', () => (drag = null));
-  canvas.addEventListener('pointercancel', () => (drag = null));
-  canvas.addEventListener(
+  listen('pointerup', () => (drag = null));
+  listen('pointercancel', () => (drag = null));
+  listen('lostpointercapture', () => (drag = null));
+  listen(
     'wheel',
     (e) => {
       e.preventDefault();
@@ -756,7 +822,7 @@ export function createVehicleScene() {
     },
     { passive: false },
   );
-  canvas.addEventListener('keydown', (e) => {
+  listen('keydown', (e) => {
     if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-'].includes(e.key)) {
       e.preventDefault();
       if (e.key === 'ArrowLeft') azimuth -= 0.14;
@@ -788,18 +854,63 @@ export function createVehicleScene() {
     updateExplode();
     requestDraw();
   };
-  canvas.addEventListener('webglcontextlost', (e) => {
+  listen('webglcontextlost', (e) => {
     e.preventDefault();
     auto = false;
   });
-  canvas.addEventListener('webglcontextrestored', () => location.reload());
+  listen('webglcontextrestored', () => location.reload());
+  function overallDistance() {
+    if (!modelBounds) return kind === 'bike' ? 3.25 : 2.95;
+    const radius = modelBounds.getSize(new T.Vector3()).length() / 2;
+    const vertical = T.MathUtils.degToRad(camera.fov / 2);
+    const horizontal = Math.atan(Math.tan(vertical) * camera.aspect);
+    const original = (radius / Math.sin(Math.min(vertical, horizontal))) * 1.12;
+    const rect = canvas.getBoundingClientRect();
+    if (!rect.width || !rect.height) return original;
+    const inspection = document.querySelector('.model-inspection').getBoundingClientRect();
+    const controls = document.querySelector('.stage-controls').getBoundingClientRect();
+    const top = Math.max(12, inspection.bottom - rect.top + 12);
+    const bottom = Math.min(rect.height - 12, controls.top - rect.top - 12);
+    if (bottom <= top) return original;
+    // Center the model in the unobscured part of the canvas, including on phones.
+    camera.setViewOffset(
+      rect.width,
+      rect.height,
+      0,
+      rect.height / 2 - (top + bottom) / 2,
+      rect.width,
+      rect.height,
+    );
+    const direction = new T.Vector3(Math.sin(azimuth), Math.sin(elevation), Math.cos(azimuth));
+    const orbitLength = direction.length();
+    direction.normalize();
+    const right = new T.Vector3().crossVectors(camera.up, direction).normalize();
+    const up = new T.Vector3().crossVectors(direction, right);
+    const center = modelBounds.getCenter(new T.Vector3());
+    const tanX = Math.tan(horizontal) * Math.max(0.1, (rect.width - 32) / rect.width);
+    const tanY = Math.tan(vertical) * ((bottom - top) / rect.height);
+    let fitted = 0;
+    for (const x of [modelBounds.min.x, modelBounds.max.x])
+      for (const y of [modelBounds.min.y, modelBounds.max.y])
+        for (const z of [modelBounds.min.z, modelBounds.max.z]) {
+          const corner = new T.Vector3(x, y, z).sub(center);
+          const depth = corner.dot(direction);
+          fitted = Math.max(
+            fitted,
+            (Math.abs(corner.dot(right)) * 1.04) / tanX + depth,
+            (Math.abs(corner.dot(up)) * 1.04) / tanY + depth,
+          );
+        }
+    return Math.max(original, fitted / orbitLength);
+  }
   function setView(v) {
     view = v;
     zoom = 1;
+    camera.clearViewOffset();
     if (v === 'overall') {
-      distance = kind === 'bike' ? 3.25 : 2.95;
       azimuth = 0.5;
       elevation = 0.22;
+      distance = overallDistance();
     }
     if (v === 'cockpit') {
       distance = 1.02;
@@ -826,7 +937,36 @@ export function createVehicleScene() {
     .forEach((b) => (b.onclick = () => setView(b.dataset.view)));
   return {
     setEnvironment: environment.set,
+    resize,
+    dispose() {
+      if (disposed) return;
+      disposed = true;
+      blenderLoader.dispose();
+      listeners.abort();
+      document
+        .querySelectorAll('#zoomIn,#zoomOut,#resetView,#rotate,#explode,[data-view]')
+        .forEach((button) => {
+          button.onclick = null;
+        });
+      resizeObserver.disconnect();
+      cancelAnimationFrame(frameId);
+      assembly?.dispose();
+      disposeModelResources(model);
+      const materialRoot = new T.Group();
+      for (const material of Object.values(M)) {
+        const object = new T.Object3D();
+        object.material = material;
+        materialRoot.add(object);
+      }
+      disposeModelResources(materialRoot);
+      disposeModelResources(floor);
+      disposeModelResources(grid);
+      environment.dispose?.();
+      studioEnvironment.dispose();
+      renderer.dispose();
+    },
     update(type, selection, category, vehicleName = '') {
+      if (disposed) return;
       const k = type + vehicleName + JSON.stringify(selection);
       visual = getVehicleVisual(vehicleName, type);
       if (k !== selectionKey) {

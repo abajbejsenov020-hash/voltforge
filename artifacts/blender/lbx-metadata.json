@@ -1,0 +1,27 @@
+{
+  "source": "Photo reconstruction of supplied MXWraps Sur-Ron Light Bee X reference, not manufacturer CAD",
+  "triangles": 89634,
+  "meshes": 52,
+  "materials": 12,
+  "glb_bytes": 3332800,
+  "required_groups": [
+    "BatteryMount",
+    "ControllerMount",
+    "FrontWheel",
+    "MotorMount",
+    "RearWheel",
+    "SurRonLBX"
+  ],
+  "wheelbase_m": 1.25,
+  "seat_rear_top_m": 0.886,
+  "grips_height_m": [
+    1.047,
+    1.065
+  ],
+  "limits": "Approximate cast frame, shape and wrap reconstruction from a single supplied view; small branding and factory fastener geometry are not exact.",
+  "dimensions_xyz_m": [
+    1.874,
+    0.774,
+    1.064
+  ]
+}

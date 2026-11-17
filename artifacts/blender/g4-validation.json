@@ -1,0 +1,38 @@
+{
+  "validGlb2": true,
+  "triangles": 141520,
+  "meshes": 36,
+  "materials": 12,
+  "bytes": 4209580,
+  "dimensionsYUp": [
+    1.336,
+    1.29839,
+    0.692
+  ],
+  "boundsMinYUp": [
+    -0.679,
+    0.00014,
+    -0.346
+  ],
+  "boundsMaxYUp": [
+    0.657,
+    1.29853,
+    0.346
+  ],
+  "requiredGroups": [
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount"
+  ],
+  "rootExtras": {
+    "assetCreator": "Blender",
+    "reference": "kukirin-g4.webp",
+    "accuracy": "Reference-guided visual reconstruction; not measured CAD",
+    "frontAxis": "+X",
+    "units": "metres",
+    "dimensionsApprox": "1.32m long, 0.69m handlebar width, 1.30m high"
+  },
+  "studioObjectsExported": false
+}

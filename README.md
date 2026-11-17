@@ -54,6 +54,8 @@ tests/browser/             Real browser journeys
 
 The frontend uses Vite and Three.js. The backend uses Node's HTTP server and built-in SQLite. Domain calculations and stable part IDs are shared by the client and server; UI code does not live in the backend.
 
+KuKirin G4 and Sur-Ron Light Bee X use Blender-authored GLB models as their default 3D view, with named component groups and the original product reference available beside it. Editable `.blend` files and reconstruction scripts are included; see [Blender vehicle sources](assets/blender/README.md). These are reference-based appearance models. Other vehicles retain their product references and conceptual geometry.
+
 ## Current coverage
 
 - **345 indexed vehicle names** with brand, model and alias search.

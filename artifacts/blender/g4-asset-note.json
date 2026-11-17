@@ -1,0 +1,9 @@
+{
+  "asset": "kukirin-g4",
+  "creator": "Blender",
+  "triangles": 141520,
+  "meshObjects": 36,
+  "glbBytes": 4209580,
+  "reference": "apps/web/public/assets/vehicles/kukirin-g4.webp",
+  "limitations": "Visual reconstruction from one supplied three-quarter photograph. Hidden surfaces and internal service assemblies are inferred. Not measured CAD."
+}
