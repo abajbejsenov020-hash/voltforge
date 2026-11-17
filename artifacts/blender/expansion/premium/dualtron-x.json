@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron X",
+  "model": {
+    "key": "dualtron-x",
+    "url": "/models/expansion/premium/dualtron-x.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-x.blend",
+    "triangles": 54520,
+    "meshes": 34,
+    "bytes": 1473948,
+    "family": "Dualtron X verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.73294997215271,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.7099999785423279,
+      0.32499998807907104,
+      1.3799930810928345
+    ]
+  ],
+  "observed": "Original60V49Ah X: massive road tyres, thick black auxiliary battery stem, middle round lamp and large near-horizontal coilovers; original deck and stem proportions.",
+  "revision": 2
+}

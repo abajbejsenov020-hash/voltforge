@@ -1,0 +1,26 @@
+{
+  "name": "Himiway Cruiser",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/himiway-cruiser.webp",
+  "source": "https://letsebike.com/products/himiway-cruiser-long-range-fat-tire-electric-bike",
+  "imageSource": "https://letsebike.com/cdn/shop/products/1_7_900x_1.webp?v=1753142971&width=1946",
+  "credit": "letsebike.com",
+  "variantNote": "Himiway Cruiser D3 Long Range 750W Fat Tire Electric Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 87566,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "himiway-cruiser",
+    "url": "/models/expansion/bikes/himiway-cruiser.glb",
+    "nativeSource": "assets/blender/expansion/bikes/himiway-cruiser.blend",
+    "triangles": 30032,
+    "meshes": 30,
+    "bytes": 938056,
+    "family": "hardtailfat"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Haibike HardSeven",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/haibike-hardseven.webp",
+  "source": "https://www.damianharriscycles.co.uk/Haibike-Hardseven-5",
+  "imageSource": "https://www.damianharriscycles.co.uk/_images/product-photos/hb/zoom/haibike-hardseven-5-2022-mountain-bike-blue-a.jpg",
+  "credit": "www.damianharriscycles.co.uk",
+  "variantNote": "Haibike Hardseven 5 2022 Electric Mountain Bike | Damian Harris Cycles | E-bike specialist, Cardiff UK (https://www.damianharriscycles.co.uk/Haibike-Hardseven-5)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    900
+  ],
+  "bytes": 266676,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "haibike-hardseven",
+    "url": "/models/expansion/bikes/haibike-hardseven.glb",
+    "nativeSource": "assets/blender/expansion/bikes/haibike-hardseven.blend",
+    "triangles": 28344,
+    "meshes": 27,
+    "bytes": 895156,
+    "family": "hardtail"
+  }
+}

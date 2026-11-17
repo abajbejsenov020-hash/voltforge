@@ -1,0 +1,26 @@
+{
+  "name": "Teverun Fighter Mini",
+  "model": {
+    "key": "teverun-fighter-mini",
+    "url": "/models/expansion/premium/teverun-fighter-mini.glb",
+    "nativeSource": "assets/blender/expansion/premium/teverun-fighter-mini.blend",
+    "triangles": 54900,
+    "meshes": 36,
+    "bytes": 1463316,
+    "family": "Teverun Fighter Mini verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6230499744415283,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6019999980926514,
+      0.32499998807907104,
+      1.309993028640747
+    ]
+  ],
+  "observed": "FighterMini standard base reference: compact black battery chassis, C arms and slim center stem; no Pro markings.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Cannondale Tesoro Neo",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cannondale-tesoro-neo.webp",
+  "source": "https://www.cannondale.com/en/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-3",
+  "imageSource": "https://embed.widencdn.net/img/dorelrl/1xgpsqcqgp/800px%401x/C23_C66373U_Tesoro_Neo_X_3_MRC_PD.jpg?color=f8f8f8&q=90",
+  "credit": "www.cannondale.com",
+  "variantNote": "Tesoro X 3 | Adventure E-Touring Bikes | Cannondale (https://www.cannondale.com/en/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-3)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    441
+  ],
+  "bytes": 64112,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "cannondale-tesoro-neo",
+    "url": "/models/expansion/bikes/cannondale-tesoro-neo.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cannondale-tesoro-neo.blend",
+    "triangles": 28084,
+    "meshes": 33,
+    "bytes": 762548,
+    "family": "commuter"
+  }
+}

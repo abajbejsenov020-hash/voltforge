@@ -1,0 +1,47 @@
+{
+  "key": "ausom-l2-max",
+  "name": "Ausom L2 Max",
+  "family": "Ausom L2 Max adjustable stem",
+  "parameters": {
+    "family": "Ausom L2 Max adjustable stem",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.02,
+    "dl": 0.55,
+    "dw": 0.2,
+    "dz": 0.26,
+    "h": 1.43,
+    "bar": 0.69,
+    "stem": "telescopic",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "highsquare",
+    "halo": false,
+    "body": [
+      0.14,
+      0.16,
+      0.18
+    ],
+    "accent": [
+      0.92,
+      0.52,
+      0.03
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 32236,
+  "meshes": 28,
+  "bytes": 1058336,
+  "source": "https://ausomstore.com/products/ausom-l2-max-electric-scooter-1",
+  "reference": "/assets/vehicles/expansion/commuter/ausom-l2-max.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ausom-l2-max.blend",
+  "url": "/models/expansion/commuter/ausom-l2-max.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

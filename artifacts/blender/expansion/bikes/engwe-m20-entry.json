@@ -1,0 +1,26 @@
+{
+  "name": "Engwe M20",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-m20.webp",
+  "source": "https://engwe.com/products/engwe-m20",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_6b6b1530-b8a9-4c8a-ba35-73d929914c9e.jpg?v=1794548439",
+  "credit": "engwe.com",
+  "variantNote": "ENGWE M20; Single Battery / White",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 66748,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-m20",
+    "url": "/models/expansion/bikes/engwe-m20.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-m20.blend",
+    "triangles": 32344,
+    "meshes": 35,
+    "bytes": 961396,
+    "family": "mopedfull"
+  }
+}

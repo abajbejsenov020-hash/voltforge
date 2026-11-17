@@ -1,0 +1,47 @@
+{
+  "key": "xiaomi-5",
+  "name": "Xiaomi 5",
+  "family": "Xiaomi suspension commuter",
+  "parameters": {
+    "family": "Xiaomi suspension commuter",
+    "r": 0.127,
+    "wide": 0.024,
+    "wb": 0.97,
+    "dl": 0.55,
+    "dw": 0.17,
+    "dz": 0.21,
+    "h": 1.24,
+    "bar": 0.52,
+    "stem": "round",
+    "fork": "telescopic",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.075,
+      0.085,
+      0.09
+    ],
+    "accent": [
+      0.68,
+      0.025,
+      0.015
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 25908,
+  "meshes": 27,
+  "bytes": 800444,
+  "source": "https://www.mi.com/global/product/xiaomi-electric-scooter-5/",
+  "reference": "/assets/vehicles/expansion/commuter/xiaomi-5.webp",
+  "nativeSource": "assets/blender/expansion/commuter/xiaomi-5.blend",
+  "url": "/models/expansion/commuter/xiaomi-5.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

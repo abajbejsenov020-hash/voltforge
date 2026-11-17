@@ -1,0 +1,29 @@
+{
+  "name": "Arctic Leopard E-20Y",
+  "key": "arctic-leopard-e-20y",
+  "dimensions_m": [
+    1.61,
+    0.6236,
+    1.0197
+  ],
+  "triangles": 24308,
+  "meshes": 28,
+  "bytes": 789616,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "arctic-leopard-e-20y.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Reference-specific compact motorcycle frame, battery casing and wheel proportions."
+}

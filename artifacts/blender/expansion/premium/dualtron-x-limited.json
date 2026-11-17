@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron X Limited",
+  "model": {
+    "key": "dualtron-x-limited",
+    "url": "/models/expansion/premium/dualtron-x-limited.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-x-limited.blend",
+    "triangles": 54908,
+    "meshes": 34,
+    "bytes": 1490220,
+    "family": "Dualtron X Limited exterior"
+  },
+  "bounds": [
+    [
+      -0.7379500865936279,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.7149999737739563,
+      0.32499998807907104,
+      1.4599930047988892
+    ]
+  ],
+  "observed": "Broad tall auxiliary battery column, very wide road tyres, twin headlamps and fully sprung long chassis.",
+  "revision": 2
+}

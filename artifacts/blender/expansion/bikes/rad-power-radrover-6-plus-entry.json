@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadRover 6 Plus",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radrover-6-plus.webp",
+  "source": "https://casabikes.com/products/radrover-plus-electric-fat-tire-bike?srsltid=AfmBOorITjD-mP-sJdI86Fxi7pxfi-oUIb9IY5jsxBKXtSqQ-PRGctJa",
+  "imageSource": "https://casabikes.com/cdn/shop/products/Rover6ST_charcoal_side.png?v=1732238402&width=1445",
+  "credit": "casabikes.com",
+  "variantNote": "Rad Power RadRover\u2122 6 Plus Electric Fat Tire Bike, Top Speed 20mph",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 202426,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "rad-power-radrover-6-plus",
+    "url": "/models/expansion/bikes/rad-power-radrover-6-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radrover-6-plus.blend",
+    "triangles": 30044,
+    "meshes": 31,
+    "bytes": 931952,
+    "family": "stepfat"
+  }
+}

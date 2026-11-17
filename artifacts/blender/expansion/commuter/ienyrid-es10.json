@@ -1,0 +1,47 @@
+{
+  "key": "ienyrid-es10",
+  "name": "iENYRID ES10",
+  "family": "iENYRID ES10 blue long fork",
+  "parameters": {
+    "family": "iENYRID ES10 blue long fork",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.03,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.3,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "longfork",
+    "rear": "twinshock",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "twinround",
+    "halo": false,
+    "body": [
+      0.055,
+      0.065,
+      0.07
+    ],
+    "accent": [
+      0.015,
+      0.22,
+      0.62
+    ],
+    "seat": true,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 38156,
+  "meshes": 27,
+  "bytes": 1215664,
+  "source": "https://www.ienyridscooter.com/products/ienyrid-es10-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/ienyrid-es10.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ienyrid-es10.blend",
+  "url": "/models/expansion/commuter/ienyrid-es10.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

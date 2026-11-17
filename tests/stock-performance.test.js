@@ -60,7 +60,7 @@ for (const [category, id] of [
     assert.equal(result.a.wheel, 11);
     assert.equal(result.speed.kind, 'planning');
     assert.ok(result.speed.value > 0);
-    assert.notEqual(result.speed.value, 70);
+    assert.equal(result.speedComparison.referenceSpeed, 70);
     assert.equal(result.peak.kind, 'planning');
     assert.ok(result.peak.value > 0);
     assert.ok(result.range > 0);

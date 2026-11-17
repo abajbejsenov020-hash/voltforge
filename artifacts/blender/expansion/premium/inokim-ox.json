@@ -1,0 +1,26 @@
+{
+  "name": "Inokim OX",
+  "model": {
+    "key": "inokim-ox",
+    "url": "/models/expansion/premium/inokim-ox.glb",
+    "nativeSource": "assets/blender/expansion/premium/inokim-ox.blend",
+    "triangles": 44388,
+    "meshes": 34,
+    "bytes": 1126360,
+    "family": "Inokim OX exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.28999999165534973,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.28999996185302734,
+      1.3599929809570312
+    ]
+  ],
+  "observed": "Single-sided lime green monoshock swingarms, low solid deck and long slim gray stem.",
+  "revision": 2
+}

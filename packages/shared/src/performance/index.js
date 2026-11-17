@@ -2,6 +2,7 @@ import { checkCompatibility } from '../compatibility.js';
 import { normalizeVehicleName } from '../vehicles/index.js';
 import { vehicleStockProfile, resolveBuildParts, effectiveMotorCount } from '../vehicles/stock.js';
 import { automaticPerformanceInputs } from './automatic.js';
+import { factorySpeedComparison, solvePowerSpeed } from './speed-model.js';
 export { STOCK_PERFORMANCE } from '../vehicles/stock.js';
 // Performance references and energy scenarios are deliberately separate.
 // A motor's advertised watts alone do not establish loaded top speed.
@@ -95,7 +96,13 @@ export function createPerformanceEngine(state) {
     return (
       ['Motors', 'Controllers', 'Batteries'].every(
         (c) => !p[c] || p[c].stock === true || p[c].stockEquivalent === true,
-      ) && ![state.specs?.bms, state.specs?.batteryLimit].some((value) => Number(value) > 0)
+      ) &&
+      ![
+        state.specs?.bms,
+        state.specs?.batteryLimit,
+        measured.peakControllerA,
+        measured.peakBatteryA,
+      ].some((value) => Number(value) > 0)
     );
   }
   function performanceInputs() {
@@ -331,22 +338,19 @@ export function createPerformanceEngine(state) {
       limited = bounded < mechanical;
       mechanical = Math.min(mechanical, bounded);
     }
-    function speedFromPower(watts) {
-      if (!watts) return null;
-      let lo = 0,
-        hi = 100;
-      for (let i = 0; i < 60; i++) {
-        const m = (lo + hi) / 2,
-          speed = Math.max(0.01, m * 3.6),
-          required =
-            (roadWh(speed) -
-              (numberInput(a.stops, 0.5, 0, 10) * (0.5 * mass * m * m)) / (3600 * eff)) *
-              speed -
-            numberInput(a.accessory, 10, 0, 500);
-        if (required * eff > watts) hi = m;
-        else lo = m;
-      }
-      return lo * 3.6;
+    const comparison = factorySpeedComparison(profile, state.type);
+    const speedRoad = {
+      mass,
+      cda: numberInput(a.cda, state.type === 'bike' ? 0.55 : 0.65, 0.1, 2),
+      rolling: numberInput(a.rolling, state.type === 'bike' ? 0.009 : 0.018, 0.001, 0.08),
+      wind: numberInput(a.wind, 0, -80, 120),
+      grade: numberInput(a.grade, 0, 0, 25),
+    };
+    const speedFromPower = (watts) => solvePowerSpeed(watts, speedRoad, comparison);
+    if (comparison && !stock && automatic.enabled) {
+      automatic.assumptions.unshift(
+        'Speed comparison anchored to the original vehicle: ' + comparison.basis,
+      );
     }
     const powerCeiling = speedFromPower(mechanical);
     const rpm = numberInput(a.rpm, 0),
@@ -367,7 +371,12 @@ export function createPerformanceEngine(state) {
         basis: 'Your GPS result — reported, conditions not verified',
         kind: 'gps',
       };
-    else if (stock && profile.advertisedSpeed > 0)
+    else if (
+      stock &&
+      profile.advertisedSpeed > 0 &&
+      rpmCeiling === null &&
+      !numberInput(a.power, 0)
+    )
       speed = {
         value: profile.advertisedSpeed,
         basis: 'Factory reference, not a measured result for your vehicle',
@@ -375,9 +384,7 @@ export function createPerformanceEngine(state) {
       };
     else if (
       powerCeiling !== null &&
-      automatic.powerRange &&
-      automatic.enabled &&
-      automatic.speedPlanning
+      ((automatic.powerRange && automatic.enabled && automatic.speedPlanning) || comparison)
     ) {
       const range = automatic.powerRange?.map((watts) => {
         const speed = speedFromPower(restrictPower(watts * motors));
@@ -387,8 +394,9 @@ export function createPerformanceEngine(state) {
         value: maxSpeed,
         range,
         kind: 'planning',
-        basis:
-          'Rough power-based scenario from effective hardware; winding, gearing and actual limits need confirmation',
+        basis: comparison
+          ? `Factory-relative scenario from the ${comparison.referenceSpeed} km/h stock reference; winding and actual limits remain unverified`
+          : 'Power-based planning scenario; winding, gearing and actual limits remain unverified',
       };
     } else if (maxSpeed !== null)
       speed = {
@@ -399,6 +407,33 @@ export function createPerformanceEngine(state) {
             : 'Power-based ceiling; winding and gearing unverified',
         kind: 'ceiling',
       };
+    const speedLimits = [];
+    if (rpmCeiling !== null && (powerCeiling === null || rpmCeiling < powerCeiling))
+      speedLimits.push({
+        kind: 'wheel-rpm',
+        text: 'Entered wheel RPM limits speed to ' + Math.round(rpmCeiling) + ' km/h.',
+      });
+    if (limited) {
+      const supplyCurrent = Math.min(...amps);
+      const enteredLimits = [
+        state.specs.bms,
+        state.specs.batteryLimit,
+        a.peakControllerA,
+        a.peakBatteryA,
+      ].some((value) => Number(value) > 0 && Number(value) <= supplyCurrent + 1e-6);
+      speedLimits.push({
+        kind: enteredLimits ? 'configured-current' : 'supply-scenario',
+        text:
+          (enteredLimits
+            ? 'Entered supply limits'
+            : 'Assumed or published battery/controller limits') +
+          ' cap available continuous shaft power at ' +
+          Math.round(mechanical) +
+          ' W; a larger motor alone cannot use its full rating.',
+      });
+    }
+    if (speed.kind === 'planning' && speedLimits.length)
+      speed.basis += ' · ' + speedLimits.map((limit) => limit.text).join(' ');
     let peak = estimatePeakPower(calculated, p, stock, profile);
     if (
       automatic.enabled &&
@@ -440,6 +475,8 @@ export function createPerformanceEngine(state) {
       time: range ? range / cruise : null,
       power: mechanical,
       powerCeiling,
+      speedComparison: comparison,
+      speedLimits,
       maxSpeed,
       rpmKnown: rpm > 0,
       limited,

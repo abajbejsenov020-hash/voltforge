@@ -1,0 +1,47 @@
+{
+  "key": "ausom-dt1-pro",
+  "name": "Ausom DT1 Pro",
+  "family": "Ausom DT1 Pro yellow C-arm dual motor",
+  "parameters": {
+    "family": "Ausom DT1 Pro yellow C-arm dual motor",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.08,
+    "dl": 0.61,
+    "dw": 0.23,
+    "dz": 0.24,
+    "h": 1.3,
+    "bar": 0.63,
+    "stem": "square",
+    "fork": "shortarm",
+    "rear": "shortarm",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "stem",
+    "halo": false,
+    "body": [
+      0.035,
+      0.045,
+      0.055
+    ],
+    "accent": [
+      0.98,
+      0.65,
+      0.005
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": true
+  },
+  "triangles": 28652,
+  "meshes": 26,
+  "bytes": 967664,
+  "source": "https://www.oolactive.com/products/ausom-leopard-dt1-pro-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/ausom-dt1-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ausom-dt1-pro.blend",
+  "url": "/models/expansion/commuter/ausom-dt1-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

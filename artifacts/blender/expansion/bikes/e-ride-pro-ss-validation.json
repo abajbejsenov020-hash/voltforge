@@ -1,0 +1,29 @@
+{
+  "name": "E Ride Pro SS",
+  "key": "e-ride-pro-ss",
+  "dimensions_m": [
+    1.9199,
+    0.756,
+    1.077
+  ],
+  "triangles": 37508,
+  "meshes": 46,
+  "bytes": 1849040,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "e-ride-pro-ss.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Photo-derived lightweight electric motorcycle exterior."
+}

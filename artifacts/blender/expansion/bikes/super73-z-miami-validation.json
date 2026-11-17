@@ -1,0 +1,29 @@
+{
+  "name": "Super73 Z Miami",
+  "key": "super73-z-miami",
+  "dimensions_m": [
+    1.7089,
+    0.74,
+    1.1938
+  ],
+  "triangles": 23688,
+  "meshes": 29,
+  "bytes": 674044,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "super73-z-miami.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Cannondale Moterra Neo",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cannondale-moterra-neo.webp",
+  "source": "https://www.cannondale.com/en/bikes/electric/e-mountain/moterra-neo/moterra-neo-eq",
+  "imageSource": "https://embed.widencdn.net/img/dorelrl/lwu28ejvd2/2000px@1x/C22_C65311U_Moterra_Neo_EQ_BPL_PD.png",
+  "credit": "www.cannondale.com",
+  "variantNote": "Moterra EQ | Full Suspension EMTB | Cannondale",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    657
+  ],
+  "bytes": 178946,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "cannondale-moterra-neo",
+    "url": "/models/expansion/bikes/cannondale-moterra-neo.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cannondale-moterra-neo.blend",
+    "triangles": 31724,
+    "meshes": 33,
+    "bytes": 997440,
+    "family": "fullmtb"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Haibike HardNine",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/haibike-hardnine.webp",
+  "source": "https://www.leisurelakesbikes.com/bikes/electric-bikes/haibike-hardnine-5-29er-500wh-electric-mountain-bike-bluecanary-2022__356824",
+  "imageSource": "https://www.leisurelakesbikes.com/images/Haibike_MY21_HardNine_5.png?bgcolor=ffffff&format=webp&height=1998&mode=pad&quality=85&width=1998",
+  "credit": "www.leisurelakesbikes.com",
+  "variantNote": "Haibike Hardnine 5 29er 500wh Electric Mountain Bike Blue/Canary 2022 (https://www.leisurelakesbikes.com/bikes/electric-bikes/haibike-hardnine-5-29er-500wh-electric-mountain-bike-bluecanary-2022__356824)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 76060,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "haibike-hardnine",
+    "url": "/models/expansion/bikes/haibike-hardnine.glb",
+    "nativeSource": "assets/blender/expansion/bikes/haibike-hardnine.blend",
+    "triangles": 28432,
+    "meshes": 27,
+    "bytes": 899092,
+    "family": "hardtail"
+  }
+}

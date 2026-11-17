@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadWagon 4",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radwagon-4.webp",
+  "source": "https://www.radpowerbikes.com/products/radwagon-4-electric-cargo-bike",
+  "imageSource": "https://www.radpowerbikes.com/cdn/shop/products/WagonBlack_side1to1_800x.png?v=1696952421",
+  "credit": "www.radpowerbikes.com",
+  "variantNote": "(https://www.radpowerbikes.com/products/radwagon-4-electric-cargo-bike)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    800
+  ],
+  "bytes": 115268,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "rad-power-radwagon-4",
+    "url": "/models/expansion/bikes/rad-power-radwagon-4.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radwagon-4.blend",
+    "triangles": 30860,
+    "meshes": 30,
+    "bytes": 946352,
+    "family": "longtail"
+  }
+}

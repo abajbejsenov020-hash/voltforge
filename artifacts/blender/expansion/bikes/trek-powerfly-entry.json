@@ -1,0 +1,26 @@
+{
+  "name": "Trek Powerfly",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/trek-powerfly.webp",
+  "source": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/powerfly/powerfly-hardtail/powerfly-4-gen-4/p/5278943/",
+  "imageSource": "https://res.cloudinary.com/trekbikes/image/upload/b_rgb%3AFFFFFF%2Cc_pad%2Cdpr_2.0%2Cf_auto%2Ch_337%2Cq_auto%2Cw_600/c_pad%2Ch_337%2Cw_600/Powerfly4_23_37043_C_Portrait?pgw=1",
+  "credit": "www.trekbikes.com",
+  "variantNote": "Powerfly 4 Gen 4 - Trek Bikes (https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/powerfly/powerfly-hardtail/powerfly-4-gen-4/p/5278943/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    674
+  ],
+  "bytes": 50602,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "trek-powerfly",
+    "url": "/models/expansion/bikes/trek-powerfly.glb",
+    "nativeSource": "assets/blender/expansion/bikes/trek-powerfly.blend",
+    "triangles": 28296,
+    "meshes": 27,
+    "bytes": 893700,
+    "family": "hardtail"
+  }
+}

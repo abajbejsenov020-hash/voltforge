@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Storm Limited",
+  "model": {
+    "key": "dualtron-storm-limited",
+    "url": "/models/expansion/premium/dualtron-storm-limited.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-storm-limited.blend",
+    "triangles": 52884,
+    "meshes": 35,
+    "bytes": 1444480,
+    "family": "Dualtron Storm Limited exterior"
+  },
+  "bounds": [
+    [
+      -0.7069500684738159,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.6850000023841858,
+      0.3050000071525574,
+      1.2999930381774902
+    ]
+  ],
+  "observed": "Longer deep deck, turquoise cartridge arms and tall rear tail housing.",
+  "revision": 2
+}

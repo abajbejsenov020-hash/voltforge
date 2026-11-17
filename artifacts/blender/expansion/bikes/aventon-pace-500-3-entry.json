@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Pace 500.3",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-pace-500-3.webp",
+  "source": "https://mecaebikes.com/products/aventon-pace-500-3",
+  "imageSource": "https://mecaebikes.com/cdn/shop/files/PaceBlackSideView.png?v=1721248504&width=1946",
+  "credit": "mecaebikes.com",
+  "variantNote": "Aventon - Pace 500.3",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    787
+  ],
+  "bytes": 90948,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-pace-500-3",
+    "url": "/models/expansion/bikes/aventon-pace-500-3.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-pace-500-3.blend",
+    "triangles": 24432,
+    "meshes": 27,
+    "bytes": 665176,
+    "family": "cruiser"
+  }
+}

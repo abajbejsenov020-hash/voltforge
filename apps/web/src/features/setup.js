@@ -1,6 +1,11 @@
 import { $, esc } from '../ui/dom.js';
 import { VEHICLE_INDEX, normalizeVehicleName, findVehicles } from '@voltforge/shared/vehicles';
-import { vehicleReference, VEHICLE_REFERENCES, featuredVehicles } from '../data/vehicle-library.js';
+import {
+  vehicleReference,
+  VEHICLE_REFERENCES,
+  featuredVehicles,
+  vehicleArtworkAudit,
+} from '../data/vehicle-library.js';
 
 export function createFeature(app) {
   function openStart(edit = false) {
@@ -69,7 +74,11 @@ export function createFeature(app) {
         ? 'Configure a vehicle from a generic starting layout.'
         : vehicleReference(name)
           ? 'Original model reference included. Check your year and variant.'
-          : 'This name has no verified image yet. A clearly labeled concept view is available.';
+          : vehicleArtworkAudit(name)
+            ? 'Source audit: ' +
+              vehicleArtworkAudit(name).reason +
+              ' A labeled concept remains available.'
+            : 'This name has no verified image yet. A clearly labeled concept view is available.';
   }
   function syncSetup() {
     document.querySelectorAll('[data-type]').forEach((button) => {

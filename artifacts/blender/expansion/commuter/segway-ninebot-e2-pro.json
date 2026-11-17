@@ -1,0 +1,49 @@
+{
+  "key": "segway-ninebot-e2-pro",
+  "name": "Segway Ninebot E2 Pro",
+  "family": "Ninebot rigid commuter",
+  "parameters": {
+    "family": "Ninebot rigid commuter",
+    "r": 0.127,
+    "wide": 0.028,
+    "wb": 0.88,
+    "dl": 0.46,
+    "dw": 0.15,
+    "dz": 0.15,
+    "h": 1.2,
+    "bar": 0.45,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.07,
+      0.085,
+      0.11
+    ],
+    "accent": [
+      0.45,
+      0.6,
+      0.8
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false,
+    "frontcover": "vented",
+    "frontspokes": 8
+  },
+  "triangles": 27644,
+  "meshes": 27,
+  "bytes": 851736,
+  "source": "https://eu-en.segway.com/ekickscooter/products/e2-pro-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-e2-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-e2-pro.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-e2-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

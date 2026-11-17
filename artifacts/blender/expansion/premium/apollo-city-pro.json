@@ -1,0 +1,26 @@
+{
+  "name": "Apollo City Pro",
+  "model": {
+    "key": "apollo-city-pro",
+    "url": "/models/expansion/premium/apollo-city-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-city-pro.blend",
+    "triangles": 54532,
+    "meshes": 34,
+    "bytes": 1458996,
+    "family": "Apollo City Pro photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.32499998807907104,
+      1.3299930095672607
+    ]
+  ],
+  "observed": "City Pro V3 2023 gray integrated body, short curved neck, dual hub motors, orange controls and compact spring arms.",
+  "revision": 2
+}

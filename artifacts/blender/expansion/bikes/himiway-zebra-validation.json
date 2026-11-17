@@ -1,0 +1,29 @@
+{
+  "name": "Himiway Zebra",
+  "key": "himiway-zebra",
+  "dimensions_m": [
+    2.088,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 30032,
+  "meshes": 31,
+  "bytes": 938848,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "himiway-zebra.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

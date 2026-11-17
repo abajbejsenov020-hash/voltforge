@@ -1,0 +1,26 @@
+{
+  "name": "E Ride Pro SS",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/e-ride-pro-ss.webp",
+  "source": "https://dealer.eridepro.com/products/pro-ss-2-0",
+  "imageSource": "https://dealer.eridepro.com/cdn/shop/files/2025-09-30_174350_451-ProSS2.0BlackSpoke.png?v=1772588551&width=1200",
+  "credit": "dealer.eridepro.com",
+  "variantNote": "Pro SS 2.0",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    749
+  ],
+  "bytes": 78480,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "e-ride-pro-ss",
+    "url": "/models/expansion/bikes/e-ride-pro-ss.glb",
+    "nativeSource": "assets/blender/expansion/bikes/e-ride-pro-ss.blend",
+    "triangles": 37508,
+    "meshes": 46,
+    "bytes": 1849040,
+    "family": "eride"
+  }
+}

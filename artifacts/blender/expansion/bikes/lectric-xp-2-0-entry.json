@@ -1,0 +1,26 @@
+{
+  "name": "Lectric XP 2.0",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/lectric-xp-2-0.webp",
+  "source": "https://help.lectricebikes.com/l/en/article/lzlpwtbyer-lectric-user-manuals",
+  "imageSource": "https://cdn.motor1.com/images/mgl/nAAOwk/s1/lectric-s-xp-2.0-electric-folding-bike-offers-affordable-no-frills-mobility.jpg",
+  "credit": "Lectric / InsideEVs archival press reference",
+  "variantNote": "XP 2.0 Step-Thru black, front and rear cargo basket accessory trim. Exact-generation archival press image carried by InsideEVs (2022); manufacturer source lists the separate XP 2.0 manual.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    675
+  ],
+  "bytes": 63894,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "lectric-xp-2-0",
+    "url": "/models/expansion/bikes/lectric-xp-2-0.glb",
+    "nativeSource": "assets/blender/expansion/bikes/lectric-xp-2-0.blend",
+    "triangles": 33240,
+    "meshes": 32,
+    "bytes": 1010828,
+    "family": "foldstep"
+  }
+}

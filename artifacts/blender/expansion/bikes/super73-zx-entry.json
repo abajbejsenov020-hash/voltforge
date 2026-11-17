@@ -1,0 +1,26 @@
+{
+  "name": "Super73 ZX",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/super73-zx.webp",
+  "source": "https://super73.com/products/super73-zx-core-legacy",
+  "imageSource": "https://cdn.shopify.com/s/files/1/1374/3231/files/MY25FRONTHERO_ZXCORE_MetallicAluminum_a0aaa651-efe3-47d2-a41a-6d48a8fcb5f5.jpg?v=1772738186",
+  "credit": "super73.com",
+  "variantNote": "SUPER73-ZX",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 116588,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "super73-zx",
+    "url": "/models/expansion/bikes/super73-zx.glb",
+    "nativeSource": "assets/blender/expansion/bikes/super73-zx.blend",
+    "triangles": 23996,
+    "meshes": 29,
+    "bytes": 688196,
+    "family": "moped"
+  }
+}

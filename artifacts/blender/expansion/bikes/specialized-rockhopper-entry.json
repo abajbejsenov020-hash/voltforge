@@ -1,0 +1,26 @@
+{
+  "name": "Specialized Rockhopper",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/specialized-rockhopper.webp",
+  "source": "https://www.specialized.com/us/en/rockhopper-275/p/199591",
+  "imageSource": "https://resources.specialized.com/image/91822-76_ROCKHOPPER-29-TARBLK-WHT_HERO-SQUARE?q=75&w=1400&h=2880&fit=max&fm=webp",
+  "credit": "www.specialized.com",
+  "variantNote": "Rockhopper 27.5",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 180920,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "specialized-rockhopper",
+    "url": "/models/expansion/bikes/specialized-rockhopper.glb",
+    "nativeSource": "assets/blender/expansion/bikes/specialized-rockhopper.blend",
+    "triangles": 28868,
+    "meshes": 26,
+    "bytes": 921876,
+    "family": "hardtail"
+  }
+}

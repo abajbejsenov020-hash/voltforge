@@ -1,0 +1,29 @@
+{
+  "name": "Altis Delta",
+  "key": "altis-delta",
+  "dimensions_m": [
+    1.8431,
+    0.756,
+    1.0971
+  ],
+  "triangles": 37536,
+  "meshes": 48,
+  "bytes": 1740416,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "altis-delta.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Photo-derived lightweight electric motorcycle exterior."
+}

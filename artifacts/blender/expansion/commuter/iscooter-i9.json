@@ -1,0 +1,47 @@
+{
+  "key": "iscooter-i9",
+  "name": "iScooter i9",
+  "family": "iScooter i9 rigid commuter",
+  "parameters": {
+    "family": "iScooter i9 rigid commuter",
+    "r": 0.108,
+    "wide": 0.025,
+    "wb": 0.85,
+    "dl": 0.48,
+    "dw": 0.15,
+    "dz": 0.14,
+    "h": 1.14,
+    "bar": 0.44,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "front",
+    "disc": "rear",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.72,
+      0.015,
+      0.018
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 29440,
+  "meshes": 27,
+  "bytes": 937524,
+  "source": "https://www.iscooterglobal.com/products/i9-foldable-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/iscooter-i9.webp",
+  "nativeSource": "assets/blender/expansion/commuter/iscooter-i9.blend",
+  "url": "/models/expansion/commuter/iscooter-i9.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

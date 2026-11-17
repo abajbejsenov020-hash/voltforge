@@ -1,0 +1,26 @@
+{
+  "name": "Varla Eagle One Pro",
+  "model": {
+    "key": "varla-eagle-one-pro",
+    "url": "/models/expansion/premium/varla-eagle-one-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/varla-eagle-one-pro.blend",
+    "triangles": 54404,
+    "meshes": 34,
+    "bytes": 1440616,
+    "family": "Varla Eagle One Pro exterior"
+  },
+  "bounds": [
+    [
+      -0.70169997215271,
+      -0.3499999940395355,
+      0.0
+    ],
+    [
+      0.6800000071525574,
+      0.3499999940395355,
+      1.3799930810928345
+    ]
+  ],
+  "observed": "Large road wheel chassis, red hooked swingarms, black tall center stem and wide gray-black deck.",
+  "revision": 2
+}

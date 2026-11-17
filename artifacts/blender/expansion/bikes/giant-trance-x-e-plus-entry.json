@@ -1,0 +1,26 @@
+{
+  "name": "Giant Trance X E+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/giant-trance-x-e.webp",
+  "source": "https://www.giant-bicycles.com/us/trance-x-eplus-3-20mph-2023",
+  "imageSource": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/z5erbixbgmmvynujcihr/MY23TranceXEplus3_ColorACordovan.jpg",
+  "credit": "www.giant-bicycles.com",
+  "variantNote": "Trance X E+ 3 20MPH (2023) | Trail bike | Giant Bicycles US",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    600
+  ],
+  "bytes": 56600,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "giant-trance-x-e-plus",
+    "url": "/models/expansion/bikes/giant-trance-x-e-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/giant-trance-x-e-plus.blend",
+    "triangles": 28960,
+    "meshes": 31,
+    "bytes": 918812,
+    "family": "fullmtb"
+  }
+}

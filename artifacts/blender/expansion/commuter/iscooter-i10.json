@@ -1,0 +1,47 @@
+{
+  "key": "iscooter-i10",
+  "name": "iScooter i10",
+  "family": "iScooter i10 suspension commuter",
+  "parameters": {
+    "family": "iScooter i10 suspension commuter",
+    "r": 0.127,
+    "wide": 0.028,
+    "wb": 0.9,
+    "dl": 0.51,
+    "dw": 0.18,
+    "dz": 0.19,
+    "h": 1.22,
+    "bar": 0.52,
+    "stem": "round",
+    "fork": "telescopic",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "rear",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.75,
+      0.02,
+      0.02
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 33592,
+  "meshes": 27,
+  "bytes": 1063452,
+  "source": "https://www.iscooterglobal.com/products/iscooter-i10-commuter-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/iscooter-i10.webp",
+  "nativeSource": "assets/blender/expansion/commuter/iscooter-i10.blend",
+  "url": "/models/expansion/commuter/iscooter-i10.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

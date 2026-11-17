@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Wolf King GTR",
+  "model": {
+    "key": "kaabo-wolf-king-gtr",
+    "url": "/models/expansion/premium/kaabo-wolf-king-gtr.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-wolf-king-gtr.blend",
+    "triangles": 52488,
+    "meshes": 35,
+    "bytes": 1419064,
+    "family": "Kaabo Wolf King GTR exterior"
+  },
+  "bounds": [
+    [
+      -0.7642999887466431,
+      -0.375,
+      0.000238936030655168
+    ],
+    [
+      0.7417610883712769,
+      0.375,
+      1.4499930143356323
+    ]
+  ],
+  "observed": "Long dual telescopic stems and two crown bridges, wide road tyres, high removable battery deck, twin low headlights.",
+  "revision": 2
+}

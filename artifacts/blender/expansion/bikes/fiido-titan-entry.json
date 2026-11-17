@@ -1,0 +1,26 @@
+{
+  "name": "Fiido Titan",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-titan.webp",
+  "source": "https://fiido.com/products/fiido-titan-robust-cargo-electric-bike-with-ul-certified",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-titan.webp?v=1755064725",
+  "credit": "fiido.com",
+  "variantNote": "Titan Fat Tire Hunting and Touring Ebike - Long Range",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 82308,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "fiido-titan",
+    "url": "/models/expansion/bikes/fiido-titan.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-titan.blend",
+    "triangles": 29328,
+    "meshes": 33,
+    "bytes": 905940,
+    "family": "stepfat"
+  }
+}

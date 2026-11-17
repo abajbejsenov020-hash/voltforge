@@ -1,0 +1,26 @@
+{
+  "name": "Lectric XP Lite",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/lectric-xp-lite.webp",
+  "source": "https://lectricebikes.com/en-ca/blogs/blog/introducing-the-lectric-xp-lite",
+  "imageSource": "https://lectricebikes.com/cdn/shop/articles/XP_LIte_Thumbnail.jpg?v=1776194733",
+  "credit": "Lectric eBikes",
+  "variantNote": "Original XP Lite launch photograph, 2022; blue bicycle at left is the modeled colour trim. Original release corroborated by manufacturer PRNewswire release 301522396.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    675
+  ],
+  "bytes": 158978,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "lectric-xp-lite",
+    "url": "/models/expansion/bikes/lectric-xp-lite.glb",
+    "nativeSource": "assets/blender/expansion/bikes/lectric-xp-lite.blend",
+    "triangles": 26212,
+    "meshes": 31,
+    "bytes": 868988,
+    "family": "fold"
+  }
+}

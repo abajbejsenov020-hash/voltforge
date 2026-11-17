@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadExpand 5",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radexpand-5.webp",
+  "source": "https://www.pedalpowerbikeshop.com/product/rad-power-bikes-radexpand-5-electric-folding-bike-876779-1.htm",
+  "imageSource": "https://www.sefiles.net/images/library/large/rad-power-bikes-radexpand-5--2024-iv-876779-2.png",
+  "credit": "www.pedalpowerbikeshop.com",
+  "variantNote": "Rad Power Bikes RadExpand 5 Electric Folding Bike - Pedal Power Bike Shop (https://www.pedalpowerbikeshop.com/product/rad-power-bikes-radexpand-5-electric-folding-bike-876779-1.htm)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    750
+  ],
+  "bytes": 131846,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "rad-power-radexpand-5",
+    "url": "/models/expansion/bikes/rad-power-radexpand-5.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radexpand-5.blend",
+    "triangles": 29720,
+    "meshes": 32,
+    "bytes": 920600,
+    "family": "foldstep"
+  }
+}

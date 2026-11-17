@@ -1,0 +1,26 @@
+{
+  "name": "Talaria Sting",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/talaria-sting.webp",
+  "source": "https://shop.talariacanada.com/en/talaria-sting-mx3/40004-talaria-sting-mx3-electric-dirt-bike-fastace-fork-no-battery-rt-tl-001-bk-f-us-talaria.html",
+  "imageSource": "https://shop.talariacanada.com/2848-large_default/talaria-sting-mx3-electric-dirt-bike-fastace-fork-no-battery-rt-tl-001-bk-f-us-talaria.jpg",
+  "credit": "shop.talariacanada.com",
+  "variantNote": "Talaria Sting MX3 Electric Dirt Bike | Ebikezilla (https://shop.talariacanada.com/en/talaria-sting-mx3/40004-talaria-sting-mx3-electric-dirt-bike-fastace-fork-no-battery-rt-tl-001-bk-f-us-talaria.html)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    800
+  ],
+  "bytes": 61156,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "talaria-sting",
+    "url": "/models/expansion/bikes/talaria-sting.glb",
+    "nativeSource": "assets/blender/expansion/bikes/talaria-sting.blend",
+    "triangles": 37540,
+    "meshes": 46,
+    "bytes": 1705208,
+    "family": "sting"
+  }
+}

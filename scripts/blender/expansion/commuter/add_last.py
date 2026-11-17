@@ -1,0 +1,5 @@
+exec(open('scripts/blender/expansion/commuter/add_photos.py').read().split('for name,(dom,handle,idx)')[0])
+put('Segway Ninebot Max G30LP','https://support.segway.com/support_product.php?segcatid=8','https://segway.imgix.net/catalog/product/cache/1be073bb625205c2a3aab025b4fe3368/g/3/g30lp-p2.png?auto=format%2Ccompress&dpr=1&q=75&w=700','Max G30LP','Exact US G30LP reference; shorter light-gray regional chassis.')
+s=(O/'kugoo-s3-moscow.html').read_text();m=re.search('og:image" content="([^"]+)',s)
+if m:put('Kugoo S3','https://kugoomoscow.ru/kugoo-s3',m[1],'Kugoo S3','Regional Jilong distributor photograph; production year unknown.')
+json.dump(list(selected.values()),open(O/'selected.json','w'),indent=2)

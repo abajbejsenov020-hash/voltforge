@@ -1,0 +1,26 @@
+{
+  "name": "Fiido T2",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-t2.webp",
+  "source": "https://fiido.com/products/fiido-t2-longtail-cargo-ebike-for-versatile-all-terrain",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t2-main-1-green.jpg?v=1712557682",
+  "credit": "fiido.com",
+  "variantNote": "Fiido T2 Electric Longtail Bike: 440 lbs Payload, 85 Miles Long Range",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 78454,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "fiido-t2",
+    "url": "/models/expansion/bikes/fiido-t2.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-t2.blend",
+    "triangles": 30328,
+    "meshes": 42,
+    "bytes": 935676,
+    "family": "longtail"
+  }
+}

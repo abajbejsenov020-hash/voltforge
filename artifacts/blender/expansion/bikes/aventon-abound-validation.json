@@ -1,0 +1,29 @@
+{
+  "name": "Aventon Abound",
+  "key": "aventon-abound",
+  "dimensions_m": [
+    2.0286,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 30840,
+  "meshes": 31,
+  "bytes": 946616,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "aventon-abound.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Victor Luxury",
+  "model": {
+    "key": "dualtron-victor-luxury",
+    "url": "/models/expansion/premium/dualtron-victor-luxury.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-victor-luxury.blend",
+    "triangles": 53856,
+    "meshes": 34,
+    "bytes": 1491296,
+    "family": "Dualtron Victor Luxury exterior"
+  },
+  "bounds": [
+    [
+      -0.6080499887466431,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.5870000123977661,
+      0.3050000071525574,
+      1.3299930095672607
+    ]
+  ],
+  "observed": "Compact dual-motor cartridge chassis with low lamp and open rear carry brace.",
+  "revision": 2
+}

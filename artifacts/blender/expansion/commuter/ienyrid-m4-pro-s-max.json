@@ -1,0 +1,47 @@
+{
+  "key": "ienyrid-m4-pro-s-max",
+  "name": "iENYRID M4 Pro S+ Max",
+  "family": "iENYRID M4 fork and red coil",
+  "parameters": {
+    "family": "iENYRID M4 fork and red coil",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 0.96,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.23,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "twinfork",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.055,
+      0.065,
+      0.07
+    ],
+    "accent": [
+      0.93,
+      0.23,
+      0.025
+    ],
+    "seat": true,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 38448,
+  "meshes": 28,
+  "bytes": 1238980,
+  "source": "https://ienyrid.com/products/ienyrid-m4-pro-s-plus-max-folding-electric-scooters",
+  "reference": "/assets/vehicles/expansion/commuter/ienyrid-m4-pro-s-max.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ienyrid-m4-pro-s-max.blend",
+  "url": "/models/expansion/commuter/ienyrid-m4-pro-s-max.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

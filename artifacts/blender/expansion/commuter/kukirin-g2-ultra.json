@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-g2-ultra",
+  "name": "KuKirin G2 Ultra",
+  "family": "KuKirin Ultra gray swingarms",
+  "parameters": {
+    "family": "KuKirin Ultra gray swingarms",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 0.96,
+    "dl": 0.57,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.27,
+    "bar": 0.62,
+    "stem": "square",
+    "fork": "shortarm",
+    "rear": "shortarm",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.22,
+      0.24,
+      0.25
+    ],
+    "accent": [
+      0.98,
+      0.26,
+      0.008
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": true
+  },
+  "triangles": 28872,
+  "meshes": 26,
+  "bytes": 964548,
+  "source": "https://kukirin-escooter.com/products/kukirin-g2-ultra-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-g2-ultra.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-g2-ultra.blend",
+  "url": "/models/expansion/commuter/kukirin-g2-ultra.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

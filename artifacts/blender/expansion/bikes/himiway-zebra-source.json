@@ -1,0 +1,225 @@
+{
+  "name": "Himiway Zebra",
+  "source": "https://himiwaybike.com/products/premium-all-terrain-electric-bike",
+  "checked": [
+    "https://himiwaybike.com/products/premium-all-terrain-electric-bike"
+  ],
+  "title": "D5(Zebra) / All-terrain Electric Fat Bike",
+  "images": [
+    {
+      "id": 32116673577035,
+      "created_at": "2024-10-12T09:24:35+08:00",
+      "position": 1,
+      "updated_at": "2025-04-28T17:33:43+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [
+        40309393588299
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5SOwhite.jpg?v=1745832823",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "id": 30555011809355,
+      "created_at": "2024-04-11T23:39:36+08:00",
+      "position": 2,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [
+        40305788682315
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/ZebraD5_1.jpg?v=1748415183",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "id": 30555011776587,
+      "created_at": "2024-04-11T23:39:36+08:00",
+      "position": 3,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [
+        40305788649547
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/ZebraD5_5.jpg?v=1748415183",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "id": 32888613273675,
+      "created_at": "2025-04-17T14:06:22+08:00",
+      "position": 4,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5photo-1.jpg?v=1748415183",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "id": 32888615960651,
+      "created_at": "2025-04-17T14:06:37+08:00",
+      "position": 5,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5photo-11.jpg?v=1748415183",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "id": 32888613699659,
+      "created_at": "2025-04-17T14:06:26+08:00",
+      "position": 6,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5photo-2.jpg?v=1748415183",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "id": 32888620056651,
+      "created_at": "2025-04-17T14:07:17+08:00",
+      "position": 7,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5photo-5.jpg?v=1748415183",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "id": 32707685613643,
+      "created_at": "2025-03-21T17:57:28+08:00",
+      "position": 8,
+      "updated_at": "2025-05-28T14:53:03+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5_13bbc55a-ebb0-40cc-b899-3cd468d30c7e.jpg?v=1748415183",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "id": 30284412289099,
+      "created_at": "2024-01-31T18:10:14+08:00",
+      "position": 9,
+      "updated_at": "2025-05-07T09:48:46+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/3_29d4cfc3-3c5d-487c-a724-db569e08e846.jpg?v=1746582526",
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "id": 29907156009035,
+      "created_at": "2023-09-22T14:29:16+08:00",
+      "position": 10,
+      "updated_at": "2025-05-07T09:48:46+08:00",
+      "product_id": 6853903810635,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/zegreen-2.jpg?v=1746582526",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "variants": [
+    {
+      "id": 40309393588299,
+      "title": "White",
+      "option1": "White",
+      "option2": null,
+      "option3": null,
+      "sku": "HMW-D5-PW-SO-US",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 32116673577035,
+        "product_id": 6853903810635,
+        "position": 1,
+        "created_at": "2024-10-12T09:24:35+08:00",
+        "updated_at": "2025-04-28T17:33:43+08:00",
+        "alt": "Himiway D5 (Zebra) | Premium All-terrain Electric Fat Bike -Himiway e bike",
+        "width": 1600,
+        "height": 1200,
+        "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5SOwhite.jpg?v=1745832823",
+        "variant_ids": [
+          40309393588299
+        ]
+      },
+      "available": false,
+      "price": "1499.00",
+      "grams": 0,
+      "compare_at_price": "2299.00",
+      "position": 1,
+      "product_id": 6853903810635,
+      "created_at": "2024-02-07T12:31:35+08:00",
+      "updated_at": "2026-11-17T22:45:41+08:00"
+    },
+    {
+      "id": 40305788682315,
+      "title": "Space Grey",
+      "option1": "Space Grey",
+      "option2": null,
+      "option3": null,
+      "sku": "HMW-D5-GY-SO-US",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 30555011809355,
+        "product_id": 6853903810635,
+        "position": 2,
+        "created_at": "2024-04-11T23:39:36+08:00",
+        "updated_at": "2025-05-28T14:53:03+08:00",
+        "alt": "Himiway D5 (Zebra) | Premium All-terrain Electric Fat Bike -Himiway eBike",
+        "width": 1600,
+        "height": 1200,
+        "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/ZebraD5_1.jpg?v=1748415183",
+        "variant_ids": [
+          40305788682315
+        ]
+      },
+      "available": true,
+      "price": "1499.00",
+      "grams": 0,
+      "compare_at_price": "2299.00",
+      "position": 2,
+      "product_id": 6853903810635,
+      "created_at": "2024-02-05T14:53:05+08:00",
+      "updated_at": "2026-11-17T22:45:41+08:00"
+    },
+    {
+      "id": 40305788649547,
+      "title": "Green",
+      "option1": "Green",
+      "option2": null,
+      "option3": null,
+      "sku": "HMW-D5-MG-SO-US",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 30555011776587,
+        "product_id": 6853903810635,
+        "position": 3,
+        "created_at": "2024-04-11T23:39:36+08:00",
+        "updated_at": "2025-05-28T14:53:03+08:00",
+        "alt": "Himiway D5 (Zebra) | Premium All-terrain Electric Fat Bike -Himiway eBike",
+        "width": 1600,
+        "height": 1200,
+        "src": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/ZebraD5_5.jpg?v=1748415183",
+        "variant_ids": [
+          40305788649547
+        ]
+      },
+      "available": false,
+      "price": "1499.00",
+      "grams": 0,
+      "compare_at_price": "2299.00",
+      "position": 3,
+      "product_id": 6853903810635,
+      "created_at": "2024-02-05T14:53:05+08:00",
+      "updated_at": "2026-11-17T22:45:41+08:00"
+    }
+  ],
+  "description": "<h3>Dominate Every Trail with the D5 Electric Fat Tire Mountain Bike</h3>\n<p>750W Fat ebike Engineered for Mountain Warriors</p>\n<p>\ud83c\udfc6 \"Best Value Mountain ebike 2025\" - OutdoorGear Lab</p>\n<p>\ud83d\ude9a Free Shipping | \ud83d\udd27 2-Year Warranty | \ud83d\udd04 15-Day Returns</p>\n<h3>Why Mountain Riders Choose D5</h3>\n<p>\u26f0\ufe0f Conquer Technical Terrain</p>\n<p>4.0\" Kenda fat tires + 95mm suspension eat rocks for breakfast</p>\n<p><a href=\"https://www.youtube.com/watch?v=7bZ_JgVGGe0\">Watch Mountain Test \u2192</a></p>\n<p>\ud83d\udd0b 80-Mile Range</p>\n<p>48V Samsung battery lasts 3X longer than standard mountain ebikes</p>\n<h3>Built for Fat ebike Adventures</h3>\n<h4>Winter Warrior Ready</h4>\n<p>Our 26\u00d74.0\" electric fat bike dominates:</p>\n<ul>\n<li>\u2744\ufe0f Snow-packed forest trails</li>\n<li>\ud83c\udfd6\ufe0f Deep sand beaches</li>\n<li>\ud83c\udf27\ufe0f Muddy mountain passes</li>\n</ul>\n<p>\"D5 handles snow better than my 4X4 truck!\" - Mike, Colorado Rider</p>\n<p><strong>\"Age has been slowing me down but with this HIMI-ebike I'm back in the game\"</strong> - Over 40 Rider</p>\n<h3>Mountain ebike Technology</h3>\n<h4>Pro-Grade Components</h4>\n<ul>\n<li>\n<strong>Shimano Altus 7-Speed:</strong> Perfect gear range for 15%+ climbs</li>\n<li>\n<strong>Tektro Hydraulic Brakes:</strong> 180mm rotors stop on dime</li>\n<li>\n<strong>Torque Sensor:</strong> Instant 85Nm power when you need it</li>\n</ul>\n<h3>Your Mountain Awaits</h3>\n<h4>Ready to Ride?</h4>\n<p>\ud83d\udeb4\u2642\ufe0f 10000+ Riders Configured</p>\n<p>5'3\" to 6'5\" Rider Friendly</p>"
+}

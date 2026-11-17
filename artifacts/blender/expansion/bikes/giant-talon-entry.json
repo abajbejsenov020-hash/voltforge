@@ -1,0 +1,26 @@
+{
+  "name": "Giant Talon",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/giant-talon.webp",
+  "source": "https://www.giant-bicycles.com/us/talon-1-2025",
+  "imageSource": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/ryyrkxdkbhg1nsyagchl/MY25Talon291_ColorACharcoal.jpg",
+  "credit": "www.giant-bicycles.com",
+  "variantNote": "Talon 1 (2025) | XC bike | Giant Bicycles US",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    600
+  ],
+  "bytes": 53190,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "giant-talon",
+    "url": "/models/expansion/bikes/giant-talon.glb",
+    "nativeSource": "assets/blender/expansion/bikes/giant-talon.blend",
+    "triangles": 27964,
+    "meshes": 26,
+    "bytes": 886760,
+    "family": "hardtail"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Yume Osprey",
+  "model": {
+    "key": "yume-osprey",
+    "url": "/models/expansion/premium/yume-osprey.glb",
+    "nativeSource": "assets/blender/expansion/premium/yume-osprey.blend",
+    "triangles": 51832,
+    "meshes": 33,
+    "bytes": 1403444,
+    "family": "Yume Osprey exact photographed appearance"
+  },
+  "bounds": [
+    [
+      -0.7267000675201416,
+      -0.3499999940395355,
+      0.0
+    ],
+    [
+      0.7049999833106995,
+      0.3499999940395355,
+      1.6140000820159912
+    ]
+  ],
+  "observed": "Exact Osprey front: long dark twin hydraulic fork housings and short polished lower pistons with cast axle dropouts, paired square headlights at the upper fork crown, reverse-rake lower mast joined to a tall slotted angular upper mast, and two rectangular mirrors. Wide battery chassis retained.",
+  "revision": 2
+}

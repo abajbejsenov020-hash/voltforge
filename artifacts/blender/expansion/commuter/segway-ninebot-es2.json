@@ -1,0 +1,49 @@
+{
+  "key": "segway-ninebot-es2",
+  "name": "Segway Ninebot ES2",
+  "family": "Ninebot ES stem-battery",
+  "parameters": {
+    "family": "Ninebot ES stem-battery",
+    "r": 0.1,
+    "wide": 0.028,
+    "wb": 0.86,
+    "dl": 0.48,
+    "dw": 0.15,
+    "dz": 0.14,
+    "h": 1.13,
+    "bar": 0.52,
+    "stem": "battery",
+    "fork": "telescopic",
+    "rear": "shortarm",
+    "motor": "front",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.7,
+      0.025,
+      0.02
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false,
+    "rearcover": "cast",
+    "rearspokes": 3
+  },
+  "triangles": 26132,
+  "meshes": 26,
+  "bytes": 821812,
+  "source": "https://support.segway.com/support_product.php?segcatid=1",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-es2.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-es2.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-es2.glb",
+  "finalReferenceReview": [
+    "Removed inferred external pack; ES4 keeps its single documented auxiliary battery"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "InMotion Climber",
+  "model": {
+    "key": "inmotion-climber",
+    "url": "/models/expansion/premium/inmotion-climber.glb",
+    "nativeSource": "assets/blender/expansion/premium/inmotion-climber.blend",
+    "triangles": 49804,
+    "meshes": 32,
+    "bytes": 1312924,
+    "family": "InMotion Climber exterior"
+  },
+  "bounds": [
+    [
+      -0.6030499935150146,
+      -0.25999999046325684,
+      0.0
+    ],
+    [
+      0.5820000171661377,
+      0.25999999046325684,
+      1.259993076324463
+    ]
+  ],
+  "observed": "Rigid fork, orange motor/rim stripes and orange grip tips, narrow compact gray deck.",
+  "revision": 2
+}

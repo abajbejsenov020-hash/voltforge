@@ -1,0 +1,26 @@
+{
+  "name": "EMOVE Cruiser",
+  "model": {
+    "key": "emove-cruiser",
+    "url": "/models/expansion/premium/emove-cruiser.glb",
+    "nativeSource": "assets/blender/expansion/premium/emove-cruiser.blend",
+    "triangles": 49640,
+    "meshes": 33,
+    "bytes": 1297996,
+    "family": "EMOVE Cruiser verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6380500197410583,
+      -0.3100000023841858,
+      0.0
+    ],
+    [
+      0.6169999837875366,
+      0.3100000023841858,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Original2022 orange Cruiser source: orange lower stem/deck, black upper telescopic shaft, long low deck, paired front coil-fork suspension and rear exposed spring. Pre-S reference retained.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Thunder 3",
+  "model": {
+    "key": "dualtron-thunder-3",
+    "url": "/models/expansion/premium/dualtron-thunder-3.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-thunder-3.blend",
+    "triangles": 53052,
+    "meshes": 35,
+    "bytes": 1448876,
+    "family": "Dualtron Thunder 3 exterior"
+  },
+  "bounds": [
+    [
+      -0.6617000102996826,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.6399999856948853,
+      0.3050000071525574,
+      1.409993052482605
+    ]
+  ],
+  "observed": "Twin low round headlamps, cartridge arms, wide road tyres and cyan stem illumination.",
+  "revision": 2
+}

@@ -1,0 +1,73 @@
+[
+  [
+    "Apollo Ghost",
+    {
+      "name": "Apollo Ghost",
+      "key": "apollo-ghost",
+      "source": "https://garudamobility.com/product/apollo-ghost/",
+      "imageSource": "https://garudamobility.com/wp-content/uploads/2021/06/Ghost_Full_White_Square_1_medium_size.jpg",
+      "credit": "garudamobility.com",
+      "variantNote": "",
+      "productTitle": "Apollo Ghost - Garuda Mobility"
+    }
+  ],
+  [
+    "Yume Y10",
+    {
+      "name": "Yume Y10",
+      "key": "yume-y10",
+      "source": "https://melotronic.com/product/yume-y10/",
+      "imageSource": "https://melotronic.com/wp-content/uploads/2021/09/yume10.jpg",
+      "credit": "melotronic.com",
+      "variantNote": "",
+      "productTitle": "Harga YUME Y10 Murah Terbaru | Melotronic"
+    }
+  ],
+  [
+    "Varla Eagle One V2.0",
+    {
+      "name": "Varla Eagle One V2.0",
+      "key": "varla-eagle-one-v2-0",
+      "source": "https://varlascooter.com/blogs/all/upgraded-eagle-one-v2-0-e-scooter",
+      "imageSource": "http://varlascooter.com/cdn/shop/articles/IMG_202311153283_1600x900_0bb51ff3-c189-479f-948f-c783fa45d923.jpg?v=1700033201",
+      "credit": "varlascooter.com",
+      "variantNote": "",
+      "productTitle": "Discover the Upgraded Eagle One V2.0 E-Scooter - Varla Scooter"
+    }
+  ],
+  [
+    "Varla Eagle One",
+    {
+      "error": "",
+      "source": "https://varlascooter.com/blogs/instructions/varla-eagle-one-scooter-manual"
+    }
+  ],
+  [
+    "Inokim Light 2",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://www.inokim.com/products/light-2']' returned non-zero exit status 56.",
+      "source": "https://www.inokim.com/products/light-2"
+    }
+  ],
+  [
+    "EMOVE Touring",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://www.voromotors.com/pages/emove-touring']' returned non-zero exit status 56.",
+      "source": "https://www.voromotors.com/pages/emove-touring"
+    }
+  ],
+  [
+    "InMotion S1",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://www.inmotionworld.com/inmotion-s1']' returned non-zero exit status 56.",
+      "source": "https://www.inmotionworld.com/inmotion-s1"
+    }
+  ],
+  [
+    "Apollo City",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide']' returned non-zero exit status 56.",
+      "source": "https://apolloscooters.co/blogs/news/how-to-identify-different-apollo-scooter-models-a-comprehensive-guide"
+    }
+  ]
+]

@@ -1,0 +1,2355 @@
+{
+  "count": 87,
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "KuKirin G2 VMP",
+      "key": "kukirin-g2-vmp",
+      "triangles": 26852,
+      "meshes": 27,
+      "bytes": 896504,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6174284815788269,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.597000002861023,
+        0.3114204406738281,
+        1.2403000593185425
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin G2 Ultra",
+      "key": "kukirin-g2-ultra",
+      "triangles": 28872,
+      "meshes": 26,
+      "bytes": 964548,
+      "packedReferences": 1,
+      "nativeMeshCount": 26,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.3114204704761505,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.31142041087150574,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin G3",
+      "key": "kukirin-g3",
+      "triangles": 30612,
+      "meshes": 29,
+      "bytes": 942080,
+      "packedReferences": 1,
+      "nativeMeshCount": 29,
+      "boundsMin": [
+        -0.6624284982681274,
+        -0.3114204704761505,
+        0.0
+      ],
+      "boundsMax": [
+        0.6420000195503235,
+        0.31142038106918335,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin G4 Max",
+      "key": "kukirin-g4-max",
+      "triangles": 35944,
+      "meshes": 27,
+      "bytes": 1127000,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.7286785244941711,
+        -0.3512600362300873,
+        0.0
+      ],
+      "boundsMax": [
+        0.7070000171661377,
+        0.35126006603240967,
+        1.3803000450134277
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin M4",
+      "key": "kukirin-m4",
+      "triangles": 36808,
+      "meshes": 28,
+      "bytes": 1182212,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6474285125732422,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6269999742507935,
+        0.3114204406738281,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin M4 Pro",
+      "key": "kukirin-m4-pro",
+      "triangles": 34948,
+      "meshes": 28,
+      "bytes": 1105936,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6474285125732422,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6269999742507935,
+        0.3114204406738281,
+        1.2603000402450562
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin S1 Max",
+      "key": "kukirin-s1-max",
+      "triangles": 26204,
+      "meshes": 27,
+      "bytes": 812440,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5393285155296326,
+        -0.2269444465637207,
+        0.0001651844213483855
+      ],
+      "boundsMax": [
+        0.5199999809265137,
+        0.2269444465637207,
+        1.120300054550171
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin S3 Pro",
+      "key": "kukirin-s3-pro",
+      "triangles": 27004,
+      "meshes": 28,
+      "bytes": 846492,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5393285155296326,
+        -0.2269444465637207,
+        0.0001651844213483855
+      ],
+      "boundsMax": [
+        0.5199999809265137,
+        0.2269444465637207,
+        1.120300054550171
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo G-Booster",
+      "key": "kugoo-g-booster",
+      "triangles": 39500,
+      "meshes": 26,
+      "bytes": 1279468,
+      "packedReferences": 1,
+      "nativeMeshCount": 26,
+      "boundsMin": [
+        -0.6724284887313843,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6520000100135803,
+        0.31142041087150574,
+        1.3203001022338867
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom L1",
+      "key": "ausom-l1",
+      "triangles": 31100,
+      "meshes": 28,
+      "bytes": 1013600,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6424285173416138,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.621999979019165,
+        0.3462781012058258,
+        1.4352999925613403
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom L2",
+      "key": "ausom-l2",
+      "triangles": 31192,
+      "meshes": 27,
+      "bytes": 1014940,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6524285078048706,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.6320000290870667,
+        0.3462781012058258,
+        1.4003000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom L2 Max",
+      "key": "ausom-l2-max",
+      "triangles": 32236,
+      "meshes": 28,
+      "bytes": 1058336,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.657428503036499,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.6370000243186951,
+        0.3462781012058258,
+        1.4503000974655151
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom Gosoul 2 Pro",
+      "key": "ausom-gosoul-2-pro",
+      "triangles": 33932,
+      "meshes": 27,
+      "bytes": 1124668,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.657428503036499,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.6370000243186951,
+        0.3462781012058258,
+        1.4003000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom K20 Pro",
+      "key": "ausom-k20-pro",
+      "triangles": 34212,
+      "meshes": 29,
+      "bytes": 1093920,
+      "packedReferences": 1,
+      "nativeMeshCount": 29,
+      "boundsMin": [
+        -0.657428503036499,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.6370000243186951,
+        0.3462781012058258,
+        1.4003000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom SR1",
+      "key": "ausom-sr1",
+      "triangles": 32804,
+      "meshes": 27,
+      "bytes": 1070080,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.657428503036499,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.6370000243186951,
+        0.3462781012058258,
+        1.3803000450134277
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi1 Pro",
+      "key": "niu-kqi1-pro",
+      "triangles": 27068,
+      "meshes": 27,
+      "bytes": 821464,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5748285055160522,
+        -0.2418259084224701,
+        0.0001809162786230445
+      ],
+      "boundsMax": [
+        0.5550000071525574,
+        0.2418259084224701,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi2 Pro",
+      "key": "niu-kqi2-pro",
+      "triangles": 26744,
+      "meshes": 28,
+      "bytes": 826036,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5924285054206848,
+        -0.27162712812423706,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5720000267028809,
+        0.27162712812423706,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi3 Sport",
+      "key": "niu-kqi3-sport",
+      "triangles": 29796,
+      "meshes": 28,
+      "bytes": 929044,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.596128523349762,
+        -0.27162712812423706,
+        0.00019035537843592465
+      ],
+      "boundsMax": [
+        0.5759999752044678,
+        0.27162712812423706,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi3 Pro",
+      "key": "niu-kqi3-pro",
+      "triangles": 28996,
+      "meshes": 28,
+      "bytes": 897260,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.596128523349762,
+        -0.27162712812423706,
+        0.00019035537843592465
+      ],
+      "boundsMax": [
+        0.5759999752044678,
+        0.27162712812423706,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi3 Max",
+      "key": "niu-kqi3-max",
+      "triangles": 28968,
+      "meshes": 28,
+      "bytes": 898712,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6224284768104553,
+        -0.27162712812423706,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.6019999980926514,
+        0.27162712812423706,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi Air",
+      "key": "niu-kqi-air",
+      "triangles": 26148,
+      "meshes": 28,
+      "bytes": 799756,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5874285101890564,
+        -0.27162712812423706,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5669999718666077,
+        0.27162712812423706,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi 300P",
+      "key": "niu-kqi-300p",
+      "triangles": 28644,
+      "meshes": 28,
+      "bytes": 885132,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6337285041809082,
+        -0.27162712812423706,
+        0.0
+      ],
+      "boundsMax": [
+        0.6129999756813049,
+        0.27162712812423706,
+        1.2803000211715698
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "NIU KQi 300X",
+      "key": "niu-kqi-300x",
+      "triangles": 30256,
+      "meshes": 30,
+      "bytes": 906584,
+      "packedReferences": 1,
+      "nativeMeshCount": 30,
+      "boundsMin": [
+        -0.6337285041809082,
+        -0.27162712812423706,
+        0.0
+      ],
+      "boundsMax": [
+        0.6129999756813049,
+        0.27162712812423706,
+        1.2803000211715698
+      ],
+      "requiredGroups": {
+        "FrontWheel": 6,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Joyor S8",
+      "key": "joyor-s8",
+      "triangles": 27872,
+      "meshes": 28,
+      "bytes": 939332,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6524285078048706,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6320000290870667,
+        0.3114204406738281,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iScooter i9",
+      "key": "iscooter-i9",
+      "triangles": 29440,
+      "meshes": 27,
+      "bytes": 937524,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.552478551864624,
+        -0.22198739647865295,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5329999923706055,
+        0.22198739647865295,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iScooter i10",
+      "key": "iscooter-i10",
+      "triangles": 33592,
+      "meshes": 27,
+      "bytes": 1063452,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5974285006523132,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.5770000219345093,
+        0.2616884410381317,
+        1.2403000593185425
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iScooter iX3",
+      "key": "iscooter-ix3",
+      "triangles": 37464,
+      "meshes": 28,
+      "bytes": 1203060,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.3114204406738281,
+        1.270300030708313
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iScooter iX4",
+      "key": "iscooter-ix4",
+      "triangles": 36940,
+      "meshes": 28,
+      "bytes": 1183316,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.3114204406738281,
+        1.270300030708313
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iENYRID M4 Pro S+",
+      "key": "ienyrid-m4-pro-s-",
+      "triangles": 37652,
+      "meshes": 28,
+      "bytes": 1207276,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.3114204406738281,
+        1.2503000497817993
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iENYRID M4 Pro S+ Max",
+      "key": "ienyrid-m4-pro-s-max",
+      "triangles": 38448,
+      "meshes": 28,
+      "bytes": 1238980,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.3114204406738281,
+        1.2503000497817993
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iENYRID ES1",
+      "key": "ienyrid-es1",
+      "triangles": 35108,
+      "meshes": 27,
+      "bytes": 1117484,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6624284982681274,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6420000195503235,
+        0.31142041087150574,
+        1.3303000926971436
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Bogist C1 Pro",
+      "key": "bogist-c1-pro",
+      "triangles": 40304,
+      "meshes": 28,
+      "bytes": 1316064,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.657428503036499,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6370000243186951,
+        0.31142041087150574,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot Max G30",
+      "key": "segway-ninebot-max-g30",
+      "triangles": 27480,
+      "meshes": 28,
+      "bytes": 866056,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6024284958839417,
+        -0.2750000059604645,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5820000171661377,
+        0.2750000059604645,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot Max G2",
+      "key": "segway-ninebot-max-g2",
+      "triangles": 31152,
+      "meshes": 28,
+      "bytes": 969776,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.30000001192092896,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.30000001192092896,
+        1.2803000211715698
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot Max G3",
+      "key": "segway-ninebot-max-g3",
+      "triangles": 31464,
+      "meshes": 28,
+      "bytes": 1016504,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.666078507900238,
+        -0.3100000023841858,
+        0.0
+      ],
+      "boundsMax": [
+        0.6449999809265137,
+        0.3100000023841858,
+        1.4003000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot F2",
+      "key": "segway-ninebot-f2",
+      "triangles": 26492,
+      "meshes": 28,
+      "bytes": 822496,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6074284911155701,
+        -0.30000001192092896,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5870000123977661,
+        0.30000001192092896,
+        1.2303000688552856
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot F2 Pro",
+      "key": "segway-ninebot-f2-pro",
+      "triangles": 27468,
+      "meshes": 28,
+      "bytes": 860660,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6074284911155701,
+        -0.30000001192092896,
+        0.0
+      ],
+      "boundsMax": [
+        0.5870000123977661,
+        0.30000001192092896,
+        1.2303000688552856
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot F2 Plus",
+      "key": "segway-ninebot-f2-plus",
+      "triangles": 27480,
+      "meshes": 28,
+      "bytes": 861408,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6074284911155701,
+        -0.30000001192092896,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5870000123977661,
+        0.30000001192092896,
+        1.2303000688552856
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot F3",
+      "key": "segway-ninebot-f3",
+      "triangles": 27140,
+      "meshes": 28,
+      "bytes": 862340,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6374285221099854,
+        -0.3100000023841858,
+        0.0
+      ],
+      "boundsMax": [
+        0.6169999837875366,
+        0.3100000023841858,
+        1.3303000926971436
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot F3 Pro",
+      "key": "segway-ninebot-f3-pro",
+      "triangles": 27964,
+      "meshes": 28,
+      "bytes": 894056,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6374285221099854,
+        -0.3100000023841858,
+        0.0
+      ],
+      "boundsMax": [
+        0.6169999837875366,
+        0.3100000023841858,
+        1.3303000926971436
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot E2",
+      "key": "segway-ninebot-e2",
+      "triangles": 26556,
+      "meshes": 27,
+      "bytes": 808004,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5574784874916077,
+        -0.2269444465637207,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5379999876022339,
+        0.2269444465637207,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot E2 Plus",
+      "key": "segway-ninebot-e2-plus",
+      "triangles": 27544,
+      "meshes": 27,
+      "bytes": 846848,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5574784874916077,
+        -0.2269444465637207,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5379999876022339,
+        0.2269444465637207,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot E2 Pro",
+      "key": "segway-ninebot-e2-pro",
+      "triangles": 27644,
+      "meshes": 27,
+      "bytes": 851736,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5874285101890564,
+        -0.2269444465637207,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5669999718666077,
+        0.2269444316625595,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot P65",
+      "key": "segway-ninebot-p65",
+      "triangles": 26676,
+      "meshes": 28,
+      "bytes": 905248,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6637284755706787,
+        -0.33500000834465027,
+        0.00020923360716551542
+      ],
+      "boundsMax": [
+        0.6430000066757202,
+        0.33500000834465027,
+        1.3003000020980835
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot P100S",
+      "key": "segway-ninebot-p100s",
+      "triangles": 36524,
+      "meshes": 28,
+      "bytes": 1165936,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.693728506565094,
+        -0.33500000834465027,
+        0.0
+      ],
+      "boundsMax": [
+        0.6729999780654907,
+        0.33500000834465027,
+        1.3003000020980835
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot GT1",
+      "key": "segway-ninebot-gt1",
+      "triangles": 35976,
+      "meshes": 29,
+      "bytes": 1154140,
+      "packedReferences": 1,
+      "nativeMeshCount": 29,
+      "boundsMin": [
+        -0.7760785222053528,
+        -0.3449999988079071,
+        0.0
+      ],
+      "boundsMax": [
+        0.7549999952316284,
+        0.3449999988079071,
+        1.3303000926971436
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot GT2",
+      "key": "segway-ninebot-gt2",
+      "triangles": 36556,
+      "meshes": 28,
+      "bytes": 1186064,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.7760785222053528,
+        -0.3449999988079071,
+        0.0
+      ],
+      "boundsMax": [
+        0.7549999952316284,
+        0.3449999988079071,
+        1.3303000926971436
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot GT3",
+      "key": "segway-ninebot-gt3",
+      "triangles": 36548,
+      "meshes": 29,
+      "bytes": 1176428,
+      "packedReferences": 1,
+      "nativeMeshCount": 29,
+      "boundsMin": [
+        -0.7460784912109375,
+        -0.3449999988079071,
+        0.0
+      ],
+      "boundsMax": [
+        0.7250000238418579,
+        0.3449999988079071,
+        1.4003000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot ZT3 Pro",
+      "key": "segway-ninebot-zt3-pro",
+      "triangles": 31688,
+      "meshes": 28,
+      "bytes": 1041472,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6810784935951233,
+        -0.33500000834465027,
+        0.0
+      ],
+      "boundsMax": [
+        0.6600000262260437,
+        0.33500000834465027,
+        1.360300064086914
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi Mi 3",
+      "key": "xiaomi-mi-3",
+      "triangles": 27268,
+      "meshes": 27,
+      "bytes": 850112,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5574784874916077,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5379999876022339,
+        0.2170322686433792,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 4",
+      "key": "xiaomi-4",
+      "triangles": 26488,
+      "meshes": 27,
+      "bytes": 819412,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.2616884410381317,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.2616884410381317,
+        1.2603000402450562
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 4 Lite",
+      "key": "xiaomi-4-lite",
+      "triangles": 27332,
+      "meshes": 27,
+      "bytes": 853232,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5724784731864929,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5529999732971191,
+        0.2170322686433792,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 4 Pro",
+      "key": "xiaomi-4-pro",
+      "triangles": 27312,
+      "meshes": 27,
+      "bytes": 852544,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6174284815788269,
+        -0.2616884410381317,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.597000002861023,
+        0.2616884410381317,
+        1.2603000402450562
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 4 Ultra",
+      "key": "xiaomi-4-ultra",
+      "triangles": 31492,
+      "meshes": 27,
+      "bytes": 992324,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6524285078048706,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.6320000290870667,
+        0.2616884410381317,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 5",
+      "key": "xiaomi-5",
+      "triangles": 25908,
+      "meshes": 27,
+      "bytes": 800444,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6324285268783569,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.6119999885559082,
+        0.2616884410381317,
+        1.2603000402450562
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 5 Pro",
+      "key": "xiaomi-5-pro",
+      "triangles": 26996,
+      "meshes": 27,
+      "bytes": 854784,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6324285268783569,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.6119999885559082,
+        0.2616884410381317,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 5 Max",
+      "key": "xiaomi-5-max",
+      "triangles": 27120,
+      "meshes": 28,
+      "bytes": 861256,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6324285268783569,
+        -0.2750000059604645,
+        0.0
+      ],
+      "boundsMax": [
+        0.6119999885559082,
+        0.2750000059604645,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin A1",
+      "key": "kukirin-a1",
+      "triangles": 27780,
+      "meshes": 27,
+      "bytes": 888796,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5974285006523132,
+        -0.29151684045791626,
+        0.0
+      ],
+      "boundsMax": [
+        0.5770000219345093,
+        0.2915167808532715,
+        1.3203001022338867
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin T3",
+      "key": "kukirin-t3",
+      "triangles": 26404,
+      "meshes": 27,
+      "bytes": 879752,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6224284768104553,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6019999980926514,
+        0.3114204406738281,
+        1.270300030708313
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iScooter iX6",
+      "key": "iscooter-ix6",
+      "triangles": 29856,
+      "meshes": 28,
+      "bytes": 1016072,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6860784888267517,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6650000214576721,
+        0.31142041087150574,
+        1.3403000831604004
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "KuKirin C1 Pro",
+      "key": "kukirin-c1-pro",
+      "triangles": 41372,
+      "meshes": 28,
+      "bytes": 1354840,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.7809784412384033,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.7580000162124634,
+        0.31142041087150574,
+        1.5500000715255737
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi Pro 2",
+      "key": "xiaomi-pro-2",
+      "triangles": 27604,
+      "meshes": 27,
+      "bytes": 862040,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5774785280227661,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5580000281333923,
+        0.2170322686433792,
+        1.2003000974655151
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot ES1",
+      "key": "segway-ninebot-es1",
+      "triangles": 25528,
+      "meshes": 26,
+      "bytes": 785832,
+      "packedReferences": 1,
+      "nativeMeshCount": 26,
+      "boundsMin": [
+        -0.5490785837173462,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.5299999713897705,
+        0.2616884410381317,
+        1.1503000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot ES2",
+      "key": "segway-ninebot-es2",
+      "triangles": 26132,
+      "meshes": 26,
+      "bytes": 821812,
+      "packedReferences": 1,
+      "nativeMeshCount": 26,
+      "boundsMin": [
+        -0.5490785837173462,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.5299999713897705,
+        0.2616884410381317,
+        1.1503000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot ES4",
+      "key": "segway-ninebot-es4",
+      "triangles": 25948,
+      "meshes": 26,
+      "bytes": 819188,
+      "packedReferences": 1,
+      "nativeMeshCount": 26,
+      "boundsMin": [
+        -0.5490785837173462,
+        -0.2616884410381317,
+        0.0
+      ],
+      "boundsMax": [
+        0.5299999713897705,
+        0.2616884410381317,
+        1.1503000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo G1",
+      "key": "kugoo-g1",
+      "triangles": 36948,
+      "meshes": 27,
+      "bytes": 1172860,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6474285125732422,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6269999742507935,
+        0.3114204406738281,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi M365",
+      "key": "xiaomi-m365",
+      "triangles": 27860,
+      "meshes": 27,
+      "bytes": 872468,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5574784874916077,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5379999876022339,
+        0.2170322686433792,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi M365 Pro",
+      "key": "xiaomi-m365-pro",
+      "triangles": 28684,
+      "meshes": 27,
+      "bytes": 903824,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5774785280227661,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5580000281333923,
+        0.2170322686433792,
+        1.2003000974655151
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi Essential",
+      "key": "xiaomi-essential",
+      "triangles": 29292,
+      "meshes": 27,
+      "bytes": 930336,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5574784874916077,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5379999876022339,
+        0.2170322686433792,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Xiaomi 1S",
+      "key": "xiaomi-1s",
+      "triangles": 26924,
+      "meshes": 27,
+      "bytes": 836164,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5574784874916077,
+        -0.2170322835445404,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5379999876022339,
+        0.2170322686433792,
+        1.1603000164031982
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo M2 Pro",
+      "key": "kugoo-m2-pro",
+      "triangles": 28736,
+      "meshes": 27,
+      "bytes": 909068,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.5624785423278809,
+        -0.2517545223236084,
+        0.0001699039712548256
+      ],
+      "boundsMax": [
+        0.5429999828338623,
+        0.2517545223236084,
+        1.1303000450134277
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo S1",
+      "key": "kugoo-s1",
+      "triangles": 27636,
+      "meshes": 28,
+      "bytes": 886156,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5340784788131714,
+        -0.2170322835445404,
+        0.0
+      ],
+      "boundsMax": [
+        0.5149999856948853,
+        0.2170322686433792,
+        1.120300054550171
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo S3 Pro",
+      "key": "kugoo-s3-pro",
+      "triangles": 29032,
+      "meshes": 28,
+      "bytes": 940748,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5340784788131714,
+        -0.2170322835445404,
+        0.0
+      ],
+      "boundsMax": [
+        0.5149999856948853,
+        0.2170322686433792,
+        1.120300054550171
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo G-Max",
+      "key": "kugoo-g-max",
+      "triangles": 28668,
+      "meshes": 27,
+      "bytes": 910748,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6174284815788269,
+        -0.3114204406738281,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.597000002861023,
+        0.31142041087150574,
+        1.170300006866455
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Joyor Y8-S",
+      "key": "joyor-y8-s",
+      "triangles": 35416,
+      "meshes": 28,
+      "bytes": 1121104,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6274285316467285,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6069999933242798,
+        0.3114204406738281,
+        1.210300087928772
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Joyor S5",
+      "key": "joyor-s5",
+      "triangles": 27408,
+      "meshes": 28,
+      "bytes": 921520,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6524285078048706,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6320000290870667,
+        0.3114204406738281,
+        1.2903000116348267
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot Max G30D",
+      "key": "segway-ninebot-max-g30d",
+      "triangles": 27696,
+      "meshes": 28,
+      "bytes": 874364,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6024284958839417,
+        -0.2750000059604645,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5820000171661377,
+        0.2750000059604645,
+        1.2203000783920288
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iENYRID ES10",
+      "key": "ienyrid-es10",
+      "triangles": 38156,
+      "meshes": 27,
+      "bytes": 1215664,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6624284982681274,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.6420000195503235,
+        0.31142041087150574,
+        1.3203001022338867
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo G2 Pro",
+      "key": "kugoo-g2-pro",
+      "triangles": 39696,
+      "meshes": 28,
+      "bytes": 1288760,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6137785315513611,
+        -0.3114204406738281,
+        0.0
+      ],
+      "boundsMax": [
+        0.593999981880188,
+        0.3114204406738281,
+        1.2503000497817993
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Segway Ninebot Max G30LP",
+      "key": "segway-ninebot-max-g30lp",
+      "triangles": 27724,
+      "meshes": 28,
+      "bytes": 875752,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5774285197257996,
+        -0.2750000059604645,
+        0.00019979449280072004
+      ],
+      "boundsMax": [
+        0.5569999814033508,
+        0.2750000059604645,
+        1.1503000259399414
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo S3",
+      "key": "kugoo-s3",
+      "triangles": 28208,
+      "meshes": 28,
+      "bytes": 908248,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5340784788131714,
+        -0.2170322835445404,
+        0.0
+      ],
+      "boundsMax": [
+        0.5149999856948853,
+        0.2170322686433792,
+        1.120300054550171
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom Leopard",
+      "key": "ausom-leopard",
+      "triangles": 32968,
+      "meshes": 28,
+      "bytes": 1083656,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6474285125732422,
+        -0.3163982033729553,
+        0.0
+      ],
+      "boundsMax": [
+        0.6269999742507935,
+        0.3163982033729553,
+        1.3203001022338867
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom Gallop",
+      "key": "ausom-gallop",
+      "triangles": 29500,
+      "meshes": 27,
+      "bytes": 1005580,
+      "packedReferences": 1,
+      "nativeMeshCount": 27,
+      "boundsMin": [
+        -0.6824284791946411,
+        -0.3462781012058258,
+        0.0
+      ],
+      "boundsMax": [
+        0.6620000004768372,
+        0.3462781012058258,
+        1.3203001022338867
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Kugoo S1 Pro",
+      "key": "kugoo-s1-pro",
+      "triangles": 23540,
+      "meshes": 28,
+      "bytes": 954948,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.5340784788131714,
+        -0.2170322835445404,
+        0.0
+      ],
+      "boundsMax": [
+        0.5149999856948853,
+        0.2170322686433792,
+        1.120300054550171
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Bogist M5 Pro",
+      "key": "bogist-m5-pro",
+      "triangles": 37432,
+      "meshes": 29,
+      "bytes": 1345368,
+      "packedReferences": 1,
+      "nativeMeshCount": 29,
+      "boundsMin": [
+        -0.6436784267425537,
+        -0.30146706104278564,
+        0.0
+      ],
+      "boundsMax": [
+        0.621999979019165,
+        0.30146706104278564,
+        1.170300006866455
+      ],
+      "requiredGroups": {
+        "FrontWheel": 5,
+        "RearWheel": 4,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "iScooter iX5",
+      "key": "iscooter-ix5",
+      "triangles": 36908,
+      "meshes": 28,
+      "bytes": 1184144,
+      "packedReferences": 1,
+      "nativeMeshCount": 28,
+      "boundsMin": [
+        -0.6124284863471985,
+        -0.30146706104278564,
+        0.0
+      ],
+      "boundsMax": [
+        0.5920000076293945,
+        0.30146706104278564,
+        1.2503000497817993
+      ],
+      "requiredGroups": {
+        "FrontWheel": 4,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "Ausom DT1 Pro",
+      "key": "ausom-dt1-pro",
+      "triangles": 28652,
+      "meshes": 26,
+      "bytes": 967664,
+      "packedReferences": 1,
+      "nativeMeshCount": 26,
+      "boundsMin": [
+        -0.6874284744262695,
+        -0.3163982033729553,
+        0.0
+      ],
+      "boundsMax": [
+        0.6669999957084656,
+        0.3163982033729553,
+        1.3203001022338867
+      ],
+      "requiredGroups": {
+        "FrontWheel": 3,
+        "RearWheel": 3,
+        "BatteryMount": 1,
+        "ControllerMount": 1,
+        "MotorMount": 3
+      },
+      "passed": true
+    }
+  ]
+}

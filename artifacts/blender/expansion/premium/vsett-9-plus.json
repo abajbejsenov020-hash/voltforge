@@ -1,0 +1,26 @@
+{
+  "name": "Vsett 9+",
+  "model": {
+    "key": "vsett-9-plus",
+    "url": "/models/expansion/premium/vsett-9-plus.glb",
+    "nativeSource": "assets/blender/expansion/premium/vsett-9-plus.blend",
+    "triangles": 53660,
+    "meshes": 36,
+    "bytes": 1406376,
+    "family": "Vsett 9+ exterior"
+  },
+  "bounds": [
+    [
+      -0.5781000852584839,
+      -0.33000001311302185,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5580000281333923,
+      0.33000001311302185,
+      1.2899930477142334
+    ]
+  ],
+  "observed": "Turquoise dual-hub nine-inch C arms, matching rim stripes and double spring suspension.",
+  "revision": 2
+}

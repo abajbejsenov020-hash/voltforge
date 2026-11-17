@@ -1,0 +1,26 @@
+{
+  "name": "InMotion RS",
+  "model": {
+    "key": "inmotion-rs",
+    "url": "/models/expansion/premium/inmotion-rs.glb",
+    "nativeSource": "assets/blender/expansion/premium/inmotion-rs.blend",
+    "triangles": 55304,
+    "meshes": 36,
+    "bytes": 1483580,
+    "family": "InMotion RS exterior"
+  },
+  "bounds": [
+    [
+      -0.7367000579833984,
+      -0.35500001907348633,
+      0.0
+    ],
+    [
+      0.7149999737739563,
+      0.35500001907348633,
+      1.5299930572509766
+    ]
+  ],
+  "observed": "Tall twin-section stem, orange adjustable swingarms, very long battery deck, wide road tyres and low frame LED lamps.",
+  "revision": 2
+}

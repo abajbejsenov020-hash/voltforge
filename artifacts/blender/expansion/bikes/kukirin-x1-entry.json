@@ -1,0 +1,26 @@
+{
+  "name": "KuKirin X1",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/kukirin-x1.webp",
+  "source": "https://pl.kukirin-escooter.com/products/kukirin-x1-electric-dirt-bike",
+  "imageSource": "https://kukirin-escooter.com/cdn/shop/files/KuKirinX1ElectricDirtBike.png?v=1769766863&width=1024",
+  "credit": "pl.kukirin-escooter.com",
+  "variantNote": "KuKirin X1 Elektryczny motocykl terenowy (https://pl.kukirin-escooter.com/products/kukirin-x1-electric-dirt-bike)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 73372,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "kukirin-x1",
+    "url": "/models/expansion/bikes/kukirin-x1.glb",
+    "nativeSource": "assets/blender/expansion/bikes/kukirin-x1.blend",
+    "triangles": 28464,
+    "meshes": 29,
+    "bytes": 886584,
+    "family": "compact-mx"
+  }
+}

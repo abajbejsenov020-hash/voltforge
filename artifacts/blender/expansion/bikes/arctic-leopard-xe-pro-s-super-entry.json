@@ -1,0 +1,26 @@
+{
+  "name": "Arctic Leopard XE Pro S Super",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/arctic-leopard-xe-pro-s-super.webp",
+  "source": "https://arctic-leopard.com/produit/xe-pro-s-super/",
+  "imageSource": "https://arctic-leopard.com/wp-content/uploads/2026/09/%E9%9D%9E%E5%AE%9E%E6%8B%8D%E5%9B%BE%EF%BC%8C%E8%B0%A8%E6%85%8E%E4%BD%BF%E7%94%A8%EF%BC%8C%E5%90%8E%E7%BB%AD%E4%BC%9A%E6%9B%B4%E6%96%B0.png",
+  "credit": "arctic-leopard.com",
+  "variantNote": "XE PRO S Super; manufacturer product illustration (source filename states not a real photograph). Shape is a photo-reference visual reconstruction, not CAD.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    943
+  ],
+  "bytes": 134148,
+  "referenceKind": "manufacturer-product-illustration",
+  "model": {
+    "key": "arctic-leopard-xe-pro-s-super",
+    "url": "/models/expansion/bikes/arctic-leopard-xe-pro-s-super.glb",
+    "nativeSource": "assets/blender/expansion/bikes/arctic-leopard-xe-pro-s-super.blend",
+    "triangles": 33704,
+    "meshes": 36,
+    "bytes": 997204,
+    "family": "arctic-xe-super"
+  }
+}

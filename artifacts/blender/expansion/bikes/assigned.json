@@ -1,0 +1,855 @@
+[
+  {
+    "id": "bike:kukirin-x1",
+    "brand": "KuKirin",
+    "model": "X1",
+    "name": "KuKirin X1",
+    "type": "bike",
+    "aliases": [
+      "Kugoo Kirin X1",
+      "KugooKirin X1"
+    ]
+  },
+  {
+    "id": "bike:sur-ron-light-bee",
+    "brand": "Sur-Ron",
+    "model": "Light Bee",
+    "name": "Sur-Ron Light Bee",
+    "type": "bike",
+    "aliases": [
+      "Surron Light Bee",
+      "Sur Ron Light Bee"
+    ]
+  },
+  {
+    "id": "bike:talaria-sting",
+    "brand": "Talaria",
+    "model": "Sting",
+    "name": "Talaria Sting",
+    "type": "bike",
+    "aliases": [
+      "Talaria Moto Sting"
+    ]
+  },
+  {
+    "id": "bike:talaria-x3",
+    "brand": "Talaria",
+    "model": "X3",
+    "name": "Talaria X3",
+    "type": "bike",
+    "aliases": [
+      "Talaria Moto X3"
+    ]
+  },
+  {
+    "id": "bike:engwe-ep-2-pro",
+    "brand": "Engwe",
+    "model": "EP-2 Pro",
+    "name": "Engwe EP-2 Pro",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-engine-pro",
+    "brand": "Engwe",
+    "model": "Engine Pro",
+    "name": "Engwe Engine Pro",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-engine-pro-2-0",
+    "brand": "Engwe",
+    "model": "Engine Pro 2.0",
+    "name": "Engwe Engine Pro 2.0",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-m20",
+    "brand": "Engwe",
+    "model": "M20",
+    "name": "Engwe M20",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-x20",
+    "brand": "Engwe",
+    "model": "X20",
+    "name": "Engwe X20",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-x24",
+    "brand": "Engwe",
+    "model": "X24",
+    "name": "Engwe X24",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-x26",
+    "brand": "Engwe",
+    "model": "X26",
+    "name": "Engwe X26",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-l20",
+    "brand": "Engwe",
+    "model": "L20",
+    "name": "Engwe L20",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-l20-2-0",
+    "brand": "Engwe",
+    "model": "L20 2.0",
+    "name": "Engwe L20 2.0",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-p275-pro",
+    "brand": "Engwe",
+    "model": "P275 Pro",
+    "name": "Engwe P275 Pro",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:engwe-mapfour-n1-air",
+    "brand": "Engwe",
+    "model": "MapFour N1 Air",
+    "name": "Engwe MapFour N1 Air",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-d4s",
+    "brand": "Fiido",
+    "model": "D4S",
+    "name": "Fiido D4S",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-d11",
+    "brand": "Fiido",
+    "model": "D11",
+    "name": "Fiido D11",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-d21",
+    "brand": "Fiido",
+    "model": "D21",
+    "name": "Fiido D21",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-m21",
+    "brand": "Fiido",
+    "model": "M21",
+    "name": "Fiido M21",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-t1",
+    "brand": "Fiido",
+    "model": "T1",
+    "name": "Fiido T1",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-t2",
+    "brand": "Fiido",
+    "model": "T2",
+    "name": "Fiido T2",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-titan",
+    "brand": "Fiido",
+    "model": "Titan",
+    "name": "Fiido Titan",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-c21",
+    "brand": "Fiido",
+    "model": "C21",
+    "name": "Fiido C21",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:fiido-air",
+    "brand": "Fiido",
+    "model": "Air",
+    "name": "Fiido Air",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-aventure",
+    "brand": "Aventon",
+    "model": "Aventure",
+    "name": "Aventon Aventure",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-aventure-2",
+    "brand": "Aventon",
+    "model": "Aventure.2",
+    "name": "Aventon Aventure.2",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-level",
+    "brand": "Aventon",
+    "model": "Level",
+    "name": "Aventon Level",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-level-2",
+    "brand": "Aventon",
+    "model": "Level.2",
+    "name": "Aventon Level.2",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-pace-500",
+    "brand": "Aventon",
+    "model": "Pace 500",
+    "name": "Aventon Pace 500",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-pace-500-3",
+    "brand": "Aventon",
+    "model": "Pace 500.3",
+    "name": "Aventon Pace 500.3",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-soltera",
+    "brand": "Aventon",
+    "model": "Soltera",
+    "name": "Aventon Soltera",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-sinch",
+    "brand": "Aventon",
+    "model": "Sinch",
+    "name": "Aventon Sinch",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-abound",
+    "brand": "Aventon",
+    "model": "Abound",
+    "name": "Aventon Abound",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:aventon-ramblas",
+    "brand": "Aventon",
+    "model": "Ramblas",
+    "name": "Aventon Ramblas",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:rad-power-radrunner",
+    "brand": "Rad Power",
+    "model": "RadRunner",
+    "name": "Rad Power RadRunner",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadRunner",
+      "RadPower RadRunner"
+    ]
+  },
+  {
+    "id": "bike:rad-power-radrunner-2",
+    "brand": "Rad Power",
+    "model": "RadRunner 2",
+    "name": "Rad Power RadRunner 2",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadRunner 2",
+      "RadPower RadRunner 2"
+    ]
+  },
+  {
+    "id": "bike:rad-power-radrunner-plus",
+    "brand": "Rad Power",
+    "model": "RadRunner Plus",
+    "name": "Rad Power RadRunner Plus",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadRunner Plus",
+      "RadPower RadRunner Plus"
+    ]
+  },
+  {
+    "id": "bike:rad-power-radrover-6-plus",
+    "brand": "Rad Power",
+    "model": "RadRover 6 Plus",
+    "name": "Rad Power RadRover 6 Plus",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadRover 6 Plus",
+      "RadPower RadRover 6 Plus"
+    ]
+  },
+  {
+    "id": "bike:rad-power-radcity-5-plus",
+    "brand": "Rad Power",
+    "model": "RadCity 5 Plus",
+    "name": "Rad Power RadCity 5 Plus",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadCity 5 Plus",
+      "RadPower RadCity 5 Plus"
+    ]
+  },
+  {
+    "id": "bike:rad-power-radexpand-5",
+    "brand": "Rad Power",
+    "model": "RadExpand 5",
+    "name": "Rad Power RadExpand 5",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadExpand 5",
+      "RadPower RadExpand 5"
+    ]
+  },
+  {
+    "id": "bike:rad-power-radwagon-4",
+    "brand": "Rad Power",
+    "model": "RadWagon 4",
+    "name": "Rad Power RadWagon 4",
+    "type": "bike",
+    "aliases": [
+      "Rad Power Bikes RadWagon 4",
+      "RadPower RadWagon 4"
+    ]
+  },
+  {
+    "id": "bike:trek-marlin",
+    "brand": "Trek",
+    "model": "Marlin",
+    "name": "Trek Marlin",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:trek-marlin-",
+    "brand": "Trek",
+    "model": "Marlin+",
+    "name": "Trek Marlin+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:trek-powerfly",
+    "brand": "Trek",
+    "model": "Powerfly",
+    "name": "Trek Powerfly",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:trek-rail",
+    "brand": "Trek",
+    "model": "Rail",
+    "name": "Trek Rail",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:trek-allant-",
+    "brand": "Trek",
+    "model": "Allant+",
+    "name": "Trek Allant+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:trek-verve-",
+    "brand": "Trek",
+    "model": "Verve+",
+    "name": "Trek Verve+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:trek-fx-",
+    "brand": "Trek",
+    "model": "FX+",
+    "name": "Trek FX+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:giant-talon",
+    "brand": "Giant",
+    "model": "Talon",
+    "name": "Giant Talon",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:giant-talon-e-",
+    "brand": "Giant",
+    "model": "Talon E+",
+    "name": "Giant Talon E+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:giant-explore-e-",
+    "brand": "Giant",
+    "model": "Explore E+",
+    "name": "Giant Explore E+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:giant-trance-x-e-",
+    "brand": "Giant",
+    "model": "Trance X E+",
+    "name": "Giant Trance X E+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:giant-reign-e-",
+    "brand": "Giant",
+    "model": "Reign E+",
+    "name": "Giant Reign E+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:giant-fathom-e-",
+    "brand": "Giant",
+    "model": "Fathom E+",
+    "name": "Giant Fathom E+",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:specialized-rockhopper",
+    "brand": "Specialized",
+    "model": "Rockhopper",
+    "name": "Specialized Rockhopper",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:specialized-turbo-levo",
+    "brand": "Specialized",
+    "model": "Turbo Levo",
+    "name": "Specialized Turbo Levo",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:specialized-turbo-kenevo",
+    "brand": "Specialized",
+    "model": "Turbo Kenevo",
+    "name": "Specialized Turbo Kenevo",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:specialized-turbo-vado",
+    "brand": "Specialized",
+    "model": "Turbo Vado",
+    "name": "Specialized Turbo Vado",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:specialized-turbo-como",
+    "brand": "Specialized",
+    "model": "Turbo Como",
+    "name": "Specialized Turbo Como",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:specialized-turbo-tero",
+    "brand": "Specialized",
+    "model": "Turbo Tero",
+    "name": "Specialized Turbo Tero",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cube-reaction-hybrid",
+    "brand": "Cube",
+    "model": "Reaction Hybrid",
+    "name": "Cube Reaction Hybrid",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cube-stereo-hybrid",
+    "brand": "Cube",
+    "model": "Stereo Hybrid",
+    "name": "Cube Stereo Hybrid",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cube-kathmandu-hybrid",
+    "brand": "Cube",
+    "model": "Kathmandu Hybrid",
+    "name": "Cube Kathmandu Hybrid",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cube-touring-hybrid",
+    "brand": "Cube",
+    "model": "Touring Hybrid",
+    "name": "Cube Touring Hybrid",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cannondale-moterra-neo",
+    "brand": "Cannondale",
+    "model": "Moterra Neo",
+    "name": "Cannondale Moterra Neo",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cannondale-trail-neo",
+    "brand": "Cannondale",
+    "model": "Trail Neo",
+    "name": "Cannondale Trail Neo",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cannondale-adventure-neo",
+    "brand": "Cannondale",
+    "model": "Adventure Neo",
+    "name": "Cannondale Adventure Neo",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:cannondale-tesoro-neo",
+    "brand": "Cannondale",
+    "model": "Tesoro Neo",
+    "name": "Cannondale Tesoro Neo",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:haibike-allmtn",
+    "brand": "Haibike",
+    "model": "AllMtn",
+    "name": "Haibike AllMtn",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:haibike-hardnine",
+    "brand": "Haibike",
+    "model": "HardNine",
+    "name": "Haibike HardNine",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:haibike-hardseven",
+    "brand": "Haibike",
+    "model": "HardSeven",
+    "name": "Haibike HardSeven",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:haibike-trekking",
+    "brand": "Haibike",
+    "model": "Trekking",
+    "name": "Haibike Trekking",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:himiway-cruiser",
+    "brand": "Himiway",
+    "model": "Cruiser",
+    "name": "Himiway Cruiser",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:himiway-zebra",
+    "brand": "Himiway",
+    "model": "Zebra",
+    "name": "Himiway Zebra",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:himiway-cobra",
+    "brand": "Himiway",
+    "model": "Cobra",
+    "name": "Himiway Cobra",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:himiway-big-dog",
+    "brand": "Himiway",
+    "model": "Big Dog",
+    "name": "Himiway Big Dog",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:lectric-xp-2-0",
+    "brand": "Lectric",
+    "model": "XP 2.0",
+    "name": "Lectric XP 2.0",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:lectric-xp-3-0",
+    "brand": "Lectric",
+    "model": "XP 3.0",
+    "name": "Lectric XP 3.0",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:lectric-xp-lite",
+    "brand": "Lectric",
+    "model": "XP Lite",
+    "name": "Lectric XP Lite",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:lectric-xpedition",
+    "brand": "Lectric",
+    "model": "XPedition",
+    "name": "Lectric XPedition",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:lectric-xpeak",
+    "brand": "Lectric",
+    "model": "XPeak",
+    "name": "Lectric XPeak",
+    "type": "bike",
+    "aliases": []
+  },
+  {
+    "id": "bike:super73-s2",
+    "brand": "Super73",
+    "model": "S2",
+    "name": "Super73 S2",
+    "type": "bike",
+    "aliases": [
+      "Super 73 S2"
+    ]
+  },
+  {
+    "id": "bike:super73-r",
+    "brand": "Super73",
+    "model": "R",
+    "name": "Super73 R",
+    "type": "bike",
+    "aliases": [
+      "Super 73 R"
+    ]
+  },
+  {
+    "id": "bike:super73-rx",
+    "brand": "Super73",
+    "model": "RX",
+    "name": "Super73 RX",
+    "type": "bike",
+    "aliases": [
+      "Super 73 RX"
+    ]
+  },
+  {
+    "id": "bike:super73-zx",
+    "brand": "Super73",
+    "model": "ZX",
+    "name": "Super73 ZX",
+    "type": "bike",
+    "aliases": [
+      "Super 73 ZX"
+    ]
+  },
+  {
+    "id": "bike:super73-z-miami",
+    "brand": "Super73",
+    "model": "Z Miami",
+    "name": "Super73 Z Miami",
+    "type": "bike",
+    "aliases": [
+      "Super 73 Z Miami"
+    ]
+  },
+  {
+    "id": "bike:sur-ron-light-bee-s",
+    "brand": "Sur-Ron",
+    "model": "Light Bee S",
+    "name": "Sur-Ron Light Bee S",
+    "type": "bike",
+    "aliases": [
+      "Surron Light Bee S",
+      "Sur Ron Light Bee S",
+      "Surron LBS"
+    ]
+  },
+  {
+    "id": "bike:talaria-sting-mx3",
+    "brand": "Talaria",
+    "model": "Sting MX3",
+    "name": "Talaria Sting MX3",
+    "type": "bike",
+    "aliases": [
+      "Talaria Moto Sting MX3",
+      "Talaria MX3"
+    ]
+  },
+  {
+    "id": "bike:talaria-xxx-l1e",
+    "brand": "Talaria",
+    "model": "XXX L1E",
+    "name": "Talaria XXX L1E",
+    "type": "bike",
+    "aliases": [
+      "Talaria Moto XXX L1E"
+    ]
+  },
+  {
+    "id": "bike:arctic-leopard-xe-pro-s-super",
+    "brand": "Arctic Leopard",
+    "model": "XE Pro S Super",
+    "name": "Arctic Leopard XE Pro S Super",
+    "type": "bike",
+    "aliases": [
+      "ArcticLeopard XE Pro S Super",
+      "Arctic XE Pro S Super",
+      "Spirit Leopard XE Pro S Super"
+    ]
+  },
+  {
+    "id": "bike:arctic-leopard-e-16z",
+    "brand": "Arctic Leopard",
+    "model": "E-16Z",
+    "name": "Arctic Leopard E-16Z",
+    "type": "bike",
+    "aliases": [
+      "ArcticLeopard E-16Z",
+      "Arctic E-16Z",
+      "Spirit Leopard E-16Z"
+    ]
+  },
+  {
+    "id": "bike:arctic-leopard-e-20y",
+    "brand": "Arctic Leopard",
+    "model": "E-20Y",
+    "name": "Arctic Leopard E-20Y",
+    "type": "bike",
+    "aliases": [
+      "ArcticLeopard E-20Y",
+      "Arctic E-20Y",
+      "Spirit Leopard E-20Y"
+    ]
+  },
+  {
+    "id": "bike:arctic-leopard-e-zpro",
+    "brand": "Arctic Leopard",
+    "model": "E-ZPRO",
+    "name": "Arctic Leopard E-ZPRO",
+    "type": "bike",
+    "aliases": [
+      "ArcticLeopard E-ZPRO",
+      "Arctic E-ZPRO",
+      "Spirit Leopard E-ZPRO"
+    ]
+  },
+  {
+    "id": "bike:stark-varg",
+    "brand": "Stark",
+    "model": "Varg",
+    "name": "Stark Varg",
+    "type": "bike",
+    "aliases": [
+      "Stark Future Varg"
+    ]
+  },
+  {
+    "id": "bike:e-ride-pro-ss",
+    "brand": "E Ride Pro",
+    "model": "SS",
+    "name": "E Ride Pro SS",
+    "type": "bike",
+    "aliases": [
+      "Eride Pro SS",
+      "E-Ride Pro SS",
+      "E Ride SS",
+      "Eride SS"
+    ]
+  },
+  {
+    "id": "bike:altis-sigma",
+    "brand": "Altis",
+    "model": "Sigma",
+    "name": "Altis Sigma",
+    "type": "bike",
+    "aliases": [
+      "Altis Powersports Sigma"
+    ]
+  },
+  {
+    "id": "bike:altis-delta",
+    "brand": "Altis",
+    "model": "Delta",
+    "name": "Altis Delta",
+    "type": "bike",
+    "aliases": [
+      "Altis Powersports Delta"
+    ]
+  }
+]

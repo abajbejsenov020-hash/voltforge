@@ -1,0 +1,48 @@
+{
+  "key": "segway-ninebot-p100s",
+  "name": "Segway Ninebot P100S",
+  "family": "Segway P wide-deck",
+  "parameters": {
+    "family": "Segway P wide-deck",
+    "r": 0.133,
+    "wide": 0.035,
+    "wb": 1.08,
+    "dl": 0.58,
+    "dw": 0.22,
+    "dz": 0.28,
+    "h": 1.28,
+    "bar": 0.64,
+    "stem": "wide",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.9,
+      0.31,
+      0.025
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": true,
+    "solidArm": false,
+    "frontcover": "closed"
+  },
+  "triangles": 36524,
+  "meshes": 28,
+  "bytes": 1165936,
+  "source": "https://eu-en.segway.com/ekickscooter/products/p100se.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-p100s.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-p100s.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-p100s.glb",
+  "finalReferenceReview": [
+    "Added P monocoque neck and rear orange heel trim"
+  ]
+}

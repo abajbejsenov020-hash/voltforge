@@ -1,0 +1,26 @@
+{
+  "name": "Apollo Explore",
+  "model": {
+    "key": "apollo-explore",
+    "url": "/models/expansion/premium/apollo-explore.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-explore.blend",
+    "triangles": 50112,
+    "meshes": 33,
+    "bytes": 1324176,
+    "family": "Apollo Explore exterior"
+  },
+  "bounds": [
+    [
+      -0.6230499744415283,
+      -0.3149999976158142,
+      0.0
+    ],
+    [
+      0.6019999980926514,
+      0.3150000274181366,
+      1.2799930572509766
+    ]
+  ],
+  "observed": "Original Explore narrow deck, blue rear suspension insert, thin telescopic stem and single rear hub motor.",
+  "revision": 2
+}

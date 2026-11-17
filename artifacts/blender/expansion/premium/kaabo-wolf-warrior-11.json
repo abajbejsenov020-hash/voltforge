@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Wolf Warrior 11",
+  "model": {
+    "key": "kaabo-wolf-warrior-11",
+    "url": "/models/expansion/premium/kaabo-wolf-warrior-11.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-wolf-warrior-11.blend",
+    "triangles": 52488,
+    "meshes": 35,
+    "bytes": 1419740,
+    "family": "Kaabo Wolf Warrior 11 exact photographed appearance"
+  },
+  "bounds": [
+    [
+      -0.6866999864578247,
+      -0.375,
+      0.000238936030655168
+    ],
+    [
+      0.6647610664367676,
+      0.375,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Original Wolf Warrior 11 black twin long steering stanchions, lower polished forks, low pair of round headlights and black raised rear brace.",
+  "revision": 2
+}

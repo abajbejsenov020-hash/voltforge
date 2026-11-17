@@ -1,0 +1,8 @@
+import json,subprocess,concurrent.futures,re
+from pathlib import Path
+O=Path('artifacts/blender/expansion/commuter')
+urls=[('ausom-old','https://ausomstore.com/products/ausom-leopard-dt1-pro-electric-scooter.js'),('ausom-dt1','https://ausomstore.com/products/ausom-leopard-dt1-electric-scooter.js'),('ausom-leopard','https://ausomstore.com/products/ausom-leopard-electric-scooter.js'),('ausom-gallop','https://ausomstore.com/products/ausom-gallop-electric-scooter.js'),('joyor-all','https://joyorscooter.com/collections/electric-scooters/products.json?limit=250'),('iscooter-eu2','https://www.iscooterglobal.eu/products.json?limit=250&page=2'),('jlkugoo-map','https://www.jlkugoo.com/sitemap.xml'),('ienyrid-es10','https://www.ienyridscooter.com/products/ienyrid-es10-electric-scooter'),('kukirin-c1-pro','https://www.kukirin-escooters.com/products/kukirin-c1-pro'),('xiaomi-m365','https://www.mi.com/es/mi-electric-scooter/'),('xiaomi-pro2','https://www.mi.com/uk/mi-electric-scooter-Pro2/'),('xiaomi-1s','https://www.mi.com/uk/mi-electric-scooter-1S/'),('xiaomi-essential','https://www.mi.com/uk/mi-electric-scooter-essential/'),('xiaomi-m365pro','https://www.mi.com/uk/mi-electric-scooter-pro/'),('kugoo-g1','https://kugoomotors.com/katalog/gs/elektrosamokaty-kugoo-serii-g/kugoo-g1')]
+def get(t):
+ key,url=t;r=subprocess.run(['curl','-L','-s','--fail','--max-time','40','-A','Mozilla/5.0',url],capture_output=True);s=r.stdout.decode(errors='replace');(O/(key+'-source.txt')).write_text(s);print(key,len(s),s[:35],flush=True);return {'key':key,'url':url,'bytes':len(s)}
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:res=list(ex.map(get,urls))
+json.dump(res,open(O/'old-sources.json','w'),indent=2)

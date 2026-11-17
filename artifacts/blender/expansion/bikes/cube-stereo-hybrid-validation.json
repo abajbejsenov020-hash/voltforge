@@ -1,0 +1,29 @@
+{
+  "name": "Cube Stereo Hybrid",
+  "key": "cube-stereo-hybrid",
+  "dimensions_m": [
+    1.99,
+    0.6634,
+    1.0947
+  ],
+  "triangles": 29604,
+  "meshes": 31,
+  "bytes": 943460,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "cube-stereo-hybrid.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

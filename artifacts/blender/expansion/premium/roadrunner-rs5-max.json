@@ -1,0 +1,26 @@
+{
+  "name": "RoadRunner RS5 Max",
+  "model": {
+    "key": "roadrunner-rs5-max",
+    "url": "/models/expansion/premium/roadrunner-rs5-max.glb",
+    "nativeSource": "assets/blender/expansion/premium/roadrunner-rs5-max.blend",
+    "triangles": 59160,
+    "meshes": 36,
+    "bytes": 1639748,
+    "family": "RoadRunner RS5 Max exterior"
+  },
+  "bounds": [
+    [
+      -0.6543499827384949,
+      -0.33000001311302185,
+      0.000238936030655168
+    ],
+    [
+      0.6327610611915588,
+      0.33000001311302185,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Sapphire blue open sculpted arms and stem trim, removable deck battery, ribbed rear brace and high round light.",
+  "revision": 2
+}

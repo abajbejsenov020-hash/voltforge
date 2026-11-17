@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-s3-pro",
+  "name": "KuKirin S3 Pro",
+  "family": "KuKirin compact commuter",
+  "parameters": {
+    "family": "KuKirin compact commuter",
+    "r": 0.105,
+    "wide": 0.023,
+    "wb": 0.83,
+    "dl": 0.46,
+    "dw": 0.145,
+    "dz": 0.15,
+    "h": 1.1,
+    "bar": 0.45,
+    "stem": "telescopic",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "front",
+    "disc": "none",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.4,
+      0.4,
+      0.38
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 27004,
+  "meshes": 28,
+  "bytes": 846492,
+  "source": "https://kukirin-escooter.com/products/kukirin-s3-pro-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-s3-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-s3-pro.blend",
+  "url": "/models/expansion/commuter/kukirin-s3-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

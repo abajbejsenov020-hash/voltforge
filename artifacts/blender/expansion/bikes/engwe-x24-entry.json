@@ -1,0 +1,26 @@
+{
+  "name": "Engwe X24",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-x24.webp",
+  "source": "https://engwe.com/products/engwe-x26-x24-x20",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_1564c138-6a57-4af7-9781-8b48fe918a1a.jpg?v=1794548374",
+  "credit": "engwe.com",
+  "variantNote": "ENGWE X24 29.2Ah Dual Batteries / Grey",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 85650,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-x24",
+    "url": "/models/expansion/bikes/engwe-x24.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-x24.blend",
+    "triangles": 31116,
+    "meshes": 36,
+    "bytes": 966768,
+    "family": "fullfold"
+  }
+}

@@ -1,0 +1,923 @@
+[
+  {
+    "id": "scooter:dualtron-thunder",
+    "brand": "Dualtron",
+    "model": "Thunder",
+    "name": "Dualtron Thunder",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Thunder",
+      "Minimotors Thunder"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-thunder-2",
+    "brand": "Dualtron",
+    "model": "Thunder 2",
+    "name": "Dualtron Thunder 2",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Thunder 2",
+      "Minimotors Thunder 2"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-thunder-3",
+    "brand": "Dualtron",
+    "model": "Thunder 3",
+    "name": "Dualtron Thunder 3",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Thunder 3",
+      "Minimotors Thunder 3"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-ultra",
+    "brand": "Dualtron",
+    "model": "Ultra",
+    "name": "Dualtron Ultra",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Ultra",
+      "Minimotors Ultra"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-ultra-2",
+    "brand": "Dualtron",
+    "model": "Ultra 2",
+    "name": "Dualtron Ultra 2",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Ultra 2",
+      "Minimotors Ultra 2"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-victor",
+    "brand": "Dualtron",
+    "model": "Victor",
+    "name": "Dualtron Victor",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Victor",
+      "Minimotors Victor"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-victor-luxury",
+    "brand": "Dualtron",
+    "model": "Victor Luxury",
+    "name": "Dualtron Victor Luxury",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Victor Luxury",
+      "Minimotors Victor Luxury"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-victor-luxury-plus",
+    "brand": "Dualtron",
+    "model": "Victor Luxury Plus",
+    "name": "Dualtron Victor Luxury Plus",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Victor Luxury Plus",
+      "Minimotors Victor Luxury Plus"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-eagle-pro",
+    "brand": "Dualtron",
+    "model": "Eagle Pro",
+    "name": "Dualtron Eagle Pro",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Eagle Pro",
+      "Minimotors Eagle Pro"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-achilleus",
+    "brand": "Dualtron",
+    "model": "Achilleus",
+    "name": "Dualtron Achilleus",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Achilleus",
+      "Minimotors Achilleus"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-storm",
+    "brand": "Dualtron",
+    "model": "Storm",
+    "name": "Dualtron Storm",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Storm",
+      "Minimotors Storm"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-storm-limited",
+    "brand": "Dualtron",
+    "model": "Storm Limited",
+    "name": "Dualtron Storm Limited",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Storm Limited",
+      "Minimotors Storm Limited"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-x",
+    "brand": "Dualtron",
+    "model": "X",
+    "name": "Dualtron X",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron X",
+      "Minimotors X"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-x2",
+    "brand": "Dualtron",
+    "model": "X2",
+    "name": "Dualtron X2",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron X2",
+      "Minimotors X2"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-x-limited",
+    "brand": "Dualtron",
+    "model": "X Limited",
+    "name": "Dualtron X Limited",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron X Limited",
+      "Minimotors X Limited"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-spider",
+    "brand": "Dualtron",
+    "model": "Spider",
+    "name": "Dualtron Spider",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Spider",
+      "Minimotors Spider"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-spider-2",
+    "brand": "Dualtron",
+    "model": "Spider 2",
+    "name": "Dualtron Spider 2",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Spider 2",
+      "Minimotors Spider 2"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-mini",
+    "brand": "Dualtron",
+    "model": "Mini",
+    "name": "Dualtron Mini",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Mini",
+      "Minimotors Mini"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-mini-special",
+    "brand": "Dualtron",
+    "model": "Mini Special",
+    "name": "Dualtron Mini Special",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Mini Special",
+      "Minimotors Mini Special"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-popular",
+    "brand": "Dualtron",
+    "model": "Popular",
+    "name": "Dualtron Popular",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Popular",
+      "Minimotors Popular"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-city",
+    "brand": "Dualtron",
+    "model": "City",
+    "name": "Dualtron City",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron City",
+      "Minimotors City"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-togo",
+    "brand": "Dualtron",
+    "model": "Togo",
+    "name": "Dualtron Togo",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Togo",
+      "Minimotors Togo"
+    ]
+  },
+  {
+    "id": "scooter:dualtron-forever",
+    "brand": "Dualtron",
+    "model": "Forever",
+    "name": "Dualtron Forever",
+    "type": "scooter",
+    "aliases": [
+      "MiniMotors Dualtron Forever",
+      "Minimotors Forever"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-mantis-8",
+    "brand": "Kaabo",
+    "model": "Mantis 8",
+    "name": "Kaabo Mantis 8",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Mantis 8"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-mantis-10",
+    "brand": "Kaabo",
+    "model": "Mantis 10",
+    "name": "Kaabo Mantis 10",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Mantis 10"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-mantis-10-pro",
+    "brand": "Kaabo",
+    "model": "Mantis 10 Pro",
+    "name": "Kaabo Mantis 10 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Mantis 10 Pro"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-mantis-king-gt",
+    "brand": "Kaabo",
+    "model": "Mantis King GT",
+    "name": "Kaabo Mantis King GT",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Mantis King GT"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-mantis-x",
+    "brand": "Kaabo",
+    "model": "Mantis X",
+    "name": "Kaabo Mantis X",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Mantis X"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-wolf-warrior-11",
+    "brand": "Kaabo",
+    "model": "Wolf Warrior 11",
+    "name": "Kaabo Wolf Warrior 11",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Wolf Warrior 11"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-wolf-warrior-x",
+    "brand": "Kaabo",
+    "model": "Wolf Warrior X",
+    "name": "Kaabo Wolf Warrior X",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Wolf Warrior X"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-wolf-king",
+    "brand": "Kaabo",
+    "model": "Wolf King",
+    "name": "Kaabo Wolf King",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Wolf King"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-wolf-king-gt",
+    "brand": "Kaabo",
+    "model": "Wolf King GT",
+    "name": "Kaabo Wolf King GT",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Wolf King GT"
+    ]
+  },
+  {
+    "id": "scooter:kaabo-wolf-king-gtr",
+    "brand": "Kaabo",
+    "model": "Wolf King GTR",
+    "name": "Kaabo Wolf King GTR",
+    "type": "scooter",
+    "aliases": [
+      "Kaboo Wolf King GTR"
+    ]
+  },
+  {
+    "id": "scooter:nami-burn-e",
+    "brand": "NAMI",
+    "model": "Burn-E",
+    "name": "NAMI Burn-E",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Burn-E"
+    ]
+  },
+  {
+    "id": "scooter:nami-burn-e-2",
+    "brand": "NAMI",
+    "model": "Burn-E 2",
+    "name": "NAMI Burn-E 2",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Burn-E 2"
+    ]
+  },
+  {
+    "id": "scooter:nami-burn-e-2-max",
+    "brand": "NAMI",
+    "model": "Burn-E 2 Max",
+    "name": "NAMI Burn-E 2 Max",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Burn-E 2 Max"
+    ]
+  },
+  {
+    "id": "scooter:nami-klima",
+    "brand": "NAMI",
+    "model": "Klima",
+    "name": "NAMI Klima",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Klima"
+    ]
+  },
+  {
+    "id": "scooter:nami-klima-max",
+    "brand": "NAMI",
+    "model": "Klima Max",
+    "name": "NAMI Klima Max",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Klima Max"
+    ]
+  },
+  {
+    "id": "scooter:nami-stellar",
+    "brand": "NAMI",
+    "model": "Stellar",
+    "name": "NAMI Stellar",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Stellar"
+    ]
+  },
+  {
+    "id": "scooter:nami-super-stellar",
+    "brand": "NAMI",
+    "model": "Super Stellar",
+    "name": "NAMI Super Stellar",
+    "type": "scooter",
+    "aliases": [
+      "Nami Electric Super Stellar"
+    ]
+  },
+  {
+    "id": "scooter:vsett-8",
+    "brand": "Vsett",
+    "model": "8",
+    "name": "Vsett 8",
+    "type": "scooter",
+    "aliases": [
+      "V Set 8"
+    ]
+  },
+  {
+    "id": "scooter:vsett-8-",
+    "brand": "Vsett",
+    "model": "8+",
+    "name": "Vsett 8+",
+    "type": "scooter",
+    "aliases": [
+      "V Set 8+"
+    ]
+  },
+  {
+    "id": "scooter:vsett-9",
+    "brand": "Vsett",
+    "model": "9",
+    "name": "Vsett 9",
+    "type": "scooter",
+    "aliases": [
+      "V Set 9"
+    ]
+  },
+  {
+    "id": "scooter:vsett-9-",
+    "brand": "Vsett",
+    "model": "9+",
+    "name": "Vsett 9+",
+    "type": "scooter",
+    "aliases": [
+      "V Set 9+"
+    ]
+  },
+  {
+    "id": "scooter:vsett-10-",
+    "brand": "Vsett",
+    "model": "10+",
+    "name": "Vsett 10+",
+    "type": "scooter",
+    "aliases": [
+      "V Set 10+"
+    ]
+  },
+  {
+    "id": "scooter:vsett-10-apex",
+    "brand": "Vsett",
+    "model": "10 Apex",
+    "name": "Vsett 10 Apex",
+    "type": "scooter",
+    "aliases": [
+      "V Set 10 Apex"
+    ]
+  },
+  {
+    "id": "scooter:vsett-11-",
+    "brand": "Vsett",
+    "model": "11+",
+    "name": "Vsett 11+",
+    "type": "scooter",
+    "aliases": [
+      "V Set 11+"
+    ]
+  },
+  {
+    "id": "scooter:vsett-11-super-72",
+    "brand": "Vsett",
+    "model": "11+ Super 72",
+    "name": "Vsett 11+ Super 72",
+    "type": "scooter",
+    "aliases": [
+      "V Set 11+ Super 72"
+    ]
+  },
+  {
+    "id": "scooter:zero-8",
+    "brand": "Zero",
+    "model": "8",
+    "name": "Zero 8",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:zero-9",
+    "brand": "Zero",
+    "model": "9",
+    "name": "Zero 9",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:zero-10",
+    "brand": "Zero",
+    "model": "10",
+    "name": "Zero 10",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:zero-10x",
+    "brand": "Zero",
+    "model": "10X",
+    "name": "Zero 10X",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:zero-11x",
+    "brand": "Zero",
+    "model": "11X",
+    "name": "Zero 11X",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:inokim-light-2",
+    "brand": "Inokim",
+    "model": "Light 2",
+    "name": "Inokim Light 2",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:inokim-quick-4",
+    "brand": "Inokim",
+    "model": "Quick 4",
+    "name": "Inokim Quick 4",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:inokim-ox",
+    "brand": "Inokim",
+    "model": "OX",
+    "name": "Inokim OX",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:inokim-oxo",
+    "brand": "Inokim",
+    "model": "OXO",
+    "name": "Inokim OXO",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-air",
+    "brand": "Apollo",
+    "model": "Air",
+    "name": "Apollo Air",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-go",
+    "brand": "Apollo",
+    "model": "Go",
+    "name": "Apollo Go",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-city",
+    "brand": "Apollo",
+    "model": "City",
+    "name": "Apollo City",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-city-pro",
+    "brand": "Apollo",
+    "model": "City Pro",
+    "name": "Apollo City Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-explore",
+    "brand": "Apollo",
+    "model": "Explore",
+    "name": "Apollo Explore",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-ghost",
+    "brand": "Apollo",
+    "model": "Ghost",
+    "name": "Apollo Ghost",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-phantom",
+    "brand": "Apollo",
+    "model": "Phantom",
+    "name": "Apollo Phantom",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:apollo-pro",
+    "brand": "Apollo",
+    "model": "Pro",
+    "name": "Apollo Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:inmotion-s1",
+    "brand": "InMotion",
+    "model": "S1",
+    "name": "InMotion S1",
+    "type": "scooter",
+    "aliases": [
+      "In Motion S1"
+    ]
+  },
+  {
+    "id": "scooter:inmotion-s1f",
+    "brand": "InMotion",
+    "model": "S1F",
+    "name": "InMotion S1F",
+    "type": "scooter",
+    "aliases": [
+      "In Motion S1F"
+    ]
+  },
+  {
+    "id": "scooter:inmotion-climber",
+    "brand": "InMotion",
+    "model": "Climber",
+    "name": "InMotion Climber",
+    "type": "scooter",
+    "aliases": [
+      "In Motion Climber"
+    ]
+  },
+  {
+    "id": "scooter:inmotion-rs",
+    "brand": "InMotion",
+    "model": "RS",
+    "name": "InMotion RS",
+    "type": "scooter",
+    "aliases": [
+      "In Motion RS"
+    ]
+  },
+  {
+    "id": "scooter:inmotion-rs-lite",
+    "brand": "InMotion",
+    "model": "RS Lite",
+    "name": "InMotion RS Lite",
+    "type": "scooter",
+    "aliases": [
+      "In Motion RS Lite"
+    ]
+  },
+  {
+    "id": "scooter:yume-y10",
+    "brand": "Yume",
+    "model": "Y10",
+    "name": "Yume Y10",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:yume-x11",
+    "brand": "Yume",
+    "model": "X11",
+    "name": "Yume X11",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:yume-hawk",
+    "brand": "Yume",
+    "model": "Hawk",
+    "name": "Yume Hawk",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:yume-hawk-pro",
+    "brand": "Yume",
+    "model": "Hawk Pro",
+    "name": "Yume Hawk Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:yume-raptor",
+    "brand": "Yume",
+    "model": "Raptor",
+    "name": "Yume Raptor",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:yume-osprey",
+    "brand": "Yume",
+    "model": "Osprey",
+    "name": "Yume Osprey",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:teverun-fighter-mini",
+    "brand": "Teverun",
+    "model": "Fighter Mini",
+    "name": "Teverun Fighter Mini",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:teverun-fighter-10",
+    "brand": "Teverun",
+    "model": "Fighter 10",
+    "name": "Teverun Fighter 10",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:teverun-fighter-11",
+    "brand": "Teverun",
+    "model": "Fighter 11",
+    "name": "Teverun Fighter 11",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:teverun-fighter-supreme",
+    "brand": "Teverun",
+    "model": "Fighter Supreme",
+    "name": "Teverun Fighter Supreme",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:teverun-blade-mini",
+    "brand": "Teverun",
+    "model": "Blade Mini",
+    "name": "Teverun Blade Mini",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:teverun-blade-gt",
+    "brand": "Teverun",
+    "model": "Blade GT",
+    "name": "Teverun Blade GT",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:roadrunner-rs5",
+    "brand": "RoadRunner",
+    "model": "RS5",
+    "name": "RoadRunner RS5",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:roadrunner-rs5-max",
+    "brand": "RoadRunner",
+    "model": "RS5 Max",
+    "name": "RoadRunner RS5 Max",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:roadrunner-rs5-pro",
+    "brand": "RoadRunner",
+    "model": "RS5 Pro",
+    "name": "RoadRunner RS5 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:roadrunner-rx7",
+    "brand": "RoadRunner",
+    "model": "RX7",
+    "name": "RoadRunner RX7",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:emove-touring",
+    "brand": "EMOVE",
+    "model": "Touring",
+    "name": "EMOVE Touring",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:emove-cruiser",
+    "brand": "EMOVE",
+    "model": "Cruiser",
+    "name": "EMOVE Cruiser",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:emove-cruiser-s",
+    "brand": "EMOVE",
+    "model": "Cruiser S",
+    "name": "EMOVE Cruiser S",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:emove-roadrunner",
+    "brand": "EMOVE",
+    "model": "RoadRunner",
+    "name": "EMOVE RoadRunner",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:emove-roadrunner-pro",
+    "brand": "EMOVE",
+    "model": "RoadRunner Pro",
+    "name": "EMOVE RoadRunner Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:varla-pegasus",
+    "brand": "Varla",
+    "model": "Pegasus",
+    "name": "Varla Pegasus",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:varla-eagle-one",
+    "brand": "Varla",
+    "model": "Eagle One",
+    "name": "Varla Eagle One",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:varla-eagle-one-pro",
+    "brand": "Varla",
+    "model": "Eagle One Pro",
+    "name": "Varla Eagle One Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:varla-eagle-one-v2-0",
+    "brand": "Varla",
+    "model": "Eagle One V2.0",
+    "name": "Varla Eagle One V2.0",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:hiley-tiger-8",
+    "brand": "Hiley",
+    "model": "Tiger 8",
+    "name": "Hiley Tiger 8",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:hiley-tiger-9",
+    "brand": "Hiley",
+    "model": "Tiger 9",
+    "name": "Hiley Tiger 9",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:hiley-tiger-10",
+    "brand": "Hiley",
+    "model": "Tiger 10",
+    "name": "Hiley Tiger 10",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:hiley-tiger-10-pro",
+    "brand": "Hiley",
+    "model": "Tiger 10 Pro",
+    "name": "Hiley Tiger 10 Pro",
+    "type": "scooter",
+    "aliases": []
+  }
+]

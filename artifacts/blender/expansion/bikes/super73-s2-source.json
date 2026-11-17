@@ -1,0 +1,98 @@
+{
+  "name": "Super73 S2",
+  "source": "https://super73.com/products/super73-s2-se-legacy",
+  "checked": [
+    "https://super73.com/products/super73-s2-se-legacy"
+  ],
+  "title": "SUPER73-S2 SE",
+  "images": [
+    {
+      "id": 44351690670250,
+      "created_at": "2026-03-05T11:31:58-08:00",
+      "position": 1,
+      "updated_at": "2026-03-05T11:32:42-08:00",
+      "product_id": 8213898231978,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YM_S2SESTREET_FRONTHERO_BLACKOUT.jpg?v=1772739162",
+      "width": 2200,
+      "height": 2200
+    },
+    {
+      "id": 44351690604714,
+      "created_at": "2026-03-05T11:31:58-08:00",
+      "position": 2,
+      "updated_at": "2026-03-05T11:32:42-08:00",
+      "product_id": 8213898231978,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YM_S2SE_REARHERO.jpg?v=1772739162",
+      "width": 2200,
+      "height": 2200
+    },
+    {
+      "id": 44351690637482,
+      "created_at": "2026-03-05T11:31:58-08:00",
+      "position": 3,
+      "updated_at": "2026-03-05T11:32:42-08:00",
+      "product_id": 8213898231978,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YM_S2SE_RIGHT.jpg?v=1772739162",
+      "width": 2200,
+      "height": 2200
+    },
+    {
+      "id": 41846532210858,
+      "created_at": "2025-09-12T12:35:05-07:00",
+      "position": 4,
+      "updated_at": "2026-03-05T11:32:42-08:00",
+      "product_id": 8213898231978,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_S2_SE_Blackout_DetailBattery_1080x1080_12504cea-77ef-49ad-9732-1097a41921d1.jpg?v=1772739162",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": 41846532243626,
+      "created_at": "2025-09-12T12:35:05-07:00",
+      "position": 5,
+      "updated_at": "2026-03-05T11:32:42-08:00",
+      "product_id": 8213898231978,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_S2_SE_Blackout_DetailBrake_1080x1080_3f61631e-69d4-455f-9dd5-61346c7cadb7.jpg?v=1772739162",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": 41846532276394,
+      "created_at": "2025-09-12T12:35:05-07:00",
+      "position": 6,
+      "updated_at": "2026-03-05T11:32:42-08:00",
+      "product_id": 8213898231978,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_S2_SE_Blackout_DetailStemCap_1080x1080_27cf68e1-16b4-4dfb-949f-cff5b5ee057f.jpg?v=1772739162",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "variants": [
+    {
+      "id": 47323757346986,
+      "title": "SE / Blackout",
+      "option1": "SE",
+      "option2": "Blackout",
+      "option3": null,
+      "sku": "900-00415",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": null,
+      "available": true,
+      "price": "3145.00",
+      "grams": 0,
+      "compare_at_price": null,
+      "position": 1,
+      "product_id": 8213898231978,
+      "created_at": "2025-08-12T05:52:54-07:00",
+      "updated_at": "2026-11-17T07:29:44-08:00"
+    }
+  ],
+  "description": "<h3>LEGENDS NEVER DIE</h3>\n<p><meta charset=\"utf-8\"><span data-sheets-root=\"1\">The SUPER73-S2 has always been one of our most prominent models; an easily recognizable classic. Now, we\u2019re taking the same look and feel you love and outfitting it with 30% more acceleration, a powerful battery system, new colorways, and so much more. Ride like a VIP and see what all the hype is about. For riders 16 years of age and older.</span></p>"
+}

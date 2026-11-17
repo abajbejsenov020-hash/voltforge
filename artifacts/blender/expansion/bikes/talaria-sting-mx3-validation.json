@@ -1,0 +1,29 @@
+{
+  "name": "Talaria Sting MX3",
+  "key": "talaria-sting-mx3",
+  "dimensions_m": [
+    1.7941,
+    0.756,
+    1.0571
+  ],
+  "triangles": 34234,
+  "meshes": 43,
+  "bytes": 1537464,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "talaria-sting-mx3.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Photo-derived lightweight electric motorcycle exterior."
+}

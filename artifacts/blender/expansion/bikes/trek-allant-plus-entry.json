@@ -1,0 +1,26 @@
+{
+  "name": "Trek Allant+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/trek-allant.webp",
+  "source": "https://www.fietsvoordeelshop.nl/trek-allant-7-plus-2023-zwart-heren",
+  "imageSource": "https://cdn.fietsvoordeelshop.nl/eyJidWNrZXQiOiJmdnMtcHJvZHVjdGlvbiIsImtleSI6InVwbG9hZHNcL1RyZWsgZWxla3RyaXNjaGUgZmlldHNlblwvQWxsYW50IDcgMjAyM1wvVHJlay1BbGxhbnQtNy0yMDIzLUhlcmVuLVp3YXJ0LVppamthbnQucG5nLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb250YWluIiwid2lkdGgiOjEyODAsImhlaWdodCI6bnVsbH0sImpwZWciOnsicXVhbGl0eSI6OTB9LCJwbmciOnsicXVhbGl0eSI6OTB9LCJ3ZWJwIjp7InF1YWxpdHkiOjkwfX19",
+  "credit": "www.fietsvoordeelshop.nl",
+  "variantNote": "Trek Allant+ 7 2023 - Fietsvoordeelshop (https://www.fietsvoordeelshop.nl/trek-allant-7-plus-2023-zwart-heren)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    853
+  ],
+  "bytes": 124684,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "trek-allant-plus",
+    "url": "/models/expansion/bikes/trek-allant-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/trek-allant-plus.blend",
+    "triangles": 27280,
+    "meshes": 32,
+    "bytes": 729180,
+    "family": "commuter"
+  }
+}

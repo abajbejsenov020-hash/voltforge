@@ -16,3 +16,7 @@ playwright-report/
 **/.impeccable/
 __pycache__/
 artifacts/blender/**/*.log
+artifacts/blender/expansion/**/*.html
+!artifacts/blender/expansion/**/qa-gallery.html
+artifacts/blender/expansion/**/*.pdf
+artifacts/blender/expansion/**/*-source.txt

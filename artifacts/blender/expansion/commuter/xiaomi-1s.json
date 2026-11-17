@@ -1,0 +1,47 @@
+{
+  "key": "xiaomi-1s",
+  "name": "Xiaomi 1S",
+  "family": "Xiaomi curved-neck commuter",
+  "parameters": {
+    "family": "Xiaomi curved-neck commuter",
+    "r": 0.108,
+    "wide": 0.024,
+    "wb": 0.86,
+    "dl": 0.5,
+    "dw": 0.15,
+    "dz": 0.14,
+    "h": 1.14,
+    "bar": 0.43,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "front",
+    "disc": "rear",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.075,
+      0.085,
+      0.09
+    ],
+    "accent": [
+      0.68,
+      0.025,
+      0.015
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 26924,
+  "meshes": 27,
+  "bytes": 836164,
+  "source": "https://www.mi.com/es/mi-electric-scooter-1S/",
+  "reference": "/assets/vehicles/expansion/commuter/xiaomi-1s.webp",
+  "nativeSource": "assets/blender/expansion/commuter/xiaomi-1s.blend",
+  "url": "/models/expansion/commuter/xiaomi-1s.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

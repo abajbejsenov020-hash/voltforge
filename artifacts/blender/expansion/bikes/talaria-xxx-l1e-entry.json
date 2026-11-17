@@ -1,0 +1,26 @@
+{
+  "name": "Talaria XXX L1E",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/talaria-xxx-l1e.webp",
+  "source": "https://talariaiberia.eu/en/products/xxx-tl2500-l1e",
+  "imageSource": "https://talariaiberia.eu/cdn/shop/files/xxx6.png?v=1717513347&width=1000",
+  "credit": "talariaiberia.eu",
+  "variantNote": "Talaria xXx L1e (https://talariaiberia.eu/en/products/xxx-tl2500-l1e)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 107926,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "talaria-xxx-l1e",
+    "url": "/models/expansion/bikes/talaria-xxx-l1e.glb",
+    "nativeSource": "assets/blender/expansion/bikes/talaria-xxx-l1e.blend",
+    "triangles": 28764,
+    "meshes": 28,
+    "bytes": 900004,
+    "family": "talaria-xxx-horizontal-pack"
+  }
+}

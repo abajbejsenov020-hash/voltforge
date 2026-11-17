@@ -1,0 +1,26 @@
+{
+  "name": "Inokim Quick 4",
+  "model": {
+    "key": "inokim-quick-4",
+    "url": "/models/expansion/premium/inokim-quick-4.glb",
+    "nativeSource": "assets/blender/expansion/premium/inokim-quick-4.blend",
+    "triangles": 45112,
+    "meshes": 33,
+    "bytes": 1151356,
+    "family": "Inokim Quick 4 exterior"
+  },
+  "bounds": [
+    [
+      -0.6030499935150146,
+      -0.2800000011920929,
+      0.0
+    ],
+    [
+      0.5820000171661377,
+      0.2800000309944153,
+      1.1799930334091187
+    ]
+  ],
+  "observed": "Short deck, lime green single-sided front/rear arms, black folding stem, small road wheels.",
+  "revision": 2
+}

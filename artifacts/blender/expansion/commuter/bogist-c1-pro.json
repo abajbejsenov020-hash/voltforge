@@ -1,0 +1,47 @@
+{
+  "key": "bogist-c1-pro",
+  "name": "Bogist C1 Pro",
+  "family": "Bogist seated full suspension",
+  "parameters": {
+    "family": "Bogist seated full suspension",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.02,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.2,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "twinfork",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.07,
+      0.08,
+      0.085
+    ],
+    "accent": [
+      0.72,
+      0.025,
+      0.015
+    ],
+    "seat": true,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 40304,
+  "meshes": 28,
+  "bytes": 1316064,
+  "source": "https://bogistshop.com/products/bogist-c1-pro-electric-scooter-500w-48v-13ah-40km-shockproof-and-stab-proof-with-seat-give-away-bag-lock-and-smartphone-holder-1",
+  "reference": "/assets/vehicles/expansion/commuter/bogist-c1-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/bogist-c1-pro.blend",
+  "url": "/models/expansion/commuter/bogist-c1-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

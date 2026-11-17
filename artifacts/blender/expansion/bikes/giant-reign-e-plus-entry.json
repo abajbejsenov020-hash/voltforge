@@ -1,0 +1,26 @@
+{
+  "name": "Giant Reign E+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/giant-reign-e.webp",
+  "source": "https://www.devercycles.co.uk/bikes/electric-bikes/giant-reign-e-3-electric-mountain-bike-in-cobalt__68000",
+  "imageSource": "https://www.devercycles.co.uk/images/cycle-giant-u-reigneplus3emtb-cobalt.jpg?bgcolor=ffffff&format=webp&height=1998&mode=pad&quality=85&width=1998",
+  "credit": "www.devercycles.co.uk",
+  "variantNote": "Giant Reign E+ 3 Electric Mountain Bike in Cobalt (https://www.devercycles.co.uk/bikes/electric-bikes/giant-reign-e-3-electric-mountain-bike-in-cobalt__68000)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 88758,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "giant-reign-e-plus",
+    "url": "/models/expansion/bikes/giant-reign-e-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/giant-reign-e-plus.blend",
+    "triangles": 29048,
+    "meshes": 31,
+    "bytes": 923336,
+    "family": "fullmtb"
+  }
+}

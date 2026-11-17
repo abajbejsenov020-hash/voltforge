@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Thunder",
+  "model": {
+    "key": "dualtron-thunder",
+    "url": "/models/expansion/premium/dualtron-thunder.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-thunder.blend",
+    "triangles": 52068,
+    "meshes": 34,
+    "bytes": 1410608,
+    "family": "Dualtron Thunder verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6517000198364258,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.6299999952316284,
+      0.3050000071525574,
+      1.2799930572509766
+    ]
+  ],
+  "observed": "Original Thunder60V35Ah: thick black deck with silver longitudinal pad rails, wide road tyres and compact cartridge C arms.",
+  "revision": 2
+}

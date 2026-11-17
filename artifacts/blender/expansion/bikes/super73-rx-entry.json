@@ -1,0 +1,26 @@
+{
+  "name": "Super73 RX",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/super73-rx.webp",
+  "source": "https://www.incycle.com/products/super73-rx",
+  "imageSource": "https://www.incycle.com/cdn/shop/files/FS-V0032-HS_grande.jpg?v=1685995920",
+  "credit": "www.incycle.com",
+  "variantNote": "Super73-RX",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    600,
+    400
+  ],
+  "bytes": 25846,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "super73-rx",
+    "url": "/models/expansion/bikes/super73-rx.glb",
+    "nativeSource": "assets/blender/expansion/bikes/super73-rx.blend",
+    "triangles": 30672,
+    "meshes": 30,
+    "bytes": 973184,
+    "family": "mopedfull"
+  }
+}

@@ -1,0 +1,23 @@
+import json
+from pathlib import Path
+p=Path(__file__).with_name('configs.json');c=json.load(open(p))
+def clone(n,base,**changes):c[n]={**c[base],**changes,'family':n+' verified photographic exterior'}
+clone('Hiley Tiger 10','Hiley Tiger 10 Pro',accent=[.90,.55,.01],notes='Tiger10 V5 2026 exact manufacturer trim: gold C-type arms, black wide road tyres, broad black deck, tall central stem and high double lamp.')
+clone('Yume Hawk Pro','Yume Hawk',wide=.062,wb=1.03,dw=.26,notes='Manufacturer HawkProWide6000W trim with visibly wide 10x4.5-inch smooth road tyres and all-black sculpted frame.')
+clone('RoadRunner RS5','RoadRunner RS5 Max',notes='RS5 family shown in current manufacturer MAX trim; sapphire blue C arms and removable battery deck. Original1.0 not claimed.')
+clone('EMOVE Cruiser','EMOVE Cruiser S',notes='Cruiser family shown as CruiserS52V, black telescopic front suspension and long narrow gray battery chassis.')
+clone('EMOVE RoadRunner','EMOVE RoadRunner Pro',body=[.015,.02,.025],accent=[.02,.025,.03],notes='Base RoadRunner V2 manufacturer trim: black open diamond frame, slanted slim removable battery, long bench and 14-inch road tyres.',tread='street',wb=.99,dl=.28,seatH=.69)
+clone('Teverun Fighter Mini','Teverun Fighter 11',wb=.95,r=.127,dl=.58,dw=.23,dz=.24,h=1.25,notes='FighterMini standard base reference: compact black battery chassis, C arms and slim center stem; no Pro markings.')
+clone('Teverun Fighter 10','Teverun Fighter 11',wb=1.00,r=.127,dl=.61,dw=.24,dz=.26,h=1.30,notes='Fighter10 base 60V22Ah reference: compact black chassis and wide 10-inch road tyres, RGB panels, spring C-arm suspension.')
+clone('Teverun Fighter Supreme','Teverun Fighter 11',wb=1.10,r=.14,dl=.68,dw=.28,dz=.29,h=1.38,notes='FighterSupreme 72V base family distributor photo: long black sport chassis, high black kickplate and large smooth road wheels.')
+clone('Kaabo Mantis 10 Pro','Kaabo Mantis 10',accent=[.04,.05,.06],notes='Mantis10 Pro V2 reference: black ten-inch sport chassis, sculpted rear carry brace, front and rear C-arm spring suspension.')
+clone('Dualtron Thunder','Dualtron Thunder 2',wb=.98,dl=.60,dw=.26,h=1.22,kick=False,notes='Original Thunder60V35Ah: thick black deck with silver longitudinal pad rails, wide road tyres and compact cartridge C arms.')
+clone('Inokim Light 2','Inokim Quick 4',r=.108,wb=.84,dl=.50,dw=.165,dz=.155,h=1.08,bar=.53,fork='rigid',suspension=False,singleArm=False,accent=[.28,.65,.015],kick=False,notes='Original Light2 slim black 8.5-inch commuter, low thin deck, rigid front fork, green rear rim stripe and green Inokim stem marking.')
+clone('EMOVE Touring','EMOVE Cruiser S',r=.102,wb=.84,dl=.51,dw=.18,dz=.205,h=1.14,bar=.53,body=[.23,.025,.42],accent=[.24,.04,.43],neck=.38,notes='Manufacturer purple Touring reference: compact 8-inch scooter, narrow purple rectangular deck, telescopic front fork, rear suspension and tall folding black stem.')
+clone('Apollo City','Apollo City Pro',dual=False,notes='City2022 single-motor gray unibody reference, curved deck transition, gray C arms, short raised rear foot brace and broad road tyres.')
+clone('Varla Eagle One','Varla Eagle One Pro',r=.127,wb=1.00,dl=.60,dw=.24,h=1.28,tread='block',notes='Original2021 manufacturer EagleOne package photo: red open C arms, black telescopic stem, black rectangular deck and knobby ten-inch tyres.')
+clone('Kaabo Wolf King','Kaabo Wolf King GT',r=.14,wb=1.04,dl=.64,dw=.27,dz=.275,h=1.25,neck=.46,goldFork=True,notes='Original WolfKing11 72V28Ah gold trim: gold twin upper stems, polished fork legs, gold rear brace and black broad deck.')
+clone('Kaabo Wolf Warrior X','Kaabo Wolf Warrior 11',r=.127,wb=.98,dl=.59,dw=.24,dz=.25,h=1.22,neck=.45,notes='WolfWarriorX family Plus60V21Ah dealer trim: compact black parallel twin stems, twin low lamps, raised black rear guard and ten-inch off-road tyres.')
+clone('Teverun Blade GT','Teverun Fighter 11',accent=[.98,.25,.008],wb=1.08,r=.14,dl=.66,dw=.27,dz=.28,h=1.35,notes='BladeGT family shown as documented second-generation GTII2024: orange open C arms and orange rear foot brace, long black deck and gray stem.')
+if any(e['name']=='Dualtron X' for e in json.load(open(Path(__file__).resolve().parents[4]/'artifacts/blender/expansion/premium/references.json'))):clone('Dualtron X','Dualtron X2',h=1.32,wb=1.09,dl=.68,notes='Original60V49Ah X: massive road tyres, thick black auxiliary battery stem, middle round lamp and large near-horizontal coilovers; original deck and stem proportions.')
+json.dump(c,open(p,'w'),indent=2)

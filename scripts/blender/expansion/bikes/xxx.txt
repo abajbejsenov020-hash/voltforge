@@ -1,0 +1,25 @@
+def photo_xxx(e):
+ F=.60;R=-.60;rad=.304;rr=.292;w=.074;seat=.79
+ wheel(F,rad,w,True,'FrontWheel');wheel(R,rr,w,True,'RearWheel')
+ for sy in [-1,1]:
+  tube('XXX main diagonal backbone',[(.31,sy*.045,.86),(.25,sy*.055,.75),(-.10,sy*.055,.36)],.027,'black')
+  tube('XXX open rear subframe',[(-.49,sy*.046,.72),(-.23,sy*.046,.69),(-.11,sy*.05,.36)],.016,'black')
+  tube('XXX rear swingarm',[(R,sy*.05,rr),(-.12,sy*.06,.36),(-.31,sy*.055,.46),(R,sy*.05,rr)],.017,'graphite','RearSuspension')
+  cyl('XXX black USD fork',(.34,sy*.068,.88),(F-.03,sy*.068,rad+.07),.021,'black','Fork');cyl('XXX fork slider',(F-.06,sy*.068,rad+.21),(F,sy*.068,rad),.016,'steel','Fork')
+ plate('XXX long under-seat battery',[(-.52,.68),(-.51,.76),(.19,.82),(.23,.76),(-.10,.66)],0,.13,'black','BatteryMount')
+ plate('XXX slim diagonal front casing',[(-.10,.35),(-.02,.37),(.28,.76),(.23,.80)],0,.105,'graphite','Bodywork')
+ box('XXX controller',(-.15,0,.52),(.10,.10,.06),'black','ControllerMount')
+ cyl('XXX mid-motor',(-.09,-.075,.35),(-.09,.075,.35),.077,'black','MotorMount',40)
+ coil((-.32,0,.43),(-.18,0,.69),.025,'graphite')
+ loft('XXX narrow bench',[(-.70,.80,.025,.015),(-.58,.80,.073,.03),(-.34,.79,.08,.045),(-.06,.80,.04,.025)],'seat')
+ loft('XXX rear fender',[(-.82,.80,.008,.005),(-.66,.78,.05,.012),(-.36,.73,.07,.014)],'black')
+ loft('XXX front mudguard',[(.30,.70,.025,.010),(.52,.72,.06,.012),(.78,.70,.015,.004)],'black')
+ chain((R,rr),.075,(-.09,.35),.045,-.095)
+ for sy in [-1,1]:cyl('XXX foot peg',(-.11,sy*.075,.32),(-.11,sy*.16,.32),.014,'steel','Drive',16)
+ cyl('XXX head tube',(.32,0,.88),(.36,0,.74),.028,'black');cockpit(.29,1.025,.36)
+ box('XXX front light',(.43,0,.86),(.042,.11,.065),'black','Bodywork');box('XXX front light lens',(.455,0,.86),(.004,.08,.042),'lens','Bodywork')
+ if 'L1E' in e['name']:
+  for sy in [-1,1]:
+   tube('XXX road mirror stem',[(.29,sy*.25,1.06),(.25,sy*.29,1.22)],.005,'black','Cockpit');box('XXX road mirror',(.25,sy*.30,1.24),(.025,.07,.052),'graphite','Cockpit')
+  tube('XXX registration bracket',[(R-.07,0,.74),(R-.24,0,.57)],.009,'black','Bodywork');box('XXX registration plate',(R-.25,0,.57),(.009,.15,.09),'white','Bodywork')
+ return 'talaria-xxx-horizontal-pack'

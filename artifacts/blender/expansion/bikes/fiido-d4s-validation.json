@@ -1,0 +1,29 @@
+{
+  "name": "Fiido D4S",
+  "key": "fiido-d4s",
+  "dimensions_m": [
+    1.52,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 26948,
+  "meshes": 28,
+  "bytes": 847780,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "fiido-d4s.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Teverun Blade Mini",
+  "model": {
+    "key": "teverun-blade-mini",
+    "url": "/models/expansion/premium/teverun-blade-mini.glb",
+    "nativeSource": "assets/blender/expansion/premium/teverun-blade-mini.blend",
+    "triangles": 54324,
+    "meshes": 34,
+    "bytes": 1440780,
+    "family": "Teverun Blade Mini photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.5944000482559204,
+      -0.3199999928474426,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5740000009536743,
+      0.31999996304512024,
+      1.2999930381774902
+    ]
+  ],
+  "observed": "2024 Blade Mini: yellow open cast arms and rear kickplate, compact black deck, small road tyres and tall black stem.",
+  "revision": 2
+}

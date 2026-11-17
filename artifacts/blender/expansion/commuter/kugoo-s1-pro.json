@@ -1,0 +1,47 @@
+{
+  "key": "kugoo-s1-pro",
+  "name": "Kugoo S1 Pro",
+  "family": "Kugoo S1 Pro rear hub honeycomb",
+  "parameters": {
+    "family": "Kugoo S1 Pro rear hub honeycomb",
+    "r": 0.1,
+    "wide": 0.024,
+    "wb": 0.83,
+    "dl": 0.44,
+    "dw": 0.15,
+    "dz": 0.145,
+    "h": 1.1,
+    "bar": 0.43,
+    "stem": "telescopic",
+    "fork": "telescopic",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.95,
+      0.4,
+      0.01
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 23540,
+  "meshes": 28,
+  "bytes": 954948,
+  "source": "https://mikrofahrzeuge.com/product/kugoo-kirin-s1-pro-e-scooter/",
+  "reference": "/assets/vehicles/expansion/commuter/kugoo-s1-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kugoo-s1-pro.blend",
+  "url": "/models/expansion/commuter/kugoo-s1-pro.glb",
+  "finalReferenceReview": [
+    "Authored open perforated honeycomb tire sidewalls"
+  ]
+}

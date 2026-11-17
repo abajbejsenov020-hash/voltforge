@@ -1,0 +1,47 @@
+{
+  "key": "ausom-gosoul-2-pro",
+  "name": "Ausom Gosoul 2 Pro",
+  "family": "Ausom Gosoul ribbed deck",
+  "parameters": {
+    "family": "Ausom Gosoul ribbed deck",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.02,
+    "dl": 0.55,
+    "dw": 0.23,
+    "dz": 0.26,
+    "h": 1.38,
+    "bar": 0.69,
+    "stem": "square",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "highsquare",
+    "halo": false,
+    "body": [
+      0.14,
+      0.17,
+      0.21
+    ],
+    "accent": [
+      0.92,
+      0.52,
+      0.03
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 33932,
+  "meshes": 27,
+  "bytes": 1124668,
+  "source": "https://www.ausomstore.eu/products/ausom-gosoul-2-pro-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/ausom-gosoul-2-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ausom-gosoul-2-pro.blend",
+  "url": "/models/expansion/commuter/ausom-gosoul-2-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

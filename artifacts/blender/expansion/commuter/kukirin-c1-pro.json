@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-c1-pro",
+  "name": "KuKirin C1 Pro",
+  "family": "KuKirin seated C1 transport",
+  "parameters": {
+    "family": "KuKirin seated C1 transport",
+    "r": 0.178,
+    "wide": 0.04,
+    "wb": 1.16,
+    "dl": 0.65,
+    "dw": 0.23,
+    "dz": 0.26,
+    "h": 1.28,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "twinfork",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.15,
+      0.17,
+      0.19
+    ],
+    "accent": [
+      0.98,
+      0.26,
+      0.008
+    ],
+    "seat": true,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 41372,
+  "meshes": 28,
+  "bytes": 1354840,
+  "source": "https://www.kukirin-escooters.com/products/kukirin-c1-pro",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-c1-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-c1-pro.blend",
+  "url": "/models/expansion/commuter/kukirin-c1-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

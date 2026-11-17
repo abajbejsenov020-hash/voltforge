@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Pace 500",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-pace-500.webp",
+  "source": "https://www.cfbbike.com/pace-500-celeste-next-gen-m-l.html",
+  "imageSource": "https://cdn.shoplightspeed.com/shops/661882/files/46466844/aventon-pace-500-celeste-next-gen-m-l.jpg",
+  "credit": "www.cfbbike.com",
+  "variantNote": "Pace 500 Next Gen step-over, SoCal Sand reference trim.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 114716,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-pace-500",
+    "url": "/models/expansion/bikes/aventon-pace-500.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-pace-500.blend",
+    "triangles": 27716,
+    "meshes": 25,
+    "bytes": 867920,
+    "family": "stepcurve"
+  }
+}

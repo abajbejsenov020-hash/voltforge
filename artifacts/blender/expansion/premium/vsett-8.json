@@ -1,0 +1,26 @@
+{
+  "name": "Vsett 8",
+  "model": {
+    "key": "vsett-8",
+    "url": "/models/expansion/premium/vsett-8.glb",
+    "nativeSource": "assets/blender/expansion/premium/vsett-8.blend",
+    "triangles": 50744,
+    "meshes": 35,
+    "bytes": 1309640,
+    "family": "Vsett 8 exterior"
+  },
+  "bounds": [
+    [
+      -0.551800012588501,
+      -0.33000001311302185,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5320000052452087,
+      0.33000001311302185,
+      1.2399929761886597
+    ]
+  ],
+  "observed": "Sage green compact single rear motor chassis, eight-inch wheels and small offset rear spring.",
+  "revision": 2
+}

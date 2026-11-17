@@ -1,0 +1,29 @@
+{
+  "name": "Super73 R",
+  "key": "super73-r",
+  "dimensions_m": [
+    1.82,
+    0.74,
+    1.1991
+  ],
+  "triangles": 29756,
+  "meshes": 28,
+  "bytes": 949776,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "super73-r.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

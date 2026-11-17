@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Wolf King GT",
+  "model": {
+    "key": "kaabo-wolf-king-gt",
+    "url": "/models/expansion/premium/kaabo-wolf-king-gt.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-wolf-king-gt.blend",
+    "triangles": 52232,
+    "meshes": 34,
+    "bytes": 1410912,
+    "family": "Kaabo Wolf King GT photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.73170006275177,
+      -0.375,
+      0.0
+    ],
+    [
+      0.7099999785423279,
+      0.375,
+      1.4599930047988892
+    ]
+  ],
+  "observed": "Gold Wolf King GT twin stanchions, silver lower forks, black enclosed hubs and integrated lower neck housing.",
+  "revision": 2
+}

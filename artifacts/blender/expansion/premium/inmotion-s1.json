@@ -1,0 +1,26 @@
+{
+  "name": "InMotion S1",
+  "model": {
+    "key": "inmotion-s1",
+    "url": "/models/expansion/premium/inmotion-s1.glb",
+    "nativeSource": "assets/blender/expansion/premium/inmotion-s1.blend",
+    "triangles": 48072,
+    "meshes": 33,
+    "bytes": 1244588,
+    "family": "InMotion S1 exact photographed appearance"
+  },
+  "bounds": [
+    [
+      -0.6280500292778015,
+      -0.27000001072883606,
+      0.0
+    ],
+    [
+      0.6069999933242798,
+      0.27000001072883606,
+      1.3499929904937744
+    ]
+  ],
+  "observed": "Original S1 gray commuter frame, narrow long deck, orange wheel highlights, tall slim stem and front telescopic suspension.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "EMOVE RoadRunner Pro",
+  "model": {
+    "key": "emove-roadrunner-pro",
+    "url": "/models/expansion/premium/emove-roadrunner-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/emove-roadrunner-pro.blend",
+    "triangles": 52668,
+    "meshes": 32,
+    "bytes": 1371364,
+    "family": "EMOVE RoadRunner Pro exterior"
+  },
+  "bounds": [
+    [
+      -0.7116000056266785,
+      -0.3400000035762787,
+      0.000238936030655168
+    ],
+    [
+      0.6877610683441162,
+      0.3400000333786011,
+      1.1099929809570312
+    ]
+  ],
+  "observed": "Red welded diamond moped frame, small 14-inch knobby tyres, black triangular battery and long bench saddle.",
+  "revision": 2
+}

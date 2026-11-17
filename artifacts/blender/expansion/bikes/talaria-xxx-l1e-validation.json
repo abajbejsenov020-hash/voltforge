@@ -1,0 +1,29 @@
+{
+  "name": "Talaria XXX L1E",
+  "key": "talaria-xxx-l1e",
+  "dimensions_m": [
+    1.806,
+    0.7231,
+    1.271
+  ],
+  "triangles": 28764,
+  "meshes": 28,
+  "bytes": 900004,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "talaria-xxx-l1e.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "XXX/X3 low horizontal under-seat battery, slender diagonal casing and narrow bench."
+}

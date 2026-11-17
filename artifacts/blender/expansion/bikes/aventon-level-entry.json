@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Level",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-level.webp",
+  "source": "https://www.aventon.com/blogs/aventon_bikes/best-ebikes-with-removable-battery",
+  "imageSource": "https://i.shgcdn.com/dfaf5d23-2c13-41ee-9d83-8b3dc9f0b7a9/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+  "credit": "www.aventon.com",
+  "variantNote": "8 Best Electric Bikes With Removable Battery in 2025 (https://www.aventon.com/blogs/aventon_bikes/best-ebikes-with-removable-battery)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    710
+  ],
+  "bytes": 102944,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-level",
+    "url": "/models/expansion/bikes/aventon-level.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-level.blend",
+    "triangles": 26516,
+    "meshes": 33,
+    "bytes": 718376,
+    "family": "commuter"
+  }
+}

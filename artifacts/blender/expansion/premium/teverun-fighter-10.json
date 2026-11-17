@@ -1,0 +1,26 @@
+{
+  "name": "Teverun Fighter 10",
+  "model": {
+    "key": "teverun-fighter-10",
+    "url": "/models/expansion/premium/teverun-fighter-10.glb",
+    "nativeSource": "assets/blender/expansion/premium/teverun-fighter-10.blend",
+    "triangles": 55180,
+    "meshes": 36,
+    "bytes": 1474608,
+    "family": "Teverun Fighter 10 verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.32499998807907104,
+      1.3599929809570312
+    ]
+  ],
+  "observed": "Fighter10 base 60V22Ah reference: compact black chassis and wide 10-inch road tyres, RGB panels, spring C-arm suspension.",
+  "revision": 2
+}

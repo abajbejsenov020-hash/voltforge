@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Sinch",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-sinch.webp",
+  "source": "https://www.aventon.com/blogs/aventon_bikes/best-step-through-ebikes",
+  "imageSource": "https://i.shgcdn.com/b0dc58fb-85b2-4cd3-b14c-0c7b28109040/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+  "credit": "www.aventon.com",
+  "variantNote": "8 Best Step Through Electric Bikes 2025 (https://www.aventon.com/blogs/aventon_bikes/best-step-through-ebikes)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    865
+  ],
+  "bytes": 99772,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-sinch",
+    "url": "/models/expansion/bikes/aventon-sinch.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-sinch.blend",
+    "triangles": 31956,
+    "meshes": 32,
+    "bytes": 944828,
+    "family": "foldstep"
+  }
+}

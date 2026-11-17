@@ -1,0 +1,47 @@
+{
+  "key": "segway-ninebot-f2",
+  "name": "Segway Ninebot F2",
+  "family": "Ninebot rigid commuter",
+  "parameters": {
+    "family": "Ninebot rigid commuter",
+    "r": 0.127,
+    "wide": 0.028,
+    "wb": 0.92,
+    "dl": 0.5,
+    "dw": 0.17,
+    "dz": 0.18,
+    "h": 1.21,
+    "bar": 0.57,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "front",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.98,
+      0.56,
+      0.015
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": true,
+    "solidArm": false
+  },
+  "triangles": 26492,
+  "meshes": 28,
+  "bytes": 822496,
+  "source": "https://eu-en.segway.com/ekickscooter/products/f2-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-f2.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f2.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-f2.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

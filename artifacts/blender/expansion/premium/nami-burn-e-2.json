@@ -1,0 +1,26 @@
+{
+  "name": "NAMI Burn-E 2",
+  "model": {
+    "key": "nami-burn-e-2",
+    "url": "/models/expansion/premium/nami-burn-e-2.glb",
+    "nativeSource": "assets/blender/expansion/premium/nami-burn-e-2.blend",
+    "triangles": 53768,
+    "meshes": 34,
+    "bytes": 1422728,
+    "family": "NAMI Burn-E 2 exterior"
+  },
+  "bounds": [
+    [
+      -0.70169997215271,
+      -0.3449999988079071,
+      0.0
+    ],
+    [
+      0.6800000071525574,
+      0.3449999690055847,
+      1.4799929857254028
+    ]
+  ],
+  "observed": "NAMI Burn-E 2 welded tubular perimeter frame with open triangular neck, thin carbon-look stem, external adjustable front/rear shocks, long close fenders and two enclosed hub motors.",
+  "revision": 2
+}

@@ -1,0 +1,47 @@
+{
+  "key": "segway-ninebot-max-g2",
+  "name": "Segway Ninebot Max G2",
+  "family": "Ninebot MAX hydraulic suspension",
+  "parameters": {
+    "family": "Ninebot MAX hydraulic suspension",
+    "r": 0.127,
+    "wide": 0.028,
+    "wb": 0.96,
+    "dl": 0.49,
+    "dw": 0.17,
+    "dz": 0.22,
+    "h": 1.26,
+    "bar": 0.57,
+    "stem": "round",
+    "fork": "telescopic",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.98,
+      0.56,
+      0.015
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": true,
+    "solidArm": false
+  },
+  "triangles": 31152,
+  "meshes": 28,
+  "bytes": 969776,
+  "source": "https://eu-en.segway.com/ekickscooter/products/max-g2-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-max-g2.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g2.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-max-g2.glb",
+  "finalReferenceReview": [
+    "Added enclosed nonmotor front drum cover"
+  ]
+}

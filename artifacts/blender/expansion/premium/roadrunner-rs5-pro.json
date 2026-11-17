@@ -1,0 +1,26 @@
+{
+  "name": "RoadRunner RS5 Pro",
+  "model": {
+    "key": "roadrunner-rs5-pro",
+    "url": "/models/expansion/premium/roadrunner-rs5-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/roadrunner-rs5-pro.blend",
+    "triangles": 60000,
+    "meshes": 36,
+    "bytes": 1671424,
+    "family": "RoadRunner RS5 PRO/MAX documented common exterior"
+  },
+  "bounds": [
+    [
+      -0.6543499827384949,
+      -0.33000001311302185,
+      0.000238936030655168
+    ],
+    [
+      0.6327610611915588,
+      0.33000001311302185,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Manufacturer documents battery-only difference from MAX; identical exterior reproduced, no internal cell representation.",
+  "revision": 2
+}

@@ -1,0 +1,48 @@
+{
+  "key": "segway-ninebot-p65",
+  "name": "Segway Ninebot P65",
+  "family": "Segway P wide-deck",
+  "parameters": {
+    "family": "Segway P wide-deck",
+    "r": 0.133,
+    "wide": 0.035,
+    "wb": 1.02,
+    "dl": 0.58,
+    "dw": 0.22,
+    "dz": 0.23,
+    "h": 1.28,
+    "bar": 0.64,
+    "stem": "wide",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "front",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.9,
+      0.31,
+      0.025
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": true,
+    "solidArm": false,
+    "frontcover": "closed"
+  },
+  "triangles": 26676,
+  "meshes": 28,
+  "bytes": 905248,
+  "source": "https://eu-en.segway.com/ekickscooter/products/p65e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-p65.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-p65.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-p65.glb",
+  "finalReferenceReview": [
+    "Added P monocoque neck and rear orange heel trim"
+  ]
+}

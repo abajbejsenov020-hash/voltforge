@@ -1,0 +1,26 @@
+{
+  "name": "Talaria X3",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/talaria-x3.webp",
+  "source": "https://www.smartwheel.ca/talaria-x3-concept-electric-dirt-bike-40ah-black/",
+  "imageSource": "https://cdn11.bigcommerce.com/s-r5k51kqrix/images/stencil/728x728/products/1726/9545/talaria-x3-concept-electric-dirt-bike-40ah-black__58546.1774591881.jpg?c=1",
+  "credit": "www.smartwheel.ca",
+  "variantNote": "Talaria X3 Concept Electric Dirt Bike (40Ah) \u2013 Black | Available at Smartwheel (https://www.smartwheel.ca/talaria-x3-concept-electric-dirt-bike-40ah-black/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    728,
+    728
+  ],
+  "bytes": 33338,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "talaria-x3",
+    "url": "/models/expansion/bikes/talaria-x3.glb",
+    "nativeSource": "assets/blender/expansion/bikes/talaria-x3.blend",
+    "triangles": 28668,
+    "meshes": 27,
+    "bytes": 895548,
+    "family": "talaria-xxx-horizontal-pack"
+  }
+}

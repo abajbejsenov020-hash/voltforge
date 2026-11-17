@@ -1,0 +1,47 @@
+{
+  "key": "kugoo-s3",
+  "name": "Kugoo S3",
+  "family": "Kugoo compact stem-battery",
+  "parameters": {
+    "family": "Kugoo compact stem-battery",
+    "r": 0.1,
+    "wide": 0.024,
+    "wb": 0.83,
+    "dl": 0.44,
+    "dw": 0.15,
+    "dz": 0.145,
+    "h": 1.1,
+    "bar": 0.43,
+    "stem": "telescopic",
+    "fork": "telescopic",
+    "rear": "shortarm",
+    "motor": "front",
+    "disc": "none",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.84,
+      0.045,
+      0.012
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 28208,
+  "meshes": 28,
+  "bytes": 908248,
+  "source": "https://kugoomoscow.ru/kugoo-s3",
+  "reference": "/assets/vehicles/expansion/commuter/kugoo-s3.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kugoo-s3.blend",
+  "url": "/models/expansion/commuter/kugoo-s3.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

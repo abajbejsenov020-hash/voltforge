@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Eagle Pro",
+  "model": {
+    "key": "dualtron-eagle-pro",
+    "url": "/models/expansion/premium/dualtron-eagle-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-eagle-pro.blend",
+    "triangles": 52172,
+    "meshes": 32,
+    "bytes": 1414584,
+    "family": "Dualtron Eagle Pro exterior"
+  },
+  "bounds": [
+    [
+      -0.6180499792098999,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.597000002861023,
+      0.3050000071525574,
+      1.259993076324463
+    ]
+  ],
+  "observed": "Original slender black twin-hinge neck and ten-inch dual hub wheels; no large raised tail.",
+  "revision": 2
+}

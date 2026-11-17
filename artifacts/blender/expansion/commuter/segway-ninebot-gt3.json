@@ -1,0 +1,48 @@
+{
+  "key": "segway-ninebot-gt3",
+  "name": "Segway Ninebot GT3",
+  "family": "Segway GT double-wishbone superscooter",
+  "parameters": {
+    "family": "Segway GT double-wishbone superscooter",
+    "r": 0.14,
+    "wide": 0.046,
+    "wb": 1.17,
+    "dl": 0.62,
+    "dw": 0.28,
+    "dz": 0.29,
+    "h": 1.38,
+    "bar": 0.66,
+    "stem": "wide",
+    "fork": "wishbone",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.045,
+      0.055,
+      0.07
+    ],
+    "accent": [
+      0.76,
+      0.06,
+      0.025
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": true,
+    "solidArm": false,
+    "frontcover": "closed"
+  },
+  "triangles": 36548,
+  "meshes": 29,
+  "bytes": 1176428,
+  "source": "https://eu-en.segway.com/ekickscooter/products/gt3-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-gt3.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-gt3.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-gt3.glb",
+  "finalReferenceReview": [
+    "Added GT deep front fairing and side plate silhouette"
+  ]
+}

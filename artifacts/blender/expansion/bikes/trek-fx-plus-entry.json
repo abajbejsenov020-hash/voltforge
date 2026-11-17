@@ -1,0 +1,26 @@
+{
+  "name": "Trek FX+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/trek-fx.webp",
+  "source": "https://www.ebikessuperstore.com.au/products/trek-fx-2",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0374/7014/2597/products/FXPlus2Stagger_23_35843_A_Primary_d699be13-4539-4dc8-8dd9-6347d24a3462_2048x.jpg?v=1680037645",
+  "credit": "www.ebikessuperstore.com.au",
+  "variantNote": "TREK FX+ 2",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    741
+  ],
+  "bytes": 104860,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "trek-fx-plus",
+    "url": "/models/expansion/bikes/trek-fx-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/trek-fx-plus.blend",
+    "triangles": 26364,
+    "meshes": 31,
+    "bytes": 709924,
+    "family": "commuter"
+  }
+}

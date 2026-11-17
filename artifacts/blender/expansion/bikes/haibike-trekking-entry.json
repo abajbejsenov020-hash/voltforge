@@ -1,0 +1,26 @@
+{
+  "name": "Haibike Trekking",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/haibike-trekking.webp",
+  "source": "https://motoakcesoria.com/trekking-i-miejskie/haibike-trekking-5-high-limeblack-gloss.html",
+  "imageSource": "https://motoakcesoria.com/77615/haibike-trekking-5-high-limeblack-gloss.jpg",
+  "credit": "motoakcesoria.com",
+  "variantNote": "Rower elektryczny E-bike Haibike Trekking 5 - High lime/black - gloss (https://motoakcesoria.com/trekking-i-miejskie/haibike-trekking-5-high-limeblack-gloss.html)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 76426,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "haibike-trekking",
+    "url": "/models/expansion/bikes/haibike-trekking.glb",
+    "nativeSource": "assets/blender/expansion/bikes/haibike-trekking.blend",
+    "triangles": 27460,
+    "meshes": 33,
+    "bytes": 737464,
+    "family": "commuter"
+  }
+}

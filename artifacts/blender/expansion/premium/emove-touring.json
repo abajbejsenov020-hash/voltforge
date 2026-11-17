@@ -1,0 +1,26 @@
+{
+  "name": "EMOVE Touring",
+  "model": {
+    "key": "emove-touring",
+    "url": "/models/expansion/premium/emove-touring.glb",
+    "nativeSource": "assets/blender/expansion/premium/emove-touring.blend",
+    "triangles": 49200,
+    "meshes": 33,
+    "bytes": 1282288,
+    "family": "EMOVE Touring verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.5418000221252441,
+      -0.26499998569488525,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5220000147819519,
+      0.26499998569488525,
+      1.1999930143356323
+    ]
+  ],
+  "observed": "Manufacturer purple Touring reference: compact 8-inch scooter, narrow purple rectangular deck, telescopic front fork, rear suspension and tall folding black stem.",
+  "revision": 2
+}

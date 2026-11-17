@@ -1,0 +1,26 @@
+{
+  "name": "Cube Kathmandu Hybrid",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cube-kathmandu-hybrid.webp",
+  "source": "https://www.cube.eu/nl-nl/cube-kathmandu-hybrid-pro-800-coal-n-black/112201",
+  "imageSource": "https://file.cube.eu/azwesc1xfg346/media/38/0a/45/1754546790/synqup_112201_P_00.jpg?ts=1776142811",
+  "credit": "www.cube.eu",
+  "variantNote": "Cube Kathmandu Hybrid Pro 800 coal\u00b4n\u00b4black (https://www.cube.eu/nl-nl/cube-kathmandu-hybrid-pro-800-coal-n-black/112201)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    675
+  ],
+  "bytes": 47072,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "cube-kathmandu-hybrid",
+    "url": "/models/expansion/bikes/cube-kathmandu-hybrid.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cube-kathmandu-hybrid.blend",
+    "triangles": 28004,
+    "meshes": 32,
+    "bytes": 757812,
+    "family": "commuter"
+  }
+}

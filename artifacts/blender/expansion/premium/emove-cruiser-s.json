@@ -1,0 +1,26 @@
+{
+  "name": "EMOVE Cruiser S",
+  "model": {
+    "key": "emove-cruiser-s",
+    "url": "/models/expansion/premium/emove-cruiser-s.glb",
+    "nativeSource": "assets/blender/expansion/premium/emove-cruiser-s.blend",
+    "triangles": 50124,
+    "meshes": 33,
+    "bytes": 1316960,
+    "family": "EMOVE Cruiser S exterior"
+  },
+  "bounds": [
+    [
+      -0.6380500197410583,
+      -0.3100000023841858,
+      0.0
+    ],
+    [
+      0.6169999837875366,
+      0.3100000023841858,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Long black commuter chassis, black telescopic stem, dual front telescopic suspension and rear coil.",
+  "revision": 2
+}

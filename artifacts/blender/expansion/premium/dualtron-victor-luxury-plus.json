@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Victor Luxury Plus",
+  "model": {
+    "key": "dualtron-victor-luxury-plus",
+    "url": "/models/expansion/premium/dualtron-victor-luxury-plus.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-victor-luxury-plus.blend",
+    "triangles": 54892,
+    "meshes": 34,
+    "bytes": 1527100,
+    "family": "Dualtron Victor Luxury Plus exterior"
+  },
+  "bounds": [
+    [
+      -0.6430500149726868,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.621999979019165,
+      0.3050000071525574,
+      1.3599929809570312
+    ]
+  ],
+  "observed": "Lengthened Luxury deck, yellow neck badge and integrated illuminated rear brace.",
+  "revision": 2
+}

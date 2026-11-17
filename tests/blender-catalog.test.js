@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import refs from '../apps/web/src/data/vehicle-references.json' with { type: 'json' };
+import { VEHICLE_REFERENCES as refs } from '../apps/web/src/data/vehicle-artwork.js';
 import {
   BLENDER_VEHICLES,
   BLENDER_MODELS,
@@ -12,10 +12,10 @@ import { VEHICLE_INDEX } from '@voltforge/shared/vehicles';
 import { vehicleReference } from '../apps/web/src/data/vehicle-library.js';
 
 test('every pictured vehicle resolves to its own completed Blender entry', () => {
-  assert.equal(BLENDER_VEHICLES.length, 60);
-  assert.equal(new Set(BLENDER_VEHICLES.map((entry) => entry.name)).size, 60);
-  assert.equal(new Set(BLENDER_VEHICLES.map((entry) => entry.key)).size, 60);
-  assert.equal(Object.keys(BLENDER_MODELS).length, 60);
+  assert.equal(BLENDER_VEHICLES.length, refs.length);
+  assert.equal(new Set(BLENDER_VEHICLES.map((entry) => entry.name)).size, refs.length);
+  assert.equal(new Set(BLENDER_VEHICLES.map((entry) => entry.key)).size, refs.length);
+  assert.equal(Object.keys(BLENDER_MODELS).length, refs.length);
   for (const reference of refs) {
     const entry = BLENDER_VEHICLES.find((item) => item.name === reference.name);
     assert.ok(entry, reference.name);

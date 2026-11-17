@@ -1,0 +1,26 @@
+{
+  "name": "Super73 R",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/super73-r.webp",
+  "source": "https://super73.cl/products/super7-r-olive-drab",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0508/0167/2359/products/Super73_R_3qtrBck_Green_RevSusp_1200x800_23aebc71-c351-4759-89b3-b534378d61e3_1200x1200.jpg?v=1606913820",
+  "credit": "super73.cl",
+  "variantNote": "SUPER73-R \u2013 Super73Chile (https://super73.cl/products/super7-r-olive-drab)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 135368,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "super73-r",
+    "url": "/models/expansion/bikes/super73-r.glb",
+    "nativeSource": "assets/blender/expansion/bikes/super73-r.blend",
+    "triangles": 29756,
+    "meshes": 28,
+    "bytes": 949776,
+    "family": "mopedfull"
+  }
+}

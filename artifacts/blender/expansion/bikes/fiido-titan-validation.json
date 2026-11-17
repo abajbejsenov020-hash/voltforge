@@ -1,0 +1,29 @@
+{
+  "name": "Fiido Titan",
+  "key": "fiido-titan",
+  "dimensions_m": [
+    2.0822,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 29328,
+  "meshes": 33,
+  "bytes": 905940,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "fiido-titan.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

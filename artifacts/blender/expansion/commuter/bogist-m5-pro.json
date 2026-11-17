@@ -1,0 +1,47 @@
+{
+  "key": "bogist-m5-pro",
+  "name": "Bogist M5 Pro",
+  "family": "Bogist M5 Pro teal seated carrier",
+  "parameters": {
+    "family": "Bogist M5 Pro teal seated carrier",
+    "r": 0.152,
+    "wide": 0.03,
+    "wb": 0.94,
+    "dl": 0.52,
+    "dw": 0.21,
+    "dz": 0.19,
+    "h": 1.15,
+    "bar": 0.6,
+    "stem": "round",
+    "fork": "twinfork",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "midround",
+    "halo": false,
+    "body": [
+      0.035,
+      0.045,
+      0.05
+    ],
+    "accent": [
+      0.015,
+      0.62,
+      0.45
+    ],
+    "seat": true,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 37432,
+  "meshes": 29,
+  "bytes": 1345368,
+  "source": "https://www.boulanger.com/ref/9000921800",
+  "reference": "/assets/vehicles/expansion/commuter/bogist-m5-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/bogist-m5-pro.blend",
+  "url": "/models/expansion/commuter/bogist-m5-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Engwe Engine Pro",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-engine-pro.webp",
+  "source": "https://www.geekbuying.com/item/ENGWE-ENGINE-Pro-Folding-Electric-Bicycle-750W-48V-16Ah-Black-497250.html",
+  "imageSource": "https://img.gkbcdn.com/s3/p/2022-03-01/engwe-engine-pro-folding-electric-bicycle-750w-48v-12-8ah-black-d69460-1646127110952.jpg",
+  "credit": "www.geekbuying.com",
+  "variantNote": "ENGWE ENGINE Pro Folding Electric Bicycle (https://www.geekbuying.com/item/ENGWE-ENGINE-Pro-Folding-Electric-Bicycle-750W-48V-16Ah-Black-497250.html)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 113478,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "engwe-engine-pro",
+    "url": "/models/expansion/bikes/engwe-engine-pro.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-engine-pro.blend",
+    "triangles": 31656,
+    "meshes": 40,
+    "bytes": 962952,
+    "family": "fullfold"
+  }
+}

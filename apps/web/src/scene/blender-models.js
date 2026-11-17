@@ -8,6 +8,7 @@ import {
 import scooters from '../data/blender-scooters.json' with { type: 'json' };
 import lightmoto from '../data/blender-lightmoto.json' with { type: 'json' };
 import motoBicycle from '../data/blender-moto-bicycle.json' with { type: 'json' };
+import { EXPANDED_BLENDER_VEHICLES } from '../data/vehicle-artwork.js';
 
 export const BLENDER_VEHICLES = [
   {
@@ -27,6 +28,7 @@ export const BLENDER_VEHICLES = [
   ...scooters,
   ...lightmoto,
   ...motoBicycle,
+  ...EXPANDED_BLENDER_VEHICLES,
 ];
 // A batch entry becomes available only after Blender has exported and checked it.
 const available = BLENDER_VEHICLES.filter((entry) => entry.bytes > 0);

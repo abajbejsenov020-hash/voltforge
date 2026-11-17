@@ -1,0 +1,26 @@
+{
+  "name": "Specialized Turbo Vado",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/specialized-turbo-vado.webp",
+  "source": "https://www.specialized.com/us/en/turbo-vado-2-30/p/206163",
+  "imageSource": "https://resources.specialized.com/image/95022-70_VADO-30-CSTBLK-SILREFL_HERO-SQUARE?q=75&w=1400&h=2880&fit=max&fm=webp",
+  "credit": "www.specialized.com",
+  "variantNote": "Turbo Vado 2 3.0",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 158360,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "specialized-turbo-vado",
+    "url": "/models/expansion/bikes/specialized-turbo-vado.glb",
+    "nativeSource": "assets/blender/expansion/bikes/specialized-turbo-vado.blend",
+    "triangles": 28352,
+    "meshes": 32,
+    "bytes": 772476,
+    "family": "commuter"
+  }
+}

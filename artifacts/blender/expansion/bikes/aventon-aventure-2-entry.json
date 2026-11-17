@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Aventure.2",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-aventure-2.webp",
+  "source": "https://thehubbicycles.com/products/aventon-aventure-2-fat-tire-e-bike",
+  "imageSource": "https://thehubbicycles.com/cdn/shop/products/AV10_AventureLaunch_s9_2.jpg?v=1679022666",
+  "credit": "thehubbicycles.com",
+  "variantNote": "AVENTON Aventure.2 Fat Tire E-Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1080,
+    1080
+  ],
+  "bytes": 158110,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-aventure-2",
+    "url": "/models/expansion/bikes/aventon-aventure-2.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-aventure-2.blend",
+    "triangles": 29976,
+    "meshes": 29,
+    "bytes": 927348,
+    "family": "stepfat"
+  }
+}

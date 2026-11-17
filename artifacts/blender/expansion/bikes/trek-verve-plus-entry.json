@@ -1,0 +1,26 @@
+{
+  "name": "Trek Verve+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/trek-verve.webp",
+  "source": "https://www.peddlers-cycles.co.uk/product/187347/trek-2025-verve-2-lowstep-gen-3-400wh/option/",
+  "imageSource": "https://www.peddlers-cycles.co.uk/content/products/trek-2025-verve-2-lowstep-gen-3-400wh_187347.jpg",
+  "credit": "www.peddlers-cycles.co.uk",
+  "variantNote": "Trek 2026 Verve+ 2 Lowstep Gen 3 - 400Wh - Peddlers Cycles (https://www.peddlers-cycles.co.uk/product/187347/trek-2025-verve-2-lowstep-gen-3-400wh/option/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1168,
+    768
+  ],
+  "bytes": 102914,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "trek-verve-plus",
+    "url": "/models/expansion/bikes/trek-verve-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/trek-verve-plus.blend",
+    "triangles": 30672,
+    "meshes": 29,
+    "bytes": 935560,
+    "family": "stepcurve"
+  }
+}

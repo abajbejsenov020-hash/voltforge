@@ -1,0 +1,29 @@
+{
+  "name": "Arctic Leopard XE Pro S Super",
+  "key": "arctic-leopard-xe-pro-s-super",
+  "dimensions_m": [
+    1.9209,
+    0.8128,
+    1.1786
+  ],
+  "triangles": 33704,
+  "meshes": 36,
+  "bytes": 997204,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "arctic-leopard-xe-pro-s-super.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Compact road/supermoto exterior."
+}

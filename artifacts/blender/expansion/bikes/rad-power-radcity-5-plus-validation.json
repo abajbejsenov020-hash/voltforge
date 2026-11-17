@@ -1,0 +1,29 @@
+{
+  "name": "Rad Power RadCity 5 Plus",
+  "key": "rad-power-radcity-5-plus",
+  "dimensions_m": [
+    1.9702,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 29912,
+  "meshes": 31,
+  "bytes": 925916,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "rad-power-radcity-5-plus.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

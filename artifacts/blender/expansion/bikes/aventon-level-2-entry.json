@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Level.2",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-level-2.webp",
+  "source": "https://ebikes508.com/products/aventon-level-2-e-bike",
+  "imageSource": "https://ebikes508.com/cdn/shop/products/Aventon-Level-2-E-bike_1050x700.png?v=1784386361",
+  "credit": "ebikes508.com",
+  "variantNote": "Aventon Level 2 e-Bike with Toggle-able Throttle Assist (https://ebikes508.com/products/aventon-level-2-e-bike)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1050,
+    700
+  ],
+  "bytes": 62614,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-level-2",
+    "url": "/models/expansion/bikes/aventon-level-2.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-level-2.blend",
+    "triangles": 26516,
+    "meshes": 33,
+    "bytes": 718352,
+    "family": "commuter"
+  }
+}

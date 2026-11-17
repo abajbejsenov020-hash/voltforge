@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Spider 2",
+  "model": {
+    "key": "dualtron-spider-2",
+    "url": "/models/expansion/premium/dualtron-spider-2.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-spider-2.blend",
+    "triangles": 53264,
+    "meshes": 34,
+    "bytes": 1465696,
+    "family": "Dualtron Spider 2 exterior"
+  },
+  "bounds": [
+    [
+      -0.6230499744415283,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.6019999980926514,
+      0.3050000071525574,
+      1.2899930477142334
+    ]
+  ],
+  "observed": "Slim light chassis, narrow tyres, skeletal rear footplate and black cartridge arms.",
+  "revision": 2
+}

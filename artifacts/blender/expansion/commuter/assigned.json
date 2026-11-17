@@ -1,0 +1,885 @@
+[
+  {
+    "id": "scooter:kukirin-g2-vmp",
+    "brand": "KuKirin",
+    "model": "G2 VMP",
+    "name": "KuKirin G2 VMP",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin G2 VMP",
+      "KugooKirin G2 VMP",
+      "Ku Kirin G2 VMP",
+      "Kirin G2 VMP",
+      "Kugoo G2 VMP"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-g2-ultra",
+    "brand": "KuKirin",
+    "model": "G2 Ultra",
+    "name": "KuKirin G2 Ultra",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin G2 Ultra",
+      "KugooKirin G2 Ultra",
+      "Ku Kirin G2 Ultra",
+      "Kirin G2 Ultra",
+      "Kugoo G2 Ultra"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-g3",
+    "brand": "KuKirin",
+    "model": "G3",
+    "name": "KuKirin G3",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin G3",
+      "KugooKirin G3",
+      "Ku Kirin G3",
+      "Kirin G3",
+      "Kugoo G3"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-g4-max",
+    "brand": "KuKirin",
+    "model": "G4 Max",
+    "name": "KuKirin G4 Max",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin G4 Max",
+      "KugooKirin G4 Max",
+      "Ku Kirin G4 Max",
+      "Kirin G4 Max",
+      "Kugoo G4 Max"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-m4",
+    "brand": "KuKirin",
+    "model": "M4",
+    "name": "KuKirin M4",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin M4",
+      "KugooKirin M4",
+      "Ku Kirin M4",
+      "Kirin M4",
+      "Kugoo M4"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-m4-pro",
+    "brand": "KuKirin",
+    "model": "M4 Pro",
+    "name": "KuKirin M4 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin M4 Pro",
+      "KugooKirin M4 Pro",
+      "Ku Kirin M4 Pro",
+      "Kirin M4 Pro",
+      "Kugoo M4 Pro"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-s1-max",
+    "brand": "KuKirin",
+    "model": "S1 Max",
+    "name": "KuKirin S1 Max",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin S1 Max",
+      "KugooKirin S1 Max",
+      "Ku Kirin S1 Max",
+      "Kirin S1 Max",
+      "Kugoo S1 Max"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-s3-pro",
+    "brand": "KuKirin",
+    "model": "S3 Pro",
+    "name": "KuKirin S3 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin S3 Pro",
+      "KugooKirin S3 Pro",
+      "Ku Kirin S3 Pro",
+      "Kirin S3 Pro",
+      "Kugoo S3 Pro"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-a1",
+    "brand": "KuKirin",
+    "model": "A1",
+    "name": "KuKirin A1",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin A1",
+      "KugooKirin A1",
+      "Ku Kirin A1",
+      "Kirin A1",
+      "Kugoo A1"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-c1-pro",
+    "brand": "KuKirin",
+    "model": "C1 Pro",
+    "name": "KuKirin C1 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin C1 Pro",
+      "KugooKirin C1 Pro",
+      "Ku Kirin C1 Pro",
+      "Kirin C1 Pro",
+      "Kugoo C1 Pro"
+    ]
+  },
+  {
+    "id": "scooter:kukirin-t3",
+    "brand": "KuKirin",
+    "model": "T3",
+    "name": "KuKirin T3",
+    "type": "scooter",
+    "aliases": [
+      "Kugoo Kirin T3",
+      "KugooKirin T3",
+      "Ku Kirin T3",
+      "Kirin T3",
+      "Kugoo T3"
+    ]
+  },
+  {
+    "id": "scooter:kugoo-m2-pro",
+    "brand": "Kugoo",
+    "model": "M2 Pro",
+    "name": "Kugoo M2 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-s1",
+    "brand": "Kugoo",
+    "model": "S1",
+    "name": "Kugoo S1",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-s1-pro",
+    "brand": "Kugoo",
+    "model": "S1 Pro",
+    "name": "Kugoo S1 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-s3",
+    "brand": "Kugoo",
+    "model": "S3",
+    "name": "Kugoo S3",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-s3-pro",
+    "brand": "Kugoo",
+    "model": "S3 Pro",
+    "name": "Kugoo S3 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-g-booster",
+    "brand": "Kugoo",
+    "model": "G-Booster",
+    "name": "Kugoo G-Booster",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-g-max",
+    "brand": "Kugoo",
+    "model": "G-Max",
+    "name": "Kugoo G-Max",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-g1",
+    "brand": "Kugoo",
+    "model": "G1",
+    "name": "Kugoo G1",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:kugoo-g2-pro",
+    "brand": "Kugoo",
+    "model": "G2 Pro",
+    "name": "Kugoo G2 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-leopard",
+    "brand": "Ausom",
+    "model": "Leopard",
+    "name": "Ausom Leopard",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-gallop",
+    "brand": "Ausom",
+    "model": "Gallop",
+    "name": "Ausom Gallop",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-l1",
+    "brand": "Ausom",
+    "model": "L1",
+    "name": "Ausom L1",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-l2",
+    "brand": "Ausom",
+    "model": "L2",
+    "name": "Ausom L2",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-l2-max",
+    "brand": "Ausom",
+    "model": "L2 Max",
+    "name": "Ausom L2 Max",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-dt1",
+    "brand": "Ausom",
+    "model": "DT1",
+    "name": "Ausom DT1",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-dt1-pro",
+    "brand": "Ausom",
+    "model": "DT1 Pro",
+    "name": "Ausom DT1 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-gosoul-2-pro",
+    "brand": "Ausom",
+    "model": "Gosoul 2 Pro",
+    "name": "Ausom Gosoul 2 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-k20-pro",
+    "brand": "Ausom",
+    "model": "K20 Pro",
+    "name": "Ausom K20 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ausom-sr1",
+    "brand": "Ausom",
+    "model": "SR1",
+    "name": "Ausom SR1",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:segway-ninebot-max-g30",
+    "brand": "Segway Ninebot",
+    "model": "Max G30",
+    "name": "Segway Ninebot Max G30",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot Max G30",
+      "Segway Max G30"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-max-g30d",
+    "brand": "Segway Ninebot",
+    "model": "Max G30D",
+    "name": "Segway Ninebot Max G30D",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot Max G30D",
+      "Segway Max G30D"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-max-g30lp",
+    "brand": "Segway Ninebot",
+    "model": "Max G30LP",
+    "name": "Segway Ninebot Max G30LP",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot Max G30LP",
+      "Segway Max G30LP"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-max-g2",
+    "brand": "Segway Ninebot",
+    "model": "Max G2",
+    "name": "Segway Ninebot Max G2",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot Max G2",
+      "Segway Max G2"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-max-g3",
+    "brand": "Segway Ninebot",
+    "model": "Max G3",
+    "name": "Segway Ninebot Max G3",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot Max G3",
+      "Segway Max G3"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-f2",
+    "brand": "Segway Ninebot",
+    "model": "F2",
+    "name": "Segway Ninebot F2",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot F2",
+      "Segway F2"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-f2-pro",
+    "brand": "Segway Ninebot",
+    "model": "F2 Pro",
+    "name": "Segway Ninebot F2 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot F2 Pro",
+      "Segway F2 Pro"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-f2-plus",
+    "brand": "Segway Ninebot",
+    "model": "F2 Plus",
+    "name": "Segway Ninebot F2 Plus",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot F2 Plus",
+      "Segway F2 Plus"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-f3",
+    "brand": "Segway Ninebot",
+    "model": "F3",
+    "name": "Segway Ninebot F3",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot F3",
+      "Segway F3"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-f3-pro",
+    "brand": "Segway Ninebot",
+    "model": "F3 Pro",
+    "name": "Segway Ninebot F3 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot F3 Pro",
+      "Segway F3 Pro"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-e2",
+    "brand": "Segway Ninebot",
+    "model": "E2",
+    "name": "Segway Ninebot E2",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot E2",
+      "Segway E2"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-e2-plus",
+    "brand": "Segway Ninebot",
+    "model": "E2 Plus",
+    "name": "Segway Ninebot E2 Plus",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot E2 Plus",
+      "Segway E2 Plus"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-e2-pro",
+    "brand": "Segway Ninebot",
+    "model": "E2 Pro",
+    "name": "Segway Ninebot E2 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot E2 Pro",
+      "Segway E2 Pro"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-es1",
+    "brand": "Segway Ninebot",
+    "model": "ES1",
+    "name": "Segway Ninebot ES1",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot ES1",
+      "Segway ES1"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-es2",
+    "brand": "Segway Ninebot",
+    "model": "ES2",
+    "name": "Segway Ninebot ES2",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot ES2",
+      "Segway ES2"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-es4",
+    "brand": "Segway Ninebot",
+    "model": "ES4",
+    "name": "Segway Ninebot ES4",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot ES4",
+      "Segway ES4"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-p65",
+    "brand": "Segway Ninebot",
+    "model": "P65",
+    "name": "Segway Ninebot P65",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot P65",
+      "Segway P65"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-p100s",
+    "brand": "Segway Ninebot",
+    "model": "P100S",
+    "name": "Segway Ninebot P100S",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot P100S",
+      "Segway P100S"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-gt1",
+    "brand": "Segway Ninebot",
+    "model": "GT1",
+    "name": "Segway Ninebot GT1",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot GT1",
+      "Segway GT1"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-gt2",
+    "brand": "Segway Ninebot",
+    "model": "GT2",
+    "name": "Segway Ninebot GT2",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot GT2",
+      "Segway GT2"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-gt3",
+    "brand": "Segway Ninebot",
+    "model": "GT3",
+    "name": "Segway Ninebot GT3",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot GT3",
+      "Segway GT3"
+    ]
+  },
+  {
+    "id": "scooter:segway-ninebot-zt3-pro",
+    "brand": "Segway Ninebot",
+    "model": "ZT3 Pro",
+    "name": "Segway Ninebot ZT3 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Ninebot ZT3 Pro",
+      "Segway ZT3 Pro"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-m365",
+    "brand": "Xiaomi",
+    "model": "M365",
+    "name": "Xiaomi M365",
+    "type": "scooter",
+    "aliases": [
+      "Mi M365",
+      "Xiaomi Electric Scooter M365"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-m365-pro",
+    "brand": "Xiaomi",
+    "model": "M365 Pro",
+    "name": "Xiaomi M365 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Mi M365 Pro",
+      "Xiaomi Electric Scooter M365 Pro"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-pro-2",
+    "brand": "Xiaomi",
+    "model": "Pro 2",
+    "name": "Xiaomi Pro 2",
+    "type": "scooter",
+    "aliases": [
+      "Mi Pro 2",
+      "Xiaomi Electric Scooter Pro 2"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-essential",
+    "brand": "Xiaomi",
+    "model": "Essential",
+    "name": "Xiaomi Essential",
+    "type": "scooter",
+    "aliases": [
+      "Mi Essential",
+      "Xiaomi Electric Scooter Essential"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-1s",
+    "brand": "Xiaomi",
+    "model": "1S",
+    "name": "Xiaomi 1S",
+    "type": "scooter",
+    "aliases": [
+      "Mi 1S",
+      "Xiaomi Electric Scooter 1S"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-mi-3",
+    "brand": "Xiaomi",
+    "model": "Mi 3",
+    "name": "Xiaomi Mi 3",
+    "type": "scooter",
+    "aliases": [
+      "Mi Mi 3",
+      "Xiaomi Electric Scooter Mi 3"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-4",
+    "brand": "Xiaomi",
+    "model": "4",
+    "name": "Xiaomi 4",
+    "type": "scooter",
+    "aliases": [
+      "Mi 4",
+      "Xiaomi Electric Scooter 4"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-4-lite",
+    "brand": "Xiaomi",
+    "model": "4 Lite",
+    "name": "Xiaomi 4 Lite",
+    "type": "scooter",
+    "aliases": [
+      "Mi 4 Lite",
+      "Xiaomi Electric Scooter 4 Lite"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-4-pro",
+    "brand": "Xiaomi",
+    "model": "4 Pro",
+    "name": "Xiaomi 4 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Mi 4 Pro",
+      "Xiaomi Electric Scooter 4 Pro"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-4-ultra",
+    "brand": "Xiaomi",
+    "model": "4 Ultra",
+    "name": "Xiaomi 4 Ultra",
+    "type": "scooter",
+    "aliases": [
+      "Mi 4 Ultra",
+      "Xiaomi Electric Scooter 4 Ultra"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-5",
+    "brand": "Xiaomi",
+    "model": "5",
+    "name": "Xiaomi 5",
+    "type": "scooter",
+    "aliases": [
+      "Mi 5",
+      "Xiaomi Electric Scooter 5"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-5-pro",
+    "brand": "Xiaomi",
+    "model": "5 Pro",
+    "name": "Xiaomi 5 Pro",
+    "type": "scooter",
+    "aliases": [
+      "Mi 5 Pro",
+      "Xiaomi Electric Scooter 5 Pro"
+    ]
+  },
+  {
+    "id": "scooter:xiaomi-5-max",
+    "brand": "Xiaomi",
+    "model": "5 Max",
+    "name": "Xiaomi 5 Max",
+    "type": "scooter",
+    "aliases": [
+      "Mi 5 Max",
+      "Xiaomi Electric Scooter 5 Max"
+    ]
+  },
+  {
+    "id": "scooter:niu-kqi1-pro",
+    "brand": "NIU",
+    "model": "KQi1 Pro",
+    "name": "NIU KQi1 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi2-pro",
+    "brand": "NIU",
+    "model": "KQi2 Pro",
+    "name": "NIU KQi2 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi3-sport",
+    "brand": "NIU",
+    "model": "KQi3 Sport",
+    "name": "NIU KQi3 Sport",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi3-pro",
+    "brand": "NIU",
+    "model": "KQi3 Pro",
+    "name": "NIU KQi3 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi3-max",
+    "brand": "NIU",
+    "model": "KQi3 Max",
+    "name": "NIU KQi3 Max",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi-air",
+    "brand": "NIU",
+    "model": "KQi Air",
+    "name": "NIU KQi Air",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi-300p",
+    "brand": "NIU",
+    "model": "KQi 300P",
+    "name": "NIU KQi 300P",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:niu-kqi-300x",
+    "brand": "NIU",
+    "model": "KQi 300X",
+    "name": "NIU KQi 300X",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:joyor-s5",
+    "brand": "Joyor",
+    "model": "S5",
+    "name": "Joyor S5",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:joyor-s8",
+    "brand": "Joyor",
+    "model": "S8",
+    "name": "Joyor S8",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:joyor-s10-s",
+    "brand": "Joyor",
+    "model": "S10-S",
+    "name": "Joyor S10-S",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:joyor-y8-s",
+    "brand": "Joyor",
+    "model": "Y8-S",
+    "name": "Joyor Y8-S",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:iscooter-i9",
+    "brand": "iScooter",
+    "model": "i9",
+    "name": "iScooter i9",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:iscooter-i10",
+    "brand": "iScooter",
+    "model": "i10",
+    "name": "iScooter i10",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:iscooter-ix3",
+    "brand": "iScooter",
+    "model": "iX3",
+    "name": "iScooter iX3",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:iscooter-ix4",
+    "brand": "iScooter",
+    "model": "iX4",
+    "name": "iScooter iX4",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:iscooter-ix5",
+    "brand": "iScooter",
+    "model": "iX5",
+    "name": "iScooter iX5",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:iscooter-ix6",
+    "brand": "iScooter",
+    "model": "iX6",
+    "name": "iScooter iX6",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ienyrid-m4-pro-s-",
+    "brand": "iENYRID",
+    "model": "M4 Pro S+",
+    "name": "iENYRID M4 Pro S+",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ienyrid-m4-pro-s-max",
+    "brand": "iENYRID",
+    "model": "M4 Pro S+ Max",
+    "name": "iENYRID M4 Pro S+ Max",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ienyrid-es1",
+    "brand": "iENYRID",
+    "model": "ES1",
+    "name": "iENYRID ES1",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:ienyrid-es10",
+    "brand": "iENYRID",
+    "model": "ES10",
+    "name": "iENYRID ES10",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:bogist-c1-pro",
+    "brand": "Bogist",
+    "model": "C1 Pro",
+    "name": "Bogist C1 Pro",
+    "type": "scooter",
+    "aliases": []
+  },
+  {
+    "id": "scooter:bogist-m5-pro",
+    "brand": "Bogist",
+    "model": "M5 Pro",
+    "name": "Bogist M5 Pro",
+    "type": "scooter",
+    "aliases": []
+  }
+]

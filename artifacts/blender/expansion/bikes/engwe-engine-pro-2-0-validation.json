@@ -1,0 +1,29 @@
+{
+  "name": "Engwe Engine Pro 2.0",
+  "key": "engwe-engine-pro-2-0",
+  "dimensions_m": [
+    1.878,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 31744,
+  "meshes": 41,
+  "bytes": 968228,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "engwe-engine-pro-2-0.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

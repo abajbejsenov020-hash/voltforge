@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-s1-max",
+  "name": "KuKirin S1 Max",
+  "family": "KuKirin compact commuter",
+  "parameters": {
+    "family": "KuKirin compact commuter",
+    "r": 0.105,
+    "wide": 0.023,
+    "wb": 0.83,
+    "dl": 0.46,
+    "dw": 0.145,
+    "dz": 0.15,
+    "h": 1.1,
+    "bar": 0.45,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.93,
+      0.56,
+      0.02
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 26204,
+  "meshes": 27,
+  "bytes": 812440,
+  "source": "https://kukirinmobility.com/products/kukirin-s1-max-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-s1-max.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-s1-max.blend",
+  "url": "/models/expansion/commuter/kukirin-s1-max.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

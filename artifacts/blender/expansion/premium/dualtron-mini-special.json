@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Mini Special",
+  "model": {
+    "key": "dualtron-mini-special",
+    "url": "/models/expansion/premium/dualtron-mini-special.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-mini-special.blend",
+    "triangles": 49540,
+    "meshes": 35,
+    "bytes": 1322632,
+    "family": "Dualtron Mini Special exterior"
+  },
+  "bounds": [
+    [
+      -0.5843999981880188,
+      -0.30500003695487976,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5640000104904175,
+      0.3050000071525574,
+      1.2399929761886597
+    ]
+  ],
+  "observed": "Long-body single-motor Mini Special, cyan side LEDs, rear enclosed motor and exposed twin springs.",
+  "revision": 2
+}

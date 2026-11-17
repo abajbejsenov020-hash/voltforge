@@ -1,0 +1,47 @@
+{
+  "key": "segway-ninebot-max-g3",
+  "name": "Segway Ninebot Max G3",
+  "family": "Ninebot MAX G3 dual hydraulic",
+  "parameters": {
+    "family": "Ninebot MAX G3 dual hydraulic",
+    "r": 0.14,
+    "wide": 0.028,
+    "wb": 1.01,
+    "dl": 0.49,
+    "dw": 0.17,
+    "dz": 0.24,
+    "h": 1.38,
+    "bar": 0.59,
+    "stem": "round",
+    "fork": "twinfork",
+    "rear": "shortarm",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.055,
+      0.065,
+      0.07
+    ],
+    "accent": [
+      0.63,
+      0.025,
+      0.01
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": true,
+    "solidArm": false
+  },
+  "triangles": 31464,
+  "meshes": 28,
+  "bytes": 1016504,
+  "source": "https://eu-en.segway.com/ekickscooter/products/max-g3-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-max-g3.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g3.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-max-g3.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

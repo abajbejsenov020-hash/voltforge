@@ -1,0 +1,778 @@
+[
+  {
+    "name": "KuKirin X1",
+    "packedReference": "kukirin-x1.webp",
+    "sha256": "bf800643c604a8b66ef6816425eb22c222f6e5b6112904b30b18d49904695c61",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 419098
+  },
+  {
+    "name": "Talaria Sting",
+    "packedReference": "talaria-sting.webp",
+    "sha256": "7daf09a3a48549d51aeca581da435b939547572669d162ade07724d5b0a74ab0",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 499199
+  },
+  {
+    "name": "Talaria X3",
+    "packedReference": "talaria-x3.webp",
+    "sha256": "70a88402c1bdf7da33ffae244b04d874a6e69f4b14ef4ebcb07fb977e9cef921",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 379771
+  },
+  {
+    "name": "Engwe EP-2 Pro",
+    "packedReference": "engwe-ep-2-pro.webp",
+    "sha256": "670c445847a97e117df079c018b2ab3f7c9e1e0d3916aa73446953465669cf54",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 483115
+  },
+  {
+    "name": "Engwe Engine Pro",
+    "packedReference": "engwe-engine-pro.webp",
+    "sha256": "db2e059af1c7a656571a8e32fd2ccdaf186dffe16fccfbbc34d61d79bfaea2b8",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 449161
+  },
+  {
+    "name": "Engwe Engine Pro 2.0",
+    "packedReference": "engwe-engine-pro-2-0.webp",
+    "sha256": "d665ece0351f7e14037ff0e69dbb8cba4b9d25a1b5d8f28c7be0f946694bd3e7",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 452219
+  },
+  {
+    "name": "Engwe M20",
+    "packedReference": "engwe-m20.webp",
+    "sha256": "dc309f56771bc9b286dce037edcb6ca4cad8554cd8bf8305476c26800fcb9898",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 447800
+  },
+  {
+    "name": "Engwe X20",
+    "packedReference": "engwe-x20.webp",
+    "sha256": "320ebac7640662cc77436751bf7b7552a340decdd78cb93e31c0960219447c4b",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 432148
+  },
+  {
+    "name": "Engwe X24",
+    "packedReference": "engwe-x24.webp",
+    "sha256": "6a3ba24945d1cdd8cb1c899d8de56511eae3c8dadaa773b762ec2c7f68aa9bea",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 469927
+  },
+  {
+    "name": "Engwe X26",
+    "packedReference": "engwe-x26.webp",
+    "sha256": "af8ac632cf63b7d168730771d01b81d08852d9127f676ea66d3fa10ef8f64644",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 456451
+  },
+  {
+    "name": "Engwe L20",
+    "packedReference": "engwe-l20.webp",
+    "sha256": "c0dbe6621b86281b9ae612c968437b38fc88f9b02a41b55112929e0817a007c3",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 404404
+  },
+  {
+    "name": "Engwe L20 2.0",
+    "packedReference": "engwe-l20-2-0.webp",
+    "sha256": "45d001bf53f8cfddc90c8c68c512989fe1a2a334a7b6680f7f271863eb0ac874",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 423339
+  },
+  {
+    "name": "Engwe P275 Pro",
+    "packedReference": "engwe-p275-pro.webp",
+    "sha256": "e95fab801ee17d1d8d51b59de57f37bd1d3863d0ace6c9a86db04adb546140bc",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 401886
+  },
+  {
+    "name": "Engwe MapFour N1 Air",
+    "packedReference": "engwe-mapfour-n1-air.webp",
+    "sha256": "91a6f83c3409425762ccdd383626326cbb0058b9494f87fd83f8371878443238",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 403375
+  },
+  {
+    "name": "Fiido D4S",
+    "packedReference": "fiido-d4s.webp",
+    "sha256": "0ca750cedac521a89f78d63120b3781de8d9f9404c5076ead3d24736e937792c",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 405444
+  },
+  {
+    "name": "Fiido D11",
+    "packedReference": "fiido-d11.webp",
+    "sha256": "d0f04f232b578f72d9db9dafa21014e6be685e7765c9b29761ea97dc45d15b88",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 383918
+  },
+  {
+    "name": "Fiido D21",
+    "packedReference": "fiido-d21.webp",
+    "sha256": "84272163a861876e0cdacbe4a6afadcbaa54a505dc9975220eaa5fafaa4f8214",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 402422
+  },
+  {
+    "name": "Fiido M21",
+    "packedReference": "fiido-m21.webp",
+    "sha256": "d23610c6ef3b4acf1d264dbfc882deebd9d1e6f2b8f849078054e263657cf71f",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 458292
+  },
+  {
+    "name": "Fiido T1",
+    "packedReference": "fiido-t1.webp",
+    "sha256": "cef0e65f5ef876db3f4bcc1d141cfbcfd1e2a2ce18dc65e1d4d26da4babd2b60",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 432296
+  },
+  {
+    "name": "Fiido T2",
+    "packedReference": "fiido-t2.webp",
+    "sha256": "9757a0e547c2e399e53b12a686cdf96b6cd00ae9e504270cbfb8f97404454689",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 420074
+  },
+  {
+    "name": "Fiido Titan",
+    "packedReference": "fiido-titan.webp",
+    "sha256": "af58c205be3a104e01b3042a6d93cab068dcb0fe69a5e5201a7ede53c1d9e869",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 429385
+  },
+  {
+    "name": "Fiido C21",
+    "packedReference": "fiido-c21.webp",
+    "sha256": "12ec13072313ab8f8f8cbc172d122ecbfd48ddffb71796ba3f317804f64a2387",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 409803
+  },
+  {
+    "name": "Fiido Air",
+    "packedReference": "fiido-air.webp",
+    "sha256": "305f310c3a976230649e6cc0abefd36de036c1603e32dd922b722476e9c11b57",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 404351
+  },
+  {
+    "name": "Aventon Aventure",
+    "packedReference": "aventon-aventure.webp",
+    "sha256": "4f19a852a8d86c179536fe3cb042f2523a7735bda48250108e4453ee21795f18",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 447106
+  },
+  {
+    "name": "Aventon Aventure.2",
+    "packedReference": "aventon-aventure-2.webp",
+    "sha256": "5e87dd236f17bd6a89d13c22d27058c19e651e04ff86cc980638977c5e3589d2",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 507272
+  },
+  {
+    "name": "Aventon Level",
+    "packedReference": "aventon-level.webp",
+    "sha256": "21ac92e5f18109a2252bdd0ad66564471e587deb89af52bed2ad16bbdb79270b",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 446284
+  },
+  {
+    "name": "Aventon Pace 500",
+    "packedReference": "aventon-pace-500.webp",
+    "sha256": "b2ed6503e274b5ffcb0194726ff91dc950a0adbad0552e61e1641a5fad44afee",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 445691
+  },
+  {
+    "name": "Aventon Pace 500.3",
+    "packedReference": "aventon-pace-500-3.webp",
+    "sha256": "dab1ecfc58551b85019aa30bdd184d466e2b0cba017a5c42628d3373e290cd7b",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 416704
+  },
+  {
+    "name": "Aventon Soltera",
+    "packedReference": "aventon-soltera.webp",
+    "sha256": "aaf1d5935baec2b613038de3217736fe5e27d1e757b18152847501ec43d5443c",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 455934
+  },
+  {
+    "name": "Aventon Sinch",
+    "packedReference": "aventon-sinch.webp",
+    "sha256": "37643971ecbe5eb9e842815d9aeff1a34ee6152a5c1307551827a8f6017dc08c",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 451078
+  },
+  {
+    "name": "Aventon Abound",
+    "packedReference": "aventon-abound.webp",
+    "sha256": "1687514c937cb2cb6c09a4f99222201eb9b7512273138c8266118924fdc8468b",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 432352
+  },
+  {
+    "name": "Aventon Ramblas",
+    "packedReference": "aventon-ramblas.webp",
+    "sha256": "6ce34bd3d29d9ddfa1945015d55066fdb3c6ffd9fa2848ecc0c4cf52065750c5",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 452846
+  },
+  {
+    "name": "Rad Power RadRunner",
+    "packedReference": "rad-power-radrunner.webp",
+    "sha256": "b26947f915cbd15c6cea43da2db456efdc6cf8dff571c84493b02e5a618766c1",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 447732
+  },
+  {
+    "name": "Rad Power RadRunner 2",
+    "packedReference": "rad-power-radrunner-2.webp",
+    "sha256": "675938b1bb5830637718520ff9d2460553fd897faadf12d48ef0cd6717a1fd7f",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 411319
+  },
+  {
+    "name": "Rad Power RadRunner Plus",
+    "packedReference": "rad-power-radrunner-plus.webp",
+    "sha256": "23990588c1891465d7bb2da9a761398f7722f18ec4ec8fe7152a5680c1cc8861",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 513140
+  },
+  {
+    "name": "Rad Power RadRover 6 Plus",
+    "packedReference": "rad-power-radrover-6-plus.webp",
+    "sha256": "e69a080e18cdc677299afaa16bb1cce9a9dd6f3a9def51dbfe7dd4469e257e12",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 553644
+  },
+  {
+    "name": "Rad Power RadCity 5 Plus",
+    "packedReference": "rad-power-radcity-5-plus.webp",
+    "sha256": "795b64fe81791a5cc48981596e8242566aa02ecc84f1cc7e8659164695430a96",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 537371
+  },
+  {
+    "name": "Rad Power RadExpand 5",
+    "packedReference": "rad-power-radexpand-5.webp",
+    "sha256": "99f53da5a2bdaaa2b7c7ddb949475e6c2f1504d6442abc1d563bfc12651dd4c6",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 481703
+  },
+  {
+    "name": "Rad Power RadWagon 4",
+    "packedReference": "rad-power-radwagon-4.webp",
+    "sha256": "9cbd813a69873b59975815f78196c0b3e4d5925664fad1b05fbe17f39d282b28",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 482258
+  },
+  {
+    "name": "Trek Marlin",
+    "packedReference": "trek-marlin.webp",
+    "sha256": "1a902a4d116825483608349c6e2e02ce74eef0d1a4f7ed8abb2c4b64ed9a13cc",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 542364
+  },
+  {
+    "name": "Trek Powerfly",
+    "packedReference": "trek-powerfly.webp",
+    "sha256": "a7c163e48b270a70c91720ccd243e77899a8c682883605c6b971508210661897",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 394449
+  },
+  {
+    "name": "Trek Rail",
+    "packedReference": "trek-rail.webp",
+    "sha256": "babd9f846db872d9215f68241997051811fc0e371916d460eea4b83e16f16328",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 373314
+  },
+  {
+    "name": "Trek Allant+",
+    "packedReference": "trek-allant.webp",
+    "sha256": "b649f86fc26776007d8199350a31f6957990d69a8489b1e8007a5bf735d2f86e",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 472993
+  },
+  {
+    "name": "Trek Verve+",
+    "packedReference": "trek-verve.webp",
+    "sha256": "2ae19005e890ac52c112f849d9e4c6a20d909629e18eaf120d5887a5723dfba4",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 459466
+  },
+  {
+    "name": "Trek FX+",
+    "packedReference": "trek-fx.webp",
+    "sha256": "f174275fa75942e85b5b0072c5e2af88b4fe6e92da420d2791a57d0728e0833c",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 445329
+  },
+  {
+    "name": "Giant Talon",
+    "packedReference": "giant-talon.webp",
+    "sha256": "8a7c5fd17d19156605b1399d9ed3d10e3cd9c8ec555fe51df0845e374e9f1476",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 394515
+  },
+  {
+    "name": "Giant Talon E+",
+    "packedReference": "giant-talon-e.webp",
+    "sha256": "76857acca812dbc55efa5fc0960b89fa5a940c438b021aec2d3ea910c7f66efd",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 411677
+  },
+  {
+    "name": "Giant Explore E+",
+    "packedReference": "giant-explore-e.webp",
+    "sha256": "bc21f2388b59713dde95bd170fe32dddd42b267996a49ab01b3ba09732ab4bf6",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 391393
+  },
+  {
+    "name": "Giant Trance X E+",
+    "packedReference": "giant-trance-x-e.webp",
+    "sha256": "23c9197f52a1536e2235e3982e363009b4bf6ddb825e635d9355353314de7158",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 403258
+  },
+  {
+    "name": "Giant Reign E+",
+    "packedReference": "giant-reign-e.webp",
+    "sha256": "20759b919830ed32e6ca0ee0a80d3aa5e886624501fba58695cc6b46e5589762",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 436384
+  },
+  {
+    "name": "Giant Fathom E+",
+    "packedReference": "giant-fathom-e.webp",
+    "sha256": "d0f80e43cbf45c0dff37cc5f62c04d01f404f348a4f03ffcf1ee9ce9a5d4e6e1",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 401704
+  },
+  {
+    "name": "Specialized Rockhopper",
+    "packedReference": "specialized-rockhopper.webp",
+    "sha256": "276e3c3363bf8f155155c087e74dd32b0f9af9d164712b4adb5ca9ca6a99ea04",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 543249
+  },
+  {
+    "name": "Specialized Turbo Levo",
+    "packedReference": "specialized-turbo-levo.webp",
+    "sha256": "7cd4bf780f8a6ef51390b65241de853107c8e4f7cdf334e2bae592998ba27120",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 522625
+  },
+  {
+    "name": "Specialized Turbo Kenevo",
+    "packedReference": "specialized-turbo-kenevo.webp",
+    "sha256": "c6a16619135e54f6ace8ff4a35f0a4d99f16449fae7e9635adf22ac37964879e",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 559099
+  },
+  {
+    "name": "Specialized Turbo Vado",
+    "packedReference": "specialized-turbo-vado.webp",
+    "sha256": "28514b1292704b84b97297e5858eb37c2a51689a50f7a5e69b6720ea47185fd6",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 530220
+  },
+  {
+    "name": "Specialized Turbo Como",
+    "packedReference": "specialized-turbo-como.webp",
+    "sha256": "2e35d398765768d97c3ec23ebc2e21e1db5c25a49d8666cc01ee7515cebd0dcb",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 455941
+  },
+  {
+    "name": "Specialized Turbo Tero",
+    "packedReference": "specialized-turbo-tero.webp",
+    "sha256": "52648700d5e8dc78ba6aed96a7174ec543d7f8d736be1e5d3738cf13f781cf08",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 558938
+  },
+  {
+    "name": "Cube Stereo Hybrid",
+    "packedReference": "cube-stereo-hybrid.webp",
+    "sha256": "0c4edf7eecd16b9e9ed2fa4043b4c03709c86cadfd629a71dc7e2d1d1bb12299",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 449903
+  },
+  {
+    "name": "Cube Kathmandu Hybrid",
+    "packedReference": "cube-kathmandu-hybrid.webp",
+    "sha256": "547d8c95bcb938383ae291abaecd81729e5733f1562820d5771735abb48019e4",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 409459
+  },
+  {
+    "name": "Cube Touring Hybrid",
+    "packedReference": "cube-touring-hybrid.webp",
+    "sha256": "e36a663f326332ad1a78de5f293dacd3ec8ee022f9aa79cf7faedd72be5fb0bb",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 404922
+  },
+  {
+    "name": "Cannondale Moterra Neo",
+    "packedReference": "cannondale-moterra-neo.webp",
+    "sha256": "9279b3e1ad38464c2b5a7db798669bd20ba3431d40f0f6fd8ac903de38f917cd",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 555833
+  },
+  {
+    "name": "Cannondale Trail Neo",
+    "packedReference": "cannondale-trail-neo.webp",
+    "sha256": "fb12f903212457bf4fe1ee5ac364dafbd3b96297a8c1b9fd1cf0451195559ea1",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 529357
+  },
+  {
+    "name": "Cannondale Adventure Neo",
+    "packedReference": "cannondale-adventure-neo.webp",
+    "sha256": "8b094126be751570cfac67078369ff1dbcd6a8222d8a7f2d90ad65cc40b81c35",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 409642
+  },
+  {
+    "name": "Cannondale Tesoro Neo",
+    "packedReference": "cannondale-tesoro-neo.webp",
+    "sha256": "7a201fad2c08fde0730108355c45ae8691635af99965f27b1bf2704a9d87ce4e",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 429892
+  },
+  {
+    "name": "Himiway Cruiser",
+    "packedReference": "himiway-cruiser.webp",
+    "sha256": "2addb721f6be95cbd7f4239a4047a64b782002873c277ca4114730a8f454e905",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 439960
+  },
+  {
+    "name": "Himiway Zebra",
+    "packedReference": "himiway-zebra.webp",
+    "sha256": "b9c35c85d34f85073a9cb6db671bd3986b081dea1e57fe802d2a1cbbd7c3389c",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 463829
+  },
+  {
+    "name": "Himiway Cobra",
+    "packedReference": "himiway-cobra.webp",
+    "sha256": "c6b12c62ca3a943c713f2312b06e37e3a906d41a8288bf898f061c922f66f1f5",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 448753
+  },
+  {
+    "name": "Lectric XP 3.0",
+    "packedReference": "lectric-xp-3-0.webp",
+    "sha256": "0cab01ea278017079d2602afa4ddd7ec82484b53126645b210a626e50020b323",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 449992
+  },
+  {
+    "name": "Lectric XP Lite",
+    "packedReference": "lectric-xp-lite.webp",
+    "sha256": "9938658421c84a541fb6cfc3fab45e65ee5fd1753a5ae9055659795ee4a32fa9",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 488617
+  },
+  {
+    "name": "Lectric XPedition",
+    "packedReference": "lectric-xpedition.webp",
+    "sha256": "83018ec96a858a0a3c7604241209980bb5bb17f4b8c86462c745801c25e2c349",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 487660
+  },
+  {
+    "name": "Lectric XPeak",
+    "packedReference": "lectric-xpeak.webp",
+    "sha256": "17f494c32ea2afbedceaa6b11f9640ae53c392377d89fa2ee6e1e633bc76d0bf",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 426240
+  },
+  {
+    "name": "Super73 S2",
+    "packedReference": "super73-s2.webp",
+    "sha256": "a6ce7f0b0f2242ffc86ff960642a84fb033e0ea5479ff6dad5f8083ab1f55ed5",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 457409
+  },
+  {
+    "name": "Super73 R",
+    "packedReference": "super73-r.webp",
+    "sha256": "7bfd4ba3abcb26968b763544c89a964c7ddd7d15e4673f0947089d92fe1052be",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 516567
+  },
+  {
+    "name": "Super73 RX",
+    "packedReference": "super73-rx.webp",
+    "sha256": "b564be03c2c785c96425ae546bc186817d3fe8817694b11c818ca445574a0e18",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 418060
+  },
+  {
+    "name": "Super73 ZX",
+    "packedReference": "super73-zx.webp",
+    "sha256": "14f39d5b1b4b96fd90d823b80a2aee3e2e29a3a8efd1208a64fce0ace0566ff7",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 456773
+  },
+  {
+    "name": "Super73 Z Miami",
+    "packedReference": "super73-z-miami.webp",
+    "sha256": "3e40dc352a0e7cd5afdc3f3e5182d740564f48012aac452ec1a0b9f01574bb30",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 456989
+  },
+  {
+    "name": "Sur-Ron Light Bee S",
+    "packedReference": "sur-ron-light-bee-s.webp",
+    "sha256": "f74895a06be7d154a0752f34383f213a40174183bf2f4997a3934d4d75a58db3",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 528231
+  },
+  {
+    "name": "Talaria Sting MX3",
+    "packedReference": "talaria-sting-mx3.webp",
+    "sha256": "7daf09a3a48549d51aeca581da435b939547572669d162ade07724d5b0a74ab0",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 442460
+  },
+  {
+    "name": "Talaria XXX L1E",
+    "packedReference": "talaria-xxx-l1e.webp",
+    "sha256": "69b48f268b7cbf182f1130646fc3351f2b25524d6ff10b271050f46bd32a893b",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 458551
+  },
+  {
+    "name": "Stark Varg",
+    "packedReference": "stark-varg.webp",
+    "sha256": "cf4eade47f8c2ea1d2dde2d91cb3e3e462f53f760b16910010948b4384c4b94e",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 546481
+  },
+  {
+    "name": "E Ride Pro SS",
+    "packedReference": "e-ride-pro-ss.webp",
+    "sha256": "694f105bf0fab32188a987f97ebccb58443bf1c0a353feaee0c6de9710f562d3",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 516695
+  },
+  {
+    "name": "Altis Sigma",
+    "packedReference": "altis-sigma.webp",
+    "sha256": "fd3065ea5182eaa18a1a1711f02a35f861c9b9018aadc1954a37e7bd25a22114",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 475843
+  },
+  {
+    "name": "Aventon Level.2",
+    "packedReference": "aventon-level-2.webp",
+    "sha256": "a0715430f562431224ddc8a58728e98f85484e695b22877bd5deb4bd41e3126b",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 406131
+  },
+  {
+    "name": "Trek Marlin+",
+    "packedReference": "trek-marlin-plus.webp",
+    "sha256": "3c38acb1a4f5834f4cc6765f2e1be64b790f71a944f4b54b776d8ac876dbfcc9",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 437920
+  },
+  {
+    "name": "Cube Reaction Hybrid",
+    "packedReference": "cube-reaction-hybrid.webp",
+    "sha256": "165c827f09f7c36a64acdfc4e31f7c0e028d8913d820ffe7c3f03778f30068da",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 445973
+  },
+  {
+    "name": "Haibike AllMtn",
+    "packedReference": "haibike-allmtn.webp",
+    "sha256": "0eb2eb4c8417bad4eb0be134d8e49245bd11d3253e8273cdf206ec27bd3bf108",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 622528
+  },
+  {
+    "name": "Haibike HardNine",
+    "packedReference": "haibike-hardnine.webp",
+    "sha256": "6135290d2bc99364b14f786117619cf8db586fb1e89654dddc3a49ef0536e634",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 420711
+  },
+  {
+    "name": "Haibike HardSeven",
+    "packedReference": "haibike-hardseven.webp",
+    "sha256": "65d181314ea0207b61f940400a80c06f3bcf72e3fc1124ca9b6e8bb0ab189c30",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 611395
+  },
+  {
+    "name": "Haibike Trekking",
+    "packedReference": "haibike-trekking.webp",
+    "sha256": "a20c998f848d427e66d026c16696a60c758bba2d6a9b7ce6002bfafe5a8660a3",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 428864
+  },
+  {
+    "name": "Altis Delta",
+    "packedReference": "altis-delta.webp",
+    "sha256": "783b9081425eb8d927f6e7f4fd8777e4d84e2a1b9813a97593dea8f36eec9a22",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 528735
+  },
+  {
+    "name": "Arctic Leopard E-16Z",
+    "packedReference": "arctic-leopard-e-16z.webp",
+    "sha256": "8ebc86d334928728802d7560b964bb6b217d2c7f2c5503da8dd7c8e8b13ae1e6",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 374710
+  },
+  {
+    "name": "Arctic Leopard E-20Y",
+    "packedReference": "arctic-leopard-e-20y.webp",
+    "sha256": "794309ca11f86d46610d06be0a58ff70ced98bcbc0baa1525af48f328c8f0c28",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 363086
+  },
+  {
+    "name": "Sur-Ron Light Bee",
+    "packedReference": "sur-ron-light-bee.webp",
+    "sha256": "1b3137675ee6bf34155b71f45ab2736b35d0de525fbcf7bd4cf0d5e9e02712ed",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 498675
+  },
+  {
+    "name": "Himiway Big Dog",
+    "packedReference": "himiway-big-dog.webp",
+    "sha256": "f04c81644f74fdf05b7052d405a544d6da1b65bb7aaffabaf62e75fdf376a7c2",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 417559
+  },
+  {
+    "name": "Lectric XP 2.0",
+    "packedReference": "lectric-xp-2-0.webp",
+    "sha256": "61fb633634ad9244124fa21e760c99be380b86f24c88f7cbdd0251de90d5a1f8",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 451932
+  },
+  {
+    "name": "Arctic Leopard E-ZPRO",
+    "packedReference": "arctic-leopard-e-zpro.webp",
+    "sha256": "49a68e0f27c5d7be65035acbffb96f179fe199a0c6b4531f34679a048db35124",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 421745
+  },
+  {
+    "name": "Arctic Leopard XE Pro S Super",
+    "packedReference": "arctic-leopard-xe-pro-s-super.webp",
+    "sha256": "3087ddbf745d18345fc57190524a7d65da7403be17df55e6bd37c6f90c2e017e",
+    "packedImageCount": 1,
+    "bakedMeshTransforms": true,
+    "nativeBytes": 566012
+  }
+]

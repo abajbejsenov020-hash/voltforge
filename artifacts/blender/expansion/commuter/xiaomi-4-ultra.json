@@ -1,0 +1,47 @@
+{
+  "key": "xiaomi-4-ultra",
+  "name": "Xiaomi 4 Ultra",
+  "family": "Xiaomi suspension commuter",
+  "parameters": {
+    "family": "Xiaomi suspension commuter",
+    "r": 0.127,
+    "wide": 0.024,
+    "wb": 1.01,
+    "dl": 0.56,
+    "dw": 0.195,
+    "dz": 0.21,
+    "h": 1.27,
+    "bar": 0.52,
+    "stem": "round",
+    "fork": "swing",
+    "rear": "shortarm",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.075,
+      0.085,
+      0.09
+    ],
+    "accent": [
+      0.87,
+      0.58,
+      0.025
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 31492,
+  "meshes": 27,
+  "bytes": 992324,
+  "source": "https://www.mi.com/global/product/xiaomi-electric-scooter-4-ultra/",
+  "reference": "/assets/vehicles/expansion/commuter/xiaomi-4-ultra.webp",
+  "nativeSource": "assets/blender/expansion/commuter/xiaomi-4-ultra.blend",
+  "url": "/models/expansion/commuter/xiaomi-4-ultra.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

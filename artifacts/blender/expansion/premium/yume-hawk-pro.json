@@ -1,0 +1,26 @@
+{
+  "name": "Yume Hawk Pro",
+  "model": {
+    "key": "yume-hawk-pro",
+    "url": "/models/expansion/premium/yume-hawk-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/yume-hawk-pro.blend",
+    "triangles": 53356,
+    "meshes": 34,
+    "bytes": 1414832,
+    "family": "Yume Hawk Pro verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6630500555038452,
+      -0.33000001311302185,
+      0.000238936030655168
+    ],
+    [
+      0.641761064529419,
+      0.33000001311302185,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Manufacturer HawkProWide6000W trim with visibly wide 10x4.5-inch smooth road tyres and all-black sculpted frame.",
+  "revision": 2
+}

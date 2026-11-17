@@ -1,0 +1,681 @@
+{
+  "name": "Engwe MapFour N1 Air",
+  "source": "https://engwe.com/products/engwe-n1-air",
+  "checked": [
+    "https://engwe.com/products/engwe-n1-air"
+  ],
+  "title": "ENGWE N1 Air",
+  "images": [
+    {
+      "id": 38153834528825,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T13:44:54+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44244177027129
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_29bbf176-25fe-40de-b4b1-9cf1eb87ae04.jpg?v=1794548694",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153831022649,
+      "created_at": "2026-01-04T10:27:40+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T13:42:04+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/03187cfe8fbdb84aa703090166f2833d.jpg?v=1794548524",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834397753,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:41:24+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_1a191a38-34f8-4be8-8e82-76cc37e62fff.jpg?v=1794548484",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834594361,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T14:09:49+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_0c3cff60-5efb-4d44-ad3b-8b5e8bef3e70.jpg?v=1794550189",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834758201,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T14:09:40+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_2b80d794-c524-4a3d-8a8c-8c8fae103a09.jpg?v=1794550180",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834627129,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:45:42+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44244177059897
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/12_b9ab8b1e-83ed-4489-bfa6-142ce6dd7bb9.jpg?v=1794548742",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153859694649,
+      "created_at": "2026-01-04T10:34:55+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T13:44:32+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/03187cfe8fbdb84aa703090166f2833d_e822fbf5-10a9-4ea1-808a-1058f1045365.jpg?v=1794548672",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834430521,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T13:45:44+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/10_86edc840-0711-4c60-b53b-e86686a40393.jpg?v=1794548744",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153859727417,
+      "created_at": "2026-01-04T10:34:55+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T13:43:08+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_2b10eaad-46ac-45fd-922e-8f4483cdb1ad.jpg?v=1794548588",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834659897,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 10,
+      "updated_at": "2026-11-13T13:40:06+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/14_c6aa3c22-685d-4ea2-9158-2bf552f184b6.jpg?v=1794548406",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834496057,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 11,
+      "updated_at": "2026-11-13T13:43:06+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44244177092665
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_0bf729fc-f01e-433b-a332-b8f555689ae2.jpg?v=1794548586",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153861955641,
+      "created_at": "2026-01-04T10:35:20+08:00",
+      "position": 12,
+      "updated_at": "2026-11-13T13:43:12+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/03187cfe8fbdb84aa703090166f2833d_c704e285-c9cb-455d-88b0-20896d2c092a.jpg?v=1794548592",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834463289,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 13,
+      "updated_at": "2026-11-13T13:40:53+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/8_82dd9551-db8d-4f2f-ad3f-7ae29db0ef5a.jpg?v=1794548453",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834561593,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 14,
+      "updated_at": "2026-11-13T14:08:29+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/7_bf916c0f-2e55-4306-94f5-3c9607c796eb.jpg?v=1794550109",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153862152249,
+      "created_at": "2026-01-04T10:35:25+08:00",
+      "position": 15,
+      "updated_at": "2026-11-13T14:09:33+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_0f52fd9d-6409-47ad-82ee-ca02919428e0.jpg?v=1794550173",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834692665,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 16,
+      "updated_at": "2026-11-13T13:40:32+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44244177125433
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/11_c7051020-aaff-4c9f-9623-100a0fd6f44b.jpg?v=1794548432",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153862119481,
+      "created_at": "2026-01-04T10:35:24+08:00",
+      "position": 17,
+      "updated_at": "2026-11-13T13:43:02+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/03187cfe8fbdb84aa703090166f2833d_29e3a25b-6702-4abc-b8b8-5972e9d92e5e.jpg?v=1794548582",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834364985,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 18,
+      "updated_at": "2026-11-13T13:44:24+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/9_75b917a8-b962-4cf9-9d25-394ef77c8843.jpg?v=1794548664",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153834725433,
+      "created_at": "2026-01-04T10:28:11+08:00",
+      "position": 19,
+      "updated_at": "2026-11-13T14:08:39+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/13_62d9ca7b-cf71-4856-b6d4-c40e71211ff7.jpg?v=1794550119",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153861988409,
+      "created_at": "2026-01-04T10:35:21+08:00",
+      "position": 20,
+      "updated_at": "2026-11-13T13:40:58+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_64b5c88c-7c48-401a-9f7b-655a3916162b.jpg?v=1794548458",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153845866553,
+      "created_at": "2026-01-04T10:31:06+08:00",
+      "position": 21,
+      "updated_at": "2026-11-13T13:42:00+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/N1-AIR-9.jpg?v=1794548520",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847734329,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 22,
+      "updated_at": "2026-11-13T13:41:38+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44915086098489
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/9_d607a646-316a-4682-afa0-5b429672370f.jpg?v=1794548498",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847504953,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 23,
+      "updated_at": "2026-11-13T13:39:54+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/8_3d2897bc-2064-41c4-a9d7-2b1077693930.jpg?v=1794548394",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847668793,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 24,
+      "updated_at": "2026-11-13T13:41:52+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/11_79ad7176-6421-4963-923e-1345fbfcec31.jpg?v=1794548512",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153845899321,
+      "created_at": "2026-01-04T10:31:06+08:00",
+      "position": 25,
+      "updated_at": "2026-11-13T13:44:22+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/N1-AIR-5.jpg?v=1794548662",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847799865,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 26,
+      "updated_at": "2026-11-13T14:09:00+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44915086164025
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_0a307ccb-0fed-4d63-af4b-bf78a2505029.jpg?v=1794550140",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847406649,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 27,
+      "updated_at": "2026-11-13T13:39:06+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_aaa62b5f-ae2a-4a30-b5dd-ca6987953d5d.jpg?v=1794548346",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847636025,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 28,
+      "updated_at": "2026-11-13T13:41:30+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_eba52016-00d8-4c46-8327-22bc7c6caf83.jpg?v=1794548490",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153845932089,
+      "created_at": "2026-01-04T10:31:06+08:00",
+      "position": 29,
+      "updated_at": "2026-11-13T13:39:08+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/N1-AIR-10.jpg?v=1794548348",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847701561,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 30,
+      "updated_at": "2026-11-13T13:41:44+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44915086131257
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/10_c66ade59-7a96-492c-8b4e-125451039a25.jpg?v=1794548504",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847537721,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 31,
+      "updated_at": "2026-11-13T13:39:20+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/7_71d2cd57-40f8-414c-baa2-1ebc16c6cd9d.jpg?v=1794548360",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847603257,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 32,
+      "updated_at": "2026-11-13T13:41:26+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/12_aeda091d-2eaa-4ec7-97a2-65bf4cb8c16f.jpg?v=1794548486",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153845833785,
+      "created_at": "2026-01-04T10:31:06+08:00",
+      "position": 33,
+      "updated_at": "2026-11-13T13:39:50+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/N1-AIR-6.jpg?v=1794548390",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847767097,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 34,
+      "updated_at": "2026-11-13T14:08:55+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [
+        44915086196793
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_fd99de2d-f3ec-4a41-a5ad-ba43349883e6.jpg?v=1794550135",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847439417,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 35,
+      "updated_at": "2026-11-13T13:41:04+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_83d98817-987c-44e6-b5c8-692d792df08f.jpg?v=1794548464",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 38153847570489,
+      "created_at": "2026-01-04T10:31:44+08:00",
+      "position": 36,
+      "updated_at": "2026-11-13T13:40:58+08:00",
+      "product_id": 7830565388345,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_6314f525-edb0-46c6-bc31-4442325ccc53.jpg?v=1794548458",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44244177027129,
+      "title": "Mechanical Version / N1 Air / Ink Green",
+      "option1": "Mechanical Version",
+      "option2": "N1 Air",
+      "option3": "Ink Green",
+      "sku": "EUN1AIRGREEN",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153834528825,
+        "product_id": 7830565388345,
+        "position": 1,
+        "created_at": "2026-01-04T10:28:11+08:00",
+        "updated_at": "2026-11-13T13:44:54+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_29bbf176-25fe-40de-b4b1-9cf1eb87ae04.jpg?v=1794548694",
+        "variant_ids": [
+          44244177027129
+        ]
+      },
+      "available": true,
+      "price": "1249.00",
+      "grams": 0,
+      "compare_at_price": "1799.00",
+      "position": 1,
+      "product_id": 7830565388345,
+      "created_at": "2025-01-24T22:24:28+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44244177092665,
+      "title": "Mechanical Version / N1 Air / Charcoal Gray",
+      "option1": "Mechanical Version",
+      "option2": "N1 Air",
+      "option3": "Charcoal Gray",
+      "sku": "EUN1AIRGRAY",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153834496057,
+        "product_id": 7830565388345,
+        "position": 11,
+        "created_at": "2026-01-04T10:28:11+08:00",
+        "updated_at": "2026-11-13T13:43:06+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_0bf729fc-f01e-433b-a332-b8f555689ae2.jpg?v=1794548586",
+        "variant_ids": [
+          44244177092665
+        ]
+      },
+      "available": false,
+      "price": "1249.00",
+      "grams": 0,
+      "compare_at_price": "1799.00",
+      "position": 2,
+      "product_id": 7830565388345,
+      "created_at": "2025-01-24T22:24:28+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44244177059897,
+      "title": "Mechanical Version / N1 Air ST / Ink Green",
+      "option1": "Mechanical Version",
+      "option2": "N1 Air ST",
+      "option3": "Ink Green",
+      "sku": "EUN1AIRSTGREEN",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153834627129,
+        "product_id": 7830565388345,
+        "position": 6,
+        "created_at": "2026-01-04T10:28:11+08:00",
+        "updated_at": "2026-11-13T13:45:42+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/12_b9ab8b1e-83ed-4489-bfa6-142ce6dd7bb9.jpg?v=1794548742",
+        "variant_ids": [
+          44244177059897
+        ]
+      },
+      "available": false,
+      "price": "1249.00",
+      "grams": 0,
+      "compare_at_price": "1799.00",
+      "position": 3,
+      "product_id": 7830565388345,
+      "created_at": "2025-01-24T22:24:28+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44244177125433,
+      "title": "Mechanical Version / N1 Air ST / Charcoal Gray",
+      "option1": "Mechanical Version",
+      "option2": "N1 Air ST",
+      "option3": "Charcoal Gray",
+      "sku": "EUN1AIRSTGRAY",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153834692665,
+        "product_id": 7830565388345,
+        "position": 16,
+        "created_at": "2026-01-04T10:28:11+08:00",
+        "updated_at": "2026-11-13T13:40:32+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/11_c7051020-aaff-4c9f-9623-100a0fd6f44b.jpg?v=1794548432",
+        "variant_ids": [
+          44244177125433
+        ]
+      },
+      "available": true,
+      "price": "1249.00",
+      "grams": 0,
+      "compare_at_price": "1799.00",
+      "position": 4,
+      "product_id": 7830565388345,
+      "created_at": "2025-01-24T22:24:28+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44915086098489,
+      "title": "Hydraulic Version / N1 Air / Ink Green",
+      "option1": "Hydraulic Version",
+      "option2": "N1 Air",
+      "option3": "Ink Green",
+      "sku": "EUN1AIRGREENHydraulic",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153847734329,
+        "product_id": 7830565388345,
+        "position": 22,
+        "created_at": "2026-01-04T10:31:44+08:00",
+        "updated_at": "2026-11-13T13:41:38+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/9_d607a646-316a-4682-afa0-5b429672370f.jpg?v=1794548498",
+        "variant_ids": [
+          44915086098489
+        ]
+      },
+      "available": false,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "1899.00",
+      "position": 5,
+      "product_id": 7830565388345,
+      "created_at": "2025-09-30T11:09:37+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44915086131257,
+      "title": "Hydraulic Version / N1 Air / Charcoal Gray",
+      "option1": "Hydraulic Version",
+      "option2": "N1 Air",
+      "option3": "Charcoal Gray",
+      "sku": "EUN1AIRGRAYHydraulic",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153847701561,
+        "product_id": 7830565388345,
+        "position": 30,
+        "created_at": "2026-01-04T10:31:44+08:00",
+        "updated_at": "2026-11-13T13:41:44+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/10_c66ade59-7a96-492c-8b4e-125451039a25.jpg?v=1794548504",
+        "variant_ids": [
+          44915086131257
+        ]
+      },
+      "available": false,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "1899.00",
+      "position": 6,
+      "product_id": 7830565388345,
+      "created_at": "2025-09-30T11:09:37+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44915086164025,
+      "title": "Hydraulic Version / N1 Air ST / Ink Green",
+      "option1": "Hydraulic Version",
+      "option2": "N1 Air ST",
+      "option3": "Ink Green",
+      "sku": "EUN1AIRSTGREENHydraulic",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153847799865,
+        "product_id": 7830565388345,
+        "position": 26,
+        "created_at": "2026-01-04T10:31:44+08:00",
+        "updated_at": "2026-11-13T14:09:00+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_0a307ccb-0fed-4d63-af4b-bf78a2505029.jpg?v=1794550140",
+        "variant_ids": [
+          44915086164025
+        ]
+      },
+      "available": false,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "1899.00",
+      "position": 7,
+      "product_id": 7830565388345,
+      "created_at": "2025-09-30T11:09:37+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44915086196793,
+      "title": "Hydraulic Version / N1 Air ST / Charcoal Gray",
+      "option1": "Hydraulic Version",
+      "option2": "N1 Air ST",
+      "option3": "Charcoal Gray",
+      "sku": "EUN1AIRSTGRAYHydraulic",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 38153847767097,
+        "product_id": 7830565388345,
+        "position": 34,
+        "created_at": "2026-01-04T10:31:44+08:00",
+        "updated_at": "2026-11-13T14:08:55+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_fd99de2d-f3ec-4a41-a5ad-ba43349883e6.jpg?v=1794550135",
+        "variant_ids": [
+          44915086196793
+        ]
+      },
+      "available": false,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "1899.00",
+      "position": 8,
+      "product_id": 7830565388345,
+      "created_at": "2025-09-30T11:09:37+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE N1 Air Features</h2>\n<p>1. 250W In-Rotor Motor</p>\n<p>2. Lightweight (15.6kg) &amp; Durable Carbon Fiber Frame</p>\n<p>3. Removable 10Ah Samsung Battery &amp; Up to 100 km of Long Range Riding</p>\n<p>4. Abnormal Bic Alerts, Built-in GPRS Tracking &amp; Automatic SOS Emergency Notification</p>\n<p>5. Step Through &amp; Step Over Options</p>\n<h2>What About ENGWE N1 Air?</h2>\n<p>The ENGWE N1 Air is the ultimate city e-bike, offering a lightweight and durable carbon e-bike frame that redefines urban commuting.</p>\n<p>Weighing just 15.6kg, this is the lightest e-bike in its class, built with a one-piece molded carbon fiber frame that provides 11 times the strength of aluminum. Perfect for city riders, the N1 Air offers a remarkable 100km range on a single charge, thanks to its high-capacity 10Ah Samsung battery. In addition to its long range, the battery of this commuter e-bike is also easy to remove. It can be removed in seconds and is very convenient to recharge.</p>\n<p>As a smart e-cycle, the N1 Air features an advanced anti-theft system with built-in GPRS tracking, abnormal bike alerts, and SOS notifications for extra security. Its 250W mid-drive motor delivers powerful yet discreet performance, ideal for navigating the urban jungle. Whether you choose the step-over or step-through design, this carbon e-bike ensures comfort and style. With a torque sensor that adapts to your pedaling force, the N1 Air provides smooth, responsive power for a truly seamless ride. The N1 Air is the perfect choice for anyone seeking the best entry-level city e-bike without compromising on performance or security.</p>\n<h2>ENGWE N1 Air Carbon E-bike Spec</h2>\n<table border=\"1\">\n<tbody>\n<tr>\n<td width=\"163\">Material</td>\n<td width=\"285\">Carbon Fiber</td>\n</tr>\n<tr>\n<td>Motor</td>\n<td>250W MIVICE Brushless Mid-drive Motor</td>\n</tr>\n<tr>\n<td>Torque</td>\n<td>40 Nm</td>\n</tr>\n<tr>\n<td>Sensor</td>\n<td>Torque Sensor</td>\n</tr>\n<tr>\n<td>Brake</td>\n<td>160mm Front &amp; Rear Mechanical Disc Brakes</td>\n</tr>\n<tr>\n<td>Top Speed</td>\n<td>25 km/h</td>\n</tr>\n<tr>\n<td>Maximum Mileage</td>\n<td>100 km (PAS 1 Level)</td>\n</tr>\n<tr>\n<td>Battery</td>\n<td>36V 10Ah Samsung Removable Lithium-ion Battery</td>\n</tr>\n<tr>\n<td>Charging Time</td>\n<td>About 5-8 hours</td>\n</tr>\n<tr>\n<td>Tires</td>\n<td>700*38C Spoke Tires</td>\n</tr>\n<tr>\n<td>Transmission System</td>\n<td>Shimano 7-speed</td>\n</tr>\n<tr>\n<td>Lights</td>\n<td>Front Light &amp; Solar Tail Light</td>\n</tr>\n<tr>\n<td>Maximum Climbing Degree</td>\n<td>10\u00b0</td>\n</tr>\n<tr>\n<td>Display</td>\n<td>LCD Color Display</td>\n</tr>\n<tr>\n<td>Bike Weight</td>\n<td>15.6 kg (34.39 lbs)</td>\n</tr>\n<tr>\n<td>Gross Weight</td>\n<td>25.4 kg (55.99 lbs)</td>\n</tr>\n<tr>\n<td>Rider Height</td>\n<td>N1 Air: 5.25 ft - 6.4 ft;<br>N1 Air ST: 5.1 ft - 6.2 ft</td>\n</tr>\n<tr>\n<td>Payload Capacity</td>\n<td>N1 Air: 120 kg (264.5 lbs);<br>N1 Air ST: 100 kg (220.4 lbs)</td>\n</tr>\n</tbody>\n</table>"
+}

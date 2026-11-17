@@ -1,0 +1,112 @@
+[
+  {
+    "name": "NIU KQi1 Pro",
+    "key": "niu-kqi1-pro",
+    "source": "https://shop.niu.com/products/niu-kqi1-pro-electric-kick-scooter",
+    "image": "/assets/vehicles/expansion/commuter/niu-kqi1-pro.webp",
+    "motor": "rear",
+    "frontCasting": "vented",
+    "rearCasting": "existing motor/cast wheel",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot E2",
+    "key": "segway-ninebot-e2",
+    "source": "https://eu-en.segway.com/ekickscooter/products/e2-e.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-e2.webp",
+    "motor": "front",
+    "frontCasting": "existing motor/cast wheel",
+    "rearCasting": "vented",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot E2 Plus",
+    "key": "segway-ninebot-e2-plus",
+    "source": "https://eu-en.segway.com/ekickscooter/products/e2-plus-e.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-e2-plus.webp",
+    "motor": "front",
+    "frontCasting": "existing motor/cast wheel",
+    "rearCasting": "vented",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot E2 Pro",
+    "key": "segway-ninebot-e2-pro",
+    "source": "https://eu-en.segway.com/ekickscooter/products/e2-pro-e.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-e2-pro.webp",
+    "motor": "rear",
+    "frontCasting": "vented",
+    "rearCasting": "existing motor/cast wheel",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot P65",
+    "key": "segway-ninebot-p65",
+    "source": "https://eu-en.segway.com/ekickscooter/products/p65e.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-p65.webp",
+    "motor": "rear",
+    "frontCasting": "closed",
+    "rearCasting": "existing motor/cast wheel",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot P100S",
+    "key": "segway-ninebot-p100s",
+    "source": "https://eu-en.segway.com/ekickscooter/products/p100se.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-p100s.webp",
+    "motor": "rear",
+    "frontCasting": "closed",
+    "rearCasting": "existing motor/cast wheel",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot GT1",
+    "key": "segway-ninebot-gt1",
+    "source": "https://eu-en.segway.com/ekickscooter/products/gt1e.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-gt1.webp",
+    "motor": "rear",
+    "frontCasting": "closed",
+    "rearCasting": "existing motor/cast wheel",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot GT3",
+    "key": "segway-ninebot-gt3",
+    "source": "https://eu-en.segway.com/ekickscooter/products/gt3-e.html",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-gt3.webp",
+    "motor": "rear",
+    "frontCasting": "closed",
+    "rearCasting": "existing motor/cast wheel",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot ES1",
+    "key": "segway-ninebot-es1",
+    "source": "https://support.segway.com/support_product.php?segcatid=34",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-es1.webp",
+    "motor": "front",
+    "frontCasting": "existing motor/cast wheel",
+    "rearCasting": "cast",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot ES2",
+    "key": "segway-ninebot-es2",
+    "source": "https://support.segway.com/support_product.php?segcatid=1",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-es2.webp",
+    "motor": "front",
+    "frontCasting": "existing motor/cast wheel",
+    "rearCasting": "cast",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  },
+  {
+    "name": "Segway Ninebot ES4",
+    "key": "segway-ninebot-es4",
+    "source": "https://support.segway.com/support_product.php?segcatid=3",
+    "image": "/assets/vehicles/expansion/commuter/segway-ninebot-es4.webp",
+    "motor": "front",
+    "frontCasting": "existing motor/cast wheel",
+    "rearCasting": "cast",
+    "notes": "Reference inspected for closed motor/drum centers versus visible rim openings; nonmotor castings remain wheel assemblies."
+  }
+]

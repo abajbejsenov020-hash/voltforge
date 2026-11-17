@@ -1,0 +1,36 @@
+def photo_minimoto(e):
+ n=e['name'];kid='16Z' in n or '20Y' in n;small='16Z' in n;X=.90 if small else 1.06 if kid else 1.02 if n=='KuKirin X1' else 1.16;rf=.22 if small else .27 if kid else .255;rr=rf if kid else .23;R=-X/2;F=X/2;seat=.59 if small else .71 if kid else .76;head=.76 if small else .89 if kid else .94;col='blue' if small else 'white' if kid else 'silvergrey';w=.055 if kid else .068
+ wheel(F,rf,w,True,'FrontWheel',cast=kid);wheel(R,rr,w,True,'RearWheel',cast=kid,hubmotor=False)
+ pivot=(-.10,0,.29 if small else .33);top=(F-.20,0,head);bot=(F-.14,0,head-.17)
+ for sy in [-1,1]:
+  tube('Mini perimeter upper rail',[(R-.02,sy*.05,seat),(R+.16,sy*.06,seat-.04),(F-.21,sy*.045,head-.04)],.018,col)
+  tube('Mini lower cradle',[(R+.12,sy*.06,seat-.15),(pivot[0],sy*.06,pivot[2]),(F-.16,sy*.05,head-.17)],.018,col)
+  tube('Triangulated swingarm',[(R,sy*.045,rr),(R+.10,sy*.06,rr+.08),(pivot[0],sy*.065,pivot[2]+.10),(R,sy*.045,rr)],.016,col,'RearSuspension')
+  cyl('Fork stanchion',(bot[0],sy*.052,bot[2]),(F-.04,sy*.052,rf+.10),.014,'blue' if kid else 'gold','Fork');cyl('Fork lower leg',(F-.06,sy*.052,rf+.16),(F,sy*.052,rf),.020,'black','Fork')
+ cyl('Steering head',top,bot,.025,col)
+ poly=[(-.23,.30),(.08,.30),(.23,head-.13),(-.07,seat-.05)]
+ if small:poly=[(-.30,.28),(.01,.27),(.15,.54),(-.11,.56)]
+ plate('Model-specific battery housing',poly,0,.10,'blue' if small else 'black','BatteryMount')
+ for sy in [-1,1]:
+  plate('Battery side cover',[(x,z+.009) for x,z in poly],sy*.058,.005,'blue' if small else 'black','BatteryMount')
+  for x,z in poly[:3]:cyl('Battery cover bolt',(x,sy*.061,z+.016),(x,sy*.066,z+.016),.004,'steel','BatteryMount',10)
+ if not kid:
+  for sy in [-1,1]:
+   plate('Angular side shroud',[(F-.20,head-.04),(.04,seat+.01),(-.14,seat-.03),(.06,seat-.21),(.25,head-.15)],sy*.072,.009,'silvergrey' if 'E-ZPRO' in n else 'white','Bodywork')
+   plate('Orange race inset',[(-.06,seat-.015),(.15,seat-.02),(.18,seat-.06),(-.03,seat-.055)],sy*.080,.001,'yellow' if 'E-ZPRO' in n else 'orange','Bodywork')
+ # Narrow sculpted bench and extended MX rear fender.
+ loft('Mini moto saddle',[(R-.11,seat+.04,.035,.022),(R+.01,seat+.04,.078,.04),(R+.29,seat+.025,.075,.045),(.08,seat+.045,.04,.025)],'seat')
+ if not kid:
+  loft('Angular rear fender',[(R-.25,seat+.04,.007,.009),(R-.12,seat+.015,.07,.017),(R+.14,seat-.03,.075,.02)],'white' if n=='KuKirin X1' else 'graphite')
+  loft('Mini MX front mudguard',[(F-.22,head-.18,.025,.015),(F,head-.17,.06,.022),(F+.25,head-.14,.022,.008)],'white' if n=='KuKirin X1' else 'graphite')
+  coil((R+.19,0,rr+.14),(-.17,0,seat-.13),.024,'white')
+ else:
+  plate('Kids side number field',[(-.17,seat-.12),(.07,seat-.13),(.08,seat-.035),(-.13,seat-.025)],-.064,.001,'yellow' if small else 'white','Bodywork')
+ cockpit(top[0]-.025,head+.065,.27 if small else .31)
+ cyl('Motor housing',(-.07,-.065,pivot[2]),(-.07,.065,pivot[2]),.061,'black','MotorMount',32)
+ box('Controller service envelope',(.15,0,head-.25),(.10,.08,.045),'black','ControllerMount')
+ chain((R,rr),.068,(-.07,pivot[2]),.046,-.09)
+ for sy in [-1,1]:
+  cyl('Folding foot peg',(-.12,sy*.065,pivot[2]-.02),(-.12,sy*.14,pivot[2]-.02),.014,'steel','Drive',12)
+ if kid and not small:tube('Rear trainer handle',[(R-.08,-.03,rr+.10),(R-.17,-.03,seat+.22),(R-.17,.03,seat+.22),(R-.08,.03,rr+.10)],.014,'black','Bodywork')
+ return 'arctic-kids-trials' if kid else 'compact-mx'

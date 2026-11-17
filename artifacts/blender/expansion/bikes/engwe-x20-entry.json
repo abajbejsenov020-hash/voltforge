@@ -1,0 +1,26 @@
+{
+  "name": "Engwe X20",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-x20.webp",
+  "source": "https://engwe.com/products/engwe-x26-x24-x20",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_8308261d-ba56-475e-a2b0-e249eaefb47f.png?v=1794550143",
+  "credit": "engwe.com",
+  "variantNote": "ENGWE X20 Single Battery / Grey",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 54916,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-x20",
+    "url": "/models/expansion/bikes/engwe-x20.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-x20.blend",
+    "triangles": 29980,
+    "meshes": 38,
+    "bytes": 926896,
+    "family": "fullfold"
+  }
+}

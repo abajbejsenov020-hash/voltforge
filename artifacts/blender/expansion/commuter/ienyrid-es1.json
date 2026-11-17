@@ -1,0 +1,47 @@
+{
+  "key": "ienyrid-es1",
+  "name": "iENYRID ES1",
+  "family": "iENYRID ES1 yellow swingarm",
+  "parameters": {
+    "family": "iENYRID ES1 yellow swingarm",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.03,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.31,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "highsquare",
+    "halo": false,
+    "body": [
+      0.055,
+      0.065,
+      0.07
+    ],
+    "accent": [
+      0.98,
+      0.72,
+      0.015
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 35108,
+  "meshes": 27,
+  "bytes": 1117484,
+  "source": "https://ienyrid.com/products/ienyrid-es1-dual-motor-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/ienyrid-es1.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ienyrid-es1.blend",
+  "url": "/models/expansion/commuter/ienyrid-es1.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

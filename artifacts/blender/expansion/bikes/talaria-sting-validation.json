@@ -1,0 +1,29 @@
+{
+  "name": "Talaria Sting",
+  "key": "talaria-sting",
+  "dimensions_m": [
+    1.8999,
+    0.756,
+    1.077
+  ],
+  "triangles": 37540,
+  "meshes": 46,
+  "bytes": 1705208,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "talaria-sting.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Photo-derived lightweight electric motorcycle exterior."
+}

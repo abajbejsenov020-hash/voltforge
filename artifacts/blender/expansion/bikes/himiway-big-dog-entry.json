@@ -1,0 +1,26 @@
+{
+  "name": "Himiway Big Dog",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/himiway-big-dog.webp",
+  "source": "https://e-wheelswarehouse.com/products/himiway-bigdog",
+  "imageSource": "https://e-wheelswarehouse.com/cdn/shop/products/1_2_1800x1800_862d6ee5-9f68-4e6b-9942-0a1b21874a92.jpg?v=1668987014&width=1600",
+  "credit": "e-wheelswarehouse.com",
+  "variantNote": "Himiway Big Dog 750W Electric Cargo Bike - Power and Versatility \u2013 E-Wheel Warehouse (https://e-wheelswarehouse.com/products/himiway-bigdog)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    900
+  ],
+  "bytes": 73992,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "himiway-big-dog",
+    "url": "/models/expansion/bikes/himiway-big-dog.glb",
+    "nativeSource": "assets/blender/expansion/bikes/himiway-big-dog.blend",
+    "triangles": 29016,
+    "meshes": 31,
+    "bytes": 895584,
+    "family": "stepfat"
+  }
+}

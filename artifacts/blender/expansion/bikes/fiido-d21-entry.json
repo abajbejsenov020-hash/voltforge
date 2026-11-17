@@ -1,0 +1,26 @@
+{
+  "name": "Fiido D21",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-d21.webp",
+  "source": "https://fiido.ie/product/fiido-d21-folding-electric-bike-with-torque-sensor/",
+  "imageSource": "https://fiido.ie/wp-content/uploads/2023/05/250W-High-Efficiency-Motor_1.png",
+  "credit": "fiido.ie",
+  "variantNote": "Bot Verification (https://fiido.ie/product/fiido-d21-folding-electric-bike-with-torque-sensor/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    700,
+    500
+  ],
+  "bytes": 76098,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "fiido-d21",
+    "url": "/models/expansion/bikes/fiido-d21.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-d21.blend",
+    "triangles": 26904,
+    "meshes": 28,
+    "bytes": 845788,
+    "family": "thinFold"
+  }
+}

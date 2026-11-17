@@ -1,0 +1,26 @@
+{
+  "name": "Himiway Cobra",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/himiway-cobra.webp",
+  "source": "https://jaxnebike.com/products/himiway-cobra-electric-mountain-bike",
+  "imageSource": "https://jaxnebike.com/cdn/shop/products/himiway-cobra-electric-bike-camo.jpg?v=1655674961",
+  "credit": "jaxnebike.com",
+  "variantNote": "Himiway Cobra Electric Mountain Bike - Jaxn Ebike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 103912,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "himiway-cobra",
+    "url": "/models/expansion/bikes/himiway-cobra.glb",
+    "nativeSource": "assets/blender/expansion/bikes/himiway-cobra.blend",
+    "triangles": 28620,
+    "meshes": 31,
+    "bytes": 912764,
+    "family": "fullmtb"
+  }
+}

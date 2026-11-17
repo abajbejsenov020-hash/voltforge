@@ -1,0 +1,47 @@
+{
+  "key": "iscooter-ix4",
+  "name": "iScooter iX4",
+  "family": "iScooter iX double coil",
+  "parameters": {
+    "family": "iScooter iX double coil",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 0.96,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.25,
+    "h": 1.25,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "twinfork",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.75,
+      0.02,
+      0.015
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 36940,
+  "meshes": 28,
+  "bytes": 1183316,
+  "source": "https://www.iscooterglobal.com/products/iscooter-ix4-off-road-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/iscooter-ix4.webp",
+  "nativeSource": "assets/blender/expansion/commuter/iscooter-ix4.blend",
+  "url": "/models/expansion/commuter/iscooter-ix4.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

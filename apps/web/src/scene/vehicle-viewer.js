@@ -1,4 +1,4 @@
-import { vehicleReference } from '../data/vehicle-library.js';
+import { vehicleReference, vehicleArtworkAudit } from '../data/vehicle-library.js';
 import { blenderModelKey } from './blender-models.js';
 
 /** Photo references and photo-based Blender models retain distinct fidelity labels. */
@@ -61,6 +61,12 @@ export function createVehicleViewer({ sceneFactory }) {
     canvas.hidden = inPhoto;
     document.querySelector('#vehicleReference').hidden = !inPhoto || !hasPhoto;
     missing.hidden = !inPhoto || hasPhoto;
+    const audit = vehicleArtworkAudit(vehicleName);
+    missing.querySelector('p').textContent = imageFailed
+      ? 'The product image could not load. You can still inspect the 3D view.'
+      : audit
+        ? audit.reason
+        : 'No verified image is available for this configuration yet.';
     source.hidden = !inPhoto || !hasPhoto;
     root
       .querySelectorAll(
@@ -75,7 +81,7 @@ export function createVehicleViewer({ sceneFactory }) {
     document.querySelector('#modelLabel').textContent = vehicleName || 'Custom build';
     modelNote();
     document.querySelector('#referencePhoto').hidden = !hasPhoto;
-    document.querySelector('#referenceVariant').hidden = !inPhoto || !hasPhoto;
+    document.querySelector('#referenceVariant').hidden = !reference?.variantNote;
     if (!inPhoto) {
       getScene().update(type, selection, category, vehicleName);
       scene.resize?.();

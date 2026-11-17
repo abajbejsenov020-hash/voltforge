@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Victor",
+  "model": {
+    "key": "dualtron-victor",
+    "url": "/models/expansion/premium/dualtron-victor.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-victor.blend",
+    "triangles": 52380,
+    "meshes": 35,
+    "bytes": 1416988,
+    "family": "Dualtron Victor exterior"
+  },
+  "bounds": [
+    [
+      -0.6030499935150146,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.5820000171661377,
+      0.3050000071525574,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Short square Victor chassis, low single headlight and twin clamp rings.",
+  "revision": 2
+}

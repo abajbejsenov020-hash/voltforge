@@ -1,0 +1,26 @@
+{
+  "name": "Sur-Ron Light Bee S",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/sur-ron-light-bee-s.webp",
+  "source": "https://zippycycles.co.uk/surron-light-bee-s-youth/",
+  "imageSource": "https://zippycycles.co.uk/wp-content/uploads/2024/06/surron-light-bee-s-youth-blue-color.jpg",
+  "credit": "zippycycles.co.uk",
+  "variantNote": "Surron Light Bee S (Youth) - Surron EBike (https://zippycycles.co.uk/surron-light-bee-s-youth/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 101746,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "sur-ron-light-bee-s",
+    "url": "/models/expansion/bikes/sur-ron-light-bee-s.glb",
+    "nativeSource": "assets/blender/expansion/bikes/sur-ron-light-bee-s.blend",
+    "triangles": 36916,
+    "meshes": 45,
+    "bytes": 1821012,
+    "family": "erides"
+  }
+}

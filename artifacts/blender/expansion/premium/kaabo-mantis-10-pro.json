@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Mantis 10 Pro",
+  "model": {
+    "key": "kaabo-mantis-10-pro",
+    "url": "/models/expansion/premium/kaabo-mantis-10-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-mantis-10-pro.blend",
+    "triangles": 55736,
+    "meshes": 34,
+    "bytes": 1502940,
+    "family": "Kaabo Mantis 10 Pro verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6380500197410583,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.6169999837875366,
+      0.33000001311302185,
+      1.319993019104004
+    ]
+  ],
+  "observed": "Mantis10 Pro V2 reference: black ten-inch sport chassis, sculpted rear carry brace, front and rear C-arm spring suspension.",
+  "revision": 2
+}

@@ -1,0 +1,47 @@
+{
+  "key": "ausom-sr1",
+  "name": "Ausom SR1",
+  "family": "Ausom SR1 open wishbone",
+  "parameters": {
+    "family": "Ausom SR1 open wishbone",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.02,
+    "dl": 0.55,
+    "dw": 0.22,
+    "dz": 0.26,
+    "h": 1.36,
+    "bar": 0.69,
+    "stem": "telescopic",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "highsquare",
+    "halo": false,
+    "body": [
+      0.11,
+      0.13,
+      0.16
+    ],
+    "accent": [
+      0.92,
+      0.52,
+      0.03
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 32804,
+  "meshes": 27,
+  "bytes": 1070080,
+  "source": "https://ausomstore.com/products/ausom-sr1-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/ausom-sr1.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ausom-sr1.blend",
+  "url": "/models/expansion/commuter/ausom-sr1.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

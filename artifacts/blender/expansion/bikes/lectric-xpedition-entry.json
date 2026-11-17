@@ -1,0 +1,26 @@
+{
+  "name": "Lectric XPedition",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/lectric-xpedition.webp",
+  "source": "https://twofeathersstore.com/products/xpedition-dual-battery-cargo-ebike",
+  "imageSource": "https://twofeathersstore.com/cdn/shop/files/Xped_Angle_1200x1200.webp?v=1718054714",
+  "credit": "Lectric / TwoFeathers product reference",
+  "variantNote": "Original XPedition dual-battery white cargo trim; retailer factory-image asset dated June 2024, before XPedition 2.0.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 132862,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "lectric-xpedition",
+    "url": "/models/expansion/bikes/lectric-xpedition.glb",
+    "nativeSource": "assets/blender/expansion/bikes/lectric-xpedition.blend",
+    "triangles": 30864,
+    "meshes": 33,
+    "bytes": 949400,
+    "family": "longtail"
+  }
+}

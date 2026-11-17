@@ -1,0 +1,29 @@
+{
+  "name": "Sur-Ron Light Bee S",
+  "key": "sur-ron-light-bee-s",
+  "dimensions_m": [
+    1.7521,
+    0.756,
+    0.9771
+  ],
+  "triangles": 36916,
+  "meshes": 45,
+  "bytes": 1821012,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "sur-ron-light-bee-s.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Photo-derived lightweight electric motorcycle exterior."
+}

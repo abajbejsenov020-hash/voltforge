@@ -1,0 +1,29 @@
+{
+  "name": "Specialized Turbo Vado",
+  "key": "specialized-turbo-vado",
+  "dimensions_m": [
+    1.9677,
+    0.6634,
+    1.069
+  ],
+  "triangles": 28352,
+  "meshes": 32,
+  "bytes": 772476,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "specialized-turbo-vado.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

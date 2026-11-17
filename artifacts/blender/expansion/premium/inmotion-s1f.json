@@ -1,0 +1,26 @@
+{
+  "name": "InMotion S1F",
+  "model": {
+    "key": "inmotion-s1f",
+    "url": "/models/expansion/premium/inmotion-s1f.glb",
+    "nativeSource": "assets/blender/expansion/premium/inmotion-s1f.blend",
+    "triangles": 48108,
+    "meshes": 33,
+    "bytes": 1245888,
+    "family": "InMotion S1F exterior"
+  },
+  "bounds": [
+    [
+      -0.6280500292778015,
+      -0.27000001072883606,
+      0.0
+    ],
+    [
+      0.6069999933242798,
+      0.27000001072883606,
+      1.319993019104004
+    ]
+  ],
+  "observed": "Tall gray commuter with long narrow deck, telescopic fork and yellow wheel detail.",
+  "revision": 2
+}

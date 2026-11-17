@@ -1,0 +1,29 @@
+{
+  "name": "Lectric XP 3.0",
+  "key": "lectric-xp-3-0",
+  "dimensions_m": [
+    1.8178,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 29764,
+  "meshes": 32,
+  "bytes": 922328,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "lectric-xp-3-0.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

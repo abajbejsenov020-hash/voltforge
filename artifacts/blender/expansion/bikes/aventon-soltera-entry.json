@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Soltera",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-soltera.webp",
+  "source": "https://www.mrccycles.com/product/aventon-soltera-7-speed-7714.htm",
+  "imageSource": "https://www.sefiles.net/merchant/5499/images/zoom/113.jpg",
+  "credit": "www.mrccycles.com",
+  "variantNote": "Aventon Soltera 7-Speed - Mr. C's Cycles (https://www.mrccycles.com/product/aventon-soltera-7-speed-7714.htm)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1152,
+    705
+  ],
+  "bytes": 129572,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-soltera",
+    "url": "/models/expansion/bikes/aventon-soltera.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-soltera.blend",
+    "triangles": 24256,
+    "meshes": 29,
+    "bytes": 659060,
+    "family": "road"
+  }
+}

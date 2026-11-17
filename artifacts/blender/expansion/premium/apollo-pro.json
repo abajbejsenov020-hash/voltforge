@@ -1,0 +1,26 @@
+{
+  "name": "Apollo Pro",
+  "model": {
+    "key": "apollo-pro",
+    "url": "/models/expansion/premium/apollo-pro.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-pro.blend",
+    "triangles": 54456,
+    "meshes": 36,
+    "bytes": 1451328,
+    "family": "Apollo Pro photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.7142999768257141,
+      -0.3400000035762787,
+      0.0
+    ],
+    [
+      0.6919999718666077,
+      0.3400000333786011,
+      1.3999930620193481
+    ]
+  ],
+  "observed": "Apollo Pro 2023 twelve-inch broad road wheels, smooth forged gray unibody and integrated orange light strips.",
+  "revision": 2
+}

@@ -1,0 +1,1845 @@
+[
+  {
+    "name": "Dualtron Thunder 2",
+    "key": "dualtron-thunder-2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-thunder-2",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-Thunder-2-Rear.jpg?v=1625280749",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Thunder 2",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-thunder-2.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 36658,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Ultra 2",
+    "key": "dualtron-ultra-2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-ultra-ii-1",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-Ultra-II_8fb0d7f2-2daf-45b0-9c7c-ea70392eea4b.jpg?v=1611253726",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Ultra II",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-ultra-2.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 37716,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Victor Luxury",
+    "key": "dualtron-victor-luxury",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-victor-luxury",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/dualtron-victor-luxury-electric-scooter-5_2000x_bd525813-ff27-43d9-bd4f-a63191532208.webp?v=1652555823",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Victor Luxury",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-victor-luxury.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 34576,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Victor Luxury Plus",
+    "key": "dualtron-victor-luxury-plus",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-victor-luxury-1",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/039B953A-C22B-48FD-819A-4B37A5BD6E98.jpg?v=1668117663",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Victor Luxury+",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-victor-luxury-plus.webp",
+    "dimensions": [
+      961,
+      1100
+    ],
+    "bytes": 37030,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Eagle Pro",
+    "key": "dualtron-eagle-pro",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-eagle-pro",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/eagle1.jpg?v=1583519687",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Eagle Pro",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-eagle-pro.webp",
+    "dimensions": [
+      371,
+      383
+    ],
+    "bytes": 10602,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Storm",
+    "key": "dualtron-storm",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-storm",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-Storm_df4daeeb-c4e7-4e48-a2c5-b167b132974e.jpg?v=1611253710",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Storm",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-storm.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 50252,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Storm Limited",
+    "key": "dualtron-storm-limited",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-storm-ltd-limited",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/WhatsAppImage2021-06-26at11.00.37AM_1_1106548a-de7f-40b7-a1f3-fb7304b44253.jpg?v=1625283137",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Storm Ltd (Limited)",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-storm-limited.webp",
+    "dimensions": [
+      1100,
+      771
+    ],
+    "bytes": 26430,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron X2",
+    "key": "dualtron-x2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-x-ii",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-X-2.jpg?v=1590781065",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron X II",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-x2.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 53228,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Spider 2",
+    "key": "dualtron-spider-2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-spider-2",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron_Spider_2_Prdoct_Photo_WR_3__92735.1631644920.jpg?v=1641591349",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Spider 2",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-spider-2.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 43434,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron City",
+    "key": "dualtron-city",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-city",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/DualtronCityProfileelectric-scooter_2000x_06e563c2-74ad-4943-880e-b4cbceadc101.webp?v=1652556868",
+    "credit": "Minimotors",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron City",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-city.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 42852,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Thunder 3",
+    "key": "dualtron-thunder-3",
+    "source": "https://minimotorsusa.com/products/dualtron-thunder-3-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-1.jpg?v=1775404228",
+    "credit": "Dualtron",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Thunder 3",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-thunder-3.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 43348,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron X Limited",
+    "key": "dualtron-x-limited",
+    "source": "https://minimotorsusa.com/products/dualtron-limited",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-X-Limited-Image-1.jpg?v=1775403058",
+    "credit": "Dualtron",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron X Limited",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-x-limited.webp",
+    "dimensions": [
+      1099,
+      1100
+    ],
+    "bytes": 55862,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Togo",
+    "key": "dualtron-togo",
+    "source": "https://minimotorsusa.com/products/dualtron-togo-electric-scooter-copy",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Togo-36V-Image-1.jpg?v=1775404422",
+    "credit": "Dualtron",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Togo - 36V 7.8Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-togo.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 38260,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Popular",
+    "key": "dualtron-popular",
+    "source": "https://dual-tron.ca/products/dualtron-popular",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0745/6378/0891/files/dualtronpopular_2.webp?v=1695484377",
+    "credit": "DUALTRON CANADA",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Popular",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-popular.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 35216,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Achilleus",
+    "key": "dualtron-achilleus",
+    "source": "https://dual-tron.ca/products/dualtron-achilleus-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0745/6378/0891/files/DualtronAchilleusElectricScooter1.png?v=1682452652",
+    "credit": "DUALTRON CANADA",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Dualtron Achilleus Electric Scooter - 60V 35Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-achilleus.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 35038,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Mantis King GT",
+    "key": "kaabo-mantis-king-gt",
+    "source": "https://www.kaabousa.com/products/mantis-king-gt",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/Mantis_King_GT_Black-260706.jpg?v=1783324661",
+    "credit": "Kaabo USA",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Mantis King GT",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-mantis-king-gt.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 45940,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Wolf King GTR",
+    "key": "kaabo-wolf-king-gtr",
+    "source": "https://www.kaabousa.com/products/kaabo-king-gtr",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo_king_gtr_scooter.jpg?v=1791875093",
+    "credit": "Kaabo USA Electric Scooter",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "King GTR",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-wolf-king-gtr.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 57776,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 8",
+    "key": "vsett-8",
+    "source": "https://vsett.com.au/products/vsett-8-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0557/6831/8103/files/vsett8-escooter-01_6e0fb43b-4f82-4782-9fd1-1bef95a06558.png?v=1693362382",
+    "credit": "Ningbo Vsett Intelligent Technology",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "VSETT 8 Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-8.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 35166,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 9+",
+    "key": "vsett-9-plus",
+    "source": "https://vsett.com.au/products/vsett-9-plus-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0557/6831/8103/files/vsett9-plus-escooter-01.png?v=1693452306",
+    "credit": "Ride Electric Wholesale",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "VSETT 9+ Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-9-plus.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 36826,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 10+",
+    "key": "vsett-10-plus",
+    "source": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0557/6831/8103/products/VsettE-Scooter10plus_6.jpg?v=1658275509",
+    "credit": "Ningbo Vsett Intelligent Technology",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "VSETT 10+ Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-10-plus.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 52242,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 10 Apex",
+    "key": "vsett-10-apex",
+    "source": "https://vsett.com.au/products/vsett-10-apex-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0557/6831/8103/files/vsett-10-apex-electric-scooter.png?v=1761096729",
+    "credit": "Ningbo Vsett Intelligent Technology",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "VSETT 10 APEX Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-10-apex.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 39104,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 11+",
+    "key": "vsett-11-plus",
+    "source": "https://vsett.com.au/products/vsett-11-plus-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0557/6831/8103/files/vsett-11-super-01.png?v=1693452811",
+    "credit": "Vsett Australia Pty Ltd",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "VSETT 11+ Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-11-plus.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 52730,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 11+ Super 72",
+    "key": "vsett-11-plus-super-72",
+    "source": "https://vsett.com.au/products/vsett-11-electric-scooter-super-72",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0557/6831/8103/products/VSETT11SupercarsArtboard5.jpg?v=1650415874",
+    "credit": "Vsett Australia Pty Ltd",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Vsett 11+ SUPER Electric Scooter - 72V 35LG",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-11-plus-super-72.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 46098,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Vsett 8+",
+    "key": "vsett-8-plus",
+    "source": "https://www.minimotors-nyc.com/products/vsett-8-dual-motor",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/vsett8-lowres-2_2048x_840ec5cc-e573-4ba2-a535-a67dc1efcba1.jpg?v=1647112931",
+    "credit": "Revrides NYC",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Vsett 8+ Dual Motor",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-8-plus.webp",
+    "dimensions": [
+      800,
+      800
+    ],
+    "bytes": 22952,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Zero 8",
+    "key": "zero-8",
+    "source": "https://www.falconpev.com.sg/products/zero-8-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0908/0796/products/20180923_Zero_03.jpg?v=1615198775",
+    "credit": "ZERO",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "ZERO 8 Entry Level E-Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/zero-8.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 42352,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Zero 9",
+    "key": "zero-9",
+    "source": "https://www.falconpev.com.sg/products/zero-9-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0908/0796/products/zero-9-rear-view.png?v=1615202672",
+    "credit": "ZERO",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "ZERO 9 E-Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/zero-9.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 29578,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Zero 10",
+    "key": "zero-10",
+    "source": "https://www.falconpev.com.sg/products/zero-10-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0908/0796/products/zero10.png?v=1615199111",
+    "credit": "ZERO",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "ZERO 10 E-Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/zero-10.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 44854,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Zero 10X",
+    "key": "zero-10x",
+    "source": "https://www.falconpev.com.sg/products/zero-10x-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0908/0796/products/zero10x-electric-scooter.png?v=1615199285",
+    "credit": "ZERO",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "ZERO 10X - 2 Wheel Drive",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/zero-10x.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 40500,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Zero 11X",
+    "key": "zero-11x",
+    "source": "https://www.falconpev.com.sg/products/zero-11x-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0908/0796/products/Zero-11X-Electric-Scooter.jpg?v=1608962297",
+    "credit": "ZERO",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "ZERO 11X",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/zero-11x.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 49976,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Inokim Quick 4",
+    "key": "inokim-quick-4",
+    "source": "https://www.inokim.com/products/quick-4",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/Q_1.png?v=1742157557",
+    "credit": "INOKIM NYC",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Quick 4",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inokim-quick-4.webp",
+    "dimensions": [
+      819,
+      1080
+    ],
+    "bytes": 60858,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Inokim OX",
+    "key": "inokim-ox",
+    "source": "https://www.inokim.com/products/ox",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/OX_1_2.png?v=1742149973",
+    "credit": "INOKIM NYC",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "OX",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inokim-ox.webp",
+    "dimensions": [
+      819,
+      1080
+    ],
+    "bytes": 100556,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Inokim OXO",
+    "key": "inokim-oxo",
+    "source": "https://www.inokim.com/products/oxo",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_01_d41db245-891a-4963-9d03-15ebaf02147a.jpg?v=1742141079",
+    "credit": "INOKIM NYC",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "OXO 2026",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inokim-oxo.webp",
+    "dimensions": [
+      819,
+      1080
+    ],
+    "bytes": 187478,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "InMotion S1F",
+    "key": "inmotion-s1f",
+    "source": "https://store.inmotionworld.com/products/inmotion-s1f",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/20261029-__02.png?v=1793275227",
+    "credit": "INMOTION Official Store",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "INMOTION S1F",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inmotion-s1f.webp",
+    "dimensions": [
+      1001,
+      1000
+    ],
+    "bytes": 57516,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "InMotion Climber",
+    "key": "inmotion-climber",
+    "source": "https://store.inmotionworld.com/products/inmotion-climber",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/20261029-__08.png?v=1793275230",
+    "credit": "INMOTION Official Store",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "INMOTION Climber",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inmotion-climber.webp",
+    "dimensions": [
+      1001,
+      1000
+    ],
+    "bytes": 64490,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "InMotion RS",
+    "key": "inmotion-rs",
+    "source": "https://store.inmotionworld.com/products/inmotion-rs",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS_6363e2c1-1052-4c2a-bcac-642edb720c52.png?v=1790575155",
+    "credit": "INMOTION Official Store",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "INMOTION RS",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inmotion-rs.webp",
+    "dimensions": [
+      1001,
+      1000
+    ],
+    "bytes": 79730,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "InMotion RS Lite",
+    "key": "inmotion-rs-lite",
+    "source": "https://store.inmotionworld.com/products/inmotion-rs-lite",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/b58ce7b99582c961375527c3c6b27ebb_7ad409fa-edda-4975-9426-a78570f862b4.png?v=1790132662",
+    "credit": "INMOTION Official Store",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "INMOTION RS Lite",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inmotion-rs-lite.webp",
+    "dimensions": [
+      1001,
+      1000
+    ],
+    "bytes": 76634,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Yume Hawk",
+    "key": "yume-hawk",
+    "source": "https://www.yumescooter.com/products/hawk",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0039/3684/5859/files/4.Hawk2.0_e50bc099-2527-4f0f-b200-dd3f9ec4f0d6.jpg?v=1767168771",
+    "credit": "YUME Scooter",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Hawk",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/yume-hawk.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 64414,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Yume Raptor",
+    "key": "yume-raptor",
+    "source": "https://www.yumescooter.com/products/raptor-6000w",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0039/3684/5859/files/1_f6fa06e1-bb61-4f22-b1d0-7b53eb57bd22.jpg?v=1767168596",
+    "credit": "YUME Scooter",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Raptor 6000W",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/yume-raptor.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 54424,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "RoadRunner RS5 Max",
+    "key": "roadrunner-rs5-max",
+    "source": "https://roadrunnerscooters.com/products/rs5-max-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0276/7126/5364/files/RS5-MAX-SAPPHIRE-BLUE-Awards-2026.png?v=1794502974",
+    "credit": "RoadRunner Scooters",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "RoadRunner RS5 MAX Electric Scooter \u2013 Up to 50 MPH \u2013 32Ah Removable LG Battery",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/roadrunner-rs5-max.webp",
+    "dimensions": [
+      1040,
+      1040
+    ],
+    "bytes": 132050,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "RoadRunner RX7",
+    "key": "roadrunner-rx7",
+    "source": "https://roadrunnerscooters.com/products/roadrunner-rx7",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0276/7126/5364/files/Email-Halloween-RX7-Awards-2026.png?v=1793248368",
+    "credit": "RoadRunner Scooters",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "RoadRunner RX7 Electric Scooter \u2013 Up to 70 MPH \u2013 72V 40Ah Samsung Removable Battery",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/roadrunner-rx7.webp",
+    "dimensions": [
+      1040,
+      1040
+    ],
+    "bytes": 116990,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "EMOVE Cruiser S",
+    "key": "emove-cruiser-s",
+    "source": "https://www.voromotors.com/products/emove-cruiser",
+    "imageSource": "https://cdn.shopify.com/s/files/1/2476/0976/products/Black_1.webp?v=1762457205",
+    "credit": "EMOVE",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "EMOVE Cruiser S 52V Dual Suspension - Long Range Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/emove-cruiser-s.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 65750,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "EMOVE RoadRunner Pro",
+    "key": "emove-roadrunner-pro",
+    "source": "https://www.voromotors.com/products/emove-roadrunner-pro-seated-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/2476/0976/files/DSC04893_1.jpg?v=1770663063",
+    "credit": "EMOVE",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "EMOVE RoadRunner Pro Seated Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/emove-roadrunner-pro.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 91560,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Varla Pegasus",
+    "key": "varla-pegasus",
+    "source": "https://varlascooter.com/products/pegasus",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0743/2654/0598/files/pegasustubelesstire_2.png?v=1734918077",
+    "credit": "varlascooter",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Pegasus City Commuter Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/varla-pegasus.webp",
+    "dimensions": [
+      1100,
+      825
+    ],
+    "bytes": 55538,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Varla Eagle One Pro",
+    "key": "varla-eagle-one-pro",
+    "source": "https://varlascooter.com/products/eagle-one-pro",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0743/2654/0598/files/Eagle-One-PRO-All-Terrains-Electric-Scooter-d.png?v=1736212519",
+    "credit": "varlascooter",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Eagle One PRO All Terrains Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/varla-eagle-one-pro.webp",
+    "dimensions": [
+      1100,
+      825
+    ],
+    "bytes": 58252,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Hiley Tiger 10 Pro",
+    "key": "hiley-tiger-10-pro",
+    "source": "https://www.hileyrider.com/products/hiley-tiger-t10-pro-dual-motor-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0629/4077/4624/products/hiley-T10P-1_e84bc599-9b0b-4379-b6e0-d008752e400b.png?v=1667325442",
+    "credit": "hileyrider",
+    "variantNote": "Exact named product reference; photographed configuration reconstructed approximately.",
+    "productTitle": "Hiley Tiger T10 Pro Dual Motor Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/hiley-tiger-10-pro.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 91518,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Ultra",
+    "key": "dualtron-ultra",
+    "source": "https://dualtron.com.es/producto/patinetes-electricos/dualtron-patinetes-electricos/dualtron-ultra/",
+    "imageSource": "https://dualtron.com.es/wp-content/uploads/2022/05/dualtron-ultra-vista-frontal-solorueda.jpg",
+    "credit": "dualtron.com.es",
+    "variantNote": "",
+    "productTitle": "Dualtron Ultra - Tienda De Patinetes El\u00e9ctricos Dualtron \ud83d\udef4 | Tienda Oficial",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-ultra.webp",
+    "dimensions": [
+      750,
+      750
+    ],
+    "bytes": 25046,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Mantis 8",
+    "key": "kaabo-mantis-8",
+    "source": "https://www.kaabo.com/mantis-8/",
+    "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/05/Kaabo-Mantis-8.png",
+    "credit": "www.kaabo.com",
+    "variantNote": "",
+    "productTitle": "Kaabo Mantis 8 Electric Scooter: Fast, Powerful, and Stylish",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-mantis-8.webp",
+    "dimensions": [
+      500,
+      600
+    ],
+    "bytes": 17048,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Kaabo Mantis X",
+    "key": "kaabo-mantis-x",
+    "source": "https://www.kaabo.com/mantis-x/",
+    "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/11/kaabo_mantis_xx.png",
+    "credit": "www.kaabo.com",
+    "variantNote": "",
+    "productTitle": "Kaabo Mantis X: Powerful Performance with a Fast Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-mantis-x.webp",
+    "dimensions": [
+      500,
+      600
+    ],
+    "bytes": 20336,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "NAMI Burn-E",
+    "key": "nami-burn-e",
+    "source": "https://nami-electric.com/produit/burn-e/",
+    "imageSource": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-1.png",
+    "credit": "nami-electric.com",
+    "variantNote": "",
+    "productTitle": "BURN-E - Nami Electric",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-burn-e.webp",
+    "dimensions": [
+      826,
+      822
+    ],
+    "bytes": 72024,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "NAMI Klima",
+    "key": "nami-klima",
+    "source": "https://nami-electric.com/produit/klima/",
+    "imageSource": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-2.png",
+    "credit": "nami-electric.com",
+    "variantNote": "",
+    "productTitle": "KLIMA - Nami Electric",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-klima.webp",
+    "dimensions": [
+      826,
+      826
+    ],
+    "bytes": 63500,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "NAMI Klima Max",
+    "key": "nami-klima-max",
+    "source": "https://nami-electric.com/produit/klima-max/",
+    "imageSource": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-5.png",
+    "credit": "nami-electric.com",
+    "variantNote": "",
+    "productTitle": "KLIMA MAX - Nami Electric",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-klima-max.webp",
+    "dimensions": [
+      826,
+      826
+    ],
+    "bytes": 63500,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "NAMI Stellar",
+    "key": "nami-stellar",
+    "source": "https://nami-electric.com/produit/stellar/",
+    "imageSource": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-3.png",
+    "credit": "nami-electric.com",
+    "variantNote": "",
+    "productTitle": "STELLAR - Nami Electric",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-stellar.webp",
+    "dimensions": [
+      826,
+      826
+    ],
+    "bytes": 63852,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "NAMI Super Stellar",
+    "key": "nami-super-stellar",
+    "source": "https://nami-electric.com/produit/super-stellar/",
+    "imageSource": "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-7.png",
+    "credit": "nami-electric.com",
+    "variantNote": "",
+    "productTitle": "SUPER STELLAR - Nami Electric",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-super-stellar.webp",
+    "dimensions": [
+      826,
+      826
+    ],
+    "bytes": 58950,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Vsett 9",
+    "key": "vsett-9",
+    "source": "https://vsettscooters.com/pages/vsett-9",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0210/2694/files/v9r-banner-01.jpg",
+    "credit": "vsettscooters.com",
+    "variantNote": "",
+    "productTitle": "\n      VSETT 9 Electric Scooter | VSETT Official\n    ",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/vsett-9.webp",
+    "dimensions": [
+      1100,
+      479
+    ],
+    "bytes": 26564,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Spider",
+    "key": "dualtron-spider",
+    "source": "https://dualtron.uk/products/dualtron-spider-60v-24-5ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/02-DUALTRON_SPIDER_60V_24.5AH.jpg?v=1777723784",
+    "credit": "Dualtron",
+    "variantNote": "Original Spider 60V 24.5Ah manufacturer distributor listing; not Spider Max.",
+    "productTitle": "DUALTRON SPIDER 60V 24.5Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-spider.webp",
+    "dimensions": [
+      699,
+      1100
+    ],
+    "bytes": 28002,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Forever",
+    "key": "dualtron-forever",
+    "source": "https://dualtron.uk/products/forever-18ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/dualtron_forever_longbody.jpg?v=1794576263",
+    "credit": "Dualtron",
+    "variantNote": "Original Forever 60V 18.2Ah product; not the later Longbody.",
+    "productTitle": "DUALTRON FOREVER 60V 18.2Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-forever.webp",
+    "dimensions": [
+      699,
+      1100
+    ],
+    "bytes": 38956,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Mini Special",
+    "key": "dualtron-mini-special",
+    "source": "https://dualtron.uk/products/dualtron-mini-long-body-13ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/PRODUCT-PICTURE-Dualtron-Mini-Special-Single-Motor_c4fe340f-8a62-4f1a-8691-d05c6f7b94ff.jpg?v=1684004621",
+    "credit": "Dualtron",
+    "variantNote": "Mini Special Long Body single-motor 52V 13Ah photographed configuration.",
+    "productTitle": "DUALTRON MINI SPECIAL LONG BODY SINGLE MOTOR 52V 13Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-mini-special.webp",
+    "dimensions": [
+      635,
+      1000
+    ],
+    "bytes": 33522,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Victor",
+    "key": "dualtron-victor",
+    "source": "https://dualtron.uk/products/dualtron-victor-new-24ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/01-DUALTRON-VICTOR_2c31bc51-b012-40fc-85fc-318a4731bc4a.jpg?v=1781362159",
+    "credit": "Dualtron",
+    "variantNote": "Victor 60V 24Ah photographed revision, distributor exact Victor listing.",
+    "productTitle": "DUALTRON VICTOR 60V 24Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-victor.webp",
+    "dimensions": [
+      698,
+      1100
+    ],
+    "bytes": 38656,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "NAMI Burn-E 2",
+    "key": "nami-burn-e-2",
+    "source": "https://fluidfreeride.com/products/nami-burn-e-2",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/Burne2award_df7e38e4-7965-4ed5-bdba-d9810bde882f.jpg?v=1728296727",
+    "credit": "NAMI",
+    "variantNote": "Exact Burn-E 2 product; no substitution with Burn-E 3.",
+    "productTitle": "NAMI BURN-E 2",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-burn-e-2.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 74988,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "NAMI Burn-E 2 Max",
+    "key": "nami-burn-e-2-max",
+    "source": "https://fluidfreeride.com/products/nami-burn-e-open-box-refurbished",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/NamiBurne2maxaward_2.jpg?v=1709218657",
+    "credit": "NAMI",
+    "variantNote": "Exact named Burn-E 2 Max distributor product reference, refurbished stock listing.",
+    "productTitle": "NAMI BURN-E 2 MAX - Open Box & Refurbished",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/nami-burn-e-2-max.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 57844,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo Explore",
+    "key": "apollo-explore",
+    "source": "https://fluidfreeride.com/products/apollo-explore-open-box-refurbished",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/Explore_left_e5116dc4-0c22-4e39-bc2c-e3cdeba3fedd.jpg?v=1708522935",
+    "credit": "APOLLO",
+    "variantNote": "Original Explore, distributor refurbished product reference; not Explore 2.0.",
+    "productTitle": "APOLLO Explore - Open Box & Refurbished",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-explore.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 37326,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo Phantom",
+    "key": "apollo-phantom",
+    "source": "https://fluidfreeride.com/products/apollo-phantom-v1-open-box-refurbished",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0020/6077/9589/files/Phantom_left_bfbfd087-f7b3-4d64-a0df-1136bf9a254e.jpg?v=1707413136",
+    "credit": "APOLLO",
+    "variantNote": "Phantom V1 photograph from distributor refurbished listing; not Phantom 2.0.",
+    "productTitle": "APOLLO Phantom V1 - Open Box & Refurbished",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-phantom.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 31056,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo Air",
+    "key": "apollo-air",
+    "source": "https://www.electrickicks.com.au/products/apollo-air-2023-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0034/7504/6445/files/apollo-air-2023-electric-scooter.jpg?v=1698063928",
+    "credit": "Apollo",
+    "variantNote": "Apollo Air V3 2023 photographed revision.",
+    "productTitle": "Apollo Air V3 (2023) Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-air.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 29990,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo City Pro",
+    "key": "apollo-city-pro",
+    "source": "https://www.electrickicks.com.au/products/apollo-city-23-pro-v3-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0034/7504/6445/files/ApolloCityPro2023_1.png?v=1698064814",
+    "credit": "Apollo",
+    "variantNote": "City Pro V3 2023 steel gray dual motor configuration.",
+    "productTitle": "Apollo City Pro V3 (2023) Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-city-pro.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 98458,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo Pro",
+    "key": "apollo-pro",
+    "source": "https://www.electrickicks.com.au/products/apollo-pro-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0034/7504/6445/files/apollo-pro-electric-scooter_a3418b9f-aa7b-4835-8d78-2f5ea7b27e0d.jpg?v=1698064406",
+    "credit": "Apollo",
+    "variantNote": "Apollo Pro 2023 generation; not Phantom 2.0 successor.",
+    "productTitle": "Apollo Pro Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-pro.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 32140,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "RoadRunner RS5 Pro",
+    "key": "roadrunner-rs5-pro",
+    "source": "https://support.roadrunnerscooters.com/hc/en-us/articles/19310473625751-What-are-the-differences-between-the-RS5-PRO-and-the-RS5-MAX",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0276/7126/5364/files/RS5-MAX-SAPPHIRE-BLUE-Awards-2026.png?v=1794502974",
+    "credit": "RoadRunner Scooters",
+    "variantNote": "Manufacturer documents battery-only differentiation between RS5 PRO and MAX. Shared photographed PRO/MAX exterior; internal battery capacity is not represented.",
+    "productTitle": "RoadRunner RS5 MAX Electric Scooter \u2013 Up to 50 MPH \u2013 32Ah Removable LG Battery",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/roadrunner-rs5-pro.webp",
+    "dimensions": [
+      1040,
+      1040
+    ],
+    "bytes": 132050,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Wolf King GT",
+    "key": "kaabo-wolf-king-gt",
+    "source": "https://www.kaabo.com/wolf-king-gt/",
+    "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/05/Kaabo-Wolf-King-Gt.png",
+    "credit": "www.kaabo.com",
+    "variantNote": "Exact manufacturer product photograph.",
+    "productTitle": "Kaabo Wolf King GT: Ultimate Power & Performance - EScooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-wolf-king-gt.webp",
+    "dimensions": [
+      500,
+      600
+    ],
+    "bytes": 47986,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Kaabo Mantis 10",
+    "key": "kaabo-mantis-10",
+    "source": "https://www.kaabo.com/mantis-10/",
+    "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/05/Kaabo-Mantis-10.png",
+    "credit": "www.kaabo.com",
+    "variantNote": "Exact manufacturer product photograph.",
+    "productTitle": "Kaabo Mantis 10 Electric Scooter - Powerful and Comfortable",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-mantis-10.webp",
+    "dimensions": [
+      500,
+      600
+    ],
+    "bytes": 36614,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Apollo Go",
+    "key": "apollo-go",
+    "source": "https://apolloscooters.co/products/apollo-go",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/7_5caf06fb-3919-419f-af48-40e79916a1db.png?v=1776450086",
+    "credit": "Apollo Scooters",
+    "variantNote": "Go 2026 product side-view reference; not Go Stellar.",
+    "productTitle": "Apollo Go",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-go.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 54424,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Teverun Fighter 11",
+    "key": "teverun-fighter-11",
+    "type": "scooter",
+    "subtype": "scooter",
+    "source": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=7",
+    "imageSource": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=7",
+    "credit": "Teverun manufacturer catalog 2024",
+    "variantNote": "Exact named manufacturer catalog photograph; cropped from page 7.",
+    "productTitle": "Teverun Fighter 11",
+    "image": "/assets/vehicles/expansion/premium/teverun-fighter-11.webp",
+    "dimensions": [
+      672,
+      677
+    ],
+    "bytes": 29282,
+    "license": "Manufacturer reference photograph; no open license asserted",
+    "referenceKind": "manufacturer-catalog-reference"
+  },
+  {
+    "name": "Teverun Blade Mini",
+    "key": "teverun-blade-mini",
+    "type": "scooter",
+    "subtype": "scooter",
+    "source": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=9",
+    "imageSource": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=9",
+    "credit": "Teverun manufacturer catalog 2024",
+    "variantNote": "Exact named manufacturer catalog photograph; cropped from page 9.",
+    "productTitle": "Teverun Blade Mini",
+    "image": "/assets/vehicles/expansion/premium/teverun-blade-mini.webp",
+    "dimensions": [
+      672,
+      688
+    ],
+    "bytes": 28688,
+    "license": "Manufacturer reference photograph; no open license asserted",
+    "referenceKind": "manufacturer-catalog-reference"
+  },
+  {
+    "name": "Dualtron Mini",
+    "key": "dualtron-mini",
+    "source": "https://scootidoo.com/products/dualtron-mini",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/Sans-titre-19.png?v=1789771422",
+    "credit": "Dualtron",
+    "variantNote": "Original Dualtron Mini single motor, 52V 17.5Ah; not Mini Special.",
+    "productTitle": "Dualtron Mini \u2014 Trottinette \u00e9lectrique 52 V 17,5 Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-mini.webp",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "bytes": 54288,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Yume Y10",
+    "key": "yume-y10",
+    "source": "https://centralscoot.com/products/yume-y10",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0811/1548/0355/files/ScreenShot2025-01-02at4.03.13PM.png?v=1735851862",
+    "credit": "Yume",
+    "variantNote": "Exact Y10 distributor reference.",
+    "productTitle": "Yume Y10",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/yume-y10.webp",
+    "dimensions": [
+      694,
+      697
+    ],
+    "bytes": 24754,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Yume Osprey",
+    "key": "yume-osprey",
+    "source": "https://centralscoot.com/products/yume-osprey",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0811/1548/0355/files/ScreenShot2025-01-02at3.48.01PM.png?v=1735851019",
+    "credit": "Yume",
+    "variantNote": "Exact Osprey distributor product; not Predator successor.",
+    "productTitle": "Yume Osprey",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/yume-osprey.webp",
+    "dimensions": [
+      694,
+      695
+    ],
+    "bytes": 28280,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Yume X11",
+    "key": "yume-x11",
+    "source": "https://scootidoo.com/products/yume-x11",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/products/x11_445x_27eb501d-8df1-4fcd-91ac-d5565215d7af.jpg?v=1710343071",
+    "credit": "Yume",
+    "variantNote": "Original X11 distributor listing, explicitly distinguished from X11+ by seller.",
+    "productTitle": "YUME X11 \u2014 Trottinette \u00e9lectrique",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/yume-x11.webp",
+    "dimensions": [
+      445,
+      445
+    ],
+    "bytes": 15512,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "InMotion S1",
+    "key": "inmotion-s1",
+    "source": "https://scootidoo.com/products/inmotion-s1",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/ZDhfSQswlsRLgSvo.png?v=1791627698",
+    "credit": "InMotion",
+    "variantNote": "Original S1 distributor product; not S1F.",
+    "productTitle": "InMotion S1 \u2014 Trottinette \u00e9lectrique 750W \u2014 55 km autonomie",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inmotion-s1.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 80602,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Wolf Warrior 11",
+    "key": "kaabo-wolf-warrior-11",
+    "source": "https://scootidoo.com/products/kaabo-wolf-warrior-11",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/kaabo-wolf-warrior-11-noir-officiel.png?v=1790982220",
+    "credit": "Kaabo",
+    "variantNote": "Wolf Warrior 11 original dealer reference, distinct from listed 11 Plus and newer Max.",
+    "productTitle": "Kaabo Wolf Warrior 11 \u2014 Trottinette \u00e9lectrique tout-terrain",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-wolf-warrior-11.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 62194,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo Ghost",
+    "key": "apollo-ghost",
+    "source": "https://garudamobility.com/product/apollo-ghost/",
+    "imageSource": "https://garudamobility.com/wp-content/uploads/2021/06/Ghost_Full_White_Square_1_medium_size.jpg",
+    "credit": "garudamobility.com",
+    "variantNote": "Exact named dealer product photograph.",
+    "productTitle": "Apollo Ghost - Garuda Mobility",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-ghost.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 35134,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Varla Eagle One V2.0",
+    "key": "varla-eagle-one-v2-0",
+    "source": "https://varlascooter.com/blogs/all/upgraded-eagle-one-v2-0-e-scooter",
+    "imageSource": "https://varlascooter.com/cdn/shop/articles/IMG_202311153283_1600x900_0bb51ff3-c189-479f-948f-c783fa45d923.jpg?v=1700033201",
+    "credit": "varlascooter.com",
+    "variantNote": "Exact named manufacturer introduction photograph.",
+    "productTitle": "Discover the Upgraded Eagle One V2.0 E-Scooter - Varla Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/varla-eagle-one-v2-0.webp",
+    "dimensions": [
+      1100,
+      619
+    ],
+    "bytes": 134896,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Hiley Tiger 10",
+    "key": "hiley-tiger-10",
+    "source": "https://hileymobility.com/products/tiger-10v5",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0755/0196/1455/files/T10V511.14.png?v=1794643841",
+    "credit": "Hiley Mobility",
+    "variantNote": "Tiger 10 family represented by explicitly named Tiger10 V5 2026 manufacturer version; not T10 Pro.",
+    "productTitle": "Hiley Tiger 10 V5 2026",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/hiley-tiger-10.webp",
+    "dimensions": [
+      1015,
+      1000
+    ],
+    "bytes": 166618,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Yume Hawk Pro",
+    "key": "yume-hawk-pro",
+    "source": "https://www.yumescooter.com/products/hawk-pro-wide-6000w",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0039/3684/5859/files/1_71eccd66-481b-49ab-8d66-68b44e05e63e.jpg?v=1767168786",
+    "credit": "YUME Scooter",
+    "variantNote": "Hawk Pro family represented by manufacturer Hawk Pro Wide 6000W version with 10x4.5-inch road tyres.",
+    "productTitle": "Hawk Pro Wide 6000W",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/yume-hawk-pro.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 46326,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "RoadRunner RS5",
+    "key": "roadrunner-rs5",
+    "source": "https://roadrunnerscooters.com/blogs/videos/introducing-the-roadrunner-rs5",
+    "imageSource": "https://roadrunnerscooters.com/cdn/shop/articles/introducing-the-roadrunner-rs5-130452_750x.jpg?v=1720148183",
+    "credit": "RoadRunner Scooters",
+    "variantNote": "Original RS5 manufacturer introduction. Older redesigned pre-PRO/MAX chassis with combination battery-lid lock; appearance not borrowed from MAX.",
+    "productTitle": "RoadRunner RS5 MAX Electric Scooter \u2013 Up to 50 MPH \u2013 32Ah Removable LG Battery",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/roadrunner-rs5.webp",
+    "dimensions": [
+      640,
+      480
+    ],
+    "bytes": 37728,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "EMOVE Cruiser",
+    "key": "emove-cruiser",
+    "source": "https://beyondpev.com/collections/emove-scooter-parts",
+    "imageSource": "https://beyondpev.com/cdn/shop/collections/Emove-Cruiser-electric-scooter-Main_1800x1800_156c4103-4708-4236-aeba-16d285a58ab5.jpg?v=1646834820",
+    "credit": "Beyond PEV exclusive UK/EU distributor",
+    "variantNote": "Original orange Cruiser photograph dated2022, before CruiserS release. Distinct source and color from CruiserS.",
+    "productTitle": "EMOVE Cruiser S 52V Dual Suspension - Long Range Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/emove-cruiser.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 44438,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "EMOVE RoadRunner",
+    "key": "emove-roadrunner",
+    "source": "https://www.voromotors.com/products/emove-roadrunner",
+    "imageSource": "https://cdn.shopify.com/s/files/1/2476/0976/files/P1094393_3.jpg?v=1762458125",
+    "credit": "EMOVE",
+    "variantNote": "RoadRunner family represented by manufacturer RoadRunner V2 base version, not RoadRunner Pro.",
+    "productTitle": "EMOVE RoadRunner V2 Seated Electric Scooter",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/emove-roadrunner.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 92448,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Teverun Fighter Mini",
+    "key": "teverun-fighter-mini",
+    "source": "https://scootidoo.com/products/teverun-fighter-mini",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg?v=1789809198",
+    "credit": "Teverun",
+    "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants.",
+    "productTitle": "Teverun Fighter Mini \u2014 Trottinette \u00e9lectrique double moteur (Eco, Standard, Pro)",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/teverun-fighter-mini.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 51296,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Teverun Fighter 10",
+    "key": "teverun-fighter-10",
+    "source": "https://scootidoo.com/products/teverun-fighter-10",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/trottinette_electrique_teverun_fighter_10_pas_cher-984216.jpg?v=1794130012",
+    "credit": "Teverun",
+    "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants.",
+    "productTitle": "Teverun Fighter 10 \u2014 Trottinette \u00e9lectrique double moteur 60 V (10 et 10+)",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/teverun-fighter-10.webp",
+    "dimensions": [
+      1000,
+      1000
+    ],
+    "bytes": 36954,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Teverun Fighter Supreme",
+    "key": "teverun-fighter-supreme",
+    "source": "https://scootidoo.com/products/teverun-fighter-supreme",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/teverun-fighter-supreme-ultra-outsideview-01_c8442c87-b7d2-4828-afbc-0ddb6a797177.webp?v=1789770136",
+    "credit": "Teverun",
+    "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants.",
+    "productTitle": "Teverun Fighter Supreme \u2014 Trottinette \u00e9lectrique 72 V (Supreme et Ultra)",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/teverun-fighter-supreme.webp",
+    "dimensions": [
+      1000,
+      650
+    ],
+    "bytes": 124302,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Mantis 10 Pro",
+    "key": "kaabo-mantis-10-pro",
+    "source": "https://scootidoo.com/products/kaabo-mantis-10-pro-v2",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/211A8846.jpg?v=1789810532",
+    "credit": "Kaabo",
+    "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants.",
+    "productTitle": "Kaabo Mantis 10 Pro V2 \u2014 Trottinette \u00e9lectrique",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-mantis-10-pro.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 37204,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Dualtron Thunder",
+    "key": "dualtron-thunder",
+    "source": "https://dualtron.uk/collections/dualtron-thunder",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/products/Dualtron-Thunder-60V-35AH-Minimotors-1619985541_600x.jpg?v=1631978742",
+    "credit": "Dualtron UK official distributor",
+    "variantNote": "Original Thunder 60V35Ah product photograph, not Thunder2 or Thunder3.",
+    "productTitle": "Dualtron Thunder",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-thunder.webp",
+    "dimensions": [
+      600,
+      945
+    ],
+    "bytes": 38050,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Inokim Light 2",
+    "key": "inokim-light-2",
+    "source": "https://www.maxblinker.com/en/electric-scooters/inokim-light-2",
+    "imageSource": "https://www.maxblinker.com/137-panda_thickbox_default/inokim-light-2.jpg",
+    "credit": "Max Blinker",
+    "variantNote": "Light2 original compact 36V10.4Ah product reference, not Light2Max.",
+    "productTitle": "Inokim Light 2",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/inokim-light-2.webp",
+    "dimensions": [
+      1058,
+      1100
+    ],
+    "bytes": 30366,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "EMOVE Touring",
+    "key": "emove-touring",
+    "source": "https://www.voromotors.com/pages/ultimate-beginners-guide",
+    "imageSource": "https://i.shgcdn.com/434c169c-6c00-4a94-b783-bc77949229cb/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+    "credit": "Voro Motors",
+    "variantNote": "Manufacturer guide exact EMOVE Touring purple photograph.",
+    "productTitle": "EMOVE Touring",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/emove-touring.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 85646,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Apollo City",
+    "key": "apollo-city",
+    "source": "https://electroheads.com/products/apollo-city-2022-electric-scooter",
+    "imageSource": "https://electroheads.com/cdn/shop/files/apollo-apollo-city-2022-electric-scooter-commuter-city-scooter-31013659181169.png?v=1705665529",
+    "credit": "Electroheads",
+    "variantNote": "City2022 single-motor product reference; not CityPro or City2.0.",
+    "productTitle": "Apollo City",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/apollo-city.webp",
+    "dimensions": [
+      1100,
+      688
+    ],
+    "bytes": 35640,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Varla Eagle One",
+    "key": "varla-eagle-one",
+    "source": "https://varlascooter.com/blogs/buying-tips/best-electric-scooter-for-heavy-adults-2021/",
+    "imageSource": "https://cdn.shopifycdn.net/s/files/1/0429/1995/2537/files/varlaBox_1320x.png?v=1628479367",
+    "credit": "Varla Scooter",
+    "variantNote": "Original EagleOne manufacturer 2021 package photograph; not V2.0 or Pro.",
+    "productTitle": "Varla Eagle One",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/varla-eagle-one.webp",
+    "dimensions": [
+      1021,
+      767
+    ],
+    "bytes": 39040,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "manufacturer-product-reference"
+  },
+  {
+    "name": "Kaabo Wolf King",
+    "key": "kaabo-wolf-king",
+    "source": "https://www.electrickicks.com.au/products/kaabo-wolf-king-11-72v-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/kaabo-wolf-king-electric-scooter-gold-side_900x.jpg?v=1615796962",
+    "credit": "Electric Kicks",
+    "variantNote": "Original WolfKing11 72V28Ah gold reference; not WolfKingGT/GTR.",
+    "productTitle": "Kaabo Wolf King",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-wolf-king.webp",
+    "dimensions": [
+      900,
+      900
+    ],
+    "bytes": 47484,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Kaabo Wolf Warrior X",
+    "key": "kaabo-wolf-warrior-x",
+    "source": "https://scooterhut.com.au/products/kaabo-electric-scooter-wolf-warrior-x-black",
+    "imageSource": "https://scooterhut.com.au/cdn/shop/files/9350759089070_KAABO_Wolf_WarriorX__Black_02_fedb8026-b375-492d-9648-1d565307c536.jpg?v=1708643791&width=2048",
+    "credit": "Scooter Hut",
+    "variantNote": "WolfWarriorX family shown in explicitly identified Plus60V21Ah distributor trim. GT/Max exterior not substituted.",
+    "productTitle": "Kaabo Wolf Warrior X",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/kaabo-wolf-warrior-x.webp",
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "bytes": 41802,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  },
+  {
+    "name": "Teverun Blade GT",
+    "key": "teverun-blade-gt",
+    "type": "scooter",
+    "subtype": "scooter",
+    "source": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=2",
+    "imageSource": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=8",
+    "credit": "Teverun manufacturer catalog2024",
+    "variantNote": "Unspecified BladeGT family shown as manufacturer BladeGTII2024, explicitly documented on catalogpage2 as second generation of BladeGT. Original2022 geometry is not claimed.",
+    "productTitle": "Teverun Blade GT II 2024",
+    "image": "/assets/vehicles/expansion/premium/teverun-blade-gt.webp",
+    "dimensions": [
+      665,
+      666
+    ],
+    "bytes": 31940,
+    "license": "Manufacturer reference photograph; no open license asserted",
+    "referenceKind": "manufacturer-catalog-reference"
+  },
+  {
+    "name": "Dualtron X",
+    "key": "dualtron-x",
+    "source": "https://www.imoveblue.es/patinetes-electricos/160-dualtron-x-6700w.html",
+    "imageSource": "https://www.imoveblue.es/1164-thickbox_default/dualtron-x-6700w.jpg",
+    "credit": "iMoveBlue",
+    "variantNote": "Original X60V49Ah photographed product, not X2 or XLimited.",
+    "productTitle": "Dualtron X60V49Ah",
+    "type": "scooter",
+    "subtype": "scooter",
+    "image": "/assets/vehicles/expansion/premium/dualtron-x.webp",
+    "dimensions": [
+      851,
+      1100
+    ],
+    "bytes": 42088,
+    "license": "Reference photograph; no open redistribution license asserted",
+    "referenceKind": "distributor-product-reference"
+  }
+]

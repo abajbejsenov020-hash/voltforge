@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadCity 5 Plus",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radcity-5-plus.webp",
+  "source": "https://macfoxbike.com/blogs/news/best-pedal-assist-ebike",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0714/3581/3182/files/SE_City_5_Tiger_Right_Side.webp?v=1727333367",
+  "credit": "macfoxbike.com",
+  "variantNote": "Best Pedal Assist Electric Bike of 2025 (https://macfoxbike.com/blogs/news/best-pedal-assist-ebike)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    900
+  ],
+  "bytes": 187166,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "rad-power-radcity-5-plus",
+    "url": "/models/expansion/bikes/rad-power-radcity-5-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radcity-5-plus.blend",
+    "triangles": 29912,
+    "meshes": 31,
+    "bytes": 925916,
+    "family": "stepcurve"
+  }
+}

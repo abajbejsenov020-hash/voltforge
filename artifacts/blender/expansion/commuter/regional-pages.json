@@ -1,0 +1,57 @@
+[
+  {
+    "key": "kugoo-s1-reg",
+    "url": "https://kugoo-russia.ru/electrosamokaty/kugoo-s1",
+    "bytes": 3715535
+  },
+  {
+    "key": "kugoo-s1-pro-reg",
+    "url": "https://kugoo-russia.ru/electrosamokaty/kugoo-kirin-s1-pro",
+    "bytes": 373
+  },
+  {
+    "key": "kugoo-s3-reg",
+    "url": "https://kugoo-russia.ru/electrosamokaty/kugoo-s3",
+    "bytes": 373
+  },
+  {
+    "key": "kugoo-s3-pro-reg",
+    "url": "https://kugoo-russia.ru/electrosamokaty/kugoo-s3pro",
+    "bytes": 3737766
+  },
+  {
+    "key": "kugoo-gmax-reg",
+    "url": "https://kugoomotors.com/product/kugoo-g-max/5",
+    "bytes": 40568
+  },
+  {
+    "key": "segway-30d",
+    "url": "https://de-de.segway.com/ekickscooter/products/max-g30-d.html",
+    "bytes": 140064
+  },
+  {
+    "key": "segway-30lp",
+    "url": "https://support.segway.com/support_product.php?segcatid=18",
+    "bytes": 35913
+  },
+  {
+    "key": "ienyrid-es10-alt",
+    "url": "https://ienyridscooter.com/products/ienyrid-es10-electric-scooter",
+    "bytes": 5554
+  },
+  {
+    "key": "iscooter-uk-catalog",
+    "url": "https://www.iscooterglobal.co.uk/collections/off-road-electric-scooter/products.json?limit=250",
+    "bytes": 54770
+  },
+  {
+    "key": "joyor-s5-old",
+    "url": "https://joyor.com/products/joyor-s5-electric-scooter",
+    "bytes": 18
+  },
+  {
+    "key": "joyor-s10s-old",
+    "url": "https://joyor.com/products/joyor-s10-s-electric-scooter",
+    "bytes": 18
+  }
+]

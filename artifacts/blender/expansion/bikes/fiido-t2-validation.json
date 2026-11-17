@@ -1,0 +1,29 @@
+{
+  "name": "Fiido T2",
+  "key": "fiido-t2",
+  "dimensions_m": [
+    2.158,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 30328,
+  "meshes": 42,
+  "bytes": 935676,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "fiido-t2.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

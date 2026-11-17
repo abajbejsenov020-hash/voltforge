@@ -1,0 +1,47 @@
+{
+  "key": "joyor-s8",
+  "name": "Joyor S8",
+  "family": "Joyor orange swingarm",
+  "parameters": {
+    "family": "Joyor orange swingarm",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.01,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.27,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.05,
+      0.06,
+      0.065
+    ],
+    "accent": [
+      0.96,
+      0.25,
+      0.025
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": true
+  },
+  "triangles": 27872,
+  "meshes": 28,
+  "bytes": 939332,
+  "source": "https://joyorscooter.com/products/joyor-s8-electric-scooter-600w-power-90km-range",
+  "reference": "/assets/vehicles/expansion/commuter/joyor-s8.webp",
+  "nativeSource": "assets/blender/expansion/commuter/joyor-s8.blend",
+  "url": "/models/expansion/commuter/joyor-s8.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

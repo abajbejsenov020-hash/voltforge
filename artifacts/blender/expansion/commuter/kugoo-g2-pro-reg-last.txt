@@ -1,0 +1,845 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="icon" type="image/png" href="/img/favicon.png" />
+        <meta name='yandex-verification' content='e228609502169c7a' />
+        <meta name='google-site-verification' content='' />
+        <meta name="facebook-domain-verification" content="f6j88iok9rgqf34gexs3v2pgf1fdlb" />
+        <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="AsLR9QqiSixuPidPBaCZGj8GjiNbCG7ABNJMNqgXjhJM9pCnPdM6XD5ISnl0x95PeSvtbmNhDfBs4SYA2ia-Zg==">
+        <title>Электросамокат KugooKirin G2 Pro</title>
+        <meta name="keywords" content="">
+<meta name="description" content="Электросамокат KugooKirin G2 Pro">
+<link href="/css/slick.min.css?v=1657200978" rel="stylesheet">
+<link href="/assets/a462664a/jquery.fancybox.min.css?v=1552331228" rel="stylesheet">
+<link href="/assets/96448347/nouislider.min.css?v=1556114667" rel="stylesheet">
+<link href="/css/style.min.css?v=1660029475" rel="stylesheet">                	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSJCP7G');</script>
+<!-- End Google Tag Manager -->
+    </head>
+    <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSJCP7G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    <script>    function attrSelect(self) {
+        var value = self.attr('data-value'),
+            input = self.parents('.product-prop').find('input');
+        input.val(value);
+        input.trigger('change');
+
+        self.siblings().removeClass('active');
+        self.addClass('active');
+
+        if (self.hasClass('product-color__btn')) {
+            colorSelect(self);
+        }
+    }
+
+    function colorSelect(self) {
+        var title = self.parents('.product-prop').find('.product-prop__title span'),
+            color_title = self.attr('title'),
+            value = self.attr('data-value');
+
+        title.text(' ' + color_title);
+
+        if (self.parents('.product-main').length) {
+            var color_slide = $('.product-gallery__slide[data-color="'+ value +'"]'),
+                color_slide_index = color_slide.attr('data-slick-index');
+
+            if (!color_slide.hasClass('slick-current')) {
+                $('.product-gallery__thumbs .btn[data-slick-index="'+ color_slide_index +'"]').click();
+            }
+
+            $('.product-gallery__slider .slick-list').removeClass('unvisible');
+
+            var current_index = $('.product-gallery__slide.slick-current').attr('data-slick-index');
+            $('.product-gallery__thumbs .btn[data-slick-index="'+ current_index +'"]').addClass('slick-current');
+            $('#slick-slide0' + current_index).addClass('slick-active');
+            $('.product-gallery__empty').addClass('unvisible');
+
+            if (!color_slide.length) {
+                $('.product-gallery__slider .slick-list').addClass('unvisible');
+                $('.product-gallery__slider .slick-dots li').removeClass('slick-active');
+                $('.product-gallery__empty').removeClass('unvisible');
+                $('.product-gallery__thumbs .btn').removeClass('slick-current');
+            }
+        }
+    }
+    function setOfferPrice(el, res) {
+        if (parseFloat(res.old_price) > 0) {
+            el.html('<span class="product-price__current">'+ res.price +' <b class="rub">₽</b></span><span class="product-price__old">'+ res.old_price +'</span>');
+        } else {
+            if (parseFloat(res.price) > 0) {
+                el.html('<span class="product-price__current">'+ res.price +' <b class="rub">₽</b></span>');
+            } else {
+                el.html('<div class="product-price__request">Цена по запросу</div>');
+            }
+        }
+    }
+
+    function setOfferState(form, res, self) {
+
+        // Set disabled attributes
+        var attrs = res.attributes;
+
+        Object.keys(attrs).forEach(function(el) {
+
+            var target = form.find('#incartform-' + el),
+                target_parent = target.parents('.product-prop'),
+                el_values = attrs[el];
+
+            if (self.attr('id') == 'incartform-'+el) {
+                target.find('option').each(function() {
+                    $(this).removeClass('disabled');
+                });
+                target.removeClass('disabled');
+                target_parent.find('.product-prop__btn').each(function() {
+                    $(this).removeClass('disabled');
+                });
+                return;
+            }
+
+            target.find('option').each(function() {
+                $(this).addClass('disabled');
+            });
+            target.addClass('disabled');
+            target_parent.find('.product-prop__btn').each(function() {
+                $(this).addClass('disabled');
+            });
+
+            Object.keys(el_values).forEach(function(el_value) {
+                target.find('option[value = "' + el_value + '"]').removeClass('disabled');
+                if (target.val() == el_value) {
+                    target.removeClass('disabled');
+                }
+                target_parent.find('button[data-value = "' + el_value + '"]').removeClass('disabled');
+            });
+
+        });
+
+        // Set offer info
+        if (!form.parents('.modal').length) {
+            setOfferPrice($('.product-info .product-price'), res);
+        } else {
+            setOfferPrice($('.modal .product-price'), res);
+        }
+
+        if (res.price == null) {
+            $('#cartform_error').removeClass('hidden');
+
+            if (!form.parents('.modal').length) {
+                form.find('.product-btn').addClass('disabled');
+                form.next('.product-credit').addClass('disabled');
+            } else {
+                $('.modal__footer-btn .btn').attr('disabled',true);
+            }
+        } else {
+            $('#cartform_error').addClass('hidden');
+
+            if (!form.parents('.modal').length) {
+                $('h1').html(res.h1);
+                form.find('.product-btn').html(res.btns).removeClass('disabled');
+                form.next('.product-credit').removeClass('disabled');
+                $('.product-delivery-info__item:first-child').replaceWith(res.delivery_info);
+
+                if (res.bonus == null) {
+                    $('#product_bonus_info').addClass('hidden');
+                } else {
+                    $('#product_bonus_info').removeClass('hidden');
+                    $('#product_bonus_sum').html(res.bonus);
+                }
+                if (res.installment == null) {
+                    $('#product_installment_info').addClass('hidden');
+                } else {
+                    $('#product_installment_info').removeClass('hidden');
+                    $('#product_installment_sum').html(res.installment);
+                }
+                if (res.credit == null) {
+                    $('.product_credit').addClass('hidden');
+                    $('#product_credit_info').addClass('hidden');
+                } else {
+                    $('.product_credit').removeClass('hidden');
+                    $('#product_credit_info').removeClass('hidden');
+                    $('#product_credit_sum').html(res.credit);
+                }
+            } else {
+                $('.modal__footer-btn .btn').attr('disabled',false);
+            }
+        }
+    }
+
+    function changeCartForm(self) {
+        var form = self.parents('form');
+        $.ajax({
+            url: '/ajax/cart/update?id='+7,
+            async: false,
+            method: 'post',
+            data: form.serialize()+'&changeOn='+self.val(),
+            success: function (response) {
+                setOfferState(form, response, self);
+            }
+        });
+    }
+            function setCompareQnt(qnt) {
+                var cart = $('a#comparsion-cnt');
+                if (qnt > 0) {
+                    cart.addClass('active');
+                    cart.attr('href', '/comparsion');
+                    cart.html("<i></i><sup>"+qnt+"</sup>");
+                } else {
+                    cart.removeClass('active');
+                    cart.attr('href', null);
+                    cart.html("<i></i>");
+                }
+            }
+            function setFavoritesQnt(qnt) {
+                var cart = $('a#fav-cnt');
+                if (qnt > 0) {
+                    cart.addClass('active');
+                    cart.attr('href', '/user/favorites');
+                    cart.html("<i></i><sup>"+qnt+"</sup>");
+                } else {
+                    cart.removeClass('active');
+                    cart.attr('href', null);
+                    cart.html("<i></i>");
+                }
+            }
+            function setCartPrice(price) {
+                $('a#cart #cart_cost').html(price);
+            }
+            function setCartQnt(qnt) {
+                var cart = $('a#cart');
+                if (qnt > 0) {
+                    cart.addClass('active');
+                    cart.attr('href', '/cart');
+                } else {
+                    cart.removeClass('active');
+                    cart.attr('href', null);
+                }
+                cart.find('#cart_cnt').html(qnt);
+            }</script>    <div class="wrapper">
+        <header class="header">
+
+<div class="header__main">
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo__img"></a>
+        </div>
+        <div class="user-nav">
+            <a href="/user/orders" class="user-nav__link user-nav__link_login ">
+                <i></i>
+            </a>
+            <a id="comparsion-cnt" class="user-nav__link user-nav__link_compare" title="Сравнение"><i></i></a>            <a id="fav-cnt" class="user-nav__link user-nav__link_favorites" title="Избранное"><i></i></a>
+<a class="user-nav__link user-nav__link_cart" id="cart">
+    <i></i><sup id="cart_cnt"></sup>
+    </a>        </div>
+        <button class="btn-nav-open" type="button"><i></i><i></i><i></i></button>
+    </div>
+</div>
+
+<button type="button" class="btn-nav-close"><i>×</i></button>
+<div class="header__nav">
+    <div class="container">
+        <div class="header-city">
+            <a class="select-city-link fancybox fancybox-ajax" href="/cities" data-href="/ajax/geolocation/cities"><span>Новосибирск</span></a>            <a href="/warehouse" class="warehouses-link">
+                <span>Пункты выдачи</span>
+            </a>
+            <div class="header-city__phone">
+                <a href="tel:" class="tel"></a>
+            </div>
+        </div>
+
+<nav class="header__nav-menu">
+            <ul>
+<li class="has-dropdown">
+<a href="https://kugoomotors.com/o-kompanii"> О компании</a><ul>
+<li class="">
+<a href="https://kugoomotors.com/o-kompanii/oplata-i-dostavka">Оплата и доставка</a></li>
+</ul>
+</li>
+</ul>
+    </nav>    </div>
+</div>
+
+
+<div class="catalog-nav">
+    <div class="container">
+        <button class="btn-search-open" type="button"></button>
+        <div class="search">
+            <button class="btn-search-close" type="button">×</button>
+            <form action="/search/catalog" method="get" id="search-form">
+                <div class="search__group">
+                    <input name="q" type="search" class="form-control search__input" placeholder="Поиск..." value="">
+                    <button class="search__btn" type="button" onclick="searchAction();"><i></i></button>
+                </div>
+            </form>
+        </div>
+
+        <button type="button" class="btn btn-cat-toggle">Каталог<i></i></button>
+        <ul class="catalog-nav__menu">
+            <li>
+<a href="https://kugoomotors.com/katalog/novosibirsk/elektrosamokaty"><span>Электросамокаты</span></a></li>
+<li>
+<a href="https://kugoomotors.com/katalog/novosibirsk/elektroskutery"><span>Электроскутеры</span></a></li>
+        </ul>
+    </div>
+</div>
+        </header>
+        <section class="content-wrapper">
+            <div class="page-content clearfix">
+
+
+<div class="page-head">
+    <div class="container">
+        <div class="product-head">
+            <div class="product-head__main">
+                <ol class="breadcrumb"><li><a href="/">Главная</a></li>
+<li><a href="https://kugoomotors.com/katalog/novosibirsk/elektrosamokaty" data-pjax="0">Электросамокаты</a></li>
+<li><span>Электросамокат KugooKirin G2 Pro</span></li>
+</ol>
+                <h1>Электросамокат KugooKirin G2 Pro</h1>
+                <div class="product-head__main-info">
+                                        <div class="product-status">
+                                                                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-main">
+    <div class="container">
+
+        <div class="product-gallery">
+        <div class="product-gallery__slider">
+                        <div
+                    class="product-gallery__slide"
+                    data-active="1"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro_62d808f8bd136.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro_62d808f8bd136.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="0"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-1_62d808fc539be.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-1_62d808fc539be.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="1"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-2_62d808fd29bb9.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-2_62d808fd29bb9.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="0"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-3_62d808fe2618e.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-3_62d808fe2618e.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="1"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-6_62d808ffcc970.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-6_62d808ffcc970.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="0"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-7_62d809015d0ee.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-7_62d809015d0ee.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="1"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-10_62d80902c4afc.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-10_62d80902c4afc.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                            <div
+                    class="product-gallery__slide"
+                    data-active="0"
+                    data-color=""
+                >
+                    <a
+                        class="fancybox-gallery "
+                        href="https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro-4_62d808fac2fbf.jpg"
+                    >
+                        <img
+                            class="img-responsive"
+                            data-lazy="https://kugoomotors.com/upload/thumbs/product/productimage/image/g2-pro-4_62d808fac2fbf.jpg"
+                            alt="Электросамокат KugooKirin G2 Pro"
+                        />
+                    </a>
+                </div>
+                        </div>
+            <div class="product-gallery__thumbs-wrap">
+            <div class="product-gallery__thumbs">
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro_62d808f8bd136.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-1_62d808fc539be.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-2_62d808fd29bb9.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-3_62d808fe2618e.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-6_62d808ffcc970.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-7_62d809015d0ee.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-10_62d80902c4afc.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                                    <button class="btn " type="button">
+                        <img class="img-responsive" src="https://kugoomotors.com/upload/thumbs/cat_item_sm/productimage/image/g2-pro-4_62d808fac2fbf.jpg" alt="Электросамокат KugooKirin G2 Pro" />
+                    </button>
+                            </div>
+        </div>
+    </div>
+
+
+        <div class="product-info">
+            <div class="product-info__wrapper">
+                <div class="product-info__primary">
+
+                    <div class="product-price">
+                        <span>69 900 <b class="rub">₽</b></span>
+                                            </div>
+                    <form id="incart-form" action="/product/kugookirin-g2-pro/7" method="post">
+<input type="hidden" name="_csrf" value="AsLR9QqiSixuPidPBaCZGj8GjiNbCG7ABNJMNqgXjhJM9pCnPdM6XD5ISnl0x95PeSvtbmNhDfBs4SYA2ia-Zg==">
+<div class="form-group">
+    <div id="cartform_error" class="help-block hidden" style="font-size:12px">
+        Данной позиции нет в наличии. Пожалуйста, выберите доступные свойства.
+    </div>
+</div>
+
+                    <div class="product-btn">
+                        <button type="button" class="btn btn-cart btn-icon btn_red" onclick="
+                var form = $(this).parents(&#039;form&#039;);
+                form.attr(&#039;action&#039;, &#039;/ajax/cart?id=7&#039;);
+                form.submit();
+            "><i></i>Купить</button><a class="btn btn_orange_outline fancybox fancybox-ajax" href="/ajax/feedback?type=message_product&amp;page=product&amp;product_id=7">Задать вопрос</a><button type="button" class="product-btn__comparsion" onclick="
+            var form = $(this).parents(&#039;form&#039;);
+            form.attr(&#039;action&#039;, &#039;/ajax/comparsion?id=7&#039;);
+            form.submit();
+        "><i></i><span>Сравнить</span></button><button type="button" class="product-btn__favorites" onclick="
+            var form = $(this).parents(&#039;form&#039;);
+            form.attr(&#039;action&#039;, &#039;/ajax/favorites?id=7&#039;);
+            form.submit();
+        "><i></i><span>В избранное</span></button>                    </div>
+                    </form>
+                                            <div class="product-delivery-info">
+                            <div class="product-delivery-info__item">
+                                <a href="/warehouse">Пункты выдачи заказов</a>
+                            </div>
+                            <div class="product-delivery-info__item">
+                                <a href="/o-kompanii/oplata-i-dostavka">Оплата и доставка</a>
+                            </div>
+                        </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="product-description">
+    <div class="tabs">
+        <div class="container">
+            <div class="tabs__nav">
+                                <a href="#chars" class="tabs__nav-link"><span>Характеристики</span></a>
+                                <a href="#feeds" class="tabs__nav-link"><span>Отзывы (0)</span></a>
+            </div>
+        </div>
+        <div class="tabs__content">
+            <div class="container">
+                                <button type="button" class="btn tabs__toggle-mobile" data-id="#chars">Характеристики</button>
+                <div class="tabs__content-pane text-content" id="chars">
+                    <h3>Электросамокат KugooKirin G2 Pro – технические характеристики</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-product-chars">
+                            <tbody>
+                                                            <tr>
+                                    <td>
+                                        Серия                                                                            </td>
+                                    <td>G</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Аккумулятор                                                                            </td>
+                                    <td>15 Аh</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Мощность                                                                            </td>
+                                    <td>1000 W</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Вес                                                                            </td>
+                                    <td>31 кг</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Максимальная скорость                                                                            </td>
+                                    <td>до 60 км/ч</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Максимальный пробег                                                                            </td>
+                                    <td>до 40 км</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Время полной зарядки                                                                            </td>
+                                    <td>7-8 часов</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Размер колёс                                                                            </td>
+                                    <td>9 дюймов</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Максимальная нагрузка                                                                            </td>
+                                    <td>120 кг</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Сиденье                                                                            </td>
+                                    <td>есть</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Подножка                                                                            </td>
+                                    <td>есть</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Дисплей                                                                            </td>
+                                    <td>есть</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Подсветка                                                                            </td>
+                                    <td>есть</td>
+                                </tr>
+                                                            <tr>
+                                    <td>
+                                        Привод                                                                            </td>
+                                    <td>задний</td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                                <button type="button" class="btn tabs__toggle-mobile" data-id="#feeds">Отзывы (0)</button>
+                <div class="tabs__content-pane text-content" id="feeds">
+                    <h3>Электросамокат KugooKirin G2 Pro – отзывы</h3>
+                    <div class="product-feedback-add">
+                        <button type="button" class="btn btn_orange fancybox fancybox-ajax" data-href="/ajax/review?id=7">Написать отзыв</button>                                                    <p>Для данной модели ещё нет отзывов. Хотите поделиться впечатлениями? <br>Напишите свой отзыв.</p>
+                                            </div>
+                    <div class="feedbacks">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"Product","url":"https://kugoomotors.com/product/kugookirin-g2-pro/7","name":"Электросамокат KugooKirin G2 Pro","description":"Электросамокат KugooKirin G2 Pro","itemCondition":"new","offers":{"@type":"AggregateOffer","availability":"http://schema.org/PreOrder","price":"69900.00","lowPrice":"69900.00","priceCurrency":"RUB"},"category":"Электросамокаты","image":"https://kugoomotors.com/upload/thumbs/source/productimage/image/g2-pro_62d808f8bd136.jpg"}</script>
+
+<script>
+	// GTM
+	(dataLayer = window.dataLayer || []).push({
+		'ecommerce': {
+		'detail': {
+			 'products': [{
+			   'id': '7',
+			   'name': 'Электросамокат KugooKirin G2 Pro',
+			   'price': '69900.00',
+			   'category': 'Электросамокаты'
+			 }]
+		   }
+			},
+		 'event': 'GAEventEC',
+		 'eCategory': 'eEC',
+		 'eAction': 'detail',
+		 'eLabel': '',
+		 'eNI': '1'
+	});
+</script>
+
+            </div>
+            <footer class="footer">
+
+<div class="footer__main">
+    <div class="container">
+
+<div class="footer__block">
+    <ul class="footer__nav">
+                    <li>
+                <a href="https://kugoomotors.com/katalog/novosibirsk/elektrosamokaty">Электросамокаты</a>
+            </li>
+                    <li>
+                <a href="https://kugoomotors.com/katalog/novosibirsk/elektroskutery">Электроскутеры</a>
+            </li>
+                    <li>
+                <a href="https://kugoomotors.com/katalog/novosibirsk/aksessuary">Аксессуары</a>
+            </li>
+                    <li>
+                <a href="https://kugoomotors.com/katalog/novosibirsk/zapcasti">Запчасти</a>
+            </li>
+            </ul>
+</div>
+
+<div class="footer__block">
+    <ul class="footer__nav">
+                    <li>
+                <a href="https://kugoomotors.com/o-kompanii"> О компании</a>
+            </li>
+                    <li>
+                <a href="https://kugoomotors.com/o-kompanii/oplata-i-dostavka">Оплата и доставка</a>
+            </li>
+            </ul>
+</div>
+
+<div class="footer__block">
+    <div class="footer-city">
+        <div class="footer-city__phone">
+            <a href="tel:" class="tel"></a>
+        </div>
+        <a class="btn btn-call btn_orange fancybox fancybox-ajax" href="/ajax/feedback?type=call&amp;page=footer"><i></i>Обратный звонок</a>
+        <div class="footer-city__address">
+            <div class="footer-city__link">
+                <a class="select-city-link fancybox fancybox-ajax" href="/cities" data-href="/ajax/geolocation/cities"><span>Новосибирск</span></a>            </div>
+            <div class="footer-city__warehouses">
+                <a href="/warehouse" class="warehouses-link">
+                    <span>Пункты выдачи</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="footer__block">
+    <div class="footer__oferta">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации наличии и стоимости указанных товаров, пожалуйста, обращайтесь к менеджерам компании с помощью специальной формы связи на сайте или по телефону.</div>
+</div>
+    </div>
+</div>
+<div class="footer__bottom">
+    <div class="container">
+        <div class="footer__social">
+            <div class="footer__social-links">
+
+                                                                            </div>
+        </div>
+        <div class="footer__copyright">© 2026. Официальный интернет-магазин электросамокатов KUGOO.</div>
+    </div>
+</div>            </footer>
+        </section>
+        <button type="button" class="btn-scroll-top" title="Наверх"><i></i></button>
+
+
+<div class="modal modal-geo-confirm" id="geo_confirm">
+    <div class="modal__content">
+        <div class="modal__title">
+            <h3>Ваш город – Новосибирск?</h3>
+        </div>
+        <div class="modal__footer" style="border-top:none">
+            <div class="modal__footer-btn">
+                <a href="#" data-fancybox-close class="btn btn_orange">Да, всё верно</a>
+            </div>
+            <div class="modal__footer-btn">
+                <a href="/ajax/geolocation/cities" class="fancybox fancybox-ajax btn btn_gray_outline">Выбрать другой</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="/assets/78b982df/jquery.min.js?v=1678289540"></script>
+<script src="/js/slick.min.js?v=1657200978"></script>
+<script src="/js/tooltip.min.js?v=1657200978"></script>
+<script src="/assets/41450f42/yii.js?v=1751010173"></script>
+<script src="/assets/41450f42/yii.activeForm.js?v=1751010173"></script>
+<script src="/assets/a462664a/jquery.fancybox.min.js?v=1552331228"></script>
+<script src="/assets/96448347/nouislider.min.js?v=1556114667"></script>
+<script src="/js/bootstrap-touchspin.min.js?v=1657200978"></script>
+<script src="/js/scripts.js?v=1657200978"></script>
+<script src="/js/cart.js?v=1657200978"></script>
+<script>jQuery(function ($) {
+    // Product gallery
+    var initial_slide = 0,
+        active_offer_slide = $('.product-gallery__slide[data-active="1"]');
+    if (active_offer_slide.length) {
+        initial_slide = active_offer_slide.index();
+    }
+
+    $('.product-gallery__slider').slick({
+        initialSlide: initial_slide,
+        arrows: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.product-gallery__thumbs',
+        infinite: false,
+        draggable: false
+    });
+
+    $('.product-gallery__slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+        var current_color_id = $('.product-gallery__slide[data-slick-index="'+ currentSlide +'"]').attr('data-color');
+        $('.product-color__btn[data-value="'+ current_color_id +'"]:not(".active")').click();
+    });
+
+    $('.product-gallery__thumbs').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.product-gallery__slider',
+        arrows: true,
+        infinite: false,
+        focusOnSelect: true
+    });
+
+    $(document).on('click', '.product-gallery__thumbs .btn, .product-gallery__slider .slick-dots button', function() {
+        $('.product-gallery__slider .slick-list').removeClass('unvisible');
+        $('.product-gallery__empty').addClass('unvisible');
+
+        var index = $(this).attr('data-slick-index'),
+            current_color_id = $('.product-gallery__slide[data-slick-index="'+ index +'"]').attr('data-color');
+        $('.product-color__btn[data-value="'+ current_color_id +'"]:not(".active")').click();
+    });
+
+    if (active_offer_slide.length) {
+        $('.product-gallery__thumbs .btn[data-slick-index="'+ initial_slide +'"]').click();
+    } else {
+        if ($('.product-color').length) {
+            $('.product-gallery__slider .slick-list').addClass('unvisible');
+            $('.product-gallery__slider .slick-dots li').removeClass('slick-active');
+            $('.product-gallery__empty').removeClass('unvisible');
+            $('.product-gallery__thumbs .btn').removeClass('slick-current');
+        }
+    }
+    // Set initial color gallery slide
+    var active_color_btn = $('.product-color__btn.active');
+    if (active_color_btn.length) {
+        colorSelect(active_color_btn);
+    }
+
+    $('.product-prop__btn:not(.product-color__btn)').each(function() {
+        $(this).parents('.product-prop').find('.product-prop__title span').addClass('hidden');
+    });
+jQuery('#incart-form').yiiActiveForm([], {"validationUrl":"\/ajax\/cart\/form-validate?id=7"});
+// Products slider
+if ($('.product-slider').length) {
+    $('.product-slider').slick({
+        speed: 200,
+        arrows: true,
+        dots: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {breakpoint: 1471, settings: {arrows: false, dots: true, slidesToScroll: 4}},
+            {breakpoint: 1024, settings: {arrows: false, dots: true, slidesToShow: 3, slidesToScroll: 3}},
+            {breakpoint: 768, settings: {arrows: false, dots: true, slidesToShow: 2, slidesToScroll: 2}}
+        ]
+    });
+}
+// Go to feedbacks
+$(document).on('click', '.product-rate', function(e) {
+    e.preventDefault();
+    $('.product-description .tabs__nav-link[href="#feeds"]').click();
+    $('html,body').animate({scrollTop: $('#feeds').offset().top - 120}, 200);
+});
+                OpenModal('#geo_confirm','inline');
+});</script>    </body>
+    </html>

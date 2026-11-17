@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Abound",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-abound.webp",
+  "source": "https://emotionfl.com/aventon-abound",
+  "imageSource": "https://images.squarespace-cdn.com/content/v1/5c527c20365f026b4ae14d40/1680299093663-VQUO9G010V3XAFM1Z5Q6/abound-blue-02.jpg",
+  "credit": "emotionfl.com",
+  "variantNote": "Aventon Abound \u2014 e-Motion I Destin FL | electric scooter, electric bike, e-skate, onewheel rentals (https://emotionfl.com/aventon-abound)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 76898,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-abound",
+    "url": "/models/expansion/bikes/aventon-abound.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-abound.blend",
+    "triangles": 30840,
+    "meshes": 31,
+    "bytes": 946616,
+    "family": "longtail"
+  }
+}

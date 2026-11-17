@@ -1,0 +1,29 @@
+{
+  "name": "KuKirin X1",
+  "key": "kukirin-x1",
+  "dimensions_m": [
+    1.53,
+    0.6236,
+    1.0697
+  ],
+  "triangles": 28464,
+  "meshes": 29,
+  "bytes": 886584,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "kukirin-x1.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Reference-specific compact motorcycle frame, battery casing and wheel proportions."
+}

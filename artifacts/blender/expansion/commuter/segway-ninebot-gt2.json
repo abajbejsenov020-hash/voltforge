@@ -1,0 +1,47 @@
+{
+  "key": "segway-ninebot-gt2",
+  "name": "Segway Ninebot GT2",
+  "family": "Segway GT double-wishbone superscooter",
+  "parameters": {
+    "family": "Segway GT double-wishbone superscooter",
+    "r": 0.14,
+    "wide": 0.046,
+    "wb": 1.23,
+    "dl": 0.62,
+    "dw": 0.28,
+    "dz": 0.32,
+    "h": 1.31,
+    "bar": 0.66,
+    "stem": "wide",
+    "fork": "wishbone",
+    "rear": "swing",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.19,
+      0.22,
+      0.24
+    ],
+    "accent": [
+      0.72,
+      0.025,
+      0.018
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": true,
+    "solidArm": false
+  },
+  "triangles": 36556,
+  "meshes": 28,
+  "bytes": 1186064,
+  "source": "https://eu-en.segway.com/ekickscooter/products/gt2p.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-gt2.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-gt2.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-gt2.glb",
+  "finalReferenceReview": [
+    "Added GT deep front fairing and side plate silhouette"
+  ]
+}

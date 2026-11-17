@@ -3,7 +3,7 @@ import {
   normalizeVehicleName,
   VEHICLE_INDEX,
 } from '@voltforge/shared/vehicles';
-import references from './vehicle-references.json' with { type: 'json' };
+import { VEHICLE_REFERENCES as references, VEHICLE_ARTWORK_AUDIT } from './vehicle-artwork.js';
 
 const byName = new Map(references.map((entry) => [normalizeVehicleName(entry.name), entry]));
 const indexedNames = new Set(VEHICLE_INDEX.map((entry) => normalizeVehicleName(entry.name)));
@@ -17,6 +17,12 @@ export function vehicleReference(name) {
 }
 
 export const VEHICLE_REFERENCES = references;
+const audited = new Map(
+  VEHICLE_ARTWORK_AUDIT.map((entry) => [normalizeVehicleName(entry.name), entry]),
+);
+export function vehicleArtworkAudit(name) {
+  return audited.get(normalizeVehicleName(name)) || null;
+}
 
 export function featuredVehicles(type) {
   const names =

@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Ultra 2",
+  "model": {
+    "key": "dualtron-ultra-2",
+    "url": "/models/expansion/premium/dualtron-ultra-2.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-ultra-2.blend",
+    "triangles": 52296,
+    "meshes": 35,
+    "bytes": 1420656,
+    "family": "Dualtron Ultra 2 exterior"
+  },
+  "bounds": [
+    [
+      -0.6717000007629395,
+      -0.30500003695487976,
+      0.000238936030655168
+    ],
+    [
+      0.6497610807418823,
+      0.3050000071525574,
+      1.3599929809570312
+    ]
+  ],
+  "observed": "Long square chassis, high rear kickplate, knobby tyres and double folding clamp.",
+  "revision": 2
+}

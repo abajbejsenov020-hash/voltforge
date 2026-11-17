@@ -1,0 +1,29 @@
+{
+  "name": "Stark Varg",
+  "key": "stark-varg",
+  "dimensions_m": [
+    2.205,
+    0.8128,
+    1.284
+  ],
+  "triangles": 38596,
+  "meshes": 31,
+  "bytes": 1178360,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "stark-varg.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "White Varg MX 1.2 reference trim."
+}

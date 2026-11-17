@@ -1,0 +1,26 @@
+{
+  "name": "Altis Sigma",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/altis-sigma.webp",
+  "source": "https://www.altispowersports.com/products/altis-sigma",
+  "imageSource": "https://www.altispowersports.com/cdn/shop/files/Sigma-black_i-1_R.jpg?v=1792785115&width=1445",
+  "credit": "Altis Powersports",
+  "variantNote": "Sigma family represented by the black Sigma MX off-road trim. Manufacturer product page uses /products/altis-sigma for this same trim; no different-model alias inferred.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1100,
+    733
+  ],
+  "bytes": 42158,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "altis-sigma",
+    "url": "/models/expansion/bikes/altis-sigma.glb",
+    "nativeSource": "assets/blender/expansion/bikes/altis-sigma.blend",
+    "triangles": 37432,
+    "meshes": 45,
+    "bytes": 1754900,
+    "family": "sigma"
+  }
+}

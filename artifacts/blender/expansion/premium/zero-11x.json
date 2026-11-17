@@ -1,0 +1,26 @@
+{
+  "name": "Zero 11X",
+  "model": {
+    "key": "zero-11x",
+    "url": "/models/expansion/premium/zero-11x.glb",
+    "nativeSource": "assets/blender/expansion/premium/zero-11x.blend",
+    "triangles": 52168,
+    "meshes": 35,
+    "bytes": 1410148,
+    "family": "Zero 11X exterior"
+  },
+  "bounds": [
+    [
+      -0.7367000579833984,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.7149999737739563,
+      0.32499998807907104,
+      1.3899930715560913
+    ]
+  ],
+  "observed": "ZERO 11X black telescopic stem, red markings and twin long stems, red C swingarms and exposed springs.",
+  "revision": 2
+}

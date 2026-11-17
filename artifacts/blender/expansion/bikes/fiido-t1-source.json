@@ -1,0 +1,153 @@
+{
+  "name": "Fiido T1",
+  "source": "https://fiido.com/products/fiido-t1-utility-electric-bike",
+  "checked": [
+    "https://fiido.com/products/fiido-t1-utility-electric-bike"
+  ],
+  "title": "Fiido T1 Pro Utility Electric Bike",
+  "images": [
+    {
+      "id": 42130820071637,
+      "created_at": "2024-06-28T15:37:16+08:00",
+      "position": 1,
+      "updated_at": "2024-06-28T15:37:17+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t1pro-main-1_56e88db4-5144-4e04-bf86-310a6bfa75d8.jpg?v=1719560237",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 43327399985365,
+      "created_at": "2024-10-31T14:27:44+08:00",
+      "position": 2,
+      "updated_at": "2025-10-27T10:04:01+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/2-t1.webp?v=1761530641",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42908526051541,
+      "created_at": "2024-09-27T16:40:10+08:00",
+      "position": 3,
+      "updated_at": "2025-10-27T10:04:01+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1_4_4dfb884d-cb47-4457-8e02-a57b2eb93159.jpg?v=1761530641",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 41352414691541,
+      "created_at": "2024-03-25T17:02:11+08:00",
+      "position": 4,
+      "updated_at": "2024-06-28T15:38:48+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t1pro-main-4.jpg?v=1719560328",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 41352414101717,
+      "created_at": "2024-03-25T17:02:11+08:00",
+      "position": 5,
+      "updated_at": "2024-06-28T15:38:48+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t1pro-main-5.jpg?v=1719560328",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42130820137173,
+      "created_at": "2024-06-28T15:37:27+08:00",
+      "position": 6,
+      "updated_at": "2025-10-27T10:04:01+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t1pro-main-6.jpg?v=1761530641",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42908526117077,
+      "created_at": "2024-09-27T16:40:29+08:00",
+      "position": 7,
+      "updated_at": "2025-10-27T10:04:01+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/6_f096139c-e2dd-40ac-b48a-e39c7ddaf9c9.jpg?v=1761530641",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42130820202709,
+      "created_at": "2024-06-28T15:37:35+08:00",
+      "position": 8,
+      "updated_at": "2024-06-28T15:37:37+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t1pro-main-7.jpg?v=1719560257",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42908526084309,
+      "created_at": "2024-09-27T16:40:20+08:00",
+      "position": 9,
+      "updated_at": "2024-09-27T16:40:22+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/2_52912ffe-32ed-4b0d-8d46-b2caecbc32ef.jpg?v=1727426422",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42130820104405,
+      "created_at": "2024-06-28T15:37:17+08:00",
+      "position": 10,
+      "updated_at": "2025-11-18T17:39:02+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/t1pro-main-2_e0bb0473-2541-4dfb-a755-a8ea6219e8bc.jpg?v=1763458742",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 50539756388565,
+      "created_at": "2026-03-23T21:03:15+08:00",
+      "position": 11,
+      "updated_at": "2026-03-23T21:03:17+08:00",
+      "product_id": 7477302231253,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/8_2c37396e-8dcd-4f92-a870-8cb365a9e09d.jpg?v=1774270997",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "variants": [
+    {
+      "id": 43862732832981,
+      "title": "Default Title",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "sku": "T1-20Y-US",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": false,
+      "price": "999.00",
+      "grams": 0,
+      "compare_at_price": "1699.00",
+      "position": 1,
+      "product_id": 7477302231253,
+      "created_at": "2022-11-30T18:46:19+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    }
+  ],
+  "description": "<div data-line=\"true\" data-line-index=\"0\" data-zone-id=\"0\">A powerful utility ebike with an impressive 93-mile range.</div>"
+}

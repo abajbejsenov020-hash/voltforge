@@ -1,0 +1,29 @@
+{
+  "name": "Giant Explore E+",
+  "key": "giant-explore-e-plus",
+  "dimensions_m": [
+    1.9777,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 30672,
+  "meshes": 29,
+  "bytes": 935564,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "giant-explore-e.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

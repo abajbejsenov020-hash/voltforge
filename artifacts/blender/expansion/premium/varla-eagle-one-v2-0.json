@@ -1,0 +1,26 @@
+{
+  "name": "Varla Eagle One V2.0",
+  "model": {
+    "key": "varla-eagle-one-v2-0",
+    "url": "/models/expansion/premium/varla-eagle-one-v2-0.glb",
+    "nativeSource": "assets/blender/expansion/premium/varla-eagle-one-v2-0.blend",
+    "triangles": 54368,
+    "meshes": 34,
+    "bytes": 1439932,
+    "family": "Varla Eagle One V2.0 exact photographed appearance"
+  },
+  "bounds": [
+    [
+      -0.658050000667572,
+      -0.3499999940395355,
+      0.0
+    ],
+    [
+      0.6370000243186951,
+      0.3499999940395355,
+      1.369992971420288
+    ]
+  ],
+  "observed": "Eagle One V2.0 action photo: red-orange C arms, black cast neck and stem, ten-inch road tyres and red-orange trim.",
+  "revision": 2
+}

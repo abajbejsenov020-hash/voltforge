@@ -1,0 +1,487 @@
+[
+  {
+    "name": "KuKirin X1",
+    "packedImageCount": 1,
+    "nativeBytes": 419098
+  },
+  {
+    "name": "Talaria Sting",
+    "packedImageCount": 1,
+    "nativeBytes": 499199
+  },
+  {
+    "name": "Talaria X3",
+    "packedImageCount": 1,
+    "nativeBytes": 379771
+  },
+  {
+    "name": "Engwe Engine Pro",
+    "packedImageCount": 1,
+    "nativeBytes": 449161
+  },
+  {
+    "name": "Engwe Engine Pro 2.0",
+    "packedImageCount": 1,
+    "nativeBytes": 452219
+  },
+  {
+    "name": "Engwe M20",
+    "packedImageCount": 1,
+    "nativeBytes": 447800
+  },
+  {
+    "name": "Engwe X20",
+    "packedImageCount": 1,
+    "nativeBytes": 432148
+  },
+  {
+    "name": "Engwe X24",
+    "packedImageCount": 1,
+    "nativeBytes": 469927
+  },
+  {
+    "name": "Engwe X26",
+    "packedImageCount": 1,
+    "nativeBytes": 456451
+  },
+  {
+    "name": "Engwe L20",
+    "packedImageCount": 1,
+    "nativeBytes": 404404
+  },
+  {
+    "name": "Engwe L20 2.0",
+    "packedImageCount": 1,
+    "nativeBytes": 423339
+  },
+  {
+    "name": "Engwe P275 Pro",
+    "packedImageCount": 1,
+    "nativeBytes": 401886
+  },
+  {
+    "name": "Engwe MapFour N1 Air",
+    "packedImageCount": 1,
+    "nativeBytes": 403375
+  },
+  {
+    "name": "Fiido D4S",
+    "packedImageCount": 1,
+    "nativeBytes": 405444
+  },
+  {
+    "name": "Fiido D11",
+    "packedImageCount": 1,
+    "nativeBytes": 383918
+  },
+  {
+    "name": "Fiido D21",
+    "packedImageCount": 1,
+    "nativeBytes": 402422
+  },
+  {
+    "name": "Fiido M21",
+    "packedImageCount": 1,
+    "nativeBytes": 458292
+  },
+  {
+    "name": "Fiido T2",
+    "packedImageCount": 1,
+    "nativeBytes": 420074
+  },
+  {
+    "name": "Fiido Titan",
+    "packedImageCount": 1,
+    "nativeBytes": 429385
+  },
+  {
+    "name": "Fiido C21",
+    "packedImageCount": 1,
+    "nativeBytes": 409803
+  },
+  {
+    "name": "Fiido Air",
+    "packedImageCount": 1,
+    "nativeBytes": 404351
+  },
+  {
+    "name": "Aventon Aventure",
+    "packedImageCount": 1,
+    "nativeBytes": 447106
+  },
+  {
+    "name": "Aventon Aventure.2",
+    "packedImageCount": 1,
+    "nativeBytes": 507272
+  },
+  {
+    "name": "Aventon Level",
+    "packedImageCount": 1,
+    "nativeBytes": 446284
+  },
+  {
+    "name": "Aventon Pace 500",
+    "packedImageCount": 1,
+    "nativeBytes": 445691
+  },
+  {
+    "name": "Aventon Pace 500.3",
+    "packedImageCount": 1,
+    "nativeBytes": 416704
+  },
+  {
+    "name": "Aventon Soltera",
+    "packedImageCount": 1,
+    "nativeBytes": 455934
+  },
+  {
+    "name": "Aventon Sinch",
+    "packedImageCount": 1,
+    "nativeBytes": 451078
+  },
+  {
+    "name": "Aventon Abound",
+    "packedImageCount": 1,
+    "nativeBytes": 432352
+  },
+  {
+    "name": "Aventon Ramblas",
+    "packedImageCount": 1,
+    "nativeBytes": 452846
+  },
+  {
+    "name": "Rad Power RadRunner",
+    "packedImageCount": 1,
+    "nativeBytes": 447732
+  },
+  {
+    "name": "Rad Power RadRunner 2",
+    "packedImageCount": 1,
+    "nativeBytes": 411319
+  },
+  {
+    "name": "Rad Power RadRunner Plus",
+    "packedImageCount": 1,
+    "nativeBytes": 513140
+  },
+  {
+    "name": "Rad Power RadRover 6 Plus",
+    "packedImageCount": 1,
+    "nativeBytes": 553644
+  },
+  {
+    "name": "Rad Power RadCity 5 Plus",
+    "packedImageCount": 1,
+    "nativeBytes": 537371
+  },
+  {
+    "name": "Rad Power RadExpand 5",
+    "packedImageCount": 1,
+    "nativeBytes": 481703
+  },
+  {
+    "name": "Rad Power RadWagon 4",
+    "packedImageCount": 1,
+    "nativeBytes": 482258
+  },
+  {
+    "name": "Trek Marlin",
+    "packedImageCount": 1,
+    "nativeBytes": 542364
+  },
+  {
+    "name": "Trek Powerfly",
+    "packedImageCount": 1,
+    "nativeBytes": 394449
+  },
+  {
+    "name": "Trek Rail",
+    "packedImageCount": 1,
+    "nativeBytes": 373314
+  },
+  {
+    "name": "Trek Allant+",
+    "packedImageCount": 1,
+    "nativeBytes": 472993
+  },
+  {
+    "name": "Trek Verve+",
+    "packedImageCount": 1,
+    "nativeBytes": 459466
+  },
+  {
+    "name": "Trek FX+",
+    "packedImageCount": 1,
+    "nativeBytes": 445329
+  },
+  {
+    "name": "Giant Talon",
+    "packedImageCount": 1,
+    "nativeBytes": 394515
+  },
+  {
+    "name": "Giant Talon E+",
+    "packedImageCount": 1,
+    "nativeBytes": 411677
+  },
+  {
+    "name": "Giant Explore E+",
+    "packedImageCount": 1,
+    "nativeBytes": 391393
+  },
+  {
+    "name": "Giant Trance X E+",
+    "packedImageCount": 1,
+    "nativeBytes": 403258
+  },
+  {
+    "name": "Giant Reign E+",
+    "packedImageCount": 1,
+    "nativeBytes": 436384
+  },
+  {
+    "name": "Giant Fathom E+",
+    "packedImageCount": 1,
+    "nativeBytes": 401704
+  },
+  {
+    "name": "Specialized Rockhopper",
+    "packedImageCount": 1,
+    "nativeBytes": 543249
+  },
+  {
+    "name": "Specialized Turbo Levo",
+    "packedImageCount": 1,
+    "nativeBytes": 522625
+  },
+  {
+    "name": "Specialized Turbo Kenevo",
+    "packedImageCount": 1,
+    "nativeBytes": 559099
+  },
+  {
+    "name": "Specialized Turbo Vado",
+    "packedImageCount": 1,
+    "nativeBytes": 530220
+  },
+  {
+    "name": "Specialized Turbo Como",
+    "packedImageCount": 1,
+    "nativeBytes": 455941
+  },
+  {
+    "name": "Specialized Turbo Tero",
+    "packedImageCount": 1,
+    "nativeBytes": 558938
+  },
+  {
+    "name": "Cube Stereo Hybrid",
+    "packedImageCount": 1,
+    "nativeBytes": 449903
+  },
+  {
+    "name": "Cube Kathmandu Hybrid",
+    "packedImageCount": 1,
+    "nativeBytes": 409459
+  },
+  {
+    "name": "Cannondale Moterra Neo",
+    "packedImageCount": 1,
+    "nativeBytes": 555833
+  },
+  {
+    "name": "Cannondale Trail Neo",
+    "packedImageCount": 1,
+    "nativeBytes": 529357
+  },
+  {
+    "name": "Cannondale Tesoro Neo",
+    "packedImageCount": 1,
+    "nativeBytes": 429892
+  },
+  {
+    "name": "Himiway Cruiser",
+    "packedImageCount": 1,
+    "nativeBytes": 439960
+  },
+  {
+    "name": "Himiway Zebra",
+    "packedImageCount": 1,
+    "nativeBytes": 463829
+  },
+  {
+    "name": "Himiway Cobra",
+    "packedImageCount": 1,
+    "nativeBytes": 448753
+  },
+  {
+    "name": "Lectric XP 3.0",
+    "packedImageCount": 1,
+    "nativeBytes": 449992
+  },
+  {
+    "name": "Sur-Ron Light Bee S",
+    "packedImageCount": 1,
+    "nativeBytes": 528231
+  },
+  {
+    "name": "Talaria Sting MX3",
+    "packedImageCount": 1,
+    "nativeBytes": 442460
+  },
+  {
+    "name": "Talaria XXX L1E",
+    "packedImageCount": 1,
+    "nativeBytes": 458551
+  },
+  {
+    "name": "Stark Varg",
+    "packedImageCount": 1,
+    "nativeBytes": 546481
+  },
+  {
+    "name": "E Ride Pro SS",
+    "packedImageCount": 1,
+    "nativeBytes": 516695
+  },
+  {
+    "name": "Aventon Level.2",
+    "packedImageCount": 1,
+    "nativeBytes": 406131
+  },
+  {
+    "name": "Trek Marlin+",
+    "packedImageCount": 1,
+    "nativeBytes": 437920
+  },
+  {
+    "name": "Cube Reaction Hybrid",
+    "packedImageCount": 1,
+    "nativeBytes": 445973
+  },
+  {
+    "name": "Haibike AllMtn",
+    "packedImageCount": 1,
+    "nativeBytes": 622528
+  },
+  {
+    "name": "Haibike HardNine",
+    "packedImageCount": 1,
+    "nativeBytes": 420711
+  },
+  {
+    "name": "Haibike HardSeven",
+    "packedImageCount": 1,
+    "nativeBytes": 611395
+  },
+  {
+    "name": "Haibike Trekking",
+    "packedImageCount": 1,
+    "nativeBytes": 428864
+  },
+  {
+    "name": "Arctic Leopard E-16Z",
+    "packedImageCount": 1,
+    "nativeBytes": 374710
+  },
+  {
+    "name": "Arctic Leopard E-20Y",
+    "packedImageCount": 1,
+    "nativeBytes": 363086
+  },
+  {
+    "name": "Sur-Ron Light Bee",
+    "packedImageCount": 1,
+    "nativeBytes": 498675
+  },
+  {
+    "name": "Himiway Big Dog",
+    "packedImageCount": 1,
+    "nativeBytes": 417559
+  },
+  {
+    "name": "Lectric XP 2.0",
+    "packedImageCount": 1,
+    "nativeBytes": 451932
+  },
+  {
+    "name": "Arctic Leopard E-ZPRO",
+    "packedImageCount": 1,
+    "nativeBytes": 421745
+  },
+  {
+    "name": "Arctic Leopard XE Pro S Super",
+    "packedImageCount": 1,
+    "nativeBytes": 566012
+  },
+  {
+    "name": "Engwe EP-2 Pro",
+    "packedImageCount": 1,
+    "nativeBytes": 483115
+  },
+  {
+    "name": "Cube Touring Hybrid",
+    "packedImageCount": 1,
+    "nativeBytes": 404922
+  },
+  {
+    "name": "Cannondale Adventure Neo",
+    "packedImageCount": 1,
+    "nativeBytes": 409642
+  },
+  {
+    "name": "Super73 S2",
+    "packedImageCount": 1,
+    "nativeBytes": 457409
+  },
+  {
+    "name": "Super73 R",
+    "packedImageCount": 1,
+    "nativeBytes": 516567
+  },
+  {
+    "name": "Super73 RX",
+    "packedImageCount": 1,
+    "nativeBytes": 418060
+  },
+  {
+    "name": "Super73 ZX",
+    "packedImageCount": 1,
+    "nativeBytes": 456773
+  },
+  {
+    "name": "Super73 Z Miami",
+    "packedImageCount": 1,
+    "nativeBytes": 456989
+  },
+  {
+    "name": "Altis Sigma",
+    "packedImageCount": 1,
+    "nativeBytes": 475843
+  },
+  {
+    "name": "Altis Delta",
+    "packedImageCount": 1,
+    "nativeBytes": 528735
+  },
+  {
+    "name": "Fiido T1",
+    "packedImageCount": 1,
+    "nativeBytes": 432296
+  },
+  {
+    "name": "Lectric XP Lite",
+    "packedImageCount": 1,
+    "nativeBytes": 488617
+  },
+  {
+    "name": "Lectric XPedition",
+    "packedImageCount": 1,
+    "nativeBytes": 487660
+  },
+  {
+    "name": "Lectric XPeak",
+    "packedImageCount": 1,
+    "nativeBytes": 426240
+  }
+]

@@ -1,0 +1,314 @@
+{
+  "name": "Engwe L20",
+  "source": "https://engwe.com/products/engwe-l20",
+  "checked": [
+    "https://engwe.com/products/engwe-l20"
+  ],
+  "title": "ENGWE L20",
+  "images": [
+    {
+      "id": 34929993809977,
+      "created_at": "2024-11-19T10:36:45+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T13:41:52+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/12_6f1fc1f4-69c2-4286-b8fc-6dfd370fe0c9.jpg?v=1794548512",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993318457,
+      "created_at": "2024-11-19T10:34:59+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T13:39:59+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/0_c2328941-286c-4dc9-9c54-63a679a45243.jpg?v=1794548399",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993613369,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:43:53+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_4ac9f2a0-35bf-4528-922c-d1567dfabc74.jpg?v=1794548633",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993678905,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T13:44:05+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/7_7ff9b0ab-07ba-4c59-b938-0f2b1273512a.jpg?v=1794548645",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993285689,
+      "created_at": "2024-11-19T10:36:45+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T13:45:30+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/13_0fa39308-71f3-4136-9d22-dc35759467e0.jpg?v=1794548730",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993547833,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:43:28+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [
+        44066319827001
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_b035ec23-01bf-4078-af5a-7807d7988d36.jpg?v=1794548608",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993744441,
+      "created_at": "2024-11-19T10:34:31+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T13:45:18+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/9_21ff7a0f-6663-4cc1-a640-35ee032be06d.jpg?v=1794548718",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993777209,
+      "created_at": "2024-11-19T10:34:31+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T14:09:29+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/10_e28d2b54-48c0-40e7-b587-848b62cfbc32.jpg?v=1794550169",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993711673,
+      "created_at": "2024-11-19T10:34:31+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T13:40:34+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/8_36e53477-21a5-41e1-bc63-067dfc3d8a4e.jpg?v=1794548434",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993351225,
+      "created_at": "2024-11-19T10:36:45+08:00",
+      "position": 10,
+      "updated_at": "2026-11-13T13:41:56+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/11_a8f9524a-bf18-4dd1-98fd-b80e9728187c.jpg?v=1794548516",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35259191590969,
+      "created_at": "2025-01-07T10:16:00+08:00",
+      "position": 11,
+      "updated_at": "2026-11-13T13:39:48+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/L20.png?v=1794548388",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993449529,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 12,
+      "updated_at": "2026-11-13T13:41:44+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [
+        44066319728697
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_14712d36-eed6-4d7a-8a84-e51223c62da4.jpg?v=1794548504",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993416761,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 13,
+      "updated_at": "2026-11-13T13:44:14+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [
+        44066319761465
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_8550be20-cec1-41d8-9d16-3756a3dcbdd2.jpg?v=1794548654",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993515065,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 14,
+      "updated_at": "2026-11-13T13:39:24+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [
+        44066319794233
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_3dfcefb3-2dda-4b8d-b052-a825a83f5774.jpg?v=1794548364",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34929993580601,
+      "created_at": "2024-11-19T10:34:30+08:00",
+      "position": 15,
+      "updated_at": "2026-11-13T13:43:38+08:00",
+      "product_id": 7774960287801,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_6f7a5401-652f-4591-a713-124412fd7288.jpg?v=1794548618",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44066319728697,
+      "title": "Avocado Green",
+      "option1": "Avocado Green",
+      "option2": null,
+      "option3": null,
+      "sku": "EUL20AvocadoGreen",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34929993449529,
+        "product_id": 7774960287801,
+        "position": 12,
+        "created_at": "2024-11-19T10:34:30+08:00",
+        "updated_at": "2026-11-13T13:41:44+08:00",
+        "alt": "an avocado green engwe l20 front suspension e cycle",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_14712d36-eed6-4d7a-8a84-e51223c62da4.jpg?v=1794548504",
+        "variant_ids": [
+          44066319728697
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 1,
+      "product_id": 7774960287801,
+      "created_at": "2024-11-19T10:40:52+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44066319794233,
+      "title": "Snow White",
+      "option1": "Snow White",
+      "option2": null,
+      "option3": null,
+      "sku": "EUL20Snow White",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34929993515065,
+        "product_id": 7774960287801,
+        "position": 14,
+        "created_at": "2024-11-19T10:34:30+08:00",
+        "updated_at": "2026-11-13T13:39:24+08:00",
+        "alt": "a snow white engwe l20 fat tire bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_3dfcefb3-2dda-4b8d-b052-a825a83f5774.jpg?v=1794548364",
+        "variant_ids": [
+          44066319794233
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 2,
+      "product_id": 7774960287801,
+      "created_at": "2024-11-19T10:40:52+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44066319827001,
+      "title": "Flamingo Pink",
+      "option1": "Flamingo Pink",
+      "option2": null,
+      "option3": null,
+      "sku": "EUL20Flamingo Pink",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34929993547833,
+        "product_id": 7774960287801,
+        "position": 6,
+        "created_at": "2024-11-19T10:34:30+08:00",
+        "updated_at": "2026-11-13T13:43:28+08:00",
+        "alt": "a flamingo pink engwe l20 fat tyre electric bicycle",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_b035ec23-01bf-4078-af5a-7807d7988d36.jpg?v=1794548608",
+        "variant_ids": [
+          44066319827001
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 3,
+      "product_id": 7774960287801,
+      "created_at": "2024-11-19T10:40:52+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44066319761465,
+      "title": "Onyx Black",
+      "option1": "Onyx Black",
+      "option2": null,
+      "option3": null,
+      "sku": "EUL20Onyx Black",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34929993416761,
+        "product_id": 7774960287801,
+        "position": 13,
+        "created_at": "2024-11-19T10:34:30+08:00",
+        "updated_at": "2026-11-13T13:44:14+08:00",
+        "alt": "an onyx black engwe l20 electric off road bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_8550be20-cec1-41d8-9d16-3756a3dcbdd2.jpg?v=1794548654",
+        "variant_ids": [
+          44066319761465
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 4,
+      "product_id": 7774960287801,
+      "created_at": "2024-11-19T10:40:52+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE L20 Features</h2>\n<p>1. 250W brushless motor &amp; 50N.m torque</p>\n<p>2. 48V 13Ah battery &amp; 140Km maximum mileage</p>\n<p>3. 20*4.0 all terrian tyres &amp; front suspension</p>\n<p>4. Sturdy rear rack &amp; 120Kg payload capacity</p>\n<p>5. Shimano 7 gears &amp; mechanical brakes</p>\n<h2>What About L20 Electric Cycle?</h2>\n<p>The ENGWE L20 step trhough ebike combines style, functionality and power, perfectly blending practicality and adventure. Designed for riders who seek comfort and reliability, this electric fat bicycle is suitable for daily commuting and adventure riding. Whether you are navigating urban environments or exploring off-road trails, it can bring you an unparalleled experience.</p>\n<p>The L20 is an excellent all-terrain electric bike. It is equipped with a high-performance brushless motor and 20-inch fat tires, which can provide smooth acceleration and the power needed to handle various terrains, ensuring stability and traction on various surfaces, from city streets to gravel roads. It can travel 140 kilometers on a single charge, with a long range, which is perfect for long-distance travel or multiple trips throughout the day. Its sturdy frame can support a payload of 120 kg, making it an ideal cargo e-bike for carrying groceries, luggage or small equipment with ease.</p>\n<h2>ENGWE L20 Electric Fat Bicycle Spec</h2>\n<table border=\"1\">\n<tbody>\n<tr>\n<td width=\"163\">Material</td>\n<td width=\"285\">6061 Aluminum Alloy</td>\n</tr>\n<tr>\n<td>Motor</td>\n<td>250W Brushless Motor</td>\n</tr>\n<tr>\n<td>Torque</td>\n<td>50 Nm</td>\n</tr>\n<tr>\n<td>Brake</td>\n<td>160mm Front &amp; Rear Mechanical Brake</td>\n</tr>\n<tr>\n<td>Top Speed</td>\n<td>25km/h</td>\n</tr>\n<tr>\n<td>Maximum Mileage</td>\n<td>140 km</td>\n</tr>\n<tr>\n<td>Battery</td>\n<td>48V 13Ah Removable Lithium Battery</td>\n</tr>\n<tr>\n<td>Charging Time</td>\n<td>About 6.5 hours</td>\n</tr>\n<tr>\n<td>Tires</td>\n<td>20x4.0\" Fat Tires</td>\n</tr>\n<tr>\n<td>Maximum Climbing degree</td>\n<td>10\u00b0</td>\n</tr>\n<tr>\n<td>Transmission System</td>\n<td>Shimano 7 Gears</td>\n</tr>\n<tr>\n<td>Display</td>\n<td>LCD Display</td>\n</tr>\n<tr>\n<td>Bike Weight</td>\n<td>34 kg (74.8 lbs)</td>\n</tr>\n<tr>\n<td>Gross Weight</td>\n<td>41.5 kg (91.13 lbs)</td>\n</tr>\n<tr>\n<td>Rider Height</td>\n<td>5.0 (ft) - 6.0 (ft)</td>\n</tr>\n<tr>\n<td>Payload Capacity</td>\n<td>120 kg (264 lbs)</td>\n</tr>\n</tbody>\n</table>"
+}

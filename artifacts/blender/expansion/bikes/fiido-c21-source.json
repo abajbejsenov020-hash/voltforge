@@ -1,0 +1,357 @@
+{
+  "name": "Fiido C21",
+  "source": "https://fiido.com/products/fiido-c21-lightweight-step-over-urban-gravel-ebikes",
+  "checked": [
+    "https://fiido.com/products/fiido-c21-lightweight-step-over-urban-gravel-ebikes"
+  ],
+  "title": "Fiido C21 Gravel & City E-Bike",
+  "images": [
+    {
+      "id": 44688921329877,
+      "created_at": "2025-02-18T11:15:42+08:00",
+      "position": 1,
+      "updated_at": "2025-02-18T11:17:21+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [
+        44405674082517,
+        44405674115285,
+        50840582848725
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-L.webp?v=1739848641",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 49479137001685,
+      "created_at": "2025-11-19T18:10:34+08:00",
+      "position": 2,
+      "updated_at": "2025-11-19T18:14:26+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/2_b52011f1-04f7-43dd-8a29-c8789b8885d4.webp?v=1763547266",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 51176589787349,
+      "created_at": "2026-05-18T16:03:14+08:00",
+      "position": 3,
+      "updated_at": "2026-05-18T16:03:15+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/c21-en_f1c16e95-fe0d-4cfb-a619-15afd9869641.webp?v=1779091395",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 51176581169365,
+      "created_at": "2026-05-18T16:03:08+08:00",
+      "position": 4,
+      "updated_at": "2026-05-18T16:03:09+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/3_b925fdfe-98e5-41d9-94d4-cab91b054891.webp?v=1779091389",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 41275818115285,
+      "created_at": "2024-03-14T14:43:12+08:00",
+      "position": 5,
+      "updated_at": "2026-04-15T11:40:18+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/4_a8ce0f51-d63b-4b17-8914-926c9e132eec.jpg?v=1776224418",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 41275817984213,
+      "created_at": "2024-03-14T14:43:12+08:00",
+      "position": 6,
+      "updated_at": "2025-11-21T11:54:54+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/5_3982a2c8-3009-4d2d-9cde-abad4af46204.jpg?v=1763697294",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 47744404422869,
+      "created_at": "2025-08-08T18:07:37+08:00",
+      "position": 7,
+      "updated_at": "2025-11-21T11:54:54+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-1-EN_5716192e-ac4a-4348-bdb7-0075c1e115a0.jpg?v=1763697294",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "id": 44688927260885,
+      "created_at": "2025-02-18T11:16:54+08:00",
+      "position": 8,
+      "updated_at": "2025-11-21T11:54:54+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/6_e3c0d5a0-c314-4849-86ce-43c79d34042d.webp?v=1763697294",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 50538960388309,
+      "created_at": "2026-03-23T17:59:29+08:00",
+      "position": 9,
+      "updated_at": "2026-03-23T17:59:34+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/10C21.webp?v=1774259974",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 44688928604373,
+      "created_at": "2025-02-18T11:17:11+08:00",
+      "position": 10,
+      "updated_at": "2026-03-23T17:59:34+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/7.webp?v=1774259974",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 42773052915925,
+      "created_at": "2024-09-11T16:50:34+08:00",
+      "position": 11,
+      "updated_at": "2026-03-23T17:59:34+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/2_77baa951-d0df-452a-92b7-9d426cd12190.jpg?v=1774259974",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 50627810296021,
+      "created_at": "2026-04-02T17:02:44+08:00",
+      "position": 12,
+      "updated_at": "2026-04-02T17:02:45+08:00",
+      "product_id": 8086595305685,
+      "variant_ids": [
+        53730087108821,
+        53730087141589,
+        53730087174357
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/eu_244507c1-bf3a-4a01-a79c-ca3715204be1.jpg?v=1775120565",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "variants": [
+    {
+      "id": 44405674115285,
+      "title": "Grey-L | 5'7\" (170cm) - 6'5\" (195cm) / Standard",
+      "option1": "Grey-L | 5'7\" (170cm) - 6'5\" (195cm)",
+      "option2": "Standard",
+      "option3": null,
+      "sku": "C21-55B-US",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 44688921329877,
+        "product_id": 8086595305685,
+        "position": 1,
+        "created_at": "2025-02-18T11:15:42+08:00",
+        "updated_at": "2025-02-18T11:17:21+08:00",
+        "alt": null,
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-L.webp?v=1739848641",
+        "variant_ids": [
+          44405674082517,
+          44405674115285,
+          50840582848725
+        ]
+      },
+      "available": true,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "1979.00",
+      "position": 1,
+      "product_id": 8086595305685,
+      "created_at": "2023-07-31T17:44:17+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    },
+    {
+      "id": 53730087108821,
+      "title": "Grey-L | 5'7\" (170cm) - 6'5\" (195cm) / Extender\uff08200 km\uff09",
+      "option1": "Grey-L | 5'7\" (170cm) - 6'5\" (195cm)",
+      "option2": "Extender\uff08200 km\uff09",
+      "option3": null,
+      "sku": "C21-55B1-US-1",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 50627810296021,
+        "product_id": 8086595305685,
+        "position": 12,
+        "created_at": "2026-04-02T17:02:44+08:00",
+        "updated_at": "2026-04-02T17:02:45+08:00",
+        "alt": null,
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/eu_244507c1-bf3a-4a01-a79c-ca3715204be1.jpg?v=1775120565",
+        "variant_ids": [
+          53730087108821,
+          53730087141589,
+          53730087174357
+        ]
+      },
+      "available": true,
+      "price": "1419.00",
+      "grams": 0,
+      "compare_at_price": "1979.00",
+      "position": 2,
+      "product_id": 8086595305685,
+      "created_at": "2026-04-30T09:31:11+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    },
+    {
+      "id": 44405674082517,
+      "title": "Grey-M | 5'3\" (160cm) - 5'9\" (175cm) / Standard",
+      "option1": "Grey-M | 5'3\" (160cm) - 5'9\" (175cm)",
+      "option2": "Standard",
+      "option3": null,
+      "sku": "C21-51B-US",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 44688921329877,
+        "product_id": 8086595305685,
+        "position": 1,
+        "created_at": "2025-02-18T11:15:42+08:00",
+        "updated_at": "2025-02-18T11:17:21+08:00",
+        "alt": null,
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-L.webp?v=1739848641",
+        "variant_ids": [
+          44405674082517,
+          44405674115285,
+          50840582848725
+        ]
+      },
+      "available": true,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "1979.00",
+      "position": 3,
+      "product_id": 8086595305685,
+      "created_at": "2023-07-31T17:44:17+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    },
+    {
+      "id": 53730087141589,
+      "title": "Grey-M | 5'3\" (160cm) - 5'9\" (175cm) / Extender\uff08200 km\uff09",
+      "option1": "Grey-M | 5'3\" (160cm) - 5'9\" (175cm)",
+      "option2": "Extender\uff08200 km\uff09",
+      "option3": null,
+      "sku": "C21-51B-US-1",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 50627810296021,
+        "product_id": 8086595305685,
+        "position": 12,
+        "created_at": "2026-04-02T17:02:44+08:00",
+        "updated_at": "2026-04-02T17:02:45+08:00",
+        "alt": null,
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/eu_244507c1-bf3a-4a01-a79c-ca3715204be1.jpg?v=1775120565",
+        "variant_ids": [
+          53730087108821,
+          53730087141589,
+          53730087174357
+        ]
+      },
+      "available": true,
+      "price": "1419.00",
+      "grams": 0,
+      "compare_at_price": "1979.00",
+      "position": 4,
+      "product_id": 8086595305685,
+      "created_at": "2026-04-30T09:31:11+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    },
+    {
+      "id": 50840582848725,
+      "title": "Grey-XL | 6'5\"(195cm) - 6'9\"(205 cm) / Standard",
+      "option1": "Grey-XL | 6'5\"(195cm) - 6'9\"(205 cm)",
+      "option2": "Standard",
+      "option3": null,
+      "sku": "C21-61B-US",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 44688921329877,
+        "product_id": 8086595305685,
+        "position": 1,
+        "created_at": "2025-02-18T11:15:42+08:00",
+        "updated_at": "2025-02-18T11:17:21+08:00",
+        "alt": null,
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-L.webp?v=1739848641",
+        "variant_ids": [
+          44405674082517,
+          44405674115285,
+          50840582848725
+        ]
+      },
+      "available": true,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "1979.00",
+      "position": 5,
+      "product_id": 8086595305685,
+      "created_at": "2024-12-19T09:57:09+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    },
+    {
+      "id": 53730087174357,
+      "title": "Grey-XL | 6'5\"(195cm) - 6'9\"(205 cm) / Extender\uff08200 km\uff09",
+      "option1": "Grey-XL | 6'5\"(195cm) - 6'9\"(205 cm)",
+      "option2": "Extender\uff08200 km\uff09",
+      "option3": null,
+      "sku": "C21-61B-US-1",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 50627810296021,
+        "product_id": 8086595305685,
+        "position": 12,
+        "created_at": "2026-04-02T17:02:44+08:00",
+        "updated_at": "2026-04-02T17:02:45+08:00",
+        "alt": null,
+        "width": 1000,
+        "height": 1000,
+        "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/eu_244507c1-bf3a-4a01-a79c-ca3715204be1.jpg?v=1775120565",
+        "variant_ids": [
+          53730087108821,
+          53730087141589,
+          53730087174357
+        ]
+      },
+      "available": true,
+      "price": "1419.00",
+      "grams": 0,
+      "compare_at_price": "1979.00",
+      "position": 6,
+      "product_id": 8086595305685,
+      "created_at": "2026-04-30T09:31:11+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    }
+  ],
+  "description": "<div>\n<div data-zone-id=\"0\" data-line-index=\"0\" data-line=\"true\">\n<div data-line=\"true\" data-line-index=\"0\" data-zone-id=\"0\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"WViJdI7B6oiPMpxy2OMc0p5Cnxf\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-HH2wdj08gopzuwx1USZcH8GRn2e\">Urban commuter and adventure electric bike with torque sensor, only 17.5kg.</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"WViJdI7B6oiPMpxy2OMc0p5Cnxf\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Urban commuter and adventure electric bike with torque sensor, only 17.5kg.\"},\"attribs\":{\"0\":\"*0*1+e*2*1+1*2*1*3+e*0*1+1a\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"author\",\"7316789041502961667\"],\"1\":[\"comment-id-7511640014735933442\",\"true\"],\"2\":[\"author\",\"7490462073982664708\"],\"3\":[\"comment-id-7512024302399062044\",\"true\"]},\"nextNum\":4}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"67c73690-4d51-4e22-a3c8-7428e64b0e71\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":254,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":75},\"recordId\":\"HH2wdj08gopzuwx1USZcH8GRn2e\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</div>\n</div>\n</div>\n<div id=\"gtx-trans\" style=\"position: absolute; left: 271px; top: 29.679px;\">\n<div class=\"gtx-trans-icon\"><br></div>\n</div>"
+}

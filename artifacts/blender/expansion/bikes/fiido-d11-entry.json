@@ -1,0 +1,26 @@
+{
+  "name": "Fiido D11",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-d11.webp",
+  "source": "https://www.indiegogo.com/projects/fiido-d11-100km-cycling-urban-folding-ebike",
+  "imageSource": "https://cdn.images.indiegogo.com/og-image-fb/projects/13987/994e1e1e-22b7-4e9d-ab83-e06b46ee93c8.jpg",
+  "credit": "www.indiegogo.com",
+  "variantNote": "FIIDO D11 - 100km Cycling Urban Folding eBike by Fiido - Indiegogo (https://www.indiegogo.com/projects/fiido-d11-100km-cycling-urban-folding-ebike)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1196,
+    628
+  ],
+  "bytes": 57888,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "fiido-d11",
+    "url": "/models/expansion/bikes/fiido-d11.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-d11.blend",
+    "triangles": 26904,
+    "meshes": 28,
+    "bytes": 845792,
+    "family": "thinFold"
+  }
+}

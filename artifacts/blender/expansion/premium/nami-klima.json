@@ -1,0 +1,26 @@
+{
+  "name": "NAMI Klima",
+  "model": {
+    "key": "nami-klima",
+    "url": "/models/expansion/premium/nami-klima.glb",
+    "nativeSource": "assets/blender/expansion/premium/nami-klima.blend",
+    "triangles": 50476,
+    "meshes": 34,
+    "bytes": 1292532,
+    "family": "NAMI Klima exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.3449999988079071,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.3449999690055847,
+      1.4199930429458618
+    ]
+  ],
+  "observed": "NAMI Klima compact cast chassis, curved compact neck, slim single steering stem and short C suspension arms. Burn-E external deck cage is not present on this photographed model. Dual hub motors.",
+  "revision": 2
+}

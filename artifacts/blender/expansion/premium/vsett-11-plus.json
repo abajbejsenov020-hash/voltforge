@@ -1,0 +1,26 @@
+{
+  "name": "Vsett 11+",
+  "model": {
+    "key": "vsett-11-plus",
+    "url": "/models/expansion/premium/vsett-11-plus.glb",
+    "nativeSource": "assets/blender/expansion/premium/vsett-11-plus.blend",
+    "triangles": 51728,
+    "meshes": 35,
+    "bytes": 1393620,
+    "family": "Vsett 11+ exterior"
+  },
+  "bounds": [
+    [
+      -0.7367000579833984,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.7149999737739563,
+      0.33000001311302185,
+      1.3899930715560913
+    ]
+  ],
+  "observed": "Twin fork-like parallel stems, large central round headlamp and broad battery deck.",
+  "revision": 2
+}

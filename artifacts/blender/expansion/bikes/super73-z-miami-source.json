@@ -1,0 +1,113 @@
+{
+  "name": "Super73 Z Miami",
+  "source": "https://super73.com/products/super73-z-miami-core-legacy",
+  "checked": [
+    "https://super73.com/products/super73-z-miami-core-legacy"
+  ],
+  "title": "SUPER73-Z Miami",
+  "images": [
+    {
+      "id": 44351642960042,
+      "created_at": "2026-03-05T11:21:39-08:00",
+      "position": 1,
+      "updated_at": "2026-03-05T11:22:25-08:00",
+      "product_id": 8213898330282,
+      "variant_ids": [
+        47323757478058
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YMZMIAMI_CORE_FRONTHERO_de5b8c0a-fb02-4386-bf97-10d95025e36d.jpg?v=1772738545",
+      "width": 2200,
+      "height": 2196
+    },
+    {
+      "id": 44351642992810,
+      "created_at": "2026-03-05T11:21:39-08:00",
+      "position": 2,
+      "updated_at": "2026-03-05T11:22:25-08:00",
+      "product_id": 8213898330282,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YMZMIAMI_CORE_REARHERO.jpg?v=1772738545",
+      "width": 2200,
+      "height": 2196
+    },
+    {
+      "id": 44351643025578,
+      "created_at": "2026-03-05T11:21:39-08:00",
+      "position": 3,
+      "updated_at": "2026-03-05T11:22:25-08:00",
+      "product_id": 8213898330282,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YMZMIAMI_CORE_RIGHT.jpg?v=1772738545",
+      "width": 2200,
+      "height": 2196
+    },
+    {
+      "id": 41803299127466,
+      "created_at": "2025-09-09T13:58:31-07:00",
+      "position": 4,
+      "updated_at": "2026-03-05T11:22:25-08:00",
+      "product_id": 8213898330282,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_ZMiami_Core_MetallicAluminum_DetailBattery_1080x1080_8d6a5dcc-d1e2-4172-a162-eab08459d115.jpg?v=1772738545",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": 41803299160234,
+      "created_at": "2025-09-09T13:58:31-07:00",
+      "position": 5,
+      "updated_at": "2026-03-05T11:22:25-08:00",
+      "product_id": 8213898330282,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_ZMiami_Core_MetallicAluminum_DetailStemCap_1080x1080_ac67af8c-92b5-45d5-b479-28184f65b78c.jpg?v=1772738545",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": 41803299193002,
+      "created_at": "2025-09-09T13:58:31-07:00",
+      "position": 6,
+      "updated_at": "2026-03-05T11:22:25-08:00",
+      "product_id": 8213898330282,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_ZMiami_Core_MetallicAluminum_DetailTire_1080x1080_bb23ec71-5b7e-40cc-9f6c-9d401240f8ae.jpg?v=1772738545",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "variants": [
+    {
+      "id": 47323757478058,
+      "title": "CORE / Metallic Aluminum",
+      "option1": "CORE",
+      "option2": "Metallic Aluminum",
+      "option3": null,
+      "sku": "900-00437",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 44351642960042,
+        "product_id": 8213898330282,
+        "position": 1,
+        "created_at": "2026-03-05T11:21:39-08:00",
+        "updated_at": "2026-03-05T11:22:25-08:00",
+        "alt": "Front view of the SUPER73-Z Miami Core Legacy Series ebike in metallic aluminum @color_metallic aluminum",
+        "width": 2200,
+        "height": 2196,
+        "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YMZMIAMI_CORE_FRONTHERO_de5b8c0a-fb02-4386-bf97-10d95025e36d.jpg?v=1772738545",
+        "variant_ids": [
+          47323757478058
+        ]
+      },
+      "available": true,
+      "price": "1895.00",
+      "grams": 0,
+      "compare_at_price": "2195.00",
+      "position": 1,
+      "product_id": 8213898330282,
+      "created_at": "2025-08-12T05:52:59-07:00",
+      "updated_at": "2026-11-17T07:29:44-08:00"
+    }
+  ],
+  "description": "<h3>PLAY WITH MORE POWER</h3>\n<p><meta charset=\"utf-8\"><span data-sheets-root=\"1\">Our compact neighborhood explorer is better than ever with key performance upgrades including 20% more acceleration and an unmatched battery system! A playful take on our classic ZX models, the Miami was made to be the star of the block party. For riders 16 years of age and older.</span></p>"
+}

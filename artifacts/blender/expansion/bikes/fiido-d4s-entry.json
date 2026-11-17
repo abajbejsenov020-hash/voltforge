@@ -1,0 +1,26 @@
+{
+  "name": "Fiido D4S",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-d4s.webp",
+  "source": "https://fiido.ie/product/fiido-d4s-folding-electric-bike/",
+  "imageSource": "https://fiido.ie/wp-content/uploads/2023/05/unnamed-file-2.jpg",
+  "credit": "fiido.ie",
+  "variantNote": "FIIDO D4S Folding Electric Bike | FIIDO Ireland",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 79886,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "fiido-d4s",
+    "url": "/models/expansion/bikes/fiido-d4s.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-d4s.blend",
+    "triangles": 26948,
+    "meshes": 28,
+    "bytes": 847780,
+    "family": "thinFold"
+  }
+}

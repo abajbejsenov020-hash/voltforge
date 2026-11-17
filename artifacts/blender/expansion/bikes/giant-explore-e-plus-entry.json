@@ -1,0 +1,26 @@
+{
+  "name": "Giant Explore E+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/giant-explore-e.webp",
+  "source": "https://www.giant-bicycles.com/nl/explore-eplus-2-dash-stagger-2022",
+  "imageSource": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_400%2Cq_80/feswipjp7b09gdko5kz2/MY22ExploreEplus2STA_ColorAMetallicNavy.jpg",
+  "credit": "www.giant-bicycles.com",
+  "variantNote": "Explore E+ 2 Dash Stagger (2022) | Trekking Fiets | Giant Bicycles Nederland (https://www.giant-bicycles.com/nl/explore-eplus-2-dash-stagger-2022)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    533,
+    400
+  ],
+  "bytes": 35758,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "giant-explore-e-plus",
+    "url": "/models/expansion/bikes/giant-explore-e-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/giant-explore-e-plus.blend",
+    "triangles": 30672,
+    "meshes": 29,
+    "bytes": 935564,
+    "family": "stepcurve"
+  }
+}

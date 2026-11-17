@@ -1,0 +1,514 @@
+{
+  "name": "Engwe M20",
+  "source": "https://engwe.com/products/engwe-m20",
+  "checked": [
+    "https://engwe.com/products/engwe-m20"
+  ],
+  "title": "ENGWE M20",
+  "images": [
+    {
+      "id": 35259196670009,
+      "created_at": "2025-01-07T10:17:21+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T14:08:30+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20.png?v=1794550110",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34923987861561,
+      "created_at": "2024-11-18T15:21:37+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T13:44:10+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_35d8a8c4-9cf3-4691-a61d-060fbac60c92.jpg?v=1794548650",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107646505017,
+      "created_at": "2024-12-11T21:37:38+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:44:34+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [
+        44063804358713
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/20_2c2115a8-a5b0-40d9-a94f-00482df99c86.png?v=1794548674",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107663577145,
+      "created_at": "2024-12-11T21:39:56+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T14:09:31+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/30.png?v=1794550171",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107650273337,
+      "created_at": "2024-12-11T21:38:11+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T13:45:56+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/10.png?v=1794548756",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107650306105,
+      "created_at": "2024-12-11T21:38:11+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:41:46+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/14.png?v=1794548506",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107663446073,
+      "created_at": "2024-12-11T21:39:56+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T13:42:54+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/16_eaaf319b-838b-4c01-b0be-8f534a16b84d.png?v=1794548574",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36437820309561,
+      "created_at": "2025-06-07T14:17:06+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T13:40:46+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_b57af197-409f-4f0c-82f7-91fd2e631c16.jpg?v=1794548446",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36437819195449,
+      "created_at": "2025-06-07T14:16:36+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T14:08:33+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_b072e78d-67fe-46d0-a5d3-9d00c645fcd6.jpg?v=1794550113",
+      "width": 2083,
+      "height": 2853
+    },
+    {
+      "id": 35107663511609,
+      "created_at": "2024-12-11T21:39:57+08:00",
+      "position": 10,
+      "updated_at": "2026-11-13T14:08:50+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/18_af01988c-f77e-4038-8098-d7bbbcb27359.png?v=1794550130",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107663544377,
+      "created_at": "2024-12-11T21:39:56+08:00",
+      "position": 11,
+      "updated_at": "2026-11-13T14:09:37+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/19_94fb9656-e35c-492d-93fc-4257c6326c3c.png?v=1794550177",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107646701625,
+      "created_at": "2024-12-11T21:37:38+08:00",
+      "position": 12,
+      "updated_at": "2026-11-13T13:44:46+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [
+        44063804489785
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_dbc4ca10-d4f1-4115-bc16-4c2c69cbff54.jpg?v=1794548686",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107680288825,
+      "created_at": "2024-12-11T21:41:44+08:00",
+      "position": 13,
+      "updated_at": "2026-11-13T13:45:44+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/11.png?v=1794548744",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35872911097913,
+      "created_at": "2025-03-25T20:43:42+08:00",
+      "position": 14,
+      "updated_at": "2026-11-13T14:09:23+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_ecafab9c-acb0-4e73-b0a2-1e8657f38d95.jpg?v=1794550163",
+      "width": 2083,
+      "height": 2853
+    },
+    {
+      "id": 35107646734393,
+      "created_at": "2024-12-11T21:37:38+08:00",
+      "position": 15,
+      "updated_at": "2026-11-13T13:40:38+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [
+        44063804424249
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_ebb8428f-7a96-4a5b-91e9-894eb4c6a419.jpg?v=1794548438",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107683795001,
+      "created_at": "2024-12-11T21:42:22+08:00",
+      "position": 16,
+      "updated_at": "2026-11-13T13:43:10+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/12.png?v=1794548590",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107683827769,
+      "created_at": "2024-12-11T21:42:23+08:00",
+      "position": 17,
+      "updated_at": "2026-11-13T13:45:04+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/15.png?v=1794548704",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36437823488057,
+      "created_at": "2025-06-07T14:18:33+08:00",
+      "position": 18,
+      "updated_at": "2026-11-13T14:08:43+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_ac01e14a-9c14-43c6-bc54-af06a843622a.jpg?v=1794550123",
+      "width": 2083,
+      "height": 2853
+    },
+    {
+      "id": 35107646668857,
+      "created_at": "2024-12-11T21:37:38+08:00",
+      "position": 19,
+      "updated_at": "2026-11-13T13:39:26+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [
+        44063804325945
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_c6c02586-52b1-47cd-8846-e5970d67f222.jpg?v=1794548366",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107687399481,
+      "created_at": "2024-12-11T21:42:59+08:00",
+      "position": 20,
+      "updated_at": "2026-11-13T13:43:36+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/7.png?v=1794548616",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107636609081,
+      "created_at": "2024-12-11T21:35:49+08:00",
+      "position": 21,
+      "updated_at": "2026-11-13T13:42:22+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/31.png?v=1794548542",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36437824045113,
+      "created_at": "2025-06-07T14:19:00+08:00",
+      "position": 22,
+      "updated_at": "2026-11-13T13:39:36+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_0360ce89-c6b1-4f7b-a754-5d8686462f5f.jpg?v=1794548376",
+      "width": 2083,
+      "height": 2853
+    },
+    {
+      "id": 35107646570553,
+      "created_at": "2024-12-11T21:37:38+08:00",
+      "position": 23,
+      "updated_at": "2026-11-13T13:40:39+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [
+        44063804391481
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_6b6b1530-b8a9-4c8a-ba35-73d929914c9e.jpg?v=1794548439",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107687432249,
+      "created_at": "2024-12-11T21:42:59+08:00",
+      "position": 24,
+      "updated_at": "2026-11-13T13:45:54+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/8.png?v=1794548754",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107646603321,
+      "created_at": "2024-12-11T21:37:38+08:00",
+      "position": 25,
+      "updated_at": "2026-11-13T13:40:45+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [
+        44063804457017
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_c155b11d-689d-4767-bb25-daeb65cdd335.jpg?v=1794548445",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107687366713,
+      "created_at": "2024-12-11T21:42:58+08:00",
+      "position": 26,
+      "updated_at": "2026-11-13T13:43:22+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_4380dbd6-6206-41bd-9c29-50baf558b96a.png?v=1794548602",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35107636674617,
+      "created_at": "2024-12-11T21:35:49+08:00",
+      "position": 27,
+      "updated_at": "2026-11-13T13:43:50+08:00",
+      "product_id": 7774192238649,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/33.png?v=1794548630",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44063804391481,
+      "title": "Single Battery / White",
+      "option1": "Single Battery",
+      "option2": "White",
+      "option3": null,
+      "sku": "EUM20White13ah",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35107646570553,
+        "product_id": 7774192238649,
+        "position": 23,
+        "created_at": "2024-12-11T21:37:38+08:00",
+        "updated_at": "2026-11-13T13:40:39+08:00",
+        "alt": "electric fat bike engwe m20",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_6b6b1530-b8a9-4c8a-ba35-73d929914c9e.jpg?v=1794548439",
+        "variant_ids": [
+          44063804391481
+        ]
+      },
+      "available": true,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 1,
+      "product_id": 7774192238649,
+      "created_at": "2024-11-18T15:22:43+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44063804325945,
+      "title": "Single Battery / Green",
+      "option1": "Single Battery",
+      "option2": "Green",
+      "option3": null,
+      "sku": "EUM20Green13ah",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35107646668857,
+        "product_id": 7774192238649,
+        "position": 19,
+        "created_at": "2024-12-11T21:37:38+08:00",
+        "updated_at": "2026-11-13T13:39:26+08:00",
+        "alt": "best dual battery e bike engwe m20",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_c6c02586-52b1-47cd-8846-e5970d67f222.jpg?v=1794548366",
+        "variant_ids": [
+          44063804325945
+        ]
+      },
+      "available": true,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 2,
+      "product_id": 7774192238649,
+      "created_at": "2024-11-18T15:22:43+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44063804457017,
+      "title": "Single Battery / Black",
+      "option1": "Single Battery",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUM20Black13ah",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35107646603321,
+        "product_id": 7774192238649,
+        "position": 25,
+        "created_at": "2024-12-11T21:37:38+08:00",
+        "updated_at": "2026-11-13T13:40:45+08:00",
+        "alt": "fat tyre electric bike engwe m20",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_c155b11d-689d-4767-bb25-daeb65cdd335.jpg?v=1794548445",
+        "variant_ids": [
+          44063804457017
+        ]
+      },
+      "available": true,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 3,
+      "product_id": 7774192238649,
+      "created_at": "2024-11-18T15:22:43+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44063804424249,
+      "title": "Dual Batteries / White",
+      "option1": "Dual Batteries",
+      "option2": "White",
+      "option3": null,
+      "sku": "EUM20White26ah",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35107646734393,
+        "product_id": 7774192238649,
+        "position": 15,
+        "created_at": "2024-12-11T21:37:38+08:00",
+        "updated_at": "2026-11-13T13:40:38+08:00",
+        "alt": "long distance electric bicycle engwe m20",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_ebb8428f-7a96-4a5b-91e9-894eb4c6a419.jpg?v=1794548438",
+        "variant_ids": [
+          44063804424249
+        ]
+      },
+      "available": true,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 4,
+      "product_id": 7774192238649,
+      "created_at": "2024-11-18T15:22:43+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44063804358713,
+      "title": "Dual Batteries / Green",
+      "option1": "Dual Batteries",
+      "option2": "Green",
+      "option3": null,
+      "sku": "EUM20Green26ah",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35107646505017,
+        "product_id": 7774192238649,
+        "position": 3,
+        "created_at": "2024-12-11T21:37:38+08:00",
+        "updated_at": "2026-11-13T13:44:34+08:00",
+        "alt": "full suspension mountain bike ENGWE M20",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/20_2c2115a8-a5b0-40d9-a94f-00482df99c86.png?v=1794548674",
+        "variant_ids": [
+          44063804358713
+        ]
+      },
+      "available": true,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 5,
+      "product_id": 7774192238649,
+      "created_at": "2024-11-18T15:22:43+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44063804489785,
+      "title": "Dual Batteries / Black",
+      "option1": "Dual Batteries",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUM20Black26ah",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35107646701625,
+        "product_id": 7774192238649,
+        "position": 12,
+        "created_at": "2024-12-11T21:37:38+08:00",
+        "updated_at": "2026-11-13T13:44:46+08:00",
+        "alt": "black full suspension e bike engwe m20",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/M20_dbc4ca10-d4f1-4115-bc16-4c2c69cbff54.jpg?v=1794548686",
+        "variant_ids": [
+          44063804489785
+        ]
+      },
+      "available": true,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 6,
+      "product_id": 7774192238649,
+      "created_at": "2024-11-18T15:22:43+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE M20 Features</h2>\n<p>1. Powerful motor</p>\n<p>2. 150km long range (48V 26Ah dual battery version)</p>\n<p>3. Dual suspension &amp; 20-inch fat tires</p>\n<p>4. Fast speed</p>\n<p>5. Shimano 7-speed transmission</p>\n<p>6. 160mm front &amp; rear disc machine brake</p>\n<h2>What About ENGWE M20?</h2>\n<p>The ENGWE M20 is an impressive electric fat bike that boasts a striking design reminiscent of a motorcycle. Its streamlined structure not only enhances its futuristic look but also improves aerodynamics for a smoother ride. Equipped with a powerful motor, the M20 delivers exceptional performance, offering a long-range dual batteries that allows for up to 150 km of travel on a single charge. The full suspension system ensures a comfortable and stable ride over rough terrain, while the 20-inch fat tires provide superior traction and control, making it perfect for various off-road conditions.</p>\n<p>In a word, as a full suspension mountain bike, ENGWE M20 allows you to ride smoothly and enjoy the thrill of the ride. Whether you're a daily rider or a weekend adventurer, this fat tyre electric bike is sure to surprise you!</p>\n<h2>ENGWE M20 Fat E-Bike Spec</h2>\n<table style=\"width: 100%;\" border=\"2\">\n<tbody>\n<tr>\n<td style=\"width: 47.9565%;\">Motor</td>\n<td style=\"width: 51.7568%;\">250W Brushless Motor</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Speed</td>\n<td style=\"width: 51.7568%;\">25 km/h</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Material</td>\n<td style=\"width: 51.7568%;\">6061 Aluminum Alloy</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Torque</td>\n<td style=\"width: 51.7568%;\">55 N.m</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Tires</td>\n<td style=\"width: 51.7568%;\">20 x 4.0 Fat Tires</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">13Ah Battery Version</td>\n<td style=\"width: 51.7568%;\">48V13Ah Lithium-Ion Battery *1</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">26Ah Batteries Version</td>\n<td style=\"width: 51.7568%;\">48V 13Ah Lithium-Ion Battery *2</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Max Mileage</td>\n<td style=\"width: 51.7568%;\">75KM at PAS mode 1</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Charging Time</td>\n<td style=\"width: 51.7568%;\">About 5H</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Maximum Climbing degree</td>\n<td style=\"width: 51.7568%;\">10\u00b0</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Brake</td>\n<td style=\"width: 51.7568%;\">180mm Front &amp; Rear Disc Machine Brake</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Transmission System</td>\n<td style=\"width: 51.7568%;\">Shimano 7 Gears</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Display</td>\n<td style=\"width: 51.7568%;\">LCD Display</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">Bike Weight</td>\n<td style=\"width: 51.7568%;\">76.72lbs (34.8KG)</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">13Ah Battery Version Gross Weight</td>\n<td style=\"width: 51.7568%;\">94.13lbs (42.7KG)</td>\n</tr>\n<tr>\n<td style=\"width: 47.9565%;\">26Ah Battery Version Gross Weight</td>\n<td style=\"width: 51.7568%;\">104.05lbs (45.9KG)</td>\n</tr>\n</tbody>\n</table>"
+}

@@ -1,0 +1,710 @@
+{
+  "KuKirin G2 VMP": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-g2-vmp-electric-scooter",
+      "title": "KuKirin G2 (VMP) Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_VMP.jpg?v=1789626199"
+    }
+  ],
+  "KuKirin G2 Ultra": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-g2-ultra-off-road-electric-scooter",
+      "title": "KuKirin G2 Ultra Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Ultra.jpg?v=1790761515"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-g2-ultra-electric-scooter",
+      "title": "KuKirin G2 Ultra Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/kukirinG2Ultrascooter.png?v=1756285434"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-g2-ultra-ultimate-all-terrain-pack",
+      "title": "KuKirin G2 Ultra Ultimate All-Terrain Pack",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G2Ultrabundles.jpg?v=1782369083"
+    }
+  ],
+  "KuKirin G3": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-g3-pro",
+      "title": "KuKirin G3 Pro Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G3_PRO_be23fedd-35bb-44fd-84fe-9f6bd11482a8.jpg?v=1790761528"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-g3-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) G3 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg?v=1751364094"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-g3-pro-off-road-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) G3 Pro Off-Road Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_Pro_scooters_2.jpg?v=1751364216"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "g3-pro-motor-without-tire-short-cable-b-version",
+      "title": "G3 Pro Motor (without tire)-Short cable B version",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3TailLight-AVersion_3.png?v=1767079393"
+    }
+  ],
+  "KuKirin G4 Max": [
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-g4-max-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) G4 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_Max_scooters_2.jpg?v=1751364411"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "g4-max-motor-front",
+      "title": "G4 Max Motor- Front",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/f0751bbd-8ac6-485b-b542-44efa0d01d55.png?v=1769150036"
+    }
+  ],
+  "KuKirin M4": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-m4-max-electric-scooter",
+      "title": "KuKirin M4 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/M4_Max_2b0e38ad-7d60-4afd-8cd8-ecc9fbd22f4a.jpg?v=1789626316"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirinkugoo-kirin-m4-max-electric-scooter",
+      "title": "KuKirin(Kugoo Kirin) M4 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/M4Maxscooter_2.jpg?v=1751269162"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-m4-pro-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) M4 Pro Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/M4PRO_4.jpg?v=1712827994"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-m4-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) M4 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/KuKirinM4ElectricScooterWithSeatForAdults.jpg?v=1712572487"
+    }
+  ],
+  "KuKirin M4 Pro": [
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-m4-pro-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) M4 Pro Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/M4PRO_4.jpg?v=1712827994"
+    }
+  ],
+  "KuKirin S1 Max": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-s1-max-electric-scooter",
+      "title": "KuKirin S1 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/S1_MAX-1.jpg?v=1789626155"
+    }
+  ],
+  "KuKirin S3 Pro": [
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "kukirin-s3-pro-electric-scooter",
+      "title": "KuKirin (Kugoo Kirin) S3 Pro Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/S3Pro_1_-min.jpg?v=1712889369"
+    }
+  ],
+  "KuKirin A1": [],
+  "KuKirin C1 Pro": [
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "c1-pro-motor-c-version",
+      "title": "C1 Pro Motor C version",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1ProTailLightAversion_10.png?v=1767682000"
+    },
+    {
+      "domain": "kukirin-escooter.com",
+      "handle": "c1-pro-motor-b-version",
+      "title": "C1 Pro Motor B version",
+      "image": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1ProTailLightAversion_9.png?v=1767681807"
+    }
+  ],
+  "KuKirin T3": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-t3-electric-scooter",
+      "title": "KuKirin T3 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/T3.jpg?v=1790761618"
+    }
+  ],
+  "Kugoo M2 Pro": [],
+  "Kugoo S1": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-s1-max-electric-scooter",
+      "title": "KuKirin S1 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/S1_MAX-1.jpg?v=1789626155"
+    }
+  ],
+  "Kugoo S1 Pro": [],
+  "Kugoo S3": [],
+  "Kugoo S3 Pro": [],
+  "Kugoo G-Booster": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kugoo-g-booster-off-road-fast-electric-scooter",
+      "title": "KUGOO G-Booster Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/products/kugoo-g-booster-folding-electric-scooter-dual-800w-motors-3-speed-modes-max-55kmh-10-inch-tire-black-scooter-kugoo-829059.jpg?v=1576551416"
+    }
+  ],
+  "Kugoo G-Max": [],
+  "Kugoo G1": [],
+  "Kugoo G2 Pro": [
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-g2-pro-abe-electric-scooter",
+      "title": "KuKirin G2 Pro (ABE) Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Pro_ABE_-Spring-K_6f57a4da-b414-4375-9d01-c366fc597e37.jpg?v=1789626295"
+    },
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-g2-pro-vmp-electric-scooter",
+      "title": "KuKirin G2 Pro (VMP) Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_pro-VMP.jpg?v=1789626355"
+    },
+    {
+      "domain": "kugoo.eu",
+      "handle": "kukirin-g2-pro-electric-scooter-for-adults",
+      "title": "KuKirin G2 Pro Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Pro_955483bb-6709-490d-9f0c-5a7aabc5426f.jpg?v=1790761122"
+    }
+  ],
+  "Ausom Leopard": [],
+  "Ausom Gallop": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gallop-folding-device",
+      "title": "Ausom Gallop Folding Device",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/gallop-Folding-Device.jpg?v=1756364981"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gallop-motor-wheel",
+      "title": "Ausom Gallop Motor",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/193c9d01-d18a-4242-a7da-3d49f755889f.jpg?v=1756364810"
+    }
+  ],
+  "Ausom L1": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l1-electric-scooter",
+      "title": "Ausom L1 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/l1-45-new.jpg?v=1766823124"
+    }
+  ],
+  "Ausom L2": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gosoul-2-pro-dual-motor-e-scooter-1",
+      "title": "Daily Flash Sale\u4e28Ausom Gosoul 2 Pro Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/flash-sale-Gosoul_2_Pro.jpg?v=1794906971"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-dual-motor-electric-scooter",
+      "title": "Daily Flash Sale\u4e28Ausom L2 Max Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/L2_Max_Dual_Motor.jpg?v=1794641984"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gosoul-2-electric-scooter",
+      "title": "Ausom Gosoul 2 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/26BFS-gosoul_2.jpg?v=1794794539"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gosoul-2-pro-dual-motor-e-scooter",
+      "title": "Ausom Gosoul 2 Pro Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/26BFS-gosoul_2_pro_dual_motor.jpg?v=1794794549"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-series-motor-include-tire",
+      "title": "Ausom L2 Max Series Motor (Include Tire)",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/Ausom_DT2_Pro_L2_Max_Series_Motor-1.jpg?v=1793869293"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-electric-scooter-1",
+      "title": "Ausom L2 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/l2-max-air-tag.jpg?v=1767854950"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-dual-electric-scooter",
+      "title": "Ausom L2 Max Dual Motor E-scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/26BFS-L2_max_dual_motor.jpg?v=1794794550"
+    },
+    {
+      "domain": "www.ausom.com",
+      "handle": "ausom-gosoul-2-pro-dual-motor-electric-scooter",
+      "title": "Ausom Gosoul 2 Pro Dual Motor Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0937/3270/0462/files/3_046710dd-7045-4034-a518-2f1efa5a253b.jpg?v=1773821129"
+    },
+    {
+      "domain": "www.ausom.com",
+      "handle": "ausom-l2-electric-scooter",
+      "title": "Ausom L2 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0937/3270/0462/files/L2-1_fc22b68f-573c-4091-a71c-deb6937298b6.jpg?v=1747932926"
+    },
+    {
+      "domain": "www.ausom.com",
+      "handle": "ausom-l2-dual-motor-electric-scooter",
+      "title": "Ausom L2 Dual Motor Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0937/3270/0462/files/L2-dual-1_ac916988-f301-40a6-9507-158545118259.jpg?v=1747932926"
+    }
+  ],
+  "Ausom L2 Max": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-dual-motor-electric-scooter",
+      "title": "Daily Flash Sale\u4e28Ausom L2 Max Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/L2_Max_Dual_Motor.jpg?v=1794641984"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-series-motor-include-tire",
+      "title": "Ausom L2 Max Series Motor (Include Tire)",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/Ausom_DT2_Pro_L2_Max_Series_Motor-1.jpg?v=1793869293"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-electric-scooter-1",
+      "title": "Ausom L2 Max Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/l2-max-air-tag.jpg?v=1767854950"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-l2-max-dual-electric-scooter",
+      "title": "Ausom L2 Max Dual Motor E-scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/26BFS-L2_max_dual_motor.jpg?v=1794794550"
+    }
+  ],
+  "Ausom DT1": [],
+  "Ausom DT1 Pro": [],
+  "Ausom Gosoul 2 Pro": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gosoul-2-pro-dual-motor-e-scooter-1",
+      "title": "Daily Flash Sale\u4e28Ausom Gosoul 2 Pro Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/flash-sale-Gosoul_2_Pro.jpg?v=1794906971"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-gosoul-2-pro-dual-motor-e-scooter",
+      "title": "Ausom Gosoul 2 Pro Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/26BFS-gosoul_2_pro_dual_motor.jpg?v=1794794549"
+    },
+    {
+      "domain": "www.ausom.com",
+      "handle": "ausom-gosoul-2-pro-dual-motor-electric-scooter",
+      "title": "Ausom Gosoul 2 Pro Dual Motor Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0937/3270/0462/files/3_046710dd-7045-4034-a518-2f1efa5a253b.jpg?v=1773821129"
+    }
+  ],
+  "Ausom K20 Pro": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-k20-pro-dual-motor-e-scooter",
+      "title": "Ausom K20 Pro (Laluz 2 Pro) Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/26BFS-k20_pro_dual_motor.jpg?v=1794794549"
+    },
+    {
+      "domain": "www.ausom.com",
+      "handle": "ausom-k20-pro-laluz-2-pro-dual-motor-e-scooter",
+      "title": "Ausom K20 Pro (Laluz 2 Pro) Dual Motor E-Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0937/3270/0462/files/3_ed8e76c6-ce04-4b09-9377-db8e37715e49.jpg?v=1773821175"
+    }
+  ],
+  "Ausom SR1": [
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-sr1-motor",
+      "title": "Ausom SR1 Motor",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/SR1motor.jpg?v=1756364897"
+    },
+    {
+      "domain": "ausomstore.com",
+      "handle": "ausom-sr1-electric-scooter",
+      "title": "Ausom SR1  Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0703/6944/4119/files/sr1-air-tag.jpg?v=1767854995"
+    }
+  ],
+  "NIU KQi1 Pro": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi1pro-electric-scooter-15-5mph-range-14-3-miles",
+      "title": "NIU KQi1 Pro Electric Scooter 15.5mph | Range 14.3 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_90E-4.jpg?v=1770874475"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi1-pro-electric-kick-scooter",
+      "title": "NIU KQi1 Pro Electric Kick Scooter 15.5mph | Range 15.5 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K1_Pro_gray-3.webp?v=1726026127"
+    }
+  ],
+  "NIU KQi2 Pro": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi2-pro-electric-kick-scooter-for-early-eagle",
+      "title": "NIU KQi2 Pro Electric Kick Scooter for Early Eagle 17.4mph | Range 24.9 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi2-Pro-Electric-Kick-Scooter-grey-4_54358788-7ad3-4960-97a7-5536f9bbdcb7.jpg?v=1653034324"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-electric-kick-scooter-kqi2-pro",
+      "title": "NIU KQi2 Pro Electric Scooter 17.4mph | Range 24.9 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/Niu-Kqi2-Pro-Electric-Kick-Scooter-grey-4.jpg?v=1741076124"
+    }
+  ],
+  "NIU KQi3 Sport": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi3-sport-electric-kick-scooter-for-adults-for-early-eagle",
+      "title": "NIU KQi3 Sport Electric Scooter for Early Eagle 17.4mph | Range 24.9 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi3SportElectricKickScooterwhite1_b35321cb-eee7-4dbf-83b2-6bcbe66fdaeb.jpg?v=1653034439"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-electric-kick-scooter-for-adults-kqi3-sport",
+      "title": "NIU KQi3 Sport Electric Scooter 17.4mph | Range  24.9 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi3SportElectricKickScooterwhite1.jpg?v=1640830366"
+    }
+  ],
+  "NIU KQi3 Pro": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi3-pro-electric-kick-scooter-for-adults-for-early-eagle",
+      "title": "NIU KQi3 Pro Electric Kick Scooter for Early Eagle 19.9mph | 31 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi3ProElectricKickScooterBlack1_864bed79-bd62-42ad-8a56-55e4d1bce36f.jpg?v=1653034500"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-electric-kick-scooter-for-adults-kqi3-pro",
+      "title": "NIU KQi3 Pro Electric Scooter 19.9mph | Range 31 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/NiuKqi3ProElectricKickScooterBlack1.jpg?v=1640830318"
+    }
+  ],
+  "NIU KQi3 Max": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi3-max-electric-kick-scooter-for-adults",
+      "title": "NIU KQi3 Max Electric Kick Scooter 20mph | 40.4 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/1500.jpg?v=1741076118"
+    }
+  ],
+  "NIU KQi Air": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-air-electric-scooter-phone-holder-bundle",
+      "title": "NIU KQi Air Electric Scooter & Phone Holder Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_Air_Phone_holder.jpg?v=1755857160"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-air-electric-scooter-helmet-bundle",
+      "title": "NIU KQi Air Electric Scooter & Helmet Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_Air_helmet.jpg?v=1755857533"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-air-x-lightest-electric-scooter",
+      "title": "NIU KQi Air X Lightest Electric Scooter 20mph | Range 31 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/4_7a4f979d-bbfb-4b73-b6c6-9ea7de61cf60.jpg?v=1766985385"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-air-lightest-electric-scooter",
+      "title": "NIU KQi Air Lightest Electric Scooter 20mph | Range 31 miles",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/3_e3c773b1-541a-4943-82fe-993e21d2a8da.jpg?v=1766985318"
+    }
+  ],
+  "NIU KQi 300P": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-300p-electric-scooter-phone-holder-bundle",
+      "title": "NIU KQi 300P Electric Scooter & Phone Holder Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300P-Phone_Holder.jpg?v=1755858380"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-300p-electric-scooter-helmet-bundle",
+      "title": "NIU KQi 300P Electric Scooter & Helmet Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300P_38570aa3-b0cf-4c1e-81c4-8a5c1bcf3345.jpg?v=1755858675"
+    }
+  ],
+  "NIU KQi 300X": [
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-300x-scooter-phone-holder-bundle",
+      "title": "NIU KQi 300X Scooter & Phone Holder Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300X_1e7ab4e0-d41b-4563-9aef-a21c9c24e8f7.jpg?v=1755858449"
+    },
+    {
+      "domain": "shop.niu.com",
+      "handle": "niu-kqi-300x-scooter-helmet-bundle",
+      "title": "NIU KQi 300X Scooter & Helmet Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300X_f31d30ec-e8c6-4362-b94b-348c09c5a847.jpg?v=1755858524"
+    }
+  ],
+  "Joyor S5": [
+    {
+      "domain": "joyorscooter.com",
+      "handle": "anti-explosion-fireproof-bag-ice-bag-s5",
+      "title": "Anti-Explosion Fireproof Bag - ICe BAG S5",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/AS20-ICe-BAG-S5-1.jpg?v=1758885643"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-s5-z-electric-scooter",
+      "title": "JOYOR S5-Z Electric Scooter \u2013 600W Motor, 45 km Range + Free Accessories",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/S5Z_Pre-_black_friday_website_models.png?v=1776340588"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-s5-pro-abe-electric-scooter",
+      "title": "JOYOR S5-PRO ABE Electric Scooter - 500W, 90km Range",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-PRO-ABE.jpg?v=1748343487"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-s5-abe-electric-scooter",
+      "title": "JOYOR S5 ABE Electric Scooter \u2013 500W, 55 km Range",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE.jpg?v=1748343634"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "motor-s5-bullet-head",
+      "title": "Joyor 600W Motor V1 / V2 for S5 Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/joyor-s5-motor-600w-v1-v2.jpg?v=1768566091"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "motor-s5-banana-head",
+      "title": "Joyor 600W Motor V3 for S5 / S5-Z Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/S5008-1-Motor-s5-banana-head-P1.jpg?v=1748343905"
+    }
+  ],
+  "Joyor S8": [
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-s8-s-z-electric-scooter-2x600w-power-75km-range",
+      "title": "JOYOR S8-S-Z Electric Scooter \u2013 Dual 1200W, 80 km Range",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_s10-s-z.jpg?v=1748343491"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-s8e-electric-scooter",
+      "title": "JOYOR S8E Electric Scooter \u2013 800W Motor, 80 km Range & Removable Seat",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-1_0650e226-dc54-4702-a751-5dc8f51a244f.jpg?v=1748343485"
+    },
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-e6-s-electric-scooter",
+      "title": "JOYOR E6-S Electric Scooter \u2013 Dual 1600W Motors, 85 km Range",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_E6-S.jpg?v=1748343479"
+    }
+  ],
+  "Joyor S10-S": [
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-s10-s-z-electric-scooter",
+      "title": "JOYOR S10-S-Z Electric Scooter - 2000W Motor, 70km Range + Free Accessories",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/S10_-S-Z_Pre-_black_friday_website_models.png?v=1776340733"
+    }
+  ],
+  "Joyor Y8-S": [
+    {
+      "domain": "joyorscooter.com",
+      "handle": "joyor-y8s-abe-electric-scooter",
+      "title": "JOYOR Y8-S ABE Electric Scooter \u2013 500W, 100 km Range",
+      "image": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s_abe.jpg?v=1764851673"
+    }
+  ],
+  "iScooter i9": [
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "i9m-foldable-commuting-electric-scooter",
+      "title": "i9M Foldable Commuting Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1-_1.jpg?v=1733725080"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "i9m-electric-scooter",
+      "title": "i9M Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1-_1.jpg?v=1733725080"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "i9-foldable-electric-scooter",
+      "title": "i9 Foldable Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_ef2a5519-416a-4c79-be9e-052aba6c63b3.jpg?v=1718359849"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "i9m-foldable-commuting-electric-scooter-500w",
+      "title": "i9M Foldable Commuting Electric Scooter 500W",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1-_1.jpg?v=1733725080"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i9-foldable-commuting-electric-scooter-edm",
+      "title": "i9 Electric Scooter For Commuting, 350W 18Miles",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/1-1_4ab63549-85a1-491d-9090-c5cee8722236.jpg?v=1718359791"
+    }
+  ],
+  "iScooter i10": [
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i10m-electric-scooter-1200w-motor",
+      "title": "iScooter i10M Electric Scooter 1200W Motor",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/app_9327cb5f-d5d0-4528-9d11-38e641f6cacf.png?v=1788933227"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i10max-electric-scooter",
+      "title": "iScooter i10 Series City Commuter Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png?v=1755568268"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i10max-750w-city-commuter-electric-scooter",
+      "title": "iScooter i10Max City Commuter Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10max_9fd33e16-3dda-4a05-bbc2-cf04a13aefed.png?v=1732898590"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i10-pro-800w-commuter-electric-scooter",
+      "title": "iScooter i10 Pro 800W Commuter Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/Untitled_3800x1600px_1464x600px_800x1067px_1500x1500px_1000x1000_750x1000px.png?v=1786670594"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i10-commuter-electric-scooter-for-adult-650w",
+      "title": "iScooter i10 Commuter  Electric Scooter for Adult",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png?v=1755568268"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-i10-commuter-electric-scooter",
+      "title": "iScooter i10 Commuter 650W Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png?v=1755568268"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "i10-commuter-electric-scooter-for-adult",
+      "title": "iScooter i10 Commuter Electric Scooter for Adult 650 Motor",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png?v=1755568268"
+    }
+  ],
+  "iScooter iX3": [
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "ix3-off-road-electric-scooter",
+      "title": "iX3 Off Road Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/iX3_L.jpg?v=1757397964"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "ix3-800w-off-road-electric-scooter-au",
+      "title": "iX3 Off Road Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/iX3_L.jpg?v=1757397964"
+    }
+  ],
+  "iScooter iX4": [
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-ix4-off-road-electric-scooter",
+      "title": "iScooter iX4 Off Road 800W Motor Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_8a3970f3-f398-4503-bd0a-c08f45d8975a.jpg?v=1750747175"
+    }
+  ],
+  "iScooter iX5": [
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "ix5s-electric-scooter",
+      "title": "iX5S Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/11-2.jpg?v=1737022335"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-ix5s-electric-scooter-11-off-road-tires",
+      "title": "iScooter iX5S Electric Scooter 11\" Off-Road Tires",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/11-2.jpg?v=1737022335"
+    },
+    {
+      "domain": "www.iscooterglobal.com",
+      "handle": "iscooter-ix5s-1000w-electric-scooter-11-off-road-tires",
+      "title": "iScooter iX5S 1000W Electric Scooter 11\" Off-Road Tires",
+      "image": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/11-2.jpg?v=1737022335"
+    }
+  ],
+  "iScooter iX6": [],
+  "iENYRID M4 Pro S+": [
+    {
+      "domain": "ienyrid.com",
+      "handle": "ienyrid-m4-pro-s-plus-max-folding-electric-scooters",
+      "title": "iENYRID M4 Pro S+ Max Long Range Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0728/5771/5006/files/iE-M4PROS_Max2024electricscooter_22.jpg?v=1721211765"
+    },
+    {
+      "domain": "ienyrid.com",
+      "handle": "ienyrid-m4-pro-s-new-version-electric-scooter",
+      "title": "iENYRID M4 Pro S+ 800W Electric Scooter with Seat \u2013 28 MPH, 330 lbs, Off-Road Foldable",
+      "image": "https://cdn.shopify.com/s/files/1/0728/5771/5006/files/iENYRID_M4_Pro_s.jpg?v=1760585898"
+    }
+  ],
+  "iENYRID M4 Pro S+ Max": [
+    {
+      "domain": "ienyrid.com",
+      "handle": "ienyrid-m4-pro-s-plus-max-folding-electric-scooters",
+      "title": "iENYRID M4 Pro S+ Max Long Range Electric Scooter",
+      "image": "https://cdn.shopify.com/s/files/1/0728/5771/5006/files/iE-M4PROS_Max2024electricscooter_22.jpg?v=1721211765"
+    }
+  ],
+  "iENYRID ES1": [
+    {
+      "domain": "ienyrid.com",
+      "handle": "ienyrid-es1-dual-motor-electric-scooter",
+      "title": "iENYRID ES1 Dual Motor Electric Scooter For Adults",
+      "image": "https://cdn.shopify.com/s/files/1/0728/5771/5006/files/iENYRIDES1DualMotorElectricScooterForAdults_1.jpg?v=1763433412"
+    }
+  ],
+  "iENYRID ES10": [],
+  "Bogist C1 Pro": [
+    {
+      "domain": "bogistshop.com",
+      "handle": "bogist-c1-pro-electric-scooter-500w-48v-13ah-40km-shockproof-and-stab-proof-with-seat-give-away-bag-lock-and-smartphone-holder-1",
+      "title": "BOGIST C1 Pro Electric Scooter, 500W 48V 13Ah 40km, Shockproof and Stab-Proof with Seat | Give away bag, lock, and smartphone holder",
+      "image": "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/image_8089.png?v=1772683028"
+    }
+  ],
+  "Bogist M5 Pro": [
+    {
+      "domain": "bogistshop.com",
+      "handle": "bogist-m5-pro-twofish-version-dropshipping-link",
+      "title": "Bogist M5 PRO - TWOFISH Version Electric Scoote with Seat (EEC) | Only for Dealer Dropshipping Service",
+      "image": "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/TF-M5PRO-E_1.png?v=1772705158"
+    },
+    {
+      "domain": "bogistshop.com",
+      "handle": "twofish-m5-pro-e",
+      "title": "Bogist M5 PRO - TWOFISH Version Electric Scoote with Seat (EEC)",
+      "image": "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/TF-M5PRO-E_1.png?v=1772705158"
+    }
+  ]
+}

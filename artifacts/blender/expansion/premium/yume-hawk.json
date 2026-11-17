@@ -1,0 +1,26 @@
+{
+  "name": "Yume Hawk",
+  "model": {
+    "key": "yume-hawk",
+    "url": "/models/expansion/premium/yume-hawk.glb",
+    "nativeSource": "assets/blender/expansion/premium/yume-hawk.blend",
+    "triangles": 52372,
+    "meshes": 34,
+    "bytes": 1377072,
+    "family": "Yume Hawk exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.33000001311302185,
+      0.000238936030655168
+    ],
+    [
+      0.6267610788345337,
+      0.33000001311302185,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Black/slate open sculpted arms, central stem with high single light and compact black kickbrace.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Inokim Light 2",
+  "model": {
+    "key": "inokim-light-2",
+    "url": "/models/expansion/premium/inokim-light-2.glb",
+    "nativeSource": "assets/blender/expansion/premium/inokim-light-2.blend",
+    "triangles": 45144,
+    "meshes": 32,
+    "bytes": 1146016,
+    "family": "Inokim Light 2 verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.5480999946594238,
+      -0.26499998569488525,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.527999997138977,
+      0.26499998569488525,
+      1.1399930715560913
+    ]
+  ],
+  "observed": "Original Light2 slim black 8.5-inch commuter, low thin deck, rigid front fork, green rear rim stripe and green Inokim stem marking.",
+  "revision": 2
+}

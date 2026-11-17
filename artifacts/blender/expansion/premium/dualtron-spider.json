@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Spider",
+  "model": {
+    "key": "dualtron-spider",
+    "url": "/models/expansion/premium/dualtron-spider.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-spider.blend",
+    "triangles": 52372,
+    "meshes": 34,
+    "bytes": 1415660,
+    "family": "Dualtron Spider exterior"
+  },
+  "bounds": [
+    [
+      -0.6080499887466431,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.5870000123977661,
+      0.3050000071525574,
+      1.2299929857254028
+    ]
+  ],
+  "observed": "Original lightweight narrow black deck, thin road wheels and single slim stem.",
+  "revision": 2
+}

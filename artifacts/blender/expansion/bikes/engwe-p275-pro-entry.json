@@ -1,0 +1,26 @@
+{
+  "name": "Engwe P275 Pro",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-p275-pro.webp",
+  "source": "https://engwe.com/products/engwe-p275-pro",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_6d452ca0-65fa-4a63-a387-ed537b62ecaa.jpg?v=1794548608",
+  "credit": "engwe.com",
+  "variantNote": "ENGWE P275 Pro; Black-Orange",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 81986,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-p275-pro",
+    "url": "/models/expansion/bikes/engwe-p275-pro.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-p275-pro.blend",
+    "triangles": 24712,
+    "meshes": 33,
+    "bytes": 682976,
+    "family": "road"
+  }
+}

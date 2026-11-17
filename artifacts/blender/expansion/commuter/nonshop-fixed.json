@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Segway Ninebot Max G30",
+    "url": "https://eu-en.segway.com/ekickscooter/products/max-g30-e.html",
+    "key": "segway-ninebot-max-g30",
+    "title": [
+      "Segway eKickScooter Ninebot MAX G30 E",
+      "MAX G30E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot MAX G30 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta content=\"MAX G30E\" property=\"og:title\"/>",
+      "<meta content=\"\" property=\"og:image\"/>",
+      "<meta content=\"1200\" property=\"og:image:width\"/>",
+      "<meta content=\"630\" property=\"og:image:height\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot Max G2",
+    "url": "https://eu-en.segway.com/ekickscooter/products/max-g2-e.html",
+    "key": "segway-ninebot-max-g2",
+    "title": [
+      "Segway eKickScooter Ninebot MAX G2 E",
+      "MAX G2 E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot MAX G2 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta property=\"og:title\" content=\"MAX G2 E\">",
+      "<meta property=\"og:image\" content=\"\">",
+      "<meta property=\"og:image:width\" content=\"1200\">",
+      "<meta property=\"og:image:height\" content=\"630\">"
+    ]
+  },
+  {
+    "name": "Segway Ninebot Max G3",
+    "url": "https://eu-en.segway.com/ekickscooter/products/max-g3-e.html",
+    "key": "segway-ninebot-max-g3",
+    "title": [
+      "Segway eKickScooter Ninebot MAX G3 E"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot MAX G3 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot F2",
+    "url": "https://eu-en.segway.com/ekickscooter/products/f2-e.html",
+    "key": "segway-ninebot-f2",
+    "title": [
+      "Segway eKickScooter Ninebot F2 E",
+      "F2 E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot F2 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta property=\"og:title\" content=\"F2 E\">",
+      "<meta property=\"og:image\" content=\"\">",
+      "<meta property=\"og:image:width\" content=\"1200\">",
+      "<meta property=\"og:image:height\" content=\"630\">"
+    ]
+  },
+  {
+    "name": "Segway Ninebot F2 Pro",
+    "url": "https://eu-en.segway.com/ekickscooter/products/f2-pro-e.html",
+    "key": "segway-ninebot-f2-pro",
+    "title": [
+      "Segway eKickScooter Ninebot F2 Pro E",
+      "F2 Pro E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot F2 Pro E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta property=\"og:title\" content=\"F2 Pro E\">",
+      "<meta property=\"og:image\" content=\"\">",
+      "<meta property=\"og:image:width\" content=\"1200\">",
+      "<meta property=\"og:image:height\" content=\"630\">"
+    ]
+  },
+  {
+    "name": "Segway Ninebot F2 Plus",
+    "url": "https://eu-en.segway.com/ekickscooter/products/f2-plus-e.html",
+    "key": "segway-ninebot-f2-plus",
+    "title": [
+      "Segway eKickScooter Ninebot F2 Plus E",
+      "F2 Plus E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot F2 Plus E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta property=\"og:title\" content=\"F2 Plus E\">",
+      "<meta property=\"og:image\" content=\"\">",
+      "<meta property=\"og:image:width\" content=\"1200\">",
+      "<meta property=\"og:image:height\" content=\"630\">"
+    ]
+  },
+  {
+    "name": "Segway Ninebot F3",
+    "url": "https://eu-en.segway.com/ekickscooter/products/f3-e.html",
+    "key": "segway-ninebot-f3",
+    "title": [
+      "Segway eKickScooter Ninebot F3 E"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot F3 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot F3 Pro",
+    "url": "https://eu-en.segway.com/ekickscooter/products/f3-pro-e.html",
+    "key": "segway-ninebot-f3-pro",
+    "title": [
+      "Segway eKickScooter Ninebot F3 Pro E"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot F3 Pro E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot E2",
+    "url": "https://eu-en.segway.com/ekickscooter/products/e2-e.html",
+    "key": "segway-ninebot-e2",
+    "title": [
+      "Segway eKickScooter Ninebot E2 E",
+      "E2 E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot E2 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta property=\"og:title\" content=\"E2 E\">",
+      "<meta property=\"og:image\" content=\"\">",
+      "<meta property=\"og:image:width\" content=\"1200\">",
+      "<meta property=\"og:image:height\" content=\"630\">"
+    ]
+  },
+  {
+    "name": "Segway Ninebot E2 Plus",
+    "url": "https://eu-en.segway.com/ekickscooter/products/e2-plus-e.html",
+    "key": "segway-ninebot-e2-plus",
+    "title": [
+      "Segway eKickScooter Ninebot E2 Plus E",
+      "E2 Plus E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot E2 Plus E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta property=\"og:title\" content=\"E2 Plus E\">",
+      "<meta property=\"og:image\" content=\"\">",
+      "<meta property=\"og:image:width\" content=\"1200\">",
+      "<meta property=\"og:image:height\" content=\"630\">"
+    ]
+  },
+  {
+    "name": "Segway Ninebot E2 Pro",
+    "url": "https://eu-en.segway.com/ekickscooter/products/e2-pro-e.html",
+    "key": "segway-ninebot-e2-pro",
+    "title": [
+      "Segway eKickScooter Ninebot E2 Pro E",
+      "E2 Pro E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter Ninebot E2 Pro E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta content=\"E2 Pro E\" property=\"og:title\"/>",
+      "<meta content=\"\" property=\"og:image\"/>",
+      "<meta content=\"1200\" property=\"og:image:width\"/>",
+      "<meta content=\"630\" property=\"og:image:height\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot P65",
+    "url": "https://eu-en.segway.com/ekickscooter/products/p65e.html",
+    "key": "segway-ninebot-p65",
+    "title": [
+      "Segway eKickScooter P65 E",
+      "P65E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter P65 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta content=\"P65E\" property=\"og:title\"/>",
+      "<meta content=\"\" property=\"og:image\"/>",
+      "<meta content=\"1200\" property=\"og:image:width\"/>",
+      "<meta content=\"630\" property=\"og:image:height\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot P100S",
+    "url": "https://eu-en.segway.com/ekickscooter/products/p100se.html",
+    "key": "segway-ninebot-p100s",
+    "title": [
+      "Segway eKickScooter P100SE",
+      "P100SE - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter P100SE\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta content=\"P100SE\" property=\"og:title\"/>",
+      "<meta content=\"\" property=\"og:image\"/>",
+      "<meta content=\"1200\" property=\"og:image:width\"/>",
+      "<meta content=\"630\" property=\"og:image:height\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot GT1",
+    "url": "https://eu-en.segway.com/ekickscooter/products/gt1e.html",
+    "key": "segway-ninebot-gt1",
+    "title": [
+      "Segway eKickScooter GT1 E",
+      "GT1E - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter GT1 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta content=\"GT1E\" property=\"og:title\"/>",
+      "<meta content=\"\" property=\"og:image\"/>",
+      "<meta content=\"1200\" property=\"og:image:width\"/>",
+      "<meta content=\"630\" property=\"og:image:height\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot GT2",
+    "url": "https://eu-en.segway.com/ekickscooter/products/gt2p.html",
+    "key": "segway-ninebot-gt2",
+    "title": [
+      "Segway eKickScooter GT2 P",
+      "GT2P - Segway-Ninebot"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter GT2 P\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>",
+      "<meta content=\"GT2P\" property=\"og:title\"/>",
+      "<meta content=\"\" property=\"og:image\"/>",
+      "<meta content=\"1200\" property=\"og:image:width\"/>",
+      "<meta content=\"630\" property=\"og:image:height\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot GT3",
+    "url": "https://eu-en.segway.com/ekickscooter/products/gt3-e.html",
+    "key": "segway-ninebot-gt3",
+    "title": [
+      "SEGWAY GT3 E"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"SEGWAY GT3 E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>"
+    ]
+  },
+  {
+    "name": "Segway Ninebot ZT3 Pro",
+    "url": "https://eu-en.segway.com/ekickscooter/products/zt3-pro-e.html",
+    "key": "segway-ninebot-zt3-pro",
+    "title": [
+      "Segway eKickScooter ZT3 Pro E"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"Segway eKickScooter ZT3 Pro E\"/>",
+      "<meta property=\"og:image\" content=\"https://www.ninebot.com/content/dam/segway-ninebot/general/general/icon/flyman_new.png\"/>"
+    ]
+  },
+  {
+    "name": "Xiaomi M365",
+    "url": "https://www.mi.com/global/product/mi-electric-scooter/",
+    "key": "xiaomi-m365",
+    "title": [
+      "404 - Xiaomi Global"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"404 - Xiaomi Global\">",
+      "<meta property=\"og:image\" content=\"https://i02.appmifile.com/i18n/share/new-logo.png\">"
+    ]
+  },
+  {
+    "name": "Xiaomi M365 Pro",
+    "url": "https://www.mi.com/global/product/mi-electric-scooter-pro/",
+    "key": "xiaomi-m365-pro",
+    "title": [
+      "404 - Xiaomi Global"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"404 - Xiaomi Global\">",
+      "<meta property=\"og:image\" content=\"https://i02.appmifile.com/i18n/share/new-logo.png\">"
+    ]
+  },
+  {
+    "name": "Xiaomi Pro 2",
+    "url": "https://www.mi.com/global/product/mi-electric-scooter-pro2/",
+    "key": "xiaomi-pro-2",
+    "title": [
+      "404 - Xiaomi Global"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"404 - Xiaomi Global\">",
+      "<meta property=\"og:image\" content=\"https://i02.appmifile.com/i18n/share/new-logo.png\">"
+    ]
+  },
+  {
+    "name": "Xiaomi Essential",
+    "url": "https://www.mi.com/global/product/mi-electric-scooter-essential/",
+    "key": "xiaomi-essential",
+    "title": [
+      "404 - Xiaomi Global"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"404 - Xiaomi Global\">",
+      "<meta property=\"og:image\" content=\"https://i02.appmifile.com/i18n/share/new-logo.png\">"
+    ]
+  },
+  {
+    "name": "Xiaomi 1S",
+    "url": "https://www.mi.com/global/product/mi-electric-scooter-1s/",
+    "key": "xiaomi-1s",
+    "title": [
+      "404 - Xiaomi Global"
+    ],
+    "meta": [
+      "<meta property=\"og:title\" content=\"404 - Xiaomi Global\">",
+      "<meta property=\"og:image\" content=\"https://i02.appmifile.com/i18n/share/new-logo.png\">"
+    ]
+  }
+]

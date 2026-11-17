@@ -1,0 +1,26 @@
+{
+  "name": "Stark Varg",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/stark-varg.webp",
+  "source": "https://www.go-race.com/Motorcycles-Stark-VARG-MX-1-2-60-hp-2025-Christiansburg-VA-f5f8512e-7cc8-4299-8292-b426003ded9b",
+  "imageSource": "https://cdpcdn.dx1app.com/products/USA/STARKFUTUR/2025/MC/MCY/VARG_MX_12_60_HP/50/SNOW_WHITE/2000000019.jpg",
+  "credit": "www.go-race.com",
+  "variantNote": "2025 Stark VARG MX 1.2 60 hp, Christiansburg VA | New Motorcycles for Sale: Specs, Price | Snow White (https://www.go-race.com/Motorcycles-Stark-VARG-MX-1-2-60-hp-2025-Christiansburg-VA-f5f8512e-7cc8-4299-8292-b426003ded9b)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    843,
+    516
+  ],
+  "bytes": 62874,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "stark-varg",
+    "url": "/models/expansion/bikes/stark-varg.glb",
+    "nativeSource": "assets/blender/expansion/bikes/stark-varg.blend",
+    "triangles": 38596,
+    "meshes": 31,
+    "bytes": 1178360,
+    "family": "stark-varg"
+  }
+}

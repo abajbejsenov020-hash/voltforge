@@ -1,0 +1,29 @@
+{
+  "name": "Aventon Pace 500",
+  "key": "aventon-pace-500",
+  "dimensions_m": [
+    1.85,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 27716,
+  "meshes": 25,
+  "bytes": 867920,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "aventon-pace-500.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

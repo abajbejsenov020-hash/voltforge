@@ -1,0 +1,26 @@
+{
+  "name": "Specialized Turbo Levo",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/specialized-turbo-levo.webp",
+  "source": "https://www.specialized.com/us/en/turbo-levo-comp/p/170517",
+  "imageSource": "https://resources.specialized.com/image/95220-50_LEVO-COMP-29-BLK-BLK_HERO-SQUARE?q=75&w=1400&h=2880&fit=max&fm=webp",
+  "credit": "www.specialized.com",
+  "variantNote": "Turbo Levo Comp",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 156586,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "specialized-turbo-levo",
+    "url": "/models/expansion/bikes/specialized-turbo-levo.glb",
+    "nativeSource": "assets/blender/expansion/bikes/specialized-turbo-levo.blend",
+    "triangles": 29908,
+    "meshes": 29,
+    "bytes": 957404,
+    "family": "fullmtb"
+  }
+}

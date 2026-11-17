@@ -1,0 +1,26 @@
+{
+  "name": "Trek Marlin+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/trek-marlin-plus.webp",
+  "source": "https://www.thebikefactory.co.uk/shop/electric-bikes/sub/mountain-hardtail/trek-trek-marlin-6-crimson-2025-model-45730452/option/",
+  "imageSource": "https://www.thebikefactory.co.uk/content/products/trek-trek-marlin-6-crimson-2024-model_45730452.jpg",
+  "credit": "www.thebikefactory.co.uk",
+  "variantNote": "TREK 2026 Marlin+ 6 - The Bike Factory (https://www.thebikefactory.co.uk/shop/electric-bikes/sub/mountain-hardtail/trek-trek-marlin-6-crimson-2025-model-45730452/option/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    640
+  ],
+  "bytes": 94066,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "trek-marlin-plus",
+    "url": "/models/expansion/bikes/trek-marlin-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/trek-marlin-plus.blend",
+    "triangles": 28296,
+    "meshes": 27,
+    "bytes": 893684,
+    "family": "hardtail"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Rad Power RadRover 6 Plus",
+  "key": "rad-power-radrover-6-plus",
+  "dimensions_m": [
+    2.068,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 30044,
+  "meshes": 31,
+  "bytes": 931952,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "rad-power-radrover-6-plus.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

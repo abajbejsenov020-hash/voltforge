@@ -1,0 +1,252 @@
+Marlin+ (https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/marlin/f/F358/marlin%252b-8/41707/)
+citeturn174search0 [wordlim: 200] Crawled: 3 days ago;     Bosch Active Line Plus ... Image: Marlin+ 6
+
+### Marlin+ 6
+Brakes
+    Tektro Gemini SL
+
+Display
+    Bosch Purion 200
+
+Drivetrain
+    SRAM Eagle, 12-speed
+
+E-bike Classification
+    Class 1
+
+Handlebar
+    Bontrager Comp, alloy
+
+Motor
+    Bosch Performance Line
+
+Tires
+    Bontrager Gunnison Pro XR
+
+Torque
+    75Nm
+
+Weight
+    M - 21.90 kg / 48.29 lbs
+
+Image: Marlin+ 6
+
+### Marlin+ 6
+
+[Input] $2,999.99
+
+Color / Fjord Blue Select a color
+
+[Input] bluelight
+
+bluelight
+
+[Input] green
+
+green
+
+Frame
+    Alpha Gold Aluminum
+
+Fork
+    SR Suntour SF26 X1 34, 120mm
+
+Wheels
+    Bontrager Connection
+
+See more
+
+Battery
+    400Wh
+
+Brakes
+    Tektro HD-M275
+
+Display
+    Bosch Purion 200
+
+Drivetrain
+    Shimano CUES U4000, 9-speed
+
+E-bike Classification
+    Class 1
+
+Handlebar
+    Bontrager Comp, alloy
+
+Motor
+    Bosch Active Line Plus
+
+Tires
+    Bontrager Montrose Comp
+
+Torque
+    50Nm
+
+Weight
+    M - 22.90 kg / 50.49 lbs (with tubes)
+
+Image: Marlin+ 6 Gen 2
+
+### Marlin+ 6 Gen 2
+
+[Input] $2,999.99
+
+Color / Dark Star Select a color
+
+[Input] black
+
+black
+
+[Input] teal
+
+teal
+
+Frame
+    Alpha NEXT Gold Aluminum
+
+Fork
+    SR Suntour XCM 34, 120mm
+
+Wheels
+    Bontrager Connection
+
+See more
+
+Battery
+    400Wh
+
+Brakes
+    Tektro HD-M3120
+
+Display
+    Bosch Purion 200
+
+Drivetrain
+    Shimano CUES U4000, 9-speed
+
+E-bike Classification
+    Class 1
+
+Handlebar
+    Bontrager Comp, alloy
+
+Motor
+    Bosch Active Line Plus
+
+Tires
+    Bontrager Montrose Comp
+
+Torque
+    60Nm
+
+Weight
+    M - 22.10 kg / 48.73 lbs
+
+Image: Marlin+ 6
+
+### Marlin+ 6
+
+[Input] $2,499.99 $2,899.99
+
+Color / Dnister Black Select a color
+
+[Input] black
+
+black
+
+[Input] red
+
+red
+
+Frame
+    Alpha Gold Aluminum
+
+Fork
+    SR Suntour XCM34, 120mm
+
+Wheels
+    Bontrager Connection
+
+See more
+
+Battery
+    400Wh
+
+Brakes
+    Tektro HD-M275
+
+Display
+    Bosch Purion 200
+
+Drivetrain
+    Shimano CUES U4000, 9-speed
+
+E-bike Classification
+    Class 1
+
+Handlebar
+    Bontrager alloy
+
+Motor
+    Bosch Active Line Plus
+
+Tires
+    Bontrager Montrose Comp
+
+Torque
+    50Nm
+
+Weight
+    M - 22.45 kg / 49.5 lbs (with tubes)
+--------------------------------------------------------------------------------
+Marlin+ - Trek Bikes (CA) (https://www.trekbikes.com/ca/en_CA/bikes/mountain-bikes/electric-mountain-bikes/marlin/c/B358/)
+citeturn174search1 [wordlim: 200] Crawled: today; Image: TK26-MY27-MarlinPlus-Bosch-PLP-Marquee-1200x800 ... == "undefined") { dataLayer.push({ "ecommerce": { "currency": "CAD", "impressions": [ { "id": "57378", "name": "Marlin+ 8", "price": "4599.99", "brand": "Trek", "category": "Electric mountain bikes", "variant": "purple_black", "list": "CATEGORY", "position": 1 } , { "id": "85494", "name": "Marlin+ 8 Gen 2", "price": "4599.99", "brand": "Trek", "category": "Electric mountain bikes", "variant": "tan", "list": "CATEGORY", "position": 2 } , { "id": "57380", "name": "Marlin+ 6", "price": "3599.99", "brand": "Trek", "category": "Electric mountain bikes", "variant": "green", "list": "CATEGORY", "position": 3 } , { "id": "86475", "name": "Marlin+ 6 Gen 2", "price": "3599.99", "brand": "Trek", "category": "Electric mountain bikes", "variant": "black", "list": "CATEGORY", "position": 4 } ] } }); } else { console.log("dataLayer"); }
+--------------------------------------------------------------------------------
+Verve+ comfort electric bike – Trek Bikes (https://www.trekbikes.com/us/en_US/f/F436/verve%2B-2-lowstep-gen-3/41518/)
+citeturn174search2 [wordlim: 200] Crawled: last month;     Bosch Active Line Plus, 250W ... Verve+ 2 Lowstep is a powerful electric hybrid bike that will help you get out and ride more.
+--------------------------------------------------------------------------------
+直営店限定 Special Price バイク - Trek Bikes (JP) (https://www.trekbikes.com/jp/ja_JP/P1-SpecialPrice/)
+citeturn174search3 [wordlim: 200] Crawled: today; Image: Rail 5 Gen 3
+--------------------------------------------------------------------------------
+VAE confortable Verve+ – Trek Bikes (https://www.trekbikes.com/fr/fr_FR/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436E/verve%2B-2-gen-3/40515/5291629/)
+citeturn174search4 [wordlim: 200] Crawled: last month; Le Verve+ 2 est un vélo hybride puissant à assistance électrique qui vous motivera à rouler plus.
+--------------------------------------------------------------------------------
+Verve+ 1 and 2 – Classic comfort e-bikes (GB) (https://www.trekbikes.com/gb/en_GB/bikes/hybrid-bikes/electric-hybrid-bikes/verve/verve-1-and-2/c/B436-1/)
+citeturn174search5 [wordlim: 200] Crawled: today; == "undefined") { dataLayer.push({ "ecommerce": { "currency": "GBP", "impressions": [ { "id": "40516", "name": "Verve+ 2 Lowstep Gen 3", "price": "2500.0", "brand": "Trek", "category": "Electric hybrid bikes", "variant": "greylight", "list": "CATEGORY", "position": 1 } , { "id": "40515", "name": "Verve+ 2 Gen 3", "price": "2500.0", "brand": "Trek", "category": "Electric hybrid bikes", "variant": "black", "list": "CATEGORY", "position": 2 } , { "id": "40517", "name": "Verve+ 1 Lowstep", "price": "2100.0", "brand": "Trek", "category": "Electric hybrid bikes", "variant": "reddark", "list": "CATEGORY", "position": 3 } ] } }); } else { console.log("dataLayer"); }
+--------------------------------------------------------------------------------
+FX+ Throttle hybrid electric bike – Trek Bikes (https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/5335257/)
+citeturn174search6 [wordlim: 200] Crawled: last month; Image: FX+ 2S
+--------------------------------------------------------------------------------
+Verve+ eBikes | Buy Verve+ Electric Bikes Online (IE) (https://www.trekbikes.com/ie/en_IE/bikes/hybrid-bikes/electric-hybrid-bikes/verve/c/B436/)
+citeturn174search7 [wordlim: 200] Crawled: yesterday; Image: TK23-3000x1688-VervePlusPLP ... Image: Verve+ 2 Lowstep Gen 2 shown in Blue
+--------------------------------------------------------------------------------
+Rail 5 Gen 3 - Trek Bikes (https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/rail/rail-5-gen-3/p/5275152/?pr_rd_page=3)
+citeturn174search8 [wordlim: 200] Crawled: last month; /bikes/mountain-bikes/electric-mountain-bikes/rail/rail-5-gen-3/p/36791/
+
+  * Rail 5 Gen 3
+--------------------------------------------------------------------------------
+Marlin+ (https://www.trekbikes.com/ca/en_CA/bikes/mountain-bikes/electric-mountain-bikes/marlin/f/F358/marlin%252b-6-gen-2/86475/)
+citeturn174search9 [wordlim: 200] Crawled: 2 weeks ago; Marlin+ 6 is an electric mountain bike that’s ready to power up your trail rides without breaking the bank. It brings the same fun, confident geometry as the non-electric Marlin, now paired with the added support of Bosch’s Active Line Plus motor.
+--------------------------------------------------------------------------------
+Trek Verve+ comfort hybrid e-bike - Trek Bikes (GB) (https://www.trekbikes.com/gb/en_GB/verve-plus-generations/)
+citeturn174search10 [wordlim: 200] Crawled: 3 months ago; With a RIB (Removable Integrated Battery) and Performance Line Plus drive unit, Verve+ 3, 4 and 5 Gen 2 is plenty capable of boosting your recreational rides further with comfort and style.
+--------------------------------------------------------------------------------
+Bike tech library (https://www.trekbikes.com/us/en_US/bike-tech-library/)
+citeturn174search11 [wordlim: 200] Crawled: yesterday;   * Marlin+ 6 Gen 2
+--------------------------------------------------------------------------------
+€150,- Cashback (https://blog.trekbikes.com/wp-content/uploads/2024/02/Actievoorwaarden-Cashback-actie-1.pdf)
+citeturn174search12 [wordlim: 200] Published: 2.2 years ago; Trek FX+ 2
+--------------------------------------------------------------------------------
+TREK FEST
+
+Bici in offerta TrekFest
+
+Ecco una list (https://media.trekbikes.com/image/upload/v1774864525/26-trekfest-it.pdf)
+citeturn174search13 [wordlim: 200] Published: 7 months ago; <tr><td>E-City</td><td>FX+ 2</td><td>S</td><td>23</td><td>2599</td><td>1300</td><td>1</td></tr>
+--------------------------------------------------------------------------------
+<table id="e1"> (https://media.trekbikes.com/image/upload/v1774864761/26-trekfest-NL.pdf)
+citeturn174search14 [wordlim: 200] Published: 7 months ago; <tr><td>E-City</td><td>FX+ 2 MS LT</td><td>L</td><td>25</td><td>2199</td><td>1499</td><td>2</td></tr>
+--------------------------------------------------------------------------------
+Model Year 23 Changes (https://media.trekbikes.com/image/upload/TK22_Model_Changes_june22.pdf)
+citeturn174search15 [wordlim: 200] Published: 4.4 years ago; 0-Discontinued Models 820 | 1-Carry-Forward 1120 | 2-Launch Timing | 3-New in-line bikes Domane + AL (Mapped from Domane+ ALR) | 4-Launch Timing | 5-All new platforms Checkpoint ALR Driftless | 6-Launch Timing | 7-GEN-1 / GEN-2 Fuel EX 7 and up | 8-Launch Timing --- | --- | --- | --- | --- | --- | --- | --- | --- 0-Discontinued Models 520 | 1-Carry-Forward Allant+ 7, 7S, 8S | 2-Launch Timing | 3-New in-line bikes Domane AL 2, 3, 4, 5 | 4-Launch Timing | 5-All new platforms Domane + SLR (All) | 6-Launch Timing | 7-GEN-1 / GEN-2 Domane SL (All) | 8-Launch Timing 0-Discontinued Models 520 Grando | 1-Carry-Forward Boone 6 | 2-Launch Timing | 3-New in-line bikes Emonda ALR | 4-Launch Timing | 5-All new platforms DS+ 2 | 6-Launch Timing | 7-GEN-1 / GEN-2 Domane SLR (All) | 8-Launch Timing 0-Discontinued Models Allant+ 9.9S | 1-Carry-Forward Checkpoint (All) | 2-Launch Timing | 3-New in-line bikes Emonda SL 5, SL6 Pro | 4-Launch Timing | 5-All new platforms Fetch+ 2, 4 | 6-Launch Timing | 7-GEN-1 / GEN-2 Dual Sport 1, 2, 3 | 8-Launch Timing 0-Discontinued Models Domane+ LT (All) | 1-Carry-Forward District 4 EQ | 2-Launch Timing | 3-New in-line bikes Emonda SL 7 Etap | 4-Launch Timing | 5-All new platforms Fuel EXe (All) | 6-Launch Timing | 7-GEN-1 / GEN-2 Madone SLR (All) | 8-Launch Timing 0-Discontinued Models E-Caliber (All) | 1-Carry-Forward Domane AL 2 Rim | 2-Launch Timing | 3-New in-line bikes Farley (All) | 4-Launch Timing | 5-All new platforms FX+ 2 | 6-Launch Timing | 7-GEN-1 / GEN-2 Marlin 6, 7, 8 | 8-Launch Timing 0-Discontinued Models Remedy (All) | 1-Carry-Forward Emonda SL 6 eTap | 2-Launch Timing | 3-New in-line bikes Madone SL (All) | 4-Launch Timing | 5-All new platforms Verve+ 4S | 6-Launch Timing | 7-GEN-1 / GEN-2 Powerfly 4 | 8-Launch Timing 0-Discontinued Models Townie Path 9D EQ | 1-Carry-Forward Emonda SL 7 | 2-Launch Timing | 3-New in-line bikes Precaliber (All) | 4-Launch Timing | 5-All new platforms Loft Go!

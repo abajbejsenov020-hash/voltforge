@@ -1,0 +1,29 @@
+{
+  "name": "Altis Sigma",
+  "key": "altis-sigma",
+  "dimensions_m": [
+    1.9249,
+    0.756,
+    1.1171
+  ],
+  "triangles": 37432,
+  "meshes": 45,
+  "bytes": 1754900,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "altis-sigma.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Photo-derived lightweight electric motorcycle exterior."
+}

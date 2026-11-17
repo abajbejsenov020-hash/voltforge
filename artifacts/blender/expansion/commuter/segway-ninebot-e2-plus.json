@@ -1,0 +1,49 @@
+{
+  "key": "segway-ninebot-e2-plus",
+  "name": "Segway Ninebot E2 Plus",
+  "family": "Ninebot rigid commuter",
+  "parameters": {
+    "family": "Ninebot rigid commuter",
+    "r": 0.108,
+    "wide": 0.028,
+    "wb": 0.86,
+    "dl": 0.46,
+    "dw": 0.15,
+    "dz": 0.15,
+    "h": 1.14,
+    "bar": 0.45,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "front",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.07,
+      0.085,
+      0.11
+    ],
+    "accent": [
+      0.45,
+      0.6,
+      0.8
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false,
+    "rearcover": "vented",
+    "rearspokes": 5
+  },
+  "triangles": 27544,
+  "meshes": 27,
+  "bytes": 846848,
+  "source": "https://eu-en.segway.com/ekickscooter/products/e2-plus-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-e2-plus.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-e2-plus.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-e2-plus.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

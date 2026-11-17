@@ -1,0 +1,26 @@
+{
+  "name": "Engwe L20 2.0",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-l20-2-0.webp",
+  "source": "https://us.engwe.com/products/l20-2-0",
+  "imageSource": "https://us.engwe.com/cdn/shop/files/3_888d9161-d18d-476b-b8a6-b426e6471949.jpg?v=1758763528&width=1214",
+  "credit": "us.engwe.com",
+  "variantNote": "Engwe L20 2.0 1125W Fat Tire Folding E-bike 75N.m Torque \u2013 Engwe USA Official (https://us.engwe.com/products/l20-2-0)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    862,
+    1200
+  ],
+  "bytes": 78136,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-l20-2-0",
+    "url": "/models/expansion/bikes/engwe-l20-2-0.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-l20-2-0.blend",
+    "triangles": 28892,
+    "meshes": 34,
+    "bytes": 894764,
+    "family": "foldstep"
+  }
+}

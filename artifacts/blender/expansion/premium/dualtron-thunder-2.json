@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Thunder 2",
+  "model": {
+    "key": "dualtron-thunder-2",
+    "url": "/models/expansion/premium/dualtron-thunder-2.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-thunder-2.blend",
+    "triangles": 52572,
+    "meshes": 35,
+    "bytes": 1432140,
+    "family": "Dualtron Thunder 2 exterior"
+  },
+  "bounds": [
+    [
+      -0.6617000102996826,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.6399999856948853,
+      0.3050000071525574,
+      1.3499929904937744
+    ]
+  ],
+  "observed": "Wide road tyres, rectangular battery chassis, red rear kickplate and exposed cartridge swingarms.",
+  "revision": 2
+}

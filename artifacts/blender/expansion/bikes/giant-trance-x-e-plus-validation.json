@@ -1,0 +1,29 @@
+{
+  "name": "Giant Trance X E+",
+  "key": "giant-trance-x-e-plus",
+  "dimensions_m": [
+    1.99,
+    0.6634,
+    1.0947
+  ],
+  "triangles": 28960,
+  "meshes": 31,
+  "bytes": 918812,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "giant-trance-x-e.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

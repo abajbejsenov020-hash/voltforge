@@ -1,0 +1,26 @@
+{
+  "name": "Vsett 11+ Super 72",
+  "model": {
+    "key": "vsett-11-plus-super-72",
+    "url": "/models/expansion/premium/vsett-11-plus-super-72.glb",
+    "nativeSource": "assets/blender/expansion/premium/vsett-11-plus-super-72.blend",
+    "triangles": 51728,
+    "meshes": 36,
+    "bytes": 1394596,
+    "family": "Vsett 11+ Super 72 exterior"
+  },
+  "bounds": [
+    [
+      -0.7367000579833984,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.7149999737739563,
+      0.33000001311302185,
+      1.3899930715560913
+    ]
+  ],
+  "observed": "Official distributor Super72 photo confirmed using supplementary fork detail: parallel dual black stems align in side profile, yellow lower fork legs, yellow rear arms and raised yellow kickplate.",
+  "revision": 2
+}

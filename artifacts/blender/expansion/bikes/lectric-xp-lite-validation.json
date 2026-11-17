@@ -1,0 +1,29 @@
+{
+  "name": "Lectric XP Lite",
+  "key": "lectric-xp-lite",
+  "dimensions_m": [
+    1.55,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 26212,
+  "meshes": 31,
+  "bytes": 868988,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "lectric-xp-lite.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

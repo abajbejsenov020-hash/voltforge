@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadRunner",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radrunner.webp",
+  "source": "https://radpowerbikes.eu/pages/ebike-technical-specifications",
+  "imageSource": "https://i.shgcdn.com/0426906b-e73e-4a15-92ec-be9d37977436/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+  "credit": "radpowerbikes.eu",
+  "variantNote": "Ebike Technical Specifications (https://radpowerbikes.eu/pages/ebike-technical-specifications)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 97892,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "rad-power-radrunner",
+    "url": "/models/expansion/bikes/rad-power-radrunner.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radrunner.blend",
+    "triangles": 29800,
+    "meshes": 30,
+    "bytes": 925344,
+    "family": "cargo"
+  }
+}

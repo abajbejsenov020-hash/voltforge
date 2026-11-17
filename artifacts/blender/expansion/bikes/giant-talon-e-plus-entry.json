@@ -1,0 +1,26 @@
+{
+  "name": "Giant Talon E+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/giant-talon-e.webp",
+  "source": "https://www.giant-bicycles.com/us/talon-eplus",
+  "imageSource": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/swqogbgs0mm6zjmu0pbw/MY26TalonE_ColorA.jpg",
+  "credit": "www.giant-bicycles.com",
+  "variantNote": "Talon E+ (2026) | Trail bike | Giant Bicycles US",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    600
+  ],
+  "bytes": 62904,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "giant-talon-e-plus",
+    "url": "/models/expansion/bikes/giant-talon-e-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/giant-talon-e-plus.blend",
+    "triangles": 30636,
+    "meshes": 29,
+    "bytes": 924800,
+    "family": "hardtail"
+  }
+}

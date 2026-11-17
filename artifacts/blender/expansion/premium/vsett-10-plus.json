@@ -1,0 +1,26 @@
+{
+  "name": "Vsett 10+",
+  "model": {
+    "key": "vsett-10-plus",
+    "url": "/models/expansion/premium/vsett-10-plus.glb",
+    "nativeSource": "assets/blender/expansion/premium/vsett-10-plus.blend",
+    "triangles": 53524,
+    "meshes": 36,
+    "bytes": 1408512,
+    "family": "Vsett 10+ exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.33000001311302185,
+      1.3599929809570312
+    ]
+  ],
+  "observed": "Yellow ten-inch wide C arms, black deck, low dual lamps and split stem.",
+  "revision": 2
+}

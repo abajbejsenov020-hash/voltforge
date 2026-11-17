@@ -1,0 +1,26 @@
+{
+  "name": "Yume X11",
+  "model": {
+    "key": "yume-x11",
+    "url": "/models/expansion/premium/yume-x11.glb",
+    "nativeSource": "assets/blender/expansion/premium/yume-x11.blend",
+    "triangles": 50880,
+    "meshes": 36,
+    "bytes": 1334176,
+    "family": "Yume X11 exact photographed appearance"
+  },
+  "bounds": [
+    [
+      -0.7117000818252563,
+      -0.3499999940395355,
+      0.000238936030655168
+    ],
+    [
+      0.6897610425949097,
+      0.3499999940395355,
+      1.4599930047988892
+    ]
+  ],
+  "observed": "Original X11 gold twin front suspension legs and collar, box battery deck with vertical RGB accent windows and tall center stem.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Arctic Leopard E-16Z",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/arctic-leopard-e-16z.webp",
+  "source": "https://arctic-leopard.bike/products/e-16z",
+  "imageSource": "https://cdn.shopify.com/s/files/1/1069/7166/0613/files/e-16Z-370.jpg?v=1786193522",
+  "credit": "arctic-leopard.bike",
+  "variantNote": "E-16Z",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1024,
+    683
+  ],
+  "bytes": 83696,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "arctic-leopard-e-16z",
+    "url": "/models/expansion/bikes/arctic-leopard-e-16z.glb",
+    "nativeSource": "assets/blender/expansion/bikes/arctic-leopard-e-16z.blend",
+    "triangles": 23444,
+    "meshes": 27,
+    "bytes": 759200,
+    "family": "arctic-kids-trials"
+  }
+}

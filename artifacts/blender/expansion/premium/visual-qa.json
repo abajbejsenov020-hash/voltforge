@@ -1,0 +1,20 @@
+{
+  "checkedEntries": 97,
+  "comparisonSheets": [
+    "comparison-01.jpg",
+    "comparison-02.jpg",
+    "comparison-03.jpg",
+    "comparison-04.jpg",
+    "comparison-05.jpg",
+    "comparison-06.jpg",
+    "comparison-07.jpg",
+    "comparison-08.jpg",
+    "comparison-09.jpg"
+  ],
+  "review": "All nine source/render contact sheets visually inspected. Targeted revisions addressed X/Wolf chassis, cast-arm colors, original RS5/Cruiser identity, RS steering beams, Vsett center headlights, and compact NAMI versus Burn-E frame distinction. Final targeted Yume Y10 and Osprey fork/mast/headlight rebuilds visually compared with their exact photographs; Y10 polished telescopic legs/bellows and amber round lamps, Osprey dark long legs, short dropouts, kinked windowed mast, mirrors and spaced square lamps.",
+  "limitations": "Photographic approximations of exterior forms. Dimensions, hidden faces, internal mounting volumes and small controls are inferred; no measured CAD or exact-detail claim.",
+  "unresolved": [
+    "Hiley Tiger 8",
+    "Hiley Tiger 9"
+  ]
+}

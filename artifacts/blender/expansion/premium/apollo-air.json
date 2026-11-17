@@ -1,0 +1,26 @@
+{
+  "name": "Apollo Air",
+  "model": {
+    "key": "apollo-air",
+    "url": "/models/expansion/premium/apollo-air.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-air.blend",
+    "triangles": 46192,
+    "meshes": 32,
+    "bytes": 1196500,
+    "family": "Apollo Air photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.6280500292778015,
+      -0.30000001192092896,
+      0.0
+    ],
+    [
+      0.6069999933242798,
+      0.30000004172325134,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Air V3 2023 gray unibody commuter with orange front badge, front fork suspension and single rear hub.",
+  "revision": 2
+}

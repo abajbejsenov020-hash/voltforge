@@ -1,0 +1,47 @@
+{
+  "key": "segway-ninebot-f3-pro",
+  "name": "Segway Ninebot F3 Pro",
+  "family": "Ninebot F3 suspension",
+  "parameters": {
+    "family": "Ninebot F3 suspension",
+    "r": 0.127,
+    "wide": 0.028,
+    "wb": 0.98,
+    "dl": 0.52,
+    "dw": 0.18,
+    "dz": 0.21,
+    "h": 1.31,
+    "bar": 0.59,
+    "stem": "round",
+    "fork": "twinfork",
+    "rear": "shortarm",
+    "motor": "rear",
+    "disc": "front",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.18,
+      0.26,
+      0.36
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": true,
+    "solidArm": false
+  },
+  "triangles": 27964,
+  "meshes": 28,
+  "bytes": 894056,
+  "source": "https://eu-en.segway.com/ekickscooter/products/f3-pro-e.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-f3-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f3-pro.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-f3-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "name": "Engwe Engine Pro 2.0",
+  "source": "https://engwe.com/products/engwe-engine-pro-2-0",
+  "checked": [
+    "https://engwe.com/products/engwe-engine-pro-2-0"
+  ],
+  "title": "Engine Pro 2.0",
+  "images": [
+    {
+      "id": 36146459934777,
+      "created_at": "2025-04-30T20:18:53+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T13:41:58+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [
+        44084052852793
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_3.jpg?v=1794548518",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36187773304889,
+      "created_at": "2025-05-06T17:14:38+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T14:08:22+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_pro_2.0.jpg?v=1794550102",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35101340008505,
+      "created_at": "2024-12-11T11:29:43+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:42:00+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/9_ea5393f3-881a-48e1-bb44-5ebad8ddd763.jpg?v=1794548520",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36146459967545,
+      "created_at": "2025-04-30T20:18:53+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T13:41:32+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_4.jpg?v=1794548492",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 39001873186873,
+      "created_at": "2026-04-01T09:43:23+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T13:43:10+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/ENGWE_PRO_2.0_-_3.jpg?v=1794548590",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36146460098617,
+      "created_at": "2025-04-30T20:18:53+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:45:04+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [
+        44084052885561
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_2.jpg?v=1794548704",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36146459902009,
+      "created_at": "2025-04-30T20:18:53+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T13:40:35+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_6.jpg?v=1794548435",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36146460033081,
+      "created_at": "2025-04-30T20:18:53+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T13:39:36+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [
+        44084052918329
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_1.jpg?v=1794548376",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36146460000313,
+      "created_at": "2025-04-30T20:18:53+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T13:42:09+08:00",
+      "product_id": 7778559295545,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_5.jpg?v=1794548529",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44084052918329,
+      "title": "Midnight Blue",
+      "option1": "Midnight Blue",
+      "option2": null,
+      "option3": null,
+      "sku": "EUENGINEPRO2.0BL",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 36146460033081,
+        "product_id": 7778559295545,
+        "position": 8,
+        "created_at": "2025-04-30T20:18:53+08:00",
+        "updated_at": "2026-11-13T13:39:36+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_1.jpg?v=1794548376",
+        "variant_ids": [
+          44084052918329
+        ]
+      },
+      "available": true,
+      "price": "1399.00",
+      "grams": 0,
+      "compare_at_price": "1499.00",
+      "position": 1,
+      "product_id": 7778559295545,
+      "created_at": "2024-11-25T10:55:13+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44084052852793,
+      "title": "Mountain Green",
+      "option1": "Mountain Green",
+      "option2": null,
+      "option3": null,
+      "sku": "EUENGINEPRO2.0GR",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 36146459934777,
+        "product_id": 7778559295545,
+        "position": 1,
+        "created_at": "2025-04-30T20:18:53+08:00",
+        "updated_at": "2026-11-13T13:41:58+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_3.jpg?v=1794548518",
+        "variant_ids": [
+          44084052852793
+        ]
+      },
+      "available": true,
+      "price": "1399.00",
+      "grams": 0,
+      "compare_at_price": "1499.00",
+      "position": 2,
+      "product_id": 7778559295545,
+      "created_at": "2024-11-25T10:55:13+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44084052885561,
+      "title": "Space Black",
+      "option1": "Space Black",
+      "option2": null,
+      "option3": null,
+      "sku": "EUENGINEPRO2.0BK",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 36146460098617,
+        "product_id": 7778559295545,
+        "position": 6,
+        "created_at": "2025-04-30T20:18:53+08:00",
+        "updated_at": "2026-11-13T13:45:04+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_2.jpg?v=1794548704",
+        "variant_ids": [
+          44084052885561
+        ]
+      },
+      "available": true,
+      "price": "1399.00",
+      "grams": 0,
+      "compare_at_price": "1499.00",
+      "position": 3,
+      "product_id": 7778559295545,
+      "created_at": "2024-11-25T10:55:13+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE Engine Pro 2.0 Features</h2>\n<p>1. Foldable but sturdy e-bike frame</p>\n<p>2. Powerful hub motor with 75Nm torque</p>\n<p>3. 16Ah lithium battery &amp; 110 km long range</p>\n<p>4. 20-inch fat tire for all terrians and full suspension system</p>\n<p>5. Hydraulic brakes for safety</p>\n<p>6. Shimano 8-speed &amp; torque sensor for a comfortable riding experience</p>\n<h2>What About Engine Pro 2.0?</h2>\n<p>The ENGWE Engine Pro 2.0 is an excellent folding electric bike, designed for those seeking adventure and practicality. Equipped with a robust hub motor and a high-capacity 16Ah e-bike battery, this collapsible electric bike delivers exceptional performance and reliability for long-distance rides. In addition, it features an advanced full suspension system that ensures a smooth and comfortable journey, even on rough terrains. Engine Pro 2.0 also has a fat bike design. It is equipped with 20x4-inch all-terrain tires, providing excellent traction and stability, perfect for tackling sand, snow, gravel and city streets with ease.</p>\n<p>In a word, the ENGWE Engine Pro 2.0 combines power and portability, thanks to its compact foldable ebike design, which allows for easy storage and transportation. It redefines convenience and versatility. Whether you are a commuter, outdoor sports enthusiast or adventurer, you can explore fun with it.</p>\n<h2>ENGWE Engine Pro 2.0 Electric Fat Bike Spec</h2>\n<table border=\"1\">\n<tbody>\n<tr>\n<td>Material</td>\n<td>6061 Aluminium Alloy Folding Frame</td>\n</tr>\n<tr>\n<td>Motor</td>\n<td>Magnesium Alloy Integrated Wheel Hub Motor</td>\n</tr>\n<tr>\n<td>Torque</td>\n<td>75 Nm</td>\n</tr>\n<tr>\n<td>Sensor</td>\n<td>Torque Sensor</td>\n</tr>\n<tr>\n<td>Brake</td>\n<td>Hydraulic Disc Brakes 160mm</td>\n</tr>\n<tr>\n<td>Top Speed</td>\n<td>25km/h (PAS 5)</td>\n</tr>\n<tr>\n<td>Maximum Mileage</td>\n<td>110km (PAS 1)</td>\n</tr>\n<tr>\n<td>Battery</td>\n<td>16Ah Lithium-ion Battery</td>\n</tr>\n<tr>\n<td>Charging Time</td>\n<td>About 5.5 hours</td>\n</tr>\n<tr>\n<td>Tires</td>\n<td>20x4.0\" Fat Tires</td>\n</tr>\n<tr>\n<td>Maximum Climbing degree</td>\n<td>10\u00b0</td>\n</tr>\n<tr>\n<td>Drivetrain</td>\n<td>Shimano Altus 8-speed</td>\n</tr>\n<tr>\n<td>Display</td>\n<td>LCD Color Display</td>\n</tr>\n<tr>\n<td>Bike Weight</td>\n<td>31.6 kg</td>\n</tr>\n<tr>\n<td>Gross Weight</td>\n<td>39.8 kg</td>\n</tr>\n<tr>\n<td>Rider Height</td>\n<td>5.4 (ft) - 6.2 (ft)</td>\n</tr>\n<tr>\n<td>Payload Capacity</td>\n<td>150 kg (330 lbs)</td>\n</tr>\n<tr>\n<td>Folded Size</td>\n<td>104*55*84 cm</td>\n</tr>\n</tbody>\n</table>\n<p>\u00a0</p>"
+}

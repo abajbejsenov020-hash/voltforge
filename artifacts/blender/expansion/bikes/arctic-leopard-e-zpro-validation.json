@@ -1,0 +1,29 @@
+{
+  "name": "Arctic Leopard E-ZPRO",
+  "key": "arctic-leopard-e-zpro",
+  "dimensions_m": [
+    1.67,
+    0.6236,
+    1.0697
+  ],
+  "triangles": 28904,
+  "meshes": 30,
+  "bytes": 907232,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "arctic-leopard-e-zpro.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Reference-specific compact motorcycle frame, battery casing and wheel proportions."
+}

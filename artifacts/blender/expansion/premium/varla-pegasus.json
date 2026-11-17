@@ -1,0 +1,26 @@
+{
+  "name": "Varla Pegasus",
+  "model": {
+    "key": "varla-pegasus",
+    "url": "/models/expansion/premium/varla-pegasus.glb",
+    "nativeSource": "assets/blender/expansion/premium/varla-pegasus.blend",
+    "triangles": 54392,
+    "meshes": 34,
+    "bytes": 1434756,
+    "family": "Varla Pegasus exterior"
+  },
+  "bounds": [
+    [
+      -0.6043999791145325,
+      -0.3199999928474426,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5839999914169312,
+      0.31999996304512024,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Silver angular deck with yellow top stripe, blue C-type suspension arms, compact wide road wheels.",
+  "revision": 2
+}

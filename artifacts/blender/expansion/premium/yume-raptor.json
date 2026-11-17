@@ -1,0 +1,26 @@
+{
+  "name": "Yume Raptor",
+  "model": {
+    "key": "yume-raptor",
+    "url": "/models/expansion/premium/yume-raptor.glb",
+    "nativeSource": "assets/blender/expansion/premium/yume-raptor.blend",
+    "triangles": 53628,
+    "meshes": 34,
+    "bytes": 1424688,
+    "family": "Yume Raptor exterior"
+  },
+  "bounds": [
+    [
+      -0.70169997215271,
+      -0.3499999940395355,
+      0.000238936030655168
+    ],
+    [
+      0.6797610521316528,
+      0.3499999940395355,
+      1.409993052482605
+    ]
+  ],
+  "observed": "Red twin folding collar and flank badge, black angular C arms, large off-road tyres and ribbed rear kickplate.",
+  "revision": 2
+}

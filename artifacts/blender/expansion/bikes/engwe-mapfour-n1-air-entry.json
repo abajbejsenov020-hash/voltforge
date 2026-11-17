@@ -1,0 +1,26 @@
+{
+  "name": "Engwe MapFour N1 Air",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-mapfour-n1-air.webp",
+  "source": "https://engwe.com/products/engwe-n1-air",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_29bbf176-25fe-40de-b4b1-9cf1eb87ae04.jpg?v=1794548694",
+  "credit": "engwe.com",
+  "variantNote": "ENGWE N1 Air; Mechanical Version / N1 Air / Ink Green",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 75772,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-mapfour-n1-air",
+    "url": "/models/expansion/bikes/engwe-mapfour-n1-air.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-mapfour-n1-air.blend",
+    "triangles": 24348,
+    "meshes": 31,
+    "bytes": 664616,
+    "family": "road"
+  }
+}

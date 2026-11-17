@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Aventure",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-aventure.webp",
+  "source": "https://allseasonsestore.com/products/aventure",
+  "imageSource": "https://www.allseasonsestore.com/cdn/shop/products/green-aventure.jpg?v=1683760610",
+  "credit": "allseasonsestore.com",
+  "variantNote": "Aventure",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 102476,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-aventure",
+    "url": "/models/expansion/bikes/aventon-aventure.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-aventure.blend",
+    "triangles": 28252,
+    "meshes": 27,
+    "bytes": 899156,
+    "family": "hardtailfat"
+  }
+}

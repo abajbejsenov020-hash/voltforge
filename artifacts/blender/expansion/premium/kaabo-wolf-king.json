@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Wolf King",
+  "model": {
+    "key": "kaabo-wolf-king",
+    "url": "/models/expansion/premium/kaabo-wolf-king.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-wolf-king.blend",
+    "triangles": 52232,
+    "meshes": 34,
+    "bytes": 1411752,
+    "family": "Kaabo Wolf King verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6816999912261963,
+      -0.375,
+      0.0
+    ],
+    [
+      0.6600000262260437,
+      0.375,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Original WolfKing11 72V28Ah gold trim: gold twin upper stems, polished fork legs, gold rear brace and black broad deck.",
+  "revision": 2
+}

@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-g3",
+  "name": "KuKirin G3",
+  "family": "KuKirin G3 orange cast arms",
+  "parameters": {
+    "family": "KuKirin G3 orange cast arms",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.03,
+    "dl": 0.58,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.27,
+    "bar": 0.62,
+    "stem": "square",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.025,
+      0.035,
+      0.038
+    ],
+    "accent": [
+      0.98,
+      0.26,
+      0.008
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": true
+  },
+  "triangles": 30612,
+  "meshes": 29,
+  "bytes": 942080,
+  "source": "https://kukirin-escooter.com/products/kukirin-g3-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-g3.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-g3.blend",
+  "url": "/models/expansion/commuter/kukirin-g3.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

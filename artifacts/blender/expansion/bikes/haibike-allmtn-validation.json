@@ -1,0 +1,29 @@
+{
+  "name": "Haibike AllMtn",
+  "key": "haibike-allmtn",
+  "dimensions_m": [
+    2.02,
+    0.6634,
+    1.0947
+  ],
+  "triangles": 29148,
+  "meshes": 31,
+  "bytes": 926436,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "haibike-allmtn.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

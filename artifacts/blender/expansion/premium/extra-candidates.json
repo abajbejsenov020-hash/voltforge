@@ -1,0 +1,101 @@
+[
+  [
+    "Kaabo Wolf King GT",
+    {
+      "name": "Kaabo Wolf King GT",
+      "key": "kaabo-wolf-king-gt",
+      "source": "https://www.kaabo.com/wolf-king-gt/",
+      "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/05/Kaabo-Wolf-King-Gt.png",
+      "credit": "www.kaabo.com",
+      "variantNote": "",
+      "productTitle": "Kaabo Wolf King GT: Ultimate Power & Performance - EScooter"
+    }
+  ],
+  [
+    "Kaabo Wolf Warrior X",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://www.kaabo.com/wolf-warrior-x-electric-scooter/']' returned non-zero exit status 56.",
+      "source": "https://www.kaabo.com/wolf-warrior-x-electric-scooter/"
+    }
+  ],
+  [
+    "Kaabo Wolf Warrior 11",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://www.kaabo.com/wolf-warrior-11-electric-scooter/']' returned non-zero exit status 56.",
+      "source": "https://www.kaabo.com/wolf-warrior-11-electric-scooter/"
+    }
+  ],
+  [
+    "Kaabo Wolf King",
+    {
+      "name": "Kaabo Wolf King",
+      "key": "kaabo-wolf-king",
+      "source": "https://www.kaabo.com/wolf-king/",
+      "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/05/Kaabo-Wolf-King-Gt.png",
+      "credit": "www.kaabo.com",
+      "variantNote": "",
+      "productTitle": "Kaabo Wolf King GT: Ultimate Power & Performance - EScooter"
+    }
+  ],
+  [
+    "Kaabo Mantis 10",
+    {
+      "name": "Kaabo Mantis 10",
+      "key": "kaabo-mantis-10",
+      "source": "https://www.kaabo.com/mantis-10/",
+      "imageSource": "https://www.kaabo.com/wp-content/uploads/2023/05/Kaabo-Mantis-10.png",
+      "credit": "www.kaabo.com",
+      "variantNote": "",
+      "productTitle": "Kaabo Mantis 10 Electric Scooter - Powerful and Comfortable"
+    }
+  ],
+  [
+    "Kaabo Mantis 10 Pro",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://www.kaabo.com/mantis-pro/']' returned non-zero exit status 56.",
+      "source": "https://www.kaabo.com/mantis-pro/"
+    }
+  ],
+  [
+    "Teverun Fighter Mini",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://teverun-europe.com/fighter-mini/']' returned non-zero exit status 56.",
+      "source": "https://teverun-europe.com/fighter-mini/"
+    }
+  ],
+  [
+    "Teverun Fighter 11",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://teverun-europe.com/fighter-eleven/']' returned non-zero exit status 56.",
+      "source": "https://teverun-europe.com/fighter-eleven/"
+    }
+  ],
+  [
+    "Teverun Fighter Supreme",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://teverun-europe.com/fighter-supreme/']' returned non-zero exit status 56.",
+      "source": "https://teverun-europe.com/fighter-supreme/"
+    }
+  ],
+  [
+    "Teverun Blade Mini",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://teverun-europe.com/blade-mini/']' returned non-zero exit status 56.",
+      "source": "https://teverun-europe.com/blade-mini/"
+    }
+  ],
+  [
+    "Teverun Blade GT",
+    {
+      "error": "",
+      "source": "https://teverun.com/blade-gt/"
+    }
+  ],
+  [
+    "Inokim Light 2",
+    {
+      "error": "Command '['curl', '-fsSL', '--max-time', '40', '-A', 'Mozilla/5.0', 'https://il.inokim.com/products/light-2']' returned non-zero exit status 56.",
+      "source": "https://il.inokim.com/products/light-2"
+    }
+  ]
+]

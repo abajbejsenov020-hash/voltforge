@@ -1,0 +1,26 @@
+{
+  "name": "Arctic Leopard E-20Y",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/arctic-leopard-e-20y.webp",
+  "source": "https://arctic-leopard.bike/products/e-20y",
+  "imageSource": "https://cdn.shopify.com/s/files/1/1069/7166/0613/files/ArcticLeopardE_20Y-394.jpg?v=1786193369",
+  "credit": "arctic-leopard.bike",
+  "variantNote": "E\u00b720Y",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1024,
+    683
+  ],
+  "bytes": 66052,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "arctic-leopard-e-20y",
+    "url": "/models/expansion/bikes/arctic-leopard-e-20y.glb",
+    "nativeSource": "assets/blender/expansion/bikes/arctic-leopard-e-20y.blend",
+    "triangles": 24308,
+    "meshes": 28,
+    "bytes": 789616,
+    "family": "arctic-kids-trials"
+  }
+}

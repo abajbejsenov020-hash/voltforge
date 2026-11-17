@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Storm",
+  "model": {
+    "key": "dualtron-storm",
+    "url": "/models/expansion/premium/dualtron-storm.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-storm.blend",
+    "triangles": 52496,
+    "meshes": 35,
+    "bytes": 1429772,
+    "family": "Dualtron Storm exterior"
+  },
+  "bounds": [
+    [
+      -0.6617000102996826,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.6399999856948853,
+      0.3050000071525574,
+      1.2699930667877197
+    ]
+  ],
+  "observed": "Deep removable battery chassis with red trim, massive rear controller/kickplate.",
+  "revision": 2
+}

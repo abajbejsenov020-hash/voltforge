@@ -1,0 +1,26 @@
+{
+  "name": "Himiway Zebra",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/himiway-zebra.webp",
+  "source": "https://himiwaybike.com/products/premium-all-terrain-electric-bike",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0255/9528/1483/files/D5SOwhite.jpg?v=1745832823",
+  "credit": "himiwaybike.com",
+  "variantNote": "D5(Zebra) / All-terrain Electric Fat Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    900
+  ],
+  "bytes": 109870,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "himiway-zebra",
+    "url": "/models/expansion/bikes/himiway-zebra.glb",
+    "nativeSource": "assets/blender/expansion/bikes/himiway-zebra.blend",
+    "triangles": 30032,
+    "meshes": 31,
+    "bytes": 938848,
+    "family": "hardtailfat"
+  }
+}

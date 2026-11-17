@@ -1,0 +1,29 @@
+{
+  "name": "Rad Power RadWagon 4",
+  "key": "rad-power-radwagon-4",
+  "dimensions_m": [
+    2.2378,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 30860,
+  "meshes": 30,
+  "bytes": 946352,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "rad-power-radwagon-4.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

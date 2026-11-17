@@ -1,0 +1,29 @@
+{
+  "name": "Engwe P275 Pro",
+  "key": "engwe-p275-pro",
+  "dimensions_m": [
+    1.9585,
+    0.6634,
+    1.069
+  ],
+  "triangles": 24712,
+  "meshes": 33,
+  "bytes": 682976,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "engwe-p275-pro.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

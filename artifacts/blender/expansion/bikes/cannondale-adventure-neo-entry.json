@@ -1,0 +1,26 @@
+{
+  "name": "Cannondale Adventure Neo",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cannondale-adventure-neo.webp",
+  "source": "https://portal.lease-a-bike.nl/en/bikes/cannondale-adventure-neo-4",
+  "imageSource": "https://dorelrl.widen.net/content/yd0ffzluyy/png/C21_C68451U_Adventure_Neo_4_GRY_PD.tif?color=ffffffff&h=600&position=c&quality=80&u=um7wvl&w=900",
+  "credit": "portal.lease-a-bike.nl",
+  "variantNote": "Cannondale Adventure Neo 4 e-bike lease? | Lease a Bike (https://portal.lease-a-bike.nl/en/bikes/cannondale-adventure-neo-4)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    900,
+    600
+  ],
+  "bytes": 70600,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "cannondale-adventure-neo",
+    "url": "/models/expansion/bikes/cannondale-adventure-neo.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cannondale-adventure-neo.blend",
+    "triangles": 28676,
+    "meshes": 25,
+    "bytes": 888088,
+    "family": "stepcurve"
+  }
+}

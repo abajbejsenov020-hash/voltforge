@@ -14,3 +14,5 @@ Use Blender 4.5 LTS. On this machine Blender 4.5.16 was installed from the offic
 Each model uses physical meter units, with the front along +X and Blender Z up. GLB export converts to glTF Y up. Named battery, controller and motor mount groups allow inspection and component changes. The viewer retains the original image as an appearance reference.
 
 The render previews in `artifacts/blender/` are produced for visual checks. Source edits should be re-exported and inspected in the web viewer because browser materials and lighting differ from Blender's renderer.
+
+The later [appearance audit](../../docs/vehicle-artwork.md) adds 281 native sources under `expansion/{commuter,premium,bikes}/`, alongside the original 60 models. Their exact photos, source URLs, visible trim notes, public GLBs and actual export statistics are recorded in the three expansion manifests. All 345 indexed names are audited; four unresolved variants retain an explicitly labeled concept. Batch construction, independent native reopen audits and photo/render comparisons are included in the corresponding scripts and artifacts directories.

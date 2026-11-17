@@ -1,0 +1,47 @@
+{
+  "key": "ausom-leopard",
+  "name": "Ausom Leopard",
+  "family": "Ausom Leopard yellow headstock",
+  "parameters": {
+    "family": "Ausom Leopard yellow headstock",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.0,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.3,
+    "bar": 0.63,
+    "stem": "telescopic",
+    "fork": "swing",
+    "rear": "swing",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "highsquare",
+    "halo": false,
+    "body": [
+      0.045,
+      0.055,
+      0.065
+    ],
+    "accent": [
+      0.98,
+      0.65,
+      0.01
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 32968,
+  "meshes": 28,
+  "bytes": 1083656,
+  "source": "https://ausomstore.com/blogs/electric-scooter-guide/ausom-leopard-unleashing-the-pinnacle-of-off-road-electric-scooters",
+  "reference": "/assets/vehicles/expansion/commuter/ausom-leopard.webp",
+  "nativeSource": "assets/blender/expansion/commuter/ausom-leopard.blend",
+  "url": "/models/expansion/commuter/ausom-leopard.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

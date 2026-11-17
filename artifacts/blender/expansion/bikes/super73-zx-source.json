@@ -1,0 +1,113 @@
+{
+  "name": "Super73 ZX",
+  "source": "https://super73.com/products/super73-zx-core-legacy",
+  "checked": [
+    "https://super73.com/products/super73-zx-core-legacy"
+  ],
+  "title": "SUPER73-ZX",
+  "images": [
+    {
+      "id": 44351618810026,
+      "created_at": "2026-03-05T11:15:32-08:00",
+      "position": 1,
+      "updated_at": "2026-03-05T11:16:26-08:00",
+      "product_id": 8213898395818,
+      "variant_ids": [
+        47323757576362
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/MY25FRONTHERO_ZXCORE_MetallicAluminum_a0aaa651-efe3-47d2-a41a-6d48a8fcb5f5.jpg?v=1772738186",
+      "width": 2200,
+      "height": 2200
+    },
+    {
+      "id": 44351618842794,
+      "created_at": "2026-03-05T11:15:32-08:00",
+      "position": 2,
+      "updated_at": "2026-03-05T11:16:26-08:00",
+      "product_id": 8213898395818,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/MY25REARHERO_ZXCORE_MetallicAluminum.jpg?v=1772738186",
+      "width": 2200,
+      "height": 2200
+    },
+    {
+      "id": 44351618777258,
+      "created_at": "2026-03-05T11:15:32-08:00",
+      "position": 3,
+      "updated_at": "2026-03-05T11:16:26-08:00",
+      "product_id": 8213898395818,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/MY25_ZXCORE_RIGHT_MetallicAluminum.jpg?v=1772738186",
+      "width": 2200,
+      "height": 2200
+    },
+    {
+      "id": 41846137159850,
+      "created_at": "2025-09-12T10:51:01-07:00",
+      "position": 4,
+      "updated_at": "2026-03-05T11:16:26-08:00",
+      "product_id": 8213898395818,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_ZX_Core_MetallicAluminum_DetailBattery_1080x1080_f2a8bbbd-db81-4e12-b010-6c065db3edc0.jpg?v=1772738186",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": 41846137192618,
+      "created_at": "2025-09-12T10:51:01-07:00",
+      "position": 5,
+      "updated_at": "2026-03-05T11:16:26-08:00",
+      "product_id": 8213898395818,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_ZX_Core_MetallicAluminum_DetailStemCap_1080x1080_492af086-dfb1-4c3d-acab-41da70b7ee08.jpg?v=1772738186",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": 41846137225386,
+      "created_at": "2025-09-12T10:51:01-07:00",
+      "position": 6,
+      "updated_at": "2026-03-05T11:16:26-08:00",
+      "product_id": 8213898395818,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/Super73_LegacySeries_ZX_Core_MetallicAluminum_DetailTire_1080x1080_a6486262-d266-4603-ac62-2513891dffa0.jpg?v=1772738186",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "variants": [
+    {
+      "id": 47323757576362,
+      "title": "CORE / Metallic Aluminum",
+      "option1": "CORE",
+      "option2": "Metallic Aluminum",
+      "option3": null,
+      "sku": "900-00440",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 44351618810026,
+        "product_id": 8213898395818,
+        "position": 1,
+        "created_at": "2026-03-05T11:15:32-08:00",
+        "updated_at": "2026-03-05T11:16:26-08:00",
+        "alt": "Front view of the SUPER73-ZX Core Legacy Series ebike in metallic aluminum @color_metallic aluminum",
+        "width": 2200,
+        "height": 2200,
+        "src": "https://cdn.shopify.com/s/files/1/1374/3231/files/MY25FRONTHERO_ZXCORE_MetallicAluminum_a0aaa651-efe3-47d2-a41a-6d48a8fcb5f5.jpg?v=1772738186",
+        "variant_ids": [
+          47323757576362
+        ]
+      },
+      "available": true,
+      "price": "2395.00",
+      "grams": 0,
+      "compare_at_price": null,
+      "position": 1,
+      "product_id": 8213898395818,
+      "created_at": "2025-08-12T05:53:00-07:00",
+      "updated_at": "2026-11-17T07:29:44-08:00"
+    }
+  ],
+  "description": "<p><strong>THE ROAD AHEAD IS SMOOTHER THAN EVER</strong></p>\n<p><meta charset=\"utf-8\"><span data-sheets-root=\"1\">Riding in comfort never felt so powerful. We\u2019ve revolutionized our classic ZX models with 20% more acceleration so that every commute has more pick-me-up than your morning espresso. We\u2019ve even spruced things up with a colorway refresh and a powerful PRO 500 battery! For riders 16 years of age and older.</span></p>"
+}

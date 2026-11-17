@@ -1,0 +1,26 @@
+{
+  "name": "Giant Fathom E+",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/giant-fathom-e.webp",
+  "source": "https://www.giant-bicycles.com/gb/fathom-eplus-2-2024",
+  "imageSource": "https://images2.giant-bicycles.com/b_white%2Cc_pad%2Ch_600%2Cq_80%2Cw_800/pqywgofrq23czeaozfpl/MY24FathomEplus2_ColorAGunmetalBlack.jpg",
+  "credit": "www.giant-bicycles.com",
+  "variantNote": "Fathom E+ 2 (2024) | Trail bike | Giant Bicycles UK",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    800,
+    600
+  ],
+  "bytes": 55870,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "giant-fathom-e-plus",
+    "url": "/models/expansion/bikes/giant-fathom-e-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/giant-fathom-e-plus.blend",
+    "triangles": 28376,
+    "meshes": 27,
+    "bytes": 898088,
+    "family": "hardtail"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Engwe Engine Pro 2.0",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-engine-pro-2-0.webp",
+  "source": "https://engwe.com/products/engwe-engine-pro-2-0",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/Engine_Pro_2_1.jpg?v=1794548376",
+  "credit": "engwe.com",
+  "variantNote": "Engine Pro 2.0; Midnight Blue",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 66108,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-engine-pro-2-0",
+    "url": "/models/expansion/bikes/engwe-engine-pro-2-0.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-engine-pro-2-0.blend",
+    "triangles": 31744,
+    "meshes": 41,
+    "bytes": 968228,
+    "family": "fullfold"
+  }
+}

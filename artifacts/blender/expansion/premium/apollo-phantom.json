@@ -1,0 +1,26 @@
+{
+  "name": "Apollo Phantom",
+  "model": {
+    "key": "apollo-phantom",
+    "url": "/models/expansion/premium/apollo-phantom.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-phantom.blend",
+    "triangles": 53904,
+    "meshes": 34,
+    "bytes": 1434692,
+    "family": "Apollo Phantom exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.3400000035762787,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.3400000333786011,
+      1.3399930000305176
+    ]
+  ],
+  "observed": "Original Phantom V1 gray monoblock frame, swept four-spring suspension and high single lamp.",
+  "revision": 2
+}

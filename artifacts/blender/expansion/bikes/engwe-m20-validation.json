@@ -1,0 +1,29 @@
+{
+  "name": "Engwe M20",
+  "key": "engwe-m20",
+  "dimensions_m": [
+    1.9322,
+    0.7231,
+    1.1047
+  ],
+  "triangles": 32344,
+  "meshes": 35,
+  "bytes": 961396,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "engwe-m20.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

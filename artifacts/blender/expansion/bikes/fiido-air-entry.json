@@ -1,0 +1,26 @@
+{
+  "name": "Fiido Air",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-air.webp",
+  "source": "https://fiido.com/products/fiido-air-carbon-fiber-electric-bike",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/c31-img-1.webp?v=1750820407",
+  "credit": "fiido.com",
+  "variantNote": "Fiido Air Ultra-Light Carbon Fiber E-Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 98482,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "fiido-air",
+    "url": "/models/expansion/bikes/fiido-air.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-air.blend",
+    "triangles": 24644,
+    "meshes": 33,
+    "bytes": 655504,
+    "family": "road"
+  }
+}

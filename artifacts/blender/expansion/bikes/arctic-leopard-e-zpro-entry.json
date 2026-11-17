@@ -1,0 +1,26 @@
+{
+  "name": "Arctic Leopard E-ZPRO",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/arctic-leopard-e-zpro.webp",
+  "source": "https://sportorg.com.ua/item/leopard-e-zpro",
+  "imageSource": "https://sportorg.com.ua/images/product/l/29342d6ff9.jpg",
+  "credit": "sportorg.com.ua",
+  "variantNote": "E-ZPRO youth electric dirt bike as explicitly listed by SportORG; distinct from the full-size E-X PRO.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    768,
+    768
+  ],
+  "bytes": 45714,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "arctic-leopard-e-zpro",
+    "url": "/models/expansion/bikes/arctic-leopard-e-zpro.glb",
+    "nativeSource": "assets/blender/expansion/bikes/arctic-leopard-e-zpro.blend",
+    "triangles": 28904,
+    "meshes": 30,
+    "bytes": 907232,
+    "family": "compact-mx"
+  }
+}

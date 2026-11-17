@@ -1,0 +1,29 @@
+{
+  "name": "Arctic Leopard E-16Z",
+  "key": "arctic-leopard-e-16z",
+  "dimensions_m": [
+    1.35,
+    0.544,
+    0.8897
+  ],
+  "triangles": 23444,
+  "meshes": 27,
+  "bytes": 759200,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "arctic-leopard-e-16z.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Reference-specific compact motorcycle frame, battery casing and wheel proportions."
+}

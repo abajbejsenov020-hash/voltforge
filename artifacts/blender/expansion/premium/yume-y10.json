@@ -1,0 +1,26 @@
+{
+  "name": "Yume Y10",
+  "model": {
+    "key": "yume-y10",
+    "url": "/models/expansion/premium/yume-y10.glb",
+    "nativeSource": "assets/blender/expansion/premium/yume-y10.blend",
+    "triangles": 52704,
+    "meshes": 34,
+    "bytes": 1422712,
+    "family": "Yume Y10 exact photographed appearance"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.33000001311302185,
+      0.000238936030655168
+    ],
+    [
+      0.6267610788345337,
+      0.33000001311302185,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Exact Y10 front: tall polished paired telescopic fork stanchions with black lower bellows, three fork crown/collar levels, twin amber-rim round lamps mounted midway up the fork, and a separate slender telescopic YUME upper mast. Black box battery chassis retained.",
+  "revision": 2
+}

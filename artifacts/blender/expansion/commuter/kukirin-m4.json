@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-m4",
+  "name": "KuKirin M4",
+  "family": "telescopic suspension scooter",
+  "parameters": {
+    "family": "telescopic suspension scooter",
+    "r": 0.127,
+    "wide": 0.04,
+    "wb": 1.0,
+    "dl": 0.55,
+    "dw": 0.21,
+    "dz": 0.26,
+    "h": 1.2,
+    "bar": 0.62,
+    "stem": "telescopic",
+    "fork": "twinfork",
+    "rear": "twinshock",
+    "motor": "rear",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.7,
+      0.025,
+      0.015
+    ],
+    "seat": true,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 36808,
+  "meshes": 28,
+  "bytes": 1182212,
+  "source": "https://kukirin-escooter.com/products/kukirin-m4-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-m4.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-m4.blend",
+  "url": "/models/expansion/commuter/kukirin-m4.glb",
+  "finalReferenceReview": [
+    "Added M4 red battery-deck flank trim"
+  ]
+}

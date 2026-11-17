@@ -1,0 +1,26 @@
+{
+  "name": "Trek Marlin",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/trek-marlin.webp",
+  "source": "https://www.bikeplace.com.au/2026-marlin-5-gen-3-miami-green-dark-aquatic-fade.html",
+  "imageSource": "https://cdn.shoplightspeed.com/shops/616818/files/71051029/trek-2026-marlin-5-gen-3-miami-green-dark-aquatic.jpg",
+  "credit": "www.bikeplace.com.au",
+  "variantNote": "Marlin 5 Gen 3, Miami Green/Dark Aquatic Fade, 2026 reference trim. Nonmotorized pedal mountain bike.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    900
+  ],
+  "bytes": 202300,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "trek-marlin",
+    "url": "/models/expansion/bikes/trek-marlin.glb",
+    "nativeSource": "assets/blender/expansion/bikes/trek-marlin.blend",
+    "triangles": 27884,
+    "meshes": 26,
+    "bytes": 882876,
+    "family": "hardtail"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Haibike AllMtn",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/haibike-allmtn.webp",
+  "source": "https://www.comriecroftbikes.co.uk/products/2025-haibike-allmtn-6",
+  "imageSource": "https://www.comriecroftbikes.co.uk/cdn/shop/files/HaibikeAllmtn6MEFS2502.jpg?v=1762360379&width=2208",
+  "credit": "www.comriecroftbikes.co.uk",
+  "variantNote": "Used Haibike AllMtn 6 2025 \u2013 Fully Serviced eMTB with Bosch CX & 800 Wh Battery \u2013 ComrieCroftBikes (https://www.comriecroftbikes.co.uk/products/2025-haibike-allmtn-6)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    801
+  ],
+  "bytes": 272168,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "haibike-allmtn",
+    "url": "/models/expansion/bikes/haibike-allmtn.glb",
+    "nativeSource": "assets/blender/expansion/bikes/haibike-allmtn.blend",
+    "triangles": 29148,
+    "meshes": 31,
+    "bytes": 926436,
+    "family": "fullmtb"
+  }
+}

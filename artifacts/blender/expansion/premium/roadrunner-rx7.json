@@ -1,0 +1,26 @@
+{
+  "name": "RoadRunner RX7",
+  "model": {
+    "key": "roadrunner-rx7",
+    "url": "/models/expansion/premium/roadrunner-rx7.glb",
+    "nativeSource": "assets/blender/expansion/premium/roadrunner-rx7.blend",
+    "triangles": 58288,
+    "meshes": 36,
+    "bytes": 1604936,
+    "family": "RoadRunner RX7 exterior"
+  },
+  "bounds": [
+    [
+      -0.7217000722885132,
+      -0.3499999940395355,
+      0.0
+    ],
+    [
+      0.699999988079071,
+      0.3499999940395355,
+      1.4599930047988892
+    ]
+  ],
+  "observed": "Turquoise skeletal swingarms, cyan vertical stem and deck light inlays, broad chassis and black road tyres.",
+  "revision": 2
+}

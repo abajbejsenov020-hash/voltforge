@@ -1,0 +1,29 @@
+{
+  "name": "Specialized Turbo Tero",
+  "key": "specialized-turbo-tero",
+  "dimensions_m": [
+    1.95,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 29412,
+  "meshes": 27,
+  "bytes": 939692,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "specialized-turbo-tero.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

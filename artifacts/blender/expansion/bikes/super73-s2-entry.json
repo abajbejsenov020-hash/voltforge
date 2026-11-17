@@ -1,0 +1,26 @@
+{
+  "name": "Super73 S2",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/super73-s2.webp",
+  "source": "https://super73.com/products/super73-s2-se-legacy",
+  "imageSource": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YM_S2SESTREET_FRONTHERO_BLACKOUT.jpg?v=1772739162",
+  "credit": "super73.com",
+  "variantNote": "SUPER73-S2 SE",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 118976,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "super73-s2",
+    "url": "/models/expansion/bikes/super73-s2.glb",
+    "nativeSource": "assets/blender/expansion/bikes/super73-s2.blend",
+    "triangles": 23996,
+    "meshes": 29,
+    "bytes": 687956,
+    "family": "moped"
+  }
+}

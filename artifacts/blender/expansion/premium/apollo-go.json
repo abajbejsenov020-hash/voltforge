@@ -1,0 +1,26 @@
+{
+  "name": "Apollo Go",
+  "model": {
+    "key": "apollo-go",
+    "url": "/models/expansion/premium/apollo-go.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-go.blend",
+    "triangles": 54108,
+    "meshes": 35,
+    "bytes": 1434296,
+    "family": "Apollo Go photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.5844000577926636,
+      -0.30000001192092896,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5640000104904175,
+      0.30000004172325134,
+      1.2799930572509766
+    ]
+  ],
+  "observed": "Go compact gray narrow deck, curved neck, small road wheels and distinctive stem light.",
+  "revision": 2
+}

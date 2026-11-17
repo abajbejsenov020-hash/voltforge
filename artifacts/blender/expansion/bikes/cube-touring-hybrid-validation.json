@@ -1,0 +1,29 @@
+{
+  "name": "Cube Touring Hybrid",
+  "key": "cube-touring-hybrid",
+  "dimensions_m": [
+    2.0002,
+    0.6634,
+    1.069
+  ],
+  "triangles": 28004,
+  "meshes": 33,
+  "bytes": 758736,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "cube-touring-hybrid.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

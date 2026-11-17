@@ -1,0 +1,87 @@
+{
+  "name": "Fiido M21",
+  "source": "https://fiido.com/products/fiido-m21-fat-tire-electric-bike-with-torque-sensor",
+  "checked": [
+    "https://fiido.com/products/fiido-m21-fat-tire-electric-bike-with-torque-sensor"
+  ],
+  "title": "Fiido M21 Fat Tire Electric Bike With Torque Sensor",
+  "images": [
+    {
+      "id": 40729694994645,
+      "created_at": "2023-11-27T13:51:33+08:00",
+      "position": 1,
+      "updated_at": "2023-11-27T13:51:41+08:00",
+      "product_id": 6660300570820,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/m21_8e47be1d-9815-4c4f-8d14-2e0b21225cf3.jpg?v=1701064301",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 40729694961877,
+      "created_at": "2023-11-27T13:51:33+08:00",
+      "position": 2,
+      "updated_at": "2023-11-27T13:51:41+08:00",
+      "product_id": 6660300570820,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/m21-access_0bf02f5a-2bb4-4d41-8a3e-1bef14b8ca93.jpg?v=1701064301",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 37800530772181,
+      "created_at": "2022-06-22T16:49:27+08:00",
+      "position": 3,
+      "updated_at": "2023-11-27T13:51:41+08:00",
+      "product_id": 6660300570820,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/products/Fiido-M21-Folding-Fat-Tire-Electric-Mountain-Bike-With-Torque-Sensor_1.jpg?v=1701064301",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 37800530804949,
+      "created_at": "2022-06-22T16:49:27+08:00",
+      "position": 4,
+      "updated_at": "2023-11-27T13:51:41+08:00",
+      "product_id": 6660300570820,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/products/Fiido-M21-Folding-Fat-Tire-Electric-Mountain-Bike-With-Torque-Sensor_2.jpg?v=1701064301",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": 37800530706645,
+      "created_at": "2022-06-22T16:49:27+08:00",
+      "position": 5,
+      "updated_at": "2023-11-27T13:51:41+08:00",
+      "product_id": 6660300570820,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0511/3308/7940/products/Fiido-M21-Folding-Fat-Tire-Electric-Mountain-Bike-With-Torque-Sensor_3.jpg?v=1701064301",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "variants": [
+    {
+      "id": 39780323197124,
+      "title": "Default Title",
+      "option1": "Default Title",
+      "option2": null,
+      "option3": null,
+      "sku": "M21-116B",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": false,
+      "price": "1299.00",
+      "grams": 0,
+      "compare_at_price": "1299.00",
+      "position": 1,
+      "product_id": 6660300570820,
+      "created_at": "2021-05-21T17:44:26+08:00",
+      "updated_at": "2026-11-17T23:30:19+08:00"
+    }
+  ],
+  "description": "<div data-line=\"true\" data-line-index=\"0\" data-zone-id=\"0\">\n<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\">\n<div>\n<div data-zone-id=\"0\" data-line-index=\"0\" data-line=\"true\"><span>Fat tire ebike with torque sensor, folding design. </span></div>\n</div>\n</div>"
+}

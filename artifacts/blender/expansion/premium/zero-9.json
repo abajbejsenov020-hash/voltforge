@@ -1,0 +1,26 @@
+{
+  "name": "Zero 9",
+  "model": {
+    "key": "zero-9",
+    "url": "/models/expansion/premium/zero-9.glb",
+    "nativeSource": "assets/blender/expansion/premium/zero-9.blend",
+    "triangles": 49024,
+    "meshes": 33,
+    "bytes": 1273900,
+    "family": "Zero 9 exterior"
+  },
+  "bounds": [
+    [
+      -0.5744000673294067,
+      -0.32499998807907104,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5540000200271606,
+      0.32499998807907104,
+      1.2399929761886597
+    ]
+  ],
+  "observed": "ZERO 9 black telescopic stem, red markings and narrow rectangular deck, compact commuter wheels and rear hub motor.",
+  "revision": 2
+}

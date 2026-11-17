@@ -1,0 +1,212 @@
+{
+  "name": "Rad Power RadRunner Plus",
+  "source": "https://www.radpowerbikes.com/products/radrunner-plus-electric-cargo-utility-bike",
+  "checked": [
+    "https://www.radpowerbikes.com/products/radrunner-plus-electric-cargo-utility-bike"
+  ],
+  "title": "RadRunner\u2122 Plus Electric Cargo Utility Bike",
+  "images": [
+    {
+      "id": 32320816218208,
+      "created_at": "2025-04-03T13:01:51-04:00",
+      "position": 1,
+      "updated_at": "2025-04-03T13:01:53-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [
+        41748473938016
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Matte_Black_Right_Side.png?v=1743699713",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "id": 32548170924128,
+      "created_at": "2025-04-22T18:00:40-04:00",
+      "position": 2,
+      "updated_at": "2025-04-22T18:00:41-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Matte_Black_Right_Angle_copy.png?v=1745359241",
+      "width": 2168,
+      "height": 1626
+    },
+    {
+      "id": 32632511430752,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 3,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Brakes_e2457f0f-b1a7-4469-a199-ad810fbd23de.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511922272,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 4,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Tires_af352b86-94f2-42a4-b50d-704f5b7b5bb5.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511660128,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 5,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Battery_7ed8fe93-9e89-4410-8388-6298a5432d33.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511594592,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 6,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/ChatGPTImageApr29_2025_01_26_01PM.png?v=1745963654",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": 32632511692896,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 7,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Passenger_Package_fab04538-43ea-4458-a6d6-ced5b5182348.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511529056,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 8,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Glam_7c77e925-5114-475e-b80e-87f01156911b.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511496288,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 9,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/RadRunner_Plus_Black_Lifestyle1_f308bbb9-2ff3-4b17-9406-43d72021158e.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511823968,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 10,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/RadRunner_Plus_Black_Lifestyle3_8896a6b2-8dd7-440f-b78b-008c6fac3ab6.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 32632511725664,
+      "created_at": "2025-04-29T17:50:39-04:00",
+      "position": 11,
+      "updated_at": "2025-04-29T17:54:14-04:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/RadRunner_Plus_Black_Lifestyle2_3b805f8d-6856-4d76-8ddd-1458a496ba69.png?v=1745963654",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 36166269075552,
+      "created_at": "2025-12-04T11:15:35-05:00",
+      "position": 12,
+      "updated_at": "2025-12-04T11:15:36-05:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/1_714b00a5-521f-4294-bee8-c934d1b303ee.png?v=1764864936",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 36166269108320,
+      "created_at": "2025-12-04T11:15:35-05:00",
+      "position": 13,
+      "updated_at": "2025-12-04T11:15:38-05:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/2_70144430-b20b-4543-8b0e-e12733b7fbbc.png?v=1764864938",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 36166269141088,
+      "created_at": "2025-12-04T11:15:35-05:00",
+      "position": 14,
+      "updated_at": "2025-12-04T11:15:36-05:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/3_63ac699a-a762-4226-89d8-d81eb48072da.png?v=1764864936",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": 36166269173856,
+      "created_at": "2025-12-04T11:15:35-05:00",
+      "position": 15,
+      "updated_at": "2025-12-04T11:15:38-05:00",
+      "product_id": 7353310117984,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/4_a2b7b2c0-2216-491b-9a8d-850f49361227.png?v=1764864938",
+      "width": 2048,
+      "height": 1536
+    }
+  ],
+  "variants": [
+    {
+      "id": 41748473938016,
+      "title": "Matte Black",
+      "option1": "Matte Black",
+      "option2": null,
+      "option3": null,
+      "sku": "106-00065",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": {
+        "id": 32320816218208,
+        "product_id": 7353310117984,
+        "position": 1,
+        "created_at": "2025-04-03T13:01:51-04:00",
+        "updated_at": "2025-04-03T13:01:53-04:00",
+        "alt": "Right side of a matte black RadRunner cargo utility ebike on a white background.",
+        "width": 2048,
+        "height": 2048,
+        "src": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Matte_Black_Right_Side.png?v=1743699713",
+        "variant_ids": [
+          41748473938016
+        ]
+      },
+      "available": true,
+      "price": "1799.00",
+      "grams": 45813,
+      "compare_at_price": null,
+      "position": 1,
+      "product_id": 7353310117984,
+      "created_at": "2025-03-31T19:11:49-04:00",
+      "updated_at": "2026-11-17T10:29:45-05:00"
+    }
+  ],
+  "description": "<p>From weekday heroics to weekend escapes, the new RadRunner Plus is a passenger-ready powerhouse. A Safe Shield Battery, passcode protection, and hydraulic disc brakes keep things safe, while 7-speeds, front suspension, and a 350 lb. payload let you tackle more and stress less. Want to go even further? Just add a Range Extender for up to 120 miles of uninterrupted riding.\u00a0</p>\n<p>Range: Up to 55 miles</p>\n<p>Payload: 350 lb. (275 lb. max rider)</p>\n<p>Top speed: Class 2</p>\n<p>Motor: 750W Rear Hub, 70 Nm torque</p>\n<p>UL status: UL Certified to UL 2849 and UL 2271</p>\n<p>Battery type: 13 Ah Safe Shield External Battery</p>\n<div style=\"display: none;\">radrunner, runner, radrunner plus, runner plus, rad runner, rad runner plus, moped, passenger, fun, scooter, fat, fat tire, fat bike, low step, low-step, step thru, step-thru, step through, step-through, urban, cargo, fun, ebike, utility, bike, electric bicycle, entry, premium, upgrade, upgraded</div>"
+}

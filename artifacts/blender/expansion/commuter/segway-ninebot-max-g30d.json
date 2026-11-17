@@ -1,0 +1,47 @@
+{
+  "key": "segway-ninebot-max-g30d",
+  "name": "Segway Ninebot Max G30D",
+  "family": "Ninebot rigid commuter",
+  "parameters": {
+    "family": "Ninebot rigid commuter",
+    "r": 0.127,
+    "wide": 0.028,
+    "wb": 0.91,
+    "dl": 0.51,
+    "dw": 0.18,
+    "dz": 0.19,
+    "h": 1.2,
+    "bar": 0.52,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.065,
+      0.073,
+      0.08
+    ],
+    "accent": [
+      0.98,
+      0.56,
+      0.015
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": true,
+    "solidArm": false
+  },
+  "triangles": 27696,
+  "meshes": 28,
+  "bytes": 874364,
+  "source": "https://de-de.segway.com/ekickscooter/products/max-g30d.html",
+  "reference": "/assets/vehicles/expansion/commuter/segway-ninebot-max-g30d.webp",
+  "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g30d.blend",
+  "url": "/models/expansion/commuter/segway-ninebot-max-g30d.glb",
+  "finalReferenceReview": [
+    "Added enclosed nonmotor front drum cover"
+  ]
+}

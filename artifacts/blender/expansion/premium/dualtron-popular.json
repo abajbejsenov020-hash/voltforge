@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Popular",
+  "model": {
+    "key": "dualtron-popular",
+    "url": "/models/expansion/premium/dualtron-popular.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-popular.blend",
+    "triangles": 53136,
+    "meshes": 34,
+    "bytes": 1459784,
+    "family": "Dualtron Popular exterior"
+  },
+  "bounds": [
+    [
+      -0.589400053024292,
+      -0.30500003695487976,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.5690000057220459,
+      0.3050000071525574,
+      1.2399929761886597
+    ]
+  ],
+  "observed": "Compact black deck with white angular top graphic, tall front cowl and slim road tyres.",
+  "revision": 2
+}

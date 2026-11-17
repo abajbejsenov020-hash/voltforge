@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadRunner 2",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radrunner-2.webp",
+  "source": "https://www.ebikeshawaiibigisland.com/product-page/radrunner-2-electric-utility-bike",
+  "imageSource": "https://static.wixstatic.com/media/52cd79_9b74ad1aaa264b968df77c9b23440a26~mv2.jpg/v1/fill/w_805%2Ch_587%2Cal_c%2Cq_85%2Cenc_auto/52cd79_9b74ad1aaa264b968df77c9b23440a26~mv2.jpg",
+  "credit": "www.ebikeshawaiibigisland.com",
+  "variantNote": "RadRunner 2 Electric Utility Bike | eBikes Hawaii Big Island (https://www.ebikeshawaiibigisland.com/product-page/radrunner-2-electric-utility-bike)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    805,
+    587
+  ],
+  "bytes": 61270,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "rad-power-radrunner-2",
+    "url": "/models/expansion/bikes/rad-power-radrunner-2.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radrunner-2.blend",
+    "triangles": 29800,
+    "meshes": 30,
+    "bytes": 925372,
+    "family": "cargo"
+  }
+}

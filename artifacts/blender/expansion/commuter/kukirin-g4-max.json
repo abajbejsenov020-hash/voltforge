@@ -1,0 +1,47 @@
+{
+  "key": "kukirin-g4-max",
+  "name": "KuKirin G4 Max",
+  "family": "KuKirin G4 Max twin stanchion",
+  "parameters": {
+    "family": "KuKirin G4 Max twin stanchion",
+    "r": 0.152,
+    "wide": 0.049,
+    "wb": 1.11,
+    "dl": 0.66,
+    "dw": 0.25,
+    "dz": 0.31,
+    "h": 1.36,
+    "bar": 0.7,
+    "stem": "telescopic",
+    "fork": "longfork",
+    "rear": "twinshock",
+    "motor": "both",
+    "disc": "both",
+    "lamp": "lowround",
+    "halo": false,
+    "body": [
+      0.035,
+      0.04,
+      0.045
+    ],
+    "accent": [
+      0.98,
+      0.26,
+      0.008
+    ],
+    "seat": false,
+    "kick": true,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 35944,
+  "meshes": 27,
+  "bytes": 1127000,
+  "source": "https://kukirin-escooter.com/products/kukirin-g4-max-electric-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/kukirin-g4-max.webp",
+  "nativeSource": "assets/blender/expansion/commuter/kukirin-g4-max.blend",
+  "url": "/models/expansion/commuter/kukirin-g4-max.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

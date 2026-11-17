@@ -1,0 +1,26 @@
+{
+  "name": "NAMI Stellar",
+  "model": {
+    "key": "nami-stellar",
+    "url": "/models/expansion/premium/nami-stellar.glb",
+    "nativeSource": "assets/blender/expansion/premium/nami-stellar.blend",
+    "triangles": 48360,
+    "meshes": 34,
+    "bytes": 1228076,
+    "family": "NAMI Stellar exterior"
+  },
+  "bounds": [
+    [
+      -0.6144000291824341,
+      -0.3449999988079071,
+      -1.3877787807814457e-17
+    ],
+    [
+      0.593999981880188,
+      0.3449999690055847,
+      1.4199930429458618
+    ]
+  ],
+  "observed": "NAMI Stellar compact cast chassis, curved compact neck, slim single steering stem and short C suspension arms. Burn-E external deck cage is not present on this photographed model. Single rear motor.",
+  "revision": 2
+}

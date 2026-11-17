@@ -1,0 +1,26 @@
+{
+  "name": "Teverun Fighter 11",
+  "model": {
+    "key": "teverun-fighter-11",
+    "url": "/models/expansion/premium/teverun-fighter-11.glb",
+    "nativeSource": "assets/blender/expansion/premium/teverun-fighter-11.blend",
+    "triangles": 54808,
+    "meshes": 36,
+    "bytes": 1459908,
+    "family": "Teverun Fighter 11 photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.6916999816894531,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6700000166893005,
+      0.32499998807907104,
+      1.409993052482605
+    ]
+  ],
+  "observed": "2024 Fighter Eleven manufacturer catalog: wide road wheels, long black deck, C swingarms, slim stem with white Teverun marking.",
+  "revision": 2
+}

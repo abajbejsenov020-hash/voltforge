@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Mantis 10",
+  "model": {
+    "key": "kaabo-mantis-10",
+    "url": "/models/expansion/premium/kaabo-mantis-10.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-mantis-10.blend",
+    "triangles": 54752,
+    "meshes": 34,
+    "bytes": 1451304,
+    "family": "Kaabo Mantis 10 photographed exterior"
+  },
+  "bounds": [
+    [
+      -0.6380500197410583,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.6169999837875366,
+      0.33000001311302185,
+      1.319993019104004
+    ]
+  ],
+  "observed": "Original Mantis ten-inch black C swingarms, red highlights, rear kicker and slim center stem.",
+  "revision": 2
+}

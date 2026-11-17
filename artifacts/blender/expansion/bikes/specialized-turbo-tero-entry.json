@@ -1,0 +1,26 @@
+{
+  "name": "Specialized Turbo Tero",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/specialized-turbo-tero.webp",
+  "source": "https://www.greggscycles.com/product/specialized-turbo-tero-3.0-950064-1.htm",
+  "imageSource": "https://www.sefiles.net/images/library/zoom/specialized-turbo-tero-3.0-2024-950064-19.png",
+  "credit": "www.greggscycles.com",
+  "variantNote": "Specialized Turbo Tero 3.0 - Gregg's Cycles (https://www.greggscycles.com/product/specialized-turbo-tero-3.0-950064-1.htm)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    828,
+    686
+  ],
+  "bytes": 191584,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "specialized-turbo-tero",
+    "url": "/models/expansion/bikes/specialized-turbo-tero.glb",
+    "nativeSource": "assets/blender/expansion/bikes/specialized-turbo-tero.blend",
+    "triangles": 29412,
+    "meshes": 27,
+    "bytes": 939692,
+    "family": "hardtail"
+  }
+}

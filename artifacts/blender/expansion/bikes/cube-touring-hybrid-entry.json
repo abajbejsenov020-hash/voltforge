@@ -1,0 +1,26 @@
+{
+  "name": "Cube Touring Hybrid",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cube-touring-hybrid.webp",
+  "source": "https://www.cube.eu/de-de/cube-touring-hybrid-pro-800-pearlgrey-n-grey/111201",
+  "imageSource": "https://file.cube.eu/azwesc1xfg346/media/8a/43/fa/1754546786/synqup_111201_P_00.jpg?ts=1776488203",
+  "credit": "www.cube.eu",
+  "variantNote": "Cube Touring Hybrid Pro 800 pearlgrey\u00b4n\u00b4grey (https://www.cube.eu/de-de/cube-touring-hybrid-pro-800-pearlgrey-n-grey/111201)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    675
+  ],
+  "bytes": 43422,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "cube-touring-hybrid",
+    "url": "/models/expansion/bikes/cube-touring-hybrid.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cube-touring-hybrid.blend",
+    "triangles": 28004,
+    "meshes": 33,
+    "bytes": 758736,
+    "family": "commuter"
+  }
+}

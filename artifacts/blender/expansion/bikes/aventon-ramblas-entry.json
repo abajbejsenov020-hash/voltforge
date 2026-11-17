@@ -1,0 +1,26 @@
+{
+  "name": "Aventon Ramblas",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/aventon-ramblas.webp",
+  "source": "https://www.bikeswift.com/aventon-ramblas-borealis.html",
+  "imageSource": "https://cdn.shoplightspeed.com/shops/659928/files/70360404/1652x1652x2/aventon-aventon-ramblas-borealis.jpg",
+  "credit": "www.bikeswift.com",
+  "variantNote": "Aventon Ramblas (Borealis) - Bike Swift (https://www.bikeswift.com/aventon-ramblas-borealis.html)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 106676,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "aventon-ramblas",
+    "url": "/models/expansion/bikes/aventon-ramblas.glb",
+    "nativeSource": "assets/blender/expansion/bikes/aventon-ramblas.blend",
+    "triangles": 28492,
+    "meshes": 27,
+    "bytes": 902120,
+    "family": "hardtail"
+  }
+}

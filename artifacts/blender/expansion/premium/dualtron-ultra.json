@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron Ultra",
+  "model": {
+    "key": "dualtron-ultra",
+    "url": "/models/expansion/premium/dualtron-ultra.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-ultra.blend",
+    "triangles": 51408,
+    "meshes": 32,
+    "bytes": 1386080,
+    "family": "Dualtron Ultra exterior"
+  },
+  "bounds": [
+    [
+      -0.6467000246047974,
+      -0.30500003695487976,
+      0.000238936030655168
+    ],
+    [
+      0.6247610449790955,
+      0.3050000071525574,
+      1.2999930381774902
+    ]
+  ],
+  "observed": "Original black cartridge-arm chassis and knobby off-road tyres, no raised performance tail.",
+  "revision": 2
+}

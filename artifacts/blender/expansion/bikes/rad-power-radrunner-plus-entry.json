@@ -1,0 +1,26 @@
+{
+  "name": "Rad Power RadRunner Plus",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/rad-power-radrunner-plus.webp",
+  "source": "https://www.radpowerbikes.com/products/radrunner-plus-electric-cargo-utility-bike",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0799/9645/files/Runner_Plus_2025_Matte_Black_Right_Side.png?v=1743699713",
+  "credit": "www.radpowerbikes.com",
+  "variantNote": "RadRunner\u2122 Plus Electric Cargo Utility Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 162482,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "rad-power-radrunner-plus",
+    "url": "/models/expansion/bikes/rad-power-radrunner-plus.glb",
+    "nativeSource": "assets/blender/expansion/bikes/rad-power-radrunner-plus.blend",
+    "triangles": 29940,
+    "meshes": 31,
+    "bytes": 929220,
+    "family": "cargo"
+  }
+}

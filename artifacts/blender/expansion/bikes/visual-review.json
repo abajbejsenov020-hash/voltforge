@@ -1,0 +1,590 @@
+{
+  "reviewedAt": "2026-11-17T16:44:42.308320+00:00",
+  "count": 97,
+  "method": "Every final source/render pair inspected across 13 contact sheets; corrected prominent frame, wheel construction, suspension, battery/motor placement and cargo equipment.",
+  "limits": "Approximate photo-based exteriors; small hardware, livery, typography and hidden mechanisms remain approximate. Not manufacturer CAD or fitment evidence.",
+  "entries": [
+    {
+      "name": "KuKirin X1",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Talaria Sting",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Talaria X3",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe EP-2 Pro",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exact original black Pro reference; angular hinge beam, six-spoke cast wheels, rectangular lamp."
+    },
+    {
+      "name": "Engwe Engine Pro",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe Engine Pro 2.0",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe M20",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe X20",
+      "pairSheet": "pairs-0.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe X24",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe X26",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe L20",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe L20 2.0",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe P275 Pro",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Engwe MapFour N1 Air",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido D4S",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido D11",
+      "pairSheet": "pairs-1.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido D21",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido M21",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido T1",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Original 2022 T1 gallery replaces later T1 Pro reference. Cargo U-frame, behind-seat battery, basket and cast wheels."
+    },
+    {
+      "name": "Fiido T2",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido Titan",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido C21",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Fiido Air",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Aventure",
+      "pairSheet": "pairs-2.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Aventure.2",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Level",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Pace 500",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Pace 500.3",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Soltera",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Sinch",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Abound",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Ramblas",
+      "pairSheet": "pairs-3.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadRunner",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadRunner 2",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadRunner Plus",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadRover 6 Plus",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadCity 5 Plus",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadExpand 5",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Rad Power RadWagon 4",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Trek Marlin",
+      "pairSheet": "pairs-4.jpg",
+      "reviewed": true,
+      "note": "Green pedal base; no electrical equipment asserted. Distinct photo and packed SHA from Marlin+."
+    },
+    {
+      "name": "Trek Powerfly",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Trek Rail",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Trek Allant+",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Trek Verve+",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Trek FX+",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Giant Talon",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Giant Talon E+",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Giant Explore E+",
+      "pairSheet": "pairs-5.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Giant Trance X E+",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Giant Reign E+",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Giant Fathom E+",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Specialized Rockhopper",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Specialized Turbo Levo",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Specialized Turbo Kenevo",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Specialized Turbo Vado",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Specialized Turbo Como",
+      "pairSheet": "pairs-6.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Specialized Turbo Tero",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cube Stereo Hybrid",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cube Kathmandu Hybrid",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cube Touring Hybrid",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cannondale Moterra Neo",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cannondale Trail Neo",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cannondale Adventure Neo",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Cannondale Tesoro Neo",
+      "pairSheet": "pairs-7.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Himiway Cruiser",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Himiway Zebra",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Himiway Cobra",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Lectric XP 3.0",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Lectric XP Lite",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Original 2022 manufacturer launch photo, blue trim at left; single-speed drivetrain."
+    },
+    {
+      "name": "Lectric XPedition",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Original dual-battery white trim with two behind-seat packs and long cargo frame."
+    },
+    {
+      "name": "Lectric XPeak",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Original white step-through launch trim with visible dark battery insert."
+    },
+    {
+      "name": "Super73 S2",
+      "pairSheet": "pairs-8.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Super73 R",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Super73 RX",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Super73 ZX",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Super73 Z Miami",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Sur-Ron Light Bee S",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Talaria Sting MX3",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Talaria XXX L1E",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Stark Varg",
+      "pairSheet": "pairs-9.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "E Ride Pro SS",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Altis Sigma",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Aventon Level.2",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Trek Marlin+",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Red electric Marlin+6 reference; thick integrated pack and mid-drive."
+    },
+    {
+      "name": "Cube Reaction Hybrid",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Haibike AllMtn",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Haibike HardNine",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Haibike HardSeven",
+      "pairSheet": "pairs-10.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Haibike Trekking",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Altis Delta",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Arctic Leopard E-16Z",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Three centered cast spokes; dedicated blue trials-style kids frame."
+    },
+    {
+      "name": "Arctic Leopard E-20Y",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Five centered cast spokes; dedicated white kids frame and rear trainer handle."
+    },
+    {
+      "name": "Sur-Ron Light Bee",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Himiway Big Dog",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Lectric XP 2.0",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Arctic Leopard E-ZPRO",
+      "pairSheet": "pairs-11.jpg",
+      "reviewed": true,
+      "note": "Exterior family, reference trim, frame/wheels, drive placement and visible equipment checked."
+    },
+    {
+      "name": "Arctic Leopard XE Pro S Super",
+      "pairSheet": "pairs-12.jpg",
+      "reviewed": true,
+      "note": "Regional manufacturer illustration is marked as such; road wheels and black fork."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Engwe L20 2.0",
+  "key": "engwe-l20-2-0",
+  "dimensions_m": [
+    1.878,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 28892,
+  "meshes": 34,
+  "bytes": 894764,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "engwe-l20-2-0.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

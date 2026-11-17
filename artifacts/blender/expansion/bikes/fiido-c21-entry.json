@@ -1,0 +1,26 @@
+{
+  "name": "Fiido C21",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-c21.webp",
+  "source": "https://fiido.com/products/fiido-c21-lightweight-step-over-urban-gravel-ebikes",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/1-L.webp?v=1739848641",
+  "credit": "fiido.com",
+  "variantNote": "Fiido C21 Gravel & City E-Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 83824,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "fiido-c21",
+    "url": "/models/expansion/bikes/fiido-c21.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-c21.blend",
+    "triangles": 24388,
+    "meshes": 30,
+    "bytes": 664328,
+    "family": "road"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "key": "xiaomi-4-lite",
+  "name": "Xiaomi 4 Lite",
+  "family": "Xiaomi curved-neck commuter",
+  "parameters": {
+    "family": "Xiaomi curved-neck commuter",
+    "r": 0.108,
+    "wide": 0.024,
+    "wb": 0.89,
+    "dl": 0.5,
+    "dw": 0.15,
+    "dz": 0.14,
+    "h": 1.14,
+    "bar": 0.43,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "front",
+    "disc": "rear",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.075,
+      0.085,
+      0.09
+    ],
+    "accent": [
+      0.68,
+      0.025,
+      0.015
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 27332,
+  "meshes": 27,
+  "bytes": 853232,
+  "source": "https://www.mi.com/global/product/xiaomi-electric-scooter-4-lite/",
+  "reference": "/assets/vehicles/expansion/commuter/xiaomi-4-lite.webp",
+  "nativeSource": "assets/blender/expansion/commuter/xiaomi-4-lite.blend",
+  "url": "/models/expansion/commuter/xiaomi-4-lite.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

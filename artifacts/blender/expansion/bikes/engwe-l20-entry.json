@@ -1,0 +1,26 @@
+{
+  "name": "Engwe L20",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/engwe-l20.webp",
+  "source": "https://engwe.com/products/engwe-l20",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_14712d36-eed6-4d7a-8a84-e51223c62da4.jpg?v=1794548504",
+  "credit": "engwe.com",
+  "variantNote": "ENGWE L20; Avocado Green",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    861,
+    1200
+  ],
+  "bytes": 58132,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "engwe-l20",
+    "url": "/models/expansion/bikes/engwe-l20.glb",
+    "nativeSource": "assets/blender/expansion/bikes/engwe-l20.blend",
+    "triangles": 29216,
+    "meshes": 33,
+    "bytes": 903216,
+    "family": "stepfat"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Super73 Z Miami",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/super73-z-miami.webp",
+  "source": "https://super73.com/products/super73-z-miami-core-legacy",
+  "imageSource": "https://cdn.shopify.com/s/files/1/1374/3231/files/25YMZMIAMI_CORE_FRONTHERO_de5b8c0a-fb02-4386-bf97-10d95025e36d.jpg?v=1772738545",
+  "credit": "super73.com",
+  "variantNote": "SUPER73-Z Miami",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1198
+  ],
+  "bytes": 120870,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "super73-z-miami",
+    "url": "/models/expansion/bikes/super73-z-miami.glb",
+    "nativeSource": "assets/blender/expansion/bikes/super73-z-miami.blend",
+    "triangles": 23688,
+    "meshes": 29,
+    "bytes": 674044,
+    "family": "moped"
+  }
+}

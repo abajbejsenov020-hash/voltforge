@@ -1,0 +1,591 @@
+{
+  "name": "Engwe EP-2 Pro",
+  "source": "https://engwe.com/products/engwe-ep-2-pro",
+  "checked": [
+    "https://engwe.com/products/engwe-ep-2-pro"
+  ],
+  "title": "EP-2 Pro",
+  "images": [
+    {
+      "id": 35746383560761,
+      "created_at": "2025-03-05T19:53:37+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T13:45:34+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [
+        44084501512249
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Gray-1.jpg?v=1794548734",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35746350202937,
+      "created_at": "2025-03-05T19:50:14+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T13:43:35+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_MOB_3.jpg?v=1794548615",
+      "width": 750,
+      "height": 1095
+    },
+    {
+      "id": 35746383626297,
+      "created_at": "2025-03-05T19:53:37+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:44:00+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Gray-2.jpg?v=1794548640",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35746383527993,
+      "created_at": "2025-03-05T19:53:37+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T13:43:28+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [
+        44084501446713
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Black-1.jpg?v=1794548608",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35746383462457,
+      "created_at": "2025-03-05T19:53:36+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T13:45:02+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Black-2.jpg?v=1794548702",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34729914466361,
+      "created_at": "2024-10-21T16:37:54+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:44:38+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/PC_-EP-2-pro-_12.jpg?v=1794548678",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34729914499129,
+      "created_at": "2024-10-21T16:37:54+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T14:08:44+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/PC_-EP-2-pro-_15.jpg?v=1794550124",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34729914269753,
+      "created_at": "2024-10-21T16:37:55+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T13:39:40+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_dfdcf3fa-8d6e-4b2a-9cfb-9f9586cf47b9.jpg?v=1794548380",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34729914040377,
+      "created_at": "2024-10-21T16:37:54+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T13:42:44+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/PC_-EP-2-pro-_14.jpg?v=1794548564",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35746383790137,
+      "created_at": "2025-03-05T19:53:38+08:00",
+      "position": 10,
+      "updated_at": "2026-11-13T14:09:11+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [
+        44084501479481
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Orange-1.jpg?v=1794550151",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35746383855673,
+      "created_at": "2025-03-05T19:53:38+08:00",
+      "position": 11,
+      "updated_at": "2026-11-13T14:09:17+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Orange-2.jpg?v=1794550157",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36020631109689,
+      "created_at": "2025-04-15T16:34:46+08:00",
+      "position": 12,
+      "updated_at": "2026-11-13T13:39:30+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [
+        44334283980857
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_1.jpg?v=1794548370",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082714443833,
+      "created_at": "2025-04-22T14:12:43+08:00",
+      "position": 13,
+      "updated_at": "2026-11-13T13:45:12+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_11_b54a5ffd-2757-4cb2-9920-68ce8cf23ea4.jpg?v=1794548712",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082714411065,
+      "created_at": "2025-04-22T14:12:43+08:00",
+      "position": 14,
+      "updated_at": "2026-11-13T13:40:52+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_10_9ba5d965-5669-4624-a5e5-fc9b440a0f85.jpg?v=1794548452",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581186105,
+      "created_at": "2025-04-11T10:44:07+08:00",
+      "position": 15,
+      "updated_at": "2026-11-13T13:44:30+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_5.jpg?v=1794548670",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581153337,
+      "created_at": "2025-04-11T10:44:07+08:00",
+      "position": 16,
+      "updated_at": "2026-11-13T13:41:16+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_9.jpg?v=1794548476",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082714214457,
+      "created_at": "2025-04-22T14:12:43+08:00",
+      "position": 17,
+      "updated_at": "2026-11-13T13:45:10+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_12_0ac3f7a0-75d8-466c-b040-c2b6829f00bf.jpg?v=1794548710",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082714476601,
+      "created_at": "2025-04-22T14:12:43+08:00",
+      "position": 18,
+      "updated_at": "2026-11-13T13:42:42+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_14_de7dfc1e-1e21-4ffd-bebc-ce5f5ea1582f.jpg?v=1794548562",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082714378297,
+      "created_at": "2025-04-22T14:12:43+08:00",
+      "position": 19,
+      "updated_at": "2026-11-13T13:40:40+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_13_326ba8da-753f-4279-8f6a-a254811426d7.jpg?v=1794548440",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36020630978617,
+      "created_at": "2025-04-15T16:34:45+08:00",
+      "position": 20,
+      "updated_at": "2026-11-13T13:44:32+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [
+        44334283948089
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_2.jpg?v=1794548672",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082706448441,
+      "created_at": "2025-04-22T14:12:03+08:00",
+      "position": 21,
+      "updated_at": "2026-11-13T13:43:36+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_11.jpg?v=1794548616",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082706219065,
+      "created_at": "2025-04-22T14:12:03+08:00",
+      "position": 22,
+      "updated_at": "2026-11-13T13:42:36+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_10.jpg?v=1794548556",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581120569,
+      "created_at": "2025-04-11T10:44:07+08:00",
+      "position": 23,
+      "updated_at": "2026-11-13T13:39:54+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_4.jpg?v=1794548394",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581513785,
+      "created_at": "2025-04-11T10:44:07+08:00",
+      "position": 24,
+      "updated_at": "2026-11-13T13:42:10+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_8.jpg?v=1794548530",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082706055225,
+      "created_at": "2025-04-22T14:12:03+08:00",
+      "position": 25,
+      "updated_at": "2026-11-13T13:45:40+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_12.jpg?v=1794548740",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082706317369,
+      "created_at": "2025-04-22T14:12:03+08:00",
+      "position": 26,
+      "updated_at": "2026-11-13T13:41:16+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_14.jpg?v=1794548476",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36082706415673,
+      "created_at": "2025-04-22T14:12:03+08:00",
+      "position": 27,
+      "updated_at": "2026-11-13T13:44:14+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_13.jpg?v=1794548654",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 36020630618169,
+      "created_at": "2025-04-15T16:34:45+08:00",
+      "position": 28,
+      "updated_at": "2026-11-13T13:44:38+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [
+        44334283915321
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_3.jpg?v=1794548678",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581218873,
+      "created_at": "2025-04-11T10:44:07+08:00",
+      "position": 29,
+      "updated_at": "2026-11-13T13:39:44+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_10.jpg?v=1794548384",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581415481,
+      "created_at": "2025-04-11T10:44:08+08:00",
+      "position": 30,
+      "updated_at": "2026-11-13T13:43:16+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_11.jpg?v=1794548596",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581448249,
+      "created_at": "2025-04-11T10:44:07+08:00",
+      "position": 31,
+      "updated_at": "2026-11-13T13:45:56+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_7.jpg?v=1794548756",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581087801,
+      "created_at": "2025-04-11T10:44:08+08:00",
+      "position": 32,
+      "updated_at": "2026-11-13T13:42:37+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_12.jpg?v=1794548557",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581349945,
+      "created_at": "2025-04-11T10:44:08+08:00",
+      "position": 33,
+      "updated_at": "2026-11-13T13:43:14+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_13.jpg?v=1794548594",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 35995581284409,
+      "created_at": "2025-04-11T10:44:08+08:00",
+      "position": 34,
+      "updated_at": "2026-11-13T13:40:00+08:00",
+      "product_id": 7778674311225,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2BOOST_14.jpg?v=1794548400",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44334283948089,
+      "title": "EP-2 Boost / Grey",
+      "option1": "EP-2 Boost",
+      "option2": "Grey",
+      "option3": null,
+      "sku": "EUUEP2BOOSTGY",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 36020630978617,
+        "product_id": 7778674311225,
+        "position": 20,
+        "created_at": "2025-04-15T16:34:45+08:00",
+        "updated_at": "2026-11-13T13:44:32+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_2.jpg?v=1794548672",
+        "variant_ids": [
+          44334283948089
+        ]
+      },
+      "available": false,
+      "price": "1049.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 1,
+      "product_id": 7778674311225,
+      "created_at": "2025-03-06T14:29:13+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44334283915321,
+      "title": "EP-2 Boost / Black",
+      "option1": "EP-2 Boost",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUUEP2BOOSTBK",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 36020630618169,
+        "product_id": 7778674311225,
+        "position": 28,
+        "created_at": "2025-04-15T16:34:45+08:00",
+        "updated_at": "2026-11-13T13:44:38+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_3.jpg?v=1794548678",
+        "variant_ids": [
+          44334283915321
+        ]
+      },
+      "available": false,
+      "price": "1049.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 2,
+      "product_id": 7778674311225,
+      "created_at": "2025-03-06T14:29:13+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44334283980857,
+      "title": "EP-2 Boost / Orange",
+      "option1": "EP-2 Boost",
+      "option2": "Orange",
+      "option3": null,
+      "sku": "EUUEP2BOOSTOR",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 36020631109689,
+        "product_id": 7778674311225,
+        "position": 12,
+        "created_at": "2025-04-15T16:34:46+08:00",
+        "updated_at": "2026-11-13T13:39:30+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_BOOST_1.jpg?v=1794548370",
+        "variant_ids": [
+          44334283980857
+        ]
+      },
+      "available": false,
+      "price": "1049.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 3,
+      "product_id": 7778674311225,
+      "created_at": "2025-03-06T14:29:13+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44084501512249,
+      "title": "EP-2 Pro / Grey",
+      "option1": "EP-2 Pro",
+      "option2": "Grey",
+      "option3": null,
+      "sku": "EUEP2Pro250WGrey",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35746383560761,
+        "product_id": 7778674311225,
+        "position": 1,
+        "created_at": "2025-03-05T19:53:37+08:00",
+        "updated_at": "2026-11-13T13:45:34+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Gray-1.jpg?v=1794548734",
+        "variant_ids": [
+          44084501512249
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 4,
+      "product_id": 7778674311225,
+      "created_at": "2024-11-25T15:00:34+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44084501446713,
+      "title": "EP-2 Pro / Black",
+      "option1": "EP-2 Pro",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUEP2Pro250WBlack",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35746383527993,
+        "product_id": 7778674311225,
+        "position": 4,
+        "created_at": "2025-03-05T19:53:37+08:00",
+        "updated_at": "2026-11-13T13:43:28+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Black-1.jpg?v=1794548608",
+        "variant_ids": [
+          44084501446713
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 5,
+      "product_id": 7778674311225,
+      "created_at": "2024-11-25T15:00:34+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44084501479481,
+      "title": "EP-2 Pro / Orange",
+      "option1": "EP-2 Pro",
+      "option2": "Orange",
+      "option3": null,
+      "sku": "EUEP2Pro250WOrange",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 35746383790137,
+        "product_id": 7778674311225,
+        "position": 10,
+        "created_at": "2025-03-05T19:53:38+08:00",
+        "updated_at": "2026-11-13T14:09:11+08:00",
+        "alt": null,
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/EP-2_PRO_Orange-1.jpg?v=1794550151",
+        "variant_ids": [
+          44084501479481
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 6,
+      "product_id": 7778674311225,
+      "created_at": "2024-11-25T15:00:34+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE EP-2 Pro Features</h2>\n<p>1. 3-step foldable and compact bike frame</p>\n<p>2. 250W European compliant motor &amp; 25km/h top speed</p>\n<p>3. Shimano 7-speed &amp; 3 riding modes</p>\n<p>4. 20-inch fat tires for a variety of terrains</p>\n<p>5. 48V 13Ah battery for up to 120 km of range</p>\n<h2>What About EP-2 Pro?</h2>\n<p>The ENGWE EP-2 Pro is a versatile and powerful folding electric bike for commuting and adventure. Its 250W motor and 25km/h top speed make it a legal road e-bike. At the same time, its range is excellent, with up to 120km on a single charge, so you can use it for long-distance commuting with peace of mind. Not only that, this fat tire e-bike also features 20x4-inch tires, providing excellent traction and stability on a variety of surfaces such as beaches, snowy roads and rocky trails, making it the perfect all-terrain e-bike. You can also use it as a mountain bike.</p>\n<p>Whether you are exploring off-road trails or driving on city streets, the ENGWE EP-2 Pro combines style, function and durability, making it an ideal choice for those who seek adventure without compromising practicality.</p>\n<h2>ENGWE Engine Pro 2.0 Off-road E-bike Spec</h2>\n<table border=\"1\">\n<tbody>\n<tr>\n<td>Motor</td>\n<td>250W Brushless Motor</td>\n</tr>\n<tr>\n<td>Torque</td>\n<td>55 Nm</td>\n</tr>\n<tr>\n<td>Brake</td>\n<td>160mm Front &amp; Rear Disc Mechanical Brake</td>\n</tr>\n<tr>\n<td>Top Speed</td>\n<td>25km/h</td>\n</tr>\n<tr>\n<td>Maximum Mileage</td>\n<td>40 km (Electric Mode); 120km (PAS 1)</td>\n</tr>\n<tr>\n<td>Battery</td>\n<td>48V 13Ah Lithium-ion Battery</td>\n</tr>\n<tr>\n<td>Charging Time</td>\n<td>About 6.5 hours</td>\n</tr>\n<tr>\n<td>Tires</td>\n<td>20x4.0\" Fat Tires</td>\n</tr>\n<tr>\n<td>Maximum Climbing degree</td>\n<td>10\u00b0</td>\n</tr>\n<tr>\n<td>Transmission System</td>\n<td>Shimano 7 Gears</td>\n</tr>\n<tr>\n<td>Display</td>\n<td>LCD Display</td>\n</tr>\n<tr>\n<td>Bike Weight</td>\n<td>30 kg (66 lbs)</td>\n</tr>\n<tr>\n<td>Gross Weight</td>\n<td>37.8 kg (80.7 lbs)</td>\n</tr>\n<tr>\n<td>Rider Height</td>\n<td>5.4 (ft) - 6.2 (ft)</td>\n</tr>\n<tr>\n<td>Payload Capacity</td>\n<td>150 kg (330 lbs)</td>\n</tr>\n<tr>\n<td>Folded Size</td>\n<td>99*55*76 cm</td>\n</tr>\n</tbody>\n</table>"
+}

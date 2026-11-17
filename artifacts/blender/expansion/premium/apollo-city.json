@@ -1,0 +1,26 @@
+{
+  "name": "Apollo City",
+  "model": {
+    "key": "apollo-city",
+    "url": "/models/expansion/premium/apollo-city.glb",
+    "nativeSource": "assets/blender/expansion/premium/apollo-city.blend",
+    "triangles": 50588,
+    "meshes": 34,
+    "bytes": 1318384,
+    "family": "Apollo City verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.32499998807907104,
+      1.3299930095672607
+    ]
+  ],
+  "observed": "City2022 single-motor gray unibody reference, curved deck transition, gray C arms, short raised rear foot brace and broad road tyres.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Mantis X",
+  "model": {
+    "key": "kaabo-mantis-x",
+    "url": "/models/expansion/premium/kaabo-mantis-x.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-mantis-x.blend",
+    "triangles": 54784,
+    "meshes": 36,
+    "bytes": 1465068,
+    "family": "Kaabo Mantis X exterior"
+  },
+  "bounds": [
+    [
+      -0.6380500197410583,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.6169999837875366,
+      0.33000001311302185,
+      1.3399930000305176
+    ]
+  ],
+  "observed": "Gray sculpted C-type swingarms, red hinge details and high adjustable suspension.",
+  "revision": 2
+}

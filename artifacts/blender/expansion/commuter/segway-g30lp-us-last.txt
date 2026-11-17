@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Segway Support</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="../assets/css/forum/app.min.css" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+</head>
+
+<body>
+	Product was foundNot found attributes found	<!-- begin #header -->
+	<div id="header" class="header navbar navbar-default navbar-fixed-top navbar-expand-lg">
+		<!-- begin container -->
+		<div class="container">
+			<!-- begin navbar-brand -->
+			<a href="/">
+				<img src="https://www.segway.com/wp-content/uploads/2021/01/segway-logo-new-dark.png" alt="dark logo" style="height:48px;">
+			</a>
+			<!-- end navbar-brand -->
+			<!-- begin navbar-toggle -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- end navbar-toggle -->
+			<!-- begin navbar-collapse -->
+			<div class="collapse navbar-collapse" id="header-navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://www.segway.com/consumers">Consumer</a></li>
+					<li><a href="https://www.segway.com/professionals">Professionals</a></li>
+					<li><a href="https://b2b.segway.com/">Commercial</a></li>
+					<li><a href="https://powersports.segway.com/">Powersports</a></li>
+					<li><a href="https://robotics.segway.com/">Robotics</a></li>
+					<li><a href="https://navimow.segway.com/">Robotic Mower</a></li>
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Explore <b class="caret"></b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://www.segway.com/about-us/">About us</a>
+							<a class="dropdown-item" href="https://www.segway.com/brand-ambassador/">Brand Ambassador Program</a>
+							<a class="dropdown-item" href="https://www.segway.com/android-app/">APP for Android</a>
+							<a class="dropdown-item" href="https://www.segway.com/events/">Events</a>
+							<a class="dropdown-item" href="https://www.segway.com/segway-2022-models-gt1-gt2-p65-p100-e110a-c80/">Blogs</a>
+							<a class="dropdown-item" href="https://www.segway.com/community/">Community</a>
+							<a class="dropdown-item" href="https://www.segway.com/newsroom/">Newsroom</a>
+							<a class="dropdown-item" href="https://www.segway.com/trophy-room/">Trophy Room</a>
+							<a class="dropdown-item" href="https://www.segway.com/careers">Career</a>
+							<a class="dropdown-item" href="https://www.segway.com/contact-us/">Contact Us</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">Support <b class="caret"></b></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://www.segway.com/safety/">Safety</a>
+							<a class="dropdown-item" href="https://store.segway.com/new_parts">Parts & Services</a>
+							<a class="dropdown-item" href="https://www.segway.com/service-locations/">Find Service Center</a>
+							<a class="dropdown-item" href="https://ninebot.my.site.com/hc/s/">Consumer Customer Service</a>
+							<a class="dropdown-item" href="https://www.segway.com/after-sale-service-policies/">After Sales Service</a>
+							<a class="dropdown-item" href="https://www.segway.com/download-center/">Download Center</a>
+							<a class="dropdown-item" href="https://support.segway.com/dealer.php">Dealer Support</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- end navbar-collapse -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end #header -->
+
+
+	<!-- end #page-title -->
+	<style>
+		.category .col-md-2 div {
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 16px;
+		}
+
+		.category .col-md-2 div img {
+			box-sizing: border-box;
+			display: block;
+			margin: 8px auto;
+		}
+	</style>
+	<!-- begin #content -->
+	<div id="content" class="content" style="margin-top:16px;">
+		<!-- begin container -->
+		<div class="container">
+
+			<div class="row" style="margin-bottom:32px;">
+
+				<img src="https://segway.imgix.net/wysiwyg/2022/homepage_banner_transformer_20221130_pc.jpg??auto=format,compress" style="width:100%;margin-bottom:32px;">
+
+
+				<h4 style="font-weight:normal;margin:0;padding:0;"><a href='https://support.segway.com/product/'>All Products</a> > <a href='https://support.segway.com/support_category.php?catid=13'>GT Series</a> > <span style="font-weight:bold;">GT2</span></h4>
+
+			</div>
+						<div class="row">
+				<div class="col-md-6" style="text-align:center;">
+					<img src='https://segway.imgix.net/catalog/product/cache/1be073bb625205c2a3aab025b4fe3368/2/1/21.png?auto=format%2Ccompress&dpr=1&q=75&w=700' alt='GT2' style='max-height:320px;margin:0 auto;'>				</div>
+				<div class="col-md-6" style="padding-top:32px;">
+					<h4></h4>
+					<h1 style="font-weight:bold;">GT2</h1>
+					<p>Bringing you an experience that’s faster, stronger, and ever-better, Segway presents the latest super scooter–the GT2 fast electric scooter. Catch the wind with us at nearly 44mph an hour, shooting from 0-30mph in less than four seconds.</p>
+					<a href=https://store.segway.com/segway-superscooter-gt2
+ class='btn btn-primary' target=_blank>Shop Now</a>					<!--
+					<a href="https://store.segway.com/segway-superscooter-gt2
+" class="btn btn-primary" target=_blank>Shop Now</a>
+					-->
+
+
+
+
+
+					<a href="https://ninebot.my.salesforce-sites.com/webchat" class="btn btn-primary" target=_blank>Live Chat</a>
+					<!--
+					<h4 style="font-weight:bold;margin:16px 0;">Related Contents</h4>
+					<ol>
+						<li>ES2 Video</li>
+						<li>Android APP</li>
+					</ol>
+					-->
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<hr>
+			</div>
+			<div class="row">
+
+				<style>
+					.nav-pills .nav-link.active {
+						border: 0;
+						background-color: #000;
+						color: #FFF;
+						border: 1px solid #FFF;
+					}
+
+					.nav-pills .nav-link {
+						border: 1px solid #CCC;
+						border-radius: 24px;
+						padding: 12px 18px;
+						margin-right: 16px;
+					}
+
+					.wpb_wrapper td {
+						padding: 8px;
+						border-right: 1px solid #CCC;
+						border-bottom: 1px solid #CCC;
+					}
+
+					.wpb_wrapper th {
+						padding: 8px;
+						border-right: 1px solid #CCC;
+						border-bottom: 1px solid #CCC;
+					}
+
+					.wpb_wrapper table {
+						border-left: 1px solid #CCC;
+						border-top: 1px solid #CCC;
+						width: 100%;
+					}
+
+					.wpb_wrapper h3 {
+						margin-top: 24px;
+					}
+
+					.title-semi {
+						width: 300px;
+					}
+				</style>
+
+				<div class="col-md-12">
+					<ul class="nav nav-pills mb-2">
+						<li class="nav-item">
+							<a href="#nav-pills-tab-1" data-toggle="tab" class="nav-link active">
+								<span class="d-sm-block d-none">Specifications</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#nav-pills-tab-2" data-toggle="tab" class="nav-link">
+								<span class="d-sm-block d-none">Manuals & Downloads</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#nav-pills-tab-3" data-toggle="tab" class="nav-link">
+								<span class="d-sm-block d-none">Videos</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#nav-pills-tab-4" data-toggle="tab" class="nav-link">
+								<span class="d-sm-block d-none">FAQ</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href='https://store.segway.com/parts/super-scooters/gt2
+' target=_blank class='nav-link'>							<span class="d-sm-block d-none">Parts</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+
+				<div class="col-md-12">
+										<div class="tab-content p-15 rounded bg-white mb-4" style="margin-top:32px;">
+						<!-- begin Specifications -->
+						<div class="tab-pane fade active show" id="nav-pills-tab-1">
+							<div class='vc_row wpb_row vc_inner vc_row-fluid qodef-section spec-inner qodef-content-aligment-left' style=''>
+																<div class='qodef-full-section-inner'>
+																	<div class='wpb_column vc_column_container vc_col-sm-12 vc_col-xs-12'>
+																		<div class='vc_column-inner'>
+																			<div class='wpb_wrapper'>
+																				<div class='wpb_text_column wpb_content_element '>
+																					<div class='wpb_wrapper'>
+																						<h3>Specifications</h3>
+
+																					</div>
+																				</div>
+
+																				<div class='wpb_raw_code wpb_content_element wpb_raw_html'>
+																					<div class='wpb_wrapper'>
+																						<table>
+<tbody><tr><th style="width: 20%"></th>
+            <th style="width: 40%">GT1</th>
+            <th style="width: 40%">GT2</th>
+        </tr>
+
+
+        <tr>
+            <th style="width: 20%">Top Speed</th>
+            <td style="width: 40%">37.3 mph (60 kph)</td>
+            <td style="width: 40%">43.5 mph (70 kph)</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Rated Power</th>
+            <td style="width: 40%">1400W</td>
+            <td style="width: 40%">2 x 1500W</td>
+        </tr>
+        <tr>
+            <th style="width: 20%">Peak Power</th>
+            <td style="width: 40%">3000W</td>
+            <td style="width: 40%">2 x 3000W</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">0-30 mph Acceleration</th>
+            <td style="width: 40%">7.5 seconds</td>
+            <td style="width: 40%">3.9 seconds</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Drivetrain</th>
+            <td style="width: 40%">Rear wheel drive</td>
+            <td style="width: 40%">Dual wheel drive</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Max Range</th>
+            <td style="width: 40%">43.5 miles (70 km)</td>
+            <td style="width: 40%">55.9 miles (90 km)</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Battery Capacity</th>
+            <td style="width: 40%">1008 Wh</td>
+            <td style="width: 40%">1512 Wh</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Charging Time</th>
+            <td style="width: 40%">11 hrs (with 1 charge, 2 chargers compatible</td>
+            <td style="width: 40%">8 hrs</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Net Weight</th>
+            <td style="width: 40%">108.5 lbs (48 kg)</td>
+            <td style="width: 40%">116.8 lbs (53 kg)</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Display Type</th>
+            <td style="width: 40%">Digital Diplay</td>
+            <td style="width: 40%">Transparent PMOLED Display</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Suspension System</th>
+            <td style="width: 40%">Front/Rear Damp Adjustable Suspension</td>
+            <td style="width: 40%">Front/Rear Damp Adjustable Suspension</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Maximum Payload</th>
+            <td style="width: 40%">330 lbs (150 kg)</td>
+            <td style="width: 40%">330 lbs (150 kg)</td>
+        </tr>
+
+        <tr>
+            <th style="width: 20%">Tire Diameter</th>
+            <td style="width: 40%">11 inches</td>
+            <td style="width: 40%">11 inches</td>
+        </tr>
+</tbody></table>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div><div class='vc_row wpb_row vc_inner vc_row-fluid qodef-section spec-inner qodef-content-aligment-left' style=''>
+																<div class='qodef-full-section-inner'>
+																	<div class='wpb_column vc_column_container vc_col-sm-12 vc_col-xs-12'>
+																		<div class='vc_column-inner'>
+																			<div class='wpb_wrapper'>
+																				<div class='wpb_text_column wpb_content_element '>
+																					<div class='wpb_wrapper'>
+																						<h3>Specifications</h3>
+
+																					</div>
+																				</div>
+
+																				<div class='wpb_raw_code wpb_content_element wpb_raw_html'>
+																					<div class='wpb_wrapper'>
+																						<table><tbody><tr><th>Product	</th><td>Name</td><td>Segway SuperScooter GT2</td></tr><tr><th></th><td>Model</td><td>GT2P</td></tr><tr><th></th><td>Length × Width × Height	</td><td>Approx. 58.5 × 25.8 × 51.5 in (1485 × 656 × 1308 mm)</td></tr><tr><th></th><td>Folded: Length × Width × Height	</td><td>Approx. 58.5 × 25.8 × 33.9 in (1485 × 656 × 860 mm)</td></tr><tr><th></th><td>Net Weight	</td><td>Approx. 52.6 kg (116 lbs)</td></tr><tr><th>Rider</th><td>Max. Payload	</td><td>150 kg (331 lbs)</td></tr><tr><th></th><td>Recommended Age	</td><td>Recommended Age	</td></tr><tr><th></th><td>Required Height	</td><td>3’11”–6’6”(120–200 cm)</td></tr><tr><th>Machine</th><td>Wheelbase</td><td>45.2 in (1147 mm)</td></tr><tr><th></th><td>Ground Clearance	</td><td>5.5 in (140 mm)</td></tr><tr><th></th><td>Drive System	</td><td>2WD (Two-wheel drive)</td></tr><tr><th></th><td>Max. Speed[1]	</td><td>Approx. 43.5 mph (70 km/h )</td></tr><tr><th></th><td>Theoretical Range[2]	</td><td>Approx. 55.9 miles (90 km)</td></tr><tr><th></th><td>Typical Range[3]	</td><td>Approx. 37.3 miles (60 km)</td></tr><tr><th></th><td>Max. Slope	</td><td>Approx. 30%</td></tr><tr><th></th><td>Traversable Terrain	</td><td>Asphalt/flat pavement; obstacles < 1.2 in (3 cm); gaps < 1.2 in (3 cm)</td></tr><tr><th></th><td>Operating Temperature	</td><td>-10 to 40°C (14 to 104°F)</td></tr><tr><th></th><td>Storage Temperature	</td><td>-20 to 45°C (-4 to 113°F)</td></tr><tr><th></th><td>IP Rating	</td><td>IPX4</td></tr><tr><th></th><td>Duration of Charging (single)</td><td>Approx. 16 h</td></tr><tr><th></th><td>Duration of Charging (dual)	</td><td>Approx. 8 h</td></tr><tr><th>Battery	</th><td>Model</td><td>NDAF5030A</td></tr><tr><th></th><td>Nominal Voltage	</td><td>50.4 V</td></tr><tr><th></th><td>Max. Charging Voltage	</td><td>58.8 V</td></tr><tr><th></th><td>Nominal Energy	</td><td>1512 Wh</td></tr><tr><th></th><td>Nominal Capacity	</td><td>30 Ah</td></tr><tr><th></th><td>Charging Ambient Temperature	</td><td>0 to 40°C (32 to 104°F )</td></tr><tr><th></th><td>Battery Management System	</td><td>Over-heating, short circuit, over-current, over-discharge and over-charge protection</td></tr><tr><th>Motor</th><td>Motor Type	</td><td>Air cooled hub motor</td></tr><tr><th></th><td>Nominal Power	</td><td>1.5 kW*2, 1500 W*2</td></tr><tr><th></th><td>Max. power	</td><td>3 kW*2, 3000 W*2</td></tr><tr><th>Charger	</th><td>Model</td><td>NBW58D802D0D</td></tr><tr><th></th><td>Output Power	</td><td>0.1 kW, 115.6 W</td></tr><tr><th></th><td>Input Voltage	</td><td>100–240 V~</td></tr><tr><th></th><td>Max. Output Voltage	</td><td>58.8 V</td></tr><tr><th></th><td>Rated Output	</td><td>57.8 V 2.0 A</td></tr><tr><th>Tire</th><td>Type	</td><td>11-inch Self-sealing tubeless tires</td></tr><tr><th></th><td>Tire Pressure	</td><td>32 psi</td></tr><tr><th></th><td>Material	</td><td>Rubber</td></tr><tr><th>Others</th><td>Speed Modes	</td><td>WALK mode, PARK mode, ECO mode, SPORT mode and RACE mode</td></tr><tr><th></th><td>Suspension System	</td><td>Front and rear spring suspension</td></tr><tr><th></th><td></td><td>Front and rear adjustable damper</td></tr><tr><th></th><td>Brake System	</td><td>Front & Rear disc brakes</td></tr></tbody></table>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>						</div>
+						<!-- end Specifications -->
+						<!-- begin Manuals and Docs -->
+						<div class="tab-pane fade" id="nav-pills-tab-2">
+							<div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section spec-inner qodef-content-aligment-left" style="">
+								<div class="qodef-full-section-inner">
+									<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-xs-12">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+
+												<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+													<div class="wpb_wrapper">
+														<table>
+
+															<tr>
+																	<th class='title-semi'>Segway SuperScooter GT Series Important Information.pdf</th>
+																	<td style='text-align:center'>
+																		<a href='https://support.segway.com/product_files/20230616022640_Segway SuperScooter GT Series Important Information.pdf' target='_blank' class='btn btn-info btn-rounded' style='color:white'>Download
+
+																		</a>
+																	</td>
+																</tr><tr>
+																	<th class='title-semi'>Segway SuperScooter GT Series Product Manual.pdf</th>
+																	<td style='text-align:center'>
+																		<a href='https://support.segway.com/product_files/20230616022702_Segway SuperScooter GT Series Product Manual.pdf' target='_blank' class='btn btn-info btn-rounded' style='color:white'>Download
+
+																		</a>
+																	</td>
+																</tr><tr>
+																	<th class='title-semi'>Segway SuperScootet GT Series User Manual.pdf</th>
+																	<td style='text-align:center'>
+																		<a href='https://support.segway.com/product_files/20230725032643_Segway SuperScootet GT Series User Manual.pdf' target='_blank' class='btn btn-info btn-rounded' style='color:white'>Download
+
+																		</a>
+																	</td>
+																</tr><tr>
+																	<th class='title-semi'>Segway Superscooter GT-Series Limited Warranty.pdf</th>
+																	<td style='text-align:center'>
+																		<a href='https://support.segway.com/product_files/20230810035350_Segway Superscooter GT-Series Limited Warranty.pdf' target='_blank' class='btn btn-info btn-rounded' style='color:white'>Download
+
+																		</a>
+																	</td>
+																</tr>
+
+															<!--
+															<tr>
+																<th class="title-semi">User Manual</th>
+																<td>
+																	<a href="/wp-content/uploads/2019/11/kickscooter-es2-user-manual.pdf" target="_blank" class="btn btn-primary">Download
+
+																	</a>
+																</td>
+															</tr>
+
+															<tr>
+																<th class="title-semi">Quick Start Guide</th>
+																<td>
+																	<a href="/wp-content/uploads/2019/11/Ninebot-by-Segway-KickScooter-Quick-Start-Guide.pdf" target="_blank" class="btn btn-primary">Download
+																</td>
+															</tr>
+															<tr>
+																<th class="title-semi">Warranty</th>
+																<td>
+																	<a href="/wp-content/uploads/2019/11/kickscooter-es2-warranty.pdf" target="_blank" class="btn btn-primary">Download
+																	</a>
+																</td>
+															</tr>
+														-->
+
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+
+						</div>
+						<!-- end Manauls and Docs -->
+						<!-- begin tab-pane -->
+						<div class="tab-pane fade" id="nav-pills-tab-3">
+							<div class='row'>
+								<div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Unboxing + Activation</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/ObMbAClxqro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>GT2 Walkthrough</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/lfvwswkgips" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Engine Speaker Pairing Tutorial</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/XLm334YviKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Handlebar Adjustment</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/iNFCTIhy-0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Shock Absorber & Lower Connecting Rod Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/_bo2NpGib7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>GT-2 Controller Replacement </h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/6OeHmG5bbJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Ambient Light Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/oYtKoe43NGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Battery Assembly Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/hKdb6Ze7K6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Brake Oil Bleeding Tutorial</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/kjF6F2JPAEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Brake Pads Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/1o8dDNQKAEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Bumper Strip Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/LOqCATlvoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Caliper Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/8eanXs-gKbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Charging Port Cover Assembly Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/xtqHt5nja-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Connecting Frame Assembly Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/xtqHt5nja-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Dashboard Assembly Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/Inaxq6PtbcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Decorative Vent Plate Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/wDqPrYqaT9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Folding Standpipe Adjustment</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/8cdgLBOO4BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Turn Signals Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/fPF3YLakOo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Footpad Base Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/S8CrRvfe_qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Frame Reflector</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/UPNgzORq9w0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Fender Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/GLkelkPUy6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Motor Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/v1JJS8VhxmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Suspension Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/OU2BT0PyuwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Reflector Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/FD8AfIX30Ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Front Wheel Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/Zqd2ktXdsY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Headlight Assembly Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/mIXwB9WOg0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Kickstand Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/DyGCpBk9pY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Knob Module Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/nJb5k318GDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Left Brake Lever Repalcement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/SQEQdSvrJpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Light Harness Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/Jd7iHIo6CTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Motor Shaft Decorative Cover Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/abt5cPD0aB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Rear Fender Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/nqettNRyxVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Rear Motor Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/f3rbBe_Y-hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Rear Suspension Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/yzO169s72_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Rear Turn Signal Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/RypI6TENOaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Rear Wheel Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/_uDFbNLwGrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Right Brake Lever Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/O8b_pyAF-ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Taillight Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/oDRZNfVsDBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Throttle Calibration</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/WsoEiLOecLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>External Charging Port Cover Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/hsnKBameWDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot F and D Series How-to Disassemble</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/pt4ZLDES9l4?si=hb0FKLIaZ_LGkc1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot GT Series How-to Assemble</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/mmrRB43tVN0?si=ncVxAhYJcNhWTAKi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot GT Series How to Assemble Throttle & Brake Assembly</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/BvJqly-0-IQ?si=AdWXfDF24BGnIRIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot GT Series How to Disassemble Throttle & Brake Assembly</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/jmdT5LHYYMw?si=mz8xmSvHpsJsLAay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot GT2 Series How to Replace Control Boards</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/KN0lgvtaP8Y?si=Ueg3svjbahXOcmGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`</div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot GT Series Brake Lever Replacement</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/j5dFpd4wAZY?si=UAoL1m8Mhply7j0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr><div class='col-md-12 col-lg-12 col-xl-12 col-sm-12 m-b-20' style='text-align:left;'><h1>Segway Ninebot GT Series Brake Testing</h1><iframe width="99%" height="200" src="https://www.youtube.com/embed/DqohtAL1Y04?si=ZYfoz5-R8k2m8jEv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><hr>							</div>
+						</div>
+						<!-- end tab-pane -->
+						<!-- begin tab-pane -->
+						<div class="tab-pane fade" id="nav-pills-tab-4">
+						</div>
+						<!-- end tab-pane -->
+					</div>
+
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/js/blog/app.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	<!-- begin #footer-copyright -->
+	<div id="footer-copyright" class="footer-copyright">
+		<!-- begin container -->
+		<div class="container">
+			<span class="copyright">COPYRIGHT &copy; SEGWAY INC. ALL RIGHTS RESERVED.</span>
+			<ul class="social-media-list mt-2 mt-sm-0 float-none float-sm-right">
+				<li><a href="https://www.facebook.com/Segway/" target=_blank><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/segway/" target=_blank><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/Segway" target=_blank><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/user/SegwayVideos" target=_blank><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end #footer-copyright -->
+
+
+</body>
+
+</html>

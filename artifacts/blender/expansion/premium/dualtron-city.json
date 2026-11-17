@@ -1,0 +1,26 @@
+{
+  "name": "Dualtron City",
+  "model": {
+    "key": "dualtron-city",
+    "url": "/models/expansion/premium/dualtron-city.glb",
+    "nativeSource": "assets/blender/expansion/premium/dualtron-city.blend",
+    "triangles": 51628,
+    "meshes": 35,
+    "bytes": 1393800,
+    "family": "Dualtron City exterior"
+  },
+  "bounds": [
+    [
+      -0.7342000007629395,
+      -0.30500003695487976,
+      0.0
+    ],
+    [
+      0.7099999785423279,
+      0.3050000071525574,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Distinctive very large fifteen-inch road wheels, long neck and removable battery deck.",
+  "revision": 2
+}

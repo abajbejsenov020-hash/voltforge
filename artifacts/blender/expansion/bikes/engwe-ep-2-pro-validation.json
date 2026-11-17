@@ -1,0 +1,29 @@
+{
+  "name": "Engwe EP-2 Pro",
+  "key": "engwe-ep-2-pro",
+  "dimensions_m": [
+    1.858,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 28916,
+  "meshes": 36,
+  "bytes": 910504,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "engwe-ep-2-pro.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

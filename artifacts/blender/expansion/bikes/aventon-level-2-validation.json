@@ -1,0 +1,29 @@
+{
+  "name": "Aventon Level.2",
+  "key": "aventon-level-2",
+  "dimensions_m": [
+    1.9402,
+    0.6634,
+    1.069
+  ],
+  "triangles": 26516,
+  "meshes": 33,
+  "bytes": 718352,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "aventon-level-2.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

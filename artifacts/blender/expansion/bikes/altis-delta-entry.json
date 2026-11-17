@@ -1,0 +1,26 @@
+{
+  "name": "Altis Delta",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/altis-delta.webp",
+  "source": "https://globalbike.co/products/altis-delta",
+  "imageSource": "https://globalbike.co/cdn/shop/files/4.jpg?v=1773634456&width=1646",
+  "credit": "globalbike.co",
+  "variantNote": "Altis Delta Electric Dirt Bike | Lightweight Electric Pit Bike",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    903
+  ],
+  "bytes": 90284,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "altis-delta",
+    "url": "/models/expansion/bikes/altis-delta.glb",
+    "nativeSource": "assets/blender/expansion/bikes/altis-delta.blend",
+    "triangles": 37536,
+    "meshes": 48,
+    "bytes": 1740416,
+    "family": "delta"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Varla Eagle One",
+  "model": {
+    "key": "varla-eagle-one",
+    "url": "/models/expansion/premium/varla-eagle-one.glb",
+    "nativeSource": "assets/blender/expansion/premium/varla-eagle-one.blend",
+    "triangles": 53420,
+    "meshes": 34,
+    "bytes": 1402244,
+    "family": "Varla Eagle One verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.3499999940395355,
+      0.000238936030655168
+    ],
+    [
+      0.6267610788345337,
+      0.3499999940395355,
+      1.3399930000305176
+    ]
+  ],
+  "observed": "Original2021 manufacturer EagleOne package photo: red open C arms, black telescopic stem, black rectangular deck and knobby ten-inch tyres.",
+  "revision": 2
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Cube Stereo Hybrid",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cube-stereo-hybrid.webp",
+  "source": "https://www.bikester.nl/products/cube-stereo-hybrid-one44-hpc-race-800-smaragdgrey-n-prism",
+  "imageSource": "https://www.bikester.nl/cdn/shop/files/4e3cf5d5ed39eb821530dffb936552cce832e9b1_6f601d044a91b340.png?v=1772500056",
+  "credit": "www.bikester.nl",
+  "variantNote": "Cube Stereo Hybrid ONE44 HPC Race 800 (2026) | 27,5/29 inch E-MTB Fully | smaragdgrey\u00b4n\u00b4prism | bikester.nl (https://www.bikester.nl/products/cube-stereo-hybrid-one44-hpc-race-800-smaragdgrey-n-prism)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    691
+  ],
+  "bytes": 89580,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "cube-stereo-hybrid",
+    "url": "/models/expansion/bikes/cube-stereo-hybrid.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cube-stereo-hybrid.blend",
+    "triangles": 29604,
+    "meshes": 31,
+    "bytes": 943460,
+    "family": "fullmtb"
+  }
+}

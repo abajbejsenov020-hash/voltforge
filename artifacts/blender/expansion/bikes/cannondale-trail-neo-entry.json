@@ -1,0 +1,26 @@
+{
+  "name": "Cannondale Trail Neo",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cannondale-trail-neo.webp",
+  "source": "https://www.cannondale.com/en/bikes/electric/e-mountain/trail-neo/trail-neo-3",
+  "imageSource": "https://embed.widencdn.net/img/dorelrl/vjjk3ba82s/2000px%401x/C23_C61303U_Trail_Neo_3_ORG_PD.png",
+  "credit": "www.cannondale.com",
+  "variantNote": "Trail Neo 3 | Hardtail Electric Mountain Bikes | Cannondale (https://www.cannondale.com/en/bikes/electric/e-mountain/trail-neo/trail-neo-3)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    688
+  ],
+  "bytes": 170306,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "cannondale-trail-neo",
+    "url": "/models/expansion/bikes/cannondale-trail-neo.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cannondale-trail-neo.blend",
+    "triangles": 29056,
+    "meshes": 27,
+    "bytes": 923944,
+    "family": "hardtail"
+  }
+}

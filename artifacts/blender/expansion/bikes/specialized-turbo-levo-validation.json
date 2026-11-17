@@ -1,0 +1,29 @@
+{
+  "name": "Specialized Turbo Levo",
+  "key": "specialized-turbo-levo",
+  "dimensions_m": [
+    1.98,
+    0.6634,
+    1.0947
+  ],
+  "triangles": 29908,
+  "meshes": 29,
+  "bytes": 957404,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "specialized-turbo-levo.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

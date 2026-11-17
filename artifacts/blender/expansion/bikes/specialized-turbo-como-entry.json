@@ -1,0 +1,26 @@
+{
+  "name": "Specialized Turbo Como",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/specialized-turbo-como.webp",
+  "source": "https://steedcycles.com/products/specialized-turbo-como-3-0-2",
+  "imageSource": "https://steedcycles.com/cdn/shop/products/Specialized2022TurboComo3.0RedTint_SilverReflective_1080x.jpg?v=1632345679",
+  "credit": "steedcycles.com",
+  "variantNote": "Specialized Turbo Como 3.0",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "bytes": 99726,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "specialized-turbo-como",
+    "url": "/models/expansion/bikes/specialized-turbo-como.glb",
+    "nativeSource": "assets/blender/expansion/bikes/specialized-turbo-como.blend",
+    "triangles": 30760,
+    "meshes": 29,
+    "bytes": 939336,
+    "family": "stepcurve"
+  }
+}

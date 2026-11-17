@@ -1,0 +1,29 @@
+{
+  "name": "Specialized Turbo Kenevo",
+  "key": "specialized-turbo-kenevo",
+  "dimensions_m": [
+    2.03,
+    0.6634,
+    1.0947
+  ],
+  "triangles": 32536,
+  "meshes": 30,
+  "bytes": 1007192,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "specialized-turbo-kenevo.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

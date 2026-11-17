@@ -1,0 +1,29 @@
+{
+  "name": "Giant Reign E+",
+  "key": "giant-reign-e-plus",
+  "dimensions_m": [
+    2.02,
+    0.6634,
+    1.0947
+  ],
+  "triangles": 29048,
+  "meshes": 31,
+  "bytes": 923336,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "giant-reign-e.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

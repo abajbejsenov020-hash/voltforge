@@ -1,0 +1,26 @@
+{
+  "name": "Lectric XP 3.0",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/lectric-xp-3-0.webp",
+  "source": "https://lectricebikes.com/pages/promos",
+  "imageSource": "https://lectricebikes.com/cdn/shop/files/BST-comfort.webp?v=1722495414&width=1920",
+  "credit": "lectricebikes.com",
+  "variantNote": "Find eBikes for Sale | Best eBike Deals | Lectric",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 101008,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "lectric-xp-3-0",
+    "url": "/models/expansion/bikes/lectric-xp-3-0.glb",
+    "nativeSource": "assets/blender/expansion/bikes/lectric-xp-3-0.blend",
+    "triangles": 29764,
+    "meshes": 32,
+    "bytes": 922328,
+    "family": "foldstep"
+  }
+}

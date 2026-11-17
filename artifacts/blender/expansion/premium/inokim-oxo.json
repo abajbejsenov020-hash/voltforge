@@ -1,0 +1,26 @@
+{
+  "name": "Inokim OXO",
+  "model": {
+    "key": "inokim-oxo",
+    "url": "/models/expansion/premium/inokim-oxo.glb",
+    "nativeSource": "assets/blender/expansion/premium/inokim-oxo.blend",
+    "triangles": 47732,
+    "meshes": 34,
+    "bytes": 1244588,
+    "family": "Inokim OXO exterior"
+  },
+  "bounds": [
+    [
+      -0.6530500650405884,
+      -0.28999999165534973,
+      0.0
+    ],
+    [
+      0.6320000290870667,
+      0.28999996185302734,
+      1.3599929809570312
+    ]
+  ],
+  "observed": "2026 OXO photograph: sculpted lime/yellow single-sided C arms, gray body and dual black hubs.",
+  "revision": 2
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Fiido D21",
+  "key": "fiido-d21",
+  "dimensions_m": [
+    1.51,
+    0.6634,
+    1.1647
+  ],
+  "triangles": 26904,
+  "meshes": 28,
+  "bytes": 845788,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "fiido-d21.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Battery/controller locations are approximate service envelopes based on the exterior reference."
+}

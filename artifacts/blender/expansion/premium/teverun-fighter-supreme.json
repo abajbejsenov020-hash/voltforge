@@ -1,0 +1,26 @@
+{
+  "name": "Teverun Fighter Supreme",
+  "model": {
+    "key": "teverun-fighter-supreme",
+    "url": "/models/expansion/premium/teverun-fighter-supreme.glb",
+    "nativeSource": "assets/blender/expansion/premium/teverun-fighter-supreme.blend",
+    "triangles": 56320,
+    "meshes": 36,
+    "bytes": 1519520,
+    "family": "Teverun Fighter Supreme verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.7117000818252563,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6899999976158142,
+      0.32499998807907104,
+      1.4399930238723755
+    ]
+  ],
+  "observed": "FighterSupreme 72V base family distributor photo: long black sport chassis, high black kickplate and large smooth road wheels.",
+  "revision": 2
+}

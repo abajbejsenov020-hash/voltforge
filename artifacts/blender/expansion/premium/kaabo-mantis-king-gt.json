@@ -1,0 +1,26 @@
+{
+  "name": "Kaabo Mantis King GT",
+  "model": {
+    "key": "kaabo-mantis-king-gt",
+    "url": "/models/expansion/premium/kaabo-mantis-king-gt.glb",
+    "nativeSource": "assets/blender/expansion/premium/kaabo-mantis-king-gt.blend",
+    "triangles": 55664,
+    "meshes": 36,
+    "bytes": 1505444,
+    "family": "Kaabo Mantis King GT exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.33000001311302185,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.33000001311302185,
+      1.3499929904937744
+    ]
+  ],
+  "observed": "Black deck, red neck/arm accents, prominent front and rear hydraulic coils and red locking collar.",
+  "revision": 2
+}

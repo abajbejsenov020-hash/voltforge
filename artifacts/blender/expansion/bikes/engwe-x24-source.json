@@ -1,0 +1,496 @@
+{
+  "name": "Engwe X24",
+  "source": "https://engwe.com/products/engwe-x26-x24-x20",
+  "checked": [
+    "https://engwe.com/products/engwe-x26-x24-x20"
+  ],
+  "title": "ENGWE X26/X24/X20",
+  "images": [
+    {
+      "id": 34956389908537,
+      "created_at": "2024-11-21T13:34:23+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T14:09:37+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [
+        44078485110841
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x26_f3963c89-ad83-4ebe-aaa8-4d028903be3e.jpg?v=1794550177",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955992039481,
+      "created_at": "2024-11-21T11:41:14+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T13:45:00+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_cb18048f-d999-4dc9-9a8a-d4e6eeec1149.jpg?v=1794548700",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956030443577,
+      "created_at": "2024-11-21T11:50:24+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:39:58+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X24_33212b9e-6894-4a49-bf2f-d4f7e85dc991.jpg?v=1794548398",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956389843001,
+      "created_at": "2024-11-21T13:34:24+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T13:45:30+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X26_bf4cb242-1960-4d56-b327-5e0cee2da23f.jpg?v=1794548730",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955992137785,
+      "created_at": "2024-11-21T11:41:16+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T14:09:03+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [
+        44078485176377,
+        44752189915193
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_8308261d-ba56-475e-a2b0-e249eaefb47f.png?v=1794550143",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955992072249,
+      "created_at": "2024-11-21T11:41:13+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:45:24+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [
+        44078485274681,
+        44752189947961
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x20_e3fff1a3-5c90-4d30-8217-c8e20ceeda91.jpg?v=1794548724",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955991941177,
+      "created_at": "2024-11-21T11:41:15+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T13:40:54+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_2_d8dcfdd4-23e6-4678-9a7c-8d4581631a19.jpg?v=1794548454",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955991842873,
+      "created_at": "2024-11-21T11:41:14+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T14:09:43+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_d34ff54c-2a81-41cc-b0a4-a860bd1dfbd6.jpg?v=1794550183",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955991973945,
+      "created_at": "2024-11-21T11:41:14+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T13:43:22+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_4_edbf8c79-0a90-487d-b3cc-d5d3cad9486b.jpg?v=1794548602",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34955991908409,
+      "created_at": "2024-11-21T11:41:14+08:00",
+      "position": 10,
+      "updated_at": "2026-11-13T13:44:52+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_8650cc3b-a7d7-4286-929d-25195e5a99f6.jpg?v=1794548692",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956030476345,
+      "created_at": "2024-11-21T11:50:23+08:00",
+      "position": 11,
+      "updated_at": "2026-11-13T13:39:34+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [
+        44078485143609
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_1564c138-6a57-4af7-9781-8b48fe918a1a.jpg?v=1794548374",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956030541881,
+      "created_at": "2024-11-21T11:50:25+08:00",
+      "position": 12,
+      "updated_at": "2026-11-13T13:42:32+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X26_24_20.png?v=1794548552",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956030509113,
+      "created_at": "2024-11-21T11:50:24+08:00",
+      "position": 13,
+      "updated_at": "2026-11-13T13:44:02+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [
+        44078485241913
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_671f6fa1-4feb-4e76-b585-9114bcfc6599.jpg?v=1794548642",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956030574649,
+      "created_at": "2024-11-21T11:50:25+08:00",
+      "position": 14,
+      "updated_at": "2026-11-13T13:42:04+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_1_81d36b9d-ab75-4b94-b1c8-0eaaf0854213.jpg?v=1794548524",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956030607417,
+      "created_at": "2024-11-21T11:50:25+08:00",
+      "position": 15,
+      "updated_at": "2026-11-13T13:43:40+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_2_c2f43856-d7c6-4194-b515-2e44033a0af1.jpg?v=1794548620",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956389875769,
+      "created_at": "2024-11-21T13:34:23+08:00",
+      "position": 16,
+      "updated_at": "2026-11-13T13:41:02+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [
+        44078485209145
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x26_133becda-91f4-4940-8549-a221c01b39c0.jpg?v=1794548462",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956389941305,
+      "created_at": "2024-11-21T13:34:25+08:00",
+      "position": 17,
+      "updated_at": "2026-11-13T13:45:50+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X26_dbb1bbcf-71b4-4a37-9240-3674fc13a33b.png?v=1794548750",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956389777465,
+      "created_at": "2024-11-21T13:34:24+08:00",
+      "position": 18,
+      "updated_at": "2026-11-13T13:42:28+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X26_2_d197b84d-fa64-4a07-acb0-c321988a39d7.jpg?v=1794548548",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34956389810233,
+      "created_at": "2024-11-21T13:34:24+08:00",
+      "position": 19,
+      "updated_at": "2026-11-13T13:44:28+08:00",
+      "product_id": 7777384267833,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X26_3_752bd5cb-8474-4b41-a9b3-d45973e3518d.jpg?v=1794548668",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44078485110841,
+      "title": "X26 29.2Ah Dual Batteries / Grey",
+      "option1": "X26 29.2Ah Dual Batteries",
+      "option2": "Grey",
+      "option3": null,
+      "sku": "EUX26DualBatteriesGrey",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34956389908537,
+        "product_id": 7777384267833,
+        "position": 1,
+        "created_at": "2024-11-21T13:34:23+08:00",
+        "updated_at": "2026-11-13T14:09:37+08:00",
+        "alt": "a grey engwe x26 full suspension cycle",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x26_f3963c89-ad83-4ebe-aaa8-4d028903be3e.jpg?v=1794550177",
+        "variant_ids": [
+          44078485110841
+        ]
+      },
+      "available": true,
+      "price": "1999.00",
+      "grams": 0,
+      "compare_at_price": "2199.00",
+      "position": 1,
+      "product_id": 7777384267833,
+      "created_at": "2024-11-22T17:16:39+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44078485209145,
+      "title": "X26 29.2Ah Dual Batteries / Black",
+      "option1": "X26 29.2Ah Dual Batteries",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUX26DualBatteriesBlack",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34956389875769,
+        "product_id": 7777384267833,
+        "position": 16,
+        "created_at": "2024-11-21T13:34:23+08:00",
+        "updated_at": "2026-11-13T13:41:02+08:00",
+        "alt": "a black engwe x26 full sus bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x26_133becda-91f4-4940-8549-a221c01b39c0.jpg?v=1794548462",
+        "variant_ids": [
+          44078485209145
+        ]
+      },
+      "available": true,
+      "price": "1999.00",
+      "grams": 0,
+      "compare_at_price": "2199.00",
+      "position": 2,
+      "product_id": 7777384267833,
+      "created_at": "2024-11-22T17:16:39+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44752189915193,
+      "title": "X20 Single Battery / Grey",
+      "option1": "X20 Single Battery",
+      "option2": "Grey",
+      "option3": null,
+      "sku": "X20SinglebatteryGY",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34955992137785,
+        "product_id": 7777384267833,
+        "position": 5,
+        "created_at": "2024-11-21T11:41:16+08:00",
+        "updated_at": "2026-11-13T14:09:03+08:00",
+        "alt": "a grey engwe x20 fold up electric bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_8308261d-ba56-475e-a2b0-e249eaefb47f.png?v=1794550143",
+        "variant_ids": [
+          44078485176377,
+          44752189915193
+        ]
+      },
+      "available": true,
+      "price": "1499.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 3,
+      "product_id": 7777384267833,
+      "created_at": "2025-08-06T17:59:23+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44752189947961,
+      "title": "X20 Single Battery / Black",
+      "option1": "X20 Single Battery",
+      "option2": "Black",
+      "option3": null,
+      "sku": "X20SinglebatteryBK",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34955992072249,
+        "product_id": 7777384267833,
+        "position": 6,
+        "created_at": "2024-11-21T11:41:13+08:00",
+        "updated_at": "2026-11-13T13:45:24+08:00",
+        "alt": "a grey engwe x20 folding electric bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x20_e3fff1a3-5c90-4d30-8217-c8e20ceeda91.jpg?v=1794548724",
+        "variant_ids": [
+          44078485274681,
+          44752189947961
+        ]
+      },
+      "available": false,
+      "price": "1499.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 4,
+      "product_id": 7777384267833,
+      "created_at": "2025-08-06T17:59:23+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44078485143609,
+      "title": "X24 29.2Ah Dual Batteries / Grey",
+      "option1": "X24 29.2Ah Dual Batteries",
+      "option2": "Grey",
+      "option3": null,
+      "sku": "EUX24DualBatteriesGrey",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34956030476345,
+        "product_id": 7777384267833,
+        "position": 11,
+        "created_at": "2024-11-21T11:50:23+08:00",
+        "updated_at": "2026-11-13T13:39:34+08:00",
+        "alt": "a grey engwe x24 fat tire ebike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_1564c138-6a57-4af7-9781-8b48fe918a1a.jpg?v=1794548374",
+        "variant_ids": [
+          44078485143609
+        ]
+      },
+      "available": false,
+      "price": "1799.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 5,
+      "product_id": 7777384267833,
+      "created_at": "2024-11-22T17:16:39+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44078485241913,
+      "title": "X24 29.2Ah Dual Batteries / Black",
+      "option1": "X24 29.2Ah Dual Batteries",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUX24DualBatteriesBlack",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34956030509113,
+        "product_id": 7777384267833,
+        "position": 13,
+        "created_at": "2024-11-21T11:50:24+08:00",
+        "updated_at": "2026-11-13T13:44:02+08:00",
+        "alt": "a black engwe x24 all terrain electric bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x24_671f6fa1-4feb-4e76-b585-9114bcfc6599.jpg?v=1794548642",
+        "variant_ids": [
+          44078485241913
+        ]
+      },
+      "available": false,
+      "price": "1799.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 6,
+      "product_id": 7777384267833,
+      "created_at": "2024-11-22T17:16:39+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44078485176377,
+      "title": "X20 22.2Ah Dual Batteries / Grey",
+      "option1": "X20 22.2Ah Dual Batteries",
+      "option2": "Grey",
+      "option3": null,
+      "sku": "EUX20DualBatteriesGrey",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34955992137785,
+        "product_id": 7777384267833,
+        "position": 5,
+        "created_at": "2024-11-21T11:41:16+08:00",
+        "updated_at": "2026-11-13T14:09:03+08:00",
+        "alt": "a grey engwe x20 fold up electric bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/X20_8308261d-ba56-475e-a2b0-e249eaefb47f.png?v=1794550143",
+        "variant_ids": [
+          44078485176377,
+          44752189915193
+        ]
+      },
+      "available": false,
+      "price": "1649.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 7,
+      "product_id": 7777384267833,
+      "created_at": "2024-11-22T17:16:39+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44078485274681,
+      "title": "X20 22.2Ah Dual Batteries / Black",
+      "option1": "X20 22.2Ah Dual Batteries",
+      "option2": "Black",
+      "option3": null,
+      "sku": "EUX20DualBatteriesBlack",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34955992072249,
+        "product_id": 7777384267833,
+        "position": 6,
+        "created_at": "2024-11-21T11:41:13+08:00",
+        "updated_at": "2026-11-13T13:45:24+08:00",
+        "alt": "a grey engwe x20 folding electric bike",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/x20_e3fff1a3-5c90-4d30-8217-c8e20ceeda91.jpg?v=1794548724",
+        "variant_ids": [
+          44078485274681,
+          44752189947961
+        ]
+      },
+      "available": false,
+      "price": "1649.00",
+      "grams": 0,
+      "compare_at_price": "0.00",
+      "position": 8,
+      "product_id": 7777384267833,
+      "created_at": "2024-11-22T17:16:39+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE X26/X24/X20 Features</h2>\n<p>1. High-speed brushless motor</p>\n<p>2. 6061 Aluminum Alloy &amp; foldable frame</p>\n<p>3. Dual battery option for long range riding</p>\n<p>4. All-terrain fat tires &amp; triple suspensions for smooth riding</p>\n<h2>What About ENGWE X26/X24/X20?</h2>\n<p>The ENGWE X26, X24 and X20 folding electric bikes are designed to conquer city streets and rugged trails. These all-terrain e bikes are equipped with powerful brushless motors for superior performance, smooth acceleration and easy handling of steep slopes. Their foldable design makes them portable and convenient.</p>\n<p>These electric bikes also feature sturdy fat tires to ensure excellent stability and grip on a variety of terrains, from paved roads to gravel roads. The full suspension bicycle design effectively absorbs shocks and provides a smooth and comfortable ride even on bumpy roads. Hydraulic disc brakes enhance safety with precise stopping power, giving you confidence on every journey.</p>\n<p>Whether you are commuting or heading out for an outdoor adventure, the ENGWE X26, X24 and X20 fat tire electric bikes are your ultimate companions, combining power, durability and versatility for riders who demand more from their rides.</p>\n<h2>ENGWE X26/24/20 Fat Tire Ebikes Spec</h2>\n<table border=\"1\">\n<tbody>\n<tr>\n<td>\u00a0</td>\n<td>ENGWE X26</td>\n<td>ENGWE X24</td>\n<td>ENGWE X20</td>\n</tr>\n<tr>\n<td>Material</td>\n<td>6061 Aluminum Alloy</td>\n<td>6061 Aluminum Alloy</td>\n<td>6061 Aluminum Alloy</td>\n</tr>\n<tr>\n<td width=\"163\">Motor</td>\n<td width=\"285\">1200W High-speed Brushless Motor</td>\n<td width=\"285\">1200W High-speed Brushless Motor</td>\n<td width=\"285\">1000W High-speed Brushless Motor</td>\n</tr>\n<tr>\n<td>Torque</td>\n<td>70 Nm</td>\n<td>70 Nm</td>\n<td>65 Nm</td>\n</tr>\n<tr>\n<td>Brake</td>\n<td>Hydraulic Disc Brakes</td>\n<td>Hydraulic Disc Brakes</td>\n<td>Hydraulic Disc Brakes</td>\n</tr>\n<tr>\n<td>Top Speed</td>\n<td>25km/h</td>\n<td>25km/h</td>\n<td>25km/h</td>\n</tr>\n<tr>\n<td>Maximum Mileage</td>\n<td>150 km (ECO Mode)</td>\n<td>150 km (ECO Mode)</td>\n<td>150 km (ECO Mode)</td>\n</tr>\n<tr>\n<td>Battery</td>\n<td>48V 10Ah Lithium Battery/48V 19.2Ah Lithium Battery</td>\n<td>48V 10Ah Lithium Battery/48V 19.2Ah Lithium Battery</td>\n<td>48V 7.8Ah Lithium Battery/48V 14.4Ah Lithium Battery</td>\n</tr>\n<tr>\n<td>Charging Time</td>\n<td>About 8 Hours</td>\n<td>About 8 Hours</td>\n<td>About 7 Hours</td>\n</tr>\n<tr>\n<td>Tires</td>\n<td>26 X 4.0 Fat Tires</td>\n<td>24 X 4.0 Fat Tires</td>\n<td>20 X 4.0 Fat Tires</td>\n</tr>\n<tr>\n<td>Maximum Climbing degree</td>\n<td>30\u00b0</td>\n<td>30\u00b0</td>\n<td>30\u00b0</td>\n</tr>\n<tr>\n<td>Bike Weight</td>\n<td>Dual Battery Version: 43.6 kg (96 lbs)</td>\n<td>Dual Battery Version: 41.9 kg (92 lbs)</td>\n<td>Dual Battery Version: 37.2 kg (82 lbs)</td>\n</tr>\n<tr>\n<td>Gross Weight</td>\n<td>Dual Battery Version: 52.47 kg (115 lbs)</td>\n<td>Dual Battery Version: 49.32 kg (108 lbs)</td>\n<td>Dual Battery Version: 46.32 kg (102.11 lbs)</td>\n</tr>\n<tr>\n<td>Rider Height</td>\n<td>5.5 (ft) - 6.5 (ft)</td>\n<td>5.6 (ft) - 6.4 (ft)</td>\n<td>5.4 (ft) - 6.25 (ft)</td>\n</tr>\n<tr>\n<td>Payload Capacity</td>\n<td>150 kg (330 lbs)</td>\n<td>150 kg (330 lbs)</td>\n<td>100 kg (220.4 lbs)</td>\n</tr>\n</tbody>\n</table>"
+}

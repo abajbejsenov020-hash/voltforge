@@ -1,0 +1,26 @@
+{
+  "name": "Fiido T1",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-t1.webp",
+  "source": "https://www.geekbuying.com/item/FIIDO-T1-Cargo-Electric-Bike-20-Inch-50Km-h-48V-20AH-750W-Motor-Green-517044.html",
+  "imageSource": "https://img.gkbcdn.com/s3/d/202201/94013f85-674d-46d5-9f5e-bb573232f4f1.jpg",
+  "credit": "Fiido / Geekbuying product reference",
+  "variantNote": "Original T1 2022 green utility trim; dated retailer product gallery.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    570
+  ],
+  "bytes": 66320,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "fiido-t1",
+    "url": "/models/expansion/bikes/fiido-t1.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-t1.blend",
+    "triangles": 30480,
+    "meshes": 33,
+    "bytes": 935972,
+    "family": "cargo"
+  }
+}

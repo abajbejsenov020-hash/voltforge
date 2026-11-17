@@ -1,0 +1,26 @@
+{
+  "name": "Teverun Blade GT",
+  "model": {
+    "key": "teverun-blade-gt",
+    "url": "/models/expansion/premium/teverun-blade-gt.glb",
+    "nativeSource": "assets/blender/expansion/premium/teverun-blade-gt.blend",
+    "triangles": 55024,
+    "meshes": 36,
+    "bytes": 1467536,
+    "family": "Teverun Blade GT verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.70169997215271,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6800000071525574,
+      0.32499998807907104,
+      1.409993052482605
+    ]
+  ],
+  "observed": "BladeGT family shown as documented second-generation GTII2024: orange open C arms and orange rear foot brace, long black deck and gray stem.",
+  "revision": 2
+}

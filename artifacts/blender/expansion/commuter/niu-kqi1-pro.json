@@ -1,0 +1,49 @@
+{
+  "key": "niu-kqi1-pro",
+  "name": "NIU KQi1 Pro",
+  "family": "NIU curved-neck halo commuter",
+  "parameters": {
+    "family": "NIU curved-neck halo commuter",
+    "r": 0.115,
+    "wide": 0.028,
+    "wb": 0.88,
+    "dl": 0.51,
+    "dw": 0.16,
+    "dz": 0.17,
+    "h": 1.2,
+    "bar": 0.48,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "rear",
+    "disc": "none",
+    "lamp": "console",
+    "halo": false,
+    "body": [
+      0.06,
+      0.068,
+      0.075
+    ],
+    "accent": [
+      0.9,
+      0.35,
+      0.01
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false,
+    "frontcover": "vented",
+    "frontspokes": 8
+  },
+  "triangles": 27068,
+  "meshes": 27,
+  "bytes": 821464,
+  "source": "https://shop.niu.com/products/niu-kqi1-pro-electric-kick-scooter",
+  "reference": "/assets/vehicles/expansion/commuter/niu-kqi1-pro.webp",
+  "nativeSource": "assets/blender/expansion/commuter/niu-kqi1-pro.blend",
+  "url": "/models/expansion/commuter/niu-kqi1-pro.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

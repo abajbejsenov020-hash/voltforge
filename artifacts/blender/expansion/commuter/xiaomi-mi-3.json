@@ -1,0 +1,47 @@
+{
+  "key": "xiaomi-mi-3",
+  "name": "Xiaomi Mi 3",
+  "family": "Xiaomi curved-neck commuter",
+  "parameters": {
+    "family": "Xiaomi curved-neck commuter",
+    "r": 0.108,
+    "wide": 0.024,
+    "wb": 0.86,
+    "dl": 0.5,
+    "dw": 0.15,
+    "dz": 0.14,
+    "h": 1.14,
+    "bar": 0.43,
+    "stem": "round",
+    "fork": "rigid",
+    "rear": "rigid",
+    "motor": "front",
+    "disc": "rear",
+    "lamp": "high",
+    "halo": false,
+    "body": [
+      0.075,
+      0.085,
+      0.09
+    ],
+    "accent": [
+      0.015,
+      0.36,
+      0.74
+    ],
+    "seat": false,
+    "kick": false,
+    "signal": false,
+    "solidArm": false
+  },
+  "triangles": 27268,
+  "meshes": 27,
+  "bytes": 850112,
+  "source": "https://www.mi.com/global/product/mi-electric-scooter-3/",
+  "reference": "/assets/vehicles/expansion/commuter/xiaomi-mi-3.webp",
+  "nativeSource": "assets/blender/expansion/commuter/xiaomi-mi-3.blend",
+  "url": "/models/expansion/commuter/xiaomi-mi-3.glb",
+  "finalReferenceReview": [
+    "Material finish matched dark anodized hardware"
+  ]
+}

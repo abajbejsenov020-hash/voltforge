@@ -1,0 +1,26 @@
+{
+  "name": "Zero 10X",
+  "model": {
+    "key": "zero-10x",
+    "url": "/models/expansion/premium/zero-10x.glb",
+    "nativeSource": "assets/blender/expansion/premium/zero-10x.blend",
+    "triangles": 53812,
+    "meshes": 34,
+    "bytes": 1417336,
+    "family": "Zero 10X exterior"
+  },
+  "bounds": [
+    [
+      -0.6480500102043152,
+      -0.32499998807907104,
+      0.0
+    ],
+    [
+      0.6269999742507935,
+      0.32499998807907104,
+      1.309993028640747
+    ]
+  ],
+  "observed": "ZERO 10X black telescopic stem, red markings and red C swingarms, dual motors and rear brace.",
+  "revision": 2
+}

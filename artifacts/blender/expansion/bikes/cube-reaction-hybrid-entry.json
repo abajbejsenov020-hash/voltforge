@@ -1,0 +1,26 @@
+{
+  "name": "Cube Reaction Hybrid",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/cube-reaction-hybrid.webp",
+  "source": "https://mtbmonster.com/cube-reaction-hybrid-pro-800-2026-blackline/",
+  "imageSource": "https://cdn11.bigcommerce.com/s-h4smy34w/images/stencil/1440x1080/products/20378/52381/Cube_Reaction_pro_800_2026_-_Blackline__41547.1756883769.jpg?c=2",
+  "credit": "mtbmonster.com",
+  "variantNote": "Cube Reaction Hybrid Pro 800 2026 - Blackline | 0% Finance up to 48 months* (https://mtbmonster.com/cube-reaction-hybrid-pro-800-2026-blackline/)",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    719
+  ],
+  "bytes": 90114,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "cube-reaction-hybrid",
+    "url": "/models/expansion/bikes/cube-reaction-hybrid.glb",
+    "nativeSource": "assets/blender/expansion/bikes/cube-reaction-hybrid.blend",
+    "triangles": 29064,
+    "meshes": 26,
+    "bytes": 923620,
+    "family": "hardtail"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "assigned": 99,
+  "references": 97,
+  "ready": 97,
+  "pending": [],
+  "failures": [],
+  "unresolved": [
+    {
+      "name": "Hiley Tiger 8",
+      "type": "scooter",
+      "reason": "Manufacturer sources identify base and Pro as different motor configurations, but only Pro-specific or combined-family whole-vehicle photos were found. Exact base-model preview/appearance is withheld rather than borrowing Pro body/motor details.",
+      "sources": [
+        "https://www.hiley-mobility.com/tiger-9-electric-scooters/62829289.html",
+        "https://www.hileyrider.com/products/hiley-tiger-t8-pro-dual-motor-electric-scooter",
+        "https://bsg-i.nbxc.com/upload/1512/131/pdf/24d0b779964bb7d9628ee792e4.pdf"
+      ]
+    },
+    {
+      "name": "Hiley Tiger 9",
+      "type": "scooter",
+      "reason": "Manufacturer sources identify base and Pro as different motor configurations, but only Pro-specific or combined-family whole-vehicle photos were found. Exact base-model preview/appearance is withheld rather than borrowing Pro body/motor details.",
+      "sources": [
+        "https://www.hiley-mobility.com/tiger-9-electric-scooters/62829289.html",
+        "https://www.hileyrider.com/products/hiley-tiger-t9-pro-dual-motor-electric-scooter",
+        "https://bsg-i.nbxc.com/upload/1512/131/pdf/24d0b779964bb7d9628ee792e4.pdf"
+      ]
+    }
+  ],
+  "maxTriangles": 60000,
+  "maxMeshes": 36,
+  "maxGLBBytes": 1671424
+}

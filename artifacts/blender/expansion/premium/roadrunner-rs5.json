@@ -1,0 +1,26 @@
+{
+  "name": "RoadRunner RS5",
+  "model": {
+    "key": "roadrunner-rs5",
+    "url": "/models/expansion/premium/roadrunner-rs5.glb",
+    "nativeSource": "assets/blender/expansion/premium/roadrunner-rs5.blend",
+    "triangles": 59016,
+    "meshes": 36,
+    "bytes": 1628920,
+    "family": "RoadRunner RS5 verified photographic exterior"
+  },
+  "bounds": [
+    [
+      -0.6430500149726868,
+      -0.33000001311302185,
+      0.000238936030655168
+    ],
+    [
+      0.6217610836029053,
+      0.33000001311302185,
+      1.309993028640747
+    ]
+  ],
+  "observed": "Original RS5 manufacturer launch photo: blue windowed C arms, low rectangular headlight, red arrow side lighting and combination-lock battery lid; distinct from redesigned PRO/MAX.",
+  "revision": 2
+}

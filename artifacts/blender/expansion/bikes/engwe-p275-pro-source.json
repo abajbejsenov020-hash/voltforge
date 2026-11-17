@@ -1,0 +1,224 @@
+{
+  "name": "Engwe P275 Pro",
+  "source": "https://engwe.com/products/engwe-p275-pro",
+  "checked": [
+    "https://engwe.com/products/engwe-p275-pro"
+  ],
+  "title": "ENGWE P275 Pro",
+  "images": [
+    {
+      "id": 35259225047097,
+      "created_at": "2025-01-07T10:23:39+08:00",
+      "position": 1,
+      "updated_at": "2026-11-13T13:40:20+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/P275_Pro.png?v=1794548420",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004540473,
+      "created_at": "2024-11-18T15:32:34+08:00",
+      "position": 2,
+      "updated_at": "2026-11-13T14:09:45+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/lQDPJxyNdQINnifNCyXNCACw2NnVXa3rJJIFwxfOwYrEAQ_2048_2853_1.jpg?v=1794550185",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004507705,
+      "created_at": "2024-11-18T15:31:48+08:00",
+      "position": 3,
+      "updated_at": "2026-11-13T13:43:28+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [
+        44074975985721
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_6d452ca0-65fa-4a63-a387-ed537b62ecaa.jpg?v=1794548608",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004606009,
+      "created_at": "2024-11-18T15:31:48+08:00",
+      "position": 4,
+      "updated_at": "2026-11-13T13:40:44+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_5482d150-d360-46e5-ab37-9cf1924f4290.jpg?v=1794548444",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004671545,
+      "created_at": "2024-11-18T15:31:48+08:00",
+      "position": 5,
+      "updated_at": "2026-11-13T14:08:23+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/7_f4455317-d5b7-4d00-bb24-badfd97ef718.jpg?v=1794550103",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004704313,
+      "created_at": "2024-11-18T15:31:48+08:00",
+      "position": 6,
+      "updated_at": "2026-11-13T13:44:12+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_20043313-5c10-4590-955b-ff77332d2343.jpg?v=1794548652",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004573241,
+      "created_at": "2024-11-18T15:31:53+08:00",
+      "position": 7,
+      "updated_at": "2026-11-13T13:44:10+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [
+        44074976051257
+      ],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_7c8e43d7-d6ad-44f0-9ac0-d7a6151c41ca.jpg?v=1794548650",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004638777,
+      "created_at": "2024-11-18T15:31:53+08:00",
+      "position": 8,
+      "updated_at": "2026-11-13T13:45:16+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/2_18180a8d-61a4-460a-90ba-daa041aa0bc5.jpg?v=1794548716",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004737081,
+      "created_at": "2024-11-18T15:31:53+08:00",
+      "position": 9,
+      "updated_at": "2026-11-13T13:40:58+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/5_e6b0058b-3c05-448c-ab03-7611a9f1b9a2.jpg?v=1794548458",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004769849,
+      "created_at": "2024-11-18T15:31:48+08:00",
+      "position": 10,
+      "updated_at": "2026-11-13T14:08:25+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/6_77c75b35-1b8a-44a6-8e14-1634c02b5b80.jpg?v=1794550105",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004802617,
+      "created_at": "2024-11-18T15:31:53+08:00",
+      "position": 11,
+      "updated_at": "2026-11-13T13:43:08+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/7_3af5d006-16a6-45f5-9e46-fc5aafc92f0c.jpg?v=1794548588",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004835385,
+      "created_at": "2024-11-18T15:31:52+08:00",
+      "position": 12,
+      "updated_at": "2026-11-13T13:41:22+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/3_535568f1-e382-42ea-bfb9-6282dfc9473b.jpg?v=1794548482",
+      "width": 2048,
+      "height": 2853
+    },
+    {
+      "id": 34924004868153,
+      "created_at": "2024-11-18T15:31:47+08:00",
+      "position": 13,
+      "updated_at": "2026-11-13T13:45:02+08:00",
+      "product_id": 7774197121081,
+      "variant_ids": [],
+      "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/4_884faa90-5e5c-4166-b5c7-9800f38af00d.jpg?v=1794548702",
+      "width": 2048,
+      "height": 2853
+    }
+  ],
+  "variants": [
+    {
+      "id": 44074975985721,
+      "title": "Black-Orange",
+      "option1": "Black-Orange",
+      "option2": null,
+      "option3": null,
+      "sku": "EUP275PROBlackOrange",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34924004507705,
+        "product_id": 7774197121081,
+        "position": 3,
+        "created_at": "2024-11-18T15:31:48+08:00",
+        "updated_at": "2026-11-13T13:43:28+08:00",
+        "alt": "urban e bike engwe p275 pro ",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_6d452ca0-65fa-4a63-a387-ed537b62ecaa.jpg?v=1794548608",
+        "variant_ids": [
+          44074975985721
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "2199.00",
+      "position": 1,
+      "product_id": 7774197121081,
+      "created_at": "2024-11-21T17:18:45+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    },
+    {
+      "id": 44074976051257,
+      "title": "Black",
+      "option1": "Black",
+      "option2": null,
+      "option3": null,
+      "sku": "EUP275PROBlack",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": {
+        "id": 34924004573241,
+        "product_id": 7774197121081,
+        "position": 7,
+        "created_at": "2024-11-18T15:31:53+08:00",
+        "updated_at": "2026-11-13T13:44:10+08:00",
+        "alt": "black urban bike ebike engwe p275 pro",
+        "width": 2048,
+        "height": 2853,
+        "src": "https://cdn.shopify.com/s/files/1/0683/8560/3641/files/1_7c8e43d7-d6ad-44f0-9ac0-d7a6151c41ca.jpg?v=1794548650",
+        "variant_ids": [
+          44074976051257
+        ]
+      },
+      "available": false,
+      "price": "1099.00",
+      "grams": 0,
+      "compare_at_price": "2199.00",
+      "position": 2,
+      "product_id": 7774197121081,
+      "created_at": "2024-11-21T17:18:45+08:00",
+      "updated_at": "2026-11-17T23:29:44+08:00"
+    }
+  ],
+  "description": "<h2>ENGWE P275 Pro Features</h2>\n<p>1. 260 KM long range</p>\n<p>2. 250W mid-drive motor with 65Nm torque</p>\n<p>3. Gates carbon belt</p>\n<p>4. Elite built</p>\n<p>5. Puncture resistant reflectiv tires</p>\n<p>6. Torque sensor</p>\n<p>7. Step-over design</p>\n<h2>What About ENGWE P275 Pro?</h2>\n<p>The ENGWE P275 Pro Urban E-Bike is designed for both performance and comfort, offering an impressive 260 km long range, making it ideal for long commutes and extended rides. Powered by a 250W mid-drive motor with 65Nm of torque, it delivers a smooth and powerful riding experience, allowing riders to effortlessly tackle hills and varying terrains. The electric city bicycle is equipped with a durable Gates carbon belt, providing a maintenance-free, smooth, and quiet ride. Additionally, puncture-resistant reflective tires enhance safety, offering better visibility while minimizing the risk of flats.</p>\n<p>With a torque sensor, the commuter e bike ENGWE P275 Pro intelligently adjusts motor assistance based on the rider's pedaling effort, ensuring a responsive and efficient ride. Built with an elite-level construction, this urban ebike combines style, reliability, and performance, making it the perfect choice for urban commuting and weekend adventures.</p>\n<h2>ENGWE P275 Pro Urban E Bike Spec</h2>\n<table border=\"2\">\n<tbody>\n<tr>\n<td>Material</td>\n<td>6061 Aluminum Alloy</td>\n</tr>\n<tr>\n<td>Motor</td>\n<td>Bafang 250W Brushless Mid-drive Motor</td>\n</tr>\n<tr>\n<td>Torque</td>\n<td>65 N.m</td>\n</tr>\n<tr>\n<td>Tires</td>\n<td>27.5 x 2.4 Spoke Tires</td>\n</tr>\n<tr>\n<td>Transmission System</td>\n<td>Bafang 3 levels automatical gear shifter</td>\n</tr>\n<tr>\n<td>Belt</td>\n<td>Gates carbon belt</td>\n</tr>\n<tr>\n<td>Brake</td>\n<td>180mm Front &amp; Rear Tektro hydraulic disc brakes</td>\n</tr>\n<tr>\n<td>Display</td>\n<td>Bafang TFT DP C244</td>\n</tr>\n<tr>\n<td>Battery</td>\n<td>36V 19.2Ah SAMSUNG Lithium-ion*1</td>\n</tr>\n<tr>\n<td>Speed</td>\n<td>25 km/h</td>\n</tr>\n<tr>\n<td>Mileage</td>\n<td>260 km (PAS 1 level) 150 km (PAS 5 level)</td>\n</tr>\n<tr>\n<td>Charging Time</td>\n<td>about 3-8H (The charging time of the battery depends on the usage of the battery.)</td>\n</tr>\n<tr>\n<td>Maximum Climbing degree</td>\n<td>10\u00b0</td>\n</tr>\n<tr>\n<td>Bike Weight</td>\n<td>25.3 kg (55.77 lbs)</td>\n</tr>\n<tr>\n<td>Gross Weight</td>\n<td>32.5 kg (71.65 lbs)</td>\n</tr>\n</tbody>\n</table>"
+}

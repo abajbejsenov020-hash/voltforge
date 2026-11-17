@@ -1,0 +1,26 @@
+{
+  "name": "Fiido M21",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/fiido-m21.webp",
+  "source": "https://fiido.com/products/fiido-m21-fat-tire-electric-bike-with-torque-sensor",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0511/3308/7940/files/m21_8e47be1d-9815-4c4f-8d14-2e0b21225cf3.jpg?v=1701064301",
+  "credit": "fiido.com",
+  "variantNote": "Fiido M21 Fat Tire Electric Bike With Torque Sensor",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    1000
+  ],
+  "bytes": 79602,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "fiido-m21",
+    "url": "/models/expansion/bikes/fiido-m21.glb",
+    "nativeSource": "assets/blender/expansion/bikes/fiido-m21.blend",
+    "triangles": 30756,
+    "meshes": 34,
+    "bytes": 950024,
+    "family": "fullfold"
+  }
+}

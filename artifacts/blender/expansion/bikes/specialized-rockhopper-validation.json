@@ -1,0 +1,29 @@
+{
+  "name": "Specialized Rockhopper",
+  "key": "specialized-rockhopper",
+  "dimensions_m": [
+    1.84,
+    0.6634,
+    1.0747
+  ],
+  "triangles": 28868,
+  "meshes": 26,
+  "bytes": 921876,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "packedReference": "specialized-rockhopper.webp",
+  "floor_min_z": 0.0,
+  "transformsBaked": true,
+  "note": "Nonmotorized pedal bicycle; BatteryMount=bottle service group, ControllerMount=cable junction, MotorMount=crank bearing. These names are viewer service anchors, not electric component claims."
+}

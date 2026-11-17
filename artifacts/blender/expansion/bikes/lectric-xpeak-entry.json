@@ -1,0 +1,26 @@
+{
+  "name": "Lectric XPeak",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/lectric-xpeak.webp",
+  "source": "https://newatlas.com/bicycles/lectric-xpeak-fat-tire-ebike/",
+  "imageSource": "https://newatlas-brightspot.s3.amazonaws.com/8c/7a/7d83d9204d75b11812af6aedc411/03.jpg",
+  "credit": "Lectric / New Atlas archival press reference",
+  "variantNote": "Original XPeak launch reference, 2023; white step-through trim. Manufacturer archival press image carried by New Atlas; distinct from XPeak 2.0.",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1000,
+    848
+  ],
+  "bytes": 88696,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "lectric-xpeak",
+    "url": "/models/expansion/bikes/lectric-xpeak.glb",
+    "nativeSource": "assets/blender/expansion/bikes/lectric-xpeak.blend",
+    "triangles": 28256,
+    "meshes": 30,
+    "bytes": 893052,
+    "family": "stepfat"
+  }
+}

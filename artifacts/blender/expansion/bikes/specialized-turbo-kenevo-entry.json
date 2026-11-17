@@ -1,0 +1,26 @@
+{
+  "name": "Specialized Turbo Kenevo",
+  "type": "bike",
+  "subtype": "bicycle",
+  "image": "/assets/vehicles/expansion/bikes/specialized-turbo-kenevo.webp",
+  "source": "https://www.specialized.com/us/en/turbo-kenevo-comp/p/199956",
+  "imageSource": "https://resources.specialized.com/image/98022-51_KENEVO-COMP-6FATTIE-FSTGRN-PNGRN_HERO-SQUARE?q=75&w=1400&h=2880&fit=max&fm=webp",
+  "credit": "www.specialized.com",
+  "variantNote": "Turbo Kenevo Comp",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "bytes": 155512,
+  "referenceKind": "manufacturer-product-reference",
+  "model": {
+    "key": "specialized-turbo-kenevo",
+    "url": "/models/expansion/bikes/specialized-turbo-kenevo.glb",
+    "nativeSource": "assets/blender/expansion/bikes/specialized-turbo-kenevo.blend",
+    "triangles": 32536,
+    "meshes": 30,
+    "bytes": 1007192,
+    "family": "fullmtb"
+  }
+}

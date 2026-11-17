@@ -1,0 +1,26 @@
+{
+  "name": "Sur-Ron Light Bee",
+  "type": "bike",
+  "subtype": "emoto",
+  "image": "/assets/vehicles/expansion/bikes/sur-ron-light-bee.webp",
+  "source": "https://on3performance.com/products/surron-light-bee-x",
+  "imageSource": "https://on3performance.com/cdn/shop/files/Screenshot_2025-07-22_at_11.37.20_AM.png?v=1753199514&width=1946",
+  "credit": "on3performance.com",
+  "variantNote": "Surron Light Bee X 2025",
+  "license": "Reference image; no open license asserted",
+  "dimensions": [
+    944,
+    796
+  ],
+  "bytes": 70870,
+  "referenceKind": "distributor-product-reference",
+  "model": {
+    "key": "sur-ron-light-bee",
+    "url": "/models/expansion/bikes/sur-ron-light-bee.glb",
+    "nativeSource": "assets/blender/expansion/bikes/sur-ron-light-bee.blend",
+    "triangles": 36916,
+    "meshes": 45,
+    "bytes": 1815692,
+    "family": "erides"
+  }
+}
