@@ -1,0 +1,1369 @@
+{
+  "p0": {
+    "name": "Lonnyo 10″ Arrow Split Hub Motor",
+    "image": "/assets/components/p0.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-19.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-arrow-split-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.27,
+      "tire": "none",
+      "rim": "silver",
+      "spokes": 5,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 6
+    }
+  },
+  "p1": {
+    "name": "Lonnyo 10″ Standard Split Hub Motor",
+    "image": "/assets/components/p1.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-18.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-standard-split-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.29,
+      "tire": "none",
+      "rim": "silver",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p2": {
+    "name": "Lonnyo 10″ Wide Tire Split Hub Motor",
+    "image": "/assets/components/p2.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-17.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-split-wide-tire-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.35,
+      "tire": "road",
+      "rim": "silver",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p3": {
+    "name": "Lonnyo 10″ Single-sided Axle Hub Motor",
+    "image": "/assets/components/p3.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-34.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-single-sided-axle-split-wide-tire-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.5,
+      "tire": "road",
+      "rim": "black",
+      "spokes": 6,
+      "radial": 0,
+      "axle": "single",
+      "bolts": 6
+    }
+  },
+  "p4": {
+    "name": "Lonnyo 11″ 70H Hub Motor",
+    "image": "/assets/components/p4.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-22.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-70h-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.55,
+      "tire": "none",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 26,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p5": {
+    "name": "Lonnyo 11″ Standard Split Hub Motor",
+    "image": "/assets/components/p5.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-25.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-standard-split-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.37,
+      "tire": "none",
+      "rim": "silver",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 6
+    }
+  },
+  "p6": {
+    "name": "Lonnyo 11″ 75/80mm Magnet Hub Motor",
+    "image": "/assets/components/p6.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-23.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-75-80mm-magnet-split-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.62,
+      "tire": "none",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 32,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p7": {
+    "name": "Lonnyo 11″ 130mm Magnet Hub Motor",
+    "image": "/assets/components/p7.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-21.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-130mm-magnet-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.92,
+      "tire": "none",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 18,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p8": {
+    "name": "Lonnyo 12″ 10mm² Power Line Hub Motor",
+    "image": "/assets/components/p8.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-27.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-12-inch-10mm2-power-line-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.25,
+      "tire": "none",
+      "rim": "cast",
+      "spokes": 5,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p9": {
+    "name": "Lonnyo 8.5″ Hub Motor",
+    "image": "/assets/components/p9.jpg",
+    "imageSource": "https://www.lonnyo.com/wp-content/uploads/2026/08/1-30.jpg",
+    "source": "https://www.lonnyo.com/product/lonnyo-motor-8-5-inch-hub-motor/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.18,
+      "tire": "none",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 40,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p151": {
+    "name": "EBMX X-9000 V3 Controller Kit",
+    "image": "/assets/components/p151.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/5530/image_512/%5BE2000-X30CK0-03%5D%20EBMX%20X-9000_V3%20Controller%20Kit%20?unique=3888b57",
+    "source": "https://www.ebmx.com/shop/e2000-x30ck0-03-ebmx-x-9000-v3-controller-kit-5530",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.61,
+      "height": 1.2,
+      "depth": 0.19,
+      "color": 2304043,
+      "style": "ebmx"
+    }
+  },
+  "p165": {
+    "name": "EBMX XLB-60 CORE Motor",
+    "image": "/assets/components/p165.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/4703/image_512/EBMX%20XLB-60%20CORE%20Motor?unique=2cad03a",
+    "source": "https://www.ebmx.com/shop/ebmx-xlb-60-core-motor-4703",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.47,
+      "depth": 0.5,
+      "cover": "core",
+      "color": 2369579,
+      "fins": 32
+    }
+  },
+  "p166": {
+    "name": "EBMX XLB-60 RACE Motor",
+    "image": "/assets/components/p166.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/4513/image_512/EBMX%20XLB-60%20RACE%20Motor%20%28Air%20Cooled%29?unique=d8d59e6",
+    "source": "https://www.ebmx.com/shop/ebmx-xlb-60-race-motor-air-cooled-4513",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.46,
+      "depth": 0.42,
+      "cover": "race",
+      "color": 2566957,
+      "fins": 40
+    }
+  },
+  "p167": {
+    "name": "EBMX XUB-80 Motor",
+    "image": "/assets/components/p167.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/167/image_512/EBMX%20XUB-80%20Motor%20for%20SurRon%20Ultra%20Bee%20%28Air%20Cooled%29?unique=5d2c52a",
+    "source": "https://www.ebmx.com/shop/ebmx-xub-80-motor-for-surron-ultra-bee-air-cooled-167",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.54,
+      "depth": 0.66,
+      "cover": "ultra",
+      "color": 2435373,
+      "fins": 26
+    }
+  },
+  "p190": {
+    "name": "EBMX Display and Bar Clamps",
+    "image": "/assets/components/p190.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/4302/image_512/EBMX%20Display%20and%20Bar%20Clamps?unique=d8d59e6",
+    "source": "https://www.ebmx.com/shop/ebmx-display-and-bar-clamps-4302",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-display"
+    }
+  },
+  "p191": {
+    "name": "EBMX X-9000 Pro Mount for Ultra Bee",
+    "image": "/assets/components/p191.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/2728/image_512/X-9000%20Pro%20Mount%20for%20SurRon%20Ultra%20Bee?unique=ef47feb",
+    "source": "https://www.ebmx.com/shop/x-9000-pro-mount-for-surron-ultra-bee-2728",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mount"
+    }
+  },
+  "p192": {
+    "name": "EBMX Competition Brake Pads for Ultra Bee",
+    "image": "/assets/components/p192.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/4193/image_512/%5BE-MU-AC19-XX-X%5D%20EBMX%20Competition%20Brake%20Pads%20for%20Ultra%20Bee?unique=200a17e",
+    "source": "https://www.ebmx.com/shop/e-mu-ac19-xx-x-ebmx-competition-brake-pads-for-ultra-bee-4193",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-pads"
+    }
+  },
+  "p193": {
+    "name": "EBMX Competition Jackshaft for Ultra Bee",
+    "image": "/assets/components/p193.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/4146/image_512/%5BE-MU-AC17-BK-X%5D%20EBMX%20Competition%20Jackshaft%20for%20Ultra%20Bee?unique=2cf200e",
+    "source": "https://www.ebmx.com/shop/e-mu-ac17-bk-x-ebmx-competition-jackshaft-for-ultra-bee-4146",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-jackshaft"
+    }
+  },
+  "p194": {
+    "name": "EBMX Light Bee Linkage and Triangle for YSS Shock",
+    "image": "/assets/components/p194.jpg",
+    "imageSource": "https://www.ebmx.com/web/image/product.template/2784/image_512/Upgraded%20Linkage%20and%20Triangle%20for%20YSS%20Shock%20%28SurRon%20Light%20Bee%29?unique=fae9e99",
+    "source": "https://www.ebmx.com/shop/upgraded-linkage-and-triangle-for-yss-shock-surron-light-bee-2784",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-linkage"
+    }
+  },
+  "p158": {
+    "name": "KO Moto Nano Controller",
+    "image": "/assets/components/p158.jpg",
+    "imageSource": "https://static.wixstatic.com/media/c0f9e9_82f2c75b5b934c589960550c2c98248e~mv2.jpg",
+    "source": "https://www.ko-moto.com/product-page/ko-nano-sur-ron-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier example finish; select exact color and revision.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.42,
+      "height": 1.16,
+      "depth": 0.19,
+      "color": 3159352,
+      "style": "nano"
+    }
+  },
+  "p159": {
+    "name": "KO Moto Pro Series Controller",
+    "image": "/assets/components/p159.jpg",
+    "imageSource": "https://static.wixstatic.com/media/c0f9e9_a5cc4603f2eb4f3c8918b42701683335~mv2.jpg",
+    "source": "https://www.ko-moto.com/product-page/ko-sur-ron-controller-purple",
+    "kind": "product-photo",
+    "variantNote": "Supplier example finish; select exact color and revision.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.68,
+      "height": 1.18,
+      "depth": 0.24,
+      "color": 11810609,
+      "style": "ko-pro"
+    }
+  },
+  "p160": {
+    "name": "KO Moto Factory Spec Rush Controller",
+    "image": "/assets/components/p160.jpg",
+    "imageSource": "https://static.wixstatic.com/media/c0f9e9_48c758dad0bb421eaa810a7cfe8ccd7a~mv2.jpg",
+    "source": "https://www.ko-moto.com/product-page/ko-factory-spec-rush-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier example finish; select exact color and revision.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.78,
+      "height": 1.22,
+      "depth": 0.27,
+      "color": 12269877,
+      "style": "rush"
+    }
+  },
+  "p173": {
+    "name": "KO Moto RS Sur-Ron Motor",
+    "image": "/assets/components/p173.jpg",
+    "imageSource": "https://static.wixstatic.com/media/c0f9e9_0d5927d8b8c141b9b46673ec4c0cffcd~mv2.jpg",
+    "source": "https://www.ko-moto.com/product-page/ko-sur-ron-upgrade-motor-blue",
+    "kind": "product-photo",
+    "variantNote": "Supplier example finish; select exact color and revision.",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.45,
+      "depth": 0.29,
+      "cover": "round",
+      "color": 11089716,
+      "fins": 22
+    }
+  },
+  "p174": {
+    "name": "KO Moto Factory Spec Sur-Ron Motor",
+    "image": "/assets/components/p174.jpg",
+    "imageSource": "https://static.wixstatic.com/media/c0f9e9_849de1c3b588463ca80d3b1f5dfdf03c~mv2.png",
+    "source": "https://www.ko-moto.com/product-page/ko-factory-spec-sur-ron-upgrade-motor-gold",
+    "kind": "product-photo",
+    "variantNote": "Supplier example finish; select exact color and revision.",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.47,
+      "depth": 0.43,
+      "cover": "round",
+      "color": 11220017,
+      "fins": 30
+    }
+  },
+  "p162": {
+    "name": "ASI BAC2000",
+    "image": "/assets/components/p162.jpg",
+    "imageSource": "https://support.acceleratedsystems.com/BAC6/tech_specs/product/images/Controller_2000-4800px.jpg",
+    "source": "https://support.acceleratedsystems.com/BAC6/tech_specs/product/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.92,
+      "height": 0.62,
+      "depth": 0.22,
+      "color": 15889449,
+      "style": "asi"
+    }
+  },
+  "p163": {
+    "name": "ASI BAC4000",
+    "image": "/assets/components/p163.jpg",
+    "imageSource": "https://support.acceleratedsystems.com/BAC6/tech_specs/product/images/Controller_4000-4800px.jpg",
+    "source": "https://support.acceleratedsystems.com/BAC6/tech_specs/product/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 1.12,
+      "height": 0.68,
+      "depth": 0.24,
+      "color": 15889449,
+      "style": "asi"
+    }
+  },
+  "p164": {
+    "name": "ASI BAC8000",
+    "image": "/assets/components/p164.jpg",
+    "imageSource": "https://support.acceleratedsystems.com/BAC6/tech_specs/product/images/Controller_8000-2400px.jpg",
+    "source": "https://support.acceleratedsystems.com/BAC6/tech_specs/product/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 1.34,
+      "height": 0.72,
+      "depth": 0.27,
+      "color": 15889449,
+      "style": "asi"
+    }
+  },
+  "p156": {
+    "name": "TORP TC500 2.0",
+    "image": "/assets/components/p156.jpg",
+    "imageSource": "https://www.torpmotors.com/images/controllers/torp-tc500-controller-kit-surron-light-bee-800.webp",
+    "source": "https://www.torpmotors.com/controllers/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.77,
+      "height": 1.04,
+      "depth": 0.22,
+      "color": 3027509,
+      "style": "torp500"
+    }
+  },
+  "p157": {
+    "name": "TORP TC1000 2.0",
+    "image": "/assets/components/p157.jpg",
+    "imageSource": "https://www.torpmotors.com/images/controllers/torp-tc1000-controller-kit-surron-ultra-bee-800.webp",
+    "source": "https://www.torpmotors.com/controllers/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.96,
+      "height": 1.12,
+      "depth": 0.28,
+      "color": 12073782,
+      "style": "torp1000"
+    }
+  },
+  "p169": {
+    "name": "TORP TM25 Motor",
+    "image": "/assets/components/p169.jpg",
+    "imageSource": "https://www.torpmotors.com/images/motors/torp-tm25-motor-surron-light-bee-lit-800.webp",
+    "source": "https://www.torpmotors.com/motors/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.44,
+      "depth": 0.34,
+      "cover": "star",
+      "color": 10499382,
+      "fins": 12
+    }
+  },
+  "p170": {
+    "name": "TORP TM40 Pro Motor",
+    "image": "/assets/components/p170.jpg",
+    "imageSource": "https://www.torpmotors.com/images/motors/torp-tm40-pro-motor-surron-light-bee-lit-800.webp",
+    "source": "https://www.torpmotors.com/motors/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.46,
+      "depth": 0.43,
+      "cover": "star",
+      "color": 7421062,
+      "fins": 14
+    }
+  },
+  "p171": {
+    "name": "TORP TM50 Pro Motor",
+    "image": "/assets/components/p171.jpg",
+    "imageSource": "https://www.torpmotors.com/images/motors/torp-tm50-pro-motor-surron-ultra-bee-lit-800.webp",
+    "source": "https://www.torpmotors.com/motors/",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-mid",
+      "radius": 0.51,
+      "depth": 0.55,
+      "cover": "star",
+      "color": 11154488,
+      "fins": 16
+    }
+  },
+  "p161": {
+    "name": "Nucular P24F",
+    "image": "/assets/components/p161.jpg",
+    "imageSource": "https://static.tildacdn.com/tild3862-3361-4230-b031-633431366666/20230710-10255.jpg",
+    "source": "https://nucular.tech/shop",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.58,
+      "height": 1.07,
+      "depth": 0.15,
+      "color": 2238765,
+      "style": "nucular"
+    }
+  },
+  "p186": {
+    "name": "Nucular On-board Computer",
+    "image": "/assets/components/p186.jpg",
+    "imageSource": "https://static.tildacdn.com/tild3636-3038-4231-b232-613261613139/Display_3.jpg",
+    "source": "https://nucular.tech/shop",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-display"
+    }
+  },
+  "p188": {
+    "name": "Nucular Bluetooth Module",
+    "image": "/assets/components/p188.jpg",
+    "imageSource": "https://static.tildacdn.com/tild6165-3630-4638-a163-366537393435/Bluetooth_2_1.png",
+    "source": "https://nucular.tech/shop",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-bluetooth"
+    }
+  },
+  "p189": {
+    "name": "Nucular Universal Thumb Regen Lever",
+    "image": "/assets/components/p189.jpg",
+    "imageSource": "https://static.tildacdn.com/tild3336-3231-4538-a433-646463386265/20230710-10320.jpg",
+    "source": "https://nucular.tech/shop",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-throttle"
+    }
+  },
+  "p37": {
+    "name": "Fardriver ND72490",
+    "image": "/assets/components/p37.jpg",
+    "imageSource": "https://www.far-driver.com/wp-content/uploads/1-2.jpg",
+    "source": "https://www.far-driver.com/nd72490/",
+    "kind": "product-photo",
+    "variantNote": "Supplier listing photograph; confirm the exact revision.",
+    "model": {
+      "type": "reference-controller",
+      "width": 1.22,
+      "height": 0.84,
+      "depth": 0.32,
+      "color": 3312545,
+      "style": "fardriver-blue"
+    }
+  },
+  "p291": {
+    "name": "Fardriver ND72260",
+    "image": "/assets/fardriver-nd72260.jpg",
+    "imageSource": "https://m.media-amazon.com/images/I/610DtC5BoiL._AC_UF894,1000_QL80_.jpg",
+    "source": "https://www.far-driver.com/nd72260/",
+    "kind": "user-reference",
+    "model": {
+      "type": "nd72260"
+    }
+  },
+  "p177": {
+    "name": "ChiBatterySystems Gladiator 72 Colossus",
+    "image": "/assets/components/p177.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/72_Colossus_2cd43350-1a11-4e14-916b-7dee35b81f3a_800x.png?v=1741976263",
+    "source": "https://chibatterysystems.com/collections/batteries/products/72colossus",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.29,
+      "depth": 0.47,
+      "shape": "gladiator"
+    }
+  },
+  "p176": {
+    "name": "ChiBatterySystems Gladiator 66 Odyssey",
+    "image": "/assets/components/p176.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/66_Odyssey_d804d266-9e8f-4d7d-84f6-0813ce4dbbe4_800x.png?v=1741971346",
+    "source": "https://chibatterysystems.com/collections/batteries/products/66odyssey",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.2,
+      "depth": 0.43,
+      "shape": "gladiator"
+    }
+  },
+  "p182": {
+    "name": "ChiBatterySystems Titan 60 Touring",
+    "image": "/assets/components/p182.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/Titan60Tour_800x.png?v=1723056846",
+    "source": "https://chibatterysystems.com/collections/batteries/products/titan60touring",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.24,
+      "depth": 0.48,
+      "shape": "titan"
+    }
+  },
+  "p183": {
+    "name": "ChiBatterySystems Titan 72 Touring",
+    "image": "/assets/components/p183.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/72TouringE1_312c676a-9e1f-4f72-9d5c-e6ad65add163_800x.png?v=1723058270",
+    "source": "https://chibatterysystems.com/collections/batteries/products/titan72touring",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.27,
+      "depth": 0.48,
+      "shape": "titan"
+    }
+  },
+  "p179": {
+    "name": "ChiBatterySystems Gladiator 72 Pulsar",
+    "image": "/assets/components/p179.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/72PT1E1_800x.jpg?v=1736972195",
+    "source": "https://chibatterysystems.com/collections/batteries/products/72pulsar",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.05,
+      "depth": 0.41,
+      "shape": "gladiator"
+    }
+  },
+  "p180": {
+    "name": "ChiBatterySystems Gladiator 81 Odyssey",
+    "image": "/assets/components/p180.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/81_Odyssey_90d90760-0096-4f4a-8dcc-d72821ed4b86_800x.png?v=1741982152",
+    "source": "https://chibatterysystems.com/collections/batteries/products/81odyssey",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.26,
+      "depth": 0.45,
+      "shape": "gladiator"
+    }
+  },
+  "p181": {
+    "name": "ChiBatterySystems Gladiator 81 Pulsar",
+    "image": "/assets/components/p181.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/81pulsar1_800x.png?v=1739479279",
+    "source": "https://chibatterysystems.com/collections/batteries/products/81pulsar",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.08,
+      "depth": 0.42,
+      "shape": "gladiator"
+    }
+  },
+  "p178": {
+    "name": "ChiBatterySystems Gladiator 72 Odyssey",
+    "image": "/assets/components/p178.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/72_Odyssey_9c3ef931-9377-431d-adfc-481020219955_800x.png?v=1741973159",
+    "source": "https://chibatterysystems.com/collections/batteries/products/72odyssey",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.22,
+      "depth": 0.44,
+      "shape": "gladiator"
+    }
+  },
+  "p175": {
+    "name": "ChiBatterySystems Gladiator 60 Odyssey",
+    "image": "/assets/components/p175.jpg",
+    "imageSource": "https://chibatterysystems.com/cdn/shop/files/60_Odyssey_9e2a8348-9152-4edd-9dd4-3a7051079452_800x.png?v=1741966565",
+    "source": "https://chibatterysystems.com/collections/batteries/products/60odyssey",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose the exact connector and revision.",
+    "model": {
+      "type": "reference-battery",
+      "height": 1.18,
+      "depth": 0.42,
+      "shape": "gladiator"
+    }
+  },
+  "p66": {
+    "name": "KuKirin G2 Hub Motor",
+    "image": "/assets/components/p66.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2Motor.webp?v=1785470465&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.28,
+      "tire": "road",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 6
+    }
+  },
+  "p79": {
+    "name": "KuKirin G2 Master Rear Hub Motor",
+    "image": "/assets/components/p79.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Master_Rear_Motor.webp?v=1785470737&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.3,
+      "tire": "none",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 8,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p72": {
+    "name": "KuKirin G4 Hub Motor",
+    "image": "/assets/components/p72.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G4_Motor.webp?v=1785470757&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.33,
+      "tire": "road",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 6
+    }
+  },
+  "p71": {
+    "name": "KuKirin G2 Max Hub Motor",
+    "image": "/assets/components/p71.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Max_Motor.webp?v=1785470774&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.29,
+      "tire": "solid",
+      "rim": "orange",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p68": {
+    "name": "KuKirin G2 Pro Hub Motor",
+    "image": "/assets/components/p68.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Pro_Motor.webp?v=1785470790&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.32,
+      "tire": "knobby",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p73": {
+    "name": "KuKirin G2 Ultra Hub Motor",
+    "image": "/assets/components/p73.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Ultra_Motor.webp?v=1785470806&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.25,
+      "tire": "road",
+      "rim": "redline",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p74": {
+    "name": "KuKirin G3 Pro Hub Motor",
+    "image": "/assets/components/p74.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G3_Pro_Rear_Motor.jpg?v=1785470819&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.36,
+      "tire": "knobby",
+      "rim": "silver",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p75": {
+    "name": "KuKirin S1 Max Hub Motor",
+    "image": "/assets/components/p75.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/S1_Max_Motor.webp?v=1785470841&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.21,
+      "tire": "perforated",
+      "rim": "orange",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p76": {
+    "name": "KuKirin M4 Max Hub Motor",
+    "image": "/assets/components/p76.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/M4_Max_motor.webp?v=1785470860&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.3,
+      "tire": "knobby",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p77": {
+    "name": "KuKirin T3 Hub Motor",
+    "image": "/assets/components/p77.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/T3_Motor.webp?v=1785470873&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.31,
+      "tire": "road",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 6
+    }
+  },
+  "p78": {
+    "name": "KuKirin G2 Master Front Hub Motor",
+    "image": "/assets/components/p78.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Master_Front_Motor_98653be0-e7a9-4a35-b83c-da6e19533ecc.webp?v=1787220594&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.24,
+      "tire": "none",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p80": {
+    "name": "KuKirin G2 Controller",
+    "image": "/assets/components/p80.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2Controller.webp?v=1785483064&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 1.18,
+      "height": 0.48,
+      "depth": 0.32,
+      "color": 2435115,
+      "style": "oem-black"
+    }
+  },
+  "p83": {
+    "name": "KuKirin G4 Controller",
+    "image": "/assets/components/p83.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G4_Controller.webp?v=1785483307&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 1.3,
+      "height": 0.5,
+      "depth": 0.35,
+      "color": 2369322,
+      "style": "oem-black"
+    }
+  },
+  "p82": {
+    "name": "KuKirin G2 Max Controller",
+    "image": "/assets/components/p82.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Max_Controller.webp?v=1785483718&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.86,
+      "height": 0.45,
+      "depth": 0.36,
+      "color": 12172734,
+      "style": "oem-silver"
+    }
+  },
+  "p81": {
+    "name": "KuKirin G2 Pro Controller",
+    "image": "/assets/components/p81.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Pro_Controller.webp?v=1785483734&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.76,
+      "height": 0.44,
+      "depth": 0.21,
+      "color": 11843234,
+      "style": "oem-silver"
+    }
+  },
+  "p84": {
+    "name": "KuKirin S1 Max Controller",
+    "image": "/assets/components/p84.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/S1_Max_Controller.webp?v=1785483777&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.85,
+      "height": 0.66,
+      "depth": 0.08,
+      "color": 3439927,
+      "style": "pcb"
+    }
+  },
+  "p85": {
+    "name": "KuKirin M4 Max Controller",
+    "image": "/assets/components/p85.jpg",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/M4_Max_Controller.webp?v=1785483788&width=416",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.48,
+      "height": 0.78,
+      "depth": 0.12,
+      "color": 2979141,
+      "style": "pcb"
+    }
+  },
+  "p92": {
+    "name": "Ausom Leopard Hub Motor",
+    "image": "/assets/components/p92.jpg",
+    "imageSource": "https://ausomstore.com/cdn/shop/files/Leopard-Motor-new.jpg?v=1756364813&width=900",
+    "source": "https://ausomstore.com/products/ausom-leopard-motor",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.45,
+      "tire": "none",
+      "rim": "gray",
+      "spokes": 0,
+      "radial": 18,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p93": {
+    "name": "Ausom DT2 Pro Motor & Tire Assembly",
+    "image": "/assets/components/p93.jpg",
+    "imageSource": "https://ausomstore.com/cdn/shop/files/Ausom_DT2_Pro_L2_Max_Series_Motor-1.jpg?v=1793869293&width=900",
+    "source": "https://ausomstore.com/products/ausom-dt2-pro-motor-include-tire",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-hub",
+      "depth": 0.39,
+      "tire": "knobby",
+      "rim": "black",
+      "spokes": 0,
+      "radial": 0,
+      "axle": "both",
+      "bolts": 12
+    }
+  },
+  "p102": {
+    "name": "Ausom Leopard Controller",
+    "image": "/assets/components/p102.jpg",
+    "imageSource": "https://ausomstore.com/cdn/shop/files/picturePictureBigView4228518.jpg?v=1756364805&width=900",
+    "source": "https://ausomstore.com/products/ausom-leopard-controller",
+    "kind": "product-photo",
+    "variantNote": "Supplier product image. Confirm model year, axle and connector variant.",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.97,
+      "height": 0.56,
+      "depth": 0.28,
+      "color": 11777457,
+      "style": "oem-silver"
+    }
+  },
+  "p26": {
+    "name": "Flipsky FSESC 110100",
+    "image": "/assets/components/p26.jpg",
+    "imageSource": "https://flipsky.net/cdn/shop/files/1_4e9a6646-2771-47f6-9dea-a4a76324b30d.jpg?v=1755852041&width=1080",
+    "source": "https://flipsky.net/collections/electronic-products/products/flipsky-fsesc-110100-high-voltage-110v-with-aluminum-pcb-based-on-vesc-for-fighting-robot-surfboard-agv-robot",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.42,
+      "height": 1,
+      "depth": 0.08,
+      "color": 2107179,
+      "style": "flipsky",
+      "capacitors": 0
+    }
+  },
+  "p27": {
+    "name": "Flipsky FSESC 110200",
+    "image": "/assets/components/p27.jpg",
+    "imageSource": "https://flipsky.net/cdn/shop/files/2_f6fa03c2-8794-4384-8dd1-5d038d6c6f3d.jpg?v=1767944747&width=1080",
+    "source": "https://flipsky.net/collections/electronic-products/products/flipsky-fsesc-110200-high-voltage-110v-200a-with-aluminum-pcb-based-on-vesc-for-fighting-robot-surfboard-agv-robot",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.48,
+      "height": 1.12,
+      "depth": 0.08,
+      "color": 2107179,
+      "style": "flipsky",
+      "capacitors": 6
+    }
+  },
+  "p28": {
+    "name": "Flipsky FSESC 110300",
+    "image": "/assets/components/p28.jpg",
+    "imageSource": "https://flipsky.net/cdn/shop/files/1_ae216d50-d3f9-471b-8127-959eac191e42.jpg?v=1767947293&width=1080",
+    "source": "https://flipsky.net/collections/electronic-products/products/flipsky-fsesc-110300-high-voltage-110v-300a-with-aluminum-pcb-based-on-vesc-for-fighting-robot-surfboard-agv-robot",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 0.53,
+      "height": 1.22,
+      "depth": 0.08,
+      "color": 2107179,
+      "style": "flipsky",
+      "capacitors": 9
+    }
+  },
+  "p31": {
+    "name": "Spintend Single Ubox Alum 85V 250A V2",
+    "image": "/assets/components/p31.jpg",
+    "imageSource": "https://spintend.com/cdn/shop/files/Ubox_alum_85v250A_v2_motor_controller_main2_IMG_2285_800x.jpg?v=1749720915",
+    "source": "https://spintend.com/products/single-ubox-aluminum-controller-85v-250a-v2-based-on-vesc",
+    "kind": "product-photo",
+    "model": {
+      "type": "reference-controller",
+      "width": 1.35,
+      "height": 0.76,
+      "depth": 0.19,
+      "color": 11815252,
+      "style": "ubox"
+    }
+  },
+  "p292": {
+    "name": "Magura MT5 Pro",
+    "image": "/assets/components/p292.jpg",
+    "source": "https://magura.com/product/mt5-pro/",
+    "imageSource": "https://magura.com/wp-content/uploads/2025/11/MT5-Pro-kombi-2023-final-small.png",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose exact finish, revision and dimensions.",
+    "model": {
+      "type": "chosen-brake",
+      "accent": 12307493,
+      "lever": "alloy"
+    }
+  },
+  "p293": {
+    "name": "Magura MT7 Pro",
+    "image": "/assets/components/p293.jpg",
+    "source": "https://magura.com/product/mt7-pro/",
+    "imageSource": "https://magura.com/wp-content/uploads/2025/10/mt7-content.png",
+    "kind": "product-photo",
+    "variantNote": "Supplier product photo; choose exact finish, revision and dimensions.",
+    "model": {
+      "type": "chosen-brake",
+      "accent": 13740350,
+      "lever": "hc"
+    }
+  },
+  "p294": {
+    "name": "Magura STORM HC 160mm Rotor",
+    "image": "/assets/components/p294.jpg",
+    "source": "https://magura.com/product/storm-hc/",
+    "imageSource": "https://magura.com/wp-content/uploads/2026/01/STORM-HC.png",
+    "kind": "product-photo",
+    "variantNote": "Supplier family photograph; this entry selects the stated rotor diameter. Verify bolt pattern, caliper adapter and clearance.",
+    "model": {
+      "type": "chosen-rotor",
+      "diameter": 160
+    }
+  },
+  "p295": {
+    "name": "Magura STORM HC 180mm Rotor",
+    "image": "/assets/components/p295.jpg",
+    "source": "https://magura.com/product/storm-hc/",
+    "imageSource": "https://magura.com/wp-content/uploads/2026/01/STORM-HC.png",
+    "kind": "product-photo",
+    "variantNote": "Supplier family photograph; this entry selects the stated rotor diameter. Verify bolt pattern, caliper adapter and clearance.",
+    "model": {
+      "type": "chosen-rotor",
+      "diameter": 180
+    }
+  },
+  "p296": {
+    "name": "Magura STORM HC 203mm Rotor",
+    "image": "/assets/components/p296.jpg",
+    "source": "https://magura.com/product/storm-hc/",
+    "imageSource": "https://magura.com/wp-content/uploads/2026/01/STORM-HC.png",
+    "kind": "product-photo",
+    "variantNote": "Supplier family photograph; this entry selects the stated rotor diameter. Verify bolt pattern, caliper adapter and clearance.",
+    "model": {
+      "type": "chosen-rotor",
+      "diameter": 203
+    }
+  },
+  "p297": {
+    "name": "Shinko Trail Pro SR241 Tire",
+    "image": "/assets/components/p297.jpg",
+    "source": "https://shinkotireusa.com/trail-pro-sr241-series-tire/",
+    "imageSource": "https://cdn11.bigcommerce.com/s-sajlvrx2bf/images/stencil/1280x1280/products/236/777/f31b-572a9155d8bdb__53309.1775234829.jpg?c=1",
+    "kind": "product-photo",
+    "variantNote": "Choose the exact rim size, tire width, load/speed rating and tube specification. No wheel size is assumed.",
+    "model": {
+      "type": "chosen-tire",
+      "pattern": "trials",
+      "width": 0.14
+    }
+  },
+  "p298": {
+    "name": "KuKirin G2 Tubeless Tire",
+    "image": "/assets/components/p298.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-tubeless-tire",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2TubelessTire.webp?v=1785832653&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific tire option; confirm tire sidewall dimensions and vehicle code.",
+    "model": {
+      "type": "chosen-tire",
+      "pattern": "road",
+      "width": 0.12
+    }
+  },
+  "p299": {
+    "name": "KuKirin G4 Tubeless Tire",
+    "image": "/assets/components/p299.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-tubeless-tire",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G4_Tubeless_tires.webp?v=1785832818&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific tire option; confirm tire sidewall dimensions and vehicle code.",
+    "model": {
+      "type": "chosen-tire",
+      "pattern": "road",
+      "width": 0.16
+    }
+  },
+  "p300": {
+    "name": "KuKirin G2 Master Tubeless Tire",
+    "image": "/assets/components/p300.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-tubeless-tire",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/KuKirin_G2_Master_Tubeless_Tire.webp?v=1785832840&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific tire option; confirm tire sidewall dimensions and vehicle code.",
+    "model": {
+      "type": "chosen-tire",
+      "pattern": "blocks",
+      "width": 0.16
+    }
+  },
+  "p301": {
+    "name": "KuKirin G2 Pro Tubeless Tire",
+    "image": "/assets/components/p301.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-tubeless-tire",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Pro_Vacuum_Tire.webp?v=1785832860&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific tire option; confirm tire sidewall dimensions and vehicle code.",
+    "model": {
+      "type": "chosen-tire",
+      "pattern": "blocks",
+      "width": 0.16
+    }
+  },
+  "p302": {
+    "name": "DNM RCP-2S Coil Shock",
+    "image": "/assets/components/p302.jpg",
+    "source": "https://www.dnmshock.com/products.php?func=p_detail&p_id=22&pc_parent=12",
+    "imageSource": "https://www.dnmshock.com/upload_files/products/92-24-12/2S_gong_zuo_qu_yu_1.jpg",
+    "kind": "product-photo",
+    "variantNote": "Select eye-to-eye length, stroke, spring rate and mounting hardware for the frame.",
+    "model": {
+      "type": "chosen-coil",
+      "color": 2238506
+    }
+  },
+  "p303": {
+    "name": "FOX 40 Factory Fork",
+    "image": "/assets/components/p303.jpg",
+    "source": "https://au.ridefox.com/collections/all-forks/products/my27-fox-40-factory",
+    "imageSource": "https://serenity-foxfactory.asset.akeneo.cloud/fox_asset_family/media/FOX40_1600x1600.png",
+    "kind": "product-photo",
+    "variantNote": "Supplier MY27 example. Select wheel size, offset, steerer, axle and travel; frame clearance and compatibility remain unverified.",
+    "model": {
+      "type": "chosen-fork",
+      "color": 2303786
+    }
+  },
+  "p304": {
+    "name": "ODI Rogue V2.1 Lock-on Grips 135mm",
+    "image": "/assets/components/p304.jpg",
+    "source": "https://www.odigrips.com/products/rogue-v2-1-lock-on-grips-135mm",
+    "imageSource": "https://www.odigrips.com/cdn/shop/products/Rogue_MTB_Blue_670x.jpg?v=1659632117",
+    "kind": "product-photo",
+    "variantNote": "Blue manufacturer example finish. Confirm bar diameter and throttle clearance; not a twist-throttle sleeve.",
+    "model": {
+      "type": "chosen-grips",
+      "color": 2459565
+    }
+  },
+  "p305": {
+    "name": "ChiBatterySystems Chi Charger Plus",
+    "image": "/assets/components/p305.jpg",
+    "source": "https://chibatterysystems.com/products/chichargerplus",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0567/0033/8356/files/Chi_Charger_Plus_2.png?v=1754422312",
+    "kind": "product-photo",
+    "variantNote": "Set charge voltage, current and connector to the selected battery chemistry and supplier specifications.",
+    "model": {
+      "type": "chosen-charger"
+    }
+  },
+  "p306": {
+    "name": "ChiBatterySystems QS10-P Power Harness",
+    "image": "/assets/components/p306.jpg",
+    "source": "https://chibatterysystems.com/collections/chargedcycleworks",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0567/0033/8356/files/QS10-P_connector.png?v=1751995586",
+    "kind": "product-photo",
+    "variantNote": "Confirm conductor gauge, current/voltage limits, polarity, fuse and vehicle-side termination.",
+    "model": {
+      "type": "chosen-connector"
+    }
+  },
+  "p307": {
+    "name": "KuKirin G2 Battery Assembly",
+    "image": "/assets/components/p307.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-battery",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2Battery.webp?v=1785481574&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-scooter-pack",
+      "layout": "G2"
+    }
+  },
+  "p308": {
+    "name": "KuKirin G4 Battery Assembly",
+    "image": "/assets/components/p308.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-battery",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G4_Battery.webp?v=1785482244&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-scooter-pack",
+      "layout": "G4"
+    }
+  },
+  "p309": {
+    "name": "KuKirin G2 Master Battery Assembly",
+    "image": "/assets/components/p309.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-battery",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Master_Battery.webp?v=1785482428&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-scooter-pack",
+      "layout": "G2 Master"
+    }
+  },
+  "p310": {
+    "name": "KuKirin G2 Max Battery Assembly",
+    "image": "/assets/components/p310.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-battery",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Max_Battery.webp?v=1785482464&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-scooter-pack",
+      "layout": "G2 Max"
+    }
+  },
+  "p311": {
+    "name": "KuKirin G2 Display Dashboard Assembly",
+    "image": "/assets/components/p311.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-display-dashboard",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2DisplayDashboard.webp?v=1785484919&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-dashboard",
+      "layout": "G2"
+    }
+  },
+  "p312": {
+    "name": "KuKirin G4 Display Dashboard Assembly",
+    "image": "/assets/components/p312.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-display-dashboard",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G4_Display.webp?v=1785485070&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-dashboard",
+      "layout": "G4"
+    }
+  },
+  "p313": {
+    "name": "KuKirin G2 Master Display Dashboard Assembly",
+    "image": "/assets/components/p313.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-display-dashboard",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Master_Display_Dashboard.webp?v=1785485124&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-dashboard",
+      "layout": "G2 Master"
+    }
+  },
+  "p314": {
+    "name": "KuKirin G2 Max Display Dashboard Assembly",
+    "image": "/assets/components/p314.jpg",
+    "source": "https://kukirin-eu.com/products/kukirin-e-scooter-display-dashboard",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/G2_Max_Display_Dashboard.webp?v=1785485141&width=900",
+    "kind": "product-photo",
+    "variantNote": "Supplier model-specific replacement option. Confirm vehicle code, connector, physical dimensions and hardware revision.",
+    "model": {
+      "type": "chosen-dashboard",
+      "layout": "G2 Max"
+    }
+  }
+}

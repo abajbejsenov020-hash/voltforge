@@ -1,0 +1,16 @@
+{
+  "name": "@voltforge/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./catalog": "./src/catalog/index.js",
+    "./vehicles": "./src/vehicles/index.js",
+    "./appearances": "./src/catalog/appearances.js",
+    "./featured": "./src/vehicles/featured.js",
+    "./visuals": "./src/vehicles/visuals.js",
+    "./build": "./src/build.js",
+    "./compatibility": "./src/compatibility.js",
+    "./performance": "./src/performance/index.js"
+  }
+}

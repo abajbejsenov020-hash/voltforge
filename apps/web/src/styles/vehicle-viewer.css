@@ -1,0 +1,336 @@
+.stage {
+  isolation: isolate;
+  height: clamp(440px, 38vw, 580px);
+  background: #ddd9d0;
+  border-color: #c7c6bf;
+}
+.stage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, #f3f0e9a6, #eeeae166 60%, #eeebe4),
+    url('/environments/auto_service_backplate.jpg') center 52% / cover;
+}
+.stage[data-environment='courtyard']::before {
+  background-image:
+    linear-gradient(180deg, #f3f0e966, #eeebe466 65%, #e9e5dc), url('/environments/courtyard.jpg');
+  background-position:
+    center,
+    42% center;
+}
+.stage[data-environment='studio']::before {
+  background: linear-gradient(150deg, #f7f5ef, #d8d6cf);
+}
+.stage-top {
+  z-index: 3;
+  top: 18px;
+  left: 20px;
+  right: 20px;
+  align-items: center;
+  color: #252c30;
+  pointer-events: auto;
+}
+.presentation-switch {
+  display: flex;
+  padding: 3px;
+  border: 1px solid #bbbfb8;
+  border-radius: 5px;
+  background: #f7f6f0ed;
+}
+.presentation-switch button {
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 12px;
+  min-height: 34px;
+  color: #465054;
+  background: transparent;
+  font-size: 11px;
+}
+.presentation-switch button[aria-pressed='true'] {
+  background: #2b3336;
+  color: #fff;
+}
+.scene-setting {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #f7f6f0ed;
+  border: 1px solid #bbbfb8;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 10px;
+}
+.scene-setting select {
+  border: 0;
+  border-radius: 5px;
+  min-height: 40px;
+  background: transparent;
+  padding: 8px 7px;
+  font-size: 11px;
+}
+.vehicle-reference {
+  position: absolute;
+  inset: 80px 12% 94px;
+  background: #fff;
+  border: 1px solid #d3d2ca;
+  box-shadow: 0 15px 30px -20px #191f25a6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vehicle-reference img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px 12px 21px;
+  background: #fff;
+}
+.reference-tag {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f7f6f1;
+  border-top: 1px solid #ecece5;
+  text-align: center;
+  font-size: 9px;
+  color: #646c6e;
+  padding: 4px;
+}
+.vehicle-reference-missing {
+  position: absolute;
+  inset: 85px 8% 98px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f6f4eeed;
+  border: 1px solid #cccfc5;
+  border-radius: 4px;
+}
+.missing-mark {
+  color: #9d7258;
+  font:
+    600 32px Manrope,
+    sans-serif;
+  letter-spacing: -0.1em;
+  padding-right: 4px;
+  margin-bottom: 12px;
+}
+.vehicle-reference-missing h2 {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+.vehicle-reference-missing p {
+  font-size: 12px;
+  color: #626d71;
+  margin: 0 0 18px;
+}
+#scene {
+  position: absolute;
+  inset: 0;
+}
+.stage-model {
+  position: absolute;
+  bottom: 39px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  background: #f8f7f0e8;
+  border: 1px solid #d6d5ca;
+  border-radius: 3px;
+}
+#modelLabel {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 600;
+  text-align: left;
+  max-width: 65%;
+  overflow-wrap: anywhere;
+}
+#vehiclePhotoSource,
+#sceneEnvironmentStatus {
+  font-size: 10px;
+  color: #535f63;
+  text-align: right;
+}
+#vehiclePhotoSource:hover {
+  text-decoration: underline;
+}
+.stage-controls {
+  z-index: 2;
+  bottom: 90px;
+}
+.model-inspection {
+  top: 72px;
+  z-index: 2;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: calc(100% - 36px);
+  padding: 3px;
+  background: #f7f6f0e8;
+  border-radius: 5px;
+  border: 1px solid #ccd0c5;
+}
+.model-inspection button {
+  color: #303b40;
+}
+.scene-note {
+  margin: 0;
+  bottom: 12px;
+  font-size: 10px;
+  color: #384449;
+  line-height: 1.4;
+}
+.stage[data-presentation='concept'] .scene-note {
+  background: #f9f7efed;
+  padding: 4px;
+  border-radius: 3px;
+}
+.reference-variant {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #667075;
+  margin: 8px 0 0;
+  min-height: 15px;
+}
+.detail-vehicle-photo {
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  object-fit: contain;
+  background: #fff;
+}
+.photo-models-only {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.photo-models-only input {
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+}
+.finder-toolbar {
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+.vehicle-suggestions {
+  max-height: 330px;
+}
+.vehicle-suggestions button {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.vehicle-suggestions button img,
+.finder-no-photo {
+  width: 72px;
+  height: 64px;
+  flex: 0 0 72px;
+  object-fit: contain;
+  border: 1px solid #e2e2da;
+  border-radius: 3px;
+  background: #fff;
+}
+.finder-no-photo {
+  display: grid;
+  place-items: center;
+  color: #8c938e;
+}
+.finder-copy {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.finder-copy > span,
+.finder-copy small {
+  display: block;
+}
+@media (max-width: 1200px) and (min-width: 951px) {
+  .vehicle-reference {
+    inset-inline: 7%;
+  }
+}
+@media (max-width: 600px) {
+  .stage {
+    height: 470px;
+  }
+  .stage-top {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    gap: 7px;
+  }
+  .presentation-switch button {
+    padding: 7px;
+    font-size: 10px;
+  }
+  .scene-setting {
+    padding-left: 7px;
+    gap: 0;
+    font-size: 0;
+  }
+  .scene-setting select {
+    font-size: 11px;
+  }
+  .vehicle-reference {
+    inset: 76px 12px 118px;
+  }
+  .vehicle-reference-missing {
+    inset: 76px 12px 118px;
+    padding: 18px;
+  }
+  .stage-model {
+    bottom: 57px;
+    left: 12px;
+    right: 12px;
+    flex-direction: column;
+    gap: 3px;
+  }
+  #modelLabel {
+    max-width: 100%;
+    font-size: 12px;
+  }
+  #vehiclePhotoSource {
+    text-align: left;
+    font-size: 9px;
+  }
+  .scene-note {
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
+    font-size: 9px;
+  }
+  .stage-controls {
+    bottom: 119px;
+  }
+  .model-inspection {
+    top: 63px;
+    padding: 2px;
+    gap: 0;
+  }
+  .model-inspection button {
+    font-size: 9px;
+    padding: 6px;
+  }
+  .vehicle-suggestions {
+    grid-template-columns: 1fr;
+    max-height: 310px;
+  }
+  .finder-toolbar select {
+    width: 100%;
+  }
+  .reference-variant {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "voltforge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env scripts/dev.mjs",
+    "build": "npm run build --workspace=@voltforge/web",
+    "start": "node --env-file-if-exists=.env apps/api/src/index.js",
+    "test": "node --test tests/*.test.js",
+    "check": "npm run format:check && npm test && npm run build",
+    "format": "prettier --write apps packages tests scripts *.json *.md playwright.config.js",
+    "format:check": "prettier --check apps packages tests scripts *.json *.md playwright.config.js",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "prettier": "3.10.1"
+  }
+}

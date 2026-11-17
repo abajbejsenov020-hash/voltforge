@@ -1,0 +1,40 @@
+[
+  {
+    "id": "auto_service",
+    "name": "Auto Service",
+    "hdr": "/environments/auto_service_1k.hdr",
+    "image": "/environments/auto_service.jpg",
+    "preview": "/environments/auto_service.jpg",
+    "source": "https://polyhaven.com/a/auto_service",
+    "credit": "Sergej Majboroda / Poly Haven",
+    "license": "CC0-1.0",
+    "licenseSource": "https://polyhaven.com/license",
+    "hdrSource": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/auto_service_1k.hdr",
+    "imageSource": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/auto_service.jpg",
+    "hdrMD5": "0ccca9e03c88b517923824047f4a08a4",
+    "imageDimensions": [
+      1920,
+      960
+    ],
+    "backplate": "/environments/auto_service_backplate.jpg",
+    "backplateSource": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Backplates/auto_service/jpg_pretty/DSC_0620.jpg"
+  },
+  {
+    "id": "courtyard",
+    "name": "Courtyard",
+    "hdr": "/environments/courtyard_1k.hdr",
+    "image": "/environments/courtyard.jpg",
+    "preview": "/environments/courtyard.jpg",
+    "source": "https://polyhaven.com/a/courtyard",
+    "credit": "Greg Zaal / Poly Haven",
+    "license": "CC0-1.0",
+    "licenseSource": "https://polyhaven.com/license",
+    "hdrSource": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/courtyard_1k.hdr",
+    "imageSource": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/courtyard.jpg",
+    "hdrMD5": "c9f92690f97deab491c5f97dd652cee2",
+    "imageDimensions": [
+      1920,
+      960
+    ]
+  }
+]

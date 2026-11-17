@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Voltforge — Electric Build Studio</title>
+    <meta
+      name="description"
+      content="Plan your next e-scooter or e-bike. Explore parts, assemble a 3D concept, and uncover compatibility questions before you build."
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <a class="wordmark" href="#" aria-label="Voltforge home">VOLT<span>FORGE</span></a>
+        <nav class="header-nav" aria-label="Main navigation">
+          <button class="active" id="studioNav">Build studio</button
+          ><button id="savedNav">My garage</button><button id="guideNav">Build guide</button>
+        </nav>
+        <div class="header-actions">
+          <span id="saveStatus">Saved on this device</span
+          ><button class="btn" id="newBuild">New build</button
+          ><button class="btn primary" id="exportBuild">Export build</button>
+        </div>
+      </header>
+      <main>
+        <section class="workspace">
+          <div class="work-head">
+            <div>
+              <div class="eyebrow">
+                THE WORKSHOP <span>/</span> <span id="buildKind">E-SCOOTER</span>
+              </div>
+              <h1 id="buildName">Untitled build <span class="tiny-tag">CONCEPT</span></h1>
+              <p id="buildSubtitle">Your ideas. Real parts. One place to bring them together.</p>
+            </div>
+            <div class="work-actions">
+              <button class="text-btn" id="referencePhoto" hidden>Reference photo</button
+              ><button class="icon-btn" id="editBuild" aria-label="Edit build details">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m4 16 11-11 4 4L8 20H4v-4ZM13 7l4 4" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="stage" data-environment="workshop" data-presentation="photo">
+            <div class="stage-top">
+              <div class="presentation-switch" role="group" aria-label="Vehicle appearance view">
+                <button data-presentation="photo" aria-pressed="true">Original appearance</button>
+                <button data-presentation="concept" aria-pressed="false">3D concept</button>
+              </div>
+              <label class="scene-setting"
+                >Setting
+                <select id="sceneSetting">
+                  <option value="workshop">Workshop</option>
+                  <option value="courtyard">Courtyard</option>
+                  <option value="studio">Studio</option>
+                </select></label
+              >
+            </div>
+            <div class="vehicle-reference" id="vehicleReference" hidden>
+              <img id="vehiclePhoto" alt="" decoding="async" /><span class="reference-tag"
+                >Original model reference</span
+              >
+            </div>
+            <div class="vehicle-reference-missing" id="vehicleReferenceMissing">
+              <span class="missing-mark" aria-hidden="true">VF</span>
+              <h2>Your next build starts here.</h2>
+              <p>No verified image is available for this configuration yet.</p>
+              <button class="btn" id="openConceptView">Explore the 3D concept</button>
+            </div>
+            <canvas
+              id="scene"
+              hidden
+              aria-label="Interactive 3D vehicle concept. Drag to rotate and use the zoom buttons."
+              tabindex="0"
+            ></canvas>
+            <div class="model-inspection" aria-label="Inspect model details" hidden>
+              <button data-view="overall" aria-pressed="true">Overall</button
+              ><button data-view="cockpit" aria-pressed="false">Grips & controls</button
+              ><button data-view="drivetrain" aria-pressed="false">Wheels & brakes</button
+              ><button data-view="frame" aria-pressed="false">Frame details</button>
+            </div>
+            <div class="stage-model">
+              <strong id="modelLabel">Custom build</strong
+              ><a id="vehiclePhotoSource" href="#" target="_blank" rel="noopener noreferrer" hidden
+                >Reference source ↗</a
+              ><span id="sceneEnvironmentStatus" role="status" hidden></span>
+            </div>
+            <div class="stage-controls" hidden>
+              <button
+                id="rotate"
+                class="control"
+                aria-label="Toggle automatic rotation"
+                title="Auto rotate"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M20 7v5h-5M20 12a8 8 0 1 0-2 6" />
+                </svg></button
+              ><button id="zoomIn" class="control" aria-label="Zoom in">+</button
+              ><button id="zoomOut" class="control" aria-label="Zoom out">−</button><span></span
+              ><button id="explode" class="control wide" aria-pressed="false">Exploded view</button
+              ><button id="resetView" class="control" aria-label="Reset view">↺</button>
+            </div>
+            <p class="scene-note" id="sceneNote">
+              Original appearance · selected modifications are listed in your build
+            </p>
+          </div>
+          <p id="referenceVariant" class="reference-variant"></p>
+          <div class="build-strip">
+            <div>
+              <span class="metric-label">SELECTED PARTS</span
+              ><strong id="partCount">0 <small>/ 6 categories</small></strong>
+            </div>
+            <div>
+              <span class="metric-label">BATTERY ENERGY</span
+              ><strong id="energy">— <small>Wh</small></strong>
+            </div>
+            <div>
+              <span class="metric-label">BUILD CHECK</span
+              ><strong id="checkSummary" class="amber">Needs details</strong>
+            </div>
+            <button class="text-btn" id="reviewBuild">Review build →</button>
+          </div>
+          <section class="performance">
+            <div class="performance-head">
+              <div>
+                <div class="eyebrow">BEFORE THE FIRST RIDE</div>
+                <h2>Performance & range</h2>
+              </div>
+              <div class="performance-actions">
+                <label for="rangeCruise"
+                  >Range at
+                  <select id="rangeCruise" aria-label="Range scenario riding speed">
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                    <option>60</option>
+                    <option>70</option>
+                    <option>80</option>
+                    <option>90</option>
+                  </select>
+                  km/h</label
+                ><button class="text-btn" id="stockBaselineBtn" hidden>Stock G4 baseline</button
+                ><button class="text-btn" id="tunePerformance">Setup & measurements</button>
+              </div>
+            </div>
+            <div class="performance-grid">
+              <div>
+                <span class="metric-label" id="speedMetricLabel">SPEED REFERENCE</span
+                ><strong id="estimatedSpeed">—</strong
+                ><small id="speedBasis">Power model · gearing unverified</small>
+              </div>
+              <div>
+                <span class="metric-label">RANGE · ESTIMATE</span
+                ><strong id="estimatedRange">—</strong
+                ><small id="rangeBasis">Select a battery to estimate</small>
+              </div>
+              <div>
+                <span class="metric-label" id="peakMetricLabel">PEAK MOTOR OUTPUT · ESTIMATE</span
+                ><strong id="estimatedPeak">— kW</strong
+                ><small id="peakBasis">Add peak limits in Setup & measurements</small>
+              </div>
+              <div>
+                <span class="metric-label">RIDE TIME · ESTIMATE</span
+                ><strong id="estimatedTime">—</strong><small>At modeled cruising speed</small>
+              </div>
+            </div>
+            <div
+              id="rangeScenarios"
+              class="range-scenarios"
+              aria-label="Range scenarios at different riding speeds"
+            ></div>
+            <p id="performanceNote">
+              Planning estimates, not tested performance. Level road, no wind, healthy battery.
+            </p>
+          </section>
+          <details class="assistant">
+            <summary>Build assistant <span>Search parts and review specifications</span></summary>
+            <div class="assistant-main">
+              <p id="assistantText">
+                Choose your motor, controller and battery. I’ll flag voltage conflicts and the
+                fitment details still missing from your plan.
+              </p>
+              <form id="askForm">
+                <input
+                  id="question"
+                  placeholder="Ask about your build or search a part…"
+                  aria-label="Ask the workshop assistant"
+                /><button aria-label="Ask question">↗</button>
+              </form>
+              <div class="suggestions">
+                <button data-ask="What needs checking?">What needs checking?</button
+                ><button data-ask="Find VESC controllers">Find VESC controllers</button
+                ><button data-ask="How do I start?">How do I start?</button>
+              </div>
+            </div>
+          </details>
+        </section>
+        <aside class="catalog">
+          <div class="catalog-head">
+            <div class="eyebrow">MAKE IT YOURS</div>
+            <h2>Parts library<span id="catalogCount"></span></h2>
+            <label class="search"
+              ><input
+                id="search"
+                placeholder="Search parts, brands, models…"
+                aria-label="Search parts" /></label
+            ><label class="category-label" for="categorySelect">Category</label
+            ><select id="categorySelect" aria-label="Part category"></select>
+            <div class="tabs" role="tablist" aria-label="Part categories" hidden></div>
+            <div class="filters">
+              <select id="brand" aria-label="Filter by brand">
+                <option value="">All brands</option></select
+              ><select id="vehicleFilter" aria-label="Filter by vehicle">
+                <option value="current">This vehicle type</option>
+                <option value="model">Listed for my model</option>
+                <option value="all">All vehicles</option>
+              </select>
+            </div>
+            <label class="catalog-view"
+              ><span>Library</span
+              ><select id="appearanceFilter" aria-label="Parts library scope">
+                <option value="products">Photographed products</option>
+                <option value="all">Complete planning catalog</option>
+              </select></label
+            >
+          </div>
+          <div class="catalog-meta">
+            <span id="resultsCount"></span><span>Product photos first</span>
+          </div>
+          <div id="parts" class="parts"></div>
+          <div class="catalog-footer">
+            <span class="live-dot"></span> A plan you can keep improving.<span
+              >Specs & availability need supplier confirmation.</span
+            >
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <span>VOLT FORGE <i>YOUR BUILD. EVERY DETAIL.</i></span
+        ><span>Plan → Check → Build</span><button id="about">About this studio</button>
+      </footer>
+    </div>
+    <dialog id="startDialog" aria-labelledby="setupHeading">
+      <form method="dialog" class="modal-top">
+        <span class="wordmark">VOLT<span>FORGE</span></span
+        ><span class="setup-steps"
+          ><strong>Vehicle</strong><span>Components</span><span>Review</span></span
+        ><button class="close-setup" aria-label="Close build setup">Back to studio</button>
+      </form>
+      <div class="modal-content">
+        <div class="setup-intro">
+          <div>
+            <h2 id="setupHeading">Start with your ride.</h2>
+            <p id="setupDescription">
+              Choose a model to rebuild, or start a new configuration from scratch.
+            </p>
+          </div>
+          <div class="mode-toggle">
+            <button data-mode="rebuild" class="chosen">Rebuild a vehicle</button
+            ><button data-mode="new">Build from scratch</button>
+          </div>
+        </div>
+        <div class="vehicle-choices" aria-label="Vehicle type">
+          <button data-type="scooter" class="vehicle-card chosen" aria-pressed="true">
+            E-scooters</button
+          ><button data-type="bike" class="vehicle-card" aria-pressed="false">
+            E-bikes & e-motos
+          </button>
+        </div>
+        <section id="featuredSection" aria-labelledby="featuredHeading">
+          <div class="section-heading">
+            <h3 id="featuredHeading">Choose your model</h3>
+            <button class="text-btn" id="browseModelLibrary">Find another model</button>
+          </div>
+          <div class="featured-models" id="featuredModels"></div>
+          <div
+            id="emotoBrands"
+            class="emoto-brands"
+            aria-label="Explore e-bike and e-moto brands"
+            hidden
+          ></div>
+        </section>
+        <details id="modelFinder" class="model-finder">
+          <summary>Explore more models <span id="librarySize"></span></summary>
+          <div id="existingFields">
+            <label class="field-label" for="vehicleName">Search your vehicle</label>
+            <div class="finder-toolbar">
+              <select id="finderBrand" aria-label="Filter vehicle suggestions by brand">
+                <option value="">All vehicle brands</option></select
+              ><label class="photo-models-only"
+                ><input type="checkbox" id="photoModelsOnly" /> With product images</label
+              ><span id="vehicleMatchCount" role="status" aria-live="polite"></span>
+            </div>
+            <input
+              id="vehicleName"
+              class="big-input"
+              placeholder="Brand or model, e.g. KuKirin G2 Max"
+              autocomplete="off"
+              aria-controls="vehicleSuggestions"
+              aria-describedby="vehicleNote"
+              maxlength="100"
+            />
+            <div
+              id="vehicleSuggestions"
+              class="vehicle-suggestions"
+              aria-label="Matching vehicles"
+            ></div>
+            <div class="finder-actions">
+              <button type="button" id="browseVehicles">Browse all vehicles</button
+              ><button type="button" id="customVehicle" hidden></button>
+            </div>
+            <p class="field-note" id="vehicleNote">Search by brand or model.</p>
+          </div>
+        </details>
+        <div id="newFields" hidden>
+          <label class="field-label" for="projectName">Build name <span>(optional)</span></label
+          ><input
+            id="projectName"
+            class="big-input"
+            placeholder="Name your project"
+            maxlength="100"
+          />
+          <p>Start with a generic vehicle layout and choose your own components.</p>
+        </div>
+        <div class="setup-bottom">
+          <div>
+            <span id="selectionLabel">Select a model to continue</span
+            ><small id="selectionNote"
+              >Your exact model year and hardware will need confirmation.</small
+            >
+          </div>
+          <button class="btn primary start-btn" id="startBuild">Continue to build</button>
+        </div>
+        <p class="modal-bottom">
+          Product references show the original appearance. The 3D concept shows planned component
+          changes using approximate geometry.
+        </p>
+      </div>
+    </dialog>
+    <dialog id="detailDialog">
+      <div class="detail-top">
+        <h2 id="detailTitle"></h2>
+        <button class="icon-btn" id="closeDetail" aria-label="Close details">×</button>
+      </div>
+      <div id="detailBody"></div>
+    </dialog>
+    <div id="toast" role="status"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

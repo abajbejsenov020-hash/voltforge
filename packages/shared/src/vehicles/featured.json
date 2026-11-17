@@ -1,0 +1,74 @@
+[
+  {
+    "key": "kukirin-g4",
+    "name": "KuKirin G4",
+    "type": "scooter",
+    "image": "/assets/kukirin-g4.jpg",
+    "source": "https://kukirin-escooter.com/",
+    "imageSource": "https://kukirin-escooter.com/cdn/shop/files/G4_1_70c62286-69d2-4220-befd-04734f0194e1.jpg?v=1786094742&width=800",
+    "bytes": null
+  },
+  {
+    "key": "kukirin-g2-max",
+    "name": "KuKirin G2 Max",
+    "type": "scooter",
+    "image": "/assets/kukirin-g2-max.webp",
+    "source": "https://kukirin-eu.com/products/kukirin-g2-max-eu-electric-scooter",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/kukirin-g2max-main-image_1_454030b9-4f9b-4e54-b518-1851c23bccb1.webp?v=1765268324&width=416",
+    "bytes": null
+  },
+  {
+    "key": "kukirin-g2-master",
+    "name": "KuKirin G2 Master",
+    "type": "scooter",
+    "image": "/assets/kukirin-g2-master.webp",
+    "source": "https://kukirin-eu.com/products/kukirin-g2-master-eu-electric-scooter",
+    "imageSource": "https://kukirin-eu.com/cdn/shop/files/kukirin-g2-master-main-image_1_4f74af24-15f3-4753-8e28-c4dd046bcccb.webp?v=1765268558&width=416",
+    "bytes": null
+  },
+  {
+    "key": "ausom-dt2-pro",
+    "name": "Ausom DT2 Pro",
+    "type": "scooter",
+    "image": "/assets/ausom-dt2-pro.jpg",
+    "source": "https://ausomstore.com/products/ausom-dt2-pro-e-scooter",
+    "imageSource": "https://ausomstore.com/cdn/shop/files/dt2-pro-main-3.jpg?v=1773911495&width=720",
+    "bytes": null
+  },
+  {
+    "key": "ausom-l2-max-dual",
+    "name": "Ausom L2 Max Dual Motor",
+    "type": "scooter",
+    "image": "/assets/ausom-l2-max-dual.jpg",
+    "source": "https://ausomstore.com/products/ausom-l2-max-dual-electric-scooter",
+    "imageSource": "https://ausomstore.com/cdn/shop/files/l2-max-dual-main-4.jpg?v=1773913017&width=720",
+    "bytes": null
+  },
+  {
+    "key": "surron-lbx",
+    "name": "Sur-Ron Light Bee X",
+    "type": "bike",
+    "image": "/assets/surron-lbx.png",
+    "source": "https://mxwraps.us/",
+    "imageSource": "https://mxwraps.us/cdn/shop/files/LBX_vFinal.png?v=1779277154",
+    "bytes": null
+  },
+  {
+    "key": "fiido-m1-pro",
+    "name": "Fiido M1 Pro",
+    "type": "bike",
+    "image": "/assets/fiido-m1-pro.webp",
+    "source": "https://fiido.com/products/fiido-m1-pro-fat-tire-electric-bike",
+    "imageSource": "https://fiido.com/cdn/shop/files/7-m1-pro_55c3759e-6638-4a7c-9a50-df5ed287db64_1000x.webp?v=1775184302",
+    "bytes": null
+  },
+  {
+    "key": "fiido-c11",
+    "name": "Fiido C11",
+    "type": "bike",
+    "image": "/assets/fiido-c11.webp",
+    "source": "https://eu.fiido.com/products/fiido-c11-electric-commuter-bike",
+    "imageSource": "https://eu.fiido.com/cdn/shop/files/2-c11_9c3cb8ba-e5ff-41f6-9593-58ffd0ceb734_1000x.webp?v=1772608325",
+    "bytes": null
+  }
+]
