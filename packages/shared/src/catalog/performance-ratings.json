@@ -1,0 +1,226 @@
+{
+  "p0": {
+    "ratedWRange": [1000, 4000],
+    "wheelInches": 10,
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-arrow-split-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "60–120 V; rated RPM 1200–2600. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p1": {
+    "ratedWRange": [1000, 3500],
+    "wheelInches": 10,
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-standard-split-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "48–72 V; rated RPM 1000–2000. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p2": {
+    "ratedWRange": [1000, 4000],
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-split-wide-tire-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "48–120 V; rated RPM 1200–2200; both 10-inch and 13-inch tire options. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p3": {
+    "ratedWRange": [1000, 4000],
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-10-inch-single-sided-axle-split-wide-tire-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "48–120 V; rated RPM 1200–2200; several tire options including 10-inch and 13-inch. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p4": {
+    "ratedWRange": [2500, 5000],
+    "wheelInches": 11,
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-70h-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "60–120 V; 60/65/70 mm magnet variants; rated RPM 2200–3300. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p5": {
+    "ratedW": 4000,
+    "wheelInches": 11,
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-standard-split-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "60–120 V; rated RPM 1400–2200. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p6": {
+    "ratedW": 6000,
+    "wheelInches": 11,
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-75-80mm-magnet-split-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "60–120 V; rated RPM 2200–3300. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p7": {
+    "ratedW": 8000,
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-11-inch-130mm-magnet-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "72–120 V; rated RPM 1800–2300. Product name says 11-inch but listed tires are 13x5.0-6.5 and 14x5.0-6.5; no single rolling diameter imported. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p8": {
+    "ratedWRange": [1000, 5000],
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-12-inch-10mm2-power-line-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "48–120 V; rated RPM 2000–2700. Listed tires are 3.00-8 and 3.50-8; no single rolling diameter imported. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p9": {
+    "ratedWRange": [800, 2000],
+    "sources": [
+      {
+        "url": "https://www.lonnyo.com/product/lonnyo-motor-8-5-inch-hub-motor/",
+        "note": "Manufacturer product parameters. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "48–72 V; rated RPM 800–1900. Catalog name says 8.5-inch but manufacturer table says 8-inch and tire 8x3.0-5.5; no fixed rolling diameter imported. Rated RPM is not a no-load specification. Exact winding, voltage and power variant require selection."
+  },
+  "p15": {
+    "ratedW": 4000,
+    "peakW": 5000,
+    "nominalV": 72,
+    "wheelInches": 10,
+    "sources": [
+      {
+        "url": "https://spintend.com/products/10-4000w-hubmotor-for-diy-fast-scooter",
+        "note": "Manufacturer/seller specifications. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Manufacturer states rated 4000 W, max 5000 W and 2000 RPM at 72 V. RPM is not explicitly no-load."
+  },
+  "p16": {
+    "ratedW": 2200,
+    "wheelInches": 10,
+    "sources": [
+      {
+        "url": "https://spintend.com/collections/hubmotors/products/jsc-10-2200w-hubmotor-for-build-scooter",
+        "note": "Manufacturer/seller specifications. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Manufacturer lists 36–72 V and 2000 RPM without a no-load condition or RPM reference voltage."
+  },
+  "p17": {
+    "ratedWRange": [4000, 6000],
+    "noLoadRpmRange": [2900, 3000],
+    "sources": [
+      {
+        "url": "https://spintend.com/collections/hubmotors/products/72v-6000w-powerful-hubmotor-for-scooter-racing",
+        "note": "Manufacturer/seller specifications. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Separate torque winding 22x3 and speed winding 33x2. Manufacturer lists 72–96 V and no-loading RPM 2900–3000, without mapping one RPM to one voltage/winding; no rpmVoltage assumed."
+  },
+  "p18": {
+    "ratedW": 5500,
+    "noLoadRpm": 1700,
+    "sources": [
+      {
+        "url": "https://spintend.com/collections/hubmotors/products/8-5500w-strong-torque-power-hubmotor-for-offroad-scooter",
+        "note": "Manufacturer/seller specifications. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Manufacturer lists 60–96 V and no-load 1700 RPM without one RPM reference voltage. The 8-inch label is motor/rim size; product is for a 12-inch wheel platform."
+  },
+  "p37": {
+    "maxBatteryA": 180,
+    "maxPhaseA": 660,
+    "sources": [
+      {
+        "url": "https://www.far-driver.com/wp-content/uploads/Fardriver-controller-Manual.pdf",
+        "note": "Manufacturer ND Hall Universal Edition manual, page 2 indicator table: 72490 maximum BUS current 180 A, maximum phase current 660 A, operating 48–72 V, maximum voltage 88 V."
+      },
+      {
+        "url": "https://www.far-driver.com/nd72490/",
+        "note": "Official product page heading is ND72490 but description names ND72530; current limits are taken from the exact 72490 manual row."
+      }
+    ],
+    "variantNote": "Published hardware maxima are not configured operating limits, continuous ratings or battery/BMS limits. Confirm exact controller revision and configuration."
+  },
+  "p167": {
+    "ratedW": 40000,
+    "sources": [
+      {
+        "url": "https://www.ebmx.com/shop/ebmx-xub-80-motor-for-surron-ultra-bee-air-cooled-167",
+        "note": "Manufacturer explicitly states 40 kW rated. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Rated 12000 RPM is not identified as no-load RPM. Requires compatible controller, battery and drivetrain."
+  },
+  "p169": {
+    "ratedW": 13000,
+    "peakW": 31000,
+    "maxPhaseA": 800,
+    "sources": [
+      {
+        "url": "https://www.torpmotors.com/motors/tm25/",
+        "note": "Manufacturer specifications distinguish continuous/peak motor power and maximum phase current. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Actual delivery depends on compatible TORP controller and battery. Maximum phase current is not battery current. Peak specified at 80 V."
+  },
+  "p170": {
+    "ratedW": 19000,
+    "peakW": 50000,
+    "maxPhaseA": 1100,
+    "sources": [
+      {
+        "url": "https://www.torpmotors.com/motors/tm40-pro/",
+        "note": "Manufacturer specifications distinguish continuous/peak motor power and maximum phase current. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Actual delivery depends on compatible TORP controller and battery. Maximum phase current is not battery current."
+  },
+  "p171": {
+    "ratedW": 24000,
+    "peakW": 58000,
+    "maxPhaseA": 1200,
+    "sources": [
+      {
+        "url": "https://www.torpmotors.com/motors/tm50/",
+        "note": "Manufacturer specifications distinguish continuous/peak motor power and maximum phase current. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Actual delivery depends on compatible TORP controller and battery. Maximum phase current is not battery current. TM50 Pro version; manufacturer says TC1000 2.0 delivery is up to 50 kW at 80 V, below the motor-only 58 kW rating."
+  },
+  "p172": {
+    "ratedW": 24000,
+    "peakW": 55000,
+    "maxPhaseA": 1200,
+    "sources": [
+      {
+        "url": "https://www.torpmotors.com/motors/tm50/",
+        "note": "Manufacturer specifications distinguish continuous/peak motor power and maximum phase current. Advertised motor power; manufacturer does not specify electrical input versus mechanical shaft output."
+      }
+    ],
+    "variantNote": "Actual delivery depends on compatible TORP controller and battery. Maximum phase current is not battery current. TM50 Speed version; manufacturer says TC1000 2.0 delivery is up to 50 kW at 80 V, below the motor-only 55 kW rating."
+  }
+}

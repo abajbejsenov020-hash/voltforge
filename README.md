@@ -75,7 +75,11 @@ Speed, range, ride time and peak motor output distinguish measured inputs, facto
 
 The stock KuKirin G4 profile uses **one rear 2,000 W motor**, 60 V × 20 Ah (1,200 Wh), and a separately labeled factory reference. The owner's **90 km/h display reading is not treated as a GPS measurement**. Powertrain changes invalidate the stock baseline and previous measurements.
 
-Peak output uses verified motor peak watts and loaded pack voltage × the lower of controller battery current or battery burst current × efficiency. Phase current is not battery current. Missing inputs remain unknown or clearly labeled ceilings. These calculations are planning estimates and do not certify fitment or achievable road performance.
+Selecting a motor, controller and battery now produces automatic speed and peak-power planning scenarios. Manufacturer ratings are recorded with sources in `packages/shared/src/catalog/performance-ratings.json`; ranges preserve winding and power variants. Unknown essential motor or pack ratings are requested directly below the results.
+
+Automatic assumptions are visible in **Assumptions & quick inputs**: a pack without a known discharge rating uses a 2C continuous / up-to-3C burst scenario, loaded voltage is assumed at 90% of nominal, and a motor without a published peak uses a 1.5× rated-power burst scenario. Advertised motor watts with an unspecified measurement basis are treated as electrical input with the displayed efficiency assumption. These are editable modeling assumptions, not verified hardware ratings or recommended controller settings. A displayed range represents catalog variants, not a statistical confidence interval. Automatic values are recalculated from selected parts and never saved as measured inputs.
+
+Peak output is bounded by motor peak output and loaded pack voltage × the lower of controller battery current or battery burst current × efficiency. Phase current is not battery current. GPS observations and entered ratings take priority; published controller maxima still bound the calculation. Partial information can produce a clearly labeled ceiling. Winding, gearing, temperature and actual configured limits can reduce achievable performance. These calculations do not certify fitment or road performance.
 
 ## API
 

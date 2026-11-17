@@ -1,5 +1,6 @@
 import './styles/app.css';
 import './styles/vehicle-viewer.css';
+import './styles/performance.css';
 import { createApiClient } from './services/api.js';
 import { BuildStore, BUILD_RECORD_PREFIX } from './state/build-store.js';
 import { createVehicleScene } from './scene/vehicle-scene.js';

@@ -1,6 +1,7 @@
 import { selectParts } from '../build.js';
 import { checkCompatibility } from '../compatibility.js';
 import { normalizeVehicleName } from '../vehicles/index.js';
+import { automaticPerformanceInputs } from './automatic.js';
 // Performance references and energy scenarios are deliberately separate.
 // A motor's advertised watts alone do not establish loaded top speed.
 export const STOCK_PERFORMANCE = {
@@ -45,6 +46,16 @@ export function performanceBand(value, unit) {
   return approx(value, unit);
 }
 export function speedText(e) {
+  if (e.speed.kind === 'planning') {
+    const range = e.speed.range;
+    return (
+      '≈' +
+      (range && Math.round(range[1]) > Math.round(range[0])
+        ? Math.round(range[0]) + '–' + Math.round(range[1])
+        : Math.round(e.speed.value)) +
+      ' km/h'
+    );
+  }
   return e.speed.value === null
     ? 'Not established'
     : (e.speed.kind === 'ceiling' ? '≤' : '') + Math.floor(e.speed.value) + ' km/h';
@@ -53,6 +64,16 @@ export function speedBasisText(e) {
   return e.speed.basis + (e.dashboard ? ' · Your display: ' + e.dashboard + ' km/h' : '');
 }
 export function peakPowerText(peak) {
+  if (peak.kind === 'planning') {
+    const range = peak.range;
+    return (
+      '≈' +
+      (range && range[1] - range[0] >= 100
+        ? (range[0] / 1000).toFixed(1) + '–' + (range[1] / 1000).toFixed(1)
+        : (peak.value / 1000).toFixed(1)) +
+      ' kW'
+    );
+  }
   return peak.value === null
     ? '— kW'
     : (peak.kind === 'ceiling' ? '≤' : peak.kind === 'estimate' ? '≈' : '') +
@@ -60,6 +81,7 @@ export function peakPowerText(peak) {
         ' kW';
 }
 export function peakPowerLabel(peak) {
+  if (peak.kind === 'planning') return 'PEAK POWER · ROUGH ESTIMATE';
   return peak.kind === 'factory'
     ? 'FACTORY PEAK REFERENCE'
     : peak.kind === 'ceiling'
@@ -264,6 +286,13 @@ export function createPerformanceEngine(state) {
     }
     const wh = nominal && ah ? nominal * ah : null,
       usableWh = wh ? (wh * numberInput(a.usable, 80, 1, 100)) / 100 : null;
+    const automatic = automaticPerformanceInputs(state, p, a, {
+      nominal,
+      ah,
+      stock,
+      efficiency: eff,
+    });
+    const calculated = automatic.inputs;
     const roadWh = (speed) => {
       const v = speed / 3.6,
         relativeAir = Math.max(0, v + numberInput(a.wind, 0, -80, 120) / 3.6),
@@ -283,20 +312,27 @@ export function createPerformanceEngine(state) {
     const whPerKm = energyAtSpeed(cruise),
       range = usableWh ? usableWh / whPerKm : null;
     // Optional engineering ceilings; never use nominal/marketing watts as a speed promise.
-    const enteredPower = numberInput(a.power, 0),
+    const enteredPower = numberInput(calculated.power, 0),
       motors = stock ? profile.motors : numberInput(state.specs.motorCount, 1, 1, 4);
     let mechanical = enteredPower ? enteredPower * motors : null,
       limited = false;
-    const amps = [numberInput(state.specs.bms, 0), numberInput(state.specs.batteryLimit, 0)].filter(
-      (x) => x > 0,
-    );
+    const amps = [
+      numberInput(state.specs.bms, 0),
+      numberInput(state.specs.batteryLimit, 0),
+      automatic.continuousA,
+    ].filter((x) => x > 0);
+    const supplyVoltage = automatic.enabled
+      ? numberInput(calculated.peakVoltage, nominal)
+      : nominal;
+    const restrictPower = (watts) =>
+      nominal && amps.length ? Math.min(watts, supplyVoltage * Math.min(...amps) * eff) : watts;
     if (mechanical && nominal && amps.length) {
-      const bounded = nominal * Math.min(...amps) * eff;
+      const bounded = restrictPower(mechanical);
       limited = bounded < mechanical;
       mechanical = Math.min(mechanical, bounded);
     }
-    let powerCeiling = null;
-    if (mechanical) {
+    function speedFromPower(watts) {
+      if (!watts) return null;
       let lo = 0,
         hi = 100;
       for (let i = 0; i < 60; i++) {
@@ -307,11 +343,12 @@ export function createPerformanceEngine(state) {
               (numberInput(a.stops, 0.5, 0, 10) * (0.5 * mass * m * m)) / (3600 * eff)) *
               speed -
             numberInput(a.accessory, 10, 0, 500);
-        if (required * eff > mechanical) hi = m;
+        if (required * eff > watts) hi = m;
         else lo = m;
       }
-      powerCeiling = lo * 3.6;
+      return lo * 3.6;
     }
+    const powerCeiling = speedFromPower(mechanical);
     const rpm = numberInput(a.rpm, 0),
       rpmCeiling = rpm
         ? (rpm * Math.PI * numberInput(a.wheel, 11, 1, 40) * 0.0254 * 60) / 1000
@@ -337,7 +374,24 @@ export function createPerformanceEngine(state) {
         basis: 'Factory reference, not a measured result for your scooter',
         kind: 'factory',
       };
-    else if (maxSpeed !== null)
+    else if (
+      powerCeiling !== null &&
+      automatic.powerRange &&
+      automatic.enabled &&
+      automatic.speedPlanning
+    ) {
+      const range = automatic.powerRange?.map((watts) => {
+        const speed = speedFromPower(restrictPower(watts * motors));
+        return rpmCeiling === null ? speed : Math.min(speed, rpmCeiling);
+      });
+      speed = {
+        value: maxSpeed,
+        range,
+        kind: 'planning',
+        basis:
+          'Rough power-based scenario from selected parts; winding, gearing and actual limits need confirmation',
+      };
+    } else if (maxSpeed !== null)
       speed = {
         value: maxSpeed,
         basis:
@@ -346,9 +400,30 @@ export function createPerformanceEngine(state) {
             : 'Power-based ceiling; winding and gearing unverified',
         kind: 'ceiling',
       };
+    let peak = estimatePeakPower(calculated, p, stock, profile);
+    if (
+      automatic.enabled &&
+      automatic.peakPlanning &&
+      peak.value !== null &&
+      !peak.missing.length
+    ) {
+      const range = automatic.peakMotorRange?.map(
+        (watts) => estimatePeakPower({ ...calculated, peakMotorW: watts }, p, stock, profile).value,
+      );
+      peak = {
+        ...peak,
+        range,
+        kind: 'planning',
+        basis:
+          'Rough burst-output scenario · ' +
+          peak.limiter +
+          '. Open Assumptions & quick inputs to refine.',
+      };
+    }
     const conflicts = checks().filter((i) => i.kind === 'conflict').length;
     return {
-      peak: estimatePeakPower(a, p, stock, profile),
+      peak,
+      automatic,
       a,
       p,
       profile,
@@ -421,6 +496,13 @@ export function createPerformanceEngine(state) {
         : 'No stock performance reference available.',
       'Trip-energy calibration: ' + (e.calibrated ? 'entered measurement used' : 'not provided'),
       'Inputs: ' + JSON.stringify(e.a),
+      ...(e.automatic.enabled
+        ? [
+            'AUTOMATIC PLANNING ASSUMPTIONS',
+            ...e.automatic.assumptions,
+            ...e.automatic.sources.map((source) => 'Source: ' + source.url + ' | ' + source.note),
+          ]
+        : []),
       'Display readings are not GPS-verified ground speed. Range scenarios are not validated real-world expectations; they do not establish speed achievability or component compatibility.',
     ];
   }
