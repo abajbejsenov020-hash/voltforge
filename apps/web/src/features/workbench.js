@@ -17,8 +17,14 @@ export function createFeature(app) {
     const visual = getVehicleVisual(app.state.vehicle, app.state.type);
     $('#modelLabel').textContent =
       app.state.mode === 'rebuild' ? visual.name + ' · ' + visual.fidelity : 'Custom concept model';
+    const upgrades = Object.keys(p).length;
+    $('#partCount').previousElementSibling.textContent =
+      app.state.mode === 'rebuild' ? 'CHOSEN REPLACEMENTS' : 'SELECTED PARTS';
     $('#partCount').innerHTML =
-      Object.keys(p).length + ' <small>/ ' + CATEGORIES.length + ' categories</small>';
+      upgrades +
+      (app.state.mode === 'rebuild'
+        ? ' <small>chosen · ' + (CATEGORIES.length - upgrades) + ' stock</small>'
+        : ' <small>/ ' + CATEGORIES.length + ' categories</small>');
     const perf = app.estimatePerformance();
     $('#energy').innerHTML = (perf.wh ? Math.round(perf.wh) : '—') + ' <small>Wh nominal</small>';
     const count = app.checks().filter((i) => i.kind === 'conflict').length;

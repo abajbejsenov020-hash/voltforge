@@ -23,12 +23,9 @@ function g4() {
   return { ...createBuild(), mode: 'rebuild', vehicle: 'KuKirin G4' };
 }
 
-function lightBee() {
-  return {
-    ...createBuild('bike'),
-    mode: 'rebuild',
-    vehicle: 'Sur-Ron Light Bee X',
-  };
+// Isolate manual-limit mathematics from the stock-hardware inheritance suite.
+function unconfiguredBike() {
+  return createBuild('bike');
 }
 
 function identityDigest(records, fields) {
@@ -162,21 +159,23 @@ test('range follows riding speed and a measured 800 Wh over 20 km calibrates to 
   assert.equal(estimatePerformance(build).calibrated, false);
 });
 
-test('modified hardware and a different G4 model do not inherit stock speed or battery assumptions', () => {
+test('modified parts override their category while other factory hardware and exact variants remain distinct', () => {
   const build = g4();
   build.selected.Batteries = CATALOG.find((entry) => entry.name === '72V 40Ah Pack').id;
   const modified = estimatePerformance(build);
   assert.equal(modified.stock, false);
   assert.equal(modified.wh, 2880);
-  assert.equal(modified.speed.kind, 'unknown');
+  assert.equal(modified.speed.kind, 'planning');
+  assert.equal(modified.p.Motors.stock, true);
   assert.equal(modified.dashboard, 0);
   const twinMotor = g4();
   twinMotor.specs.motorCount = 2;
   assert.equal(estimatePerformance(twinMotor).stock, false);
-  assert.equal(estimatePerformance(twinMotor).wh, null);
+  assert.equal(estimatePerformance(twinMotor).wh, 1200);
   const differentModel = { ...g4(), vehicle: 'KuKirin G4 Ultra' };
-  assert.equal(estimatePerformance(differentModel).profile, null);
-  assert.equal(estimatePerformance(differentModel).speed.kind, 'unknown');
+  assert.equal(estimatePerformance(differentModel).profile.name, 'KuKirin G4 Ultra');
+  assert.equal(estimatePerformance(differentModel).motors, 2);
+  assert.equal(estimatePerformance(differentModel).peak.value, 3000);
   const alias = { ...g4(), vehicle: 'Kugoo Kirin G4' };
   assert.equal(estimatePerformance(alias).stock, true);
 });
@@ -194,11 +193,11 @@ test('legacy defaults reset and custom battery measurements disable the stock ba
   const measured = estimatePerformance(build);
   assert.equal(measured.stock, false);
   assert.equal(measured.wh, 1800);
-  assert.equal(measured.speed.kind, 'unknown');
+  assert.equal(measured.speed.kind, 'planning');
 });
 
 test('peak shaft output uses the bottleneck without becoming continuous power or top speed', () => {
-  const build = lightBee();
+  const build = unconfiguredBike();
   build.performance = {
     schema: 2,
     peakMotorW: 15000,
@@ -226,7 +225,7 @@ test('peak shaft output uses the bottleneck without becoming continuous power or
 });
 
 test('manual peak-current inputs cannot override a published controller or configured battery limit', () => {
-  const build = lightBee();
+  const build = unconfiguredBike();
   build.selected.Controllers = part('TORP', 'TC500 2.0').id;
   build.performance = {
     schema: 2,
@@ -249,7 +248,7 @@ test('manual peak-current inputs cannot override a published controller or confi
 });
 
 test('continuous motor ratings and advertised controller output do not invent peak data', () => {
-  const build = lightBee();
+  const build = unconfiguredBike();
   build.performance = { schema: 2, power: 15000 };
   assert.equal(estimatePerformance(build).peak.kind, 'unknown');
   build.selected.Controllers = part('EBMX', 'X-9000 V3 Controller Kit').id;
@@ -257,7 +256,7 @@ test('continuous motor ratings and advertised controller output do not invent pe
 });
 
 test('hardware invalidation clears measured speed, trip energy, and burst limits while retaining rider inputs', () => {
-  const build = lightBee();
+  const build = unconfiguredBike();
   build.performance = {
     schema: 2,
     rider: 87,

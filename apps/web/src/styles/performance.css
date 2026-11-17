@@ -52,3 +52,44 @@
     grid-template-columns: 1fr;
   }
 }
+
+.stock-hardware-note {
+  margin: 4px 0 22px;
+  color: var(--muted, #626a6b);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.stock-part-card {
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid #ced7cf;
+  background: #f4f7f2;
+  border-radius: 5px;
+}
+.stock-part-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.stock-part-badge {
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  font-weight: 650;
+  color: #445c46;
+}
+.stock-part-card strong {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.stock-part-card p {
+  margin: 8px 0 0;
+  color: #53605a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.stock-part-heading button {
+  font-size: 11px;
+  flex-shrink: 0;
+}

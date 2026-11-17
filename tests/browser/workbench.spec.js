@@ -105,7 +105,9 @@ test('3D concept and component controls render in a real WebGL browser', async (
   await startModel(page, 'KuKirin G4');
   await page.locator('button[data-presentation="concept"]').click();
   await expect(page.locator('#scene')).toBeVisible();
-  await expect(page.locator('#sceneEnvironmentStatus')).toHaveText('Workshop');
+  await expect(page.locator('#sceneEnvironmentStatus')).toHaveText('Garage · 3D workshop', {
+    timeout: 20000,
+  });
   await page.locator('[data-view="cockpit"]').click();
   await page.locator('#zoomIn').click();
   await page.locator('#resetView').click();

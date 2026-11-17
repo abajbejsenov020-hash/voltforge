@@ -11,6 +11,7 @@
     "./visuals": "./src/vehicles/visuals.js",
     "./build": "./src/build.js",
     "./compatibility": "./src/compatibility.js",
-    "./performance": "./src/performance/index.js"
+    "./performance": "./src/performance/index.js",
+    "./stock": "./src/vehicles/stock.js"
   }
 }

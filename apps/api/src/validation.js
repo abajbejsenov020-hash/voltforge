@@ -1,6 +1,13 @@
 import { HttpError } from './http.js';
 
-const SPEC_FIELDS = new Set(['dropout', 'fullV', 'bms', 'batteryLimit', 'motorCount']);
+const SPEC_FIELDS = new Set([
+  'dropout',
+  'fullV',
+  'bms',
+  'batteryLimit',
+  'motorCount',
+  'motorCountOverride',
+]);
 const PERFORMANCE_FIELDS = new Set([
   'rider',
   'vehicle',
@@ -96,8 +103,8 @@ export function createBuildValidator(catalog, categories) {
     for (const [key, value] of Object.entries(input.specs ?? {})) {
       if (!SPEC_FIELDS.has(key)) invalid(`specs.${key}`, 'This specification is not supported.');
       specs[key] = numeric(value, `specs.${key}`, { empty: key !== 'motorCount' });
-      if (key === 'motorCount' && ![1, 2].includes(Number(value)))
-        invalid('specs.motorCount', 'motorCount must be 1 or 2.');
+      if (['motorCount', 'motorCountOverride'].includes(key) && ![1, 2].includes(Number(value)))
+        invalid(`specs.${key}`, `${key} must be 1 or 2.`);
     }
     const sourcePerformance = input.performance ?? {};
     if (!isRecord(sourcePerformance) || ![undefined, 1, 2].includes(sourcePerformance.schema)) {

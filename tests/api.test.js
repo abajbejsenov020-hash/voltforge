@@ -287,6 +287,23 @@ test('real shared catalog, vehicle search, and legacy estimator run through HTTP
   assert.equal(estimate.data.performance.speed.value, 70);
   assert.equal(estimate.data.performance.wh, 1200);
   assert.equal(estimate.data.performance.energyAtSpeed, undefined);
+  const modified = await api.request('/api/performance', {
+    method: 'POST',
+    body: {
+      build: {
+        ...legacy,
+        selected: { Controllers: 'p37' },
+        specs: { motorCount: 1, motorCountOverride: 1 },
+        performance: { schema: 2 },
+      },
+    },
+  });
+  assert.equal(modified.status, 200);
+  assert.equal(modified.data.performance.wh, 1200);
+  assert.equal(modified.data.performance.p.Batteries.stock, true);
+  assert.equal(modified.data.performance.speed.kind, 'planning');
+  assert.ok(modified.data.performance.peak.value > 0);
+
   const { cookie } = await api.request('/api/builds');
   const oldInputs = { schema: 1, rider: '85', rpm: '1200', oldSetting: 5 };
   const imported = await api.request('/api/builds/import', {
@@ -316,6 +333,7 @@ test('validation rejects invalid types, part category mismatches, and nonfinite 
     { ...build(), name: 'a'.repeat(151) },
     { ...build(), specs: { fullV: 'Infinity' } },
     { ...build(), specs: { motorCount: 3 } },
+    { ...build(), specs: { motorCountOverride: 3 } },
     { ...build(), performance: { schema: 2, rider: null } },
     { ...build(), performance: { schema: 2, rider: 'NaN' } },
     { ...build(), performance: { schema: 3 } },

@@ -1,4 +1,5 @@
 import { $, esc } from '../ui/dom.js';
+import { vehicleStockProfile } from '@voltforge/shared/stock';
 import {
   canonicalVehicleName,
   VEHICLE_INDEX,
@@ -70,8 +71,13 @@ export function bindEvents(app) {
       app.state.type = app.setupType;
       app.state.name = name;
     } else app.state = app.blank(app.setupType, name);
+    const vehicleChanged = app.state.vehicle !== vehicle || app.state.mode !== app.setupMode;
     app.state.mode = app.setupMode;
     app.state.vehicle = app.setupMode === 'rebuild' ? vehicle : '';
+    if (!app.editMode || vehicleChanged) {
+      app.state.specs.motorCount = vehicleStockProfile(app.state.vehicle)?.motors || 1;
+      delete app.state.specs.motorCountOverride;
+    }
     app.category = 'Motors';
     $('#search').value = '';
     $('#brand').value = '';
@@ -81,7 +87,7 @@ export function bindEvents(app) {
     $('#startDialog').close();
     $('#assistantText').textContent =
       app.setupMode === 'rebuild'
-        ? `Your ${vehicle} rebuild is ready. Add your components, then review fitment and performance. Original appearance shows the reference vehicle; use 3D concept to explore changes.`
+        ? `Your ${vehicle} rebuild starts with factory parts. Choose only the components you want to change; unchanged parts stay stock and estimates update automatically.`
         : 'Start with a motor or controller. Add a battery next, then open Review build to record your measurements.';
     app.toast(app.editMode ? 'Build details updated' : 'Welcome to your workshop');
   };
@@ -109,7 +115,7 @@ export function bindEvents(app) {
   $('#stockBaselineBtn').onclick = () => app.restoreStockPerformance(false);
   $('#rangeCruise').onchange = (event) => {
     app.state.performance = {
-      ...app.performanceInputs(),
+      ...app.state.performance,
       cruise: Number(event.target.value),
       schema: 2,
     };

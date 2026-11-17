@@ -23,6 +23,9 @@
 .stage[data-environment='studio']::before {
   background: linear-gradient(150deg, #f7f5ef, #d8d6cf);
 }
+.stage[data-environment='garage']::before {
+  background: #343b3d;
+}
 .stage-top {
   z-index: 3;
   top: 18px;

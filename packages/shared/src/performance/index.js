@@ -1,27 +1,10 @@
-import { selectParts } from '../build.js';
 import { checkCompatibility } from '../compatibility.js';
 import { normalizeVehicleName } from '../vehicles/index.js';
+import { vehicleStockProfile, resolveBuildParts, effectiveMotorCount } from '../vehicles/stock.js';
 import { automaticPerformanceInputs } from './automatic.js';
+export { STOCK_PERFORMANCE } from '../vehicles/stock.js';
 // Performance references and energy scenarios are deliberately separate.
 // A motor's advertised watts alone do not establish loaded top speed.
-export const STOCK_PERFORMANCE = {
-  kukiring4: {
-    name: 'KuKirin G4',
-    nominal: 60,
-    ah: 20,
-    wh: 1200,
-    vehicleMass: 41.5,
-    motors: 1,
-    ratedMotorW: 2000,
-    peakMotorW: 2400,
-    wheel: 11,
-    advertisedSpeed: 70,
-    advertisedRange: 75,
-    referenceLoad: 65,
-    source: 'https://www.kukirinfactory.com/kukirin-g4-specification',
-    note: 'Factory page lists 70 km/h and 75 km at a middle-speed test with a 65 kg load. Regional/restricted variants differ; confirm the exact vehicle.',
-  },
-};
 // Personal observation supplied by the user; not GPS or independently verified.
 export const OWNER_SPEED_REPORT = {
   kukiring4: {
@@ -89,15 +72,10 @@ export function peakPowerLabel(peak) {
       : 'PEAK MOTOR OUTPUT · ESTIMATE';
 }
 export function createPerformanceEngine(state) {
-  const selected = () => selectParts(state);
+  const selected = () => resolveBuildParts(state);
   const checks = () => checkCompatibility(state);
   function performanceProfile() {
-    if (state.mode !== 'rebuild') return null;
-    const name =
-      typeof normalizeVehicleName === 'function'
-        ? normalizeVehicleName(state.vehicle)
-        : String(state.vehicle || '').toLowerCase();
-    return STOCK_PERFORMANCE[name.replace(/[^a-z0-9]/g, '')] || null;
+    return state.mode === 'rebuild' ? vehicleStockProfile(state.vehicle) : null;
   }
   function performanceHardware(p, profile, configuration = 'auto') {
     const measured = state.performance || {};
@@ -111,11 +89,13 @@ export function createPerformanceEngine(state) {
     if (
       !profile ||
       configuration === 'custom' ||
-      Number(state.specs.motorCount || 1) !== profile.motors
+      (profile.motors > 0 && effectiveMotorCount(state) !== profile.motors)
     )
       return false;
-    return ['Motors', 'Controllers', 'Batteries'].every(
-      (c) => !p[c] || (p[c].models?.includes(profile.name) && !p[c].template),
+    return (
+      ['Motors', 'Controllers', 'Batteries'].every(
+        (c) => !p[c] || p[c].stock === true || p[c].stockEquivalent === true,
+      ) && ![state.specs?.bms, state.specs?.batteryLimit].some((value) => Number(value) > 0)
     );
   }
   function performanceInputs() {
@@ -130,14 +110,17 @@ export function createPerformanceEngine(state) {
       schema: 2,
       configuration,
       rider: 80,
-      vehicle: stock ? profile.vehicleMass : bike ? 25 : 30,
-      cruise: stock ? 40 : bike ? 25 : 30,
+      vehicle: profile?.vehicleMass > 0 ? profile.vehicleMass : bike ? 25 : 30,
+      cruise: profile?.name === 'KuKirin G4' ? 40 : bike ? 25 : 30,
       power: '',
       efficiency: 78,
       usable: 80,
       cda: bike ? 0.55 : 0.65,
       rolling: bike ? 0.009 : 0.018,
-      wheel: stock ? profile.wheel : bike ? 27.5 : 10,
+      wheel:
+        p['Tires & wheels']?.wheelInches ||
+        p.Motors?.wheelInches ||
+        (state.mode === 'rebuild' ? '' : bike ? 27.5 : 10),
       rpm: '',
       wind: 0,
       grade: 0,
@@ -146,7 +129,10 @@ export function createPerformanceEngine(state) {
       nominalVoltage: '',
       capacityAh: '',
       gpsSpeed: '',
-      dashboardSpeed: stock ? OWNER_SPEED_REPORT.kukiring4?.speed || '' : '',
+      dashboardSpeed: stock
+        ? OWNER_SPEED_REPORT[normalizeVehicleName(profile.name).replace(/[^a-z0-9]/g, '')]?.speed ||
+          ''
+        : '',
       tripKm: '',
       tripUsedWh: '',
       tripSpeed: '',
@@ -167,7 +153,13 @@ export function createPerformanceEngine(state) {
   }
   function invalidatePerformanceMeasurements() {
     state.performance = {
-      ...performanceInputs(),
+      ...(state.performance?.schema === 2
+        ? state.performance
+        : Object.fromEntries(
+            ['rider', 'cda', 'rolling', 'rpm']
+              .filter((key) => state.performance?.[key] !== undefined)
+              .map((key) => [key, state.performance[key]]),
+          )),
       gpsSpeed: '',
       dashboardSpeed: '',
       tripKm: '',
@@ -182,7 +174,7 @@ export function createPerformanceEngine(state) {
   }
   function estimatePeakPower(a, p, stock, profile) {
     const val = (x) => numberInput(x, 0),
-      motors = numberInput(state.specs.motorCount, 1, 1, 4),
+      motors = effectiveMotorCount(state),
       enteredMotor = val(a.peakMotorW),
       motorPer = enteredMotor || val(p.Motors?.peakMechanicalW),
       motorW = motorPer ? motorPer * motors : 0;
@@ -199,8 +191,8 @@ export function createPerformanceEngine(state) {
       batteryA = batteryLimits.length ? Math.min(...batteryLimits) : 0,
       loadedV = val(a.peakVoltage),
       efficiency = numberInput(a.peakEfficiency, 90, 40, 98) / 100;
-    const anyManual = [a.peakMotorW, a.peakControllerA, a.peakBatteryA, a.peakVoltage].some(
-      (x) => val(x) > 0,
+    const anyManual = ['peakMotorW', 'peakControllerA', 'peakBatteryA', 'peakVoltage'].some(
+      (key) => val(state.performance?.[key]) > 0,
     );
     if (stock && profile?.peakMotorW && !anyManual)
       return {
@@ -258,10 +250,9 @@ export function createPerformanceEngine(state) {
       profile = performanceProfile(),
       a = performanceInputs(),
       stock = performanceHardware(p, profile, a.configuration),
-      mass =
-        numberInput(a.rider, 80, 1) + numberInput(a.vehicle, stock ? profile.vehicleMass : 30, 1),
+      mass = numberInput(a.rider, 80, 1) + numberInput(a.vehicle, profile?.vehicleMass || 30, 1),
       eff = numberInput(a.efficiency, 78, 40, 98) / 100,
-      cruise = numberInput(a.cruise, stock ? 40 : 30, 5, 150);
+      cruise = numberInput(a.cruise, 30, 5, 150);
     const selectedNominal = numberInput(p.Batteries?.nominal, 0),
       selectedAh = numberInput(p.Batteries?.ah, 0),
       manualV = numberInput(a.nominalVoltage, 0),
@@ -269,29 +260,38 @@ export function createPerformanceEngine(state) {
     let nominal = 0,
       ah = 0,
       batteryBasis = 'Battery data required';
-    if (p.Batteries && selectedNominal && selectedAh) {
-      nominal = selectedNominal;
-      ah = selectedAh;
-      batteryBasis = p.Batteries.template
-        ? 'Selected battery template — unverified'
-        : 'Selected battery data';
-    } else if (manualV && manualAh) {
-      nominal = manualV;
-      ah = manualAh;
-      batteryBasis = 'User-entered battery data';
-    } else if (stock) {
-      nominal = profile.nominal;
-      ah = profile.ah;
-      batteryBasis = 'Stock G4 reference: 60V × 20Ah';
+    nominal = p.Batteries?.stock ? manualV || selectedNominal : selectedNominal || manualV;
+    ah = p.Batteries?.stock ? manualAh || selectedAh : selectedAh || manualAh;
+    if (nominal && ah) {
+      batteryBasis =
+        p.Batteries?.stock && !manualV && !manualAh
+          ? 'Factory battery reference: ' + profile.name + ' · ' + nominal + 'V × ' + ah + 'Ah'
+          : p.Batteries?.stock || (!selectedNominal && !selectedAh)
+            ? 'User-entered battery data'
+            : p.Batteries?.template
+              ? 'Selected battery template — unverified'
+              : 'Selected battery data';
     }
-    const wh = nominal && ah ? nominal * ah : null,
+    const energyOnly = !manualV && !manualAh ? numberInput(p.Batteries?.energyWh, 0) : 0;
+    if ((!nominal || !ah) && energyOnly)
+      batteryBasis = p.Batteries?.stock
+        ? 'Factory battery energy: ' + profile.name
+        : 'Selected battery energy';
+    const wh = nominal && ah ? nominal * ah : energyOnly || null,
       usableWh = wh ? (wh * numberInput(a.usable, 80, 1, 100)) / 100 : null;
+    const equivalentAh = !ah && energyOnly && nominal ? energyOnly / nominal : 0;
     const automatic = automaticPerformanceInputs(state, p, a, {
       nominal,
-      ah,
-      stock,
+      ah: ah || equivalentAh,
+      stock: stock && profile?.advertisedSpeed > 0 && profile?.peakMotorW > 0,
       efficiency: eff,
     });
+    if (equivalentAh && automatic.enabled) {
+      automatic.equivalentAh = equivalentAh;
+      automatic.assumptions.unshift(
+        `Capacity equivalent assumed at ${equivalentAh.toFixed(1)} Ah from published battery energy ÷ nominal voltage. This is a planning conversion; actual pack Ah and discharge ratings remain unverified.`,
+      );
+    }
     const calculated = automatic.inputs;
     const roadWh = (speed) => {
       const v = speed / 3.6,
@@ -313,7 +313,7 @@ export function createPerformanceEngine(state) {
       range = usableWh ? usableWh / whPerKm : null;
     // Optional engineering ceilings; never use nominal/marketing watts as a speed promise.
     const enteredPower = numberInput(calculated.power, 0),
-      motors = stock ? profile.motors : numberInput(state.specs.motorCount, 1, 1, 4);
+      motors = effectiveMotorCount(state);
     let mechanical = enteredPower ? enteredPower * motors : null,
       limited = false;
     const amps = [
@@ -350,9 +350,8 @@ export function createPerformanceEngine(state) {
     }
     const powerCeiling = speedFromPower(mechanical);
     const rpm = numberInput(a.rpm, 0),
-      rpmCeiling = rpm
-        ? (rpm * Math.PI * numberInput(a.wheel, 11, 1, 40) * 0.0254 * 60) / 1000
-        : null,
+      wheel = numberInput(a.wheel, 0, 0, 40),
+      rpmCeiling = rpm && wheel ? (rpm * Math.PI * wheel * 0.0254 * 60) / 1000 : null,
       ceilings = [powerCeiling, rpmCeiling].filter((x) => x !== null),
       maxSpeed = ceilings.length ? Math.min(...ceilings) : null,
       gps = numberInput(a.gpsSpeed, 0),
@@ -368,10 +367,10 @@ export function createPerformanceEngine(state) {
         basis: 'Your GPS result — reported, conditions not verified',
         kind: 'gps',
       };
-    else if (stock)
+    else if (stock && profile.advertisedSpeed > 0)
       speed = {
         value: profile.advertisedSpeed,
-        basis: 'Factory reference, not a measured result for your scooter',
+        basis: 'Factory reference, not a measured result for your vehicle',
         kind: 'factory',
       };
     else if (
@@ -389,7 +388,7 @@ export function createPerformanceEngine(state) {
         range,
         kind: 'planning',
         basis:
-          'Rough power-based scenario from selected parts; winding, gearing and actual limits need confirmation',
+          'Rough power-based scenario from effective hardware; winding, gearing and actual limits need confirmation',
       };
     } else if (maxSpeed !== null)
       speed = {
@@ -404,6 +403,7 @@ export function createPerformanceEngine(state) {
     if (
       automatic.enabled &&
       automatic.peakPlanning &&
+      peak.kind !== 'factory' &&
       peak.value !== null &&
       !peak.missing.length
     ) {
@@ -430,6 +430,7 @@ export function createPerformanceEngine(state) {
       stock,
       nominal,
       ah,
+      motors,
       batteryBasis,
       wh,
       usableWh,
@@ -465,7 +466,7 @@ export function createPerformanceEngine(state) {
       'Speed: ' + speedText(e) + ' | ' + speedBasisText(e),
       'Hardware: ' +
         (e.stock
-          ? 'Stock G4 reference: ONE rear 2000W motor, 2400W listed instantaneous peak'
+          ? e.profile.name + ' factory powertrain reference'
           : 'Custom/modified or unknown powertrain'),
       'Battery: ' +
         e.batteryBasis +
@@ -491,8 +492,14 @@ export function createPerformanceEngine(state) {
           'Wh/km',
       ),
       e.profile
-        ? 'Factory reference (separate tests): 70km/h; 75km middle-speed mileage at 65kg load. ' +
-          e.profile.source
+        ? 'Factory reference (separate tests): ' +
+          (e.profile.advertisedSpeed || 'unknown') +
+          'km/h; ' +
+          (e.profile.advertisedRange || 'unknown') +
+          'km advertised range. ' +
+          (e.profile.note || '') +
+          ' ' +
+          (e.profile.source || '')
         : 'No stock performance reference available.',
       'Trip-energy calibration: ' + (e.calibrated ? 'entered measurement used' : 'not provided'),
       'Inputs: ' + JSON.stringify(e.a),

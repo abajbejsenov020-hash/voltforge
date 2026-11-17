@@ -9,6 +9,15 @@ export function createVehicleViewer({ sceneFactory }) {
   const missing = document.querySelector('#vehicleReferenceMissing');
   const source = document.querySelector('#vehiclePhotoSource');
   const setting = document.querySelector('#sceneSetting');
+  const environmentKey = 'voltforge-scene-environment';
+  try {
+    const savedEnvironment = localStorage.getItem(environmentKey);
+    if ([...setting.options].some((option) => option.value === savedEnvironment))
+      setting.value = savedEnvironment;
+  } catch {
+    // Private or blocked storage still permits an in-memory environment choice.
+  }
+  root.dataset.environment = setting.value;
   const viewButtons = root.querySelectorAll('button[data-presentation]');
   let mode = 'photo',
     reference = null,
@@ -88,6 +97,11 @@ export function createVehicleViewer({ sceneFactory }) {
   };
   setting.onchange = () => {
     root.dataset.environment = setting.value;
+    try {
+      localStorage.setItem(environmentKey, setting.value);
+    } catch {
+      // The setting remains usable without persistent browser storage.
+    }
     scene?.setEnvironment?.(setting.value);
   };
   return {

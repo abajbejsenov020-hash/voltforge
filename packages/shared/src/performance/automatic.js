@@ -50,7 +50,27 @@ export function automaticPerformanceInputs(
     return result;
   }
   const assume = (text) => result.assumptions.push(text);
-  const motorElectrical = band(motor.ratedW || motor.watts, motor.ratedWRange);
+  const inherited = ['Motors', 'Controllers', 'Batteries'].filter(
+    (category) => parts[category]?.stock,
+  );
+  if (inherited.length)
+    assume(
+      'Unselected ' +
+        inherited.join(', ').toLowerCase() +
+        ' use factory reference hardware; exact installed variants and condition remain unverified.',
+    );
+  let motorElectrical = band(motor.ratedW || motor.watts, motor.ratedWRange);
+  if (
+    !motorElectrical &&
+    (motor.stock || motor.factoryRatingAssumption) &&
+    positive(motor.peakW) &&
+    !positive(a.power)
+  ) {
+    motorElectrical = [Number(motor.peakW) * 0.5, Number(motor.peakW) * 0.5];
+    assume(
+      'Continuous motor input assumed at 50% of the factory peak watts for this planning scenario. Peak watts do not establish a continuous rating; verify the installed motor and thermal limits.',
+    );
+  }
   const motorMechanical = band(motor.ratedMechanicalW);
   if (!positive(a.power)) {
     if (motorMechanical) result.powerRange = motorMechanical;

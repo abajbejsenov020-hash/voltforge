@@ -1,4 +1,5 @@
 import { createBuild, selectParts } from '@voltforge/shared/build';
+import { resolveBuildParts } from '@voltforge/shared/stock';
 import { checkCompatibility } from '@voltforge/shared/compatibility';
 import { createPerformanceEngine } from '@voltforge/shared/performance';
 import { createFeature as notifications } from '../features/notifications.js';
@@ -34,6 +35,7 @@ export function createWorkbench({ store, scene }) {
     activeVehicleSuggestion: -1,
     blank: createBuild,
     selected: () => selectParts(store.current),
+    effectiveParts: () => resolveBuildParts(store.current),
     checks: () => checkCompatibility(store.current),
     save: () => store.save(),
   };

@@ -1,7 +1,7 @@
-import { selectParts } from './build.js';
+import { resolveBuildParts, effectiveMotorCount, vehicleStockProfile } from './vehicles/stock.js';
 import { canonicalVehicleName, normalizeVehicleName } from './vehicles/index.js';
 export function checkCompatibility(state) {
-  const p = selectParts(state),
+  const p = resolveBuildParts(state),
     issues = [];
   const batteryV = Number(state.specs.fullV) || p.Batteries?.fullV || 0,
     limit = p.Controllers?.maxV,
@@ -29,7 +29,7 @@ export function checkCompatibility(state) {
         'Controller operating voltage is unverified. Check the exact hardware revision and its operating envelope before choosing a pack.',
       );
   } else add('unknown', 'Add a battery and controller to compare full-charge voltage.');
-  if (p.Motors) {
+  if (p.Motors && !p.Motors.stock) {
     if (p.Motors.type !== state.type && p.Motors.type !== 'both')
       add(
         'conflict',
@@ -57,10 +57,17 @@ export function checkCompatibility(state) {
         `Motor is rated ${p.Motors.ratedV}V; this pack is listed ${p.Batteries.nominal}V nominal. Confirm winding, speed and thermal limits with the motor supplier.`,
       );
   }
-  if (p.Controllers && Number(state.specs.motorCount) > p.Controllers.channels)
+  if (
+    p.Controllers &&
+    effectiveMotorCount(state) > p.Controllers.channels &&
+    !(
+      p.Controllers.stockEquivalent &&
+      effectiveMotorCount(state) === vehicleStockProfile(state.vehicle)?.motors
+    )
+  )
     add(
       'conflict',
-      `This is a ${p.Controllers.channels}-channel controller and the plan uses ${state.specs.motorCount} motors. Each independently driven motor needs a controller channel. Select a dual controller or revise the controller quantity.`,
+      `This is a ${p.Controllers.channels}-channel controller and the plan uses ${effectiveMotorCount(state)} motors. Each independently driven motor needs a controller channel. Select a dual controller or revise the controller quantity.`,
     );
   if (
     p.Displays &&
@@ -73,7 +80,12 @@ export function checkCompatibility(state) {
       'conflict',
       `${p.Displays.platform} display and ${p.Controllers.platform} controller use different platforms. Select a matching display and verify the exact protocol.`,
     );
-  if (p.Displays && p.Controllers && (!p.Displays.platform || !p.Controllers.platform))
+  if (
+    p.Displays &&
+    p.Controllers &&
+    !(p.Displays.stock && p.Controllers.stock) &&
+    (!p.Displays.platform || !p.Controllers.platform)
+  )
     add(
       'unknown',
       'Display/controller protocol is unverified. Confirm the exact communications protocol and harness.',
@@ -98,6 +110,7 @@ export function checkCompatibility(state) {
     const canonical = canonicalVehicleName(state.vehicle);
     for (const item of Object.values(p)) {
       if (
+        !item.stock &&
         item.models &&
         !item.models.some((name) => normalizeVehicleName(name) === normalizeVehicleName(canonical))
       )
@@ -126,7 +139,9 @@ export function checkCompatibility(state) {
   if (state.mode === 'rebuild')
     add(
       'unknown',
-      `${state.vehicle}: name-only starting point. Verify model year, battery label, frame dimensions, stock harness and installed component variants.`,
+      vehicleStockProfile(state.vehicle)
+        ? `${state.vehicle}: factory references apply to the documented version. Confirm model year, installed hardware and any regional differences.`
+        : `${state.vehicle}: factory parts retained, but specifications are unverified. Confirm the battery label, drivetrain, frame dimensions and stock harness.`,
     );
   if (Object.values(p).some((x) => x.request || x.variant))
     add(

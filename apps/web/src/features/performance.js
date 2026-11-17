@@ -1,4 +1,5 @@
 import { $, esc } from '../ui/dom.js';
+import { factorySummary } from '../ui/stock.js';
 import {
   peakPowerText,
   peakPowerLabel,
@@ -14,8 +15,32 @@ export function createFeature(app) {
     $('#peakBasis').textContent = e.peak.basis;
     $('#peakMetricLabel').textContent = peakPowerLabel(e.peak);
     $('#stockBaselineBtn').hidden = !e.profile || e.stock;
+    $('#stockBaselineBtn').textContent = 'Restore stock powertrain';
+    const hardwareNote = $('#stockHardwareNote');
+    hardwareNote.hidden = app.state.mode !== 'rebuild';
+    if (!hardwareNote.hidden) {
+      const labels = { Motors: 'motor', Controllers: 'controller', Batteries: 'battery' };
+      const stock = Object.keys(labels)
+        .filter((c) => e.p[c]?.stock)
+        .map((c) => labels[c]);
+      const equivalent = Object.keys(labels)
+        .filter((c) => e.p[c]?.stockEquivalent)
+        .map((c) => labels[c]);
+      const changed = Object.keys(labels)
+        .filter((c) => e.p[c] && !e.p[c].stock && !e.p[c].stockEquivalent)
+        .map((c) => labels[c]);
+      hardwareNote.textContent =
+        (stock.length ? 'Stock: ' + stock.join(', ') + '. ' : '') +
+        (equivalent.length
+          ? 'Factory-equivalent replacement: ' + equivalent.join(', ') + '. '
+          : '') +
+        (changed.length ? 'Upgraded: ' + changed.join(', ') + '. ' : '') +
+        'Unchanged categories retain their factory parts.';
+    }
     $('#estimatedSpeed').textContent = e.speed.value === null ? '— km/h' : speedText(e);
-    $('#speedBasis').textContent = speedBasisText(e);
+    $('#speedBasis').textContent = e.automatic.missing.includes('power')
+      ? 'Selected motor has no rated power. Add motor watts below to estimate top speed.'
+      : speedBasisText(e);
     $('#estimatedRange').textContent = approx(e.range, 'km');
     $('#rangeBasis').textContent = e.range
       ? 'Scenario at ' + e.cruise + ' km/h · ' + e.whPerKm.toFixed(1) + ' Wh/km'
@@ -42,8 +67,11 @@ export function createFeature(app) {
         ? 'Compatibility conflicts remain; figures do not establish an operable build. '
         : '') +
       (e.stock
-        ? 'Stock G4 reference: one rear 2,000W motor; 60V 20Ah = 1,200Wh. '
+        ? factorySummary(e.profile) + '. '
         : e.batteryBasis + (e.wh ? ' (' + Math.round(e.wh) + 'Wh). ' : '. ')) +
+      (!e.profile?.vehicleMass && !Number(app.state.performance?.vehicle)
+        ? 'Vehicle mass assumed at ' + e.a.vehicle + ' kg until confirmed. '
+        : '') +
       'Range is an unvalidated energy scenario at the selected cruising speed, not a top-speed range claim. ' +
       (e.dashboard ? 'Dashboard speed is not GPS-verified ground speed. ' : '') +
       (e.legacy ? 'Old generic performance defaults were reset; confirm assumptions. ' : '') +
@@ -80,8 +108,8 @@ export function createFeature(app) {
     ];
     if (e.automatic.missing.includes('nominalVoltage'))
       fields.unshift(['nominalVoltage', 'Pack nominal voltage (V)', '']);
-    if (e.automatic.missing.includes('capacityAh'))
-      fields.unshift(['capacityAh', 'Pack capacity (Ah)', '']);
+    if (e.automatic.equivalentAh || e.automatic.missing.includes('capacityAh'))
+      fields.unshift(['capacityAh', 'Pack capacity (Ah)', e.automatic.equivalentAh || '']);
     const value = (key) =>
       key === 'bms' ? app.state.specs.bms : (app.state.performance?.[key] ?? '');
     container.innerHTML = `<p class="automatic-note">${
@@ -95,7 +123,7 @@ export function createFeature(app) {
         <summary>Assumptions & quick inputs${e.automatic.missing.length ? ' · ratings needed' : ''}</summary>
         <ul class="estimate-assumptions">${e.automatic.assumptions.map((text) => `<li>${esc(text)}</li>`).join('')}</ul>
         <p>Optional overrides: leave blank to use catalog values and planning assumptions. Motor output fields are mechanical shaft watts.</p>
-        <form id="quickPerformanceForm" class="spec-fields">${fields.map(([key, label, automatic]) => `<label>${esc(label)}${e.automatic.missing.includes(key) ? ' · required' : ''}<input name="${key}" type="number" min="0.1" max="${/power|peakMotorW/.test(key) ? 200000 : key === 'capacityAh' ? 300 : key === 'peakVoltage' || key === 'nominalVoltage' ? 250 : 3000}" step="any" value="${esc(value(key))}" placeholder="${Number(automatic) > 0 ? 'Automatic: ' + Number(Number(automatic).toFixed(1)) : 'Enter rating'}" ${e.automatic.missing.includes(key) ? 'required' : ''}></label>`).join('')}
+        <form id="quickPerformanceForm" class="spec-fields">${fields.map(([key, label, automatic]) => `<label>${esc(label)}${e.automatic.missing.includes(key) ? ' · required' : ''}<input name="${key}" type="number" min="0.1" max="${/power|peakMotorW/.test(key) ? 200000 : key === 'capacityAh' ? 300 : key === 'peakVoltage' || key === 'nominalVoltage' ? 500 : 3000}" step="any" value="${esc(value(key))}" placeholder="${Number(automatic) > 0 ? 'Automatic: ' + Number(Number(automatic).toFixed(1)) : 'Enter rating'}" ${e.automatic.missing.includes(key) ? 'required' : ''}></label>`).join('')}
           <button class="btn primary" type="submit">Update estimates</button>
         </form>
         ${e.automatic.sources.length ? `<div class="estimate-sources"><span>Rating sources</span>${e.automatic.sources.map((source, index) => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer" title="${esc(source.note)}">Manufacturer reference ${index + 1} ↗</a>`).join('')}</div>` : ''}
@@ -118,7 +146,7 @@ export function createFeature(app) {
       ['rider', 'Rider + cargo mass (kg)', 1, 300, 1],
       ['vehicle', 'Vehicle mass (kg)', 1, 300, 0.1],
       ['cruise', 'Range scenario riding speed (km/h)', 5, 150, 1],
-      ['nominalVoltage', 'Actual pack nominal voltage (V), if not selected', 1, 200, 0.1],
+      ['nominalVoltage', 'Actual pack nominal voltage (V), if not selected', 1, 500, 0.1],
       ['capacityAh', 'Actual pack capacity (Ah), if not selected', 1, 300, 0.1],
       ['usable', 'Usable battery including reserve / condition (%)', 1, 100, 1],
       ['efficiency', 'Battery-to-wheel efficiency assumption (%)', 40, 98, 1],
@@ -134,17 +162,17 @@ export function createFeature(app) {
       ['tripUsedWh', 'Measured battery energy used on that trip (Wh)', 1, 10000, 1],
       ['tripSpeed', 'Average moving speed on that trip (km/h)', 5, 150, 0.1],
       ['peakMotorW', 'Verified peak mechanical output per motor (W, optional)', 1, 200000, 1],
-      ['peakVoltage', 'Pack voltage under peak load (V, optional)', 1, 250, 0.1],
+      ['peakVoltage', 'Pack voltage under peak load (V, optional)', 1, 500, 0.1],
       ['peakControllerA', 'Combined controller battery-current limit (A, optional)', 1, 3000, 1],
       ['peakBatteryA', 'Pack burst discharge-current limit (A, optional)', 1, 3000, 1],
       ['peakEfficiency', 'Electrical-to-motor-shaft peak efficiency assumption (%)', 40, 98, 1],
-      ['power', 'Verified continuous mechanical W per motor (optional)', 1, 20000, 1],
+      ['power', 'Verified continuous mechanical W per motor (optional)', 1, 200000, 1],
       ['wheel', 'Actual outer tire diameter (inches)', 1, 40, 0.1],
       ['rpm', 'Wheel no-load RPM at this pack voltage (optional)', 1, 10000, 1],
     ];
     app.detail(
       'Performance references & range scenarios',
-      `<div class="performance-result"><div><small>${e.speed.kind === 'factory' ? 'Factory speed reference' : e.speed.kind === 'planning' ? 'Rough top-speed estimate' : 'Speed result / ceiling'}</small><strong>${esc(speedText(e))}</strong></div><div><small>Range energy scenario at ${e.cruise} km/h</small><strong>${approx(e.range, 'km')}</strong></div></div><p>${esc(speedBasisText(e))}. A display reading does not verify actual ground speed.</p>${e.profile ? `<h3>G4 stock reference — one rear motor</h3><p>One 2,000W rear hub motor, with 2,400W instantaneous peak listed by the factory. The linked current specification lists 41.5kg net mass; confirm your version and edit the mass below. Battery: 60V × 20Ah = 1,200Wh nominal; 11-inch tire. The factory lists 70 km/h and a 75km middle-speed mileage test at 65kg load; these are separate test figures, not a promise of 75km while riding at top speed.</p><p><a href="${e.profile.source}" target="_blank" rel="noopener noreferrer">Factory G4 specification and test context</a></p>` : ''}<div class="issue">${e.conflicts ? 'Resolve compatibility conflicts separately. ' : ''}${e.stock ? 'Using stock G4 reference hardware.' : 'Stock G4 speed and battery defaults do not apply to an unverified modified powertrain.'} ${e.wh ? Math.round(e.wh) + 'Wh nominal, ' + Math.round(e.usableWh) + 'Wh usable under the entered ' + a.usable + '% assumption.' : e.batteryBasis + '.'} Selected battery templates override stock capacity; verify them against the installed pack.</div>${e.profile && !e.stock ? '<p>To compare the original scooter, restore its stock reference. This clears planned motor, controller and battery substitutions from this build.</p><button type="button" class="btn" id="restoreStockPerformance">Use stock G4 reference</button>' : ''}<h3>Peak power after modification</h3><div class="peak-result"><strong>${esc(peakPowerText(e.peak))}</strong><p>${esc(e.peak.basis)}</p>${e.peak.electricalW !== null ? `<p>Available battery-side electrical input ceiling: ${(e.peak.electricalW / 1000).toFixed(1)} kW. Electrical input and mechanical motor output are different quantities.</p>` : ''}</div><p>Estimated combined motor shaft output = the lower of verified motor peak W × motor count, or loaded pack voltage × the lower of battery burst-current and controller battery-current limits × peak efficiency. Use ratings for the same burst duration. Controller phase amps, motor rated watts, battery Ah and advertised controller kW are not interchangeable with these inputs. Manufacturer ratings populate the automatic scenario. Unknown discharge limits, loaded voltage and motor burst output use visible planning assumptions that can be overridden. Without a motor rating, only a partial ceiling can be shown. These burst estimates are separate from the continuous-power speed calculation; gearing trades torque against speed and does not create motor power.</p><h3>Same battery, different riding speeds</h3><table class="range-table"><thead><tr><th>Riding speed</th><th>Modeled consumption</th><th>Range scenario</th></tr></thead><tbody>${e.scenarios.map((s) => `<tr><td>${s.kmh} km/h</td><td>${s.whPerKm.toFixed(1)} Wh/km</td><td>${approx(s.range, 'km')}</td></tr>`).join('')}</tbody></table><p>Energy scenarios assume the entered mass, posture, road, wind and stop frequency. This table does not establish that the vehicle can sustain each speed. Range is not road-tested or fitted to a claimed maximum.</p><h3>Use your actual setup and observations</h3><form id="performanceForm" class="spec-fields"><label>Hardware basis<select name="configuration"><option value="auto" ${a.configuration === 'auto' ? 'selected' : ''}>Automatic — selected parts and stock references</option><option value="custom" ${a.configuration === 'custom' ? 'selected' : ''}>Modified / custom powertrain</option></select></label>${inputs.map(([key, label, min, max, step]) => `<label>${label}<input name="${key}" type="number" min="${min}" max="${max}" step="${step}" ${['rider', 'vehicle', 'cruise', 'usable', 'efficiency', 'cda', 'rolling', 'wind', 'grade', 'stops', 'accessory', 'wheel'].includes(key) ? 'required' : ''} value="${esc(a[key])}" placeholder="Unknown"></label>`).join('')}<button class="btn primary" type="submit">Save & recalculate</button></form><h3>What changed</h3><p>There is no universal 1,000W scooter assumption and no fixed 15% RPM deduction. Published motor watts are not treated as measured mechanical output. Selecting a motor, controller and battery now produces a rough planning estimate when ratings are available. Missing motor or pack ratings are requested inline. Catalog watts, assumed battery discharge, voltage sag and motor burst output are displayed separately from user measurements; winding and gearing can reduce actual speed. Riding speed is never silently reduced to make range look longer.</p><p>Range uses usable pack Wh divided by energy per kilometer: aerodynamic drag, tire rolling resistance, uphill load, battery-to-wheel efficiency, accessory load and acceleration cycles. Regeneration is not assumed. Optional measured trip Wh/km anchors consumption at that trip’s speed; other speeds remain model extrapolations. Weather, battery sag, temperature, wear and motor/controller thermal limits are not fully modeled.</p>`,
+      `<div class="performance-result"><div><small>${e.speed.kind === 'factory' ? 'Factory speed reference' : e.speed.kind === 'planning' ? 'Rough top-speed estimate' : 'Speed result / ceiling'}</small><strong>${esc(speedText(e))}</strong></div><div><small>Range energy scenario at ${e.cruise} km/h</small><strong>${approx(e.range, 'km')}</strong></div></div><p>${esc(speedBasisText(e))}. A display reading does not verify actual ground speed.</p>${e.profile ? `<h3>${esc(e.profile.name)} factory reference</h3><p>${esc(factorySummary(e.profile))}</p><p>${esc(e.profile.note || '')}</p>${e.profile.source ? `<p><a href="${esc(e.profile.source)}" target="_blank" rel="noopener noreferrer">Factory specifications and version details</a></p>` : ''}` : ''}<div class="issue">${e.conflicts ? 'Resolve compatibility conflicts separately. ' : ''}${app.state.mode === 'rebuild' ? 'Unchanged components retain the factory hardware. Selected upgrades override only their own category. ' : ''}${e.wh ? Math.round(e.wh) + 'Wh nominal, ' + Math.round(e.usableWh) + 'Wh usable under the entered ' + a.usable + '% assumption.' : e.batteryBasis + '.'}</div>${e.profile && !e.stock ? '<p>Restore the factory motor, controller and battery to compare the original vehicle. Other modifications remain selected.</p><button type="button" class="btn" id="restoreStockPerformance">Restore stock powertrain</button>' : ''}<h3>Peak power after modification</h3><div class="peak-result"><strong>${esc(peakPowerText(e.peak))}</strong><p>${esc(e.peak.basis)}</p>${e.peak.electricalW !== null ? `<p>Available battery-side electrical input ceiling: ${(e.peak.electricalW / 1000).toFixed(1)} kW. Electrical input and mechanical motor output are different quantities.</p>` : ''}</div><p>Estimated combined motor shaft output = the lower of verified motor peak W × motor count, or loaded pack voltage × the lower of battery burst-current and controller battery-current limits × peak efficiency. Use ratings for the same burst duration. Controller phase amps, motor rated watts, battery Ah and advertised controller kW are not interchangeable with these inputs. Manufacturer ratings populate the automatic scenario. Unknown discharge limits, loaded voltage and motor burst output use visible planning assumptions that can be overridden. Without a motor rating, only a partial ceiling can be shown. These burst estimates are separate from the continuous-power speed calculation; gearing trades torque against speed and does not create motor power.</p><h3>Same battery, different riding speeds</h3><table class="range-table"><thead><tr><th>Riding speed</th><th>Modeled consumption</th><th>Range scenario</th></tr></thead><tbody>${e.scenarios.map((s) => `<tr><td>${s.kmh} km/h</td><td>${s.whPerKm.toFixed(1)} Wh/km</td><td>${approx(s.range, 'km')}</td></tr>`).join('')}</tbody></table><p>Energy scenarios assume the entered mass, posture, road, wind and stop frequency. This table does not establish that the vehicle can sustain each speed. Range is not road-tested or fitted to a claimed maximum.</p><h3>Use your actual setup and observations</h3><form id="performanceForm" class="spec-fields"><label>Hardware basis<select name="configuration"><option value="auto" ${a.configuration === 'auto' ? 'selected' : ''}>Automatic — selected parts and stock references</option><option value="custom" ${a.configuration === 'custom' ? 'selected' : ''}>Modified / custom powertrain</option></select></label>${inputs.map(([key, label, min, max, step]) => `<label>${label}<input name="${key}" type="number" min="${min}" max="${max}" step="${['vehicle', 'wheel'].includes(key) ? 'any' : step}" ${['rider', 'vehicle', 'cruise', 'usable', 'efficiency', 'cda', 'rolling', 'wind', 'grade', 'stops', 'accessory'].includes(key) ? 'required' : ''} value="${esc(a[key])}" placeholder="Unknown"></label>`).join('')}<button class="btn primary" type="submit">Save & recalculate</button></form><h3>What changed</h3><p>There is no universal 1,000W scooter assumption and no fixed 15% RPM deduction. Published motor watts are not treated as measured mechanical output. Rebuild estimates combine each chosen upgrade with the remaining factory components. New builds require a motor, controller and battery. Planning estimates use available ratings; unknown specifications remain visible. Missing motor or pack ratings are requested inline. Catalog watts, assumed battery discharge, voltage sag and motor burst output are displayed separately from user measurements; winding and gearing can reduce actual speed. Riding speed is never silently reduced to make range look longer.</p><p>Range uses usable pack Wh divided by energy per kilometer: aerodynamic drag, tire rolling resistance, uphill load, battery-to-wheel efficiency, accessory load and acceleration cycles. Regeneration is not assumed. Optional measured trip Wh/km anchors consumption at that trip’s speed; other speeds remain model extrapolations. Weather, battery sag, temperature, wear and motor/controller thermal limits are not fully modeled.</p>`,
     );
     if ($('#restoreStockPerformance'))
       $('#restoreStockPerformance').onclick = () => app.restoreStockPerformance(true);
@@ -167,18 +195,22 @@ export function createFeature(app) {
     const profile = app.performanceProfile();
     if (!profile) return;
     for (const c of ['Motors', 'Controllers', 'Batteries']) delete app.state.selected[c];
-    app.state.specs.motorCount = profile.motors;
+    app.state.specs.motorCount = profile.motors || 1;
+    delete app.state.specs.motorCountOverride;
+    app.state.specs.fullV = '';
+    app.state.specs.bms = '';
+    app.state.specs.batteryLimit = '';
     app.state.performance = {
-      ...app.performanceInputs(),
+      ...(app.state.performance || {}),
       configuration: 'auto',
       nominalVoltage: '',
       capacityAh: '',
-      vehicle: profile.vehicleMass,
-      wheel: profile.wheel,
+      vehicle: profile.vehicleMass || '',
+      wheel: profile.wheel || '',
       power: '',
       rpm: '',
       gpsSpeed: '',
-      dashboardSpeed: OWNER_SPEED_REPORT.kukiring4.speed,
+      dashboardSpeed: profile.name === 'KuKirin G4' ? OWNER_SPEED_REPORT.kukiring4.speed : '',
       tripKm: '',
       tripUsedWh: '',
       tripSpeed: '',
@@ -188,10 +220,12 @@ export function createFeature(app) {
       peakVoltage: '',
       schema: 2,
     };
+    delete app.state.performance.vehicle;
+    delete app.state.performance.wheel;
     app.save();
     app.render();
     if (showDialog) app.performanceDialog();
-    app.toast('Stock G4 reference restored; planned powertrain substitutions cleared.');
+    app.toast('Factory motor, controller and battery restored.');
   }
   return { renderPerformance, performanceDialog, restoreStockPerformance };
 }

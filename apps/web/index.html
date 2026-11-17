@@ -50,7 +50,7 @@
               </button>
             </div>
           </div>
-          <div class="stage" data-environment="workshop" data-presentation="photo">
+          <div class="stage" data-environment="garage" data-presentation="photo">
             <div class="stage-top">
               <div class="presentation-switch" role="group" aria-label="Vehicle appearance view">
                 <button data-presentation="photo" aria-pressed="true">Original appearance</button>
@@ -59,6 +59,7 @@
               <label class="scene-setting"
                 >Setting
                 <select id="sceneSetting">
+                  <option value="garage">Garage</option>
                   <option value="workshop">Workshop</option>
                   <option value="courtyard">Courtyard</option>
                   <option value="studio">Studio</option>
@@ -166,6 +167,7 @@
                 ><button class="text-btn" id="tunePerformance">Setup & measurements</button>
               </div>
             </div>
+            <p id="stockHardwareNote" class="stock-hardware-note" hidden></p>
             <div class="performance-grid">
               <div>
                 <span class="metric-label" id="speedMetricLabel">SPEED REFERENCE</span

@@ -85,7 +85,7 @@ test('GPS and manually entered peak limits take priority over planning defaults'
 
 test('missing motor ratings produce a specific inline requirement instead of invented watts', () => {
   const build = completedG4();
-  build.selected.Motors = 'p66';
+  build.selected.Motors = 'p73';
   const result = estimatePerformance(build);
   assert.ok(result.automatic.missing.includes('power'));
   assert.equal(result.speed.value, null);
@@ -109,7 +109,7 @@ test('partial builds retain unknown speed and stock G4 retains its factory refer
 
 test('no-load wheel RPM alone remains a ceiling when motor output is unknown', () => {
   const build = completedG4();
-  build.selected.Motors = 'p66';
+  build.selected.Motors = 'p73';
   build.performance = { schema: 2, rpm: 1000, wheel: 11 };
   const result = estimatePerformance(build);
   assert.equal(result.power, null);

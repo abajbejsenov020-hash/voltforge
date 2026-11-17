@@ -104,6 +104,7 @@ export function createFeature(app) {
         app.renderCatalog();
       };
     }
+    renderStockCard();
     PartPreviews.mount($('#parts'));
     $('#parts')
       .querySelectorAll('[data-add]')
@@ -124,6 +125,21 @@ export function createFeature(app) {
         app.renderCatalog();
       };
   }
+  function renderStockCard() {
+    if (app.state.mode !== 'rebuild') return;
+    const current = app.effectiveParts()[app.category];
+    const changed = current && !current.stock;
+    const stock = changed ? null : current;
+    $('#parts').insertAdjacentHTML(
+      'afterbegin',
+      `<article class="stock-part-card" data-stock-category="${esc(app.category)}">
+      <div class="stock-part-heading"><span class="stock-part-badge">${current?.stockEquivalent ? 'FACTORY REPLACEMENT' : changed ? 'MODIFIED' : 'STOCK · FACTORY FITTED'}</span>${changed ? `<button type="button" class="text-btn" id="returnToStock">Return to stock</button>` : ''}</div>
+      <strong>${changed ? esc(current.brand + ' ' + current.name) : esc(stock?.name || app.state.vehicle + ' factory ' + app.category.toLowerCase())}</strong>
+      <p>${current?.stockEquivalent ? 'Matching factory motor family. Overall performance depends on the remaining hardware; confirm the exact replacement version.' : changed ? 'This replaces the factory component. All other unchanged categories remain stock.' : 'Included automatically. Choose an upgrade below to replace it.'}</p>
+    </article>`,
+    );
+    if ($('#returnToStock')) $('#returnToStock').onclick = () => app.togglePart(current.id);
+  }
   function togglePart(id) {
     const p = CATALOG.find((p) => p.id === id);
     if (!p) return;
@@ -132,18 +148,26 @@ export function createFeature(app) {
     }
     const removing = app.state.selected[p.category] === id;
     if (removing) delete app.state.selected[p.category];
-    else {
-      app.state.selected[p.category] = id;
-      if (p.category === 'Batteries') {
-        app.state.specs.fullV = '';
-        app.state.specs.bms = '';
-        app.state.performance = { ...app.state.performance, rpm: '' };
-      }
-      if (p.category === 'Motors') {
-        app.state.performance = { ...app.state.performance };
-        delete app.state.performance.power;
-        delete app.state.performance.rpm;
-        delete app.state.performance.wheel;
+    else app.state.selected[p.category] = id;
+    if (p.category === 'Batteries') {
+      app.state.specs.fullV = '';
+      app.state.specs.bms = '';
+      app.state.performance = {
+        ...app.state.performance,
+        nominalVoltage: '',
+        capacityAh: '',
+        rpm: '',
+      };
+    }
+    if (p.category === 'Controllers') app.state.specs.batteryLimit = '';
+    if (p.category === 'Motors') {
+      app.state.performance = { ...app.state.performance };
+      delete app.state.performance.power;
+      delete app.state.performance.rpm;
+      delete app.state.performance.wheel;
+      if (removing && app.state.mode === 'rebuild') {
+        delete app.state.specs.motorCountOverride;
+        app.state.specs.motorCount = app.performanceProfile()?.motors || 1;
       }
     }
     app.save();
@@ -154,7 +178,13 @@ export function createFeature(app) {
       : removing
         ? 'Part removed. Your build has been updated.'
         : p.brand + ' ' + p.name + ' added. ' + app.checks().find((i) => i.kind === 'unknown').text;
-    app.toast(removing ? 'Part removed' : p.name + ' added to your build');
+    app.toast(
+      removing && app.state.mode === 'rebuild'
+        ? 'Factory ' + p.category.toLowerCase() + ' restored'
+        : removing
+          ? 'Part removed'
+          : p.name + ' added to your build',
+    );
   }
   function partDetail(id) {
     const p = CATALOG.find((p) => p.id === id),

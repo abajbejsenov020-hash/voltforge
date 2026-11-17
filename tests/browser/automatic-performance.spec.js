@@ -76,7 +76,7 @@ test('the existing completed build shows speed and power automatically and survi
 test('an unknown motor requests one essential rating inline, then calculates without hidden setup', async ({
   page,
 }) => {
-  await seed(page, fixture('p66'));
+  await seed(page, fixture('p73'));
   await expect(page.locator('#quickPerformanceForm')).toBeVisible();
   await expect(page.locator('#quickPerformanceForm [required]')).toHaveCount(1);
   await expect(page.locator('#quickPerformanceForm [name="power"]')).toHaveAttribute(
