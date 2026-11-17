@@ -1,0 +1,16 @@
+{
+  "name": "Talaria Sting R MX4",
+  "key": "talaria-sting-r-mx4",
+  "triangles": 62964,
+  "meshes": 45,
+  "bytes": 2106780,
+  "dimensions_m": [
+    1.8999,
+    0.756,
+    1.0769
+  ],
+  "wheelbase_m": 1.25,
+  "floor_offset_m": 0.001058,
+  "packedReference": "talaria-sting-r-mx4.webp",
+  "joinedTransformsBaked": true
+}

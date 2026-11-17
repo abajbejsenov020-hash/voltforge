@@ -1,0 +1,16 @@
+{
+  "key": "ausom-laluz-2-pro-dual-motor",
+  "name": "Ausom Laluz 2 Pro Dual Motor",
+  "family": "Ausom K20 / Laluz 2 Pro",
+  "observed": "Manufacturer-confirmed alias of K20 Pro (Laluz 2 Pro), intentionally same physical geometry; full-size primary reference replaces corrupted thumbnail.",
+  "reference": "/models/catalog/scooters/references/ausom-laluz-2-pro-primary.jpg",
+  "source": "https://ausomstore.com/products/ausom-k20-pro-dual-motor-e-scooter",
+  "triangles": 62632,
+  "meshes": 38,
+  "bytes": 1787664,
+  "blendBytes": 1111515,
+  "render": "artifacts/blender/catalog/scooters/ausom-laluz-2-pro-dual-motor.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

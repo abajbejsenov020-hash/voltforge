@@ -1,0 +1,16 @@
+{
+  "name": "Talaria Sting Pro L1E",
+  "key": "talaria-sting-pro-l1e",
+  "triangles": 64956,
+  "meshes": 46,
+  "bytes": 2221860,
+  "dimensions_m": [
+    1.8999,
+    0.756,
+    1.3089
+  ],
+  "wheelbase_m": 1.25,
+  "floor_offset_m": 0.001058,
+  "packedReference": "talaria-sting-pro-l1e.webp",
+  "joinedTransformsBaked": true
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard XE Pro S",
+  "key": "arctic-leopard-xe-pro-s",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-xe-pro-s.glb",
+  "source": "https://arctic-leopard.com/produit/xe-pro-s/",
+  "image": "/assets/vehicles/arctic-leopard-xe-pro-s.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-xe-pro-s.blend",
+  "family": "arctic-xe-pro",
+  "variantNote": "Graphite perimeter frame, black fork, compact wheel proportions and rear hugger. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 77200,
+  "meshes": 48,
+  "bytes": 2718680,
+  "dimensions_m": [
+    1.957,
+    0.8128,
+    1.184
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-xe-pro-s-three-quarter.png",
+  "referencePacked": true
+}

@@ -1,0 +1,16 @@
+{
+  "key": "ausom-gosoul-2",
+  "name": "Ausom Gosoul 2",
+  "family": "Ausom Gosoul 2 single motor",
+  "observed": "Single rear hub motor, open-spoked front wheel, solid angular fork side plates and diagonal ribbed deck flank; no purple strip.",
+  "reference": "/assets/vehicles/ausom-gosoul-2.webp",
+  "source": "https://ausomstore.com/",
+  "triangles": 60368,
+  "meshes": 36,
+  "bytes": 1764688,
+  "blendBytes": 1159163,
+  "render": "artifacts/blender/catalog/scooters/ausom-gosoul-2.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.0,
+  "boundsNormalized": true
+}

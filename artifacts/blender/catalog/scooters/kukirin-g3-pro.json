@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-g3-pro",
+  "name": "KuKirin G3 Pro",
+  "family": "G3 Pro removable battery chassis",
+  "observed": "Orange open triangular suspension arms, exposed removable battery hatch/bolted side rails, broad orange front stem panel and dual motors.",
+  "reference": "/assets/vehicles/kukirin-g3-pro.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 70416,
+  "meshes": 36,
+  "bytes": 2145312,
+  "blendBytes": 856931,
+  "render": "artifacts/blender/catalog/scooters/kukirin-g3-pro.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

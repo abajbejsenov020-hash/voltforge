@@ -1,0 +1,15 @@
+{
+  "name": "Talaria Junior ET01",
+  "key": "talaria-junior-et01",
+  "triangles": 44092,
+  "meshes": 34,
+  "bytes": 1421620,
+  "dimensions_m": [
+    1.1887,
+    0.516,
+    0.7373
+  ],
+  "wheelbase_m": 0.78,
+  "floor_offset_m": 0.000666,
+  "packedReference": "talaria-junior-et01.webp"
+}

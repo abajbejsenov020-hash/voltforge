@@ -147,9 +147,10 @@ for (const [profile, url] of Object.entries(BLENDER_MODELS)) {
     const { scene: root } = await new GLTFLoader().parseAsync(bytes, '');
     const bounds = new THREE.Box3().setFromObject(root);
     const size = bounds.getSize(new THREE.Vector3());
-    assert.ok(size.x > 1.1 && size.x < 2.3, `length ${size.x}`);
-    assert.ok(size.y > 1 && size.y < 1.7, `height ${size.y}`);
-    assert.ok(size.z > 0.2 && size.z < 0.9, `width ${size.z}`);
+    // The expanded catalog includes junior motorcycles and wider road-legal mirrors.
+    assert.ok(size.x > 0.6 && size.x < 2.6, `length ${size.x}`);
+    assert.ok(size.y > 0.4 && size.y < 1.85, `height ${size.y}`);
+    assert.ok(size.z > 0.2 && size.z < 1.2, `width ${size.z}`);
     assert.ok(Math.abs(bounds.min.y) < 0.06, `floor ${bounds.min.y}`);
     for (const name of [
       'BatteryMount',

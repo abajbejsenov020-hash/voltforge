@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard E-XE 800 Enduro",
+  "key": "arctic-leopard-e-xe-800-enduro",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-e-xe-800-enduro.glb",
+  "source": "https://arctic-leopard.com/produit/e%C2%B7xe800-enduro/",
+  "image": "/assets/vehicles/arctic-leopard-e-xe-800-enduro.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-e-xe-800-enduro.blend",
+  "family": "arctic-fullsize-exe",
+  "variantNote": "Full-size black/grey MX-style Enduro with white fork guards, red shock and knobby wheels. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 84412,
+  "meshes": 50,
+  "bytes": 2936836,
+  "dimensions_m": [
+    2.205,
+    0.8128,
+    1.284
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-e-xe-800-enduro-three-quarter.png",
+  "referencePacked": true
+}

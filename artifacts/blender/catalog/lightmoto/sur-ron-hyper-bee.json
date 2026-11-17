@@ -1,0 +1,16 @@
+{
+  "name": "Sur-Ron Hyper Bee",
+  "key": "sur-ron-hyper-bee",
+  "triangles": 74508,
+  "meshes": 48,
+  "bytes": 2640892,
+  "dimensions_m": [
+    1.4785,
+    0.616,
+    0.8673
+  ],
+  "wheelbase_m": 1.0,
+  "floor_offset_m": 0.000724,
+  "packedReference": "surron-hyper-bee.webp",
+  "joinedTransformsBaked": true
+}

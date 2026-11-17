@@ -1,0 +1,16 @@
+{
+  "name": "Sur-Ron Ultra Bee",
+  "key": "sur-ron-ultra-bee",
+  "triangles": 69772,
+  "meshes": 47,
+  "bytes": 2425912,
+  "dimensions_m": [
+    2.0588,
+    0.8012,
+    1.2169
+  ],
+  "wheelbase_m": 1.38,
+  "floor_offset_m": 0.001062,
+  "packedReference": "surron-ultra-bee.webp",
+  "joinedTransformsBaked": true
+}

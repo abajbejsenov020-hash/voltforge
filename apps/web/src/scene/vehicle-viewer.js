@@ -1,6 +1,5 @@
 import { vehicleReference } from '../data/vehicle-library.js';
-import { getVehicleVisual } from '@voltforge/shared/visuals';
-import { BLENDER_MODELS } from './blender-models.js';
+import { blenderModelKey } from './blender-models.js';
 
 /** Photo references and photo-based Blender models retain distinct fidelity labels. */
 export function createVehicleViewer({ sceneFactory }) {
@@ -42,7 +41,7 @@ export function createVehicleViewer({ sceneFactory }) {
         : blender
           ? 'Drag to rotate · Scroll to zoom · Photo-based Blender model, not manufacturer CAD'
           : waiting
-            ? 'Loading photo-based Blender model · temporary concept shown'
+            ? 'Loading photo-based Blender model…'
             : 'Drag to rotate · Scroll to zoom · Appearance concept, not measured manufacturer CAD';
   }
   canvas.addEventListener('modelsourcechange', modelNote);
@@ -102,8 +101,7 @@ export function createVehicleViewer({ sceneFactory }) {
       if (changed || !reference) {
         reference = vehicleReference(vehicleName);
         imageFailed = false;
-        if (changed)
-          mode = BLENDER_MODELS[getVehicleVisual(vehicleName, type).profile] ? 'concept' : 'photo';
+        if (changed) mode = blenderModelKey(vehicleName) ? 'concept' : 'photo';
         if (reference) {
           photo.src = reference.image;
           photo.alt = `${reference.name} — original product reference`;

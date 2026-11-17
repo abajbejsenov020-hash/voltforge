@@ -54,12 +54,12 @@ tests/browser/             Real browser journeys
 
 The frontend uses Vite and Three.js. The backend uses Node's HTTP server and built-in SQLite. Domain calculations and stable part IDs are shared by the client and server; UI code does not live in the backend.
 
-KuKirin G4 and Sur-Ron Light Bee X use Blender-authored GLB models as their default 3D view, with named component groups and the original product reference available beside it. Editable `.blend` files and reconstruction scripts are included; see [Blender vehicle sources](assets/blender/README.md). These are reference-based appearance models. Other vehicles retain their product references and conceptual geometry.
+The 60 vehicles with product references use Blender-authored GLB models as their default 3D view, with named component groups and the original product reference available beside it. Editable `.blend` files and reconstruction scripts are included; see [Blender vehicle sources](assets/blender/README.md) and the [expanded model library](assets/blender/catalog/README.md). Models bind to exact catalog names so an unpictured regional variant does not silently borrow a different model's geometry. The other 285 indexed names retain clearly labeled conceptual geometry.
 
 ## Current coverage
 
 - **345 indexed vehicle names** with brand, model and alias search.
-- **60 reviewed vehicle references**, covering Sur-Ron, Talaria, Stark, Arctic Leopard, E Ride Pro, Altis, KuKirin, Ausom and Fiido. Exact references open by default. The remaining indexed names are still selectable with an explicit missing-image state.
+- **60 vehicle references and Blender models**, covering Sur-Ron, Talaria, Stark, Arctic Leopard, E Ride Pro, Altis, KuKirin, Ausom and Fiido. Photo-based 3D opens by default for those exact models, with the original reference image still available. The remaining indexed names are selectable with an explicit missing-image state.
 - **315 planning catalog entries** across eight categories; **94 components have product imagery and distinct photo-guided 3D approximations**. The default catalog shows photographed products. Templates and supplier requests remain available in the complete catalog.
 - Workshop and courtyard HDR environments, plus a neutral studio. Product references preserve original appearance; 3D concepts illustrate changes using approximate geometry. No procedural model is represented as measured manufacturer CAD.
 

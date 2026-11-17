@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard XF Pro Super",
+  "key": "arctic-leopard-xf-pro-super",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-xf-pro-super.glb",
+  "source": "https://arctic-leopard.com/produit/xf-pro-super/",
+  "image": "/assets/vehicles/arctic-leopard-xf-pro-super.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-xf-pro-super.blend",
+  "family": "arctic-xf",
+  "variantNote": "Reference bright pink frame and swingarm, gold fork, smooth road tyres. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 73360,
+  "meshes": 49,
+  "bytes": 2466688,
+  "dimensions_m": [
+    1.9209,
+    0.8128,
+    1.1786
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-xf-pro-super-three-quarter.png",
+  "referencePacked": true
+}

@@ -1,0 +1,16 @@
+{
+  "key": "ausom-dt2-pro",
+  "name": "Ausom DT2 Pro",
+  "family": "Ausom DT2 Pro",
+  "observed": "Wide angular faceted deck, long swept neck, dark cast suspension arms, rectangular clipped fenders and two hub motors.",
+  "reference": "/assets/vehicles/ausom-dt2-pro.webp",
+  "source": "https://ausomstore.com/products/ausom-dt2-pro-e-scooter",
+  "triangles": 60888,
+  "meshes": 35,
+  "bytes": 1736132,
+  "blendBytes": 813676,
+  "render": "artifacts/blender/catalog/scooters/ausom-dt2-pro.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.0,
+  "boundsNormalized": true
+}

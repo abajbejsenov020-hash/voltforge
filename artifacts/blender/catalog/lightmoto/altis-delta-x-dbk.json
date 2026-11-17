@@ -1,0 +1,16 @@
+{
+  "name": "Altis Delta x DBK",
+  "key": "altis-delta-x-dbk",
+  "triangles": 64988,
+  "meshes": 46,
+  "bytes": 2232048,
+  "dimensions_m": [
+    1.8431,
+    0.756,
+    1.0971
+  ],
+  "wheelbase_m": 1.24,
+  "floor_offset_m": 0.000925,
+  "packedReference": "altis-delta-x-dbk.webp",
+  "joinedTransformsBaked": true
+}

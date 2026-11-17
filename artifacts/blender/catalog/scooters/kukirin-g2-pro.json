@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-g2-pro",
+  "name": "KuKirin G2 Pro",
+  "family": "G2 Pro seated",
+  "observed": "Photographed seated configuration: tall slotted seat pedestal, telescopic sprung post, orange quick clamp and black saddle.",
+  "reference": "/assets/vehicles/kukirin-g2-pro.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 75392,
+  "meshes": 40,
+  "bytes": 2257520,
+  "blendBytes": 904623,
+  "render": "artifacts/blender/catalog/scooters/kukirin-g2-pro.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

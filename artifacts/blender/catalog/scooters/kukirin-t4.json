@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-t4",
+  "name": "KuKirin T4",
+  "family": "T4 long low deck",
+  "observed": "Low long sculpted deck, gray triangular windowed arms, orange thin arm insets; short angular fenders.",
+  "reference": "/assets/vehicles/kukirin-t4.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 59660,
+  "meshes": 36,
+  "bytes": 1697688,
+  "blendBytes": 679092,
+  "render": "artifacts/blender/catalog/scooters/kukirin-t4.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

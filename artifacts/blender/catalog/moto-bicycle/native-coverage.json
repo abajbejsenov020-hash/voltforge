@@ -1,0 +1,157 @@
+{
+  "count": 19,
+  "results": [
+    {
+      "key": "stark-varg-mx",
+      "editableMeshes": 43,
+      "packedReference": "stark-varg-mx.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "stark-varg-mx-12",
+      "editableMeshes": 44,
+      "packedReference": "stark-varg-mx-12.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "stark-varg-ex",
+      "editableMeshes": 49,
+      "packedReference": "stark-varg-ex.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "stark-varg-sm",
+      "editableMeshes": 48,
+      "packedReference": "stark-varg-sm.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xf-pro",
+      "editableMeshes": 49,
+      "packedReference": "arctic-leopard-xf-pro.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xe-pro-r",
+      "editableMeshes": 49,
+      "packedReference": "arctic-leopard-xe-pro-r.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xe-pro-s",
+      "editableMeshes": 48,
+      "packedReference": "arctic-leopard-xe-pro-s.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-e-xe-880-enduro",
+      "editableMeshes": 52,
+      "packedReference": "arctic-leopard-e-xe-880-enduro.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "fiido-m1-pro",
+      "editableMeshes": 47,
+      "packedReference": "fiido-m1-pro.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "fiido-c11",
+      "editableMeshes": 44,
+      "packedReference": "fiido-c11.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xf-pro-mx",
+      "editableMeshes": 49,
+      "packedReference": "arctic-leopard-xf-pro-mx.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xf-pro-super",
+      "editableMeshes": 49,
+      "packedReference": "arctic-leopard-xf-pro-super.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xe-pro-s-enduro",
+      "editableMeshes": 49,
+      "packedReference": "arctic-leopard-xe-pro-s-enduro.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-xe-l1e",
+      "editableMeshes": 53,
+      "packedReference": "arctic-leopard-xe-l1e.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-e-xe-880-super",
+      "editableMeshes": 50,
+      "packedReference": "arctic-leopard-e-xe-880-super.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-e-xe-800-enduro",
+      "editableMeshes": 50,
+      "packedReference": "arctic-leopard-e-xe-800-enduro.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "arctic-leopard-e-xe-l3e",
+      "editableMeshes": 52,
+      "packedReference": "arctic-leopard-e-xe-l3e.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "stark-varg-sm-skoll",
+      "editableMeshes": 46,
+      "packedReference": "stark-varg-sm-skoll.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    },
+    {
+      "key": "stark-varg-factory-edition",
+      "editableMeshes": 44,
+      "packedReference": "stark-varg-factory-edition.webp",
+      "metric": true,
+      "render640": true,
+      "samples": 32
+    }
+  ]
+}

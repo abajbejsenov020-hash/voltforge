@@ -1,10 +1,18 @@
-import { canonicalVehicleName, normalizeVehicleName } from '@voltforge/shared/vehicles';
+import {
+  canonicalVehicleName,
+  normalizeVehicleName,
+  VEHICLE_INDEX,
+} from '@voltforge/shared/vehicles';
 import references from './vehicle-references.json' with { type: 'json' };
 
 const byName = new Map(references.map((entry) => [normalizeVehicleName(entry.name), entry]));
+const indexedNames = new Set(VEHICLE_INDEX.map((entry) => normalizeVehicleName(entry.name)));
 
 /** Only exact, reviewed model references belong in this library. */
 export function vehicleReference(name) {
+  const exact = normalizeVehicleName(name);
+  if (byName.has(exact)) return byName.get(exact);
+  if (indexedNames.has(exact)) return null;
   return byName.get(normalizeVehicleName(canonicalVehicleName(name))) || null;
 }
 

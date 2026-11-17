@@ -1,0 +1,16 @@
+{
+  "name": "Altis Sigma MX",
+  "key": "altis-sigma-mx",
+  "triangles": 66388,
+  "meshes": 45,
+  "bytes": 2282160,
+  "dimensions_m": [
+    1.9249,
+    0.756,
+    1.117
+  ],
+  "wheelbase_m": 1.28,
+  "floor_offset_m": 0.001,
+  "packedReference": "altis-sigma-mx.webp",
+  "joinedTransformsBaked": true
+}

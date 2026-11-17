@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-g2-pro-vmp",
+  "name": "KuKirin G2 Pro VMP",
+  "family": "G2 Pro regional",
+  "observed": "Seatless VMP reference: open-slot rear kickplate, no seat mount, amber flank reflector and square headlight. Hidden regional differences not invented.",
+  "reference": "/assets/vehicles/kukirin-g2-pro-vmp.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 71300,
+  "meshes": 40,
+  "bytes": 2124800,
+  "blendBytes": 846076,
+  "render": "artifacts/blender/catalog/scooters/kukirin-g2-pro-vmp.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

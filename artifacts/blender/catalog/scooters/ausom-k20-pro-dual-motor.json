@@ -1,0 +1,16 @@
+{
+  "key": "ausom-k20-pro-dual-motor",
+  "name": "Ausom K20 Pro Dual Motor",
+  "family": "Ausom K20 / Laluz 2 Pro",
+  "observed": "Conventional telescopic front fork, gold rim stripes, purple deck LED strip and rear adjustable spring; swallow handlebar.",
+  "reference": "/models/catalog/scooters/references/ausom-laluz-2-pro-primary.jpg",
+  "source": "https://ausomstore.com/products/ausom-k20-pro-dual-motor-e-scooter",
+  "triangles": 62632,
+  "meshes": 38,
+  "bytes": 1787628,
+  "blendBytes": 1111612,
+  "render": "artifacts/blender/catalog/scooters/ausom-k20-pro-dual-motor.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

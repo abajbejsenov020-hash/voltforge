@@ -1,0 +1,16 @@
+{
+  "name": "E Ride Pro SS 2.0",
+  "key": "e-ride-pro-ss-2-0",
+  "triangles": 63020,
+  "meshes": 45,
+  "bytes": 2102008,
+  "dimensions_m": [
+    1.9199,
+    0.756,
+    1.0719
+  ],
+  "wheelbase_m": 1.27,
+  "floor_offset_m": 0.001058,
+  "packedReference": "e-ride-pro-ss-20.webp",
+  "joinedTransformsBaked": true
+}

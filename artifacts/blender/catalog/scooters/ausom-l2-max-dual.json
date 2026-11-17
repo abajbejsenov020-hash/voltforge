@@ -1,0 +1,16 @@
+{
+  "key": "ausom-l2-max-dual",
+  "name": "Ausom L2 Max Dual Motor",
+  "family": "Ausom L2 Max",
+  "observed": "Slimmer deep gray deck with pointed side caps, angular shallow-V arms, two hub motors, front fender light and slotted stem panel.",
+  "reference": "/assets/vehicles/ausom-l2-max-dual.webp",
+  "source": "https://ausomstore.com/products/ausom-l2-max-dual-motor-electric-scooter",
+  "triangles": 62692,
+  "meshes": 35,
+  "bytes": 1760388,
+  "blendBytes": 705592,
+  "render": "artifacts/blender/catalog/scooters/ausom-l2-max-dual.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.0,
+  "boundsNormalized": true
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "key": "talaria-sting-r-mx4",
+    "packed_reference": "talaria-sting-r-mx4.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 870517
+  },
+  {
+    "key": "talaria-sting-pro-mx5",
+    "packed_reference": "talaria-sting-pro-mx5.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 860979
+  },
+  {
+    "key": "talaria-komodo",
+    "packed_reference": "talaria-komodo.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 926792
+  },
+  {
+    "key": "e-ride-pro-ss-2-0",
+    "packed_reference": "e-ride-pro-ss-20.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 741230
+  },
+  {
+    "key": "e-ride-pro-ss-3-0",
+    "packed_reference": "e-ride-pro-ss-30.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 736107
+  },
+  {
+    "key": "e-ride-pro-sr",
+    "packed_reference": "e-ride-pro-sr.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 739540
+  },
+  {
+    "key": "sur-ron-ultra-bee",
+    "packed_reference": "surron-ultra-bee.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 966402
+  },
+  {
+    "key": "sur-ron-storm-bee",
+    "packed_reference": "surron-storm-bee.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 929247
+  },
+  {
+    "key": "sur-ron-hyper-bee",
+    "packed_reference": "surron-hyper-bee.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 1001675
+  },
+  {
+    "key": "talaria-xxx",
+    "packed_reference": "talaria-xxx.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 787125
+  },
+  {
+    "key": "altis-sigma-mx",
+    "packed_reference": "altis-sigma-mx.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 812136
+  },
+  {
+    "key": "talaria-komodo-l3e",
+    "packed_reference": "talaria-komodo-l3e.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 860720
+  },
+  {
+    "key": "talaria-sting-pro-l1e",
+    "packed_reference": "talaria-sting-pro-l1e.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 895567
+  },
+  {
+    "key": "talaria-junior-et01",
+    "packed_reference": "talaria-junior-et01.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 665381
+  },
+  {
+    "key": "e-ride-pro-s",
+    "packed_reference": "e-ride-pro-s.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 772583
+  },
+  {
+    "key": "e-ride-pro-4-0",
+    "packed_reference": "e-ride-pro-4-0.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 748121
+  },
+  {
+    "key": "e-ride-pro-mini-r",
+    "packed_reference": "e-ride-pro-mini-r.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 755377
+  },
+  {
+    "key": "altis-delta-x-dbk",
+    "packed_reference": "altis-delta-x-dbk.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 764929
+  },
+  {
+    "key": "altis-omega",
+    "packed_reference": "altis-omega.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 857855
+  },
+  {
+    "key": "talaria-komodo-mx",
+    "packed_reference": "talaria-komodo.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 932108
+  },
+  {
+    "key": "talaria-xxx-mx",
+    "packed_reference": "talaria-xxx.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 786796
+  },
+  {
+    "key": "talaria-sting-pro",
+    "packed_reference": "talaria-sting-pro-mx5.webp",
+    "floor_m": 0.0,
+    "unused_meshes": 0,
+    "native_bytes": 864021
+  }
+]

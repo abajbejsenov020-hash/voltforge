@@ -1,0 +1,16 @@
+{
+  "name": "Talaria Komodo L3E",
+  "key": "talaria-komodo-l3e",
+  "triangles": 65208,
+  "meshes": 47,
+  "bytes": 2208016,
+  "dimensions_m": [
+    2.0508,
+    0.756,
+    1.399
+  ],
+  "wheelbase_m": 1.38,
+  "floor_offset_m": 0.001032,
+  "packedReference": "talaria-komodo-l3e.webp",
+  "joinedTransformsBaked": true
+}

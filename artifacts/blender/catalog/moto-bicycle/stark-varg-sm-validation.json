@@ -1,0 +1,34 @@
+{
+  "name": "Stark Varg SM",
+  "key": "stark-varg-sm",
+  "url": "/models/catalog/moto-bicycle/stark-varg-sm.glb",
+  "source": "https://starkfuture.com/products/stark-varg-sm",
+  "image": "/assets/vehicles/stark-varg-sm.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/stark-varg-sm.blend",
+  "family": "stark-varg",
+  "variantNote": "Red Varg supermoto, headlamp, wide smooth road tyres and rear registration hanger. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 77078,
+  "meshes": 48,
+  "bytes": 2572476,
+  "dimensions_m": [
+    2.1109,
+    0.8128,
+    1.2786
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/stark-varg-sm-three-quarter.png",
+  "referencePacked": true
+}

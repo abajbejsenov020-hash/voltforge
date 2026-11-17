@@ -1,0 +1,16 @@
+{
+  "name": "Talaria Komodo MX",
+  "key": "talaria-komodo-mx",
+  "triangles": 72748,
+  "meshes": 45,
+  "bytes": 2353788,
+  "dimensions_m": [
+    2.0508,
+    0.756,
+    1.187
+  ],
+  "wheelbase_m": 1.38,
+  "floor_offset_m": 0.001032,
+  "packedReference": "talaria-komodo.webp",
+  "joinedTransformsBaked": true
+}

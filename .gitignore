@@ -15,4 +15,4 @@ playwright-report/
 *.blend2
 **/.impeccable/
 __pycache__/
-artifacts/blender/*.log
+artifacts/blender/**/*.log

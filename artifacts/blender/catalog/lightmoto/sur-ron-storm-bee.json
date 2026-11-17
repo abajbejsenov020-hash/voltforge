@@ -1,0 +1,16 @@
+{
+  "name": "Sur-Ron Storm Bee",
+  "key": "sur-ron-storm-bee",
+  "triangles": 73164,
+  "meshes": 50,
+  "bytes": 2601348,
+  "dimensions_m": [
+    2.1208,
+    0.756,
+    1.2669
+  ],
+  "wheelbase_m": 1.43,
+  "floor_offset_m": 0.001081,
+  "packedReference": "surron-storm-bee.webp",
+  "joinedTransformsBaked": true
+}

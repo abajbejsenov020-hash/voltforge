@@ -1,10 +1,47 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import {
+  canonicalVehicleName,
+  normalizeVehicleName,
+  VEHICLE_INDEX,
+} from '@voltforge/shared/vehicles';
+import scooters from '../data/blender-scooters.json' with { type: 'json' };
+import lightmoto from '../data/blender-lightmoto.json' with { type: 'json' };
+import motoBicycle from '../data/blender-moto-bicycle.json' with { type: 'json' };
 
-export const BLENDER_MODELS = Object.freeze({
-  'kukirin-g4': '/models/kukirin-g4.glb',
-  'surron-lbx': '/models/surron-lbx.glb',
-});
+export const BLENDER_VEHICLES = [
+  {
+    name: 'KuKirin G4',
+    key: 'kukirin-g4',
+    url: '/models/kukirin-g4.glb',
+    nativeSource: 'assets/blender/kukirin-g4.blend',
+    bytes: 4209580,
+  },
+  {
+    name: 'Sur-Ron Light Bee X',
+    key: 'surron-lbx',
+    url: '/models/surron-lbx.glb',
+    nativeSource: 'assets/blender/surron-lbx.blend',
+    bytes: 3332800,
+  },
+  ...scooters,
+  ...lightmoto,
+  ...motoBicycle,
+];
+// A batch entry becomes available only after Blender has exported and checked it.
+const available = BLENDER_VEHICLES.filter((entry) => entry.bytes > 0);
+export const BLENDER_MODELS = Object.freeze(
+  Object.fromEntries(available.map((entry) => [entry.key, entry.url])),
+);
+const byName = new Map(available.map((entry) => [normalizeVehicleName(entry.name), entry.key]));
+const indexedNames = new Set(VEHICLE_INDEX.map((entry) => normalizeVehicleName(entry.name)));
+export function blenderModelKey(name) {
+  const exact = normalizeVehicleName(name);
+  if (byName.has(exact)) return byName.get(exact);
+  // A different catalog variant must not silently acquire a related model's geometry.
+  if (indexedNames.has(exact)) return null;
+  return byName.get(normalizeVehicleName(canonicalVehicleName(name))) || null;
+}
 
 // Each load owns its resources. No mutable scene or GPU resource is cached/shared.
 const disposedResources = new WeakSet();

@@ -1,0 +1,16 @@
+{
+  "name": "Altis Omega",
+  "key": "altis-omega",
+  "triangles": 67096,
+  "meshes": 46,
+  "bytes": 2350352,
+  "dimensions_m": [
+    1.9929,
+    0.756,
+    1.187
+  ],
+  "wheelbase_m": 1.33,
+  "floor_offset_m": 0.001023,
+  "packedReference": "altis-omega.webp",
+  "joinedTransformsBaked": true
+}

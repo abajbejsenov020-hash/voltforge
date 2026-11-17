@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard E-XE L3E",
+  "key": "arctic-leopard-e-xe-l3e",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-e-xe-l3e.glb",
+  "source": "https://arctic-leopard.com/produit/e%C2%B7xe-l3e/",
+  "image": "/assets/vehicles/arctic-leopard-e-xe-l3e.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-e-xe-l3e.blend",
+  "family": "arctic-fullsize-exe",
+  "variantNote": "Full-size red/white road trim, headlamp, mirrors, registration hanger and knobby wheels. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 85758,
+  "meshes": 52,
+  "bytes": 2977952,
+  "dimensions_m": [
+    2.205,
+    0.8128,
+    1.47
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-e-xe-l3e-three-quarter.png",
+  "referencePacked": true
+}

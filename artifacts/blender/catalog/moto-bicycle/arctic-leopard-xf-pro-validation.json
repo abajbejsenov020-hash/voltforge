@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard XF Pro",
+  "key": "arctic-leopard-xf-pro",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-xf-pro.glb",
+  "source": "https://arctic-leopard.com/produit/xf-pro/",
+  "image": "/assets/vehicles/arctic-leopard-xf-pro.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-xf-pro.blend",
+  "family": "arctic-xf",
+  "variantNote": "Reference lime-green open perimeter monocoque, gold fork and knobby wheels. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 76960,
+  "meshes": 49,
+  "bytes": 2715252,
+  "dimensions_m": [
+    1.957,
+    0.8128,
+    1.184
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-xf-pro-three-quarter.png",
+  "referencePacked": true
+}

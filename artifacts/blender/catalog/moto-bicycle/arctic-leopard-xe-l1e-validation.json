@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard XE L1E",
+  "key": "arctic-leopard-xe-l1e",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-xe-l1e.glb",
+  "source": "https://arctic-leopard.com/produit/xe-l1e-b/",
+  "image": "/assets/vehicles/arctic-leopard-xe-l1e.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-xe-l1e.blend",
+  "family": "arctic-xe-pro",
+  "variantNote": "Black fork and graphite chassis with LED headlamp, tail equipment and rear hugger. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 78162,
+  "meshes": 53,
+  "bytes": 2755512,
+  "dimensions_m": [
+    1.957,
+    0.8128,
+    1.184
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-xe-l1e-three-quarter.png",
+  "referencePacked": true
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard XE Pro R",
+  "key": "arctic-leopard-xe-pro-r",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-xe-pro-r.glb",
+  "source": "https://arctic-leopard.com/produit/xe-pro-r/",
+  "image": "/assets/vehicles/arctic-leopard-xe-pro-r.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-xe-pro-r.blend",
+  "family": "arctic-xe-pro",
+  "variantNote": "Graphite perimeter frame, larger front enduro wheel, gold fork and rear hugger. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 78388,
+  "meshes": 49,
+  "bytes": 2786140,
+  "dimensions_m": [
+    2.02,
+    0.8128,
+    1.184
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-xe-pro-r-three-quarter.png",
+  "referencePacked": true
+}

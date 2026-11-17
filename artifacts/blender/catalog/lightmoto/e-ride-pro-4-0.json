@@ -1,0 +1,16 @@
+{
+  "name": "E Ride Pro 4.0",
+  "key": "e-ride-pro-4-0",
+  "triangles": 64404,
+  "meshes": 46,
+  "bytes": 2150592,
+  "dimensions_m": [
+    1.9759,
+    0.756,
+    1.177
+  ],
+  "wheelbase_m": 1.31,
+  "floor_offset_m": 0.001032,
+  "packedReference": "e-ride-pro-4-0.webp",
+  "joinedTransformsBaked": true
+}

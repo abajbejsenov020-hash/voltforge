@@ -1,0 +1,16 @@
+{
+  "name": "Talaria XXX MX",
+  "key": "talaria-xxx-mx",
+  "triangles": 57946,
+  "meshes": 42,
+  "bytes": 1936476,
+  "dimensions_m": [
+    1.7941,
+    0.756,
+    1.0571
+  ],
+  "wheelbase_m": 1.2,
+  "floor_offset_m": 0.000948,
+  "packedReference": "talaria-xxx.webp",
+  "joinedTransformsBaked": true
+}

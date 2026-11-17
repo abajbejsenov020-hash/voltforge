@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-m4-max",
+  "name": "KuKirin M4 Max",
+  "family": "M4 Max telescopic fork",
+  "observed": "Silver sculpted deck extrusion, conventional twin telescopic front fork, red rear damper and red stem clamp.",
+  "reference": "/assets/vehicles/kukirin-m4-max.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 59600,
+  "meshes": 37,
+  "bytes": 1740920,
+  "blendBytes": 761728,
+  "render": "artifacts/blender/catalog/scooters/kukirin-m4-max.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

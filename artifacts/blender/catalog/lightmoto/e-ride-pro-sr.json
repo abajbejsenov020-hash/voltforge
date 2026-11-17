@@ -1,0 +1,16 @@
+{
+  "name": "E Ride Pro SR",
+  "key": "e-ride-pro-sr",
+  "triangles": 64132,
+  "meshes": 45,
+  "bytes": 2127044,
+  "dimensions_m": [
+    1.9859,
+    0.756,
+    1.177
+  ],
+  "wheelbase_m": 1.32,
+  "floor_offset_m": 0.001032,
+  "packedReference": "e-ride-pro-sr.webp",
+  "joinedTransformsBaked": true
+}

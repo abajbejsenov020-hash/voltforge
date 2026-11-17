@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-g2-pro-abe",
+  "name": "KuKirin G2 Pro ABE",
+  "family": "G2 Pro regional",
+  "observed": "Seatless ABE reference: amber flank reflector, upright license bracket and square road headlight.",
+  "reference": "/assets/vehicles/kukirin-g2-pro-abe.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 71724,
+  "meshes": 40,
+  "bytes": 2141856,
+  "blendBytes": 862022,
+  "render": "artifacts/blender/catalog/scooters/kukirin-g2-pro-abe.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

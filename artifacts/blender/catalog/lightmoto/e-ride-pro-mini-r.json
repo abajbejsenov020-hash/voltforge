@@ -1,0 +1,16 @@
+{
+  "name": "E Ride Pro Mini R",
+  "key": "e-ride-pro-mini-r",
+  "triangles": 63756,
+  "meshes": 45,
+  "bytes": 2133404,
+  "dimensions_m": [
+    1.7032,
+    0.756,
+    1.0271
+  ],
+  "wheelbase_m": 1.15,
+  "floor_offset_m": 0.000854,
+  "packedReference": "e-ride-pro-mini-r.webp",
+  "joinedTransformsBaked": true
+}

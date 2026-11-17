@@ -1,0 +1,34 @@
+{
+  "name": "Arctic Leopard XF Pro MX",
+  "key": "arctic-leopard-xf-pro-mx",
+  "url": "/models/catalog/moto-bicycle/arctic-leopard-xf-pro-mx.glb",
+  "source": "https://arctic-leopard.com/produit/xf-pro-mx/",
+  "image": "/assets/vehicles/arctic-leopard-xf-pro-mx.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/arctic-leopard-xf-pro-mx.blend",
+  "family": "arctic-xf",
+  "variantNote": "Reference graphite XF open perimeter chassis, gold fork, MX number plate and knobbies. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 76960,
+  "meshes": 49,
+  "bytes": 2715100,
+  "dimensions_m": [
+    1.957,
+    0.8128,
+    1.184
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/arctic-leopard-xf-pro-mx-three-quarter.png",
+  "referencePacked": true
+}

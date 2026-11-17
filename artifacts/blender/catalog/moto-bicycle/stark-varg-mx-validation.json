@@ -1,0 +1,34 @@
+{
+  "name": "Stark Varg MX",
+  "key": "stark-varg-mx",
+  "url": "/models/catalog/moto-bicycle/stark-varg-mx.glb",
+  "source": "https://starkfuture.com/products/stark-varg-1",
+  "image": "/assets/vehicles/stark-varg-mx.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/stark-varg-mx.blend",
+  "family": "stark-varg",
+  "variantNote": "Red compound curved MX shrouds, dark original motor, white number plate, knobby 21/18-style wheels. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 79100,
+  "meshes": 43,
+  "bytes": 2745068,
+  "dimensions_m": [
+    2.205,
+    0.8128,
+    1.284
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/stark-varg-mx-three-quarter.png",
+  "referencePacked": true
+}

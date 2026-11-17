@@ -1,0 +1,16 @@
+{
+  "key": "ausom-gosoul-2-pro-dual-motor",
+  "name": "Ausom Gosoul 2 Pro Dual Motor",
+  "family": "Ausom Gosoul 2 Pro ShocFree",
+  "observed": "ShocFree leading swingarm front suspension, dual black hub motors, faceted wide deck and purple illuminated flank strip.",
+  "reference": "/assets/vehicles/ausom-gosoul-2-pro-dual-motor.webp",
+  "source": "https://ausomstore.com/",
+  "triangles": 61080,
+  "meshes": 36,
+  "bytes": 1720856,
+  "blendBytes": 801127,
+  "render": "artifacts/blender/catalog/scooters/ausom-gosoul-2-pro-dual-motor.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

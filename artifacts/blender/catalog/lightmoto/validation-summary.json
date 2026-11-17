@@ -1,0 +1,38 @@
+{
+  "models": 22,
+  "glbTrianglesRange": [
+    44092,
+    74508
+  ],
+  "glbMeshesRange": [
+    34,
+    50
+  ],
+  "glbBytesRange": [
+    1421620,
+    2640892
+  ],
+  "nativeValidated": 22,
+  "nonemptySemanticMountsPerModel": [
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount"
+  ],
+  "nativeChecks": [
+    "One packed own reference photo",
+    "No unused mesh datablocks",
+    "Root at origin",
+    "World floor within 0.00001m",
+    "Front axle +X relative to rear",
+    "640x640 render, Cycles 32 samples"
+  ],
+  "glbChecks": [
+    "Valid GLB2 header and lengths",
+    "Unique22 canonical names and keys",
+    "Triangle and mesh measurements match manifest",
+    "No external buffers",
+    "All22 native/render/export files present"
+  ]
+}

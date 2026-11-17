@@ -1,0 +1,16 @@
+{
+  "name": "Talaria Sting Pro",
+  "key": "talaria-sting-pro",
+  "triangles": 62964,
+  "meshes": 45,
+  "bytes": 2107324,
+  "dimensions_m": [
+    1.8999,
+    0.756,
+    1.0969
+  ],
+  "wheelbase_m": 1.25,
+  "floor_offset_m": 0.001058,
+  "packedReference": "talaria-sting-pro-mx5.webp",
+  "joinedTransformsBaked": true
+}

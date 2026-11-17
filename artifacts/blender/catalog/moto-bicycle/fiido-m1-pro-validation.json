@@ -1,0 +1,34 @@
+{
+  "name": "Fiido M1 Pro",
+  "key": "fiido-m1-pro",
+  "url": "/models/catalog/moto-bicycle/fiido-m1-pro.glb",
+  "source": "https://fiido.com/products/fiido-m1-pro-fat-tire-electric-bike",
+  "image": "/assets/vehicles/fiido-m1-pro.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/fiido-m1-pro.blend",
+  "family": "fiido-folding",
+  "variantNote": "Teal folding fat-tyre full-suspension bicycle, tan sidewalls, six-spoke cast wheels, red rear coil, pedals and gold fork. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 64744,
+  "meshes": 47,
+  "bytes": 2154020,
+  "dimensions_m": [
+    1.7109,
+    0.6236,
+    1.0993
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/fiido-m1-pro-three-quarter.png",
+  "referencePacked": true
+}

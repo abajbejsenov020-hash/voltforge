@@ -10,6 +10,7 @@ import { normalizeVehicleName } from '@voltforge/shared/vehicles';
 import { PartPreviews } from './components/index.js';
 import {
   BLENDER_MODELS,
+  blenderModelKey,
   createBlenderLoader,
   createBlenderAssembly,
   disposeModelResources,
@@ -94,6 +95,9 @@ export function createVehicleScene() {
     },
     onError(error) {
       console.warn('Blender model unavailable; showing procedural concept', error);
+      disposeModel();
+      buildProcedural();
+      model.visible = true;
       modelState('fallback', 'error', '3D model unavailable · concept fallback');
       requestDraw();
     },
@@ -726,6 +730,19 @@ export function createVehicleScene() {
     if (!loadingSameProfile) blenderLoader.cancel();
     requestedProfile = visual.profile;
     disposeModel();
+    if (BLENDER_MODELS[visual.profile]) {
+      model.visible = false;
+      if (!loadingSameProfile) {
+        modelState('loading', 'loading', 'Loading Blender 3D model…');
+        void blenderLoader.load(visual.profile);
+      }
+    } else {
+      buildProcedural();
+      modelState('procedural', 'ready', '3D concept · approximate geometry');
+    }
+    requestDraw();
+  }
+  function buildProcedural() {
     M.frame.color.setHex(visual.frame);
     M.accent.color.setHex(visual.accent);
     if (kind === 'scooter') {
@@ -735,13 +752,6 @@ export function createVehicleScene() {
     } else if (visual.profile === 'surron-lbx') lightBee();
     else bicycle();
     updateExplode();
-    if (BLENDER_MODELS[visual.profile]) {
-      if (!loadingSameProfile) {
-        modelState('loading', 'loading', 'Loading Blender 3D model…');
-        void blenderLoader.load(visual.profile);
-      }
-    } else modelState('procedural', 'ready', '3D concept · approximate geometry');
-    requestDraw();
   }
   function requestDraw() {
     if (pending || disposed) return;
@@ -969,6 +979,14 @@ export function createVehicleScene() {
       if (disposed) return;
       const k = type + vehicleName + JSON.stringify(selection);
       visual = getVehicleVisual(vehicleName, type);
+      const modelKey = blenderModelKey(vehicleName);
+      visual.profile =
+        modelKey ||
+        (BLENDER_MODELS[visual.profile]
+          ? type === 'scooter'
+            ? 'performance-scooter'
+            : 'mountain-bike'
+          : visual.profile);
       if (k !== selectionKey) {
         if (kind !== type) {
           zoom = 1;

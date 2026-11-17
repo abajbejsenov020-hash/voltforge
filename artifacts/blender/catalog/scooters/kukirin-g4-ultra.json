@@ -1,0 +1,16 @@
+{
+  "key": "kukirin-g4-ultra",
+  "name": "KuKirin G4 Ultra",
+  "family": "G4 Ultra dual motor",
+  "observed": "Larger broad deck and 12-inch-class road tires, two enclosed hub motors; gray open neck, geometric orange arm/stem graphics.",
+  "reference": "/assets/vehicles/kukirin-g4-ultra.webp",
+  "source": "https://kukirin-escooter.com/",
+  "triangles": 67880,
+  "meshes": 35,
+  "bytes": 2053304,
+  "blendBytes": 793749,
+  "render": "artifacts/blender/catalog/scooters/kukirin-g4-ultra.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.0,
+  "boundsNormalized": true
+}

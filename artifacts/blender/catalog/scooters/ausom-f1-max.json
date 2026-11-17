@@ -1,0 +1,16 @@
+{
+  "key": "ausom-f1-max",
+  "name": "Ausom F1 Max",
+  "family": "Ausom F1 Max dual spring",
+  "observed": "Two exposed front coil dampers, sculpted carbon-pattern-looking arms, ribbed long deck, twin round low headlamps and tall gold fold lever; manufacturer clean photo supplements action reference.",
+  "reference": "/assets/vehicles/ausom-f1-max.webp",
+  "source": "https://ausomstore.com/products/ausom-f1-max-electric-scooter",
+  "triangles": 67196,
+  "meshes": 36,
+  "bytes": 1920508,
+  "blendBytes": 915106,
+  "render": "artifacts/blender/catalog/scooters/ausom-f1-max.png",
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
+  "minHeight": 0.000238936030655168,
+  "boundsNormalized": true
+}

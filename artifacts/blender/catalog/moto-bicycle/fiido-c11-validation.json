@@ -1,0 +1,34 @@
+{
+  "name": "Fiido C11",
+  "key": "fiido-c11",
+  "url": "/models/catalog/moto-bicycle/fiido-c11.glb",
+  "source": "https://fiido.com/products/fiido-c11-electric-commuter-bike",
+  "image": "/assets/vehicles/fiido-c11.webp",
+  "nativeSource": "assets/blender/catalog/moto-bicycle/fiido-c11.blend",
+  "family": "fiido-step-through",
+  "variantNote": "Teal low step-through commuter, dark downtube battery, full fenders, headlamp, rear cargo rack and pedals. Reference has a rack, no basket. Photo-based visual reconstruction; no manufacturer CAD.",
+  "triangles": 63336,
+  "meshes": 44,
+  "bytes": 2089256,
+  "dimensions_m": [
+    1.922,
+    0.6236,
+    1.0757
+  ],
+  "floor_min_z": 0,
+  "semanticNodes": [
+    "Chassis",
+    "FrontWheel",
+    "RearWheel",
+    "BatteryMount",
+    "ControllerMount",
+    "MotorMount",
+    "Bodywork",
+    "Fork",
+    "RearSuspension",
+    "Drive",
+    "Cockpit"
+  ],
+  "render": "/Users/abay/Desktop/voltforge/artifacts/blender/catalog/moto-bicycle/fiido-c11-three-quarter.png",
+  "referencePacked": true
+}
