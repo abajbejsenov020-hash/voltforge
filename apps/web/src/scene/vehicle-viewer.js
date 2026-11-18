@@ -36,11 +36,13 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
     category = 'Motors',
     motorCount,
     scene,
+    renderPreferences,
     imageFailed = false;
 
   function getScene() {
     if (!scene) {
       scene = sceneFactory();
+      if (renderPreferences) scene.setRenderPreferences?.(renderPreferences);
       scene.setEnvironment?.(setting.value);
     }
     return scene;
@@ -181,6 +183,10 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
   };
   return {
     getReference: () => reference,
+    setRenderPreferences(preferences) {
+      renderPreferences = preferences;
+      scene?.setRenderPreferences?.(preferences);
+    },
     inspectBuild() {
       mode = 'concept';
       show();

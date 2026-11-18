@@ -9,7 +9,7 @@ const PARKED = [
 ];
 
 /** A physical, meter-scale workshop. Parked vehicles own separate GLTF resources. */
-export function createGarage({ scene, onChange, onStatus }) {
+export function createGarage({ scene, onChange, onStatus, onParkedVehicle }) {
   const root = new THREE.Group();
   root.name = 'Garage';
   // Face the room's open side toward the viewer's default three-quarter camera.
@@ -321,6 +321,7 @@ export function createGarage({ scene, onChange, onStatus }) {
             object.receiveShadow = true;
           }
         });
+        onParkedVehicle?.(vehicle);
         root.add(vehicle);
         const contact = mesh(
           new THREE.PlaneGeometry(2.1, 0.75),

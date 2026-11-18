@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Voltforge — Electric Build Studio</title>
+    <title>VOLTMODD — Electric Build Studio</title>
+    <meta name="theme-color" content="#edf0eb" />
+    <link rel="icon" type="image/png" href="/voltmodd-icon.png" />
     <meta
       name="description"
       content="Plan your next e-scooter or e-bike. Explore parts, assemble a 3D concept, and uncover compatibility questions before you build."
@@ -12,28 +14,40 @@
   <body>
     <div class="app">
       <header class="site-header">
-        <a class="wordmark" href="#" aria-label="Voltforge home">VOLT<span>FORGE</span></a>
+        <a class="wordmark" href="#" aria-label="VOLTMODD home">VOLTMODD</a>
         <nav class="header-nav" aria-label="Main navigation">
           <button class="active" id="studioNav">Build studio</button
           ><button id="savedNav">My garage</button><button id="guideNav">Build guide</button>
         </nav>
         <div class="header-actions">
-          <span id="saveStatus">Saved on this device</span
-          ><button class="btn" id="newBuild">New build</button
-          ><button class="btn primary" id="exportBuild">Export build</button>
+          <span id="saveStatus">Saved on this device</span>
+          <details class="graphics-settings" id="graphicsSettings">
+            <summary>Graphics</summary>
+            <div class="graphics-panel">
+              <label for="renderQuality">Render quality</label>
+              <select id="renderQuality">
+                <option value="high" selected>High detail</option>
+                <option value="efficient">Efficient</option>
+              </select>
+              <label class="graphics-motion"
+                ><input type="checkbox" id="reduceMotion" /> Reduce motion</label
+              >
+            </div>
+          </details>
+          <button class="btn" id="exportBuild">Export build</button>
+          <button class="btn primary" id="newBuild">New build</button>
         </div>
       </header>
       <main>
         <section class="workspace">
           <div class="work-head">
             <div>
-              <div class="eyebrow">
-                THE WORKSHOP <span>/</span> <span id="buildKind">E-SCOOTER</span>
-              </div>
-              <h1 id="buildName">Untitled build <span class="tiny-tag">CONCEPT</span></h1>
-              <p id="buildSubtitle">Your ideas. Real parts. One place to bring them together.</p>
+              <div class="eyebrow"><span id="buildKind">E-SCOOTER</span></div>
+              <h1 id="buildName">Untitled build</h1>
+              <p id="buildSubtitle"></p>
             </div>
             <div class="work-actions">
+              <a class="text-btn parts-jump" href="#parts-library">Browse parts ↓</a>
               <button class="text-btn" id="referencePhoto" hidden>Reference photo</button
               ><button class="icon-btn" id="editBuild" aria-label="Edit build details">
                 <svg
@@ -53,7 +67,13 @@
           <div class="stage" data-environment="garage" data-presentation="photo">
             <div class="stage-top">
               <div class="presentation-switch" role="group" aria-label="Vehicle appearance view">
-                <button data-presentation="photo" aria-pressed="true">Original appearance</button>
+                <button
+                  data-presentation="photo"
+                  aria-label="Original appearance"
+                  aria-pressed="true"
+                >
+                  Photo
+                </button>
                 <button data-presentation="concept" aria-pressed="false">3D concept</button>
               </div>
               <label class="scene-setting"
@@ -77,9 +97,8 @@
               /><span class="reference-tag">Original model reference</span>
             </div>
             <div class="vehicle-reference-missing" id="vehicleReferenceMissing">
-              <span class="missing-mark" aria-hidden="true">VF</span>
-              <h2>Your next build starts here.</h2>
-              <p>No verified image is available for this configuration yet.</p>
+              <h2>No reference photo available</h2>
+              <p></p>
               <button class="btn" id="openConceptView">Explore the 3D concept</button>
             </div>
             <canvas
@@ -255,10 +274,9 @@
             </div>
           </details>
         </section>
-        <aside class="catalog">
+        <aside class="catalog" id="parts-library" aria-labelledby="catalogHeading">
           <div class="catalog-head">
-            <div class="eyebrow">MAKE IT YOURS</div>
-            <h2>Parts library<span id="catalogCount"></span></h2>
+            <h2 id="catalogHeading">Parts library<span id="catalogCount"></span></h2>
             <label class="search"
               ><input
                 id="search"
@@ -288,21 +306,14 @@
             <span id="resultsCount"></span><span>Product photos first</span>
           </div>
           <div id="parts" class="parts"></div>
-          <div class="catalog-footer">
-            <span class="live-dot"></span> A plan you can keep improving.<span
-              >Specs & availability need supplier confirmation.</span
-            >
-          </div>
+          <div class="catalog-footer">Specs &amp; availability need supplier confirmation.</div>
         </aside>
       </main>
-      <footer>
-        <span>VOLT FORGE <i>YOUR BUILD. EVERY DETAIL.</i></span
-        ><span>Plan → Check → Build</span><button id="about">About this studio</button>
-      </footer>
+      <footer><span>VOLTMODD</span><button id="about">About this studio</button></footer>
     </div>
     <dialog id="startDialog" aria-labelledby="setupHeading">
       <form method="dialog" class="modal-top">
-        <span class="wordmark">VOLT<span>FORGE</span></span
+        <span class="wordmark">VOLTMODD</span
         ><span class="setup-steps"
           ><strong>Vehicle</strong><span>Components</span><span>Review</span></span
         ><button class="close-setup" aria-label="Close build setup">Back to studio</button>

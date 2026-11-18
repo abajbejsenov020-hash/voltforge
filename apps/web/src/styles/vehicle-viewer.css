@@ -1,8 +1,8 @@
 .stage {
   isolation: isolate;
-  height: clamp(440px, 38vw, 580px);
-  background: #ddd9d0;
-  border-color: #c7c6bf;
+  height: clamp(440px, 34vw, 565px);
+  background: #d9dfdc;
+  border-color: #c2cbc7;
 }
 .stage::before {
   content: '';
@@ -21,7 +21,7 @@
     42% center;
 }
 .stage[data-environment='studio']::before {
-  background: linear-gradient(150deg, #f7f5ef, #d8d6cf);
+  background: #e1e7e4;
 }
 .stage[data-environment='garage']::before {
   background: #343b3d;
@@ -41,9 +41,9 @@
 .presentation-switch {
   display: flex;
   padding: 3px;
-  border: 1px solid #bbbfb8;
-  border-radius: 5px;
-  background: #f7f6f0ed;
+  border: 1px solid #bdc7c2;
+  border-radius: 6px;
+  background: var(--surface);
 }
 .presentation-switch button {
   border: 0;
@@ -55,16 +55,17 @@
   font-size: 11px;
 }
 .presentation-switch button[aria-pressed='true'] {
-  background: #2b3336;
-  color: #fff;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
 }
 .scene-setting {
   display: flex;
   gap: 8px;
   align-items: center;
-  background: #f7f6f0ed;
-  border: 1px solid #bbbfb8;
-  border-radius: 5px;
+  background: var(--surface);
+  border: 1px solid #bdc7c2;
+  border-radius: 6px;
   padding-left: 10px;
   font-size: 10px;
 }
@@ -114,27 +115,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #f6f4eeed;
-  border: 1px solid #cccfc5;
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: 4px;
-}
-.missing-mark {
-  color: #9d7258;
-  font:
-    600 32px Manrope,
-    sans-serif;
-  letter-spacing: -0.1em;
-  padding-right: 4px;
-  margin-bottom: 12px;
 }
 .vehicle-reference-missing h2 {
   font-size: 19px;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .vehicle-reference-missing p {
   font-size: 12px;
-  color: #626d71;
-  margin: 0 0 18px;
+  color: var(--muted);
+  margin: 0 0 14px;
 }
 #scene {
   position: absolute;
@@ -150,8 +142,8 @@
   justify-content: space-between;
   gap: 12px;
   padding: 8px 10px;
-  background: #f8f7f0e8;
-  border: 1px solid #d6d5ca;
+  background: #fbfcf9ed;
+  border: 1px solid var(--line);
   border-radius: 3px;
 }
 #modelLabel {
@@ -182,12 +174,17 @@
   width: fit-content;
   max-width: calc(100% - 36px);
   padding: 3px;
-  background: #f7f6f0e8;
+  background: #fbfcf9ed;
   border-radius: 5px;
-  border: 1px solid #ccd0c5;
+  border: 1px solid var(--line);
 }
 .model-inspection button {
   color: #303b40;
+}
+.model-inspection button[aria-pressed='true'] {
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
 }
 .scene-note {
   margin: 0;
@@ -197,7 +194,7 @@
   line-height: 1.4;
 }
 .stage[data-presentation='concept'] .scene-note {
-  background: #f9f7efed;
+  background: #fbfcf9ed;
   padding: 4px;
   border-radius: 3px;
 }
@@ -333,7 +330,8 @@
   }
   .presentation-switch button {
     padding: 7px;
-    font-size: 10px;
+    font-size: 11px;
+    min-height: 44px;
   }
   .scene-setting {
     padding-left: 7px;
@@ -342,6 +340,7 @@
   }
   .scene-setting select {
     font-size: 11px;
+    min-height: 44px;
   }
   .vehicle-reference {
     inset: 76px 12px 118px;
@@ -375,7 +374,7 @@
     left: 16px;
     right: 16px;
     bottom: 14px;
-    font-size: 9px;
+    font-size: 10px;
   }
   .stage-controls {
     bottom: 124px;
@@ -389,7 +388,7 @@
     min-width: 44px;
   }
   .model-inspection {
-    top: 63px;
+    top: 70px;
     padding: 2px;
     gap: 0;
   }

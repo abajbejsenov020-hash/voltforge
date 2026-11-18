@@ -1,8 +1,9 @@
 import * as THREE from 'three';
-import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
+import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
 import { createGarage } from './garage.js';
 import { createChargingPlaza } from './plaza.js';
 import { createCoastalSunset } from './coastal-sunset.js';
+import { refineVehicleFinishes } from './vehicle-finishes.js';
 
 const PHYSICAL_STAGES = {
   garage: createGarage,
@@ -14,30 +15,81 @@ const SETTINGS = {
   garage: {
     url: '/environments/auto_service_1k.hdr',
     rotation: 1.1,
-    exposure: 1.0,
+    reflections: 0.92,
   },
   plaza: {
     url: '/environments/courtyard_1k.hdr',
     rotation: -0.8,
-    exposure: 0.98,
+    reflections: 0.36,
   },
   workshop: {
     url: '/environments/auto_service_1k.hdr',
     rotation: 1.1,
     ground: 0x8b8984,
-    exposure: 1.12,
+    reflections: 0.92,
   },
   courtyard: {
     url: '/environments/courtyard_1k.hdr',
     rotation: -0.8,
     ground: 0xb0aaa0,
-    exposure: 1.0,
+    reflections: 0.85,
+  },
+};
+
+const LIGHTING = {
+  studio: {
+    key: 3.1,
+    fill: 0.8,
+    ambient: 1,
+    reflections: 0.85,
+    keyColor: 0xfff4e8,
+    fillColor: 0xe8f1ff,
+  },
+  garage: {
+    key: 2.9,
+    fill: 1.05,
+    ambient: 0.8,
+    reflections: 0.9,
+    keyColor: 0xffeee0,
+    fillColor: 0xe0efff,
+  },
+  plaza: {
+    key: 2.4,
+    fill: 1.05,
+    ambient: 0.42,
+    reflections: 0.6,
+    keyColor: 0xffeee6,
+    fillColor: 0xcee5ff,
+  },
+  coast: {
+    key: 2.95,
+    fill: 1.28,
+    ambient: 0.7,
+    reflections: 0.85,
+    keyColor: 0xffcdb2,
+    fillColor: 0xe0e7ff,
+  },
+  workshop: {
+    key: 2.75,
+    fill: 0.85,
+    ambient: 0.9,
+    reflections: 0.85,
+    keyColor: 0xffeee0,
+    fillColor: 0xe8f1ff,
+  },
+  courtyard: {
+    key: 2.75,
+    fill: 0.85,
+    ambient: 0.9,
+    reflections: 0.85,
+    keyColor: 0xfff7ef,
+    fillColor: 0xe8f1ff,
   },
 };
 
 /** Physical settings surround the model; HDR maps supply material reflections. */
 export function createStageEnvironment({ renderer, scene, floor, grid, key, fill, onChange }) {
-  const loader = new RGBELoader();
+  const loader = new HDRLoader();
   const generator = new THREE.PMREMGenerator(renderer);
   const fallbackEnvironment = scene.environment;
   const defaultKeyPosition = key.position.clone();
@@ -144,6 +196,7 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   function prepare(name) {
     const physical = Object.hasOwn(PHYSICAL_STAGES, name);
     const coast = name === 'coast';
+    const lighting = LIGHTING[name];
     floor.material = physical ? shadowMaterial : groundMaterial;
     floor.visible = !physical;
     floor.position.y = physical ? -0.006 : -0.046;
@@ -155,26 +208,28 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
         ? new THREE.FogExp2(0x142235, 0.038)
         : coast
           ? new THREE.FogExp2(0xc5a0b2, 0.025)
-          : null;
+          : name === 'studio'
+            ? new THREE.Fog(0xe8e5df, 4, 28)
+            : null;
     scene.backgroundIntensity = 1;
     scene.backgroundBlurriness = 0;
     scene.backgroundRotation.y = 0;
     scene.environmentRotation.y = 0;
     key.position.copy(defaultKeyPosition);
     fill.position.copy(defaultFillPosition);
-    key.color.setHex(coast ? 0xffbd96 : physical ? 0xffdfb6 : 0xfff8e9);
-    fill.color.setHex(coast ? 0xd9dcff : physical ? 0xb8d7ff : 0xe4ecff);
+    key.color.setHex(lighting.keyColor);
+    fill.color.setHex(lighting.fillColor);
     if (coast) {
       key.position.set(-3, 3.5, -5);
       fill.position.set(2, 2.5, 3);
     }
-    key.intensity = name === 'plaza' ? 2.3 : physical ? 2.8 : 4;
-    fill.intensity = name === 'plaza' ? 0.9 : physical ? 1.45 : 2;
+    key.intensity = lighting.key;
+    fill.intensity = lighting.fill;
     for (const { light, intensity } of ambientLights)
-      light.intensity = intensity * (name === 'plaza' ? 0.2 : physical ? 0.48 : 1);
+      light.intensity = intensity * lighting.ambient;
     scene.environment = fallbackEnvironment;
-    scene.environmentIntensity = coast ? 0.55 : physical ? 0.65 : 1;
-    renderer.toneMappingExposure = physical ? 1 : 1.12;
+    scene.environmentIntensity = lighting.reflections;
+    renderer.toneMappingExposure = 1;
   }
   async function set(requestedName = 'garage') {
     if (disposed) return;
@@ -199,7 +254,12 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     if (create) {
       stageLighting = name === 'coast' ? 'studio' : 'loading';
       if (!physicalStage) {
-        physicalStage = create({ scene, onChange, onStatus: physicalStatus });
+        physicalStage = create({
+          scene,
+          onChange,
+          onStatus: physicalStatus,
+          onParkedVehicle: refineVehicleFinishes,
+        });
       }
     }
     if (name === 'coast') {
@@ -221,18 +281,14 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     const light = lighting.status === 'fulfilled' ? lighting.value : null;
     if (light) {
       scene.environment = light.target.texture;
-      scene.environmentIntensity = name === 'plaza' ? 0.2 : name === 'garage' ? 0.68 : 0.85;
+      scene.environmentIntensity = setting.reflections;
       scene.environmentRotation.y = setting.rotation;
     }
-    renderer.toneMappingExposure = setting.exposure;
     if (create) {
       stageLighting = light ? 'hdr' : 'studio';
       physicalStatus();
     } else {
       groundMaterial.color.setHex(setting.ground);
-      key.intensity = 2.5;
-      fill.intensity = 1.2;
-      key.color.setHex(name === 'workshop' ? 0xffedcf : 0xfff8ec);
       if (light) {
         scene.background = light.texture;
         scene.backgroundRotation.y = setting.rotation;

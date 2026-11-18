@@ -69,7 +69,7 @@ export function build(context) {
     box(0.035, 0.024, 0.003, M.red, [-0.4, 0.246, z], context.model, 0.002);
   }
   decal(
-    context.visual.name.startsWith('Custom') ? 'VOLTFORGE' : context.visual.name.split(' ')[0],
+    context.visual.name.startsWith('Custom') ? 'VOLTMODD' : context.visual.name.split(' ')[0],
     0.43,
     0.06,
     [-0.13, 0.226, 0.121],
@@ -145,7 +145,7 @@ export function build(context) {
   rod([0.19, 1.1, 0], [0.18, 1.145, 0], 0.033, M.black);
   for (let side of [-1, 1])
     rod([0.264, 0.41, side * 0.018], [0.194, 1.09, side * 0.018], 0.0035, M.accent);
-  decal('VF', 0.037, 0.12, [0.231, 0.76, 0.03], [0, 0, 0.12]);
+  decal('VM', 0.037, 0.12, [0.231, 0.76, 0.03], [0, 0, 0.12]);
   cylinder(0.035, 0.035, 0.018, M.black, [0.18, 1.15, 0]);
   tube(
     [

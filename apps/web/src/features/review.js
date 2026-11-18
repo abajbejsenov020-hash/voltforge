@@ -57,7 +57,7 @@ export function createFeature(app) {
   function exportBuild() {
     const p = app.effectiveParts(),
       text = [
-        'VOLTFORGE — BUILD PLAN',
+        'VOLTMODD — BUILD PLAN',
         app.state.name,
         'Vehicle type: ' + app.state.type,
         'Mode: ' + app.state.mode,
@@ -106,7 +106,7 @@ export function createFeature(app) {
       a = document.createElement('a');
     a.href = url;
     a.download =
-      (app.state.name.replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'voltforge-build') + '.txt';
+      (app.state.name.replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'voltmodd-build') + '.txt';
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     app.toast('Build plan exported');

@@ -1,4 +1,4 @@
-# Voltforge
+# VOLTMODD
 
 An electric scooter, e-bike and e-moto build studio. Select your existing model or start a new build, inspect components, record measurements, and compare performance scenarios.
 
@@ -65,6 +65,8 @@ The 352 vehicles with product references use individually exported Blender GLB m
 - **City plaza · Night** is an additional physical 3D setting with charging bays, architecture, practical lighting and parked Thunder 3 + Sur-Ron Ultra Bee models. All 23 Dualtrons have [refined individual decks, graphics and controls](docs/dualtron-plaza.md), including the owner's Thunder 3 top-view reference.
 
 An original product reference does **not** render your selected modifications. The parts list records those changes, and the separate 3D concept illustrates them. Images can show regional variants, accessories, graphics or factory renders; the manifest preserves those notes and sources. Unverified variants are listed in `apps/web/public/assets/vehicles/unresolved.json`.
+
+**Graphics** controls both the vehicle viewer and component previews. High detail uses the full lighting and shadow setup. Efficient lowers the rendering resolution and uses lighter shadows. The selected mode and reduced-motion preference are remembered in the browser.
 
 ## Saved builds
 

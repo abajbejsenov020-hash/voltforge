@@ -125,6 +125,7 @@ export function createCoastalSunset({
   scene,
   onChange,
   onStatus,
+  onParkedVehicle,
   canvas = document.querySelector('#scene'),
 }) {
   const root = new THREE.Group();
@@ -189,6 +190,7 @@ export function createCoastalSunset({
         const bay = new THREE.Group();
         bay.name = `Parked ${entry.model}`;
         bay.position.z = entry.z;
+        onParkedVehicle?.(vehicle);
         bay.add(vehicle, contact);
         root.add(bay);
         parked.push({ bay, entry });

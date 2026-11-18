@@ -1,4 +1,5 @@
 import { buildComponentModel } from './model-builder.js';
+import { createComponentStudio } from './studio-lighting.js';
 import * as THREE from 'three';
 import { CATALOG } from '@voltforge/shared/catalog';
 import { COMPONENT_REFERENCES } from '@voltforge/shared/appearances';
@@ -102,16 +103,20 @@ export const PartPreviews = (() => {
   }
   let renderer,
     scene,
+    studio,
     camera,
     activeModel,
     lastId,
+    quality = 'high',
+    appliedQuality,
     failed = false;
   const observers = new WeakMap();
   const states = new WeakMap(),
     mounted = new WeakSet();
+  const previewMargin = 120;
   function init() {
-    if (renderer) return true;
     if (failed || typeof THREE === 'undefined') return false;
+    if (renderer) return true;
     try {
       renderer = new THREE.WebGLRenderer({
         alpha: false,
@@ -120,25 +125,46 @@ export const PartPreviews = (() => {
       });
       renderer.setPixelRatio(1);
       renderer.outputColorSpace = THREE.SRGBColorSpace;
-      renderer.setClearColor(0xeeede7, 1);
+      renderer.toneMapping = THREE.NeutralToneMapping;
+      renderer.setClearColor(0xe9ecf0, 1);
       scene = new THREE.Scene();
-      scene.add(new THREE.HemisphereLight(0xffffff, 0x74716c, 2.5));
-      const light = new THREE.DirectionalLight(0xffffff, 3.5);
-      light.position.set(2, 4, 5);
-      scene.add(light);
-      const fill = new THREE.DirectionalLight(0xdce8ff, 1.5);
-      fill.position.set(-3, 1, -2);
-      scene.add(fill);
+      studio = createComponentStudio(renderer, scene);
       camera = new THREE.PerspectiveCamera(32, 1, 0.01, 40);
       renderer.domElement.addEventListener('webglcontextlost', (e) => {
         e.preventDefault();
         failed = true;
+      });
+      renderer.domElement.addEventListener('webglcontextrestored', () => {
+        studio.resetContext();
+        appliedQuality = undefined;
+        failed = false;
+        refreshVisible();
       });
       return true;
     } catch (error) {
       failed = true;
       console.warn('Component 3D previews unavailable', error);
       return false;
+    }
+  }
+  // Component motion happens only in response to direct input.
+  function setRenderPreferences({ quality: preference } = {}) {
+    const next = preference === 'efficient' ? 'efficient' : 'high';
+    if (quality === next) return;
+    quality = next;
+    refreshVisible();
+  }
+  function refreshVisible() {
+    if (typeof document === 'undefined') return;
+    for (const canvas of document.querySelectorAll('canvas[data-component]')) {
+      const rect = canvas.getBoundingClientRect();
+      if (
+        rect.width &&
+        rect.height &&
+        rect.bottom > -previewMargin &&
+        rect.top < window.innerHeight + previewMargin
+      )
+        draw(canvas);
     }
   }
   function draw(canvas) {
@@ -151,25 +177,41 @@ export const PartPreviews = (() => {
     const p = CATALOG.find((x) => x.id === canvas.dataset.component);
     if (!p) return;
     try {
+      if (quality !== appliedQuality) {
+        studio.setQuality(quality);
+        appliedQuality = quality;
+      }
       if (lastId !== p.id) {
         if (activeModel) {
           scene.remove(activeModel.root);
           activeModel.dispose();
         }
+        activeModel = null;
+        lastId = undefined;
         activeModel = createModel(p, THREE);
-        lastId = p.id;
         scene.add(activeModel.root);
         const bounds = new THREE.Box3().setFromObject(activeModel.root),
           center = bounds.getCenter(new THREE.Vector3()),
           size = bounds.getSize(new THREE.Vector3());
         activeModel.root.position.sub(center);
         activeModel.radius = Math.max(size.x, size.y, size.z) * 0.5;
+        activeModel.root.traverse((object) => {
+          if (!object.isMesh) return;
+          object.castShadow = true;
+          object.receiveShadow = true;
+        });
+        studio.fit(size, activeModel.radius);
+        lastId = p.id;
       }
       const state = states.get(canvas) || { yaw: 0.48, pitch: 0.32, zoom: 1 },
         w = canvas.width,
         h = canvas.height;
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
+      const scale = quality === 'efficient' ? 0.65 : 1;
+      const frameWidth = Math.max(1, Math.round(w * scale));
+      const frameHeight = Math.max(1, Math.round(h * scale));
+      if (renderer.domElement.width !== frameWidth || renderer.domElement.height !== frameHeight)
+        renderer.setSize(frameWidth, frameHeight, false);
+      camera.aspect = frameWidth / frameHeight;
       camera.updateProjectionMatrix();
       const radius = activeModel.radius || 0.8,
         dist = ((radius / Math.sin((32 * Math.PI) / 360)) * 1.32) / state.zoom;
@@ -183,6 +225,8 @@ export const PartPreviews = (() => {
       const c = canvas.getContext('2d');
       if (!c) throw new Error('Canvas 2D is unavailable');
       c.drawImage(renderer.domElement, 0, 0, w, h);
+      canvas.dataset.renderQuality = quality;
+      canvas.dataset.renderResolution = `${frameWidth}×${frameHeight}`;
       if (fallback) fallback.hidden = true;
     } catch (error) {
       if (fallback) fallback.hidden = false;
@@ -261,16 +305,14 @@ export const PartPreviews = (() => {
       const observer = new IntersectionObserver(
         (entries) => {
           for (const entry of entries)
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && entry.target.dataset.renderQuality !== quality)
               draw(entry.target);
-              observer.unobserve(entry.target);
-            }
         },
-        { rootMargin: '120px' },
+        { rootMargin: `${previewMargin}px` },
       );
       observers.set(container, observer);
       for (const canvas of canvases) observer.observe(canvas);
     }
   }
-  return { describe, markup, createModel, mount };
+  return { describe, markup, createModel, mount, setRenderPreferences };
 })();

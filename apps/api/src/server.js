@@ -22,7 +22,7 @@ export function startServer(config = readConfig()) {
   server.once('close', () => app.close());
   server.once('error', () => app.close());
   server.listen(config.port, config.host, () => {
-    console.log(`Voltforge API listening on http://${config.host}:${server.address().port}`);
+    console.log(`VOLTMODD API listening on http://${config.host}:${server.address().port}`);
   });
   return server;
 }

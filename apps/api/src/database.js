@@ -14,7 +14,7 @@ export function openDatabase(databasePath) {
     database.exec('BEGIN IMMEDIATE');
     migrating = true;
     const { user_version: version } = database.prepare('PRAGMA user_version').get();
-    if (version > 1) throw new Error('This database requires a newer Voltforge API.');
+    if (version > 1) throw new Error('This database requires a newer VOLTMODD API.');
     if (version === 0) {
       database.exec(`
         CREATE TABLE sessions (

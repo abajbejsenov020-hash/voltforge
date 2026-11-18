@@ -1,4 +1,5 @@
 import { $, esc } from '../ui/dom.js';
+import { reducedMotionEnabled } from '../ui/render-preferences.js';
 import { vehicleStockProfile } from '@voltforge/shared/stock';
 import {
   canonicalVehicleName,
@@ -102,7 +103,10 @@ export function bindEvents(app) {
   $('#browseModelLibrary').onclick = () => {
     $('#modelFinder').open = true;
     $('#vehicleName').focus();
-    $('#modelFinder').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    $('#modelFinder').scrollIntoView({
+      behavior: reducedMotionEnabled() ? 'auto' : 'smooth',
+      block: 'nearest',
+    });
   };
   $('#projectName').oninput = app.renderFeatured;
   $('#categorySelect').onchange = (event) => {
@@ -135,7 +139,8 @@ export function bindEvents(app) {
   }
   $('#newBuild').onclick = () => app.openStart();
   $('#editBuild').onclick = () => app.openStart(true);
-  $('#studioNav').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  $('#studioNav').onclick = () =>
+    window.scrollTo({ top: 0, behavior: reducedMotionEnabled() ? 'auto' : 'smooth' });
   $('#savedNav').onclick = app.savedBuilds;
   $('#guideNav').onclick = $('#about').onclick = app.guide;
   $('#reviewBuild').onclick = app.review;

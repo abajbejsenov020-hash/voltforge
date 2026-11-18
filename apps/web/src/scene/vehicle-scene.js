@@ -8,6 +8,9 @@ import * as THREE from 'three';
 import { getVehicleVisual } from '@voltforge/shared/visuals';
 import { normalizeVehicleName } from '@voltforge/shared/vehicles';
 import { PartPreviews } from './components/index.js';
+import { createReflectionMap } from './render-lighting.js';
+import { createVehicleContactShadow } from './vehicle-contact-shadow.js';
+import { refineVehicleFinishes } from './vehicle-finishes.js';
 import { createVehiclePaint } from './vehicle-paint.js';
 import {
   BLENDER_MODELS,
@@ -38,12 +41,11 @@ export function createVehicleScene() {
     canvas.after(p);
     return { update() {} };
   }
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = T.PCFShadowMap;
+  renderer.shadowMap.autoUpdate = false;
   renderer.outputColorSpace = T.SRGBColorSpace;
   renderer.toneMapping = T.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.12;
   const scene = new T.Scene(),
     camera = new T.PerspectiveCamera(33, 1, 0.02, 50),
     target = new T.Vector3(0, 0.55, 0);
@@ -75,8 +77,11 @@ export function createVehicleScene() {
     explodedDistance = 0,
     framing = null,
     settingName = '',
+    quality = 'high',
+    reduceMotion = false,
     disposed = false;
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const systemMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const motionReduced = () => reduceMotion || systemMotion.matches;
   const explodeButton = document.querySelector('#explode');
   const rotateButton = document.querySelector('#rotate');
   const explodedCenter = new T.Vector3();
@@ -105,6 +110,7 @@ export function createVehicleScene() {
       scene.remove(model);
       model = root;
       scene.add(model);
+      refineVehicleFinishes(model);
       paintModel = createVehiclePaint(model);
       paintModel.setPaint(paint);
       mountParts();
@@ -122,9 +128,9 @@ export function createVehicleScene() {
     },
   });
   scene.add(model);
-  scene.add(new T.HemisphereLight(0xf4f3ef, 0x747678, 2.3));
-  const key = new T.DirectionalLight(0xfff8e9, 4);
-  key.position.set(2.5, 4, 3);
+  scene.add(new T.HemisphereLight(0xe8eef9, 0x92908a, 0.86));
+  const key = new T.DirectionalLight(0xfff2e1, 3.3);
+  key.position.set(3.2, 5.2, 3.8);
   key.castShadow = true;
   key.shadow.mapSize.set(2048, 2048);
   Object.assign(key.shadow.camera, {
@@ -135,44 +141,19 @@ export function createVehicleScene() {
     near: 0.1,
     far: 12,
   });
-  key.shadow.bias = -0.0003;
-  key.shadow.normalBias = 0.008;
-  key.shadow.radius = 3;
+  key.shadow.camera.updateProjectionMatrix();
+  key.shadow.bias = -0.00016;
+  key.shadow.normalBias = 0.004;
+  key.shadow.radius = 9;
   scene.add(key);
-  const fill = new T.DirectionalLight(0xe4ecff, 2);
-  fill.position.set(-2, 2, -3);
+  const fill = new T.DirectionalLight(0xe0eaff, 0.85);
+  fill.position.set(-3.2, 2.6, 1.3);
   scene.add(fill);
-  const rim = new T.DirectionalLight(0xffffff, 2.7);
-  rim.position.set(-2, 3, 1);
+  const rim = new T.DirectionalLight(0xeaf2ff, 1.65);
+  rim.position.set(-0.5, 2.7, -3.4);
   scene.add(rim);
-  const envScene = new T.Scene();
-  envScene.background = new T.Color(0xc8c7c3);
-  for (const [pos, scale] of [
-    [
-      [0, 3, 0],
-      [5, 0.1, 5],
-    ],
-    [
-      [3, 1, 0],
-      [0.1, 3, 4],
-    ],
-    [
-      [-3, 1, -1],
-      [0.1, 2, 3],
-    ],
-  ]) {
-    const m = new T.Mesh(new T.BoxGeometry(...scale), new T.MeshBasicMaterial({ color: 0xffffff }));
-    m.position.set(...pos);
-    envScene.add(m);
-  }
-  const pmrem = new T.PMREMGenerator(renderer),
-    studioEnvironment = pmrem.fromScene(envScene, 0.08);
+  const studioEnvironment = createReflectionMap(renderer, { size: 256 });
   scene.environment = studioEnvironment.texture;
-  pmrem.dispose();
-  envScene.traverse((o) => {
-    o.geometry?.dispose();
-    o.material?.dispose();
-  });
   const floor = new T.Mesh(new T.PlaneGeometry(200, 200), new T.ShadowMaterial({ opacity: 0.17 }));
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -0.006;
@@ -183,6 +164,7 @@ export function createVehicleScene() {
   grid.material.opacity = 0.07;
   grid.position.y = -0.004;
   scene.add(grid);
+  const contact = createVehicleContactShadow(scene);
   const environment = createStageEnvironment({
     renderer,
     scene,
@@ -190,15 +172,30 @@ export function createVehicleScene() {
     grid,
     key,
     fill,
-    onChange: requestDraw,
+    onChange() {
+      renderer.shadowMap.needsUpdate = true;
+      requestDraw();
+    },
   });
   void setEnvironment(document.querySelector('#sceneSetting')?.value || 'garage');
   function mat(color, metalness = 0, roughness = 0.6, extra = {}) {
     return new T.MeshStandardMaterial({ color, metalness, roughness, ...extra });
   }
   const M = {
-    paint: mat(0x292e2b, 0.72, 0.26),
-    frame: mat(0x3a3d40, 0.7, 0.29),
+    paint: new T.MeshPhysicalMaterial({
+      color: 0x292e2b,
+      metalness: 0.18,
+      roughness: 0.31,
+      clearcoat: 0.3,
+      clearcoatRoughness: 0.27,
+    }),
+    frame: new T.MeshPhysicalMaterial({
+      color: 0x3a3d40,
+      metalness: 0.24,
+      roughness: 0.34,
+      clearcoat: 0.25,
+      clearcoatRoughness: 0.32,
+    }),
     black: mat(0x111512, 0.2, 0.44),
     rubber: mat(0x181b18, 0, 0.91),
     tread: mat(0x1d201c, 0, 0.95),
@@ -247,7 +244,7 @@ export function createVehicleScene() {
     c.fillStyle = '#8cba6c';
     c.fillRect(30, 35, 46, 7);
     c.font = '16px monospace';
-    c.fillText('VOLT FORGE', 28, 208);
+    c.fillText('VOLTMODD', 28, 208);
   });
   M.screenFace = mat(0xffffff, 0.05, 0.25, {
     map: screenTex,
@@ -370,6 +367,7 @@ export function createVehicleScene() {
   }
   function wheel(x, y, r, width, motor, parent = model) {
     const g = group('Wheel — tread, rim, rotor and axle', parent);
+    g.userData.groundContact = x < 0 ? 'RearWheel' : 'FrontWheel';
     g.position.set(x, y, 0);
     const tire = torus(r - width * 0.46, width * 0.46, M.rubber, [0, 0, 0], g);
     tire.scale.z = 0.94;
@@ -716,6 +714,8 @@ export function createVehicleScene() {
     swaps = {};
     disposeModelResources(model, new Set(Object.values(M)));
     scene.remove(model);
+    contact.hide();
+    renderer.shadowMap.needsUpdate = true;
     model = new T.Group();
     scene.add(model);
     batteryGroup = controllerGroup = null;
@@ -726,6 +726,8 @@ export function createVehicleScene() {
   }
   function positionParts(progress) {
     assembly?.setExploded(progress);
+    contact.updateWheels();
+    renderer.shadowMap.needsUpdate = true;
   }
   function mountParts() {
     assembly = createBlenderAssembly(model, (part) => PartPreviews.createModel(part, T));
@@ -754,6 +756,7 @@ export function createVehicleScene() {
     positionParts(0);
     assembledFit = fitGeometry();
     const { bounds, center } = assembledFit;
+    contact.fit(bounds, model);
     assembledTargets.overall.copy(center);
     const size = bounds.getSize(new T.Vector3());
     assembledTargets.cockpit.set(center.x + size.x * 0.15, bounds.max.y - size.y * 0.08, center.z);
@@ -779,7 +782,7 @@ export function createVehicleScene() {
     explodeButton.setAttribute('aria-pressed', String(explode));
     const end = Number(explode);
     transition =
-      !reduceMotion.matches && explodeProgress !== end
+      !motionReduced() && explodeProgress !== end
         ? { from: explodeProgress, end, start: performance.now() }
         : null;
     if (!transition) {
@@ -898,8 +901,7 @@ export function createVehicleScene() {
   listen('pointerdown', (e) => {
     drag = [e.clientX, e.clientY];
     canvas.setPointerCapture(e.pointerId);
-    auto = false;
-    rotateButton.classList.remove('active');
+    setAuto(false);
   });
   listen('pointermove', (e) => {
     if (!drag) return;
@@ -941,25 +943,59 @@ export function createVehicleScene() {
     requestDraw();
   };
   document.querySelector('#resetView').onclick = () => setView('overall');
-  rotateButton.onclick = (e) => {
-    auto = !auto;
-    e.currentTarget.classList.toggle('active', auto);
+  function setAuto(next) {
+    auto = next;
+    rotateButton.classList.toggle('active', auto);
+    rotateButton.setAttribute('aria-pressed', String(auto));
+  }
+  rotateButton.onclick = () => {
+    setAuto(!auto && !motionReduced());
     requestDraw();
   };
   explodeButton.disabled = true;
   explodeButton.onclick = () => {
-    auto = false;
-    rotateButton.classList.remove('active');
+    setAuto(false);
     setExploded(!explode);
   };
-  reduceMotion.addEventListener('change', () => setExploded(explode), {
-    signal: listeners.signal,
-  });
+  function syncMotion() {
+    const reduced = motionReduced();
+    rotateButton.disabled = reduced;
+    canvas.dataset.reducedMotion = String(reduced);
+    if (reduced) {
+      setAuto(false);
+      if (transition) setExploded(explode);
+    }
+  }
+  systemMotion.addEventListener('change', syncMotion, { signal: listeners.signal });
   listen('webglcontextlost', (e) => {
     e.preventDefault();
-    auto = false;
+    setAuto(false);
   });
   listen('webglcontextrestored', () => location.reload());
+  function setRenderPreferences(preferences) {
+    if (disposed) return;
+    const next = preferences.quality === 'efficient' ? 'efficient' : 'high';
+    if (quality !== next || !canvas.dataset.renderQuality) {
+      quality = next;
+      const high = quality === 'high';
+      const scale = Math.min(devicePixelRatio, high ? 2 : 0.85);
+      renderer.setPixelRatio(scale);
+      renderer.shadowMap.enabled = key.castShadow = high;
+      renderer.shadowMap.needsUpdate = high;
+      if (!high) {
+        key.shadow.dispose();
+        key.shadow.map = null;
+      }
+      canvas.dataset.renderQuality = quality;
+      canvas.dataset.renderScale = String(scale);
+      resize();
+    }
+    reduceMotion = Boolean(preferences.reduceMotion);
+    syncMotion();
+    requestDraw();
+  }
+  setAuto(false);
+  setRenderPreferences({ quality, reduceMotion });
   function orbitPitch(explodedFraction) {
     const coast = settingName === 'coast' && view === 'overall';
     const base = coast ? Math.max(-0.12, elevation - 0.13) : elevation;
@@ -1059,6 +1095,7 @@ export function createVehicleScene() {
     .forEach((b) => (b.onclick = () => setView(b.dataset.view)));
   return {
     setEnvironment,
+    setRenderPreferences,
     getPaintZones: () => paintModel?.zones || [],
     getPaintColors: () => paintModel?.colors || {},
     getSwaps: () => swaps,
@@ -1093,6 +1130,8 @@ export function createVehicleScene() {
       disposeModelResources(floor);
       disposeModelResources(grid);
       environment.dispose?.();
+      contact.dispose();
+      key.shadow.dispose();
       studioEnvironment.dispose();
       renderer.dispose();
     },

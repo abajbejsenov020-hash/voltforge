@@ -6,6 +6,8 @@ import { BuildStore, BUILD_RECORD_PREFIX } from './state/build-store.js';
 import { createVehicleScene } from './scene/vehicle-scene.js';
 import { createWorkbench } from './app/controller.js';
 import { createVehicleViewer } from './scene/vehicle-viewer.js';
+import { PartPreviews } from './scene/components/index.js';
+import { bindRenderPreferences } from './ui/render-preferences.js';
 
 const status = document.querySelector('#saveStatus');
 const store = new BuildStore({
@@ -22,6 +24,10 @@ const viewer = createVehicleViewer({
     store.current.paint = paint;
     store.save();
   },
+});
+bindRenderPreferences((preferences) => {
+  viewer.setRenderPreferences(preferences);
+  PartPreviews.setRenderPreferences(preferences);
 });
 const app = createWorkbench({ store, scene: viewer });
 window.addEventListener('online', async () => {

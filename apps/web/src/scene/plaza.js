@@ -25,6 +25,7 @@ export function createChargingPlaza({
   scene,
   onChange,
   onStatus,
+  onParkedVehicle,
   loader = new GLTFLoader(),
   canvas = document.querySelector('#scene'),
 }) {
@@ -364,6 +365,7 @@ export function createChargingPlaza({
             object.receiveShadow = true;
           }
         });
+        onParkedVehicle?.(vehicle);
         root.add(vehicle);
         const contact = mesh(
           new THREE.PlaneGeometry(2.1, 0.85),
