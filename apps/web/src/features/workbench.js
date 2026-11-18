@@ -1,7 +1,7 @@
 import { $ } from '../ui/dom.js';
 import { getVehicleVisual } from '@voltforge/shared/visuals';
 import { CATEGORIES } from '@voltforge/shared/catalog';
-import { effectiveMotorCount } from '@voltforge/shared/stock';
+import { effectiveMotorCount, vehicleStockProfile } from '@voltforge/shared/stock';
 export function createFeature(app) {
   function render() {
     const p = app.selected();
@@ -29,13 +29,20 @@ export function createFeature(app) {
     app.renderTabs();
     app.renderCatalog();
     $('#referencePhoto').hidden = !visual.reference;
+    const motorCount = effectiveMotorCount(app.state);
+    // Let a photo-based model with unknown factory specs use its authored mounts.
+    const useAuthoredMounts =
+      app.state.mode === 'rebuild' &&
+      motorCount === 1 &&
+      !app.state.specs.motorCountOverride &&
+      !vehicleStockProfile(app.state.vehicle)?.motors;
     app.scene.update(
       app.state.type,
       p,
       app.category,
       app.state.vehicle,
       app.state.paint,
-      effectiveMotorCount(app.state),
+      useAuthoredMounts ? undefined : motorCount,
     );
     app.renderPerformance();
   }

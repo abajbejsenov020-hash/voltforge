@@ -10,6 +10,7 @@ export function steadyRoadPower(kmh, { mass, cda, rolling, wind = 0, grade = 0 }
 
 /** Relative planning anchor, not a measured aerodynamic calibration or a speed guarantee. */
 export function factorySpeedComparison(profile, type) {
+  if (profile?.speedLimited) return null;
   const speed = positive(profile?.advertisedSpeed);
   const motors = positive(profile?.motors);
   const rated = positive(profile?.ratedMotorW) * motors;

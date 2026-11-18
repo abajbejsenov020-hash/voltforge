@@ -534,22 +534,23 @@
       "type": "scooter",
       "subtype": "scooter",
       "image": "/assets/vehicles/expansion/commuter/joyor-s8.webp",
-      "source": "https://joyorscooter.com/products/joyor-s8-electric-scooter-600w-power-90km-range",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/joyor-s8-electric-scooter-600w-48v-90km.jpg?v=1776683590",
+      "source": "https://joyor.com/products/joyor-s8-electric-scooter",
+      "imageSource": "https://joyor.com/cdn/shop/files/joyor-s8-main-image_1_4e92e0fb-7315-4e6e-909b-16fa3134c204.webp?v=1769389886&width=900",
       "credit": "Joyor",
-      "variantNote": "Exact model product-page reference. Photo-guided visual reconstruction; approximate proportions, hidden internals inferred; not measured CAD. Regional equipment may differ.",
+      "variantNote": "EU single-motor S8 configuration from the model-named manufacturer gallery. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [900, 900],
-      "bytes": 31730,
+      "bytes": 37994,
       "referenceKind": "manufacturer-product-reference",
       "model": {
         "key": "joyor-s8",
         "url": "/models/expansion/commuter/joyor-s8.glb",
         "nativeSource": "assets/blender/expansion/commuter/joyor-s8.blend",
-        "triangles": 27872,
-        "meshes": 28,
-        "bytes": 939332,
-        "family": "Joyor orange swingarm"
+        "meshes": 44,
+        "triangles": 38292,
+        "bytes": 1056420,
+        "family": "Joyor S8 EU single drive and stepped battery deck",
+        "revision": "261cdb45419a"
       }
     },
     {
@@ -744,7 +745,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/max-g30-e.html",
       "imageSource": "https://eu-en.segway.com/content/dam/segway-ninebot/eu/en/migrated/product-site/ninebot-kickscooter-max-g30/images/assets_segway_cdn_com_Product-Pictures__product_full_max-g30.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Swept rigid cast neck, tapered deck, hub cover and regional rim trim. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 25982,
@@ -753,10 +754,11 @@
         "key": "segway-ninebot-max-g30",
         "url": "/models/expansion/commuter/segway-ninebot-max-g30.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g30.blend",
-        "triangles": 27480,
-        "meshes": 28,
-        "bytes": 866056,
-        "family": "Ninebot rigid commuter"
+        "triangles": 27400,
+        "meshes": 36,
+        "bytes": 993152,
+        "family": "Ninebot MAX cast rigid unibody",
+        "revision": "57af5a004d42"
       }
     },
     {
@@ -767,7 +769,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/max-g2-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_MAX-G2-1?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Covered front hydraulic damper, rear twin spring assembly and deep MAX deck. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 22930,
@@ -776,10 +778,11 @@
         "key": "segway-ninebot-max-g2",
         "url": "/models/expansion/commuter/segway-ninebot-max-g2.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g2.blend",
-        "triangles": 31152,
-        "meshes": 28,
-        "bytes": 969776,
-        "family": "Ninebot MAX hydraulic suspension"
+        "triangles": 29112,
+        "meshes": 36,
+        "bytes": 1094888,
+        "family": "Ninebot MAX G2 capsulated front spring and twin rear dampers",
+        "revision": "dce51711f6ef"
       }
     },
     {
@@ -790,7 +793,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/max-g3-e.html",
       "imageSource": "https://eu-en.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/Kickscooter_MaxG3_PC.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Twin front stanchions, dual rear spring assemblies, integral locking loop and wide TFT cockpit. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [800, 800],
       "bytes": 91496,
@@ -799,10 +802,11 @@
         "key": "segway-ninebot-max-g3",
         "url": "/models/expansion/commuter/segway-ninebot-max-g3.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g3.blend",
-        "triangles": 31464,
-        "meshes": 28,
-        "bytes": 1016504,
-        "family": "Ninebot MAX G3 dual hydraulic"
+        "triangles": 34060,
+        "meshes": 38,
+        "bytes": 1295132,
+        "family": "Ninebot MAX G3 twin hydraulic stanchions and box-section deck",
+        "revision": "d6b4ed57ece4"
       }
     },
     {
@@ -813,7 +817,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/f2-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_KickScooter-F2_product-picture-website-3?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Low casting, molded fenders, disc-braked front hub and bar-end indicators. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 19906,
@@ -822,10 +826,11 @@
         "key": "segway-ninebot-f2",
         "url": "/models/expansion/commuter/segway-ninebot-f2.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f2.blend",
-        "triangles": 26492,
-        "meshes": 28,
-        "bytes": 822496,
-        "family": "Ninebot rigid commuter"
+        "triangles": 23940,
+        "meshes": 35,
+        "bytes": 903608,
+        "family": "Ninebot F2 low-profile swept deck",
+        "revision": "569b08f46b26"
       }
     },
     {
@@ -836,7 +841,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/f2-pro-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_KickScooter-F2-Pro_Product-picture-website-2?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Low casting, molded fenders, disc-braked front hub and bar-end indicators. Covered front spring suspension. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 23886,
@@ -845,10 +850,11 @@
         "key": "segway-ninebot-f2-pro",
         "url": "/models/expansion/commuter/segway-ninebot-f2-pro.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f2-pro.blend",
-        "triangles": 27468,
-        "meshes": 28,
-        "bytes": 860660,
-        "family": "Ninebot rigid commuter"
+        "triangles": 24388,
+        "meshes": 35,
+        "bytes": 921392,
+        "family": "Ninebot F2 low-profile swept deck",
+        "revision": "0dee541febe7"
       }
     },
     {
@@ -859,7 +865,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/f2-plus-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_KickScooter-F2-Plus_Product-picture-website-2?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Low casting, molded fenders, disc-braked front hub and bar-end indicators. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 20604,
@@ -868,10 +874,11 @@
         "key": "segway-ninebot-f2-plus",
         "url": "/models/expansion/commuter/segway-ninebot-f2-plus.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f2-plus.blend",
-        "triangles": 27480,
-        "meshes": 28,
-        "bytes": 861408,
-        "family": "Ninebot rigid commuter"
+        "triangles": 23940,
+        "meshes": 35,
+        "bytes": 903632,
+        "family": "Ninebot F2 low-profile swept deck",
+        "revision": "b01444a341e8"
       }
     },
     {
@@ -882,7 +889,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/f3-e.html",
       "imageSource": "https://eu-en.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/Kickscooter_F3_PC.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Die-cast headstock, twin fork, rear elastomer, narrow swept deck and wide TFT cockpit. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [800, 800],
       "bytes": 99940,
@@ -891,10 +898,11 @@
         "key": "segway-ninebot-f3",
         "url": "/models/expansion/commuter/segway-ninebot-f3.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f3.blend",
-        "triangles": 27140,
-        "meshes": 28,
-        "bytes": 862340,
-        "family": "Ninebot F3 suspension"
+        "triangles": 27968,
+        "meshes": 36,
+        "bytes": 1116908,
+        "family": "Ninebot F3 die-cast locking neck and rear elastomer",
+        "revision": "0a83045a295f"
       }
     },
     {
@@ -905,7 +913,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/f3-pro-e.html",
       "imageSource": "https://eu-en.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/Kickscooter_F3Pro_PC.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Die-cast headstock, twin fork, rear elastomer, narrow swept deck and wide TFT cockpit. Rear disc and caliper. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [800, 800],
       "bytes": 100232,
@@ -914,10 +922,11 @@
         "key": "segway-ninebot-f3-pro",
         "url": "/models/expansion/commuter/segway-ninebot-f3-pro.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-f3-pro.blend",
-        "triangles": 27964,
-        "meshes": 28,
-        "bytes": 894056,
-        "family": "Ninebot F3 suspension"
+        "triangles": 29556,
+        "meshes": 38,
+        "bytes": 1171572,
+        "family": "Ninebot F3 die-cast locking neck and rear elastomer",
+        "revision": "c1c5db5d783e"
       }
     },
     {
@@ -928,7 +937,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/e2-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_KickScooter-E2_Product-picture-website-2-4?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Rounded shell, swept steering tube and distinct factory wheel and brake layout. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 134382,
@@ -937,10 +946,11 @@
         "key": "segway-ninebot-e2",
         "url": "/models/expansion/commuter/segway-ninebot-e2.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-e2.blend",
-        "triangles": 26556,
-        "meshes": 27,
-        "bytes": 808004,
-        "family": "Ninebot rigid commuter"
+        "triangles": 27440,
+        "meshes": 33,
+        "bytes": 1151140,
+        "family": "Ninebot E2 curved chassis and round hand controls",
+        "revision": "1b24d1a4ddf7"
       }
     },
     {
@@ -951,7 +961,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/e2-plus-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_KickScooter-E2-Plus_Product-picture-website-1?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Rounded shell, swept steering tube and distinct factory wheel and brake layout. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 62754,
@@ -960,10 +970,11 @@
         "key": "segway-ninebot-e2-plus",
         "url": "/models/expansion/commuter/segway-ninebot-e2-plus.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-e2-plus.blend",
-        "triangles": 27544,
-        "meshes": 27,
-        "bytes": 846848,
-        "family": "Ninebot rigid commuter"
+        "triangles": 27440,
+        "meshes": 33,
+        "bytes": 1151672,
+        "family": "Ninebot E2 curved chassis and round hand controls",
+        "revision": "700031cb68e0"
       }
     },
     {
@@ -974,7 +985,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/e2-pro-e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_Ninebot-KickScooter-E2-Pro_Product-picture-360-1-720x405_72-4?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Rounded shell, swept steering tube and distinct factory wheel and brake layout. Vented front drum wheel and driven rear hub. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 31566,
@@ -983,10 +994,11 @@
         "key": "segway-ninebot-e2-pro",
         "url": "/models/expansion/commuter/segway-ninebot-e2-pro.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-e2-pro.blend",
-        "triangles": 27644,
-        "meshes": 27,
-        "bytes": 851736,
-        "family": "Ninebot rigid commuter"
+        "triangles": 23952,
+        "meshes": 34,
+        "bytes": 913564,
+        "family": "Ninebot E2 curved chassis and round hand controls",
+        "revision": "d0f33f00a5c6"
       }
     },
     {
@@ -997,7 +1009,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/p65e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_Segway-KickScooter-P65D_Product-picture-7?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Rigid enclosed front fork, swept pale rail trim, solid orange heel spoiler, rear drive, and P-series cockpit. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 25948,
@@ -1006,10 +1018,11 @@
         "key": "segway-ninebot-p65",
         "url": "/models/expansion/commuter/segway-ninebot-p65.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-p65.blend",
-        "triangles": 26676,
-        "meshes": 28,
-        "bytes": 905248,
-        "family": "Segway P wide-deck"
+        "triangles": 47960,
+        "meshes": 39,
+        "bytes": 1552220,
+        "family": "P65 swept pearl-inlay deck and rigid fork",
+        "revision": "b7e9985fca2c"
       }
     },
     {
@@ -1020,7 +1033,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/p100se.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_Segway-KickScooter-P100SE_Product-picture-5?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Silver cast suspension links, stepped high deck, raised red heel brace, front and rear disc brakes, and elliptical stem. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 26660,
@@ -1029,10 +1042,11 @@
         "key": "segway-ninebot-p100s",
         "url": "/models/expansion/commuter/segway-ninebot-p100s.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-p100s.blend",
-        "triangles": 36524,
-        "meshes": 28,
-        "bytes": 1165936,
-        "family": "Segway P wide-deck"
+        "triangles": 55232,
+        "meshes": 43,
+        "bytes": 1782548,
+        "family": "P100S silver twin-arm suspension and red heel brace",
+        "revision": "6b3d15f97e86"
       }
     },
     {
@@ -1043,7 +1057,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/gt1e.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_Segway-KickScooter-GT1_Product-picture-4?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Wedge-shaped front fairing, exposed silver dual links, gray rear wheel carrier, and a recessed GT1 dashboard. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 36138,
@@ -1052,10 +1066,11 @@
         "key": "segway-ninebot-gt1",
         "url": "/models/expansion/commuter/segway-ninebot-gt1.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-gt1.blend",
-        "triangles": 35976,
-        "meshes": 29,
-        "bytes": 1154140,
-        "family": "Segway GT double-wishbone superscooter"
+        "triangles": 54552,
+        "meshes": 43,
+        "bytes": 1729884,
+        "family": "GT1 graphite fairing and single rear motor",
+        "revision": "d75f704c5699"
       }
     },
     {
@@ -1066,7 +1081,7 @@
       "source": "https://eu-en.segway.com/ekickscooter/products/gt2p.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_Segway-KickScooter-GT2P_Product-picture-5?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "variantNote": "Dual driven hubs, red spring and rim details, low sculpted GT2 deck, and the GT2 display visor. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 32540,
@@ -1075,10 +1090,11 @@
         "key": "segway-ninebot-gt2",
         "url": "/models/expansion/commuter/segway-ninebot-gt2.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-gt2.blend",
-        "triangles": 36556,
-        "meshes": 28,
-        "bytes": 1186064,
-        "family": "Segway GT double-wishbone superscooter"
+        "triangles": 58160,
+        "meshes": 43,
+        "bytes": 1845548,
+        "family": "GT2P twin-hub GT chassis with red suspension hardware",
+        "revision": "41c35bc4b282"
       }
     },
     {
@@ -1086,22 +1102,23 @@
       "type": "scooter",
       "subtype": "scooter",
       "image": "/assets/vehicles/expansion/commuter/segway-ninebot-gt3.webp",
-      "source": "https://eu-en.segway.com/ekickscooter/products/gt3-e.html",
-      "imageSource": "https://eu-en.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/Kickscooter_GT3_PC.png",
-      "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "source": "https://store.segway.com/segway-superscooter-gt3",
+      "imageSource": "https://segway.imgix.net/media/GT3/segway_superscooter_gt3_product.png?w=1100&fm=png",
+      "credit": "Segway",
+      "variantNote": "Segway's GT3 product photography. Open triangular cast neck, stepped gray fairings, low platework and a wide GT3 display above the hydraulic suspension. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference image; no open license asserted",
-      "dimensions": [800, 800],
-      "bytes": 32894,
+      "dimensions": [900, 900],
+      "bytes": 32958,
       "referenceKind": "manufacturer-product-reference",
       "model": {
         "key": "segway-ninebot-gt3",
         "url": "/models/expansion/commuter/segway-ninebot-gt3.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-gt3.blend",
-        "triangles": 36548,
-        "meshes": 29,
-        "bytes": 1176428,
-        "family": "Segway GT double-wishbone superscooter"
+        "triangles": 57272,
+        "meshes": 43,
+        "bytes": 1863016,
+        "family": "GT3 open triangular headstock and layered fairings",
+        "revision": "0c7a6bebc0b8"
       }
     },
     {
@@ -1109,22 +1126,23 @@
       "type": "scooter",
       "subtype": "scooter",
       "image": "/assets/vehicles/expansion/commuter/segway-ninebot-zt3-pro.webp",
-      "source": "https://eu-en.segway.com/ekickscooter/products/zt3-pro-e.html",
-      "imageSource": "https://eu-en.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/eKickScooter-ZT3_pro_D.png",
-      "credit": "Segway Ninebot",
-      "variantNote": "Exact model product reference. Segway E/P regional hardware is shown where specified by source; regional accessories may vary. Photo-guided reconstruction, approximate proportions and inferred internal surfaces; not CAD.",
+      "source": "https://store.segway.com/segway-zt3-pro",
+      "imageSource": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-1_1-2.png?w=1100&fm=png",
+      "credit": "Segway",
+      "variantNote": "Segway's ZT3 Pro product photography. High front fender under twin telescopic tubes, X daytime light, red perimeter rail and tubular rear swingarm. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference image; no open license asserted",
-      "dimensions": [800, 800],
-      "bytes": 92558,
+      "dimensions": [900, 900],
+      "bytes": 40262,
       "referenceKind": "manufacturer-product-reference",
       "model": {
         "key": "segway-ninebot-zt3-pro",
         "url": "/models/expansion/commuter/segway-ninebot-zt3-pro.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-zt3-pro.blend",
-        "triangles": 31688,
-        "meshes": 28,
-        "bytes": 1041472,
-        "family": "Segway ZT offroad X-headlight"
+        "triangles": 55996,
+        "meshes": 42,
+        "bytes": 1855348,
+        "family": "ZT3 Pro steel spine, raised telescopic fork and X lamp",
+        "revision": "8d66c02f6863"
       }
     },
     {
@@ -1434,7 +1452,7 @@
       "source": "https://support.segway.com/support_product.php?segcatid=34",
       "imageSource": "https://support.segway.com/product_files/20230720021502_Screenshot%202023-07-20%20141424.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Legacy official product reference; market-specific equipment may vary. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "Slim deck, compact solid wheels, internal stem battery and step-fold mechanism. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [832, 839],
       "bytes": 18778,
@@ -1443,10 +1461,11 @@
         "key": "segway-ninebot-es1",
         "url": "/models/expansion/commuter/segway-ninebot-es1.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-es1.blend",
-        "triangles": 25528,
-        "meshes": 26,
-        "bytes": 785832,
-        "family": "Ninebot ES stem-battery"
+        "triangles": 22820,
+        "meshes": 34,
+        "bytes": 862348,
+        "family": "Ninebot ES thin deck and stem-mounted battery",
+        "revision": "6b167854ee48"
       }
     },
     {
@@ -1457,7 +1476,7 @@
       "source": "https://support.segway.com/support_product.php?segcatid=1",
       "imageSource": "https://segway.imgix.net/catalog/product/cache/1be073bb625205c2a3aab025b4fe3368/e/s/es2-n_708x708_3.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Legacy official product reference; market-specific equipment may vary. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "Slim deck, compact solid wheels, internal stem battery and step-fold mechanism. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [700, 700],
       "bytes": 25082,
@@ -1466,10 +1485,11 @@
         "key": "segway-ninebot-es2",
         "url": "/models/expansion/commuter/segway-ninebot-es2.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-es2.blend",
-        "triangles": 26132,
-        "meshes": 26,
-        "bytes": 821812,
-        "family": "Ninebot ES stem-battery"
+        "triangles": 23596,
+        "meshes": 36,
+        "bytes": 910140,
+        "family": "Ninebot ES thin deck and stem-mounted battery",
+        "revision": "a94afbbcf07e"
       }
     },
     {
@@ -1480,7 +1500,7 @@
       "source": "https://support.segway.com/support_product.php?segcatid=3",
       "imageSource": "https://segway.imgix.net/catalog/product/cache/1be073bb625205c2a3aab025b4fe3368/e/s/es4_708x708_1.png",
       "credit": "Segway Ninebot",
-      "variantNote": "Legacy official product reference; market-specific equipment may vary. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "Slim deck, compact solid wheels, internal stem battery and step-fold mechanism. Exterior second battery pack. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [700, 700],
       "bytes": 15468,
@@ -1489,10 +1509,11 @@
         "key": "segway-ninebot-es4",
         "url": "/models/expansion/commuter/segway-ninebot-es4.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-es4.blend",
-        "triangles": 25948,
-        "meshes": 26,
-        "bytes": 819188,
-        "family": "Ninebot ES stem-battery"
+        "triangles": 23796,
+        "meshes": 38,
+        "bytes": 918016,
+        "family": "Ninebot ES thin deck and stem-mounted battery",
+        "revision": "c58fb3838e53"
       }
     },
     {
@@ -1710,7 +1731,7 @@
       "source": "https://joyorscooter.com/products/joyor-y8s-abe-electric-scooter",
       "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_y8-s_abe.jpg?v=1764851673",
       "credit": "Joyor",
-      "variantNote": "German ABE variant shown; equipment outside this market is not confirmed. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "German Y8-S ABE pictured. Equipment on other Y8-S market trims may differ. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [900, 900],
       "bytes": 38414,
@@ -1719,10 +1740,11 @@
         "key": "joyor-y8-s",
         "url": "/models/expansion/commuter/joyor-y8-s.glb",
         "nativeSource": "assets/blender/expansion/commuter/joyor-y8-s.blend",
-        "triangles": 35416,
-        "meshes": 28,
-        "bytes": 1121104,
-        "family": "Joyor Y8-S twin telescopic fork"
+        "meshes": 42,
+        "triangles": 35012,
+        "bytes": 897112,
+        "family": "Joyor Y8-S ABE telescopic fork and wide body",
+        "revision": "5d7e57ab01f2"
       }
     },
     {
@@ -1733,7 +1755,7 @@
       "source": "https://joyorscooter.com/products/joyor-s5-abe-electric-scooter",
       "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric-Scooter-Joyor-S5-ABE.jpg?v=1748343634",
       "credit": "Joyor",
-      "variantNote": "German S5 ABE regional variant shown; global S5 equipment is not confirmed. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "German S5 ABE black telescopic stem and orange rockers. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
       "license": "Reference image; no open license asserted",
       "dimensions": [900, 900],
       "bytes": 39222,
@@ -1742,10 +1764,11 @@
         "key": "joyor-s5",
         "url": "/models/expansion/commuter/joyor-s5.glb",
         "nativeSource": "assets/blender/expansion/commuter/joyor-s5.blend",
-        "triangles": 27408,
-        "meshes": 28,
-        "bytes": 921520,
-        "family": "Joyor orange swingarm"
+        "meshes": 43,
+        "triangles": 37996,
+        "bytes": 1042260,
+        "family": "Joyor S5 ABE black stem and orange twin rocker",
+        "revision": "760c63d848b4"
       }
     },
     {
@@ -1756,7 +1779,7 @@
       "source": "https://de-de.segway.com/ekickscooter/products/max-g30d.html",
       "imageSource": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_max-g30d-5?dpr=on,3&network=on&fmt=png-alpha",
       "credit": "Segway Ninebot",
-      "variantNote": "German market model shown. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "Swept rigid cast neck, tapered deck, hub cover and regional rim trim. German-market G30D with cyan rim stripes and rear plate hardware. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [600, 600],
       "bytes": 27236,
@@ -1765,10 +1788,11 @@
         "key": "segway-ninebot-max-g30d",
         "url": "/models/expansion/commuter/segway-ninebot-max-g30d.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g30d.blend",
-        "triangles": 27696,
-        "meshes": 28,
-        "bytes": 874364,
-        "family": "Ninebot rigid commuter"
+        "triangles": 27616,
+        "meshes": 36,
+        "bytes": 1001264,
+        "family": "Ninebot MAX cast rigid unibody",
+        "revision": "2bfe6b90f5f7"
       }
     },
     {
@@ -1825,7 +1849,7 @@
       "source": "https://support.segway.com/support_product.php?segcatid=8",
       "imageSource": "https://segway.imgix.net/catalog/product/cache/1be073bb625205c2a3aab025b4fe3368/g/3/g30lp-p2.png?auto=format%2Ccompress&dpr=1&q=75&w=700",
       "credit": "Segway Ninebot",
-      "variantNote": "Exact US G30LP reference; shorter light-gray regional chassis. Exact model product-page reference. Photo-guided reconstruction; photographic proportions and inferred hidden/internal surfaces; not measured CAD. Regional equipment may vary.",
+      "variantNote": "Swept rigid cast neck, tapered deck, hub cover and regional rim trim. US G30LP with a pale chassis and dark steering tube. Photo-guided exterior with inferred hidden geometry.",
       "license": "Reference image; no open license asserted",
       "dimensions": [700, 700],
       "bytes": 16962,
@@ -1834,10 +1858,11 @@
         "key": "segway-ninebot-max-g30lp",
         "url": "/models/expansion/commuter/segway-ninebot-max-g30lp.glb",
         "nativeSource": "assets/blender/expansion/commuter/segway-ninebot-max-g30lp.blend",
-        "triangles": 27724,
-        "meshes": 28,
-        "bytes": 875752,
-        "family": "Ninebot rigid commuter"
+        "triangles": 27480,
+        "meshes": 39,
+        "bytes": 983980,
+        "family": "Ninebot MAX cast rigid unibody",
+        "revision": "bd71b94aad99"
       }
     },
     {
@@ -2000,6 +2025,270 @@
         "bytes": 967664,
         "family": "Ausom DT1 Pro yellow C-arm dual motor"
       }
+    },
+    {
+      "name": "Joyor S10-S",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-s10-s.webp",
+      "source": "https://roll-market.com/wp-content/uploads/2024/01/joyor-s5-10-s.pdf",
+      "imageSource": "https://roll-market.com/wp-content/uploads/2024/01/joyor-s5-10-s.pdf#page=3",
+      "credit": "Joyor",
+      "variantNote": "Original pre-Z configuration. Side image extracted from page 3 of the Joyor S5/S10-S manual, which identifies the pictured front hub as S10-S. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [617, 508],
+      "bytes": 16012,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-s10-s",
+        "url": "/models/expansion/commuter/joyor-s10-s.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-s10-s.blend",
+        "meshes": 42,
+        "triangles": 38860,
+        "bytes": 1050032,
+        "family": "Joyor S10-S original open neck and V1 controls",
+        "revision": "d305667b9f48"
+      }
+    },
+    {
+      "name": "Joyor S5-Z",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-s5-z.webp",
+      "source": "https://joyorscooter.com/products/joyor-s5-z-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_S5-Z.jpg?v=1762961697&width=1000",
+      "credit": "Joyor",
+      "variantNote": "S5-Z with revised lock and signal trim. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 30018,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-s5-z",
+        "url": "/models/expansion/commuter/joyor-s5-z.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-s5-z.blend",
+        "meshes": 44,
+        "triangles": 38384,
+        "bytes": 1061772,
+        "family": "Joyor S5-Z orange rockers and signal enclosure",
+        "revision": "dd7a5ced851f"
+      }
+    },
+    {
+      "name": "Joyor S8-S-Z",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-s8-s-z.webp",
+      "source": "https://joyorescooter.com/collections/1200w-dual-motors/products/eujoyor-s8-s-z",
+      "imageSource": "https://joyorescooter.com/cdn/shop/files/joyor-s8-s-z-black-1_2c4957ce-d4ef-4ba6-8eb0-43e8eb57bfc5.jpg?v=1742885600&width=1000",
+      "credit": "Joyor",
+      "variantNote": "EU dual-motor S8-S-Z configuration. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 949],
+      "bytes": 40100,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-s8-s-z",
+        "url": "/models/expansion/commuter/joyor-s8-s-z.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-s8-s-z.blend",
+        "meshes": 41,
+        "triangles": 39200,
+        "bytes": 1063048,
+        "family": "Joyor S8-S-Z dual hubs and thick 26Ah enclosure",
+        "revision": "9627ee78745b"
+      }
+    },
+    {
+      "name": "Joyor S10-S-Z",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-s10-s-z.webp",
+      "source": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/New-Series-S-Electric-Scooter-Joyor-S10S-Z-1.jpg?v=1762962821&width=1000",
+      "credit": "Joyor",
+      "variantNote": "S10-S-Z with revised lock, integrated light housings and channelled orange arms. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 23856,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-s10-s-z",
+        "url": "/models/expansion/commuter/joyor-s10-s-z.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-s10-s-z.blend",
+        "meshes": 41,
+        "triangles": 39200,
+        "bytes": 1063032,
+        "family": "Joyor S10-S-Z channel swingarms and revised hinge",
+        "revision": "f595999fee0e"
+      }
+    },
+    {
+      "name": "Joyor Y6-S",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-y6-s.webp",
+      "source": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S.jpg?v=1748343483&width=1000",
+      "credit": "Joyor",
+      "variantNote": "Y6-S with silver fork sliders and split rear hub. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 27596,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-y6-s",
+        "url": "/models/expansion/commuter/joyor-y6-s.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-y6-s.blend",
+        "meshes": 41,
+        "triangles": 34812,
+        "bytes": 888340,
+        "family": "Joyor Y6-S twin sliders and rear split hub",
+        "revision": "a3784afc69d0"
+      }
+    },
+    {
+      "name": "Joyor Y10",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-y10.webp",
+      "source": "https://joyorscooter.com/pages/joyor-y10-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Joyor-Scooter-Measurements-y-series.png?v=1689947835&width=950",
+      "credit": "Joyor",
+      "variantNote": "Non-DGT Y10 from Joyor’s product page. The manufacturer labels the illustration as the shared Y-series chassis. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 41570,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-y10",
+        "url": "/models/expansion/commuter/joyor-y10.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-y10.blend",
+        "meshes": 41,
+        "triangles": 38500,
+        "bytes": 954132,
+        "family": "Joyor Y10 long-range Y chassis",
+        "revision": "c16e571a56be"
+      }
+    },
+    {
+      "name": "Joyor T6",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-t6.webp",
+      "source": "https://joyorscooter.com/products/joyor-t6-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Joyor-T6-Three-quarter-front.jpg?v=1762960566&width=1000",
+      "credit": "Joyor",
+      "variantNote": "Single-motor T6 with pierced orange rocker arms. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 36558,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-t6",
+        "url": "/models/expansion/commuter/joyor-t6.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-t6.blend",
+        "meshes": 42,
+        "triangles": 38416,
+        "bytes": 1058628,
+        "family": "Joyor T6 single drive and orange open-window rockers",
+        "revision": "15045eef56f1"
+      }
+    },
+    {
+      "name": "Joyor T10",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-t10.webp",
+      "source": "https://joyorscooter.com/products/joyor-t10-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/electric_scooter_joyor_t10_side.jpg?v=1762952193&width=1000",
+      "credit": "Joyor",
+      "variantNote": "Dual-motor T10 NFC configuration. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 29616,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-t10",
+        "url": "/models/expansion/commuter/joyor-t10.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-t10.blend",
+        "meshes": 41,
+        "triangles": 39232,
+        "bytes": 1063784,
+        "family": "Joyor T10 NFC dual-drive cast T chassis",
+        "revision": "a3806e2be298"
+      }
+    },
+    {
+      "name": "Joyor T12 Ultra",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-t12-ultra.webp",
+      "source": "https://joyorscooter.com/products/t12-ultra-dual-motor-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/t12-ultra-dual-motor-electric-scooter-front-side.webp?v=1792403944&width=1000",
+      "credit": "Joyor",
+      "variantNote": "T12 Ultra with 12-inch tires and silver rocker arms. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 27556,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-t12-ultra",
+        "url": "/models/expansion/commuter/joyor-t12-ultra.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-t12-ultra.blend",
+        "meshes": 47,
+        "triangles": 43040,
+        "bytes": 1176384,
+        "family": "Joyor T12 Ultra 12-inch tires and silver forged arms",
+        "revision": "f389997e8f29"
+      }
+    },
+    {
+      "name": "Joyor C10",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-c10.webp",
+      "source": "https://joyorscooter.com/products/joyor-c10-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_C10_DGT.jpg?v=1763546207&width=1000",
+      "credit": "Joyor",
+      "variantNote": "Standard C10 product page shows the body shared with C10 DGT. No DGT certification badge or trim-specific plate is modeled. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [950, 950],
+      "bytes": 24366,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-c10",
+        "url": "/models/expansion/commuter/joyor-c10.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-c10.blend",
+        "meshes": 42,
+        "triangles": 35212,
+        "bytes": 910988,
+        "family": "Joyor C10 removable battery and contoured turquoise chassis",
+        "revision": "800fcdb1e4dc"
+      }
+    },
+    {
+      "name": "Joyor F5",
+      "type": "scooter",
+      "subtype": "scooter",
+      "image": "/assets/vehicles/expansion/commuter/joyor-f5.webp",
+      "source": "https://joyorscooter.com/products/joyor-f5-electric-scooter",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/joyor-f5-electric-scooter-fullview..webp?v=1771346038&width=1000",
+      "credit": "Joyor",
+      "variantNote": "Eight-inch F5 with orange front spring and rear drum brake. Photo-guided exterior with inferred hidden mounts. Proportions are approximate.",
+      "license": "Reference image; no open license asserted",
+      "dimensions": [540, 540],
+      "bytes": 7486,
+      "referenceKind": "manufacturer-product-reference",
+      "model": {
+        "key": "joyor-f5",
+        "url": "/models/expansion/commuter/joyor-f5.glb",
+        "nativeSource": "assets/blender/expansion/commuter/joyor-f5.blend",
+        "meshes": 35,
+        "triangles": 33560,
+        "bytes": 837284,
+        "family": "Joyor F5 compact drum brake and orange front spring",
+        "revision": "a907d3669a4f"
+      }
     }
   ],
   "unresolved": [
@@ -2011,17 +2300,6 @@
         "https://ausomstore.com/products/ausom-leopard-dt1-electric-scooter",
         "https://ausomstore.com/products/ausom-leopard-dt1-brake",
         "https://www.oolactive.com/de/products/ausom-leopard-dt1-electric-scooter"
-      ]
-    },
-    {
-      "name": "Joyor S10-S",
-      "type": "scooter",
-      "reason": "Legacy S10-S identity is documented. Current official images are S10-S-Z/S10S-Z with revised folding controls and turn signals. A separate regional listing for original S10-S was found at joyor-s10-0mxm but actual page/photo retrieval failed (web HTTP 404; shell HTTP 429). Manufacturer naming evidence equates S10-S-Z with S10S-Z only, so no newer Z image/model was relabeled as the original S10-S.",
-      "sources": [
-        "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
-        "https://eu.joyorescooter.com/blogs/blogs/joyor-official-updates-s10s-z-name-t10-nfc",
-        "https://joyor.com/products/joyor-s10-s-electric-scooter",
-        "https://www.joyor-eu.com/products/joyor-s10-0mxm"
       ]
     }
   ]

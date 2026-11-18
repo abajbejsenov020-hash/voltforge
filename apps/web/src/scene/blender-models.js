@@ -35,6 +35,7 @@ const available = BLENDER_VEHICLES.filter((entry) => entry.bytes > 0);
 export const BLENDER_MODELS = Object.freeze(
   Object.fromEntries(available.map((entry) => [entry.key, entry.url])),
 );
+const revisions = new Map(available.map((entry) => [entry.key, entry.revision]));
 const byName = new Map(available.map((entry) => [normalizeVehicleName(entry.name), entry.key]));
 const indexedNames = new Set(VEHICLE_INDEX.map((entry) => normalizeVehicleName(entry.name)));
 export function blenderModelKey(name) {
@@ -93,9 +94,10 @@ export function createBlenderLoader({ loader = new GLTFLoader(), onReady, onErro
       const request = ++generation;
       const url = BLENDER_MODELS[profile];
       if (!url || disposed) return false;
+      const revision = revisions.get(profile);
       let root;
       try {
-        const gltf = await loader.loadAsync(url);
+        const gltf = await loader.loadAsync(revision ? url + '?v=' + revision : url);
         root = gltf.scene;
         if (disposed || request !== generation) {
           disposeModelResources(root);

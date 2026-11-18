@@ -1,10 +1,10 @@
 {
-  "catalogCount": 345,
-  "referenceCount": 341,
-  "addedCount": 281,
-  "auditedUnresolvedCount": 4,
+  "catalogCount": 355,
+  "referenceCount": 352,
+  "addedCount": 292,
+  "auditedUnresolvedCount": 3,
   "pendingCount": 0,
-  "unresolvedCount": 4,
+  "unresolvedCount": 3,
   "scope": "Source audit separates verified photo/Blender appearances from unresolved model identity and entries still awaiting audit. No unrelated look-alike is substituted.",
   "unresolved": [
     {
@@ -15,17 +15,6 @@
         "https://ausomstore.com/products/ausom-leopard-dt1-electric-scooter",
         "https://ausomstore.com/products/ausom-leopard-dt1-brake",
         "https://www.oolactive.com/de/products/ausom-leopard-dt1-electric-scooter"
-      ]
-    },
-    {
-      "name": "Joyor S10-S",
-      "type": "scooter",
-      "reason": "Legacy S10-S identity is documented. Current official images are S10-S-Z/S10S-Z with revised folding controls and turn signals. A separate regional listing for original S10-S was found at joyor-s10-0mxm but actual page/photo retrieval failed (web HTTP 404; shell HTTP 429). Manufacturer naming evidence equates S10-S-Z with S10S-Z only, so no newer Z image/model was relabeled as the original S10-S.",
-      "sources": [
-        "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
-        "https://eu.joyorescooter.com/blogs/blogs/joyor-official-updates-s10s-z-name-t10-nfc",
-        "https://joyor.com/products/joyor-s10-s-electric-scooter",
-        "https://www.joyor-eu.com/products/joyor-s10-0mxm"
       ]
     },
     {

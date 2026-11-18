@@ -1,10 +1,10 @@
 # Vehicle appearance audit
 
-The indexed name catalog is unchanged. The appearance library combines the original 60 references with three separately audited expansion manifests:
+The appearance library combines the original 60 references with three separately audited expansion manifests. The commuter batch includes ten additional Joyor models and a verified reference for the original Joyor S10-S.
 
 | Batch                                       | Assigned names | Manifest                                            |
 | ------------------------------------------- | -------------: | --------------------------------------------------- |
-| Commuter scooters                           |             89 | `apps/web/src/data/vehicle-expansion-commuter.json` |
+| Commuter scooters                           |             99 | `apps/web/src/data/vehicle-expansion-commuter.json` |
 | Premium scooters                            |             99 | `apps/web/src/data/vehicle-expansion-premium.json`  |
 | Remaining bicycles and electric motorcycles |             97 | `apps/web/src/data/vehicle-expansion-bikes.json`    |
 
@@ -23,5 +23,7 @@ PLAYWRIGHT_CHANNEL=chrome npm run test:browser -- tests/browser/expanded-artwork
 The complete gate requires every previously unpictured name to have either completed assets or an actual source audit. Node tests parse every public GLB through the browser's Three.js loader, verify semantic assemblies, finite geometry, ground placement and manifest sizes, and exercise component replacements. Browser journeys cover each expansion batch, exact finder thumbnails, decoded photos, loading, camera controls, exploded views, restoration and an unresolved original variant.
 
 Blender 4.5 LTS construction and reference-selection scripts are under `scripts/blender/expansion/{commuter,premium,bikes}/`. Native sources are under `assets/blender/expansion/`; final renders, photo/model contact sheets, source records and independent reopen audits are under `artifacts/blender/expansion/`. The batch READMEs describe their authoring/finalization steps. A changed native source must be re-exported, reviewed against its exact photo, and have its manifest statistics regenerated before it is considered complete.
+
+The Ninebot, Teverun, and Joyor rebuild scripts live under `scripts/blender/remodel/`. Use those scripts for their named models when regenerating assets. The rebuilt entries include GLB content fingerprints so browsers fetch revised geometry and photos even if the original URLs are cached. The original S10-S photo and cockpit reference come from the Joyor S5/S10-S manual. [Joyor S5/S10-S manual](https://roll-market.com/wp-content/uploads/2024/01/joyor-s5-10-s.pdf#page=3)
 
 Downloaded research HTML, full vendor PDF catalogs and sitemap snapshots are excluded from Git. Their source URLs and the selected asset provenance remain in the manifests/audit records; rebuilding completed geometry uses the curated inputs and local reference photos.

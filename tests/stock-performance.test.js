@@ -97,6 +97,29 @@ test('dual-motor profile overrides the historical untouched one-motor default', 
   assert.equal(changed.a.wheel, 10);
 });
 
+test('Joyor T10 retains its documented factory hardware and speed setting', () => {
+  const build = rebuild('Joyor T10');
+  const result = estimatePerformance(build);
+  assert.equal(result.motors, 2);
+  assert.equal(result.wh, 1080);
+  assert.equal(result.speed.value, 25);
+  assert.equal(result.speed.kind, 'factory');
+  assert.match(result.speed.basis, /Factory speed limit/);
+  build.selected.Controllers = 'p37';
+  const changed = estimatePerformance(build);
+  assert.equal(changed.speedComparison, null);
+  assert.ok(changed.speed.value > 0);
+  assert.equal(changed.p.Motors.ratedW, 1000);
+});
+
+test('Joyor T12 Ultra uses the published combined peak for the factory build', () => {
+  const result = estimatePerformance(rebuild('Joyor T12 Ultra'));
+  assert.equal(result.motors, 2);
+  assert.equal(result.wh, 1248);
+  assert.equal(result.peak.value, 3000);
+  assert.equal(result.speed.value, 70);
+});
+
 for (const vehicle of ['surron lbx', 'Talaria MX4']) {
   test(`${vehicle} inherits model battery, mass and outer wheel diameter after one replacement`, () => {
     const build = rebuild(vehicle, 'bike');

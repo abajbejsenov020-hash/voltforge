@@ -35,11 +35,25 @@ function identityDigest(records, fields) {
   return createHash('sha256').update(JSON.stringify(identities)).digest('hex');
 }
 
+const newJoyors = [
+  'S5-Z',
+  'S8-S-Z',
+  'S10-S-Z',
+  'Y6-S',
+  'Y10',
+  'T6',
+  'T10',
+  'T12 Ultra',
+  'C10',
+  'F5',
+].map((model) => 'Joyor ' + model);
+
 test('saved part IDs and vehicle identities survive the module migration', () => {
   assert.equal(CATALOG.length, 315);
   assert.equal(PART_BY_ID.size, 315);
-  assert.equal(VEHICLE_INDEX.length, 345);
-  assert.equal(new Set(VEHICLE_INDEX.map((vehicle) => vehicle.id)).size, 345);
+  assert.equal(VEHICLE_INDEX.length, 345 + newJoyors.length);
+  assert.equal(new Set(VEHICLE_INDEX.map((vehicle) => vehicle.id)).size, VEHICLE_INDEX.length);
+  const originalVehicles = VEHICLE_INDEX.filter((vehicle) => !newJoyors.includes(vehicle.name));
   // Fixed baselines from the recovered app before module extraction. These
   // protect every saved identity, rather than accepting a catalog with the same count.
   assert.equal(
@@ -47,7 +61,7 @@ test('saved part IDs and vehicle identities survive the module migration', () =>
     'dca40bf34dbca61bca31947f48c5097588a5737d030b7dbfa8d711670d923e95',
   );
   assert.equal(
-    identityDigest(VEHICLE_INDEX, ['id', 'name', 'brand', 'type']),
+    identityDigest(originalVehicles, ['id', 'name', 'brand', 'type']),
     '6c59c8721577ed97da147da3a60f0a639a711918d68acdd80b33939a226d051c',
   );
   const saved = createBuild();
@@ -57,6 +71,16 @@ test('saved part IDs and vehicle identities survive the module migration', () =>
     { Controllers: 'ND72260', Batteries: 'G4 Battery Assembly', Brakes: 'MT5 Pro' },
   );
   assert.equal(CATEGORIES.length, 8);
+});
+
+test('the Joyor finder keeps legacy scooters and Z revisions distinct', () => {
+  for (const name of newJoyors) {
+    const compact = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    assert.equal(canonicalVehicleName(compact), name);
+    assert.equal(findVehicles(compact)[0]?.name, name, compact);
+  }
+  assert.equal(findVehicles('joyor s10s')[0]?.name, 'Joyor S10-S');
+  assert.equal(findVehicles('joyor s10sz')[0]?.name, 'Joyor S10-S-Z');
 });
 
 test('finder preserves compact, typo, Cyrillic, and e-moto aliases across vehicle types', () => {

@@ -62,6 +62,7 @@ test('all completed catalog entries include local GLBs, native sources and actua
       entry.name + ' editable source',
     );
     const hash = createHash('sha256').update(bytes).digest('hex');
+    if (entry.revision) assert.equal(entry.revision, hash.slice(0, 12), entry.name + ' revision');
     const previous = hashes.get(hash);
     if (previous)
       assert.equal(

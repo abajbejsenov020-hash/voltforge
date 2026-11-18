@@ -1595,7 +1595,7 @@
       "source": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=7",
       "imageSource": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=7",
       "credit": "Teverun manufacturer catalog 2024",
-      "variantNote": "Exact named manufacturer catalog photograph; cropped from page 7. 2024 Fighter Eleven manufacturer catalog: wide road wheels, long black deck, C swingarms, slim stem with white Teverun marking. Photo-guided exterior reconstruction; hidden/internal geometry inferred, not measured CAD.",
+      "variantNote": "Long road-wheel Fighter body, cast boxed swingarms, low kickplate and forward high round projector. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Manufacturer reference photograph; no open license asserted",
       "dimensions": [672, 677],
       "bytes": 29282,
@@ -1604,10 +1604,11 @@
         "key": "teverun-fighter-11",
         "url": "/models/expansion/premium/teverun-fighter-11.glb",
         "nativeSource": "assets/blender/expansion/premium/teverun-fighter-11.blend",
-        "triangles": 54808,
-        "meshes": 36,
-        "bytes": 1459908,
-        "family": "Teverun Fighter 11 photographed exterior"
+        "triangles": 56964,
+        "meshes": 43,
+        "bytes": 1889184,
+        "family": "Fighter Eleven long deck and reinforced black cast arms",
+        "revision": "dae573687d6d"
       }
     },
     {
@@ -1618,7 +1619,7 @@
       "source": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=9",
       "imageSource": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=9",
       "credit": "Teverun manufacturer catalog 2024",
-      "variantNote": "Exact named manufacturer catalog photograph; cropped from page 9. 2024 Blade Mini: yellow open cast arms and rear kickplate, compact black deck, small road tyres and tall black stem. Photo-guided exterior reconstruction; hidden/internal geometry inferred, not measured CAD.",
+      "variantNote": "Yellow open suspension arms, shorter mast rake, round lamp and slim kickplate with matching trim. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Manufacturer reference photograph; no open license asserted",
       "dimensions": [672, 688],
       "bytes": 28688,
@@ -1627,10 +1628,11 @@
         "key": "teverun-blade-mini",
         "url": "/models/expansion/premium/teverun-blade-mini.glb",
         "nativeSource": "assets/blender/expansion/premium/teverun-blade-mini.blend",
-        "triangles": 54324,
-        "meshes": 34,
-        "bytes": 1440780,
-        "family": "Teverun Blade Mini photographed exterior"
+        "triangles": 53888,
+        "meshes": 43,
+        "bytes": 1760716,
+        "family": "Blade Mini gold short castings and slim bolt-on side panels",
+        "revision": "f60a3755955a"
       }
     },
     {
@@ -1940,7 +1942,7 @@
       "source": "https://scootidoo.com/products/teverun-fighter-mini",
       "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/Trottinette_lectrique_Teverun_Fighter_MiNI.jpg?v=1789809198",
       "credit": "Teverun",
-      "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants. FighterMini standard base reference: compact black battery chassis, C arms and slim center stem; no Pro markings. Photo-guided exterior reconstruction; hidden/internal geometry inferred, not measured CAD.",
+      "variantNote": "Compact battery enclosure, open graphite C arms, raised rear footrest and narrow LED lens strips. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference photograph; no open redistribution license asserted",
       "dimensions": [1100, 1100],
       "bytes": 51296,
@@ -1949,10 +1951,11 @@
         "key": "teverun-fighter-mini",
         "url": "/models/expansion/premium/teverun-fighter-mini.glb",
         "nativeSource": "assets/blender/expansion/premium/teverun-fighter-mini.blend",
-        "triangles": 54900,
-        "meshes": 36,
-        "bytes": 1463316,
-        "family": "Teverun Fighter Mini verified photographic exterior"
+        "triangles": 57368,
+        "meshes": 43,
+        "bytes": 1898816,
+        "family": "Fighter Mini black C arm chassis and small squarish deck",
+        "revision": "5aa2d7b12fa8"
       }
     },
     {
@@ -1963,7 +1966,7 @@
       "source": "https://scootidoo.com/products/teverun-fighter-10",
       "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/trottinette_electrique_teverun_fighter_10_pas_cher-984216.jpg?v=1794130012",
       "credit": "Teverun",
-      "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants. Fighter10 base 60V22Ah reference: compact black chassis and wide 10-inch road tyres, RGB panels, spring C-arm suspension. Photo-guided exterior reconstruction; hidden/internal geometry inferred, not measured CAD.",
+      "variantNote": "Wide chevron pad, compact angular wheel covers, bent forged arms and centered twin-optic lamp. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference photograph; no open redistribution license asserted",
       "dimensions": [1000, 1000],
       "bytes": 36954,
@@ -1972,10 +1975,11 @@
         "key": "teverun-fighter-10",
         "url": "/models/expansion/premium/teverun-fighter-10.glb",
         "nativeSource": "assets/blender/expansion/premium/teverun-fighter-10.blend",
-        "triangles": 55180,
-        "meshes": 36,
-        "bytes": 1474608,
-        "family": "Teverun Fighter 10 verified photographic exterior"
+        "triangles": 58160,
+        "meshes": 43,
+        "bytes": 1944852,
+        "family": "Fighter Ten chamfered black frame and ovular twin-optic lamp",
+        "revision": "ec3e462f53ea"
       }
     },
     {
@@ -1983,22 +1987,23 @@
       "type": "scooter",
       "subtype": "scooter",
       "image": "/assets/vehicles/expansion/premium/teverun-fighter-supreme.webp",
-      "source": "https://scootidoo.com/products/teverun-fighter-supreme",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/teverun-fighter-supreme-ultra-outsideview-01_c8442c87-b7d2-4828-afbc-0ddb6a797177.webp?v=1789770136",
-      "credit": "Teverun",
-      "variantNote": "Exact product family distributor photograph; printed product/version audited against page variants. FighterSupreme 72V base family distributor photo: long black sport chassis, high black kickplate and large smooth road wheels. Photo-guided exterior reconstruction; hidden/internal geometry inferred, not measured CAD.",
+      "source": "https://www.evolt.si/en/products/electric-scooter-teverun-fighter-supreme-2023",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0933/2316/5961/files/elektricni_skiro_teverun_supreme_72_720x_0fc5028e-e5e7-41c1-a5f9-a7dd0b60cadf.webp?v=1766151997",
+      "credit": "eVolt / Teverun",
+      "variantNote": "Original 2023 Fighter Supreme dealer product reference. Wide 11-inch Supreme deck, deep layered side covers, long enclosed arm casting, and broad display assembly. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Reference photograph; no open redistribution license asserted",
-      "dimensions": [1000, 650],
-      "bytes": 124302,
+      "dimensions": [900, 900],
+      "bytes": 36692,
       "referenceKind": "distributor-product-reference",
       "model": {
         "key": "teverun-fighter-supreme",
         "url": "/models/expansion/premium/teverun-fighter-supreme.glb",
         "nativeSource": "assets/blender/expansion/premium/teverun-fighter-supreme.blend",
-        "triangles": 56320,
-        "meshes": 36,
-        "bytes": 1519520,
-        "family": "Teverun Fighter Supreme verified photographic exterior"
+        "triangles": 60092,
+        "meshes": 43,
+        "bytes": 2018560,
+        "family": "Fighter Supreme long 11-inch deck and alternate fork casting",
+        "revision": "662bb0e1840d"
       }
     },
     {
@@ -2190,22 +2195,23 @@
       "type": "scooter",
       "subtype": "scooter",
       "image": "/assets/vehicles/expansion/premium/teverun-blade-gt.webp",
-      "source": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=2",
-      "imageSource": "https://teverun.com/wp-content/uploads/2024/04/4.TEVERUN-CATALOG-202404.pdf#page=8",
-      "credit": "Teverun manufacturer catalog2024",
-      "variantNote": "Unspecified BladeGT family shown as manufacturer BladeGTII2024, explicitly documented on catalogpage2 as second generation of BladeGT. Original2022 geometry is not claimed. BladeGT family shown as documented second-generation GTII2024: orange open C arms and orange rear foot brace, long black deck and gray stem. Photo-guided exterior reconstruction; hidden/internal geometry inferred, not measured CAD.",
+      "source": "https://static.fnac-static.com/multimedia/editorial/pdf/3701522001465.pdf#page=1",
+      "imageSource": "https://static.fnac-static.com/multimedia/editorial/pdf/3701522001465.pdf#page=1",
+      "credit": "Teverun / NewWalkings",
+      "variantNote": "First-generation Blade GT shown in the Teverun guide, page 1. First-generation wide orange cast swingarms, open front neck, orange bar-end trim and elevated rear lattice brace. Photo-guided exterior reconstruction. Hidden assembly envelopes and dimensions are approximate.",
       "license": "Manufacturer reference photograph; no open license asserted",
-      "dimensions": [665, 666],
-      "bytes": 31940,
-      "referenceKind": "manufacturer-catalog-reference",
+      "dimensions": [900, 900],
+      "bytes": 37528,
+      "referenceKind": "manufacturer-manual-reference",
       "model": {
         "key": "teverun-blade-gt",
         "url": "/models/expansion/premium/teverun-blade-gt.glb",
         "nativeSource": "assets/blender/expansion/premium/teverun-blade-gt.blend",
-        "triangles": 55024,
-        "meshes": 36,
-        "bytes": 1467536,
-        "family": "Teverun Blade GT verified photographic exterior"
+        "triangles": 57960,
+        "meshes": 44,
+        "bytes": 1926224,
+        "family": "First-generation Blade GT orange open castings",
+        "revision": "00d0d3b1888a"
       }
     },
     {

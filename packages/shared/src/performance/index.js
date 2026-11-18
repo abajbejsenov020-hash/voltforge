@@ -379,7 +379,9 @@ export function createPerformanceEngine(state) {
     )
       speed = {
         value: profile.advertisedSpeed,
-        basis: 'Factory reference, not a measured result for your vehicle',
+        basis: profile.speedLimited
+          ? 'Factory speed limit for the documented version'
+          : 'Factory reference, not a measured result for your vehicle',
         kind: 'factory',
       };
     else if (

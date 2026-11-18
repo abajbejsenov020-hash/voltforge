@@ -50,6 +50,15 @@ test('a late GLB never replaces a newer vehicle, and its resources are released 
   assert.deepEqual(shown, ['surron-lbx']);
 });
 
+test('remodeled vehicles request the current asset revision from the browser cache', async () => {
+  const loader = deferredLoader();
+  const coordinator = createBlenderLoader({ loader });
+  const pending = coordinator.load('segway-ninebot-max-g3');
+  assert.match(loader.pending[0].url, /segway-ninebot-max-g3\.glb\?v=[a-f\d]{12}$/);
+  loader.pending[0].resolve({ scene: solid() });
+  assert.equal(await pending, true);
+});
+
 test('cancellation, disposal, failures and unsupported profiles preserve the active scene', async () => {
   const loader = deferredLoader();
   const errors = [];

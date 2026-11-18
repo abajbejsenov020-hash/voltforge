@@ -223,7 +223,22 @@ vehicleFamily('EMOVE', 'scooter', [
 ]);
 vehicleFamily('Varla', 'scooter', ['Pegasus', 'Eagle One', 'Eagle One Pro', 'Eagle One V2.0']);
 vehicleFamily('Hiley', 'scooter', ['Tiger 8', 'Tiger 9', 'Tiger 10', 'Tiger 10 Pro']);
-vehicleFamily('Joyor', 'scooter', ['S5', 'S8', 'S10-S', 'Y8-S']);
+vehicleFamily('Joyor', 'scooter', [
+  'S5',
+  'S8',
+  'S10-S',
+  'Y8-S',
+  'S5-Z',
+  'S8-S-Z',
+  'S10-S-Z',
+  'Y6-S',
+  'Y10',
+  'T6',
+  'T10',
+  'T12 Ultra',
+  'C10',
+  'F5',
+]);
 vehicleFamily('iScooter', 'scooter', ['i9', 'i10', 'iX3', 'iX4', 'iX5', 'iX6']);
 vehicleFamily('iENYRID', 'scooter', ['M4 Pro S+', 'M4 Pro S+ Max', 'ES1', 'ES10']);
 vehicleFamily('Bogist', 'scooter', ['C1 Pro', 'M5 Pro']);
