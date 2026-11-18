@@ -1,4 +1,40 @@
 {
+  "p151": {
+    "maxV": 110,
+    "sources": [
+      {
+        "url": "https://www.ebmx.com/shop/e2000-x30ck0-03-ebmx-x-9000-v3-controller-kit-5530",
+        "note": "EBMX specifies a 48–110 V working range. The published phase-current limits are separate from configured battery current."
+      }
+    ]
+  },
+  "p165": {
+    "ratedW": 41000,
+    "ratedDurationUnknown": true,
+    "sources": [
+      {
+        "url": "https://portal.ebmx.com/xlb-60-core",
+        "note": "EBMX lists 41 kW as air-cooled rated power without a duration or a stated measurement basis."
+      }
+    ],
+    "variantNote": "EBMX lists this motor for the Light Bee, Talaria XXX and E Ride Pro SS with model-specific adapters. XF Pro mounting and gearing require verification."
+  },
+  "p181": {
+    "nominal": 79.2,
+    "fullV": 92.4,
+    "continuousDischargeA": 200,
+    "peakDischargeA": 320,
+    "sources": [
+      {
+        "url": "https://chibatterysystems.com/products/81pulsar",
+        "note": "Standard 40 Ah, 3,168 Wh configuration. Uses the standard pack's 200 A continuous and 320 A peak ratings."
+      },
+      {
+        "url": "https://chibatterysystems.com/products/closeoutsr22pt",
+        "note": "Manufacturer specification lists 79.2 V nominal and 92.4 V maximum."
+      }
+    ]
+  },
   "p0": {
     "ratedWRange": [1000, 4000],
     "wheelInches": 10,

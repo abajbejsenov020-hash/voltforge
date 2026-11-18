@@ -1,5 +1,10 @@
 import { $, esc } from '../ui/dom.js';
-import { VEHICLE_INDEX, normalizeVehicleName, findVehicles } from '@voltforge/shared/vehicles';
+import {
+  VEHICLE_INDEX,
+  canonicalVehicleName,
+  normalizeVehicleName,
+  findVehicles,
+} from '@voltforge/shared/vehicles';
 import {
   vehicleReference,
   VEHICLE_REFERENCES,
@@ -107,8 +112,9 @@ export function createFeature(app) {
     const matches = photosOnly ? allMatches.filter((v) => vehicleReference(v.name)) : allMatches;
     const shown = app.showAllVehicles ? matches : matches.slice(0, query ? 8 : 6);
     app.activeVehicleSuggestion = -1;
+    $('#vehicleKeyboardStatus').textContent = '';
     $('#vehicleMatchCount').textContent =
-      `${matches.length} ${photosOnly ? 'pictured models' : 'matches'}`;
+      `${matches.length} ${photosOnly ? (matches.length === 1 ? 'pictured model' : 'pictured models') : matches.length === 1 ? 'match' : 'matches'}`;
     $('#vehicleSuggestions').innerHTML =
       shown
         .map((v) => {
@@ -127,11 +133,13 @@ export function createFeature(app) {
     $('#browseVehicles').hidden = app.showAllVehicles || matches.length <= shown.length;
     $('#browseVehicles').textContent =
       `Show all ${matches.length} ${photosOnly ? 'pictured models' : 'matches'}`;
-    const exact = allMatches.some(
-      (v) =>
-        normalizeVehicleName(v.name).replace(/ /g, '') ===
-        normalizeVehicleName(query).replace(/ /g, ''),
-    );
+    const canonicalQuery = canonicalVehicleName(query);
+    const compactQuery = normalizeVehicleName(canonicalQuery).replace(/ /g, '');
+    const exact =
+      VEHICLE_INDEX.some((vehicle) => vehicle.name === canonicalQuery) ||
+      allMatches.some(
+        (vehicle) => normalizeVehicleName(vehicle.name).replace(/ /g, '') === compactQuery,
+      );
     $('#customVehicle').hidden = !query || exact;
     $('#customVehicle').textContent = `Use “${query}” as a custom name`;
     $('#vehicleNote').textContent =

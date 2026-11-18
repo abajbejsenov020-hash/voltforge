@@ -1180,17 +1180,27 @@ dialog::backdrop {
   width: 700px;
   max-width: calc(100vw - 28px);
   padding: 28px 30px;
+  scroll-padding-top: 84px;
 }
 .detail-top {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 20px;
+  padding: 12px 0;
+  background: #faf9f5;
 }
 .detail-top h2 {
   font-size: 23px;
   max-width: 85%;
-  margin: 4px 0 25px;
+  margin: 4px 0;
+}
+#closeDetail {
+  width: 44px;
+  height: 44px;
 }
 #detailBody {
   font-size: 13px;
@@ -1772,6 +1782,9 @@ dialog::backdrop {
   }
   #detailDialog {
     padding: 22px;
+  }
+  .detail-top {
+    top: -22px;
   }
   .detail-top h2 {
     font-size: 20px;

@@ -146,13 +146,21 @@ export function bindEvents(app) {
     if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
       event.preventDefault();
       if (!buttons.length) return;
+      const direction = event.key === 'ArrowDown' ? 1 : -1;
+      const previous = app.activeVehicleSuggestion;
       app.activeVehicleSuggestion =
-        (app.activeVehicleSuggestion + (event.key === 'ArrowDown' ? 1 : -1) + buttons.length) %
-        buttons.length;
+        previous < 0
+          ? direction > 0
+            ? 0
+            : buttons.length - 1
+          : (previous + direction + buttons.length) % buttons.length;
       buttons.forEach((button, index) =>
         button.classList.toggle('keyboard-active', index === app.activeVehicleSuggestion),
       );
-      buttons[app.activeVehicleSuggestion].scrollIntoView({ block: 'nearest' });
+      const active = buttons[app.activeVehicleSuggestion];
+      $('#vehicleKeyboardStatus').textContent =
+        `${active.dataset.vehicle}, result ${app.activeVehicleSuggestion + 1} of ${buttons.length}`;
+      active.scrollIntoView({ block: 'nearest' });
     }
     if (event.key === 'Enter') {
       event.preventDefault();

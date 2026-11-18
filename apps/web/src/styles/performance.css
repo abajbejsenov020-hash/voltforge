@@ -93,3 +93,34 @@
   font-size: 11px;
   flex-shrink: 0;
 }
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+#performanceConflict p {
+  margin: 0;
+}
+
+#performanceConflict button {
+  color: inherit;
+}
+
+#performanceConflict button,
+.performance-grid .metric-action {
+  min-height: 44px;
+}
+
+.performance-grid strong.metric-unavailable {
+  font-size: clamp(20px, 4vw, 28px);
+  line-height: 1.2;
+}
+
+#checkSummary.has-conflicts {
+  color: #86392e;
+}

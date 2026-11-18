@@ -4,14 +4,26 @@ import { peakPowerLabel, peakPowerText } from '@voltforge/shared/performance';
 import { effectiveMotorCount } from '@voltforge/shared/stock';
 import { factorySummary, componentName } from '../ui/stock.js';
 export function createFeature(app) {
-  function review() {
+  function review({ focusIssues = false } = {}) {
     const p = app.effectiveParts(),
       issues = app.checks(),
       performance = app.estimatePerformance();
+    const conflicts = issues.filter((issue) => issue.kind === 'conflict');
+    const checks = issues.filter((issue) => issue.kind !== 'conflict');
+    const conflictSection = conflicts.length
+      ? `<h3 id="reviewConflicts" tabindex="-1">Compatibility conflicts</h3>${conflicts.map((issue) => `<div class="issue conflict">${esc(issue.text)}</div>`).join('')}`
+      : '';
+    const checkRows = checks
+      .map(
+        (issue) =>
+          `<div class="issue ${issue.kind === 'pass' ? 'pass' : ''}">${issue.kind === 'pass' ? '✓ ' : '○ '}${esc(issue.text)}</div>`,
+      )
+      .join('');
     app.detail(
       'Your build, at a glance',
-      `<p>${esc(app.state.name)} · ${app.state.type === 'scooter' ? 'E-scooter' : 'E-bike'}${app.state.mode === 'rebuild' ? ' · Rebuild of ' + esc(app.state.vehicle) : ''}</p>${CATEGORIES.map((c) => `<div class="review-row"><div><small>${c}</small><br><strong>${esc(componentName(p[c]))}</strong></div>${p[c] && !p[c].stock ? `<button data-remove="${p[c].id}">${app.state.mode === 'rebuild' ? 'Return to stock' : 'Remove'}</button>` : ''}</div>`).join('')}<h3>${esc(peakPowerLabel(performance.peak))}</h3><div class="peak-result"><strong>${esc(peakPowerText(performance.peak))}</strong><p>${esc(performance.peak.basis)}</p></div><button class="text-btn" id="reviewPeakSetup">Set peak-power inputs →</button>${app.performanceProfile() ? '<p>Factory reference: ' + esc(factorySummary(app.performanceProfile())) + '. Unchanged components remain stock.</p>' : app.state.mode === 'rebuild' ? '<p>Unchanged categories retain factory parts. Add missing ratings in performance setup for this vehicle.</p>' : ''}<h3>Measurements & planned limits</h3><p>Enter values from your actual hardware labels and measurements. These are user-provided, unverified inputs.</p><form id="specForm" class="spec-fields"><label>Measured dropout (mm)<input name="dropout" type="number" min="1" max="500" step="any" value="${esc(app.state.specs.dropout)}" placeholder="Unknown"></label><label>Actual pack full-charge voltage (V)<input name="fullV" type="number" min="1" max="500" step="any" value="${esc(app.state.specs.fullV)}" placeholder="${p.Batteries?.fullV || 'Unknown'}"></label><label>BMS continuous current (A)<input name="bms" type="number" min="1" max="1000" step="any" value="${esc(app.state.specs.bms)}" placeholder="Unknown"></label><label>Planned battery current total (A)<input name="batteryLimit" type="number" min="1" max="1000" step="any" value="${esc(app.state.specs.batteryLimit)}" placeholder="Unknown"></label><label>Driven motors<select name="motorCount"><option value="1" ${effectiveMotorCount(app.state) === 1 ? 'selected' : ''}>1 motor</option><option value="2" ${effectiveMotorCount(app.state) === 2 ? 'selected' : ''}>2 motors</option></select></label><button class="btn primary" type="submit">Save & check</button></form><h3>Compatibility review</h3><p>Rules-based checks on entered data. Passing one check does not establish overall compatibility.</p>${issues.map((i) => `<div class="issue ${i.kind === 'unknown' ? '' : i.kind}">${i.kind === 'conflict' ? '⚠ ' : i.kind === 'pass' ? '✓ ' : '○ '}${esc(i.text)}</div>`).join('')}<button class="btn" id="reviewExport">Export complete build ↗</button>`,
+      `<p>${esc(app.state.name)} · ${app.state.type === 'scooter' ? 'E-scooter' : 'E-bike'}${app.state.mode === 'rebuild' ? ' · Rebuild of ' + esc(app.state.vehicle) : ''}</p>${conflictSection}${CATEGORIES.map((c) => `<div class="review-row"><div><small>${c}</small><br><strong>${esc(componentName(p[c]))}</strong></div>${p[c] && !p[c].stock ? `<button data-remove="${p[c].id}">${app.state.mode === 'rebuild' ? 'Return to stock' : 'Remove'}</button>` : ''}</div>`).join('')}<h3>${esc(peakPowerLabel(performance.peak))}</h3><div class="peak-result"><strong>${esc(peakPowerText(performance.peak))}</strong><p>${esc(performance.peak.basis)}</p></div><button class="text-btn" id="reviewPeakSetup">Set peak-power inputs →</button>${app.performanceProfile() ? '<p>Factory reference: ' + esc(factorySummary(app.performanceProfile())) + '. Unchanged components remain stock.</p>' : app.state.mode === 'rebuild' ? '<p>Unchanged categories retain factory parts. Add missing ratings in performance setup for this vehicle.</p>' : ''}<h3>Measurements & planned limits</h3><p>Enter values from your actual hardware labels and measurements. These are user-provided, unverified inputs.</p><form id="specForm" class="spec-fields"><label>Measured dropout (mm)<input name="dropout" type="number" min="1" max="500" step="any" value="${esc(app.state.specs.dropout)}" placeholder="Unknown"></label><label>Actual pack full-charge voltage (V)<input name="fullV" type="number" min="1" max="500" step="any" value="${esc(app.state.specs.fullV)}" placeholder="${p.Batteries?.fullV || 'Unknown'}"></label><label>BMS continuous current (A)<input name="bms" type="number" min="1" max="1000" step="any" value="${esc(app.state.specs.bms)}" placeholder="Unknown"></label><label>Planned battery current total (A)<input name="batteryLimit" type="number" min="1" max="1000" step="any" value="${esc(app.state.specs.batteryLimit)}" placeholder="Unknown"></label><label>Driven motors<select name="motorCount"><option value="1" ${effectiveMotorCount(app.state) === 1 ? 'selected' : ''}>1 motor</option><option value="2" ${effectiveMotorCount(app.state) === 2 ? 'selected' : ''}>2 motors</option></select></label><button class="btn primary" type="submit">Save & check</button></form><h3>Compatibility review</h3><p>Rules-based checks on entered data. Passing one check does not establish overall compatibility.</p>${checkRows}<button class="btn" id="reviewExport">Export complete build ↗</button>`,
     );
+    if (focusIssues) $('#reviewConflicts')?.focus();
     $('#reviewPeakSetup').onclick = app.performanceDialog;
     $('#specForm').onsubmit = (e) => {
       e.preventDefault();
@@ -27,6 +39,7 @@ export function createFeature(app) {
         app.checks().find((i) => i.kind === 'unknown')?.text ||
         'Review your selected components before building.';
       app.review();
+      $('#specForm button').focus();
       app.toast('Measurements saved and checks updated');
     };
     $('#detailBody')

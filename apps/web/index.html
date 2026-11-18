@@ -138,7 +138,7 @@
             </div>
             <div>
               <span class="metric-label">BATTERY ENERGY</span
-              ><strong id="energy">— <small>Wh</small></strong>
+              ><strong id="energy">— <small>Wh nominal</small></strong>
             </div>
             <div>
               <span class="metric-label">BUILD CHECK</span
@@ -167,16 +167,24 @@
                     <option>90</option>
                   </select>
                   km/h</label
-                ><button class="text-btn" id="stockBaselineBtn" hidden>Stock G4 baseline</button
+                ><button class="text-btn" id="stockBaselineBtn" hidden>
+                  Restore stock powertrain</button
                 ><button class="text-btn" id="tunePerformance">Setup & measurements</button>
               </div>
             </div>
             <p id="stockHardwareNote" class="stock-hardware-note" hidden></p>
+            <div id="performanceConflict" class="issue conflict" hidden>
+              <p id="performanceConflictText"></p>
+              <button class="text-btn" id="reviewPerformanceConflicts">Review conflicts →</button>
+            </div>
             <div class="performance-grid">
               <div>
                 <span class="metric-label" id="speedMetricLabel">SPEED REFERENCE</span
                 ><strong id="estimatedSpeed">—</strong
                 ><small id="speedBasis">Power model · gearing unverified</small>
+                <button class="text-btn metric-action" id="addSpeedData" hidden>
+                  Add ratings →
+                </button>
               </div>
               <div>
                 <span class="metric-label">RANGE · ESTIMATE</span
@@ -187,6 +195,9 @@
                 <span class="metric-label" id="peakMetricLabel">PEAK MOTOR OUTPUT · ESTIMATE</span
                 ><strong id="estimatedPeak">— kW</strong
                 ><small id="peakBasis">Add peak limits in Setup & measurements</small>
+                <button class="text-btn metric-action" id="addPeakData" hidden>
+                  Add motor peak rating →
+                </button>
               </div>
               <div>
                 <span class="metric-label">RIDE TIME · ESTIMATE</span
@@ -340,6 +351,7 @@
               ><button type="button" id="customVehicle" hidden></button>
             </div>
             <p class="field-note" id="vehicleNote">Search by brand or model.</p>
+            <span id="vehicleKeyboardStatus" class="screen-reader-only" aria-live="polite"></span>
           </div>
         </details>
         <div id="newFields" hidden>
@@ -367,9 +379,9 @@
         </p>
       </div>
     </dialog>
-    <dialog id="detailDialog">
+    <dialog id="detailDialog" aria-labelledby="detailTitle">
       <div class="detail-top">
-        <h2 id="detailTitle"></h2>
+        <h2 id="detailTitle" tabindex="-1"></h2>
         <button class="icon-btn" id="closeDetail" aria-label="Close details">×</button>
       </div>
       <div id="detailBody"></div>

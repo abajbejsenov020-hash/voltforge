@@ -11,11 +11,23 @@ import {
 export function createFeature(app) {
   function renderPerformance() {
     const e = app.estimatePerformance();
+    const energy = $('#energy');
+    energy.firstChild.textContent = (e.wh ? Math.round(e.wh) : '—') + ' ';
+    const check = $('#checkSummary');
+    check.textContent = e.conflicts
+      ? e.conflicts + (e.conflicts === 1 ? ' conflict' : ' conflicts')
+      : 'Needs verification';
+    check.classList.toggle('has-conflicts', Boolean(e.conflicts));
+    $('#performanceConflict').hidden = !e.conflicts;
+    if (e.conflicts) {
+      const firstConflict = app.checks().find((issue) => issue.kind === 'conflict');
+      $('#performanceConflictText').textContent = 'Conditional estimates · ' + firstConflict.text;
+    }
+    $('#reviewPerformanceConflicts').onclick = () => app.review({ focusIssues: true });
     $('#estimatedPeak').textContent = peakPowerText(e.peak);
     $('#peakBasis').textContent = e.peak.basis;
     $('#peakMetricLabel').textContent = peakPowerLabel(e.peak);
     $('#stockBaselineBtn').hidden = !e.profile || e.stock;
-    $('#stockBaselineBtn').textContent = 'Restore stock powertrain';
     const hardwareNote = $('#stockHardwareNote');
     hardwareNote.hidden = app.state.mode !== 'rebuild';
     if (!hardwareNote.hidden) {
@@ -37,10 +49,25 @@ export function createFeature(app) {
         (changed.length ? 'Upgraded: ' + changed.join(', ') + '. ' : '') +
         'Unchanged categories retain their factory parts.';
     }
-    $('#estimatedSpeed').textContent = e.speed.value === null ? '— km/h' : speedText(e);
-    $('#speedBasis').textContent = e.automatic.missing.includes('power')
-      ? 'Selected motor has no rated power. Add motor watts below to estimate top speed.'
-      : speedBasisText(e);
+    const missingPower = e.automatic.missing.includes('power');
+    const speedUnknown = e.speed.value === null;
+    $('#estimatedSpeed').textContent = speedText(e);
+    $('#estimatedSpeed').classList.toggle('metric-unavailable', speedUnknown);
+    $('#speedBasis').textContent =
+      speedUnknown && missingPower
+        ? 'Add the motor’s continuous shaft output to estimate top speed.'
+        : speedBasisText(e);
+    const speedAction = $('#addSpeedData');
+    speedAction.hidden = !speedUnknown;
+    speedAction.textContent = missingPower ? 'Add motor rating →' : 'Add speed data →';
+    speedAction.onclick = () => {
+      const missing = e.automatic.missing[0];
+      if (missing) focusRating(missing);
+      else app.performanceDialog();
+    };
+    const peakAction = $('#addPeakData');
+    peakAction.hidden = !e.automatic.enabled || !e.peak.missing.includes('motor peak output');
+    peakAction.onclick = () => focusRating('peakMotorW');
     $('#estimatedRange').textContent = approx(e.range, 'km');
     $('#rangeBasis').textContent = e.range
       ? 'Scenario at ' + e.cruise + ' km/h · ' + e.whPerKm.toFixed(1) + ' Wh/km'
@@ -53,7 +80,9 @@ export function createFeature(app) {
           ? 'REPORTED GPS SPEED'
           : e.speed.kind === 'planning'
             ? 'TOP SPEED · ROUGH ESTIMATE'
-            : 'SPEED DATA / CEILING';
+            : speedUnknown
+              ? 'TOP SPEED'
+              : 'TOP SPEED · CEILING';
     $('#rangeCruise').value = String(e.cruise);
     if (!$('#rangeCruise').value) {
       const opt = document.createElement('option');
@@ -63,9 +92,6 @@ export function createFeature(app) {
       $('#rangeCruise').value = String(e.cruise);
     }
     $('#performanceNote').textContent =
-      (e.conflicts
-        ? 'Compatibility conflicts remain; figures do not establish an operable build. '
-        : '') +
       (e.stock
         ? factorySummary(e.profile) + '. '
         : e.batteryBasis + (e.wh ? ' (' + Math.round(e.wh) + 'Wh). ' : '. ')) +
@@ -89,6 +115,13 @@ export function createFeature(app) {
       )
       .join('');
     renderAutomaticInputs(e);
+  }
+  function focusRating(key) {
+    const field = $('#quickPerformanceForm')?.elements.namedItem(key);
+    if (!field) return app.performanceDialog();
+    field.closest('details').open = true;
+    field.focus();
+    field.scrollIntoView({ block: 'center' });
   }
   function renderAutomaticInputs(e) {
     const container = $('#automaticPerformance');
@@ -114,18 +147,18 @@ export function createFeature(app) {
       key === 'bms' ? app.state.specs.bms : (app.state.performance?.[key] ?? '');
     container.innerHTML = `<p class="automatic-note">${
       e.automatic.missing.length
-        ? 'Your powertrain is selected. Add the missing ratings below to complete the estimate.'
+        ? 'Enter the required ratings to calculate the missing estimates.'
         : e.speed.kind === 'planning' || e.peak.kind === 'planning'
           ? 'Calculated automatically from your parts. These are planning scenarios; battery limits and winding may change the result.'
           : 'Your entered limits refine the selected-part calculation.'
     }</p>
       <details class="estimate-inputs" ${wasOpen || e.automatic.missing.length ? 'open' : ''}>
         <summary>Assumptions & quick inputs${e.automatic.missing.length ? ' · ratings needed' : ''}</summary>
-        <ul class="estimate-assumptions">${e.automatic.assumptions.map((text) => `<li>${esc(text)}</li>`).join('')}</ul>
-        <p>Optional overrides: leave blank to use catalog values and planning assumptions. Motor output fields are mechanical shaft watts.</p>
+        <p>Leave optional fields blank to use catalog values and planning assumptions.</p>
         <form id="quickPerformanceForm" class="spec-fields">${fields.map(([key, label, automatic]) => `<label>${esc(label)}${e.automatic.missing.includes(key) ? ' · required' : ''}<input name="${key}" type="number" min="0.1" max="${/power|peakMotorW/.test(key) ? 200000 : key === 'capacityAh' ? 300 : key === 'peakVoltage' || key === 'nominalVoltage' ? 500 : 3000}" step="any" value="${esc(value(key))}" placeholder="${Number(automatic) > 0 ? 'Automatic: ' + Number(Number(automatic).toFixed(1)) : 'Enter rating'}" ${e.automatic.missing.includes(key) ? 'required' : ''}></label>`).join('')}
           <button class="btn primary" type="submit">Update estimates</button>
         </form>
+        ${e.automatic.assumptions.length ? `<ul class="estimate-assumptions">${e.automatic.assumptions.map((text) => `<li>${esc(text)}</li>`).join('')}</ul>` : ''}
         ${e.automatic.sources.length ? `<div class="estimate-sources"><span>Rating sources</span>${e.automatic.sources.map((source, index) => `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer" title="${esc(source.note)}">Manufacturer reference ${index + 1} ↗</a>`).join('')}</div>` : ''}
       </details>`;
     $('#quickPerformanceForm').onsubmit = (event) => {
@@ -136,7 +169,7 @@ export function createFeature(app) {
       app.save();
       app.renderPerformance();
       $('#quickPerformanceForm button').focus();
-      app.toast('Speed and power estimates updated');
+      app.toast('Performance inputs saved');
     };
   }
   function performanceDialog() {

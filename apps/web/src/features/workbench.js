@@ -25,13 +25,6 @@ export function createFeature(app) {
       (app.state.mode === 'rebuild'
         ? ' <small>chosen · ' + (CATEGORIES.length - upgrades) + ' stock</small>'
         : ' <small>/ ' + CATEGORIES.length + ' categories</small>');
-    const perf = app.estimatePerformance();
-    $('#energy').innerHTML = (perf.wh ? Math.round(perf.wh) : '—') + ' <small>Wh nominal</small>';
-    const count = app.checks().filter((i) => i.kind === 'conflict').length;
-    $('#checkSummary').textContent = count
-      ? count + ' conflict' + (count > 1 ? 's' : '')
-      : 'Needs verification';
-    $('#checkSummary').style.color = count ? '#b06c45' : '';
     app.renderTabs();
     app.renderCatalog();
     $('#referencePhoto').hidden = !visual.reference;

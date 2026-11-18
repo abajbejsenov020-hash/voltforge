@@ -4,6 +4,24 @@ import { createBuild } from '@voltforge/shared/build';
 import { estimatePerformance, createPerformanceEngine } from '@voltforge/shared/performance';
 import { CATALOG } from '@voltforge/shared/catalog';
 
+test('the reported XF Pro powertrain uses sourced data and keeps unknown peak output qualified', () => {
+  const build = {
+    ...createBuild('bike'),
+    mode: 'rebuild',
+    vehicle: 'Arctic Leopard XF Pro',
+    selected: { Motors: 'p165', Controllers: 'p151', Batteries: 'p181' },
+  };
+  const result = estimatePerformance(build);
+  assert.equal(result.speed.kind, 'planning');
+  assert.ok(result.speed.value > 0);
+  assert.equal(result.wh, 3168);
+  assert.equal(result.automatic.continuousA, 200);
+  assert.ok(result.automatic.assumptions.some((item) => /duration/i.test(item)));
+  assert.equal(result.peak.kind, 'ceiling');
+  assert.ok(result.peak.missing.includes('motor peak output'));
+  assert.deepEqual(build.performance, { schema: 2 });
+});
+
 function completedG4() {
   return {
     ...createBuild('scooter', 'G4 Lonnyo rebuild'),

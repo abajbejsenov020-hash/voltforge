@@ -317,6 +317,14 @@
   .stage-controls {
     bottom: 119px;
   }
+  .stage-controls .control {
+    width: 44px;
+    height: 44px;
+  }
+  .stage-controls .control.wide {
+    width: auto;
+    min-width: 44px;
+  }
   .model-inspection {
     top: 63px;
     padding: 2px;
@@ -325,13 +333,15 @@
   .model-inspection button {
     font-size: 9px;
     padding: 6px;
+    min-height: 44px;
   }
   .vehicle-suggestions {
     grid-template-columns: 1fr;
     max-height: 310px;
   }
   .finder-toolbar select {
-    width: 100%;
+    flex: 0 0 100%;
+    min-height: 44px;
   }
   .reference-variant {
     font-size: 9px;

@@ -108,7 +108,13 @@ export function createFeature(app) {
     PartPreviews.mount($('#parts'));
     $('#parts')
       .querySelectorAll('[data-add]')
-      .forEach((b) => (b.onclick = () => app.togglePart(b.dataset.add)));
+      .forEach((button) => {
+        button.onclick = () => {
+          const id = button.dataset.add;
+          app.togglePart(id);
+          ($(`[data-add="${id}"]`) || $('#search')).focus({ preventScroll: true });
+        };
+      });
     $('#parts')
       .querySelectorAll('[data-detail]')
       .forEach((b) => (b.onclick = () => app.partDetail(b.dataset.detail)));
@@ -198,6 +204,7 @@ export function createFeature(app) {
     $('#detailAdd').onclick = () => {
       app.togglePart(id);
       $('#detailDialog').close();
+      ($(`[data-detail="${id}"]`) || $('#search')).focus({ preventScroll: true });
     };
   }
   return { renderTabs, renderCatalog, togglePart, partDetail };

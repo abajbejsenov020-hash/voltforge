@@ -60,6 +60,13 @@ export function automaticPerformanceInputs(
         ' use factory reference hardware; exact installed variants and condition remain unverified.',
     );
   let motorElectrical = band(motor.ratedW || motor.watts, motor.ratedWRange);
+  if (motorElectrical && motor.ratedDurationUnknown && !positive(a.power)) {
+    const published = display(midpoint(motorElectrical));
+    motorElectrical = motorElectrical.map((watts) => watts * 0.5);
+    assume(
+      `The manufacturer lists ${published} W without a test duration. This speed scenario assumes 50% of that rating for sustained motor input. Enter measured shaft output to refine it.`,
+    );
+  }
   if (
     !motorElectrical &&
     (motor.stock || motor.factoryRatingAssumption) &&
@@ -147,7 +154,7 @@ export function automaticPerformanceInputs(
       assume(
         `Published peak motor watts are treated as electrical input at ${Math.round(peakEff * 100)}% shaft efficiency; the supplier does not establish a measured shaft-output basis.`,
       );
-    } else if (result.powerRange) {
+    } else if (result.powerRange && (!motor.ratedDurationUnknown || positive(inputs.power))) {
       // This is explicitly a burst scenario, not a manufacturer peak rating.
       result.peakMotorRange =
         motorElectrical && !positive(inputs.power)

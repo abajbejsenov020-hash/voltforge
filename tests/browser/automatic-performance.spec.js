@@ -77,6 +77,9 @@ test('an unknown motor requests one essential rating inline, then calculates wit
   page,
 }) => {
   await seed(page, fixture('p73'));
+  await expect(page.locator('#estimatedSpeed')).toHaveText('Not established');
+  await page.locator('#addSpeedData').click();
+  await expect(page.locator('#quickPerformanceForm [name="power"]')).toBeFocused();
   await expect(page.locator('#quickPerformanceForm')).toBeVisible();
   await expect(page.locator('#quickPerformanceForm [required]')).toHaveCount(1);
   await expect(page.locator('#quickPerformanceForm [name="power"]')).toHaveAttribute(
@@ -88,6 +91,45 @@ test('an unknown motor requests one essential rating inline, then calculates wit
   await expect(page.locator('#estimatedSpeed')).toHaveText(/≈\d+ km\/h/);
   await expect(page.locator('#estimatedPeak')).toHaveText('≈2.3 kW');
   await expect(page.locator('#quickPerformanceForm [required]')).toHaveCount(0);
+});
+
+test('XF Pro upgrade estimates, compatibility and missing peak data work from the performance panel', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  const build = fixture('p165');
+  Object.assign(build, {
+    type: 'bike',
+    vehicle: 'Arctic Leopard XF Pro',
+    name: 'XF Pro audit',
+    performance: { schema: 2 },
+  });
+  Object.assign(build.selected, { Controllers: 'p151', Batteries: 'p181', Displays: 'p186' });
+  await seed(page, build);
+  await expect(page.locator('#estimatedSpeed')).toHaveText(/≈\d+ km\/h/);
+  await expect(page.locator('#energy')).toContainText('3168');
+  await expect(page.locator('#peakBasis')).toContainText('missing motor peak output');
+  await expect(page.locator('#performanceConflictText')).toContainText('Nucular');
+  await page.locator('.performance').scrollIntoViewIfNeeded();
+  await page.screenshot({ path: 'test-results/xf-pro-performance-mobile.png' });
+  await page.locator('#reviewPerformanceConflicts').click();
+  const dialog = page.getByRole('dialog', { name: 'Your build, at a glance' });
+  await expect(dialog.locator('#reviewConflicts')).toBeFocused();
+  await expect(dialog.locator('.issue.conflict').first()).toContainText('different platforms');
+  await dialog.locator('#specForm [name="bms"]').fill('75');
+  await dialog.locator('#specForm button').click();
+  await expect(dialog.locator('#specForm button')).toBeFocused();
+  await expect(dialog.getByRole('button', { name: 'Close details' })).toBeInViewport();
+  await dialog.getByRole('button', { name: 'Close details' }).click();
+  await page.locator('#addPeakData').click();
+  const peakField = page.locator('#quickPerformanceForm [name="peakMotorW"]');
+  await expect(peakField).toBeFocused();
+  await peakField.fill('12000');
+  await page.locator('#quickPerformanceForm button').click();
+  await expect(page.locator('#estimatedPeak')).toHaveText('≈12.0 kW');
+  await page.reload();
+  await expect(page.locator('#estimatedPeak')).toHaveText('≈12.0 kW');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
 test('e-moto results use selected parts and quick inputs fit a phone', async ({ page }) => {

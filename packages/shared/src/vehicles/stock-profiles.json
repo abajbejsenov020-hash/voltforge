@@ -138,7 +138,7 @@
     "name": "Arctic Leopard XF Pro",
     "nominal": 72,
     "ah": 35,
-    "vehicleMass": null,
+    "vehicleMass": 58,
     "motors": 1,
     "ratedMotorW": null,
     "peakMotorW": 12000,
@@ -146,7 +146,7 @@
     "advertisedSpeed": 96,
     "advertisedRange": 95,
     "source": "https://arctic-leopard.com/produit/xf-pro/",
-    "note": "Manufacturer metric technical table. Rear tire OD is nominal geometry, not measured rolling diameter. Standard XF Pro rear 90/100-14. Range at 40 km/h. Source mass 58 kg vs 125.7 lb inconsistent, unknown."
+    "note": "Manufacturer metric technical table. Uses the listed 58 kg curb weight as the stock mass reference; the published pound conversion differs. Rear tire OD is nominal geometry, not measured rolling diameter. Standard XF Pro rear 90/100-14. Range at 40 km/h."
   },
   {
     "name": "Arctic Leopard XE Pro R",
