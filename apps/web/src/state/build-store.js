@@ -1,4 +1,4 @@
-import { createBuild } from '@voltforge/shared/build';
+import { createBuild, normalizePaint } from '@voltforge/shared/build';
 
 const STORAGE_KEY = 'voltforge-v1';
 const SYNC_KEY = 'voltforge-sync-v1';
@@ -15,6 +15,7 @@ const normalize = (value) => ({
   ...value,
   specs: { ...createBuild().specs, ...value.specs },
   performance: value.performance || {},
+  paint: normalizePaint(value.paint),
 });
 const stable = (value) =>
   Array.isArray(value)
@@ -30,16 +31,10 @@ const stable = (value) =>
 // Server timestamps and revision counters are metadata, not user edits.
 function content(build) {
   const normalized = normalize(build);
-  return JSON.stringify(
-    stable(
-      Object.fromEntries(
-        ['id', 'name', 'type', 'mode', 'vehicle', 'selected', 'specs', 'performance'].map((key) => [
-          key,
-          normalized[key],
-        ]),
-      ),
-    ),
-  );
+  const fields = ['id', 'name', 'type', 'mode', 'vehicle', 'selected', 'specs', 'performance'];
+  // Keep the existing content signature for unpainted builds with a pending sync attempt.
+  if (Object.keys(normalized.paint).length) fields.push('paint');
+  return JSON.stringify(stable(Object.fromEntries(fields.map((key) => [key, normalized[key]]))));
 }
 
 /** Each durable record atomically stores a build and its synchronization state. */

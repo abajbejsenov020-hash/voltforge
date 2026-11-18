@@ -198,6 +198,60 @@
   padding: 4px;
   border-radius: 3px;
 }
+.model-edits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+  padding: 10px 0 0;
+}
+.paint-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}
+.paint-controls > label:first-child {
+  font-weight: 700;
+}
+.paint-controls select {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 6px 8px;
+  color: #263138;
+  border: 1px solid #adb6b2;
+  border-radius: 4px;
+  background: #fdfcf8;
+}
+.paint-swatch {
+  display: grid;
+  place-items: center;
+}
+.paint-swatch input {
+  width: 44px;
+  height: 44px;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid #adb6b2;
+  border-radius: 4px;
+  background: #fdfcf8;
+}
+.paint-controls .text-btn {
+  min-height: 44px;
+  padding-inline: 4px;
+}
+.paint-controls .text-btn:disabled {
+  color: #687473;
+  cursor: default;
+}
+#swapStatus {
+  flex: 1 1 220px;
+  font-size: 12px;
+  color: #515d63;
+  line-height: 1.5;
+  margin: 0;
+}
 .reference-variant {
   font-size: 10px;
   line-height: 1.5;
@@ -297,16 +351,22 @@
     bottom: 57px;
     left: 12px;
     right: 12px;
-    flex-direction: column;
-    gap: 3px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3px 8px;
   }
   #modelLabel {
+    grid-column: 1 / -1;
     max-width: 100%;
     font-size: 12px;
   }
   #vehiclePhotoSource {
+    grid-column: 1 / -1;
     text-align: left;
     font-size: 9px;
+  }
+  #sceneEnvironmentStatus {
+    text-align: left;
   }
   .scene-note {
     left: 16px;
@@ -315,7 +375,7 @@
     font-size: 9px;
   }
   .stage-controls {
-    bottom: 119px;
+    bottom: 124px;
   }
   .stage-controls .control {
     width: 44px;

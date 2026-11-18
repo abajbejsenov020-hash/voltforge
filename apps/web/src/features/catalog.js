@@ -142,9 +142,11 @@ export function createFeature(app) {
       <div class="stock-part-heading"><span class="stock-part-badge">${current?.stockEquivalent ? 'FACTORY REPLACEMENT' : changed ? 'MODIFIED' : 'STOCK · FACTORY FITTED'}</span>${changed ? `<button type="button" class="text-btn" id="returnToStock">Return to stock</button>` : ''}</div>
       <strong>${changed ? esc(current.brand + ' ' + current.name) : esc(stock?.name || app.state.vehicle + ' factory ' + app.category.toLowerCase())}</strong>
       <p>${current?.stockEquivalent ? 'Matching factory motor family. Overall performance depends on the remaining hardware; confirm the exact replacement version.' : changed ? 'This replaces the factory component. All other unchanged categories remain stock.' : 'Included automatically. Choose an upgrade below to replace it.'}</p>
+      ${changed ? '<button type="button" class="text-btn" id="inspectBuild3D">Inspect in 3D ↑</button>' : ''}
     </article>`,
     );
     if ($('#returnToStock')) $('#returnToStock').onclick = () => app.togglePart(current.id);
+    if ($('#inspectBuild3D')) $('#inspectBuild3D').onclick = app.scene.inspectBuild;
   }
   function togglePart(id) {
     const p = CATALOG.find((p) => p.id === id);

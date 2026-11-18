@@ -138,11 +138,12 @@ test('builds persist across restart and every operation stays inside the browser
   const saved = await api.request('/api/builds/build-a', {
     method: 'PUT',
     cookie: initial.cookie,
-    body: { build: build(), expectedRevision: 0 },
+    body: { build: { ...build(), paint: { deck: '#3A6BA1' } }, expectedRevision: 0 },
   });
   assert.equal(saved.status, 201);
   assert.equal(saved.data.build.revision, 1);
   assert.equal(saved.data.build.specs.fullV, '84');
+  assert.deepEqual(saved.data.build.paint, { deck: '#3a6ba1' });
   const outsider = await api.request('/api/builds');
   assert.notEqual(outsider.cookie, initial.cookie);
   assert.deepEqual(outsider.data.builds, []);
@@ -171,6 +172,7 @@ test('builds persist across restart and every operation stays inside the browser
   const persisted = await api.request('/api/builds', { cookie: initial.cookie });
   assert.equal(persisted.data.builds.length, 1);
   assert.equal(persisted.data.builds[0].revision, 1);
+  assert.deepEqual(persisted.data.builds[0].paint, { deck: '#3a6ba1' });
   assert.equal(persisted.headers.get('set-cookie'), null);
   const removed = await api.request('/api/builds/build-a', {
     method: 'DELETE',
@@ -331,6 +333,9 @@ test('validation rejects invalid types, part category mismatches, and nonfinite 
     { ...build(), type: 'car' },
     { ...build(), mode: 'replace' },
     { ...build(), name: 'a'.repeat(151) },
+    { ...build(), paint: ['#217c83'] },
+    { ...build(), paint: { seat: '#217c83' } },
+    { ...build(), paint: { deck: '#1234' } },
     { ...build(), specs: { fullV: 'Infinity' } },
     { ...build(), specs: { motorCount: 3 } },
     { ...build(), specs: { motorCountOverride: 3 } },

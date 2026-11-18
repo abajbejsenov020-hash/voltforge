@@ -96,6 +96,21 @@ test('equal timestamps never erase pending content that differs from a newer ser
   assert.ok(store.conflicts.has('x'));
 });
 
+test('paint-only edits survive a stale tab and an offline reload', () => {
+  const disk = storage();
+  const current = new BuildStore({ storage: disk });
+  const stale = new BuildStore({ storage: disk });
+  assert.deepEqual(current.current.paint, {});
+  current.current.paint = { deck: '#217c83' };
+  current.save();
+  stale.persist();
+  const reopened = new BuildStore({ storage: disk });
+  assert.deepEqual(reopened.current.paint, { deck: '#217c83' });
+  reopened.current.paint = {};
+  reopened.save();
+  assert.deepEqual(new BuildStore({ storage: disk }).current.paint, {});
+});
+
 test('the next edit retries a transient save failure and sends the newest contents', async () => {
   let remote = build();
   let calls = 0;

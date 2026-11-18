@@ -168,6 +168,7 @@ export function buildComponentModel(p, T, describe) {
         }
         torus(0.48, 0.029, q.rim === 'silver' ? silver : black, [0, 0, 0]);
       }
+      const tireStart = root.children.length;
       if (q.tire !== 'none') {
         const color = q.rim === 'orange' ? make(0xdd9b24, 0.05, 0.85) : rubber;
         if (q.tire === 'perforated') {
@@ -225,6 +226,7 @@ export function buildComponentModel(p, T, describe) {
             }
         }
       }
+      for (const mesh of root.children.slice(tireStart)) mesh.userData.tireGeometry = true;
       const length = q.axle === 'single' ? 0.27 : depth + 0.35;
       cyl(0.035, length, silver, [0, 0, q.axle === 'single' ? depth / 2 + 0.1 : 0]);
       cyl(0.075, 0.05, silver, [0, 0, depth / 2 + 0.1], 'z', 0.065, 6);
@@ -771,6 +773,7 @@ export function buildComponentModel(p, T, describe) {
     case 'chosen-grips': {
       const color = make(info.model.color, 0.05, 0.85);
       for (const side of [-1, 1]) {
+        const gripStart = root.children.length;
         const shape = new T.Shape();
         shape.absarc(0, 0, 0.09, 0, Math.PI * 2, false);
         const hole = new T.Path();
@@ -806,6 +809,9 @@ export function buildComponentModel(p, T, describe) {
           const ring = torus(0.091, 0.009, color, [x, 0, 0]);
           ring.rotation.y = Math.PI / 2;
         }
+        const sleeve = new T.Group();
+        sleeve.add(...root.children.slice(gripStart));
+        root.add(sleeve);
       }
       break;
     }

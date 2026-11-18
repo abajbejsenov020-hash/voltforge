@@ -129,44 +129,141 @@ test('owned decoded bitmaps close once while images shared with protected scene 
   assert.equal(closed, 1);
 });
 
-test('exploded mounts preserve authored translations and rotations, and reset without drift', () => {
+test('exploded mounts lift before sliding, reverse without drift, and leave the chassis in place', () => {
   const root = new THREE.Group();
   root.rotation.x = -Math.PI / 2;
-  const mount = solid();
-  mount.name = 'BatteryMount';
-  mount.position.set(0.2, -0.3, 0.7);
-  mount.rotation.z = 0.4;
-  root.add(mount);
-  const initial = mount.position.clone();
-  const rotation = mount.quaternion.clone();
-  const startWorld = mount.getWorldPosition(new THREE.Vector3());
+  const chassis = solid();
+  chassis.name = 'Chassis';
+  const battery = solid();
+  battery.name = 'BatteryMount';
+  battery.position.set(0.2, -0.3, 0.7);
+  battery.rotation.z = 0.4;
+  root.add(chassis, battery);
+  const initial = battery.position.clone();
+  const rotation = battery.quaternion.clone();
+  const start = battery.getWorldPosition(new THREE.Vector3());
   const assembly = createBlenderAssembly(root, () => {
     throw new Error('unverified');
   });
-  assembly.setExploded(true);
-  const expected = startWorld.clone().add(new THREE.Vector3(0, 0.5, -0.24));
-  assert.ok(mount.getWorldPosition(new THREE.Vector3()).distanceTo(expected) < 1e-9);
-  assembly.setExploded(true);
-  assert.ok(mount.getWorldPosition(new THREE.Vector3()).distanceTo(expected) < 1e-9);
-  assembly.setExploded(false);
-  assert.ok(mount.position.distanceTo(initial) < 1e-9);
-  assert.ok(mount.quaternion.equals(rotation));
-  assembly.setSelection({ Batteries: { id: 'unverified' } });
-  assert.equal(mount.children[0].visible, true);
+  assert.equal(assembly.canExplode, true);
+  assembly.setExploded(0.3);
+  const lifted = battery.getWorldPosition(new THREE.Vector3());
+  assert.ok(lifted.y > start.y);
+  assert.ok(Math.abs(lifted.z - start.z) < 1e-9);
+  assembly.setExploded(1);
+  const extended = battery.getWorldPosition(new THREE.Vector3());
+  assert.ok(extended.y > lifted.y);
+  assert.ok(extended.z > start.z);
+  assembly.setExploded(0.3);
+  assert.ok(battery.getWorldPosition(new THREE.Vector3()).distanceTo(lifted) < 1e-9);
+  assembly.setExploded(0);
+  assert.ok(battery.position.distanceTo(initial) < 1e-9);
+  assert.ok(battery.quaternion.equals(rotation));
+  assert.deepEqual(chassis.position.toArray(), [0, 0, 0]);
+  assert.deepEqual(assembly.setSelection({ Batteries: { id: 'unverified' } }), {
+    Batteries: false,
+  });
+  assert.equal(battery.children[0].visible, true);
+  disposeModelResources(root);
+});
+
+async function loadVehicle(url) {
+  const file = await readFile(new URL(`../apps/web/public${url}`, import.meta.url));
+  const bytes = file.buffer.slice(file.byteOffset, file.byteOffset + file.byteLength);
+  // Node preserves geometry/material slots. The browser tests decode embedded images.
+  const loader = new GLTFLoader().register(() => ({
+    name: 'NodeGeometryTextures',
+    loadTexture: () => Promise.resolve(new THREE.Texture()),
+  }));
+  const { scene } = await loader.parseAsync(bytes, '');
+  return scene;
+}
+
+function select(...ids) {
+  return Object.fromEntries(
+    ids.map((id) => {
+      const part = CATALOG.find((entry) => entry.id === id);
+      assert.ok(part, id);
+      return [part.category, part];
+    }),
+  );
+}
+
+for (const [profile, ids] of [
+  ['kukirin-g4', ['p4', 'p291', 'p308', 'p296', 'p299', 'p304']],
+  ['surron-lbx', ['p169', 'p291', 'p179', 'p297', 'p303', 'p304']],
+]) {
+  test(`${profile} replaces selected geometry, keeps adjacent stock hardware, and resets through disassembly`, async () => {
+    const root = await loadVehicle(BLENDER_MODELS[profile]);
+    const assembly = createBlenderAssembly(root, (part) => PartPreviews.createModel(part, THREE));
+    const selection = select(...ids);
+    const chosenMounts = assembly.mounts.filter((mount) => selection[mount.category]);
+    const removed = new Set(chosenMounts.flatMap((mount) => mount.stock));
+    const original = new Map();
+    root.traverse((object) => {
+      if (object.isMesh) original.set(object, object.visible);
+    });
+    const installed = assembly.setSelection(selection, { motorCount: 1 });
+    assert.deepEqual(
+      installed,
+      Object.fromEntries(Object.keys(selection).map((name) => [name, true])),
+    );
+    for (const [mesh, visible] of original)
+      assert.equal(mesh.visible, visible && !removed.has(mesh));
+    const chassis = root.getObjectByName('Chassis');
+    const chassisStart = chassis.getWorldPosition(new THREE.Vector3());
+    assembly.setExploded(0.5);
+    assembly.setExploded(1);
+    assert.ok(chassis.getWorldPosition(new THREE.Vector3()).equals(chassisStart));
+    const battery = assembly.mounts.find(({ category }) => category === 'Batteries');
+    const controller = assembly.mounts.find(({ category }) => category === 'Controllers');
+    const packPosition = battery.preview.root.getWorldPosition(new THREE.Vector3());
+    const controllerPosition = controller.preview.root.getWorldPosition(new THREE.Vector3());
+    assert.ok(packPosition.z > 0.3 && controllerPosition.z < -0.3);
+    for (const mount of chosenMounts) {
+      assert.equal(mount.preview.root.parent, mount.node);
+      assert.equal(mount.preview.root.visible, true);
+      assert.equal(mount.preview.root.userData.selectedPartId, selection[mount.category].id);
+    }
+    const restored = { ...selection };
+    delete restored.Controllers;
+    assert.equal(assembly.setSelection(restored, { motorCount: 1 }).Motors, true);
+    assert.equal(controller.preview, null);
+    assert.ok(controller.stock.every((mesh) => mesh.visible));
+    assembly.setExploded(0);
+    assembly.setSelection({});
+    for (const [mesh, visible] of original) assert.equal(mesh.visible, visible);
+    assert.ok(chosenMounts.every((mount) => mount.preview === null));
+    assembly.dispose();
+    disposeModelResources(root);
+  });
+}
+
+test('a dual-hub scooter replaces both axle motors without adding duplicate tires', async () => {
+  const root = await loadVehicle(BLENDER_MODELS['kukirin-g4-ultra']);
+  const assembly = createBlenderAssembly(root, (part) => PartPreviews.createModel(part, THREE));
+  const selection = select('p2');
+  const motor = assembly.mounts.find(({ category }) => category === 'Motors');
+  assert.deepEqual(assembly.setSelection(selection, { motorCount: 1 }), { Motors: false });
+  assert.ok(motor.stock.every((mesh) => mesh.visible));
+  assert.deepEqual(assembly.setSelection(selection, { motorCount: 2 }), { Motors: true });
+  assert.ok(motor.stock.every((mesh) => !mesh.visible));
+  assert.equal(motor.preview.root.children.length, 2);
+  root.updateMatrixWorld(true);
+  const centers = motor.preview.root.children.map((child) =>
+    new THREE.Box3().setFromObject(child).getCenter(new THREE.Vector3()),
+  );
+  assert.ok(centers[0].x < -0.45 && centers[1].x > 0.45);
+  motor.preview.root.traverse((mesh) => assert.equal(mesh.userData.tireGeometry, undefined));
+  assert.deepEqual(assembly.setSelection(select('p169'), { motorCount: 2 }), { Motors: false });
+  assert.ok(motor.stock.every((mesh) => mesh.visible));
+  assembly.dispose();
   disposeModelResources(root);
 });
 
 for (const [profile, url] of Object.entries(BLENDER_MODELS)) {
   test(`${profile} exported GLB parses through Three.js and exposes solid, selectable mount geometry`, async () => {
-    const file = await readFile(new URL(`../apps/web/public${url}`, import.meta.url));
-    const bytes = file.buffer.slice(file.byteOffset, file.byteOffset + file.byteLength);
-    // Node has no browser bitmap decoder. Preserve geometry/material slots here;
-    // the Dualtron browser journey decodes every embedded image and checks rendering.
-    const loader = new GLTFLoader().register(() => ({
-      name: 'NodeGeometryTextures',
-      loadTexture: () => Promise.resolve(new THREE.Texture()),
-    }));
-    const { scene: root } = await loader.parseAsync(bytes, '');
+    const root = await loadVehicle(url);
     const bounds = new THREE.Box3().setFromObject(root);
     const size = bounds.getSize(new THREE.Vector3());
     // The expanded catalog includes junior motorcycles and wider road-legal mirrors.

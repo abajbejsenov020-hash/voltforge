@@ -8,6 +8,7 @@ import * as THREE from 'three';
 import { getVehicleVisual } from '@voltforge/shared/visuals';
 import { normalizeVehicleName } from '@voltforge/shared/vehicles';
 import { PartPreviews } from './components/index.js';
+import { createVehiclePaint } from './vehicle-paint.js';
 import {
   BLENDER_MODELS,
   blenderModelKey,
@@ -55,17 +56,35 @@ export function createVehicleScene() {
     elevation = 0.22,
     distance = 2.95,
     zoom = 1,
+    motorCount,
     auto = false,
     explode = false,
+    explodeProgress = 0,
+    transition = null,
     drag = null,
     frameId = 0,
     pending = false,
     view = 'overall',
     assembly = null,
+    paintModel = null,
+    paint = {},
+    swaps = {},
     requestedProfile = '',
-    modelBounds = null,
+    assembledFit = null,
+    explodedFit = null,
+    explodedDistance = 0,
+    framing = null,
     disposed = false;
-  const basePositions = new Map();
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const explodeButton = document.querySelector('#explode');
+  const rotateButton = document.querySelector('#rotate');
+  const explodedCenter = new T.Vector3();
+  const assembledTargets = {
+    overall: new T.Vector3(),
+    cockpit: new T.Vector3(),
+    drivetrain: new T.Vector3(),
+    frame: new T.Vector3(),
+  };
   const listeners = new AbortController();
   const listen = (name, handler, options = {}) =>
     canvas.addEventListener(name, handler, { ...options, signal: listeners.signal });
@@ -85,10 +104,9 @@ export function createVehicleScene() {
       scene.remove(model);
       model = root;
       scene.add(model);
-      assembly = createBlenderAssembly(model, (part) => PartPreviews.createModel(part, T));
-      assembly.setSelection(parts);
-      updateExplode();
-      modelBounds = new T.Box3().setFromObject(model);
+      paintModel = createVehiclePaint(model);
+      paintModel.setPaint(paint);
+      mountParts();
       modelState('blender', 'ready', 'Blender · photo-based 3D model');
       setView(view);
       resize();
@@ -691,37 +709,91 @@ export function createVehicleScene() {
 
   function disposeModel() {
     assembly?.dispose();
+    paintModel?.dispose();
     assembly = null;
+    paintModel = null;
+    swaps = {};
     disposeModelResources(model, new Set(Object.values(M)));
     scene.remove(model);
     model = new T.Group();
     scene.add(model);
     batteryGroup = controllerGroup = null;
-    basePositions.clear();
-    modelBounds = null;
+    assembledFit = null;
+    explodedFit = null;
+    explodeButton.disabled = true;
     camera.clearViewOffset();
   }
-  function updateExplode() {
-    if (assembly) assembly.setExploded(explode);
+  function positionParts(progress) {
+    assembly?.setExploded(progress);
+  }
+  function mountParts() {
+    assembly = createBlenderAssembly(model, (part) => PartPreviews.createModel(part, T));
+    swaps = assembly.setSelection(parts, { motorCount });
+    measureAssembly();
+  }
+  function fitGeometry() {
+    model.updateMatrixWorld(true);
+    const points = [];
+    const bounds = new T.Box3();
+    model.traverseVisible((mesh) => {
+      if (!mesh.isMesh) return;
+      if (!mesh.geometry.boundingBox) mesh.geometry.computeBoundingBox();
+      const { min, max } = mesh.geometry.boundingBox;
+      for (const x of [min.x, max.x])
+        for (const y of [min.y, max.y])
+          for (const z of [min.z, max.z]) {
+            const point = new T.Vector3(x, y, z).applyMatrix4(mesh.matrixWorld);
+            points.push(point);
+            bounds.expandByPoint(point);
+          }
+    });
+    return { bounds, points, center: bounds.getCenter(new T.Vector3()) };
+  }
+  function measureAssembly() {
+    positionParts(0);
+    assembledFit = fitGeometry();
+    const { bounds, center } = assembledFit;
+    assembledTargets.overall.copy(center);
+    const size = bounds.getSize(new T.Vector3());
+    assembledTargets.cockpit.set(center.x + size.x * 0.15, bounds.max.y - size.y * 0.08, center.z);
+    assembledTargets.frame.set(center.x, center.y - size.y * 0.08, center.z);
+    const wheel = model.getObjectByName('RearWheel') || model.getObjectByName('MotorMount');
+    if (wheel) new T.Box3().setFromObject(wheel).getCenter(assembledTargets.drivetrain);
     else
-      for (const [node, offset] of [
-        [batteryGroup, [0, 0.5, -0.24]],
-        [controllerGroup, [0, 0.28, 0.27]],
-      ]) {
-        if (!node) continue;
-        if (!basePositions.has(node)) basePositions.set(node, node.position.clone());
-        node.position.copy(basePositions.get(node));
-        if (explode) node.position.add(new T.Vector3(...offset));
-      }
-    if (assembly) {
-      modelBounds = new T.Box3().setFromObject(model);
-      if (view === 'overall') distance = overallDistance();
+      assembledTargets.drivetrain.set(
+        bounds.min.x + size.x * 0.2,
+        bounds.min.y + size.y * 0.2,
+        center.z,
+      );
+    explodeButton.disabled = !assembly.canExplode;
+    positionParts(1);
+    explodedFit = fitGeometry();
+    explodedCenter.copy(explodedFit.center);
+    positionParts(explodeProgress);
+    fitView();
+  }
+  function setExploded(next) {
+    if (next && explodeButton.disabled) return;
+    explode = next;
+    explodeButton.setAttribute('aria-pressed', String(explode));
+    const end = Number(explode);
+    transition =
+      !reduceMotion.matches && explodeProgress !== end
+        ? { from: explodeProgress, end, start: performance.now() }
+        : null;
+    if (!transition) {
+      explodeProgress = end;
+      positionParts(end);
     }
+    canvas.dataset.explodeState = transition ? 'moving' : explode ? 'exploded' : 'assembled';
+    fitView({ keepDistance: true });
+    requestDraw();
   }
   function build() {
-    if (assembly && requestedProfile === visual.profile) {
-      assembly.setSelection(parts);
-      updateExplode();
+    if (paintModel && requestedProfile === visual.profile) {
+      swaps = assembly.setSelection(parts, { motorCount });
+      measureAssembly();
+      canvas.dispatchEvent(new CustomEvent('modelsourcechange'));
       requestDraw();
       return;
     }
@@ -751,49 +823,64 @@ export function createVehicleScene() {
       else scooter();
     } else if (visual.profile === 'surron-lbx') lightBee();
     else bicycle();
-    updateExplode();
+    if (batteryGroup) batteryGroup.name = 'BatteryMount';
+    if (controllerGroup) controllerGroup.name = 'ControllerMount';
+    mountParts();
   }
   function requestDraw() {
     if (pending || disposed) return;
     pending = true;
     frameId = requestAnimationFrame(render);
   }
-  function render() {
+  function render(now) {
     pending = false;
-    if (disposed) return;
-    const d = distance / zoom;
-    if (view === 'overall') target.set(0, 0.62, 0);
-    if (view === 'cockpit')
-      target.set(kind === 'bike' ? 0.35 : 0.18, kind === 'bike' ? 1.06 : 1.17, 0);
-    if (view === 'drivetrain')
-      target.set(kind === 'bike' ? -0.66 : -0.55, kind === 'bike' ? 0.34 : 0.16, 0);
-    if (view === 'frame')
-      target.set(kind === 'bike' ? -0.04 : -0.03, kind === 'bike' ? 0.66 : 0.34, 0);
-    if (modelBounds) {
-      const center = modelBounds.getCenter(new T.Vector3());
-      const size = modelBounds.getSize(new T.Vector3());
-      if (view === 'overall') target.copy(center);
-      if (view === 'cockpit')
-        target.set(center.x + size.x * 0.15, modelBounds.max.y - size.y * 0.08, center.z);
-      if (view === 'frame') target.copy(center).add(new T.Vector3(0, -size.y * 0.08, 0));
-      if (view === 'drivetrain') {
-        const wheel = model.getObjectByName('RearWheel') || model.getObjectByName('MotorMount');
-        if (wheel) new T.Box3().setFromObject(wheel).getCenter(target);
-        else
-          target.set(modelBounds.min.x + size.x * 0.2, modelBounds.min.y + size.y * 0.2, center.z);
+    if (disposed || canvas.hidden) return;
+    if (transition) {
+      const { from, end, start } = transition;
+      const duration = Math.max(130, 920 * Math.abs(end - from));
+      const t = T.MathUtils.clamp((now - start) / duration, 0, 1);
+      explodeProgress = T.MathUtils.lerp(from, end, t);
+      positionParts(explodeProgress);
+      if (t === 1) {
+        transition = null;
+        canvas.dataset.explodeState = explode ? 'exploded' : 'assembled';
       }
     }
+    const spread = T.MathUtils.smoothstep(explodeProgress, 0, 1);
+    const d = T.MathUtils.lerp(distance / zoom, explodedDistance / zoom, spread);
+    if (assembledFit) target.copy(assembledTargets[view]);
+    else target.set(0, 0.62, 0);
+    if (explodedFit) target.lerp(explodedCenter, spread);
+    const yaw = azimuth + 0.22 * spread;
+    const pitch = elevation + Math.max(0, 0.46 - elevation) * spread;
     camera.position.set(
-      target.x + Math.sin(azimuth) * d,
-      target.y + Math.sin(elevation) * d,
-      target.z + Math.cos(azimuth) * d,
+      target.x + Math.sin(yaw) * d,
+      target.y + Math.sin(pitch) * d,
+      target.z + Math.cos(yaw) * d,
     );
     camera.lookAt(target);
+    const offset = (view === 'overall' ? 1 : spread) * (framing?.offset || 0);
+    if (offset) {
+      if (
+        !camera.view?.enabled ||
+        camera.view?.offsetY !== offset ||
+        camera.view?.fullWidth !== framing.width ||
+        camera.view?.fullHeight !== framing.height
+      )
+        camera.setViewOffset(
+          framing.width,
+          framing.height,
+          0,
+          offset,
+          framing.width,
+          framing.height,
+        );
+    } else if (!offset && camera.view?.enabled) camera.clearViewOffset();
     renderer.render(scene, camera);
     if (auto) {
       azimuth += 0.003;
-      requestDraw();
     }
+    if (auto || transition) requestDraw();
   }
   function resize() {
     if (disposed) return;
@@ -802,7 +889,7 @@ export function createVehicleScene() {
     renderer.setSize(r.width, r.height, false);
     camera.aspect = r.width / r.height;
     camera.updateProjectionMatrix();
-    if (modelBounds && view === 'overall') distance = overallDistance();
+    fitView();
     requestDraw();
   }
   const resizeObserver = new ResizeObserver(resize);
@@ -811,7 +898,7 @@ export function createVehicleScene() {
     drag = [e.clientX, e.clientY];
     canvas.setPointerCapture(e.pointerId);
     auto = false;
-    document.querySelector('#rotate').classList.remove('active');
+    rotateButton.classList.remove('active');
   });
   listen('pointermove', (e) => {
     if (!drag) return;
@@ -853,65 +940,75 @@ export function createVehicleScene() {
     requestDraw();
   };
   document.querySelector('#resetView').onclick = () => setView('overall');
-  document.querySelector('#rotate').onclick = (e) => {
+  rotateButton.onclick = (e) => {
     auto = !auto;
     e.currentTarget.classList.toggle('active', auto);
     requestDraw();
   };
-  document.querySelector('#explode').onclick = (e) => {
-    explode = !explode;
-    e.currentTarget.setAttribute('aria-pressed', explode);
-    updateExplode();
-    requestDraw();
+  explodeButton.disabled = true;
+  explodeButton.onclick = () => {
+    auto = false;
+    rotateButton.classList.remove('active');
+    setExploded(!explode);
   };
+  reduceMotion.addEventListener('change', () => setExploded(explode), {
+    signal: listeners.signal,
+  });
   listen('webglcontextlost', (e) => {
     e.preventDefault();
     auto = false;
   });
   listen('webglcontextrestored', () => location.reload());
-  function overallDistance() {
-    if (!modelBounds) return kind === 'bike' ? 3.25 : 2.95;
-    const radius = modelBounds.getSize(new T.Vector3()).length() / 2;
-    const vertical = T.MathUtils.degToRad(camera.fov / 2);
-    const horizontal = Math.atan(Math.tan(vertical) * camera.aspect);
-    const original = (radius / Math.sin(Math.min(vertical, horizontal))) * 1.12;
+  function fitView({ keepDistance = false } = {}) {
     const rect = canvas.getBoundingClientRect();
-    if (!rect.width || !rect.height) return original;
     const inspection = document.querySelector('.model-inspection').getBoundingClientRect();
     const controls = document.querySelector('.stage-controls').getBoundingClientRect();
     const top = Math.max(12, inspection.bottom - rect.top + 12);
     const bottom = Math.min(rect.height - 12, controls.top - rect.top - 12);
-    if (bottom <= top) return original;
-    // Center the model in the unobscured part of the canvas, including on phones.
-    camera.setViewOffset(
-      rect.width,
-      rect.height,
-      0,
-      rect.height / 2 - (top + bottom) / 2,
-      rect.width,
-      rect.height,
+    // Fit in the portion of the canvas between the inspection and camera controls.
+    framing =
+      rect.width && bottom > top
+        ? {
+            width: rect.width,
+            height: rect.height,
+            heightFraction: (bottom - top) / rect.height,
+            offset: rect.height / 2 - (top + bottom) / 2,
+          }
+        : null;
+    if (!keepDistance && view === 'overall')
+      distance = fitDistance(assembledFit, azimuth, elevation);
+    explodedDistance = Math.max(
+      distance * 1.12,
+      fitDistance(explodedFit, azimuth + 0.22, Math.max(elevation, 0.46)),
     );
-    const direction = new T.Vector3(Math.sin(azimuth), Math.sin(elevation), Math.cos(azimuth));
+  }
+  function fitDistance(geometry, yaw, pitch) {
+    if (!geometry?.points.length) return kind === 'bike' ? 3.25 : 2.95;
+    const { bounds, points, center } = geometry;
+    const radius = bounds.getSize(new T.Vector3()).length() / 2;
+    const vertical = T.MathUtils.degToRad(camera.fov / 2);
+    const horizontal = Math.atan(Math.tan(vertical) * camera.aspect);
+    const original = (radius / Math.sin(Math.min(vertical, horizontal))) * 1.04;
+    if (!framing) return original;
+    const direction = new T.Vector3(Math.sin(yaw), Math.sin(pitch), Math.cos(yaw));
     const orbitLength = direction.length();
     direction.normalize();
     const right = new T.Vector3().crossVectors(camera.up, direction).normalize();
     const up = new T.Vector3().crossVectors(direction, right);
-    const center = modelBounds.getCenter(new T.Vector3());
-    const tanX = Math.tan(horizontal) * Math.max(0.1, (rect.width - 32) / rect.width);
-    const tanY = Math.tan(vertical) * ((bottom - top) / rect.height);
+    const tanX = Math.tan(horizontal) * Math.max(0.1, (framing.width - 32) / framing.width);
+    const tanY = Math.tan(vertical) * framing.heightFraction;
     let fitted = 0;
-    for (const x of [modelBounds.min.x, modelBounds.max.x])
-      for (const y of [modelBounds.min.y, modelBounds.max.y])
-        for (const z of [modelBounds.min.z, modelBounds.max.z]) {
-          const corner = new T.Vector3(x, y, z).sub(center);
-          const depth = corner.dot(direction);
-          fitted = Math.max(
-            fitted,
-            (Math.abs(corner.dot(right)) * 1.04) / tanX + depth,
-            (Math.abs(corner.dot(up)) * 1.04) / tanY + depth,
-          );
-        }
-    return Math.max(original, fitted / orbitLength);
+    const corner = new T.Vector3();
+    for (const point of points) {
+      corner.copy(point).sub(center);
+      const depth = corner.dot(direction);
+      fitted = Math.max(
+        fitted,
+        (Math.abs(corner.dot(right)) * 1.04) / tanX + depth,
+        (Math.abs(corner.dot(up)) * 1.04) / tanY + depth,
+      );
+    }
+    return fitted / orbitLength;
   }
   function setView(v) {
     view = v;
@@ -920,7 +1017,6 @@ export function createVehicleScene() {
     if (v === 'overall') {
       azimuth = 0.5;
       elevation = 0.22;
-      distance = overallDistance();
     }
     if (v === 'cockpit') {
       distance = 1.02;
@@ -940,6 +1036,7 @@ export function createVehicleScene() {
     document
       .querySelectorAll('[data-view]')
       .forEach((b) => b.setAttribute('aria-pressed', b.dataset.view === v));
+    fitView();
     requestDraw();
   }
   document
@@ -947,6 +1044,14 @@ export function createVehicleScene() {
     .forEach((b) => (b.onclick = () => setView(b.dataset.view)));
   return {
     setEnvironment: environment.set,
+    getPaintZones: () => paintModel?.zones || [],
+    getPaintColors: () => paintModel?.colors || {},
+    getSwaps: () => swaps,
+    setPaint(next) {
+      paint = next;
+      paintModel?.setPaint(paint);
+      requestDraw();
+    },
     resize,
     dispose() {
       if (disposed) return;
@@ -961,6 +1066,7 @@ export function createVehicleScene() {
       resizeObserver.disconnect();
       cancelAnimationFrame(frameId);
       assembly?.dispose();
+      paintModel?.dispose();
       disposeModelResources(model);
       const materialRoot = new T.Group();
       for (const material of Object.values(M)) {
@@ -975,9 +1081,11 @@ export function createVehicleScene() {
       studioEnvironment.dispose();
       renderer.dispose();
     },
-    update(type, selection, category, vehicleName = '') {
+    update(type, selection, category, vehicleName = '', nextPaint = {}, nextMotorCount) {
       if (disposed) return;
-      const k = type + vehicleName + JSON.stringify(selection);
+      if (paint !== nextPaint) this.setPaint(nextPaint);
+      motorCount = nextMotorCount;
+      const k = JSON.stringify([type, vehicleName, selection, motorCount]);
       visual = getVehicleVisual(vehicleName, type);
       const modelKey = blenderModelKey(vehicleName);
       visual.profile =
@@ -988,6 +1096,11 @@ export function createVehicleScene() {
             : 'mountain-bike'
           : visual.profile);
       if (k !== selectionKey) {
+        if (requestedProfile !== visual.profile) {
+          transition = null;
+          explodeProgress = 0;
+          setExploded(false);
+        }
         if (kind !== type) {
           zoom = 1;
           view = 'overall';

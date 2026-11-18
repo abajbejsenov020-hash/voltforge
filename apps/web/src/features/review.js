@@ -2,6 +2,7 @@ import { esc, $ } from '../ui/dom.js';
 import { CATEGORIES, CATALOG } from '@voltforge/shared/catalog';
 import { peakPowerLabel, peakPowerText } from '@voltforge/shared/performance';
 import { effectiveMotorCount } from '@voltforge/shared/stock';
+import { PAINT_ZONES } from '@voltforge/shared/build';
 import { factorySummary, componentName } from '../ui/stock.js';
 export function createFeature(app) {
   function review({ focusIssues = false } = {}) {
@@ -80,6 +81,15 @@ export function createFeature(app) {
                     : ' | Planning template')
               : 'Not selected'),
         ),
+        ...(Object.keys(app.state.paint || {}).length
+          ? [
+              '',
+              'PAINT',
+              ...Object.entries(app.state.paint).map(
+                ([zone, color]) => PAINT_ZONES[zone] + ': ' + color,
+              ),
+            ]
+          : []),
         '',
         'USER-ENTERED MEASUREMENTS',
         ...Object.entries(app.state.specs).map(([k, v]) => k + ': ' + (v || 'Unknown')),

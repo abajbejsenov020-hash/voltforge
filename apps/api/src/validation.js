@@ -1,3 +1,4 @@
+import { isPaintColor, normalizePaint, PAINT_ZONES } from '@voltforge/shared/build';
 import { HttpError } from './http.js';
 
 const SPEC_FIELDS = new Set([
@@ -98,6 +99,17 @@ export function createBuildValidator(catalog, categories) {
         invalid(`selected.${category}`, 'The selected part does not belong to this category.');
       selected[category] = partId;
     }
+    const sourcePaint = input.paint ?? {};
+    if (!isRecord(sourcePaint)) invalid('paint', 'paint must be an object of zones and colors.');
+    for (const [zone, color] of Object.entries(sourcePaint)) {
+      if (!Object.hasOwn(PAINT_ZONES, zone) || !isPaintColor(color)) {
+        invalid(
+          'paint',
+          'Paint requires a supported zone and a hexadecimal color such as #217c83.',
+        );
+      }
+    }
+    const paint = normalizePaint(sourcePaint);
     if (!isRecord(input.specs ?? {})) invalid('specs', 'specs must be an object.');
     const specs = {};
     for (const [key, value] of Object.entries(input.specs ?? {})) {
@@ -144,6 +156,7 @@ export function createBuildValidator(catalog, categories) {
       mode: input.mode,
       vehicle,
       selected,
+      paint,
       specs,
       performance,
       updated,

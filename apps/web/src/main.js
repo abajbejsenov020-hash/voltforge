@@ -16,7 +16,13 @@ const store = new BuildStore({
 });
 status.textContent = 'Opening your workspace…';
 await store.initialize();
-const viewer = createVehicleViewer({ sceneFactory: createVehicleScene });
+const viewer = createVehicleViewer({
+  sceneFactory: createVehicleScene,
+  onPaintChange(paint) {
+    store.current.paint = paint;
+    store.save();
+  },
+});
 const app = createWorkbench({ store, scene: viewer });
 window.addEventListener('online', async () => {
   await store.initialize();

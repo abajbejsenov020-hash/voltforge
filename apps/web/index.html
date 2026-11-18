@@ -123,12 +123,30 @@
                 </svg></button
               ><button id="zoomIn" class="control" aria-label="Zoom in">+</button
               ><button id="zoomOut" class="control" aria-label="Zoom out">−</button><span></span
-              ><button id="explode" class="control wide" aria-pressed="false">Exploded view</button
+              ><button id="explode" class="control wide" aria-pressed="false" disabled>
+                Exploded view</button
               ><button id="resetView" class="control" aria-label="Reset view">↺</button>
             </div>
             <p class="scene-note" id="sceneNote">
               Original appearance · selected modifications are listed in your build
             </p>
+          </div>
+          <div id="modelEdits" class="model-edits" hidden>
+            <div
+              id="paintControls"
+              class="paint-controls"
+              role="group"
+              aria-label="Vehicle paint"
+              hidden
+            >
+              <label for="paintZone">Paint</label>
+              <select id="paintZone" aria-label="Paintable part"></select>
+              <label class="paint-swatch">
+                <input id="paintColor" type="color" aria-label="Paint color" value="#64696e" />
+              </label>
+              <button type="button" class="text-btn" id="resetPaint">Reset color</button>
+            </div>
+            <p id="swapStatus" role="status" hidden></p>
           </div>
           <p id="referenceVariant" class="reference-variant"></p>
           <div class="build-strip">
