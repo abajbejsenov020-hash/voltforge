@@ -26,6 +26,9 @@
 .stage[data-environment='garage']::before {
   background: #343b3d;
 }
+.stage[data-environment='coast']::before {
+  background: linear-gradient(#8c729f, #dda7ae 48%, #a98d84);
+}
 .stage-top {
   z-index: 3;
   top: 18px;

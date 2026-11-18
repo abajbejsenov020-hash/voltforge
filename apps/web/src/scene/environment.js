@@ -2,6 +2,13 @@ import * as THREE from 'three';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 import { createGarage } from './garage.js';
 import { createChargingPlaza } from './plaza.js';
+import { createCoastalSunset } from './coastal-sunset.js';
+
+const PHYSICAL_STAGES = {
+  garage: createGarage,
+  plaza: createChargingPlaza,
+  coast: createCoastalSunset,
+};
 
 const SETTINGS = {
   garage: {
@@ -33,6 +40,8 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   const loader = new RGBELoader();
   const generator = new THREE.PMREMGenerator(renderer);
   const fallbackEnvironment = scene.environment;
+  const defaultKeyPosition = key.position.clone();
+  const defaultFillPosition = fill.position.clone();
   const ambientLights = scene.children
     .filter(
       (light) =>
@@ -113,8 +122,8 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     });
   }
   function physicalStatus() {
-    if (disposed || !physicalStage || !['garage', 'plaza'].includes(activeName)) return;
-    const title = activeName === 'plaza' ? 'City plaza' : 'Garage';
+    if (disposed || !physicalStage) return;
+    const title = { coast: 'Coastal Sunset', plaza: 'City plaza', garage: 'Garage' }[activeName];
     const status = document.querySelector('#sceneEnvironmentStatus');
     if (status)
       status.textContent =
@@ -126,36 +135,55 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
               ? title + ' · parked model unavailable'
               : activeName === 'plaza'
                 ? 'City plaza · 3D night setting'
-                : stageLighting === 'hdr'
-                  ? 'Garage · 3D workshop'
-                  : 'Garage · studio lighting';
+                : activeName === 'coast'
+                  ? 'Coastal Sunset · 3D waterfront'
+                  : stageLighting === 'hdr'
+                    ? 'Garage · 3D workshop'
+                    : 'Garage · studio lighting';
   }
   function prepare(name) {
-    const physical = name === 'garage' || name === 'plaza';
+    const physical = Object.hasOwn(PHYSICAL_STAGES, name);
+    const coast = name === 'coast';
     floor.material = physical ? shadowMaterial : groundMaterial;
     floor.visible = !physical;
     floor.position.y = physical ? -0.006 : -0.046;
     platform.visible = rim.visible = !physical;
     seams.visible = !physical && name !== 'studio';
     grid.visible = false;
-    scene.fog = name === 'plaza' ? new THREE.FogExp2(0x142235, 0.038) : null;
+    scene.fog =
+      name === 'plaza'
+        ? new THREE.FogExp2(0x142235, 0.038)
+        : coast
+          ? new THREE.FogExp2(0xc5a0b2, 0.025)
+          : null;
     scene.backgroundIntensity = 1;
     scene.backgroundBlurriness = 0;
     scene.backgroundRotation.y = 0;
     scene.environmentRotation.y = 0;
-    key.color.setHex(physical ? 0xffdfb6 : 0xfff8e9);
-    fill.color.setHex(physical ? 0xb8d7ff : 0xe4ecff);
+    key.position.copy(defaultKeyPosition);
+    fill.position.copy(defaultFillPosition);
+    key.color.setHex(coast ? 0xffbd96 : physical ? 0xffdfb6 : 0xfff8e9);
+    fill.color.setHex(coast ? 0xd9dcff : physical ? 0xb8d7ff : 0xe4ecff);
+    if (coast) {
+      key.position.set(-3, 3.5, -5);
+      fill.position.set(2, 2.5, 3);
+    }
     key.intensity = name === 'plaza' ? 2.3 : physical ? 2.8 : 4;
     fill.intensity = name === 'plaza' ? 0.9 : physical ? 1.45 : 2;
     for (const { light, intensity } of ambientLights)
       light.intensity = intensity * (name === 'plaza' ? 0.2 : physical ? 0.48 : 1);
     scene.environment = fallbackEnvironment;
-    scene.environmentIntensity = physical ? 0.65 : 1;
+    scene.environmentIntensity = coast ? 0.55 : physical ? 0.65 : 1;
     renderer.toneMappingExposure = physical ? 1 : 1.12;
   }
   async function set(requestedName = 'garage') {
     if (disposed) return;
-    const name = requestedName === 'studio' || SETTINGS[requestedName] ? requestedName : 'garage';
+    const name =
+      requestedName === 'studio' ||
+      Object.hasOwn(SETTINGS, requestedName) ||
+      Object.hasOwn(PHYSICAL_STAGES, requestedName)
+        ? requestedName
+        : 'garage';
     const revision = ++sequence;
     if (name !== activeName) {
       physicalStage?.dispose();
@@ -165,15 +193,19 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     const status = document.querySelector('#sceneEnvironmentStatus');
     prepare(name);
     scene.background = new THREE.Color(
-      name === 'plaza' ? 0x131f30 : name === 'garage' ? 0x343b3d : 0xe8e5df,
+      { coast: 0xca9db6, plaza: 0x131f30, garage: 0x343b3d }[name] ?? 0xe8e5df,
     );
-    const physical = name === 'garage' || name === 'plaza';
-    if (physical) {
-      stageLighting = 'loading';
+    const create = PHYSICAL_STAGES[name];
+    if (create) {
+      stageLighting = name === 'coast' ? 'studio' : 'loading';
       if (!physicalStage) {
-        const create = name === 'plaza' ? createChargingPlaza : createGarage;
         physicalStage = create({ scene, onChange, onStatus: physicalStatus });
       }
+    }
+    if (name === 'coast') {
+      physicalStatus();
+      onChange();
+      return;
     }
     if (name === 'studio') {
       groundMaterial.color.setHex(0xb6b5ad);
@@ -193,7 +225,7 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
       scene.environmentRotation.y = setting.rotation;
     }
     renderer.toneMappingExposure = setting.exposure;
-    if (physical) {
+    if (create) {
       stageLighting = light ? 'hdr' : 'studio';
       physicalStatus();
     } else {

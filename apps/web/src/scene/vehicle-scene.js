@@ -74,6 +74,7 @@ export function createVehicleScene() {
     explodedFit = null,
     explodedDistance = 0,
     framing = null,
+    settingName = '',
     disposed = false;
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const explodeButton = document.querySelector('#explode');
@@ -191,7 +192,7 @@ export function createVehicleScene() {
     fill,
     onChange: requestDraw,
   });
-  void environment.set(document.querySelector('#sceneSetting')?.value || 'workshop');
+  void setEnvironment(document.querySelector('#sceneSetting')?.value || 'garage');
   function mat(color, metalness = 0, roughness = 0.6, extra = {}) {
     return new T.MeshStandardMaterial({ color, metalness, roughness, ...extra });
   }
@@ -852,7 +853,7 @@ export function createVehicleScene() {
     else target.set(0, 0.62, 0);
     if (explodedFit) target.lerp(explodedCenter, spread);
     const yaw = azimuth + 0.22 * spread;
-    const pitch = elevation + Math.max(0, 0.46 - elevation) * spread;
+    const pitch = orbitPitch(spread);
     camera.position.set(
       target.x + Math.sin(yaw) * d,
       target.y + Math.sin(pitch) * d,
@@ -959,6 +960,20 @@ export function createVehicleScene() {
     auto = false;
   });
   listen('webglcontextrestored', () => location.reload());
+  function orbitPitch(explodedFraction) {
+    const coast = settingName === 'coast' && view === 'overall';
+    const base = coast ? Math.max(-0.12, elevation - 0.13) : elevation;
+    const inspectionPitch = coast ? 0.26 : 0.46;
+    return base + Math.max(0, inspectionPitch - base) * explodedFraction;
+  }
+  function setEnvironment(name) {
+    if (name === settingName) return;
+    settingName = name;
+    camera.far = name === 'coast' ? 155 : 50;
+    camera.updateProjectionMatrix();
+    fitView();
+    return environment.set(name);
+  }
   function fitView({ keepDistance = false } = {}) {
     const rect = canvas.getBoundingClientRect();
     const inspection = document.querySelector('.model-inspection').getBoundingClientRect();
@@ -976,10 +991,10 @@ export function createVehicleScene() {
           }
         : null;
     if (!keepDistance && view === 'overall')
-      distance = fitDistance(assembledFit, azimuth, elevation);
+      distance = fitDistance(assembledFit, azimuth, orbitPitch(0));
     explodedDistance = Math.max(
       distance * 1.12,
-      fitDistance(explodedFit, azimuth + 0.22, Math.max(elevation, 0.46)),
+      fitDistance(explodedFit, azimuth + 0.22, orbitPitch(1)),
     );
   }
   function fitDistance(geometry, yaw, pitch) {
@@ -1043,7 +1058,7 @@ export function createVehicleScene() {
     .querySelectorAll('[data-view]')
     .forEach((b) => (b.onclick = () => setView(b.dataset.view)));
   return {
-    setEnvironment: environment.set,
+    setEnvironment,
     getPaintZones: () => paintModel?.zones || [],
     getPaintColors: () => paintModel?.colors || {},
     getSwaps: () => swaps,
