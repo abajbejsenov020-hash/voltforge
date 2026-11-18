@@ -4,23 +4,23 @@
     "key": "dualtron-thunder",
     "url": "/models/expansion/premium/dualtron-thunder.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-thunder.blend",
-    "triangles": 52068,
-    "meshes": 34,
-    "bytes": 1410608,
+    "triangles": 58390,
+    "meshes": 38,
+    "bytes": 1990960,
     "family": "Dualtron Thunder verified photographic exterior"
   },
   "bounds": [
     [
       -0.6517000198364258,
-      -0.30500003695487976,
+      -0.30011051893234253,
       0.0
     ],
     [
       0.6299999952316284,
-      0.3050000071525574,
-      1.2799930572509766
+      0.3001105785369873,
+      1.2750799655914307
     ]
   ],
-  "observed": "Original Thunder60V35Ah: thick black deck with silver longitudinal pad rails, wide road tyres and compact cartridge C arms.",
+  "observed": "Original Thunder60V35Ah: thick black deck with silver longitudinal pad rails, wide road tyres and compact cartridge C arms. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

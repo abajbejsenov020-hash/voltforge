@@ -47,11 +47,15 @@ export function blenderModelKey(name) {
 
 // Each load owns its resources. No mutable scene or GPU resource is cached/shared.
 const disposedResources = new WeakSet();
+const closedImages = new WeakSet();
 export function disposeModelResources(root, protectedMaterials = new Set()) {
   const resources = new Set();
   const protectedTextures = new Set();
   for (const material of protectedMaterials)
     for (const value of Object.values(material)) if (value?.isTexture) protectedTextures.add(value);
+  const protectedImages = new Set(
+    [...protectedTextures].flatMap((texture) => [texture.source?.data].flat()),
+  );
   root.traverse((object) => {
     if (object.geometry) resources.add(object.geometry);
     for (const material of [object.material].flat().filter(Boolean)) {
@@ -65,6 +69,18 @@ export function disposeModelResources(root, protectedMaterials = new Set()) {
     if (disposedResources.has(resource)) continue;
     disposedResources.add(resource);
     resource.dispose();
+    // GLTFLoader's ImageBitmaps need explicit CPU-side release as well as texture disposal.
+    if (resource.isTexture)
+      for (const image of [resource.source?.data].flat()) {
+        if (
+          typeof image?.close !== 'function' ||
+          protectedImages.has(image) ||
+          closedImages.has(image)
+        )
+          continue;
+        closedImages.add(image);
+        image.close();
+      }
   }
 }
 

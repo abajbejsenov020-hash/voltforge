@@ -4,23 +4,23 @@
     "key": "dualtron-eagle-pro",
     "url": "/models/expansion/premium/dualtron-eagle-pro.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-eagle-pro.blend",
-    "triangles": 52172,
-    "meshes": 32,
-    "bytes": 1414584,
+    "triangles": 57878,
+    "meshes": 36,
+    "bytes": 1972824,
     "family": "Dualtron Eagle Pro exterior"
   },
   "bounds": [
     [
       -0.6180499792098999,
-      -0.30500003695487976,
+      -0.30011051893234253,
       0.0
     ],
     [
       0.597000002861023,
-      0.3050000071525574,
-      1.259993076324463
+      0.30011051893234253,
+      1.255079984664917
     ]
   ],
-  "observed": "Original slender black twin-hinge neck and ten-inch dual hub wheels; no large raised tail.",
+  "observed": "Original slender black twin-hinge neck and ten-inch dual hub wheels; no large raised tail. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

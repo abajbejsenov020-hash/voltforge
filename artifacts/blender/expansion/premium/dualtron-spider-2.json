@@ -4,23 +4,23 @@
     "key": "dualtron-spider-2",
     "url": "/models/expansion/premium/dualtron-spider-2.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-spider-2.blend",
-    "triangles": 53264,
-    "meshes": 34,
-    "bytes": 1465696,
+    "triangles": 59038,
+    "meshes": 38,
+    "bytes": 2037708,
     "family": "Dualtron Spider 2 exterior"
   },
   "bounds": [
     [
       -0.6230499744415283,
-      -0.30500003695487976,
+      -0.30011051893234253,
       0.0
     ],
     [
       0.6019999980926514,
-      0.3050000071525574,
-      1.2899930477142334
+      0.30011051893234253,
+      1.2850799560546875
     ]
   ],
-  "observed": "Slim light chassis, narrow tyres, skeletal rear footplate and black cartridge arms.",
+  "observed": "Slim light chassis, narrow tyres, skeletal rear footplate and black cartridge arms. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

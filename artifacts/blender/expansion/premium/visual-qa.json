@@ -16,5 +16,24 @@
   "unresolved": [
     "Hiley Tiger 8",
     "Hiley Tiger 9"
-  ]
+  ],
+  "dualtronRefinement": {
+    "checked": 23,
+    "sheets": [
+      "dualtron-review-01.jpg",
+      "dualtron-review-02.jpg",
+      "dualtron-review-03.jpg",
+      "dualtron-review-04.jpg",
+      "dualtron-review-05.jpg",
+      "dualtron-review-06.jpg"
+    ],
+    "views": [
+      "exact source photograph",
+      "full",
+      "top",
+      "deck detail"
+    ],
+    "review": "All six sheets visually inspected. Thunder3, Spider, Mini and X2 representative gate accepted by parent before remaining batch. Final source-specific corrections: City open cast spokes with compact motor housings, original Victor low tail, Forever open rear brace. Final corrected full/top/deck views reviewed.",
+    "limitations": "Photographic exterior approximations, including interpreted grip artwork and inferred hidden geometry. Only explicitly cited factory dimensions are independently sourced; no measured CAD or fitment claim."
+  }
 }

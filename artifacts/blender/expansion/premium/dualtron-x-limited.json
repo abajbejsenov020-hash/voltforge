@@ -4,23 +4,23 @@
     "key": "dualtron-x-limited",
     "url": "/models/expansion/premium/dualtron-x-limited.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-x-limited.blend",
-    "triangles": 54908,
-    "meshes": 34,
-    "bytes": 1490220,
+    "triangles": 60718,
+    "meshes": 39,
+    "bytes": 2085552,
     "family": "Dualtron X Limited exterior"
   },
   "bounds": [
     [
-      -0.7379500865936279,
-      -0.32499998807907104,
+      -0.7379499673843384,
+      -0.3196363151073456,
       0.0
     ],
     [
       0.7149999737739563,
-      0.32499998807907104,
-      1.4599930047988892
+      0.31963634490966797,
+      1.4915001392364502
     ]
   ],
-  "observed": "Broad tall auxiliary battery column, very wide road tyres, twin headlamps and fully sprung long chassis.",
+  "observed": "Broad tall auxiliary battery column, very wide road tyres, twin headlamps and fully sprung long chassis. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

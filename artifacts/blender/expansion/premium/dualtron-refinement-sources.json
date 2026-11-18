@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Dualtron Thunder 2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-thunder-2",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-Thunder-2-Rear.jpg?v=1625280749",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Ultra 2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-ultra-ii-1",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-Ultra-II_8fb0d7f2-2daf-45b0-9c7c-ea70392eea4b.jpg?v=1611253726",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Victor Luxury",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-victor-luxury",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/dualtron-victor-luxury-electric-scooter-5_2000x_bd525813-ff27-43d9-bd4f-a63191532208.webp?v=1652555823",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Victor Luxury Plus",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-victor-luxury-1",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/039B953A-C22B-48FD-819A-4B37A5BD6E98.jpg?v=1668117663",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Eagle Pro",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-eagle-pro",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/eagle1.jpg?v=1583519687",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Storm",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-storm",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-Storm_df4daeeb-c4e7-4e48-a2c5-b167b132974e.jpg?v=1611253710",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Storm Limited",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-storm-ltd-limited",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/WhatsAppImage2021-06-26at11.00.37AM_1_1106548a-de7f-40b7-a1f3-fb7304b44253.jpg?v=1625283137",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron X2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-x-ii",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-X-2.jpg?v=1590781065",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Spider 2",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-spider-2",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron_Spider_2_Prdoct_Photo_WR_3__92735.1631644920.jpg?v=1641591349",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD.",
+    "additionalReferences": [
+      "https://www.minimotors.fr/wp-content/uploads/2022/06/Notice-Dualtron-Spider-2.pdf"
+    ],
+    "referenceNote": "Official manufacturer manual search index identifies245mm deck width; direct PDF fetch failed. Modeled deck width0.245m is treated as photo-guided, not independently verified metrology."
+  },
+  {
+    "name": "Dualtron City",
+    "source": "https://www.minimotors-nyc.com/products/dualtron-city",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/DualtronCityProfileelectric-scooter_2000x_06e563c2-74ad-4943-880e-b4cbceadc101.webp?v=1652556868",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Thunder 3",
+    "source": "https://minimotorsusa.com/products/dualtron-thunder-3-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-1.jpg?v=1775404228",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Manual specifies wheelbase about970mm, overall700mm width and1355mm height. 318mm modeled deck is photographic approximation; no separately verified deck-width claim.",
+    "additionalReferences": [
+      "https://www.maxblinker.com/img/cms/Produkty/Dualtron%20Thunder%203/dualtron-thunder-3-3.jpg",
+      "https://minimotors.oss-eu-central-1.aliyuncs.com/upload/2023thunder3%28PRODUCT%20MANUAL.pdf"
+    ],
+    "verifiedFactorySpecs": {
+      "wheelbaseM": 0.97,
+      "handlebarWidthM": 0.7,
+      "overallHeightM": 1.355
+    }
+  },
+  {
+    "name": "Dualtron X Limited",
+    "source": "https://minimotorsusa.com/products/dualtron-limited",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-X-Limited-Image-1.jpg?v=1775403058",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Togo",
+    "source": "https://minimotorsusa.com/products/dualtron-togo-electric-scooter-copy",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Togo-36V-Image-1.jpg?v=1775404422",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Popular",
+    "source": "https://dual-tron.ca/products/dualtron-popular",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0745/6378/0891/files/dualtronpopular_2.webp?v=1695484377",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Achilleus",
+    "source": "https://dual-tron.ca/products/dualtron-achilleus-electric-scooter",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0745/6378/0891/files/DualtronAchilleusElectricScooter1.png?v=1682452652",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Ultra",
+    "source": "https://dualtron.com.es/producto/patinetes-electricos/dualtron-patinetes-electricos/dualtron-ultra/",
+    "imageSource": "https://dualtron.com.es/wp-content/uploads/2022/05/dualtron-ultra-vista-frontal-solorueda.jpg",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Spider",
+    "source": "https://dualtron.uk/products/dualtron-spider-60v-24-5ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/02-DUALTRON_SPIDER_60V_24.5AH.jpg?v=1777723784",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Forever",
+    "source": "https://dualtron.uk/products/forever-18ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/dualtron_forever_longbody.jpg?v=1794576263",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Mini Special",
+    "source": "https://dualtron.uk/products/dualtron-mini-long-body-13ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/PRODUCT-PICTURE-Dualtron-Mini-Special-Single-Motor_c4fe340f-8a62-4f1a-8691-d05c6f7b94ff.jpg?v=1684004621",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Victor",
+    "source": "https://dualtron.uk/products/dualtron-victor-new-24ah",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/01-DUALTRON-VICTOR_2c31bc51-b012-40fc-85fc-318a4731bc4a.jpg?v=1781362159",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Mini",
+    "source": "https://scootidoo.com/products/dualtron-mini",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0820/1302/8691/files/Sans-titre-19.png?v=1789771422",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron Thunder",
+    "source": "https://dualtron.uk/collections/dualtron-thunder",
+    "imageSource": "https://cdn.shopify.com/s/files/1/0012/2640/8024/products/Dualtron-Thunder-60V-35AH-Minimotors-1619985541_600x.jpg?v=1631978742",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  },
+  {
+    "name": "Dualtron X",
+    "source": "https://www.imoveblue.es/patinetes-electricos/160-dualtron-x-6700w.html",
+    "imageSource": "https://www.imoveblue.es/1164-thickbox_default/dualtron-x-6700w.jpg",
+    "basis": "Exact existing named product photograph inspected in dualtron-sources sheets 1\u20133.",
+    "measurements": "Proportions inferred from reference photo; not measured CAD."
+  }
+]

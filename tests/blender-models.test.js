@@ -113,6 +113,22 @@ test('resource disposal deduplicates shared mesh resources and protects scene ma
   assert.deepEqual([geometry, material, map], [1, 1, 1]);
 });
 
+test('owned decoded bitmaps close once while images shared with protected scene textures stay open', () => {
+  let closed = 0;
+  const image = { close: () => closed++ };
+  const owned = new THREE.Texture(image),
+    protectedTexture = new THREE.Texture(image);
+  const protectedMaterial = new THREE.MeshStandardMaterial({ map: protectedTexture });
+  const root = solid();
+  root.children[0].material.map = owned;
+  root.add(new THREE.Mesh(new THREE.BoxGeometry(), protectedMaterial));
+  disposeModelResources(root, new Set([protectedMaterial]));
+  assert.equal(closed, 0);
+  disposeModelResources(root);
+  disposeModelResources(root);
+  assert.equal(closed, 1);
+});
+
 test('exploded mounts preserve authored translations and rotations, and reset without drift', () => {
   const root = new THREE.Group();
   root.rotation.x = -Math.PI / 2;
@@ -144,7 +160,13 @@ for (const [profile, url] of Object.entries(BLENDER_MODELS)) {
   test(`${profile} exported GLB parses through Three.js and exposes solid, selectable mount geometry`, async () => {
     const file = await readFile(new URL(`../apps/web/public${url}`, import.meta.url));
     const bytes = file.buffer.slice(file.byteOffset, file.byteOffset + file.byteLength);
-    const { scene: root } = await new GLTFLoader().parseAsync(bytes, '');
+    // Node has no browser bitmap decoder. Preserve geometry/material slots here;
+    // the Dualtron browser journey decodes every embedded image and checks rendering.
+    const loader = new GLTFLoader().register(() => ({
+      name: 'NodeGeometryTextures',
+      loadTexture: () => Promise.resolve(new THREE.Texture()),
+    }));
+    const { scene: root } = await loader.parseAsync(bytes, '');
     const bounds = new THREE.Box3().setFromObject(root);
     const size = bounds.getSize(new THREE.Vector3());
     // The expanded catalog includes junior motorcycles and wider road-legal mirrors.

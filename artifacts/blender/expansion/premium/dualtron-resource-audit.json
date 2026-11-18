@@ -1,0 +1,431 @@
+{
+  "checked": 23,
+  "embeddedImages": 26,
+  "failures": [],
+  "checks": [
+    {
+      "name": "Dualtron Thunder 2",
+      "images": [
+        {
+          "name": "dualtron-thunder-2-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 235635,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "30c5ceb9bb472ccfecb1d001dc14826e8b257dcd0eda43f4dda58203a2dcdd75"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Ultra 2",
+      "images": [
+        {
+          "name": "dualtron-ultra-2-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234872,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "6d2d2a7d654e6fa1598945b3e3715d9a7a5db02d9142131a4ad01d49542a5462"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Victor Luxury",
+      "images": [
+        {
+          "name": "dualtron-victor-luxury-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 241012,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "7005bc02a2b32f62bb2ea091a6b8c8219c346736b6b165430e25d4ea99d2af70"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Victor Luxury Plus",
+      "images": [
+        {
+          "name": "dualtron-victor-luxury-plus-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 241031,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "8f24d687a7c7b22e962502d5e687e8418ed5b7fa5b3aeb1068eab4dd97564dd2"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Eagle Pro",
+      "images": [
+        {
+          "name": "dualtron-eagle-pro-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 235579,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "f49bb18aed17cba61d4e00dd163aa8ffdbb878798112fa462839ffd908b5a95c"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Storm",
+      "images": [
+        {
+          "name": "dualtron-storm-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 239841,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "3db1d52c3f2a0760d61ee72f0b1938a506ed11b57a6522d52aba4fc89fe2a770"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Storm Limited",
+      "images": [
+        {
+          "name": "dualtron-storm-limited-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 240530,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "89a5dce4a0414f4b91638f3029f61dca306efc011ac929caf6fb4c7e6836cfc9"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron X2",
+      "images": [
+        {
+          "name": "dualtron-x2-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 231654,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "22407b2c1bc77862c706ea605479a6aee9e46abb1ca6bac75693dde82a23a143"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Spider 2",
+      "images": [
+        {
+          "name": "dualtron-spider-2-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 239871,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "dfb12a7e9af34bd26b21e336a36985a8d6547467e19369c772155f66cf281c5f"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron City",
+      "images": [
+        {
+          "name": "dualtron-city-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 233784,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "912e40ba410a595f71b556ca7ef7821f97c9507392c2baf8011f86c758a4ea33"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Thunder 3",
+      "images": [
+        {
+          "name": "dualtron-thunder-3-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 243994,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "6c0cde514dc58ee2b9c59749c790136042a4a79efdead4fbd73decf530da7e8d"
+        },
+        {
+          "name": "ey4-screen",
+          "dimensions": [
+            256,
+            512
+          ],
+          "bytes": 20359,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "e4e67dd157942490e812c2c02a1d5cb1e30bca505fa110a54c9b39c90fa0477e"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron X Limited",
+      "images": [
+        {
+          "name": "dualtron-x-limited-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234388,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "bce8c13fd43e37e6f931d3c017ddba9cc22a1f6d2ca4727002fd4b9cd9cb0344"
+        },
+        {
+          "name": "ey4-screen",
+          "dimensions": [
+            256,
+            512
+          ],
+          "bytes": 20359,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "e4e67dd157942490e812c2c02a1d5cb1e30bca505fa110a54c9b39c90fa0477e"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Togo",
+      "images": [
+        {
+          "name": "dualtron-togo-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 225217,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "5fae0a7f10c4202efdb7524bdf1ff3d6d34b4ca3f8224123d199cac2645b6161"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Popular",
+      "images": [
+        {
+          "name": "dualtron-popular-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 225217,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "5fae0a7f10c4202efdb7524bdf1ff3d6d34b4ca3f8224123d199cac2645b6161"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Achilleus",
+      "images": [
+        {
+          "name": "dualtron-achilleus-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 240013,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "5ccb330ad7236a615fa7a6c1c7445b343a830f2cce467fb6d0808346aa3d11f6"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Ultra",
+      "images": [
+        {
+          "name": "dualtron-ultra-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234326,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "119d263c07e06719d3518e5a63402aade34568110ad9899e10e4ab1ed9a55b42"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Spider",
+      "images": [
+        {
+          "name": "dualtron-spider-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234196,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "b123ab28d6e8c0d42236b22b40c166b9fc0dfe7b51c4e85696f6c38dd97b64b5"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Forever",
+      "images": [
+        {
+          "name": "dualtron-forever-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234242,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "0a11cfe76a74115ffdc54e89e1a00a02d0223d2b5b53a0bc438ffb9db36878f1"
+        },
+        {
+          "name": "ey4-screen",
+          "dimensions": [
+            256,
+            512
+          ],
+          "bytes": 20359,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "e4e67dd157942490e812c2c02a1d5cb1e30bca505fa110a54c9b39c90fa0477e"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Mini Special",
+      "images": [
+        {
+          "name": "dualtron-mini-special-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 236439,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "77d421261e4500be3fba50d3f37b830d6733dce08d42c89246d5bf81019d4395"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Victor",
+      "images": [
+        {
+          "name": "dualtron-victor-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 235281,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "062a6de26b2611d1b1caf5bfd184ea0fe014dfa2f1cd69b763c854bb4d0165fd"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Mini",
+      "images": [
+        {
+          "name": "dualtron-mini-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234119,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "b27df3cc1e97108c07367c23a4b7e0998b5c14a7a3e4f1534f40b99c1d96077b"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron Thunder",
+      "images": [
+        {
+          "name": "dualtron-thunder-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 234205,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "23dadfc5efeb9b859523bd74bd70458ebe2ed19ccaa9f20c77988d59603e00f3"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Dualtron X",
+      "images": [
+        {
+          "name": "dualtron-x-grip",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "bytes": 230860,
+          "encodedBytesEqual": true,
+          "pixelsEqual": true,
+          "sha256": "bdfdd67b196deeb8aeddfa502a7020e5dcbc5e911d2cfe8d702f9488b44193e0"
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

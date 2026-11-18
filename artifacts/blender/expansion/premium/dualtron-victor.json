@@ -4,23 +4,23 @@
     "key": "dualtron-victor",
     "url": "/models/expansion/premium/dualtron-victor.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-victor.blend",
-    "triangles": 52380,
-    "meshes": 35,
-    "bytes": 1416988,
+    "triangles": 58390,
+    "meshes": 38,
+    "bytes": 1988536,
     "family": "Dualtron Victor exterior"
   },
   "bounds": [
     [
       -0.6030499935150146,
-      -0.30500003695487976,
+      -0.30011051893234253,
       0.0
     ],
     [
       0.5820000171661377,
-      0.3050000071525574,
-      1.309993028640747
+      0.30011051893234253,
+      1.3050799369812012
     ]
   ],
-  "observed": "Short square Victor chassis, low single headlight and twin clamp rings.",
+  "observed": "Short square Victor chassis, low single headlight and twin clamp rings. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations. Original Victor reference retains its low unraised tail.",
   "revision": 2
 }

@@ -4,23 +4,23 @@
     "key": "dualtron-mini",
     "url": "/models/expansion/premium/dualtron-mini.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-mini.blend",
-    "triangles": 52268,
-    "meshes": 34,
-    "bytes": 1390104,
+    "triangles": 62310,
+    "meshes": 38,
+    "bytes": 2056708,
     "family": "Dualtron Mini exact photographed appearance"
   },
   "bounds": [
     [
       -0.5744000673294067,
-      -0.30500003695487976,
+      -0.30011051893234253,
       -1.3877787807814457e-17
     ],
     [
       0.5540000200271606,
-      0.3050000071525574,
-      1.2399929761886597
+      0.30011051893234253,
+      1.2350800037384033
     ]
   ],
-  "observed": "Original Mini single rear motor; short black battery deck, compact wheels, double front spring suspension and folding stem.",
+  "observed": "Original Mini single rear motor; short black battery deck, compact wheels, double front spring suspension and folding stem. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

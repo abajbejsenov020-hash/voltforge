@@ -4,23 +4,23 @@
     "key": "dualtron-victor-luxury-plus",
     "url": "/models/expansion/premium/dualtron-victor-luxury-plus.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-victor-luxury-plus.blend",
-    "triangles": 54892,
-    "meshes": 34,
-    "bytes": 1527100,
+    "triangles": 58974,
+    "meshes": 38,
+    "bytes": 2027532,
     "family": "Dualtron Victor Luxury Plus exterior"
   },
   "bounds": [
     [
-      -0.6430500149726868,
-      -0.30500003695487976,
+      -0.6430500745773315,
+      -0.30011051893234253,
       0.0
     ],
     [
       0.621999979019165,
-      0.3050000071525574,
-      1.3599929809570312
+      0.30011051893234253,
+      1.355080008506775
     ]
   ],
-  "observed": "Lengthened Luxury deck, yellow neck badge and integrated illuminated rear brace.",
+  "observed": "Lengthened Luxury deck, yellow neck badge and integrated illuminated rear brace. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

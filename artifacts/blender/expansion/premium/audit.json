@@ -26,7 +26,7 @@
       ]
     }
   ],
-  "maxTriangles": 60000,
-  "maxMeshes": 36,
-  "maxGLBBytes": 1671424
+  "maxTriangles": 65450,
+  "maxMeshes": 40,
+  "maxGLBBytes": 2153724
 }

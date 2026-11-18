@@ -1,12 +1,18 @@
 import * as THREE from 'three';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 import { createGarage } from './garage.js';
+import { createChargingPlaza } from './plaza.js';
 
 const SETTINGS = {
   garage: {
     url: '/environments/auto_service_1k.hdr',
     rotation: 1.1,
     exposure: 1.0,
+  },
+  plaza: {
+    url: '/environments/courtyard_1k.hdr',
+    rotation: -0.8,
+    exposure: 0.98,
   },
   workshop: {
     url: '/environments/auto_service_1k.hdr',
@@ -22,7 +28,7 @@ const SETTINGS = {
   },
 };
 
-/** A physical garage surrounds the model; HDR maps supply material reflections. */
+/** Physical settings surround the model; HDR maps supply material reflections. */
 export function createStageEnvironment({ renderer, scene, floor, grid, key, fill, onChange }) {
   const loader = new RGBELoader();
   const generator = new THREE.PMREMGenerator(renderer);
@@ -36,9 +42,9 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   const cache = new Map();
   let sequence = 0;
   let disposed = false;
-  let garage = null;
+  let physicalStage = null;
   let activeName = '';
-  let garageLighting = 'loading';
+  let stageLighting = 'loading';
   const shadowMaterial = floor.material;
   shadowMaterial.opacity = 0.28;
   shadowMaterial.color.setHex(0x151817);
@@ -106,58 +112,68 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
       };
     });
   }
-  function garageStatus() {
-    if (disposed || activeName !== 'garage' || !garage) return;
+  function physicalStatus() {
+    if (disposed || !physicalStage || !['garage', 'plaza'].includes(activeName)) return;
+    const title = activeName === 'plaza' ? 'City plaza' : 'Garage';
     const status = document.querySelector('#sceneEnvironmentStatus');
     if (status)
       status.textContent =
-        garageLighting === 'loading'
+        stageLighting === 'loading'
           ? 'Loading setting…'
-          : garage.state.loading
-            ? 'Garage · parking Blender models…'
-            : garage.state.failed
-              ? 'Garage · parked model unavailable'
-              : garageLighting === 'hdr'
-                ? 'Garage · 3D workshop'
-                : 'Garage · studio lighting';
+          : physicalStage.state.loading
+            ? title + ' · parking Blender models…'
+            : physicalStage.state.failed
+              ? title + ' · parked model unavailable'
+              : activeName === 'plaza'
+                ? 'City plaza · 3D night setting'
+                : stageLighting === 'hdr'
+                  ? 'Garage · 3D workshop'
+                  : 'Garage · studio lighting';
   }
   function prepare(name) {
-    const garage = name === 'garage';
-    floor.material = garage ? shadowMaterial : groundMaterial;
-    floor.visible = !garage;
-    floor.position.y = garage ? -0.006 : -0.046;
-    platform.visible = rim.visible = !garage;
-    seams.visible = !garage && name !== 'studio';
+    const physical = name === 'garage' || name === 'plaza';
+    floor.material = physical ? shadowMaterial : groundMaterial;
+    floor.visible = !physical;
+    floor.position.y = physical ? -0.006 : -0.046;
+    platform.visible = rim.visible = !physical;
+    seams.visible = !physical && name !== 'studio';
     grid.visible = false;
+    scene.fog = name === 'plaza' ? new THREE.FogExp2(0x142235, 0.038) : null;
     scene.backgroundIntensity = 1;
     scene.backgroundBlurriness = 0;
     scene.backgroundRotation.y = 0;
     scene.environmentRotation.y = 0;
-    key.color.setHex(garage ? 0xffdfb6 : 0xfff8e9);
-    fill.color.setHex(garage ? 0xb8d7ff : 0xe4ecff);
-    key.intensity = garage ? 2.8 : 4;
-    fill.intensity = garage ? 1.45 : 2;
+    key.color.setHex(physical ? 0xffdfb6 : 0xfff8e9);
+    fill.color.setHex(physical ? 0xb8d7ff : 0xe4ecff);
+    key.intensity = name === 'plaza' ? 2.3 : physical ? 2.8 : 4;
+    fill.intensity = name === 'plaza' ? 0.9 : physical ? 1.45 : 2;
     for (const { light, intensity } of ambientLights)
-      light.intensity = garage ? intensity * 0.48 : intensity;
+      light.intensity = intensity * (name === 'plaza' ? 0.2 : physical ? 0.48 : 1);
     scene.environment = fallbackEnvironment;
-    scene.environmentIntensity = garage ? 0.65 : 1;
-    renderer.toneMappingExposure = garage ? 1 : 1.12;
+    scene.environmentIntensity = physical ? 0.65 : 1;
+    renderer.toneMappingExposure = physical ? 1 : 1.12;
   }
   async function set(requestedName = 'garage') {
     if (disposed) return;
     const name = requestedName === 'studio' || SETTINGS[requestedName] ? requestedName : 'garage';
     const revision = ++sequence;
-    activeName = name;
-    if (name !== 'garage') {
-      garage?.dispose();
-      garage = null;
+    if (name !== activeName) {
+      physicalStage?.dispose();
+      physicalStage = null;
     }
+    activeName = name;
     const status = document.querySelector('#sceneEnvironmentStatus');
     prepare(name);
-    scene.background = new THREE.Color(name === 'garage' ? 0x343b3d : 0xe8e5df);
-    if (name === 'garage') {
-      garageLighting = 'loading';
-      if (!garage) garage = createGarage({ scene, onChange, onStatus: garageStatus });
+    scene.background = new THREE.Color(
+      name === 'plaza' ? 0x131f30 : name === 'garage' ? 0x343b3d : 0xe8e5df,
+    );
+    const physical = name === 'garage' || name === 'plaza';
+    if (physical) {
+      stageLighting = 'loading';
+      if (!physicalStage) {
+        const create = name === 'plaza' ? createChargingPlaza : createGarage;
+        physicalStage = create({ scene, onChange, onStatus: physicalStatus });
+      }
     }
     if (name === 'studio') {
       groundMaterial.color.setHex(0xb6b5ad);
@@ -173,13 +189,13 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     const light = lighting.status === 'fulfilled' ? lighting.value : null;
     if (light) {
       scene.environment = light.target.texture;
-      scene.environmentIntensity = name === 'garage' ? 0.68 : 0.85;
+      scene.environmentIntensity = name === 'plaza' ? 0.2 : name === 'garage' ? 0.68 : 0.85;
       scene.environmentRotation.y = setting.rotation;
     }
     renderer.toneMappingExposure = setting.exposure;
-    if (name === 'garage') {
-      garageLighting = light ? 'hdr' : 'studio';
-      garageStatus();
+    if (physical) {
+      stageLighting = light ? 'hdr' : 'studio';
+      physicalStatus();
     } else {
       groundMaterial.color.setHex(setting.ground);
       key.intensity = 2.5;
@@ -205,8 +221,8 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
       if (disposed) return;
       disposed = true;
       sequence++;
-      garage?.dispose();
-      garage = null;
+      physicalStage?.dispose();
+      physicalStage = null;
       for (const pending of cache.values())
         void pending.then(
           (entry) => entry?.dispose(),

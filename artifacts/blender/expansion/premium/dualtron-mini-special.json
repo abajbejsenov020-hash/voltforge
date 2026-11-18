@@ -4,23 +4,23 @@
     "key": "dualtron-mini-special",
     "url": "/models/expansion/premium/dualtron-mini-special.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-mini-special.blend",
-    "triangles": 49540,
-    "meshes": 35,
-    "bytes": 1322632,
+    "triangles": 62822,
+    "meshes": 40,
+    "bytes": 2073020,
     "family": "Dualtron Mini Special exterior"
   },
   "bounds": [
     [
-      -0.5843999981880188,
-      -0.30500003695487976,
+      -0.5844000577926636,
+      -0.30011051893234253,
       -1.3877787807814457e-17
     ],
     [
       0.5640000104904175,
-      0.3050000071525574,
-      1.2399929761886597
+      0.30011051893234253,
+      1.2350800037384033
     ]
   ],
-  "observed": "Long-body single-motor Mini Special, cyan side LEDs, rear enclosed motor and exposed twin springs.",
+  "observed": "Long-body single-motor Mini Special, cyan side LEDs, rear enclosed motor and exposed twin springs. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

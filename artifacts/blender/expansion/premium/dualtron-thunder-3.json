@@ -4,23 +4,23 @@
     "key": "dualtron-thunder-3",
     "url": "/models/expansion/premium/dualtron-thunder-3.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-thunder-3.blend",
-    "triangles": 53052,
-    "meshes": 35,
-    "bytes": 1448876,
+    "triangles": 60894,
+    "meshes": 37,
+    "bytes": 2153724,
     "family": "Dualtron Thunder 3 exterior"
   },
   "bounds": [
     [
-      -0.6617000102996826,
-      -0.30500003695487976,
+      -0.6467000246047974,
+      -0.3440554141998291,
       0.0
     ],
     [
-      0.6399999856948853,
-      0.3050000071525574,
-      1.409993052482605
+      0.625,
+      0.3440554141998291,
+      1.3614999055862427
     ]
   ],
-  "observed": "Twin low round headlamps, cartridge arms, wide road tyres and cyan stem illumination.",
+  "observed": "Twin low round headlamps, cartridge arms, wide road tyres and cyan stem illumination. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

@@ -1,0 +1,112 @@
+{
+  "assigned": 4,
+  "checked": 4,
+  "failures": [],
+  "unrelatedChanged": [],
+  "checks": [
+    {
+      "name": "Dualtron X2",
+      "key": "dualtron-x2",
+      "triangles": 60468,
+      "meshes": 39,
+      "materials": 18,
+      "embeddedTextures": 1,
+      "bytes": 2044952,
+      "nativePackedSourceSHA256": "15418cbed4c4ced6c289d8fa4ddb9f3628fac21d83919dee00916a17c80af115",
+      "glbSHA256": "9be7e9159651aeeaa803bd16a39829f4a25e13a674ad16781cd6572bed28c692",
+      "bounds": [
+        [
+          -0.7479499578475952,
+          -0.3196363151073456,
+          0.0
+        ],
+        [
+          0.7250000238418579,
+          0.31963634490966797,
+          1.505079984664917
+        ]
+      ],
+      "reopenedNative": true,
+      "reimportedGLB": true,
+      "passed": true
+    },
+    {
+      "name": "Dualtron Thunder 3",
+      "key": "dualtron-thunder-3",
+      "triangles": 60894,
+      "meshes": 37,
+      "materials": 16,
+      "embeddedTextures": 2,
+      "bytes": 2153724,
+      "nativePackedSourceSHA256": "9c90de8316d01a6163d4c3118061e61799e380253b222cfc14f4f518837773f8",
+      "glbSHA256": "4b6a8906d01ad108bd6def34e3a90f6cb2a133aa89828ab28e1bba654a653848",
+      "bounds": [
+        [
+          -0.6467000246047974,
+          -0.3440554141998291,
+          0.0
+        ],
+        [
+          0.625,
+          0.3440554141998291,
+          1.3614999055862427
+        ]
+      ],
+      "reopenedNative": true,
+      "reimportedGLB": true,
+      "passed": true
+    },
+    {
+      "name": "Dualtron Spider",
+      "key": "dualtron-spider",
+      "triangles": 58390,
+      "meshes": 38,
+      "materials": 16,
+      "embeddedTextures": 1,
+      "bytes": 1989628,
+      "nativePackedSourceSHA256": "3099fa7251b7ce27e50494649dda4a9fe6d496295f0cf8f8f3ab7522f05087d7",
+      "glbSHA256": "8d02fcf6c613366a89147dac94caf6ab0900faaf89c9a574d00be4529082f09a",
+      "bounds": [
+        [
+          -0.6080499887466431,
+          -0.30011051893234253,
+          0.0
+        ],
+        [
+          0.5870000123977661,
+          0.30011051893234253,
+          1.2250800132751465
+        ]
+      ],
+      "reopenedNative": true,
+      "reimportedGLB": true,
+      "passed": true
+    },
+    {
+      "name": "Dualtron Mini",
+      "key": "dualtron-mini",
+      "triangles": 62310,
+      "meshes": 38,
+      "materials": 14,
+      "embeddedTextures": 1,
+      "bytes": 2056708,
+      "nativePackedSourceSHA256": "78f78e07c09d081579c6f54803c72ac8dfb0a8a5ad00068eb3ba2c6be7914c40",
+      "glbSHA256": "7dfce4512173322cecc1b2b6c8fa992efd7557e463c2b42fd01dc1ee8b00efc3",
+      "bounds": [
+        [
+          -0.5744000673294067,
+          -0.30011051893234253,
+          -1.3877787807814457e-17
+        ],
+        [
+          0.5540000200271606,
+          0.30011051893234253,
+          1.2350800037384033
+        ]
+      ],
+      "reopenedNative": true,
+      "reimportedGLB": true,
+      "passed": true
+    }
+  ]
+}

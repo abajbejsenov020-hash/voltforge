@@ -4,23 +4,23 @@
     "key": "dualtron-x2",
     "url": "/models/expansion/premium/dualtron-x2.glb",
     "nativeSource": "assets/blender/expansion/premium/dualtron-x2.blend",
-    "triangles": 54872,
-    "meshes": 34,
-    "bytes": 1487216,
+    "triangles": 60468,
+    "meshes": 39,
+    "bytes": 2044952,
     "family": "Dualtron X2 exterior"
   },
   "bounds": [
     [
-      -0.7479500770568848,
-      -0.32499998807907104,
+      -0.7479499578475952,
+      -0.3196363151073456,
       0.0
     ],
     [
       0.7250000238418579,
-      0.32499998807907104,
-      1.509993076324463
+      0.31963634490966797,
+      1.505079984664917
     ]
   ],
-  "observed": "Large 13-inch ultra-wide road tyres, sprung front swingarms and tall rectangular auxiliary battery stem.",
+  "observed": "Large 13-inch ultra-wide road tyres, sprung front swingarms and tall rectangular auxiliary battery stem. Revised model-specific beveled deck perimeter, inset printed grip, charging-port side panels, flush hardware, cast folding neck, split stem collars and photographed control layout; proportions remain photographic approximations.",
   "revision": 2
 }

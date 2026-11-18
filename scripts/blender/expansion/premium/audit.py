@@ -17,7 +17,7 @@ for e in rs:
   def contains_mesh(n):return 'mesh' in n or any(contains_mesh(nodes[i]) for i in n.get('children',[]))
   for n in ['FrontWheel','RearWheel','BatteryMount','ControllerMount','MotorMount']:assert n in groups and contains_mesh(groups[n]),(key,n)
   tris=sum(g['accessors'][p['indices']]['count']//3 for m in g['meshes'] for p in m['primitives']);assert tris<90000;assert len(g['meshes'])<55;assert len(raw)<5000000
-  assert tris==meta['model']['triangles'],(key,tris,meta['model']['triangles'])
+  assert tris==meta['model']['triangles'],(key,tris,meta['model']['triangles']);assert len(raw)==meta['model']['bytes'];assert len(g['meshes'])==meta['model']['meshes']
   for accessor in g['accessors']:
    for v in accessor.get('min',[])+accessor.get('max',[]):assert math.isfinite(v)
   for n in nodes:
@@ -38,7 +38,7 @@ if '--publish' in sys.argv:
  nativeAudit=json.load(open(A/'native-audit.json'));assert nativeAudit['checked']==len(rs) and not nativeAudit['pending'] and not nativeAudit['failures'];nativeChecks={e['key']:e for e in nativeAudit['checks']}
  for e in rs:
   check=nativeChecks[e['key']];assert check['mtimeNs']==(ROOT/'assets/blender/expansion/premium'/(e['key']+'.blend')).stat().st_mtime_ns;assert check['packedPhotoBytes']==e['bytes']
- json.dump(dict(entries=ready,unresolved=unresolved),open(M,'w'),indent=2)
+ temporary=M.with_suffix('.tmp.json');temporary.write_text(json.dumps(dict(entries=ready,unresolved=unresolved),indent=2)+'\n');temporary.replace(M)
 # Compact side-by-side photo/render comparison sheets for visual audit.
 for page in range((len(ready)+11)//12):
  sheet=Image.new('RGB',(1440,1080),'#edf0f2');d=ImageDraw.Draw(sheet)

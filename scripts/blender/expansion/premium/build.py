@@ -5,56 +5,67 @@ import bpy,sys,json,math,importlib.util
 from pathlib import Path
 from mathutils import Vector
 from math import pi,sin,cos
+import dualtron_refine as dt
 ROOT=Path(__file__).resolve().parents[4];ART=ROOT/'artifacts/blender/expansion/premium';OUT=ROOT/'apps/web/public/models/expansion/premium';NATIVE=ROOT/'assets/blender/expansion/premium'
 for d in [ART,OUT,NATIVE]:d.mkdir(parents=True,exist_ok=True)
 spec=importlib.util.spec_from_file_location('premium_primitives',Path(__file__).with_name('primitives.py'));p=importlib.util.module_from_spec(spec);spec.loader.exec_module(p)
 # Parameters are audited against each packed reference. Every revision is named explicitly.
 def build(e,c):
  bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0
- p.groups={};p.parts=[]
+ p.groups={};p.parts=[];isdual=e['name'].startswith('Dualtron')
  materials=dict(black=((.002,.003,.004),.05,.53),edge=((.045,.055,.065),.65,.35),steel=((.10,.12,.14),.72,.33),silver=((.48,.53,.58),.85,.28),rubber=((.019,.022,.025),0,.79),grip=((.025,.029,.031),0,.73),red=((.65,.005,.008),.2,.28),rotor=((.34,.38,.41),.9,.30),lens=((.74,.86,.95),.3,.2),screen=((.005,.018,.022),.35,.14),white=((.7,.75,.79),.2,.4),purple=((.16,.012,.95),.2,.3),orange=((1,.22,.009),.3,.36),gold=((.85,.48,.025),.5,.35))
  for n,(rgb,metal,rough) in materials.items():setattr(p,n,p.mat(n,rgb,metal,rough))
  p.paint=p.mat('Model body finish',tuple(v*.35 for v in c['body']),.16,.48);accent=p.mat('Observed accent',c['accent'],.5,.34);led=p.mat('Flank LED',c.get('led',(.1,.4,1)),.2,.3,1.2)
+ if isdual:
+  p.paint=p.mat('Dualtron satin black anodized aluminum',(.004,.005,.007),.36,.33);p.edge=p.mat('Dualtron dark machined alloy',(.013,.017,.022),.50,.36);p.black=p.mat('Dualtron black molded controls',(.003,.004,.005),.02,.43);p.grip=p.mat('Dualtron textured rubber',(.007,.008,.009),0,.88);p.rubber=p.mat('Dualtron carbon rubber tires',(.008,.009,.011),0,.82);p.dual_led=p.mat('Dualtron restrained cyan diffuser',(.015,.36,.55),.05,.30,.8);p.dual_screen=p.mat('EY3 green LCD',(.02,.19,.045),.1,.24,.2);p.dual_arm=accent if c.get('coloredArms') else p.paint
  root=bpy.data.objects.new(e['name'],None);bpy.context.collection.objects.link(root)
  for n in ['Chassis','Steering','FrontWheel','RearWheel','BatteryMount','ControllerMount','MotorMount']:
   o=bpy.data.objects.new(n,None);bpy.context.collection.objects.link(o);o.parent=root;p.groups[n]=o
  root['source']=e['source'];root['reference']=e['image'];root['accuracy']='Photo-guided exterior; no measured CAD claims. Hidden internal mounts inferred.';root['appearance']=c['notes'];root['frontAxis']='+X';root['units']='metres';root['reconstructionRevision']=2
+ if isdual:root['dualtronRefinement']=c['dualtronRefinement']
  r=c['r'];p.R=r;wb=c['wb'];F=wb/2;B=-F;dl=c['dl'];dw=c['dw'];dz=c['dz'];H=c['h'];bar=c['bar'];kind=c['kind'];sx=dl*.48+.07;topx=sx-.14;neck=c.get('neck',.49)
  # Wheels retain distinct tread, rim, motor, and brake detail from the photo.
- tc=dict(r=r,wide=c.get('wide'),dual=c.get('dual',True),tread=c.get('tread','street'),kind='premium')
+ tc=dict(r=r,wide=c.get('wide'),dual=c.get('dual',True),tread=c.get('tread','street'),kind='premium',openHub=isdual and c.get('openHub',False))
  p.tire(F,'FrontWheel',tc);p.tire(B,'RearWheel',tc)
- if c.get('dual',True):
+ if c.get('dual',True) and not (isdual and c.get('openHub')):
   for xx in [F,B]:
    for sy in [-1,1]:p.rod('Closed motor end cover',(xx,sy*(tc.get('wide') or (.044 if r<.14 else .052)),r),(xx,sy*((tc.get('wide') or (.044 if r<.14 else .052))+.003),r),r-.044,p.black,'MotorMount',64)
- if c.get('dual',True):
+ if c.get('dual',True) and not (isdual and c.get('openHub')):
   hubmat=p.mat('Opaque black motor end plates',(.001,.001,.001),0,1);hubmat.node_tree.nodes.get('Principled BSDF').inputs['Specular IOR Level'].default_value=0
   wide=tc.get('wide') or (.044 if r<.14 else .052)
   for xx in [F,B]:
    for sy in [-1,1]:p.rod('Motor closed outside face',(xx,sy*(wide+.022),r),(xx,sy*(wide+.024),r),r*.49,hubmat,'MotorMount',64)
- # Shell and pad profiles are family-specific rather than a shared renamed donor.
- if kind in ['apollo','inmotion','nami-compact']:
-  pts=[(-dl*.5,dz-.07),(dl*.40,dz-.07),(dl*.54,dz-.035),(dl*.51,dz+.005),(-dl*.46,dz+.008),(-dl*.54,dz-.018)]
- elif kind=='nami':
-  pts=[(-dl*.5,dz-.08),(dl*.5,dz-.08),(dl*.5,dz-.014),(-dl*.5,dz-.014)]
- elif kind=='rs5':
-  pts=[(-dl*.5-.02,dz-.09),(dl*.5,dz-.09),(dl*.54,dz-.05),(dl*.49,dz+.005),(-dl*.5,dz+.005)]
- else:pts=[(-dl*.5,dz-.08),(dl*.5,dz-.08),(dl*.53,dz-.045),(dl*.5,dz+.005),(-dl*.5,dz+.005)]
- p.profile('Photographed deck extrusion',pts,dw,p.paint,b=.007)
- if kind=='dualtron-x':
-  p.cube('X deep rectangular battery chassis',(0,0,dz-.045),(dl,dw,.115),p.paint,b=.009)
-  for sy in [-1,1]:p.cube('X inset flanking panel',(0,sy*(dw/2+.003),dz-.045),(dl*.79,.006,.071),p.black,b=.003)
- p.cube('Battery lower tray',(-.025,0,dz-.079),(dl*.95,dw*.90,.016),p.edge,'BatteryMount',.004)
- p.cube('Controller protective housing',(dl*.33,0,dz-.038),(dl*.18,dw*.8,.045),p.black,'ControllerMount',.004)
- p.cube('Rubber standing pad',(0,0,dz+.013),(dl*.94,dw*.93,.014),p.grip,b=.009)
- for j in range(-5,6):p.curve('Deck traction groove',[(-dl*.43,j*dw*.076,dz+.022),(dl*.43,j*dw*.076,dz+.022)],.0008,p.black)
- for x in [-dl*.43,dl*.43]:
-  for y in [-dw*.39,dw*.39]:p.bolt('Deck perimeter fastener',(x,y,dz+.024),.003,axis='Z')
- for sy in [-1,1]:
-  y=sy*(dw*.5+.003)
-  if c.get('rgb'):p.curve('Model flank illumination',[(-dl*.44,y,dz-.04),(dl*.43,y,dz-.04)],.003,led)
-  p.label('Deck manufacturer marking',e['name'].split()[0].upper(),(0,y,dz-.032),.021,p.white)
+ if isdual and c.get('openHub'):
+  for xx in [F,B]:
+   p.rod('City compact central hub motor',(xx,-c['wide']*.85,r),(xx,c['wide']*.85,r),r*.28,p.black,'MotorMount',48)
+   for sy in [-1,1]:p.rod('City central motor end cover',(xx,sy*c['wide']*.85,r),(xx,sy*c['wide']*.94,r),r*.265,p.edge,'MotorMount',48)
+ if isdual:dt.deck(p,e,c)
+ else:
+  # Shell and pad profiles are family-specific rather than a shared renamed donor.
+  if kind in ['apollo','inmotion','nami-compact']:
+   pts=[(-dl*.5,dz-.07),(dl*.40,dz-.07),(dl*.54,dz-.035),(dl*.51,dz+.005),(-dl*.46,dz+.008),(-dl*.54,dz-.018)]
+  elif kind=='nami':
+   pts=[(-dl*.5,dz-.08),(dl*.5,dz-.08),(dl*.5,dz-.014),(-dl*.5,dz-.014)]
+  elif kind=='rs5':
+   pts=[(-dl*.5-.02,dz-.09),(dl*.5,dz-.09),(dl*.54,dz-.05),(dl*.49,dz+.005),(-dl*.5,dz+.005)]
+  else:pts=[(-dl*.5,dz-.08),(dl*.5,dz-.08),(dl*.53,dz-.045),(dl*.5,dz+.005),(-dl*.5,dz+.005)]
+  p.profile('Photographed deck extrusion',pts,dw,p.paint,b=.007)
+  if kind=='dualtron-x':
+   p.cube('X deep rectangular battery chassis',(0,0,dz-.045),(dl,dw,.115),p.paint,b=.009)
+   for sy in [-1,1]:p.cube('X inset flanking panel',(0,sy*(dw/2+.003),dz-.045),(dl*.79,.006,.071),p.black,b=.003)
+  p.cube('Battery lower tray',(-.025,0,dz-.079),(dl*.95,dw*.90,.016),p.edge,'BatteryMount',.004)
+  p.cube('Controller protective housing',(dl*.33,0,dz-.038),(dl*.18,dw*.8,.045),p.black,'ControllerMount',.004)
+  p.cube('Rubber standing pad',(0,0,dz+.013),(dl*.94,dw*.93,.014),p.grip,b=.009)
+  for j in range(-5,6):p.curve('Deck traction groove',[(-dl*.43,j*dw*.076,dz+.022),(dl*.43,j*dw*.076,dz+.022)],.0008,p.black)
+  for x in [-dl*.43,dl*.43]:
+   for y in [-dw*.39,dw*.39]:p.bolt('Deck perimeter fastener',(x,y,dz+.024),.003,axis='Z')
+  for sy in [-1,1]:
+   y=sy*(dw*.5+.003)
+   if c.get('rgb'):p.curve('Model flank illumination',[(-dl*.44,y,dz-.04),(dl*.43,y,dz-.04)],.003,led)
+   p.label('Deck manufacturer marking',e['name'].split()[0].upper(),(0,y,dz-.032),.021,p.white)
  # Raised rear kickplate occurs only on sport platforms, not compact commuters.
- if c.get('kick',True) and c.get('kickKind')=='brace':
+ if isdual:dt.kick(p,e,c)
+ elif c.get('kick',True) and c.get('kickKind')=='brace':
   for sy in [-1,1]:p.window_arm('Open rear carry footbrace',(-dl*.43,dz+.035),(-dl*.64,dz+.145),.017,p.paint,sy*dw*.27)
   p.rod('Rear carry brace end rail',(-dl*.64,-dw*.29,dz+.145),(-dl*.64,dw*.29,dz+.145),.012,p.paint)
  elif c.get('kick',True):
@@ -62,7 +73,8 @@ def build(e,c):
   for j in range(5):p.rod('Foot brace traction',(-dl*.50-j*.022,-dw*.29,dz+.045+j*.012),(-dl*.50-j*.022,dw*.29,dz+.045+j*.012),.003,p.grip,n=8)
  # Neck geometry: open welded NAMI tubes, curved cast modern commuters,
  # squared Dualtron hinge, or the characteristic Wolf twin stanchions.
- if c.get('frontFamily') in ['y10','osprey']:
+ if isdual:dt.neck(p,e,c,sx,neck)
+ elif c.get('frontFamily') in ['y10','osprey']:
   # Both references fold behind a long twin telescopic fork. No sport C-arm neck.
   for sy in [-1,1]:
    p.profile('YUME low folding chassis cheek',[(dl*.27,dz-.025),(F-.13,dz+.055),(F-.09,dz+.18),(F-.15,dz+.18),(dl*.23,dz+.025)],.017,p.paint,y=sy*.065)
@@ -95,7 +107,8 @@ def build(e,c):
    p.rod('Headstock diagonal brace',(dl*.24,yy,dz+.005),(sx+.045,yy,neck+.035),.012,p.paint)
   p.rod('Upper steering bearing housing',(sx+.045,0,neck-.018),(sx+.045,0,neck+.055),.029,p.edge,'Steering')
  # Distinct front and rear suspensions, with mechanical hinge and spring visibility.
- if c.get('frontFamily') in ['y10','osprey']:
+ if isdual and kind!='dualtron-x':dt.suspension(p,e,c,F,B)
+ elif c.get('frontFamily') in ['y10','osprey']:
   family=c['frontFamily'];forkTop=c['forkTop'];forkY=.067;topForkX=F-.085
   for sy in [-1,1]:
    yy=sy*forkY
@@ -174,7 +187,8 @@ def build(e,c):
     p.rod('Elastomer front suspension cartridge',(F-.17,y-.015,r+.11),(F-.17,y+.015,r+.11),.041,p.black,'Steering')
    else:p.window_arm('Leading cast front arm',(F-.19,r+.16),(F,r),.024,accent if c.get('coloredArms') else p.paint,y)
   if kind not in ['dualtron','inokim']:p.shock('Front suspension',(F-.175,0,r+.08),(sx+.08,0,neck-.045),.019,accent)
- if kind=='dualtron-x':
+ if isdual and kind!='dualtron-x':pass
+ elif kind=='dualtron-x':
   for sy in [-1,1]:p.profile('X long cast rear swingarm',[(B-.03,r-.025),(B+.04,r-.035),(B+.245,dz-.025),(B+.21,dz+.025),(B+.015,r+.055)],.032,p.paint,y=sy*.09,b=.006)
   p.rod('X rear upper shock eye support',(B-.015,0,r+.055),(B-.015,0,r+.265),.015,p.paint)
   p.shock('X exposed rear horizontal coilover',(B+.23,0,r+.19),(B-.015,0,r+.265),.034,p.black)
@@ -191,11 +205,12 @@ def build(e,c):
  else:
   for sy in [-1,1]:p.rod('Rigid rear dropout',(B+.20,sy*.06,dz-.03),(B,sy*.06,r),.014,p.paint)
  # Fenders follow tyre curvature, supported by metal rods.
- p.fender('Front mudguard',F,r+.014,.107,c.get('angular',False),False);p.fender('Rear mudguard',B,r+.014,.111,c.get('angular',False),True)
+ p.fender('Front mudguard',F,r+.014,(c['wide']*2+.014 if isdual else .107),c.get('angular',False),False);p.fender('Rear mudguard',B,r+.014,(c['wide']*2+.018 if isdual else .111),c.get('angular',False),True)
  if kind=='dualtron-x':
   p.profile('X auxiliary stem battery column',[(sx+.02,neck),(topx-.045,H-.04),(topx+.055,H-.04),(sx+.12,neck)],.115,p.paint,'Steering',b=.012)
   for sy in [-1,1]:p.curve('X stem LED edge',[(sx+.04,sy*.06,neck+.08),(topx,sy*.06,H-.09)],.004,led,'Steering')
- if kind!='wolf' and kind!='seated' and not c.get('frontFamily'):
+ if isdual and dt.stem(p,e,c,sx,topx,neck,H):pass
+ elif kind!='wolf' and kind!='seated' and not c.get('frontFamily'):
   if c.get('telescopicStem'):
    mid=(neck+H)*.57;mx=sx+.055+(topx-sx-.055)*(mid-neck)/(H-neck)
    p.rod('Lower telescopic stem barrel',(sx+.055,0,neck),(mx,0,mid),.027,p.paint,'Steering',32)
@@ -228,22 +243,24 @@ def build(e,c):
   for sy in [-1,1]:
    p.rod('Seated scooter front fork',(F-.09,sy*.07,.65),(F,sy*.07,r),.019,p.silver,'Steering');p.rod('Rider foot peg',(.05,sy*.075,.28),(.05,sy*.20,.28),.017,p.grip)
   topx=F-.18
- # Handlebars, rubber grips, levers and routed brake cables.
- p.curve('Swept handlebar',[(topx-.015,-bar*.35,H+.02),(topx-.02,-bar*.12,H),(topx,0,H-.025),(topx-.02,bar*.12,H),(topx-.015,bar*.35,H+.02)],.012,p.edge,'Steering')
- for sy in [-1,1]:
-  p.rod('Ribbed rubber grip',(topx-.015,sy*bar*.34,H+.02),(topx-.015,sy*bar*.5,H+.02),.019,p.grip,'Steering',32)
-  for j in range(12):
-   y=sy*(bar*.345+j*bar*.012);p.rod('Grip molding ring',(topx-.015,y-.001,H+.02),(topx-.015,y+.001,H+.02),.0195,p.black,'Steering',16)
-  p.cube('Brake lever reservoir',(topx+.02,sy*bar*.30,H+.026),(.05,.032,.028),p.black,'Steering',.005)
-  p.curve('Brake lever blade',[(topx+.047,sy*bar*.30,H+.014),(topx+.065,sy*bar*.38,H+.005),(topx+.06,sy*bar*.46,H+.005)],.004,p.silver,'Steering')
-  p.curve('Visible hydraulic cable',[(topx+.027,sy*bar*.28,H+.01),(topx+.11,sy*.10,H-.14),(sx+.09,sy*.055,neck+.03),(F-.10,sy*.08,r+.08)],.003,p.black,'Steering')
- p.cube('Rider LCD console',(topx,0,H+.035),(.082,.110,.023),p.black,'Steering',.009);p.cube('LCD glass',(topx,0,H+.048),(.069,.092,.003),p.screen,'Steering',.005)
- p.label('LCD speed digits','00',(topx-.005,-.017,H+.051),.023,p.white,'Steering')
- if c.get('mirrorRise'):
+ if isdual:dt.cockpit(p,e,c,topx,H,bar,sx,neck,F)
+ else:
+  # Handlebars, rubber grips, levers and routed brake cables.
+  p.curve('Swept handlebar',[(topx-.015,-bar*.35,H+.02),(topx-.02,-bar*.12,H),(topx,0,H-.025),(topx-.02,bar*.12,H),(topx-.015,bar*.35,H+.02)],.012,p.edge,'Steering')
   for sy in [-1,1]:
-   yy=sy*bar*.40;p.curve('Osprey mirror stalk',[(topx,sy*bar*.27,H+.025),(topx+.015,yy,H+.10),(topx,yy,H+c['mirrorRise']-.025)],.004,p.black,'Steering')
-   p.cube('Osprey rectangular mirror housing',(topx,yy,H+c['mirrorRise']),(.018,.082,.048),p.black,'Steering',.007)
-   p.cube('Osprey silver mirror glass',(topx-.010,yy,H+c['mirrorRise']),(.002,.068,.036),p.silver,'Steering',.004)
+   p.rod('Ribbed rubber grip',(topx-.015,sy*bar*.34,H+.02),(topx-.015,sy*bar*.5,H+.02),.019,p.grip,'Steering',32)
+   for j in range(12):
+    y=sy*(bar*.345+j*bar*.012);p.rod('Grip molding ring',(topx-.015,y-.001,H+.02),(topx-.015,y+.001,H+.02),.0195,p.black,'Steering',16)
+   p.cube('Brake lever reservoir',(topx+.02,sy*bar*.30,H+.026),(.05,.032,.028),p.black,'Steering',.005)
+   p.curve('Brake lever blade',[(topx+.047,sy*bar*.30,H+.014),(topx+.065,sy*bar*.38,H+.005),(topx+.06,sy*bar*.46,H+.005)],.004,p.silver,'Steering')
+   p.curve('Visible hydraulic cable',[(topx+.027,sy*bar*.28,H+.01),(topx+.11,sy*.10,H-.14),(sx+.09,sy*.055,neck+.03),(F-.10,sy*.08,r+.08)],.003,p.black,'Steering')
+  p.cube('Rider LCD console',(topx,0,H+.035),(.082,.110,.023),p.black,'Steering',.009);p.cube('LCD glass',(topx,0,H+.048),(.069,.092,.003),p.screen,'Steering',.005)
+  p.label('LCD speed digits','00',(topx-.005,-.017,H+.051),.023,p.white,'Steering')
+  if c.get('mirrorRise'):
+   for sy in [-1,1]:
+    yy=sy*bar*.40;p.curve('Osprey mirror stalk',[(topx,sy*bar*.27,H+.025),(topx+.015,yy,H+.10),(topx,yy,H+c['mirrorRise']-.025)],.004,p.black,'Steering')
+    p.cube('Osprey rectangular mirror housing',(topx,yy,H+c['mirrorRise']),(.018,.082,.048),p.black,'Steering',.007)
+    p.cube('Osprey silver mirror glass',(topx-.010,yy,H+c['mirrorRise']),(.002,.068,.036),p.silver,'Steering',.004)
  # Model-specific lamp placement, twin beam Wolf/X, high module others, no invented high lamps.
  lamp=c.get('lamp','low');lx=(F+.045 if kind=='wolf' else sx+.10);lz=neck-.045
  if lamp=='high':lx=topx+.045;lz=H-.15
@@ -264,6 +281,9 @@ def build(e,c):
    if c.get('lampShape')=='round-gold':p.rod('Y10 amber metal lamp bezel',(lx+.018,y,lz),(lx+.021,y,lz),lampR*.96,p.gold,'Steering',32)
    p.rod('Headlight optical lens',(lx+.022,y,lz),(lx+.024,y,lz),lampR*.80,p.lens,'Steering',32)
  p.curve('Side stand',[(-.15,-dw*.48,dz-.07),(-.20,-dw*.78,.018),(-.215,-dw*.80,.008)],.006,p.steel);p.cube('Stand rubber foot',(-.215,-dw*.80,.008),(.03,.024,.014),p.black)
+ if isdual:
+  for o in p.parts:
+   if o.type=='MESH' and any(n in o.name.lower() for n in ['forged','neck structural','spoiler footrest']) and not o.modifiers:p.bevel(o,.0025)
  # Convert and merge by assembly/material; transforms are baked for stable Three.js bounds.
  for o in list(p.parts):
   bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o
@@ -291,12 +311,19 @@ def build(e,c):
   for o in par.children:o.select_set(True)
  glb=OUT/(e['key']+'.glb');bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=True,export_yup=True,export_extras=True,export_lights=False,export_cameras=False)
  assert glb.stat().st_size<5000000;assert tri<90000;assert len(model)<55
+ if e['name']=='Dualtron Thunder 3':
+  detail=bpy.data.images.load(str(ART/'dualtron-thunder-3-deck-reference.jpg'));detail.pack();detail.use_fake_user=True;root['deckDetailSource']='https://www.maxblinker.com/img/cms/Produkty/Dualtron%20Thunder%203/dualtron-thunder-3-3.jpg'
  im=bpy.data.images.load(str(ROOT/'apps/web/public'/e['image'].lstrip('/')));im.pack();photo=bpy.data.objects.new('REFERENCE exact product photograph',None);bpy.context.collection.objects.link(photo);photo.empty_display_type='IMAGE';photo.data=im;photo.hide_render=True;photo.hide_viewport=True;photo['source']=e['source']
  scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True;scene.render.threads_mode='FIXED';scene.render.threads=2;scene.render.resolution_x=640;scene.render.resolution_y=640;scene.render.resolution_percentage=100;scene.world=bpy.data.worlds.new('STUDIO world');scene.world.color=(.12,.12,.12);scene.view_settings.view_transform='AgX';scene.view_settings.look='AgX - Medium High Contrast'
  gm=p.mat('STUDIO gray',(.7,.73,.77),0,.9);bpy.ops.mesh.primitive_plane_add(size=100,location=(0,0,-.002));bpy.context.object.name='STUDIO floor';bpy.context.object.data.materials.append(gm)
  for n,loc,power,size in [('Key',(1,-3,4),550,3),('Fill',(-2,-1,2),250,2.5),('Rim',(1.5,2,3),450,2.5)]:
   bpy.ops.object.light_add(type='AREA',location=loc);o=bpy.context.object;o.name='STUDIO '+n;o.data.energy=power;o.data.shape='DISK';o.data.size=size;o.rotation_euler=(Vector((0,0,H*.5))-o.location).to_track_quat('-Z','Y').to_euler()
  bpy.ops.object.camera_add(location=(2.6,-4.4,2.0));cam=bpy.context.object;cam.name='STUDIO camera';cam.rotation_euler=(Vector((0,0,(H+c.get('mirrorRise',0))*.49))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.type='ORTHO';cam.data.ortho_scale=max(H+c.get('mirrorRise',0)+.32,wb+r*2+.26);scene.camera=cam;scene.render.filepath=str(ART/(e['key']+'.png'));bpy.ops.render.render(write_still=True)
+ if isdual:
+  oldloc=cam.location.copy();oldrot=cam.rotation_euler.copy();oldscale=cam.data.ortho_scale
+  cam.location=(0,0,3);cam.rotation_euler=(0,0,-pi/2);cam.data.ortho_scale=wb+r*2+.20;scene.render.filepath=str(ART/(e['key']+'-top.png'));bpy.ops.render.render(write_still=True)
+  cam.location=(1.2,-1.6,1.65);cam.rotation_euler=(Vector((0,0,dz+.04))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=dl+dw+.26;scene.render.filepath=str(ART/(e['key']+'-deck.png'));bpy.ops.render.render(write_still=True)
+  cam.location=oldloc;cam.rotation_euler=oldrot;cam.data.ortho_scale=oldscale;scene.render.filepath=str(ART/(e['key']+'.png'))
  bpy.data.orphans_purge(do_local_ids=True,do_linked_ids=True,do_recursive=True);bpy.ops.wm.save_as_mainfile(filepath=str(NATIVE/(e['key']+'.blend')),compress=True)
  result=dict(key=e['key'],url='/models/expansion/premium/'+e['key']+'.glb',nativeSource='assets/blender/expansion/premium/'+e['key']+'.blend',triangles=tri,meshes=len(model),bytes=glb.stat().st_size,family=c['family']);json.dump(dict(name=e['name'],model=result,bounds=[lo,hi],observed=c['notes'],revision=2),open(ART/(e['key']+'.json'),'w'),indent=2);print('PREMIUM_COMPLETE',e['key'],tri,len(model),glb.stat().st_size,flush=True)
 if __name__=='__main__':

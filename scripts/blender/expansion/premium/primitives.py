@@ -103,7 +103,7 @@ def tire(x,parent,c):
  for j in range(nb):
   for i in range(na):f.append((j*na+i,j*na+(i+1)%na,(j+1)*na+(i+1)%na,(j+1)*na+i))
  mesh(parent+' sculpted tire tread',v,f,rubber,parent,True)
- hub=c['dual'] or parent=='RearWheel';rim=rr-.043
+ hub=(c['dual'] or parent=='RearWheel') and not c.get('openHub');rim=rr-.043
  for sy in [-1,1]:
   ring('Tire bead ridge',x,sy*wide*.92,rr,rim+.004,rim-.001,.005,rubber,parent)
   ring('Alloy rim lip',x,sy*wide*.94,rr,rim,rim-.009,.007,steel,parent)
