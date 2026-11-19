@@ -89,8 +89,12 @@ test('a failed model request stays an explicitly labeled fallback without breaki
 }) => {
   await page.route('**/models/catalog/**.glb', (route) => route.abort('failed'));
   await page.goto('/');
-  await page.locator('[data-featured="KuKirin G2 Master"]').click();
+  await page.locator('[data-featured-brand="KuKirin"]').click();
+  await expect(page.locator('#startBuild')).toBeDisabled();
+  await page.locator('#vehicleName').fill('G2 Master');
+  await page.locator('[data-vehicle="KuKirin G2 Master"]').click();
   await page.locator('#startBuild').click();
+  await expect(page.locator('#modelLabel')).toHaveText('KuKirin G2 Master');
   await expect(page.locator('#scene')).toHaveAttribute('data-model-source', 'fallback', {
     timeout: 20000,
   });

@@ -5,12 +5,18 @@ import { effectiveMotorCount, vehicleStockProfile } from '@voltforge/shared/stoc
 export function createFeature(app) {
   function render() {
     const p = app.selected();
+    const profile = app.performanceProfile();
     $('#buildName').textContent = app.state.name;
     const tag = document.createElement('span');
     tag.className = 'tiny-tag';
     tag.textContent = app.state.mode === 'rebuild' ? 'REBUILD' : 'CONCEPT';
     $('#buildName').append(tag);
-    $('#buildKind').textContent = app.state.type === 'scooter' ? 'E-SCOOTER' : 'E-BIKE';
+    $('#buildKind').textContent =
+      profile?.electric === false
+        ? 'BICYCLE'
+        : app.state.type === 'scooter'
+          ? 'E-SCOOTER'
+          : 'E-BIKE';
     $('#buildSubtitle').textContent =
       app.state.mode === 'rebuild'
         ? 'Starting from ' + app.state.vehicle + ' · Confirm your exact model and measurements.'
@@ -24,7 +30,9 @@ export function createFeature(app) {
     $('#partCount').innerHTML =
       upgrades +
       (app.state.mode === 'rebuild'
-        ? ' <small>chosen · ' + (CATEGORIES.length - upgrades) + ' stock</small>'
+        ? ' <small>chosen · ' +
+          Object.values(app.effectiveParts()).filter((part) => part.stock).length +
+          ' stock</small>'
         : ' <small>/ ' + CATEGORIES.length + ' categories</small>');
     app.renderTabs();
     app.renderCatalog();

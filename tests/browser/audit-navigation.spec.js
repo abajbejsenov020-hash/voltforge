@@ -28,7 +28,8 @@ test('part actions restore focus and switching modal views opens at the heading'
   page,
 }) => {
   await page.goto('/');
-  await page.locator('[data-featured="KuKirin G4"]').click();
+  await page.locator('[data-featured-brand="KuKirin"]').click();
+  await page.locator('[data-vehicle="KuKirin G4"]').click();
   await page.locator('#startBuild').click();
   await page.locator('#categorySelect').selectOption('Controllers');
   await page.locator('#vehicleFilter').selectOption('all');

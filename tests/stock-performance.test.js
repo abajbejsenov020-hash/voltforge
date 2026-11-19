@@ -3,9 +3,13 @@ import assert from 'node:assert/strict';
 import { createBuild, selectParts } from '@voltforge/shared/build';
 import { checkCompatibility } from '@voltforge/shared/compatibility';
 import { CATEGORIES, PART_BY_ID } from '@voltforge/shared/catalog';
+import { VEHICLE_INDEX } from '@voltforge/shared/vehicles';
 import {
   createPerformanceEngine,
   estimatePerformance,
+  peakPowerText,
+  stockPerformanceGaps,
+  speedText,
   STOCK_PERFORMANCE,
 } from '@voltforge/shared/performance';
 import {
@@ -18,6 +22,74 @@ const rebuild = (vehicle = 'KuKirin G4', type = 'scooter') => ({
   ...createBuild(type),
   mode: 'rebuild',
   vehicle,
+});
+
+test('all indexed vehicles have stock references and at least 331 show all four metrics', () => {
+  let complete = 0;
+  const pedalPowered = [];
+  for (const { name, type } of VEHICLE_INDEX) {
+    const e = estimatePerformance(rebuild(name, type));
+    assert.equal(e.profile?.name, name);
+    assert.ok(e.profile.source.startsWith('https://'));
+    assert.equal(e.stock, true);
+    if (e.profile.electric === false) {
+      pedalPowered.push(name);
+      assert.ok(!e.p.Motors && !e.p.Controllers && !e.p.Batteries);
+      assert.equal(e.automatic.enabled, false);
+      assert.equal(e.wh, null);
+    } else if (!stockPerformanceGaps(e).length) {
+      complete++;
+    }
+  }
+  assert.ok(complete >= 331, `Only ${complete} stock builds have all four metrics`);
+  assert.deepEqual(pedalPowered.sort(), ['Giant Talon', 'Specialized Rockhopper', 'Trek Marlin']);
+});
+
+test('factory peak power retains meaningful precision on small motors', () => {
+  const result = estimatePerformance(rebuild('Xiaomi 4 Ultra'));
+  assert.equal(result.wh, 561.5);
+  assert.equal(peakPowerText(result.peak), '0.94 kW');
+  assert.equal(result.speed.value, 25);
+  assert.equal(result.cruise, 25);
+});
+
+test('a stock Altis Delta calculates all four metrics from its exact factory profile', () => {
+  const build = rebuild('Altis Delta', 'bike');
+  const before = structuredClone(build);
+  const result = estimatePerformance(build);
+  assert.equal(result.stock, true);
+  assert.equal(result.wh, 2520);
+  assert.equal(result.speed.kind, 'factory');
+  assert.equal(speedText(result), '100 km/h');
+  assert.equal(result.peak.kind, 'factory');
+  assert.equal(result.peak.value, 13000);
+  assert.equal(result.cruise, 40);
+  assert.ok(result.range > 45 && result.range < 70);
+  assert.equal(result.time, result.range / result.cruise);
+  assert.ok(result.scenarios[2].range < result.scenarios[1].range);
+  assert.deepEqual(build, before);
+});
+
+test('an incomplete stock battery profile keeps published speed and peak while requesting pack ratings', () => {
+  const name = 'Test factory profile missing pack ratings';
+  const key = 'testfactoryprofilemissingpackratings';
+  STOCK_PERFORMANCE[key] = { name, motors: 1, advertisedSpeed: 60, peakMotorW: 4000 };
+  try {
+    const build = rebuild(name, 'bike');
+    const initial = estimatePerformance(build);
+    assert.equal(initial.stock, true);
+    assert.equal(initial.speed.kind, 'factory');
+    assert.equal(initial.peak.kind, 'factory');
+    assert.deepEqual(initial.automatic.missing, ['nominalVoltage', 'capacityAh']);
+    assert.deepEqual(stockPerformanceGaps(initial), ['range', 'ride time']);
+    build.performance = { schema: 2, nominalVoltage: 60, capacityAh: 40 };
+    const withPack = estimatePerformance(build);
+    assert.deepEqual(withPack.speed, initial.speed);
+    assert.deepEqual(withPack.peak, initial.peak);
+    assert.deepEqual(stockPerformanceGaps(withPack), []);
+  } finally {
+    delete STOCK_PERFORMANCE[key];
+  }
 });
 
 test('rebuilds resolve factory hardware for every unselected category without saving inferred IDs', () => {
@@ -254,7 +326,7 @@ test('stock models with incomplete published metrics compute only disclosed plan
 });
 
 test('unknown exact factory specifications retain stock labels and request ratings without inventing metrics', () => {
-  const result = estimatePerformance(rebuild('Talaria XXX', 'bike'));
+  const result = estimatePerformance(rebuild('Unlisted electric bike', 'bike'));
   assert.ok(Object.values(result.p).every((part) => part.stock));
   assert.equal(result.wh, null);
   assert.equal(result.speed.value, null);

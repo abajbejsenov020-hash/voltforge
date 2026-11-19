@@ -5,12 +5,14 @@ import {
   peakPowerLabel,
   speedText,
   speedBasisText,
+  stockPerformanceGaps,
   approx,
   OWNER_SPEED_REPORT,
 } from '@voltforge/shared/performance';
 export function createFeature(app) {
   function renderPerformance() {
     const e = app.estimatePerformance();
+    const pedalPowered = e.stock && e.profile?.electric === false;
     const energy = $('#energy');
     energy.firstChild.textContent = (e.wh ? Math.round(e.wh) : '—') + ' ';
     const check = $('#checkSummary');
@@ -24,6 +26,12 @@ export function createFeature(app) {
       $('#performanceConflictText').textContent = 'Conditional estimates · ' + firstConflict.text;
     }
     $('#reviewPerformanceConflicts').onclick = () => app.review({ focusIssues: true });
+    $('#performanceActions').hidden = pedalPowered;
+    $('#performanceMetrics').hidden = pedalPowered;
+    $('#rangeScenarios').hidden = pedalPowered;
+    $('#performanceNote').hidden = pedalPowered;
+    $('#stockReference').hidden = !e.stock || !e.profile?.source;
+    if (e.profile?.source) $('#stockReferenceLink').href = e.profile.source;
     $('#estimatedPeak').textContent = peakPowerText(e.peak);
     $('#peakBasis').textContent = e.peak.basis;
     $('#peakMetricLabel').textContent = peakPowerLabel(e.peak);
@@ -41,13 +49,17 @@ export function createFeature(app) {
       const changed = Object.keys(labels)
         .filter((c) => e.p[c] && !e.p[c].stock && !e.p[c].stockEquivalent)
         .map((c) => labels[c]);
-      hardwareNote.textContent =
-        (stock.length ? 'Stock: ' + stock.join(', ') + '. ' : '') +
-        (equivalent.length
-          ? 'Factory-equivalent replacement: ' + equivalent.join(', ') + '. '
-          : '') +
-        (changed.length ? 'Upgraded: ' + changed.join(', ') + '. ' : '') +
-        'Unchanged categories retain their factory parts.';
+      const gaps = changed.length ? [] : stockPerformanceGaps(e);
+      hardwareNote.textContent = pedalPowered
+        ? 'This model is pedal-powered. Add a motor, controller and battery to estimate an electric conversion.'
+        : [
+            stock.length && 'Stock: ' + stock.join(', ') + '.',
+            equivalent.length && 'Factory-equivalent replacement: ' + equivalent.join(', ') + '.',
+            changed.length && 'Upgraded: ' + changed.join(', ') + '.',
+            gaps.length && 'Stock figures still needed for ' + gaps.join(', ') + '.',
+          ]
+            .filter(Boolean)
+            .join(' ');
     }
     const missingPower = e.automatic.missing.includes('power');
     const speedUnknown = e.speed.value === null;
@@ -70,12 +82,19 @@ export function createFeature(app) {
     peakAction.onclick = () => focusRating('peakMotorW');
     $('#estimatedRange').textContent = approx(e.range, 'km');
     $('#rangeBasis').textContent = e.range
-      ? 'Scenario at ' + e.cruise + ' km/h · ' + e.whPerKm.toFixed(1) + ' Wh/km'
-      : 'Enter actual pack voltage and capacity';
+      ? `${e.trailRange ? 'Trail scenario' : 'Scenario'} at ${e.cruise} km/h · ${e.whPerKm.toFixed(1)} Wh/km`
+      : e.p.Batteries?.stock
+        ? 'Factory battery capacity unavailable. Enter your pack ratings.'
+        : 'Enter actual pack voltage and capacity';
     $('#estimatedTime').textContent = approx(e.time ? e.time * 60 : null, 'min');
+    $('#timeBasis').textContent = e.time
+      ? `At ${e.cruise} km/h in the range scenario`
+      : 'Calculated once range is available';
     $('#speedMetricLabel').textContent =
       e.speed.kind === 'factory'
-        ? 'FACTORY SPEED REFERENCE'
+        ? e.profile.speedAssist
+          ? 'FACTORY ASSIST CUTOFF'
+          : 'TOP SPEED · FACTORY REFERENCE'
         : e.speed.kind === 'gps'
           ? 'REPORTED GPS SPEED'
           : e.speed.kind === 'planning'

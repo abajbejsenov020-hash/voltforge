@@ -22,18 +22,6 @@ const SETTINGS = {
     rotation: -0.8,
     reflections: 0.36,
   },
-  workshop: {
-    url: '/environments/auto_service_1k.hdr',
-    rotation: 1.1,
-    ground: 0x8b8984,
-    reflections: 0.92,
-  },
-  courtyard: {
-    url: '/environments/courtyard_1k.hdr',
-    rotation: -0.8,
-    ground: 0xb0aaa0,
-    reflections: 0.85,
-  },
 };
 
 const LIGHTING = {
@@ -69,22 +57,6 @@ const LIGHTING = {
     keyColor: 0xffcdb2,
     fillColor: 0xe0e7ff,
   },
-  workshop: {
-    key: 2.75,
-    fill: 0.85,
-    ambient: 0.9,
-    reflections: 0.85,
-    keyColor: 0xffeee0,
-    fillColor: 0xe8f1ff,
-  },
-  courtyard: {
-    key: 2.75,
-    fill: 0.85,
-    ambient: 0.9,
-    reflections: 0.85,
-    keyColor: 0xfff7ef,
-    fillColor: 0xe8f1ff,
-  },
 };
 
 /** Physical settings surround the model; HDR maps supply material reflections. */
@@ -110,7 +82,7 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   shadowMaterial.opacity = 0.28;
   shadowMaterial.color.setHex(0x151817);
   const groundMaterial = new THREE.MeshStandardMaterial({
-    color: 0x8b8984,
+    color: 0xb6b5ad,
     roughness: 0.76,
     metalness: 0.03,
   });
@@ -128,16 +100,6 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   rim.rotation.x = -Math.PI / 2;
   rim.position.y = -0.002;
   scene.add(rim);
-  const seams = new THREE.Group();
-  const seamGeometry = new THREE.BoxGeometry(0.005, 0.001, 18);
-  const seamMaterial = new THREE.MeshStandardMaterial({ color: 0x6e706c, roughness: 1 });
-  for (const x of [-6, -4, -2, 2, 4, 6]) {
-    const line = new THREE.Mesh(seamGeometry, seamMaterial);
-    line.position.set(x, -0.044, 0);
-    seams.add(line);
-  }
-  scene.add(seams);
-
   function cached(key, load) {
     if (!cache.has(key)) {
       const pending = load().catch((error) => {
@@ -151,26 +113,13 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   function hdr(url) {
     return cached(url, async () => {
       const texture = await loader.loadAsync(url);
-      if (disposed) {
-        texture.dispose();
-        return null;
-      }
-      texture.mapping = THREE.EquirectangularReflectionMapping;
-      let target;
       try {
-        target = generator.fromEquirectangular(texture);
-      } catch (error) {
+        if (disposed) return null;
+        texture.mapping = THREE.EquirectangularReflectionMapping;
+        return generator.fromEquirectangular(texture);
+      } finally {
         texture.dispose();
-        throw error;
       }
-      return {
-        texture,
-        target,
-        dispose: () => {
-          texture.dispose();
-          target.dispose();
-        },
-      };
     });
   }
   function physicalStatus() {
@@ -201,7 +150,6 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     floor.visible = !physical;
     floor.position.y = physical ? -0.006 : -0.046;
     platform.visible = rim.visible = !physical;
-    seams.visible = !physical && name !== 'studio';
     grid.visible = false;
     scene.fog =
       name === 'plaza'
@@ -212,8 +160,6 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
             ? new THREE.Fog(0xe8e5df, 4, 28)
             : null;
     scene.backgroundIntensity = 1;
-    scene.backgroundBlurriness = 0;
-    scene.backgroundRotation.y = 0;
     scene.environmentRotation.y = 0;
     key.position.copy(defaultKeyPosition);
     fill.position.copy(defaultFillPosition);
@@ -234,9 +180,7 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
   async function set(requestedName = 'garage') {
     if (disposed) return;
     const name =
-      requestedName === 'studio' ||
-      Object.hasOwn(SETTINGS, requestedName) ||
-      Object.hasOwn(PHYSICAL_STAGES, requestedName)
+      requestedName === 'studio' || Object.hasOwn(PHYSICAL_STAGES, requestedName)
         ? requestedName
         : 'garage';
     const revision = ++sequence;
@@ -268,7 +212,6 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
       return;
     }
     if (name === 'studio') {
-      groundMaterial.color.setHex(0xb6b5ad);
       if (status) status.textContent = 'Studio';
       onChange();
       return;
@@ -276,31 +219,15 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
     const setting = SETTINGS[name];
     if (status) status.textContent = 'Loading setting…';
     onChange();
-    const [lighting] = await Promise.allSettled([hdr(setting.url)]);
+    const light = await hdr(setting.url).catch(() => null);
     if (disposed || revision !== sequence) return;
-    const light = lighting.status === 'fulfilled' ? lighting.value : null;
     if (light) {
-      scene.environment = light.target.texture;
+      scene.environment = light.texture;
       scene.environmentIntensity = setting.reflections;
       scene.environmentRotation.y = setting.rotation;
     }
-    if (create) {
-      stageLighting = light ? 'hdr' : 'studio';
-      physicalStatus();
-    } else {
-      groundMaterial.color.setHex(setting.ground);
-      if (light) {
-        scene.background = light.texture;
-        scene.backgroundRotation.y = setting.rotation;
-        scene.backgroundBlurriness = 0.018;
-      }
-      if (status)
-        status.textContent = light
-          ? name === 'workshop'
-            ? 'Workshop'
-            : 'Courtyard'
-          : 'Studio fallback';
-    }
+    stageLighting = light ? 'hdr' : 'studio';
+    physicalStatus();
     onChange();
   }
   return {
@@ -323,9 +250,6 @@ export function createStageEnvironment({ renderer, scene, floor, grid, key, fill
         mesh.geometry.dispose();
         mesh.material.dispose();
       }
-      scene.remove(seams);
-      seamGeometry.dispose();
-      seamMaterial.dispose();
       // The scene owns and disposes whichever material is currently on its floor.
       (floor.material === shadowMaterial ? groundMaterial : shadowMaterial).dispose();
     },

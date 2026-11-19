@@ -1,6 +1,7 @@
 /** Human-readable source-backed factory specifications; absent ratings stay absent. */
 export function factorySummary(profile) {
   if (!profile) return '';
+  if (profile.electric === false) return 'Pedal-powered factory drivetrain';
   const items = [];
   if (profile.motors > 0)
     items.push(

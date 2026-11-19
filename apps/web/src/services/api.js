@@ -5,12 +5,16 @@ export class ApiError extends Error {
     this.code = code;
   }
 }
-export function createApiClient(fetcher = globalThis.fetch) {
+export function createApiClient(fetcher = globalThis.fetch, { accountId } = {}) {
   async function request(path, options = {}) {
     const response = await fetcher('/api' + path, {
       credentials: 'same-origin',
       ...options,
-      headers: { 'Content-Type': 'application/json', ...options.headers },
+      headers: {
+        'Content-Type': 'application/json',
+        ...(accountId && path.startsWith('/builds') && { 'X-Voltmodd-Account': accountId }),
+        ...options.headers,
+      },
       signal: options.signal || AbortSignal.timeout(8000),
     });
     let payload;
@@ -31,11 +35,12 @@ export function createApiClient(fetcher = globalThis.fetch) {
       );
     return payload;
   }
+  const post = (path, body) => request(path, { method: 'POST', body: JSON.stringify(body) });
+  const importBuildsWithResult = (builds) => post('/builds/import', { builds });
   return {
     listBuilds: async () => (await request('/builds')).builds,
-    importBuilds: async (builds) =>
-      (await request('/builds/import', { method: 'POST', body: JSON.stringify({ builds }) }))
-        .builds,
+    importBuilds: async (builds) => (await importBuildsWithResult(builds)).builds,
+    importBuildsWithResult,
     saveBuild: async (build, expectedRevision = 0) =>
       (
         await request('/builds/' + encodeURIComponent(build.id), {
@@ -47,5 +52,11 @@ export function createApiClient(fetcher = globalThis.fetch) {
     estimate: async (build) =>
       (await request('/performance', { method: 'POST', body: JSON.stringify({ build }) }))
         .performance,
+    accountSession: () => request('/auth/session'),
+    signUp: (email, password) => post('/auth/signup', { email, password }),
+    logIn: (email, password) => post('/auth/login', { email, password }),
+    logOut: () => post('/auth/logout', {}),
+    resetPassword: (email) => post('/auth/reset', { email }),
+    setPassword: (password) => post('/auth/password', { password }),
   };
 }

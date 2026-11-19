@@ -23,12 +23,14 @@ export function bindEvents(app) {
   };
   document.querySelectorAll('[data-type]').forEach((button) => {
     button.onclick = () => {
-      if (app.setupType !== button.dataset.type) {
+      const changed = app.setupType !== button.dataset.type;
+      if (changed) {
         $('#vehicleName').value = '';
         $('#finderBrand').value = '';
+        app.showAllVehicles = false;
       }
       app.setupType = button.dataset.type;
-      app.syncSetup();
+      app.syncSetup({ showBrands: changed });
     };
   });
   document.querySelectorAll('[data-mode]').forEach((button) => {
@@ -100,15 +102,7 @@ export function bindEvents(app) {
         `<img src="${esc(ref.image)}" alt="${esc(ref.name)}" class="detail-vehicle-photo"><p>${esc(ref.variantNote || 'Original model reference. Confirm your year and variant.')}</p><p>Selected modifications are recorded in your build. This image shows the reference vehicle.</p><p><a href="${esc(ref.source)}" target="_blank" rel="noopener noreferrer">${esc(ref.credit)} · original source ↗</a></p>`,
       );
   };
-  $('#browseModelLibrary').onclick = () => {
-    $('#modelFinder').open = true;
-    $('#vehicleName').focus();
-    $('#modelFinder').scrollIntoView({
-      behavior: reducedMotionEnabled() ? 'auto' : 'smooth',
-      block: 'nearest',
-    });
-  };
-  $('#projectName').oninput = app.renderFeatured;
+  $('#projectName').oninput = app.renderSelection;
   $('#categorySelect').onchange = (event) => {
     app.category = event.target.value;
     $('#search').value = '';
@@ -171,7 +165,6 @@ export function bindEvents(app) {
       event.preventDefault();
       if (buttons.length) {
         buttons[Math.max(0, app.activeVehicleSuggestion)].click();
-        $('#startBuild').focus();
       } else $('#startBuild').click();
     }
   };

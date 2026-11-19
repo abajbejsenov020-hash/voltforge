@@ -76,7 +76,7 @@ test('the existing completed build shows speed and power automatically and survi
 test('an unknown motor requests one essential rating inline, then calculates without hidden setup', async ({
   page,
 }) => {
-  await seed(page, fixture('p73'));
+  await seed(page, fixture('p92'));
   await expect(page.locator('#estimatedSpeed')).toHaveText('Not established');
   await page.locator('#addSpeedData').click();
   await expect(page.locator('#quickPerformanceForm [name="power"]')).toBeFocused();

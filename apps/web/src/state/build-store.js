@@ -3,7 +3,6 @@ import { createBuild, normalizePaint } from '@voltforge/shared/build';
 const STORAGE_KEY = 'voltforge-v1';
 const SYNC_KEY = 'voltforge-sync-v1';
 export const BUILD_RECORD_PREFIX = 'voltforge-build-v1:';
-const recordKey = (id) => BUILD_RECORD_PREFIX + encodeURIComponent(id);
 const revisionOf = (value) => (Number.isSafeInteger(value) && value >= 0 ? value : 0);
 const isBuild = (value) =>
   value &&
@@ -39,7 +38,7 @@ function content(build) {
 
 /** Each durable record atomically stores a build and its synchronization state. */
 export class BuildStore {
-  constructor({ storage, api, onStatus = () => {} } = {}) {
+  constructor({ storage, api, accountId, onStatus = () => {} } = {}) {
     this.storage = storage;
     if (storage === undefined) {
       try {
@@ -49,6 +48,10 @@ export class BuildStore {
       }
     }
     this.api = api;
+    const namespace = accountId ? 'voltmodd-account:' + encodeURIComponent(accountId) + ':' : '';
+    this.storageKey = namespace + STORAGE_KEY;
+    this.syncKey = namespace + SYNC_KEY;
+    this.recordPrefix = namespace + BUILD_RECORD_PREFIX;
     this.onStatus = onStatus;
     this.builds = [];
     this.revisions = Object.create(null);
@@ -76,16 +79,24 @@ export class BuildStore {
     this.onStatus({ label, kind });
   }
 
+  handlesStorageKey(key) {
+    return key === this.storageKey || key?.startsWith(this.recordPrefix);
+  }
+
+  recordKey(id) {
+    return this.recordPrefix + encodeURIComponent(id);
+  }
+
   readStored() {
     let saved;
     try {
-      saved = JSON.parse(this.storage?.getItem(STORAGE_KEY) || '{}');
+      saved = JSON.parse(this.storage?.getItem(this.storageKey) || '{}');
     } catch {
       /* Recover the independent records below. */
     }
     let sync;
     try {
-      sync = JSON.parse(this.storage?.getItem(SYNC_KEY) || 'null');
+      sync = JSON.parse(this.storage?.getItem(this.syncKey) || 'null');
     } catch {
       /* Treat missing metadata as pending. */
     }
@@ -100,18 +111,18 @@ export class BuildStore {
       });
     }
     const keys = new Set(
-      [...records.keys(), ...this.builds.map((build) => build.id)].map(recordKey),
+      [...records.keys(), ...this.builds.map((build) => build.id)].map((id) => this.recordKey(id)),
     );
     // Enumeration recovers records even if a tab closed before updating the legacy mirror.
     for (let index = 0; index < (this.storage?.length || 0); index++) {
       const key = this.storage.key?.(index);
-      if (key?.startsWith(BUILD_RECORD_PREFIX)) keys.add(key);
+      if (key?.startsWith(this.recordPrefix)) keys.add(key);
     }
     const canonical = new Set();
     for (const key of keys) {
       try {
         const value = JSON.parse(this.storage?.getItem(key) || 'null');
-        if (!isBuild(value?.build) || key !== recordKey(value.build.id)) continue;
+        if (!isBuild(value?.build) || key !== this.recordKey(value.build.id)) continue;
         records.set(value.build.id, {
           build: normalize(value.build),
           revision: revisionOf(value.revision),
@@ -205,18 +216,18 @@ export class BuildStore {
       }
       for (const [id, record] of records) {
         if (changed.has(id) || !canonical.has(id))
-          this.storage?.setItem(recordKey(id), JSON.stringify(record));
+          this.storage?.setItem(this.recordKey(id), JSON.stringify(record));
       }
       this.applyRecords(records);
       this.dirty.clear();
       if (writeMirror) {
-        // This remains readable by the original app. Per-build records are authoritative.
+        // Guest mirrors remain readable by the original app. Per-build records are authoritative.
         this.storage?.setItem(
-          STORAGE_KEY,
+          this.storageKey,
           JSON.stringify({ active: this.current.id, builds: this.builds }),
         );
         this.storage?.setItem(
-          SYNC_KEY,
+          this.syncKey,
           JSON.stringify({
             revisions: this.revisions,
             pending: [...this.pending],

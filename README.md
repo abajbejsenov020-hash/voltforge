@@ -22,7 +22,7 @@ npm start
 
 Open **http://127.0.0.1:3001**. Node serves both the compiled frontend and API. This is a server application; opening `index.html` directly will not run it.
 
-Optionally copy `.env.example` to `.env`. The root scripts load it automatically. Defaults bind to the local machine. Deployment requires a persistent writable directory for SQLite, HTTPS at the proxy, and `APP_ORIGIN` set to the public origin. No hosting service is provisioned by this repository.
+Optionally copy `.env.example` to `.env`. The root scripts load it automatically. Defaults bind to the local machine. Hosted accounts use Supabase and the [deployment configuration](docs/deployment.md).
 
 ## Structure
 
@@ -59,9 +59,10 @@ The 352 vehicles with product references use individually exported Blender GLB m
 ## Current coverage
 
 - **355 indexed vehicle names** with brand, model and alias search.
+- **331 electric vehicles** show all four stock performance figures automatically. The [stock profile audit](docs/stock-profiles.md) lists the remaining fields for 21 models and identifies three pedal-powered bicycles.
 - **352 vehicle references and Blender models**, including 292 additions across commuter and premium scooters, bicycles, and electric motorcycles. All 355 names have been audited. Ausom DT1, Hiley Tiger 8, and Hiley Tiger 9 remain selectable with their source audit notes. Photo-based 3D opens by default for completed entries, with original photos and visible trim notes available.
 - **315 planning catalog entries** across eight categories; **94 components have product imagery and distinct photo-guided 3D approximations**. The default catalog shows photographed products. Templates and supplier requests remain available in the complete catalog.
-- A true 3D garage is the default: finite textured walls/floor, workbench, tools, warm/cool practical lighting and parked G4 Ultra + Sur-Ron LBX Blender models. Camera movement changes their perspective; the setting persists locally. Workshop/courtyard HDR environments and a neutral studio remain selectable. Product references preserve original appearance; 3D concepts illustrate changes using approximate geometry. No procedural model is represented as measured manufacturer CAD.
+- A true 3D garage is the default: finite textured walls/floor, workbench, tools, warm/cool practical lighting and parked G4 Ultra + Sur-Ron LBX Blender models. Camera movement changes their perspective. The viewer remembers the selected setting and supports full screen with the scene controls available. Product references preserve original appearance; 3D concepts illustrate changes using approximate geometry. No procedural model is represented as measured manufacturer CAD.
 - **City plaza · Night** is an additional physical 3D setting with charging bays, architecture, practical lighting and parked Thunder 3 + Sur-Ron Ultra Bee models. All 23 Dualtrons have [refined individual decks, graphics and controls](docs/dualtron-plaza.md), including the owner's Thunder 3 top-view reference.
 
 An original product reference does **not** render your selected modifications. The parts list records those changes, and the separate 3D concept illustrates them. Images can show regional variants, accessories, graphics or factory renders; the manifest preserves those notes and sources. Unverified variants are listed in `apps/web/public/assets/vehicles/unresolved.json`.
@@ -72,13 +73,13 @@ An original product reference does **not** render your selected modifications. T
 
 The old `voltforge-v1` browser record (`{ active, builds }`) is retained for migration. Builds save locally and sync through a serialized, revision-checked outbox. Local edits survive server outages; conflicting edits are preserved instead of silently overwriting newer data.
 
-SQLite is stored in `data/voltforge.sqlite` by default. The server assigns an anonymous HttpOnly session cookie and stores its hash. That browser cookie identifies the private workspace; this version has no account login or cross-device account recovery. Clearing browser data can remove access to that workspace. Export important plans. Back up the database using a SQLite-aware backup or stop the server before copying the database and associated WAL files.
+Local development stores the anonymous workspace in `data/voltforge.sqlite`. Clearing browser data can remove access to that workspace. Hosted builds use a private account garage in Supabase and sync across devices. A guest can draft builds locally and copy them into a signed-in garage with **Import local builds**. Keep a portable copy of important drafts before clearing browser data.
 
 ## Performance estimates
 
 Speed, range, ride time and peak motor output distinguish measured inputs, factory references and modeled ceilings. Range is calculated at the selected riding speed using battery energy, drag, rolling load, mass, grade, wind and stops. Trip energy and distance can calibrate consumption.
 
-Rebuilds automatically retain factory parts in every unselected category. A controller-only change uses the new controller plus the original motor and battery; **Return to stock** removes that category's replacement and its old hardware overrides. Inferred parts stay transient: saved IDs contain only explicit replacements, and the Blender vehicle retains its stock geometry for unchanged categories. The [factory profile catalog](docs/stock-profiles.md) documents 60 exact models, version caveats and missing values. The G4 remains **one rear 2,000 W motor**, 60 V × 20 Ah (1,200 Wh); its owner's **90 km/h display reading is not GPS**. Powertrain changes clear old speed/trip observations while retaining the other factory components.
+Rebuilds automatically retain factory parts in every unselected category. Stock builds use the selected model’s factory profile for speed, power and battery energy as soon as the build opens. A controller-only change uses the new controller plus the original motor and battery; **Return to stock** removes that category's replacement and its old hardware overrides. Inferred parts stay transient: saved IDs contain only explicit replacements, and the Blender vehicle retains its stock geometry for unchanged categories. The [factory profile catalog](docs/stock-profiles.md) describes the source, version and missing values for each profile. The G4 remains **one rear 2,000 W motor**, 60 V × 20 Ah (1,200 Wh); its owner's **90 km/h display reading is not GPS**. Powertrain changes clear old speed/trip observations while retaining the other factory components.
 
 A partial rebuild produces automatic speed and peak-power planning scenarios from each chosen replacement plus remaining factory hardware. Scratch builds require their own motor, controller and battery. Manufacturer ratings are recorded with sources in `packages/shared/src/catalog/performance-ratings.json`; ranges preserve winding and power variants. Unknown essential motor or pack ratings are requested directly below the results.
 

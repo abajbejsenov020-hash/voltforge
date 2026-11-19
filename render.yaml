@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: voltmodd
+    runtime: node
+    plan: free
+    region: frankfurt
+    autoDeployTrigger: 'off'
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: test -n "$SUPABASE_URL" && test -n "$SUPABASE_PUBLISHABLE_KEY" && HOST=0.0.0.0 APP_ORIGIN="$RENDER_EXTERNAL_URL" npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.x
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false

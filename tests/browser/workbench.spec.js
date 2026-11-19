@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 async function startModel(page, name) {
-  await page.locator(`[data-featured="${name}"]`).click();
+  await page.locator('[data-featured-brand="KuKirin"]').click();
+  await page.locator(`[data-vehicle="${name}"]`).click();
   await page.locator('#startBuild').click();
   await expect(page.locator('#startDialog')).not.toBeVisible();
   await expect(page.locator('#modelLabel')).toHaveText(name);
@@ -21,7 +22,12 @@ test('rebuild G4, inspect a real controller, calculate scenarios and keep the sa
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto('/');
   await expect(page.locator('#startDialog')).toBeVisible();
-  await expect(page.locator('#featuredModels > button')).toHaveCount(4);
+  const brands = page.locator('#featuredModels > button');
+  await expect(brands).toHaveCount(24);
+  await expect(brands.filter({ hasText: 'KuKirin' }).locator('img')).toHaveAttribute(
+    'src',
+    /kukirin-g4/,
+  );
   await startModel(page, 'KuKirin G4');
   await expect(page.locator('#scene')).toBeHidden();
   await expect(page.locator('#energy')).toContainText('1200');
@@ -62,14 +68,16 @@ test('e-moto picker, alias finder, original LBX appearance and peak power', asyn
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto('/');
   await page.locator('[data-type="bike"]').click();
-  for (const name of [
-    'Sur-Ron Light Bee X',
-    'Talaria Sting Pro MX5',
-    'Stark Varg EX',
-    'Arctic Leopard XE Pro S',
-  ]) {
-    await expect(page.locator(`[data-featured="${name}"]`)).toBeVisible();
-  }
+  await expect(page.locator('#featuredModels > button')).toHaveCount(20);
+  const surRon = page.locator('[data-featured-brand="Sur-Ron"]');
+  await expect(surRon.locator('img')).toHaveAttribute('src', /surron-light-bee-x/);
+  await surRon.click();
+  await expect(page.locator('#featuredHeading')).toHaveText('Sur-Ron models');
+  await expect(page.locator('#vehicleName')).toBeFocused();
+  await expect(page.locator('#startBuild')).toBeDisabled();
+  await expect(page.locator('[data-vehicle="Sur-Ron Ultra Bee"]')).toBeVisible();
+  await expect(page.locator('[data-vehicle="KuKirin G4"]')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Browse brands' }).click();
   await page.locator('#browseModelLibrary').click();
   await page.locator('#vehicleName').fill('surron lbx');
   await expect(page.locator('[data-vehicle="Sur-Ron Light Bee X"]')).toBeVisible();
@@ -92,8 +100,8 @@ test('e-moto picker, alias finder, original LBX appearance and peak power', asyn
   await page.locator('#closeDetail').click();
   await expect(page.locator('#estimatedPeak')).toHaveText('≈12.6 kW');
   await expect(page.locator('#peakBasis')).toContainText('Battery burst-current');
-  await page.locator('#sceneSetting').selectOption('courtyard');
-  await expect(page.locator('.stage')).toHaveAttribute('data-environment', 'courtyard');
+  await page.locator('#sceneSetting').selectOption('coast');
+  await expect(page.locator('.stage')).toHaveAttribute('data-environment', 'coast');
   await page.screenshot({ path: 'test-results/lbx-desktop.png', fullPage: true });
   expect(errors).toEqual([]);
 });
@@ -112,8 +120,8 @@ test('3D concept and component controls render in a real WebGL browser', async (
   await page.locator('#zoomIn').click();
   await page.locator('#resetView').click();
   await page.locator('#explode').click();
-  await page.locator('#sceneSetting').selectOption('courtyard');
-  await expect(page.locator('#sceneEnvironmentStatus')).toHaveText('Courtyard');
+  await page.locator('#sceneSetting').selectOption('plaza');
+  await expect(page.locator('#sceneEnvironmentStatus')).toHaveText('City plaza · 3D night setting');
   await page.locator('#sceneSetting').selectOption('studio');
   await expect(page.locator('#sceneEnvironmentStatus')).toHaveText('Studio');
   await page.locator('#categorySelect').selectOption('Controllers');
@@ -135,7 +143,7 @@ test('mobile model selection and real image stay within the viewport', async ({ 
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/');
   await startModel(page, 'KuKirin G4');
-  await page.locator('#sceneSetting').selectOption('workshop');
+  await page.locator('#sceneSetting').selectOption('studio');
   const widths = await page.evaluate(() => ({
     viewport: innerWidth,
     content: document.documentElement.scrollWidth,

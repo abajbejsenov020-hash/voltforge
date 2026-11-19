@@ -35,6 +35,7 @@
             </div>
           </details>
           <button class="btn" id="exportBuild">Export build</button>
+          <button class="btn" id="accountBtn" aria-haspopup="dialog" hidden>Log in</button>
           <button class="btn primary" id="newBuild">New build</button>
         </div>
       </header>
@@ -76,17 +77,36 @@
                 </button>
                 <button data-presentation="concept" aria-pressed="false">3D concept</button>
               </div>
-              <label class="scene-setting"
-                >Setting
-                <select id="sceneSetting">
-                  <option value="garage">Garage</option>
-                  <option value="plaza">City plaza · Night</option>
-                  <option value="coast">Coastal Sunset</option>
-                  <option value="workshop">Workshop</option>
-                  <option value="courtyard">Courtyard</option>
-                  <option value="studio">Studio</option>
-                </select></label
-              >
+              <div class="scene-tools">
+                <label class="scene-setting"
+                  >Setting
+                  <select id="sceneSetting">
+                    <option value="garage">Garage</option>
+                    <option value="plaza">City plaza · Night</option>
+                    <option value="coast">Coastal Sunset</option>
+                    <option value="studio">Studio</option>
+                  </select></label
+                >
+                <button
+                  id="sceneFullscreen"
+                  type="button"
+                  aria-label="Full screen"
+                  title="Full screen"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 4H4v5m11-5h5v5m0 6v5h-5m-6 0H4v-5" />
+                    <path d="M4 9h5V4m11 5h-5V4m5 11h-5v5M4 15h5v5" hidden />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="vehicle-reference" id="vehicleReference" hidden>
               <img
@@ -151,6 +171,7 @@
               Original appearance · selected modifications are listed in your build
             </p>
           </div>
+          <dialog id="viewerFullscreenDialog" aria-label="Vehicle viewer"></dialog>
           <div id="modelEdits" class="model-edits" hidden>
             <div
               id="paintControls"
@@ -190,7 +211,7 @@
                 <div class="eyebrow">BEFORE THE FIRST RIDE</div>
                 <h2>Performance & range</h2>
               </div>
-              <div class="performance-actions">
+              <div class="performance-actions" id="performanceActions">
                 <label for="rangeCruise"
                   >Range at
                   <select id="rangeCruise" aria-label="Range scenario riding speed">
@@ -215,7 +236,7 @@
               <p id="performanceConflictText"></p>
               <button class="text-btn" id="reviewPerformanceConflicts">Review conflicts →</button>
             </div>
-            <div class="performance-grid">
+            <div class="performance-grid" id="performanceMetrics">
               <div>
                 <span class="metric-label" id="speedMetricLabel">SPEED REFERENCE</span
                 ><strong id="estimatedSpeed">—</strong
@@ -239,7 +260,7 @@
               </div>
               <div>
                 <span class="metric-label">RIDE TIME · ESTIMATE</span
-                ><strong id="estimatedTime">—</strong><small>At modeled cruising speed</small>
+                ><strong id="estimatedTime">—</strong><small id="timeBasis"></small>
               </div>
             </div>
             <div
@@ -250,6 +271,11 @@
             <div id="automaticPerformance" hidden></div>
             <p id="performanceNote">
               Planning estimates, not tested performance. Level road, no wind, healthy battery.
+            </p>
+            <p id="stockReference" hidden>
+              <a id="stockReferenceLink" target="_blank" rel="noopener noreferrer">
+                Stock specifications and version details ↗
+              </a>
             </p>
           </section>
           <details class="assistant">
@@ -316,15 +342,25 @@
         <span class="wordmark">VOLTMODD</span
         ><span class="setup-steps"
           ><strong>Vehicle</strong><span>Components</span><span>Review</span></span
-        ><button class="close-setup" aria-label="Close build setup">Back to studio</button>
+        >
+        <div class="setup-actions">
+          <button
+            id="setupAccountBtn"
+            type="button"
+            class="close-setup"
+            aria-haspopup="dialog"
+            hidden
+          >
+            Log in
+          </button>
+          <button class="close-setup" aria-label="Close build setup">Back to studio</button>
+        </div>
       </form>
       <div class="modal-content">
         <div class="setup-intro">
           <div>
             <h2 id="setupHeading">Start with your ride.</h2>
-            <p id="setupDescription">
-              Choose a model to rebuild, or start a new configuration from scratch.
-            </p>
+            <p id="setupDescription">Pick a brand or search for the vehicle you own.</p>
           </div>
           <div class="mode-toggle">
             <button data-mode="rebuild" class="chosen">Rebuild a vehicle</button
@@ -340,20 +376,19 @@
         </div>
         <section id="featuredSection" aria-labelledby="featuredHeading">
           <div class="section-heading">
-            <h3 id="featuredHeading">Choose your model</h3>
-            <button class="text-btn" id="browseModelLibrary">Find another model</button>
+            <h3 id="featuredHeading">Choose a brand</h3>
+            <button
+              type="button"
+              class="text-btn"
+              id="browseModelLibrary"
+              aria-controls="modelFinder"
+              aria-expanded="false"
+            >
+              Search by model
+            </button>
           </div>
           <div class="featured-models" id="featuredModels"></div>
-          <div
-            id="emotoBrands"
-            class="emoto-brands"
-            aria-label="Explore e-bike and e-moto brands"
-            hidden
-          ></div>
-        </section>
-        <details id="modelFinder" class="model-finder">
-          <summary>Explore more models <span id="librarySize"></span></summary>
-          <div id="existingFields">
+          <div id="modelFinder" class="model-finder" hidden>
             <label class="field-label" for="vehicleName">Search your vehicle</label>
             <div class="finder-toolbar">
               <select id="finderBrand" aria-label="Filter vehicle suggestions by brand">
@@ -383,7 +418,7 @@
             <p class="field-note" id="vehicleNote">Search by brand or model.</p>
             <span id="vehicleKeyboardStatus" class="screen-reader-only" aria-live="polite"></span>
           </div>
-        </details>
+        </section>
         <div id="newFields" hidden>
           <label class="field-label" for="projectName">Build name <span>(optional)</span></label
           ><input
@@ -394,7 +429,7 @@
           />
           <p>Start with a generic vehicle layout and choose your own components.</p>
         </div>
-        <div class="setup-bottom">
+        <div class="setup-bottom" id="setupSelection">
           <div>
             <span id="selectionLabel">Select a model to continue</span
             ><small id="selectionNote"
@@ -415,6 +450,49 @@
         <button class="icon-btn" id="closeDetail" aria-label="Close details">×</button>
       </div>
       <div id="detailBody"></div>
+    </dialog>
+    <dialog id="accountDialog" aria-labelledby="accountHeading">
+      <header class="account-header">
+        <h2 id="accountHeading">Log in</h2>
+        <button id="closeAccount" type="button" class="icon-btn" aria-label="Close account dialog">
+          ×
+        </button>
+      </header>
+      <p id="accountDescription"></p>
+      <form id="accountForm" class="account-form">
+        <label id="accountEmailField">
+          Email
+          <input
+            id="accountEmail"
+            name="email"
+            type="email"
+            autocomplete="email"
+            maxlength="254"
+            required
+          />
+        </label>
+        <label id="accountPasswordField">
+          Password
+          <input
+            id="accountPassword"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+        </label>
+        <button id="submitAccount" type="submit" class="btn primary">Log in</button>
+      </form>
+      <div class="account-actions">
+        <button type="button" class="text-btn" id="showLogin" hidden>Log in</button>
+        <button type="button" class="text-btn" id="showSignup">Sign up</button>
+        <button type="button" class="text-btn" id="showReset">Forgot password?</button>
+        <button type="button" class="btn" id="importLocalBuilds" hidden>Import local builds</button>
+        <button type="button" class="btn" id="importBuildFile" hidden>Import build file</button>
+        <input id="garageFile" type="file" accept=".json,application/json" hidden />
+        <button type="button" class="btn" id="logOut" hidden>Log out</button>
+      </div>
+      <p id="accountStatus" role="status"></p>
     </dialog>
     <div id="toast" role="status"></div>
     <script type="module" src="/src/main.js"></script>

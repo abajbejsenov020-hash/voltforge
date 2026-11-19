@@ -136,12 +136,16 @@ export function createFeature(app) {
     const current = app.effectiveParts()[app.category];
     const changed = current && !current.stock;
     const stock = changed ? null : current;
+    const pedalPowered =
+      !current &&
+      app.performanceProfile()?.electric === false &&
+      ['Motors', 'Controllers', 'Batteries'].includes(app.category);
     $('#parts').insertAdjacentHTML(
       'afterbegin',
       `<article class="stock-part-card" data-stock-category="${esc(app.category)}">
-      <div class="stock-part-heading"><span class="stock-part-badge">${current?.stockEquivalent ? 'FACTORY REPLACEMENT' : changed ? 'MODIFIED' : 'STOCK · FACTORY FITTED'}</span>${changed ? `<button type="button" class="text-btn" id="returnToStock">Return to stock</button>` : ''}</div>
-      <strong>${changed ? esc(current.brand + ' ' + current.name) : esc(stock?.name || app.state.vehicle + ' factory ' + app.category.toLowerCase())}</strong>
-      <p>${current?.stockEquivalent ? 'Matching factory motor family. Overall performance depends on the remaining hardware; confirm the exact replacement version.' : changed ? 'This replaces the factory component. All other unchanged categories remain stock.' : 'Included automatically. Choose an upgrade below to replace it.'}</p>
+      <div class="stock-part-heading"><span class="stock-part-badge">${pedalPowered ? 'PEDAL-POWERED' : current?.stockEquivalent ? 'FACTORY REPLACEMENT' : changed ? 'MODIFIED' : 'STOCK · FACTORY FITTED'}</span>${changed ? `<button type="button" class="text-btn" id="returnToStock">Return to stock</button>` : ''}</div>
+      <strong>${pedalPowered ? 'Electric conversion' : changed ? esc(current.brand + ' ' + current.name) : esc(stock?.name || app.state.vehicle + ' factory ' + app.category.toLowerCase())}</strong>
+      <p>${pedalPowered ? 'Choose a component below for your electric conversion.' : current?.stockEquivalent ? 'Matching factory motor family. Overall performance depends on the remaining hardware; confirm the exact replacement version.' : changed ? 'This component is selected for your build.' : 'Included automatically. Choose an upgrade below to replace it.'}</p>
       ${changed ? '<button type="button" class="text-btn" id="inspectBuild3D">Inspect in 3D ↑</button>' : ''}
     </article>`,
     );

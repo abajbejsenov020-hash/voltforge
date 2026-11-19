@@ -5,68 +5,88 @@ import {
   normalizeVehicleName,
   findVehicles,
 } from '@voltforge/shared/vehicles';
-import {
-  vehicleReference,
-  VEHICLE_REFERENCES,
-  featuredVehicles,
-  vehicleArtworkAudit,
-} from '../data/vehicle-library.js';
+import { vehicleReference, featuredBrands, vehicleArtworkAudit } from '../data/vehicle-library.js';
 
 export function createFeature(app) {
+  let renderedBrandType;
+
   function openStart(edit = false) {
-    $('#librarySize').textContent =
-      `${VEHICLE_REFERENCES.length} pictured · ${VEHICLE_INDEX.length} indexed models`;
     app.editMode = edit;
     app.showAllVehicles = false;
-    $('#finderBrand').innerHTML =
-      '<option value="">All vehicle brands</option>' +
-      [...new Set(VEHICLE_INDEX.map((v) => v.brand))]
-        .sort()
-        .map((brand) => `<option>${esc(brand)}</option>`)
-        .join('');
     app.setupType = edit ? app.state.type : 'scooter';
     app.setupMode = edit ? app.state.mode : 'rebuild';
+    $('#finderBrand').value = '';
     $('#projectName').value = edit ? app.state.name : '';
     $('#vehicleName').value = edit ? app.state.vehicle : '';
     $('#photoModelsOnly').checked = false;
+    $('#modelFinder').hidden = !edit;
     syncSetup();
-    $('#modelFinder').open = false;
     $('#startDialog').showModal();
   }
-  function renderFeatured() {
-    const shortcuts = $('#emotoBrands');
-    shortcuts.hidden = app.setupType !== 'bike';
-    shortcuts.innerHTML = ['Sur-Ron', 'Talaria', 'Arctic Leopard', 'Stark', 'E Ride Pro', 'Altis']
-      .map(
-        (brand) =>
-          `<button type="button" data-emoto-brand="${esc(brand)}">${esc(brand)} <span>${VEHICLE_INDEX.filter((v) => v.brand === brand).length} models</span></button>`,
-      )
-      .join('');
-    shortcuts.querySelectorAll('button').forEach((button) => {
-      button.onclick = () => {
-        $('#finderBrand').value = button.dataset.emotoBrand;
-        $('#vehicleName').value = '';
-        app.showAllVehicles = true;
-        $('#modelFinder').open = true;
-        vehicleSuggestions();
-        $('#vehicleName').focus();
-      };
-    });
-    const current = normalizeVehicleName($('#vehicleName').value);
-    $('#featuredModels').innerHTML = featuredVehicles(app.setupType)
-      .map((v) => {
-        const indexed = VEHICLE_INDEX.find((entry) => entry.name === v.name);
-        const brand = indexed?.brand || v.name.split(' ')[0],
-          model = v.name.slice(brand.length).trim();
-        const chosen = normalizeVehicleName(v.name) === current;
-        return `<button class="featured-model ${chosen ? 'chosen' : ''}" aria-pressed="${chosen}" data-featured="${esc(v.name)}" data-featured-type="${v.type}"><img class="featured-photo" src="${v.image}" alt="${esc(v.name)}" width="600" height="600"><span class="featured-info"><span class="featured-brand">${esc(brand)}</span><span class="featured-name">${esc(model)}</span><span class="featured-action">${chosen ? 'Selected' : 'Select model'}</span></span></button>`;
+
+  function renderBrands() {
+    if (renderedBrandType === app.setupType) return;
+    renderedBrandType = app.setupType;
+    const brands = featuredBrands(app.setupType);
+    const previousBrand = $('#finderBrand').value;
+    $('#finderBrand').innerHTML =
+      '<option value="">All vehicle brands</option>' +
+      brands
+        .map(({ brand }) => brand)
+        .sort((a, b) => a.localeCompare(b))
+        .map((brand) => `<option>${esc(brand)}</option>`)
+        .join('');
+    $('#finderBrand').value = brands.some(({ brand }) => brand === previousBrand)
+      ? previousBrand
+      : '';
+    $('#featuredModels').innerHTML = brands
+      .map(({ brand, reference }, index) => {
+        const caption = reference?.name.startsWith(`${brand} `)
+          ? reference.name.slice(brand.length + 1)
+          : reference?.name;
+        const photo = reference
+          ? `<img class="featured-photo" src="${esc(reference.image)}" alt="" loading="${index < 4 ? 'eager' : 'lazy'}" width="600" height="450">`
+          : '';
+        return `<button type="button" class="featured-model" data-featured-brand="${esc(brand)}">${photo}<span class="featured-info"><span class="featured-name">${esc(brand)}</span>${caption ? `<span class="featured-caption">${esc(caption)}</span>` : ''}</span></button>`;
       })
       .join('');
-    $('#featuredModels')
-      .querySelectorAll('button')
-      .forEach((button) => {
-        button.onclick = () => chooseVehicle(button.dataset.featured, button.dataset.featuredType);
-      });
+  }
+
+  function openModelFinder(brand = '') {
+    $('#finderBrand').value = brand;
+    if (brand) $('#vehicleName').value = '';
+    $('#photoModelsOnly').checked = false;
+    $('#modelFinder').hidden = false;
+    app.showAllVehicles = Boolean(brand);
+    vehicleSuggestions();
+    $('#vehicleName').focus();
+  }
+
+  $('#featuredModels').onclick = (event) => {
+    const button = event.target.closest('[data-featured-brand]');
+    if (button) openModelFinder(button.dataset.featuredBrand);
+  };
+  $('#browseModelLibrary').onclick = () => {
+    if ($('#modelFinder').hidden) openModelFinder();
+    else {
+      $('#modelFinder').hidden = true;
+      renderSelection();
+    }
+  };
+
+  function renderSelection() {
+    const finderOpen = !$('#modelFinder').hidden;
+    const brand = $('#finderBrand').value;
+    $('#featuredModels').hidden = finderOpen;
+    $('#featuredHeading').textContent = !finderOpen
+      ? 'Choose a brand'
+      : brand
+        ? `${brand} models`
+        : 'Find your model';
+    $('#browseModelLibrary').textContent = finderOpen ? 'Browse brands' : 'Search by model';
+    $('#browseModelLibrary').setAttribute('aria-expanded', String(finderOpen));
+    $('#setupSelection').hidden = app.setupMode === 'rebuild' && !finderOpen;
+    $('#vehicleName').placeholder = brand ? `Search ${brand} models` : 'Brand or model name';
     const name = $('#vehicleName').value.trim();
     $('#selectionLabel').textContent =
       app.setupMode === 'new'
@@ -77,15 +97,19 @@ export function createFeature(app) {
     $('#selectionNote').textContent =
       app.setupMode === 'new'
         ? 'Configure a vehicle from a generic starting layout.'
-        : vehicleReference(name)
-          ? 'Original model reference included. Check your year and variant.'
-          : vehicleArtworkAudit(name)
-            ? 'Source audit: ' +
-              vehicleArtworkAudit(name).reason +
-              ' A labeled concept remains available.'
-            : 'This name has no verified image yet. A clearly labeled concept view is available.';
+        : !name
+          ? ''
+          : vehicleReference(name)
+            ? 'Original model reference included. Check your year and variant.'
+            : vehicleArtworkAudit(name)
+              ? 'Source audit: ' +
+                vehicleArtworkAudit(name).reason +
+                ' A labeled concept remains available.'
+              : 'This name has no verified image yet. A clearly labeled concept view is available.';
   }
-  function syncSetup() {
+  function syncSetup({ showBrands = false } = {}) {
+    if (showBrands) $('#modelFinder').hidden = true;
+    renderBrands();
     document.querySelectorAll('[data-type]').forEach((button) => {
       button.classList.toggle('chosen', button.dataset.type === app.setupType);
       button.setAttribute('aria-pressed', button.dataset.type === app.setupType);
@@ -93,21 +117,24 @@ export function createFeature(app) {
     document.querySelectorAll('[data-mode]').forEach((button) => {
       button.classList.toggle('chosen', button.dataset.mode === app.setupMode);
     });
-    for (const id of ['existingFields', 'modelFinder', 'featuredSection'])
-      $(`#${id}`).hidden = app.setupMode !== 'rebuild';
+    $('#featuredSection').hidden = app.setupMode !== 'rebuild';
     $('#newFields').hidden = app.setupMode !== 'new';
     $('#setupHeading').textContent =
       app.setupMode === 'rebuild' ? 'Start with your ride.' : 'Build something your own.';
     $('#setupDescription').textContent =
       app.setupMode === 'rebuild'
-        ? 'Choose the vehicle you own. Make the next version yours.'
+        ? 'Pick a brand or search for the vehicle you own.'
         : 'Choose a platform, name your project and start with the components.';
     vehicleSuggestions();
   }
   function vehicleSuggestions() {
     const query = $('#vehicleName').value.trim(),
       brand = $('#finderBrand').value;
-    const allMatches = findVehicles(query, { type: app.setupType, brand, saved: app.builds });
+    const allMatches = findVehicles(query, {
+      type: app.setupType,
+      brand,
+      saved: app.builds,
+    }).filter((vehicle) => !brand || vehicle.type === app.setupType);
     const photosOnly = $('#photoModelsOnly').checked;
     const matches = photosOnly ? allMatches.filter((v) => vehicleReference(v.name)) : allMatches;
     const shown = app.showAllVehicles ? matches : matches.slice(0, query ? 8 : 6);
@@ -144,7 +171,7 @@ export function createFeature(app) {
     $('#customVehicle').textContent = `Use “${query}” as a custom name`;
     $('#vehicleNote').textContent =
       'Search supports model aliases and spacing variations. Product images show the original vehicle; variants and installed parts can differ.';
-    renderFeatured();
+    renderSelection();
   }
   function chooseVehicle(name, type) {
     $('#vehicleName').value = name;
@@ -153,6 +180,7 @@ export function createFeature(app) {
     syncSetup();
     $('#vehicleNote').textContent =
       `Selected ${name}. Confirm your model year, version and installed parts.`;
+    $('#startBuild').focus();
   }
-  return { openStart, renderFeatured, syncSetup, vehicleSuggestions, chooseVehicle };
+  return { openStart, renderSelection, syncSetup, vehicleSuggestions, chooseVehicle };
 }

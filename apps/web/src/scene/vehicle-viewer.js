@@ -1,5 +1,6 @@
 import { vehicleReference, vehicleArtworkAudit } from '../data/vehicle-library.js';
 import { blenderModelKey } from './blender-models.js';
+import { bindViewerFullscreen } from './viewer-fullscreen.js';
 import { PAINT_ZONES } from '@voltforge/shared/build';
 
 /** Photo references and photo-based Blender models retain distinct fidelity labels. */
@@ -16,11 +17,13 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
   const paintZone = document.querySelector('#paintZone');
   const paintColor = document.querySelector('#paintColor');
   const resetPaint = document.querySelector('#resetPaint');
+  const unbindFullscreen = bindViewerFullscreen(root);
   const environmentKey = 'voltforge-scene-environment';
   try {
     const savedEnvironment = localStorage.getItem(environmentKey);
     if ([...setting.options].some((option) => option.value === savedEnvironment))
       setting.value = savedEnvironment;
+    else if (savedEnvironment !== null) localStorage.setItem(environmentKey, setting.value);
   } catch {
     // Private or blocked storage still permits an in-memory environment choice.
   }
@@ -219,6 +222,7 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
       show();
     },
     dispose() {
+      unbindFullscreen();
       canvas.removeEventListener('modelsourcechange', onModelChange);
       scene?.dispose?.();
     },

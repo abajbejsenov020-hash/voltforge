@@ -4,6 +4,17 @@ import { peakPowerLabel, peakPowerText } from '@voltforge/shared/performance';
 import { effectiveMotorCount } from '@voltforge/shared/stock';
 import { PAINT_ZONES } from '@voltforge/shared/build';
 import { factorySummary, componentName } from '../ui/stock.js';
+import { createBuildFile } from '../services/build-file.js';
+
+function downloadFile(blob, name) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = name;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
 export function createFeature(app) {
   function review({ focusIssues = false } = {}) {
     const p = app.effectiveParts(),
@@ -102,20 +113,17 @@ export function createFeature(app) {
         '',
         'This is a planning prototype with illustrative 3D geometry and rules-based checks. It does not provide measured CAD, live product availability or build certification. All supplier revisions, dimensions and component ratings need verification.',
       ].join('\n');
-    const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' })),
-      a = document.createElement('a');
-    a.href = url;
-    a.download =
-      (app.state.name.replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'voltmodd-build') + '.txt';
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    downloadFile(
+      new Blob([text], { type: 'text/plain;charset=utf-8' }),
+      (app.state.name.replace(/[^a-z0-9]+/gi, '-').toLowerCase() || 'voltmodd-build') + '.txt',
+    );
     app.toast('Build plan exported');
   }
   function savedBuilds() {
     app.detail(
       'Your garage',
       app.builds.length
-        ? '<p>Builds save on this device and sync to this browser’s private server workspace when connected. Export a portable copy before clearing browser data.</p>' +
+        ? '<p>Download a build file to import this garage into your VOLTMODD account from another device or site.</p><button type="button" class="btn" id="downloadBuilds">Download builds</button>' +
             app.builds
               .map(
                 (b) =>
@@ -124,6 +132,16 @@ export function createFeature(app) {
               .join('')
         : '<p>Your saved builds will appear here after you create one.</p>',
     );
+    const download = $('#downloadBuilds');
+    if (download)
+      download.onclick = () => {
+        try {
+          downloadFile(createBuildFile(app.builds), 'voltmodd-builds.json');
+          app.toast('Builds downloaded');
+        } catch (error) {
+          app.toast(error.message);
+        }
+      };
     $('#detailBody')
       .querySelectorAll('[data-load]')
       .forEach(

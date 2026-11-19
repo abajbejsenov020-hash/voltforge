@@ -23,6 +23,98 @@ const rebuild = (vehicle = 'KuKirin G4', type = 'scooter') => ({
   vehicle,
 });
 
+test('the expanded factory catalog labels published scooter peak power and e-bike estimates', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.locator('[data-featured-brand="Xiaomi"]').click();
+  await page.locator('[data-vehicle="Xiaomi 4 Ultra"]').click();
+  await page.locator('#startBuild').click();
+  await expect(page.locator('#partCount')).toHaveText(/0 chosen.*8 stock/);
+  await expect(page.locator('#estimatedSpeed')).toHaveText('25 km/h');
+  await expect(page.locator('#estimatedPeak')).toHaveText('0.94 kW');
+  await expect(page.locator('#peakMetricLabel')).toHaveText('FACTORY PEAK REFERENCE');
+  await expect(page.locator('#estimatedRange')).toHaveText(/^≈\d+ km$/);
+  await expect(page.locator('#estimatedTime')).toHaveText(/^≈\d+ min$/);
+
+  await page.locator('#newBuild').click();
+  await page.locator('[data-type="bike"]').click();
+  await page.locator('[data-featured-brand="Engwe"]').click();
+  await page.locator('[data-vehicle="Engwe EP-2 Pro"]').click();
+  await page.locator('#startBuild').click();
+  await expect(page.locator('#partCount')).toHaveText(/0 chosen.*8 stock/);
+  await expect(page.locator('#estimatedSpeed')).toHaveText('25 km/h');
+  await expect(page.locator('#speedBasis')).toContainText('Factory electric-assist speed');
+  await expect(page.locator('#estimatedPeak')).toHaveText(/^≈\d.+ kW$/);
+  await expect(page.locator('#peakMetricLabel')).toHaveText('PEAK POWER · ROUGH ESTIMATE');
+  await expect(page.locator('#estimatedRange')).toHaveText(/^≈\d+ km$/);
+  await expect(page.locator('#estimatedTime')).toHaveText(/^≈\d+ min$/);
+});
+
+test('a new stock Altis Delta shows speed, peak power, range and ride time before upgrades', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.locator('[data-type="bike"]').click();
+  await page.locator('[data-featured-brand="Altis"]').click();
+  await page.locator('[data-vehicle="Altis Delta"]').click();
+  await page.locator('#startBuild').click();
+  await expect(page.locator('#partCount')).toHaveText(/0 chosen.*8 stock/);
+  await expect(page.locator('#estimatedSpeed')).toHaveText('100 km/h');
+  await expect(page.locator('#estimatedPeak')).toHaveText('13.0 kW');
+  await expect(page.locator('#energy')).toContainText('2520');
+  await expect(page.locator('#estimatedRange')).toHaveText('≈57 km');
+  await expect(page.locator('#estimatedTime')).toHaveText('≈85 min');
+  await expect(page.locator('#rangeBasis')).toContainText('Trail scenario at 40 km/h');
+  await page.locator('#rangeCruise').selectOption('60');
+  await expect(page.locator('#estimatedTime')).not.toHaveText('≈85 min');
+  await expect(page.locator('#timeBasis')).toHaveText('At 60 km/h in the range scenario');
+  await page.reload();
+  await expect(page.locator('#estimatedSpeed')).toHaveText('100 km/h');
+  await expect(page.locator('#rangeCruise')).toHaveValue('60');
+});
+
+test('the Trek stock picker distinguishes a pedal bike from its electric counterpart', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.locator('[data-type="bike"]').click();
+  await page.locator('[data-featured-brand="Trek"]').click();
+  await page.locator('[data-vehicle="Trek Marlin"]').click();
+  await page.locator('#startBuild').click();
+  await expect(page.locator('#stockHardwareNote')).toContainText('This model is pedal-powered');
+  await expect(page.locator('#performanceMetrics')).toBeHidden();
+  await expect(page.locator('[data-stock-category="Motors"]')).toContainText('Electric conversion');
+
+  await page.locator('#newBuild').click();
+  await page.locator('[data-type="bike"]').click();
+  await page.locator('[data-featured-brand="Trek"]').click();
+  await page.locator('[data-vehicle="Trek Marlin+"]').click();
+  await page.locator('#startBuild').click();
+  await expect(page.locator('#performanceMetrics')).toBeVisible();
+  await expect(page.locator('#speedMetricLabel')).toHaveText('FACTORY ASSIST CUTOFF');
+  await expect(page.locator('#estimatedSpeed')).toHaveText('32 km/h');
+  await expect(page.locator('#estimatedPeak')).toHaveText('0.6 kW');
+  await expect(page.locator('#estimatedRange')).toHaveText(/^≈\d+ km$/);
+  await expect(page.locator('#estimatedTime')).toHaveText(/^≈\d+ min$/);
+  await expect(page.locator('#stockReferenceLink')).toHaveAttribute('href', /trekbikes\.com/);
+});
+
+test('a partial stock profile names the remaining metric and preserves its sourced speed', async ({
+  page,
+}) => {
+  await seed(page, rebuild('Yume X11'));
+  await expect(page.locator('#estimatedSpeed')).toHaveText('80 km/h');
+  await expect(page.locator('#estimatedRange')).toHaveText(/^≈\d+ km$/);
+  await expect(page.locator('#estimatedTime')).toHaveText(/^≈\d+ min$/);
+  await expect(page.locator('#peakMetricLabel')).toHaveText('PEAK OUTPUT · CEILING');
+  await expect(page.locator('#stockHardwareNote')).toContainText(
+    'Stock figures still needed for peak power.',
+  );
+  await page.locator('#addPeakData').click();
+  await expect(page.locator('#quickPerformanceForm [name="peakMotorW"]')).toBeFocused();
+});
+
 test('a G4 OEM motor and controller upgrade retain factory hardware, produce estimates and restore stock', async ({
   page,
 }) => {
@@ -104,7 +196,8 @@ test('legacy dual-motor conversions clear observations and unknown wheel diamete
   expect(builds[0].performance.tripKm).toBe('');
   await page.locator('#newBuild').click();
   await page.locator('[data-type="bike"]').click();
-  await page.locator('[data-featured="Sur-Ron Light Bee X"]').click();
+  await page.locator('[data-featured-brand="Sur-Ron"]').click();
+  await page.locator('[data-vehicle="Sur-Ron Light Bee X"]').click();
   await page.locator('#startBuild').click();
   await page.locator('#tunePerformance').click();
   await expect(page.locator('#performanceForm [name="wheel"]')).toHaveValue('');

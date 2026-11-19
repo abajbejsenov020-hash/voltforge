@@ -4,6 +4,7 @@ import { vehicleStockProfile, resolveBuildParts, effectiveMotorCount } from '../
 import { automaticPerformanceInputs } from './automatic.js';
 import { factorySpeedComparison, solvePowerSpeed } from './speed-model.js';
 export { STOCK_PERFORMANCE } from '../vehicles/stock.js';
+const TRAIL_ROLLING = 0.035;
 // Performance references and energy scenarios are deliberately separate.
 // A motor's advertised watts alone do not establish loaded top speed.
 // Personal observation supplied by the user; not GPS or independently verified.
@@ -42,7 +43,9 @@ export function speedText(e) {
   }
   return e.speed.value === null
     ? 'Not established'
-    : (e.speed.kind === 'ceiling' ? '≤' : '') + Math.floor(e.speed.value) + ' km/h';
+    : (e.speed.kind === 'ceiling' ? '≤' : '') +
+        (e.speed.kind === 'factory' ? Math.round(e.speed.value) : Math.floor(e.speed.value)) +
+        ' km/h';
 }
 export function speedBasisText(e) {
   return e.speed.basis + (e.dashboard ? ' · Your display: ' + e.dashboard + ' km/h' : '');
@@ -58,11 +61,13 @@ export function peakPowerText(peak) {
       ' kW'
     );
   }
-  return peak.value === null
-    ? '— kW'
-    : (peak.kind === 'ceiling' ? '≤' : peak.kind === 'estimate' ? '≈' : '') +
-        (peak.value / 1000).toFixed(1) +
-        ' kW';
+  if (peak.value === null) return '— kW';
+  const precision = peak.kind === 'factory' && peak.value < 1000 && peak.value % 100 ? 2 : 1;
+  return (
+    (peak.kind === 'ceiling' ? '≤' : peak.kind === 'estimate' ? '≈' : '') +
+    (peak.value / 1000).toFixed(precision) +
+    ' kW'
+  );
 }
 export function peakPowerLabel(peak) {
   if (peak.kind === 'planning') return 'PEAK POWER · ROUGH ESTIMATE';
@@ -71,6 +76,14 @@ export function peakPowerLabel(peak) {
     : peak.kind === 'ceiling'
       ? 'PEAK OUTPUT · CEILING'
       : 'PEAK MOTOR OUTPUT · ESTIMATE';
+}
+export function stockPerformanceGaps({ speed, peak, range, time }) {
+  return [
+    (!(speed.value > 0) || speed.kind === 'ceiling') && 'top speed',
+    (!(peak.value > 0) || peak.kind === 'ceiling') && 'peak power',
+    !(range > 0) && 'range',
+    !(time > 0) && 'ride time',
+  ].filter(Boolean);
 }
 export function createPerformanceEngine(state) {
   const selected = () => resolveBuildParts(state);
@@ -82,9 +95,12 @@ export function createPerformanceEngine(state) {
     const measured = state.performance || {};
     if (
       profile &&
-      ((Number(measured.nominalVoltage) > 0 &&
+      ((profile.nominal > 0 &&
+        Number(measured.nominalVoltage) > 0 &&
         Number(measured.nominalVoltage) !== profile.nominal) ||
-        (Number(measured.capacityAh) > 0 && Number(measured.capacityAh) !== profile.ah))
+        (profile.ah > 0 &&
+          Number(measured.capacityAh) > 0 &&
+          Number(measured.capacityAh) !== profile.ah))
     )
       return false;
     if (
@@ -111,19 +127,23 @@ export function createPerformanceEngine(state) {
       stored = state.performance || {},
       legacy = stored.schema !== 2,
       bike = state.type === 'bike',
+      trail = profile?.rangeTerrain === 'trail',
       configuration = stored.configuration || 'auto',
       stock = performanceHardware(p, profile, configuration);
+    const defaultCruise = profile?.name === 'KuKirin G4' || trail ? 40 : bike ? 25 : 30;
+    const stockSpeed =
+      stock && profile.advertisedSpeed > 0 ? Math.round(profile.advertisedSpeed) : null;
     const defaults = {
       schema: 2,
       configuration,
       rider: 80,
-      vehicle: profile?.vehicleMass > 0 ? profile.vehicleMass : bike ? 25 : 30,
-      cruise: profile?.name === 'KuKirin G4' ? 40 : bike ? 25 : 30,
+      vehicle: profile?.vehicleMass > 0 ? profile.vehicleMass : trail ? 75 : bike ? 25 : 30,
+      cruise: stockSpeed ? Math.min(defaultCruise, stockSpeed) : defaultCruise,
       power: '',
       efficiency: 78,
       usable: 80,
       cda: bike ? 0.55 : 0.65,
-      rolling: bike ? 0.009 : 0.018,
+      rolling: trail ? TRAIL_ROLLING : bike ? 0.009 : 0.018,
       wheel:
         p['Tires & wheels']?.wheelInches ||
         p.Motors?.wheelInches ||
@@ -290,7 +310,7 @@ export function createPerformanceEngine(state) {
     const automatic = automaticPerformanceInputs(state, p, a, {
       nominal,
       ah: ah || equivalentAh,
-      stock: stock && profile?.advertisedSpeed > 0 && profile?.peakMotorW > 0,
+      stock: stock && profile?.advertisedSpeed > 0 && profile?.peakMotorW > 0 && Boolean(wh),
       efficiency: eff,
     });
     if (equivalentAh && automatic.enabled) {
@@ -379,9 +399,11 @@ export function createPerformanceEngine(state) {
     )
       speed = {
         value: profile.advertisedSpeed,
-        basis: profile.speedLimited
-          ? 'Factory speed limit for the documented version'
-          : 'Factory reference, not a measured result for your vehicle',
+        basis: profile.speedAssist
+          ? 'Factory electric-assist speed for the documented version'
+          : profile.speedLimited
+            ? 'Factory speed limit for the documented version'
+            : 'Factory reference for the documented version',
         kind: 'factory',
       };
     else if (
@@ -475,6 +497,7 @@ export function createPerformanceEngine(state) {
       whPerKm,
       range,
       time: range ? range / cruise : null,
+      trailRange: !calibrated && profile?.rangeTerrain === 'trail' && a.rolling === TRAIL_ROLLING,
       power: mechanical,
       powerCeiling,
       speedComparison: comparison,

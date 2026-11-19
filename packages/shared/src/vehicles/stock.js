@@ -109,6 +109,11 @@ export function resolveBuildParts(state) {
     motorCount: profile?.motors ?? null,
   });
   stock.Controllers.maxBatteryA = profile?.controllerA ?? null;
+  if (profile?.electric === false) {
+    delete stock.Motors;
+    delete stock.Controllers;
+    delete stock.Batteries;
+  }
   stock['Tires & wheels'].wheelInches = profile?.wheel ?? null;
   for (const category of ['Motors', 'Controllers']) {
     const part = explicit[category];
