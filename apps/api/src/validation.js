@@ -1,4 +1,5 @@
 import { isPaintColor, normalizePaint, PAINT_ZONES } from '@voltforge/shared/build';
+import { normalizeCockpit } from '@voltforge/shared/cockpit';
 import { HttpError } from './http.js';
 
 const SPEC_FIELDS = new Set([
@@ -110,6 +111,13 @@ export function createBuildValidator(catalog, categories) {
       }
     }
     const paint = normalizePaint(sourcePaint);
+    const sourceCockpit = input.cockpit ?? {};
+    const cockpit = normalizeCockpit(sourceCockpit);
+    if (
+      !isRecord(sourceCockpit) ||
+      Object.keys(sourceCockpit).some((key) => !Object.hasOwn(cockpit, key))
+    )
+      invalid('cockpit', 'Choose a supported grip, grip color, handlebar style and width.');
     if (!isRecord(input.specs ?? {})) invalid('specs', 'specs must be an object.');
     const specs = {};
     for (const [key, value] of Object.entries(input.specs ?? {})) {
@@ -157,6 +165,7 @@ export function createBuildValidator(catalog, categories) {
       vehicle,
       selected,
       paint,
+      ...(Object.keys(cockpit).length && { cockpit }),
       specs,
       performance,
       updated,

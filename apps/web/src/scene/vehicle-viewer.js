@@ -1,10 +1,11 @@
 import { vehicleReference, vehicleArtworkAudit } from '../data/vehicle-library.js';
 import { blenderModelKey } from './blender-models.js';
 import { bindViewerFullscreen } from './viewer-fullscreen.js';
+import { bindCockpitControls } from './cockpit-controls.js';
 import { PAINT_ZONES } from '@voltforge/shared/build';
 
 /** Photo references and photo-based Blender models retain distinct fidelity labels. */
-export function createVehicleViewer({ sceneFactory, onPaintChange }) {
+export function createVehicleViewer({ sceneFactory, onPaintChange, onCockpitChange }) {
   const root = document.querySelector('.stage');
   const canvas = document.querySelector('#scene');
   const photo = document.querySelector('#vehiclePhoto');
@@ -35,12 +36,25 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
     type = 'scooter';
   let selection = {},
     paint = {},
+    cockpit = {},
     zones = [],
     category = 'Motors',
     motorCount,
     scene,
     renderPreferences,
     imageFailed = false;
+  const cockpitControls = bindCockpitControls({
+    onChange(next) {
+      cockpit = next;
+      scene?.setCockpit?.(cockpit);
+      cockpitControls.update(cockpit, true);
+      onCockpitChange?.(cockpit);
+    },
+    onInspect() {
+      root.querySelector('[data-view="cockpit"]').click();
+      root.scrollIntoView({ block: 'center' });
+    },
+  });
 
   function getScene() {
     if (!scene) {
@@ -76,6 +90,8 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
   }
   function syncModelEdits() {
     const is3D = mode === 'concept';
+    const canCustomizeCockpit = is3D && Boolean(scene?.hasCockpit?.());
+    cockpitControls.update(cockpit, canCustomizeCockpit);
     const available = is3D ? scene?.getPaintZones?.() || [] : [];
     if (available.join() !== zones.join()) {
       const previous = paintZone.value;
@@ -102,7 +118,7 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
     const message = report.join(' ');
     swapStatus.hidden = !message;
     if (swapStatus.textContent !== message) swapStatus.textContent = message;
-    modelEdits.hidden = paintControls.hidden && swapStatus.hidden;
+    modelEdits.hidden = !canCustomizeCockpit && paintControls.hidden && swapStatus.hidden;
   }
   function onModelChange() {
     modelNote();
@@ -156,7 +172,7 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
     document.querySelector('#referencePhoto').hidden = !hasPhoto;
     document.querySelector('#referenceVariant').hidden = !reference?.variantNote;
     if (!inPhoto) {
-      getScene().update(type, selection, category, vehicleName, paint, motorCount);
+      getScene().update(type, selection, category, vehicleName, paint, motorCount, cockpit);
       scene.resize?.();
     }
     syncModelEdits();
@@ -196,12 +212,21 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
       canvas.focus({ preventScroll: true });
       root.scrollIntoView({ block: 'nearest' });
     },
-    update(nextType, nextSelection, nextCategory, nextName, nextPaint = {}, nextMotorCount) {
+    update(
+      nextType,
+      nextSelection,
+      nextCategory,
+      nextName,
+      nextPaint = {},
+      nextMotorCount,
+      nextCockpit = {},
+    ) {
       const changed = vehicleName !== (nextName || '');
       type = nextType;
       selection = nextSelection;
       category = nextCategory;
       paint = nextPaint;
+      cockpit = nextCockpit;
       motorCount = nextMotorCount;
       vehicleName = nextName || '';
       if (changed || !reference) {
@@ -218,7 +243,7 @@ export function createVehicleViewer({ sceneFactory, onPaintChange }) {
       }
       // Also invalidate an in-flight model when changing vehicles in photo mode.
       if (scene && mode === 'photo')
-        scene.update(type, selection, category, vehicleName, paint, motorCount);
+        scene.update(type, selection, category, vehicleName, paint, motorCount, cockpit);
       show();
     },
     dispose() {

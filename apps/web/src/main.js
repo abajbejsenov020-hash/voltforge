@@ -32,6 +32,11 @@ const viewer = createVehicleViewer({
     store.current.paint = paint;
     store.save();
   },
+  onCockpitChange(cockpit) {
+    if (Object.keys(cockpit).length) store.current.cockpit = cockpit;
+    else delete store.current.cockpit;
+    store.save();
+  },
 });
 bindRenderPreferences((preferences) => {
   viewer.setRenderPreferences(preferences);

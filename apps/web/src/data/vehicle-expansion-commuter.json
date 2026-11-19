@@ -17,9 +17,9 @@
         "key": "kukirin-g2-vmp",
         "url": "/models/expansion/commuter/kukirin-g2-vmp.glb",
         "nativeSource": "assets/blender/expansion/commuter/kukirin-g2-vmp.blend",
-        "triangles": 26852,
-        "meshes": 27,
-        "bytes": 896504,
+        "triangles": 103584,
+        "meshes": 45,
+        "bytes": 4791156,
         "family": "KuKirin G2 open headstock"
       }
     },
@@ -40,9 +40,9 @@
         "key": "kukirin-g2-ultra",
         "url": "/models/expansion/commuter/kukirin-g2-ultra.glb",
         "nativeSource": "assets/blender/expansion/commuter/kukirin-g2-ultra.blend",
-        "triangles": 28872,
-        "meshes": 26,
-        "bytes": 964548,
+        "triangles": 87820,
+        "meshes": 47,
+        "bytes": 3905712,
         "family": "KuKirin Ultra gray swingarms"
       }
     },
@@ -63,9 +63,9 @@
         "key": "kukirin-g3",
         "url": "/models/expansion/commuter/kukirin-g3.glb",
         "nativeSource": "assets/blender/expansion/commuter/kukirin-g3.blend",
-        "triangles": 30612,
-        "meshes": 29,
-        "bytes": 942080,
+        "triangles": 83844,
+        "meshes": 48,
+        "bytes": 3719556,
         "family": "KuKirin G3 orange cast arms"
       }
     },
@@ -86,9 +86,9 @@
         "key": "kukirin-g4-max",
         "url": "/models/expansion/commuter/kukirin-g4-max.glb",
         "nativeSource": "assets/blender/expansion/commuter/kukirin-g4-max.blend",
-        "triangles": 35944,
-        "meshes": 27,
-        "bytes": 1127000,
+        "triangles": 90424,
+        "meshes": 46,
+        "bytes": 4136180,
         "family": "KuKirin G4 Max twin stanchion"
       }
     },

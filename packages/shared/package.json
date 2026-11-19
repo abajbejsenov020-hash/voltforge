@@ -10,6 +10,7 @@
     "./featured": "./src/vehicles/featured.js",
     "./visuals": "./src/vehicles/visuals.js",
     "./build": "./src/build.js",
+    "./cockpit": "./src/cockpit.js",
     "./compatibility": "./src/compatibility.js",
     "./performance": "./src/performance/index.js",
     "./stock": "./src/vehicles/stock.js"

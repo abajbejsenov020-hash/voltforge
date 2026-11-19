@@ -1,4 +1,5 @@
 import { createBuild, normalizePaint } from '@voltforge/shared/build';
+import { normalizeCockpit } from '@voltforge/shared/cockpit';
 
 const STORAGE_KEY = 'voltforge-v1';
 const SYNC_KEY = 'voltforge-sync-v1';
@@ -10,12 +11,16 @@ const isBuild = (value) =>
   ['bike', 'scooter'].includes(value.type) &&
   value.selected &&
   typeof value.selected === 'object';
-const normalize = (value) => ({
-  ...value,
-  specs: { ...createBuild().specs, ...value.specs },
-  performance: value.performance || {},
-  paint: normalizePaint(value.paint),
-});
+const normalize = ({ cockpit, ...value }) => {
+  const normalizedCockpit = normalizeCockpit(cockpit);
+  return {
+    ...value,
+    specs: { ...createBuild().specs, ...value.specs },
+    performance: value.performance || {},
+    paint: normalizePaint(value.paint),
+    ...(Object.keys(normalizedCockpit).length && { cockpit: normalizedCockpit }),
+  };
+};
 const stable = (value) =>
   Array.isArray(value)
     ? value.map(stable)
@@ -33,6 +38,7 @@ function content(build) {
   const fields = ['id', 'name', 'type', 'mode', 'vehicle', 'selected', 'specs', 'performance'];
   // Keep the existing content signature for unpainted builds with a pending sync attempt.
   if (Object.keys(normalized.paint).length) fields.push('paint');
+  if (normalized.cockpit) fields.push('cockpit');
   return JSON.stringify(stable(Object.fromEntries(fields.map((key) => [key, normalized[key]]))));
 }
 

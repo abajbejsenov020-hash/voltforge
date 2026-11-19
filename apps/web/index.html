@@ -173,6 +173,25 @@
           </div>
           <dialog id="viewerFullscreenDialog" aria-label="Vehicle viewer"></dialog>
           <div id="modelEdits" class="model-edits" hidden>
+            <fieldset id="cockpitControls" class="cockpit-controls" hidden>
+              <legend>Cockpit</legend>
+              <label for="gripStyle">Grips<select id="gripStyle"></select></label>
+              <label for="gripColor">
+                Grip color
+                <span class="grip-color-field">
+                  <span id="gripSwatch" aria-hidden="true"></span>
+                  <select id="gripColor"></select>
+                </span>
+              </label>
+              <label for="barStyle">Handlebar<select id="barStyle"></select></label>
+              <label for="barWidth">Bar width<select id="barWidth"></select></label>
+              <div class="cockpit-actions">
+                <button type="button" id="inspectCockpit" class="text-btn">
+                  Inspect cockpit ↑
+                </button>
+                <button type="button" id="resetCockpit" class="text-btn">Restore stock</button>
+              </div>
+            </fieldset>
             <div
               id="paintControls"
               class="paint-controls"

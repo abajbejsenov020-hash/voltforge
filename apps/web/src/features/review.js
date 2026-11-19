@@ -3,6 +3,7 @@ import { CATEGORIES, CATALOG } from '@voltforge/shared/catalog';
 import { peakPowerLabel, peakPowerText } from '@voltforge/shared/performance';
 import { effectiveMotorCount } from '@voltforge/shared/stock';
 import { PAINT_ZONES } from '@voltforge/shared/build';
+import { describeCockpit } from '@voltforge/shared/cockpit';
 import { factorySummary, componentName } from '../ui/stock.js';
 import { createBuildFile } from '../services/build-file.js';
 
@@ -67,6 +68,7 @@ export function createFeature(app) {
   }
   function exportBuild() {
     const p = app.effectiveParts(),
+      cockpit = describeCockpit(app.state.cockpit),
       text = [
         'VOLTMODD — BUILD PLAN',
         app.state.name,
@@ -92,6 +94,7 @@ export function createFeature(app) {
                     : ' | Planning template')
               : 'Not selected'),
         ),
+        ...(cockpit.length ? ['', 'COCKPIT', ...cockpit] : []),
         ...(Object.keys(app.state.paint || {}).length
           ? [
               '',

@@ -7,10 +7,10 @@
     "image": "/assets/vehicles/kukirin-g2-max.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g2-max.blend",
     "family": "G2 Max single motor",
-    "variantNote": "Solid orange swingarms, open front wheel, rear hub motor; long telescopic stem and low round headlight. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 70776,
-    "meshes": 39,
-    "bytes": 2099996
+    "variantNote": "Black telescopic mast, tubular low headlamp, sculpted orange solid arms, open front rim, rear hub, and split X-pattern grip tape. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 79524,
+    "meshes": 56,
+    "bytes": 2311724
   },
   {
     "name": "KuKirin G2 Master",
@@ -20,10 +20,10 @@
     "image": "/assets/vehicles/kukirin-g2-master.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g2-master.blend",
     "family": "G2 Master dual motor",
-    "variantNote": "Sculpted black dual-sided arms with amber triangular insets; exposed orange front/rear springs and dual hub motors. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 68300,
-    "meshes": 36,
-    "bytes": 2004076
+    "variantNote": "Compact low deck, low four-optic round lamp, sculpted black castings with orange inserts, exposed orange coils and twin hub motors. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 80468,
+    "meshes": 55,
+    "bytes": 2575264
   },
   {
     "name": "Ausom DT2 Pro",
@@ -55,27 +55,27 @@
     "name": "KuKirin G2",
     "key": "kukirin-g2",
     "url": "/models/catalog/scooters/kukirin-g2.glb",
-    "source": "https://kukirin-escooter.com/",
+    "source": "https://kukirin-escooter.com/products/kukirinkugoo-kirin-2024-g2-electric-scooter",
     "image": "/assets/vehicles/kukirin-g2.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g2.blend",
     "family": "G2 open-neck chassis",
-    "variantNote": "Gray open triangular headstock, compact deck, checkerboard gray swingarms and spoked front wheel. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 63444,
-    "meshes": 36,
-    "bytes": 1861016
+    "variantNote": "Sweep-back gray open headstock, orange checkered side markings, compact rear kickplate, cast open front wheel and folded stand. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 73112,
+    "meshes": 53,
+    "bytes": 2121068
   },
   {
     "name": "KuKirin G4 Ultra",
     "key": "kukirin-g4-ultra",
     "url": "/models/catalog/scooters/kukirin-g4-ultra.glb",
-    "source": "https://kukirin-escooter.com/",
+    "source": "https://kukirin-escooter.com/products/kukirin-g4-ultra-electric-scooter",
     "image": "/assets/vehicles/kukirin-g4-ultra.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g4-ultra.blend",
     "family": "G4 Ultra dual motor",
-    "variantNote": "Larger broad deck and 12-inch-class road tires, two enclosed hub motors; gray open neck, geometric orange arm/stem graphics. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 67880,
-    "meshes": 35,
-    "bytes": 2053304
+    "variantNote": "Wide graphite deck, two enclosed hubs in 11-inch road tires, open triangular neck, geometric orange graphics and folded stand. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 77364,
+    "meshes": 52,
+    "bytes": 2489916
   },
   {
     "name": "KuKirin M4 Max",
@@ -107,53 +107,53 @@
     "name": "KuKirin G2 Pro ABE",
     "key": "kukirin-g2-pro-abe",
     "url": "/models/catalog/scooters/kukirin-g2-pro-abe.glb",
-    "source": "https://kukirin-escooter.com/",
+    "source": "https://kukirin-escooter.com/products/kukirin-g2-pro-electric-scooter-abe-certified",
     "image": "/assets/vehicles/kukirin-g2-pro-abe.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g2-pro-abe.blend",
     "family": "G2 Pro regional",
-    "variantNote": "Seatless ABE reference: amber flank reflector, upright license bracket and square road headlight. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 71724,
-    "meshes": 40,
-    "bytes": 2141856
+    "variantNote": "Seatless photographed ABE with smoke-gray mast, upright rear plate holder, road reflectors, rectangular light and tucked stand. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 80972,
+    "meshes": 59,
+    "bytes": 2391764
   },
   {
     "name": "KuKirin G3 Pro",
     "key": "kukirin-g3-pro",
     "url": "/models/catalog/scooters/kukirin-g3-pro.glb",
-    "source": "https://kukirin-escooter.com/",
+    "source": "https://kukirin-escooter.com/products/kukirin-g3-pro-off-road-electric-scooter",
     "image": "/assets/vehicles/kukirin-g3-pro.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g3-pro.blend",
     "family": "G3 Pro removable battery chassis",
-    "variantNote": "Orange open triangular suspension arms, exposed removable battery hatch/bolted side rails, broad orange front stem panel and dual motors. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 70416,
-    "meshes": 36,
-    "bytes": 2145312
+    "variantNote": "Through-cut orange truss arms, twin low headlamps in a shared cage, orange mast extrusion, twin-motor wheels and bolted removable deck rails. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 78212,
+    "meshes": 53,
+    "bytes": 2516904
   },
   {
     "name": "KuKirin G2 Pro VMP",
     "key": "kukirin-g2-pro-vmp",
     "url": "/models/catalog/scooters/kukirin-g2-pro-vmp.glb",
-    "source": "https://kukirin-escooter.com/",
+    "source": "https://kukirin-escooter.com/products/kukirin-kugoo-kirin-g2-pro-electric-scooter-dgt",
     "image": "/assets/vehicles/kukirin-g2-pro-vmp.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g2-pro-vmp.blend",
     "family": "G2 Pro regional",
-    "variantNote": "Seatless VMP reference: open-slot rear kickplate, no seat mount, amber flank reflector and square headlight. Hidden regional differences not invented. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 71300,
-    "meshes": 40,
-    "bytes": 2124800
+    "variantNote": "Seatless photographed VMP, with a square front light, front steering side reflector, slim mast, slotted rear support and rear permit mount. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 80332,
+    "meshes": 58,
+    "bytes": 2360972
   },
   {
     "name": "KuKirin G2 Pro",
     "key": "kukirin-g2-pro",
     "url": "/models/catalog/scooters/kukirin-g2-pro.glb",
-    "source": "https://kukirin-escooter.com/",
+    "source": "https://kukirin-escooter.com/products/kukirin-g2-pro-electric-scooter-with-seat",
     "image": "/assets/vehicles/kukirin-g2-pro.webp",
     "nativeSource": "assets/blender/catalog/scooters/kukirin-g2-pro.blend",
     "family": "G2 Pro seated",
-    "variantNote": "Photographed seated configuration: tall slotted seat pedestal, telescopic sprung post, orange quick clamp and black saddle. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
-    "triangles": 75392,
-    "meshes": 40,
-    "bytes": 2257520
+    "variantNote": "Photographed seated variant with braced pedestal, sprung seat post, orange clamp, contoured saddle, open front rim and slim orange arms. Photo-based visual reconstruction; not measured CAD. Hidden/internal surfaces inferred.",
+    "triangles": 83052,
+    "meshes": 58,
+    "bytes": 2472096
   },
   {
     "name": "Ausom Gosoul 2 Pro Dual Motor",

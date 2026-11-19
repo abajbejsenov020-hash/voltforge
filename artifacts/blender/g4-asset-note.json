@@ -1,9 +1,17 @@
 {
   "asset": "kukirin-g4",
   "creator": "Blender",
-  "triangles": 141520,
-  "meshObjects": 36,
-  "glbBytes": 4209580,
+  "triangles": 172188,
+  "meshObjects": 53,
+  "glbBytes": 5281056,
   "reference": "apps/web/public/assets/vehicles/kukirin-g4.webp",
-  "limitations": "Visual reconstruction from one supplied three-quarter photograph. Hidden surfaces and internal service assemblies are inferred. Not measured CAD."
+  "sources": [
+    "https://www.kukirinfactory.com/kukirin-g4-specification",
+    "https://www.kukirinfactory.com/uploads/43829/page/p20260420150032639c4.jpg",
+    "https://www.kukirinfactory.com/uploads/43829/files/G4-EN17128--REPORT.pdf",
+    "https://kukirinofficial.com/products/g4-kickstand-footer"
+  ],
+  "stockHandlebarMm": 660,
+  "kickstandPose": "Rider-left underside bracket and rearward-folding tubular leg.",
+  "limitations": "Photo-guided exterior. Part geometry, clearances and internal service assemblies are approximations."
 }

@@ -51,6 +51,7 @@ export function createFeature(app) {
       app.state.vehicle,
       app.state.paint,
       useAuthoredMounts ? undefined : motorCount,
+      app.state.cockpit,
     );
     app.renderPerformance();
   }

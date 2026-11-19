@@ -2,15 +2,13 @@
   "key": "kukirin-g2",
   "name": "KuKirin G2",
   "family": "G2 open-neck chassis",
-  "observed": "Gray open triangular headstock, compact deck, checkerboard gray swingarms and spoked front wheel.",
+  "observed": "Sweep-back gray open headstock, orange checkered side markings, compact rear kickplate, cast open front wheel and folded stand.",
   "reference": "/assets/vehicles/kukirin-g2.webp",
-  "source": "https://kukirin-escooter.com/",
-  "triangles": 63444,
-  "meshes": 36,
-  "bytes": 1861016,
-  "blendBytes": 715805,
+  "source": "https://kukirin-escooter.com/products/kukirinkugoo-kirin-2024-g2-electric-scooter",
+  "triangles": 73112,
+  "meshes": 53,
+  "bytes": 2121068,
+  "blendBytes": 850525,
   "render": "artifacts/blender/catalog/scooters/kukirin-g2.png",
-  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
-  "minHeight": 0.000238936030655168,
-  "boundsNormalized": true
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters."
 }

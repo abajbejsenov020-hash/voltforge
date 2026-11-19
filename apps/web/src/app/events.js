@@ -67,6 +67,7 @@ export function bindEvents(app) {
     if (app.editMode) {
       if (app.state.type !== app.setupType) {
         app.state.selected = {};
+        delete app.state.cockpit;
         app.state.specs = app.blank().specs;
       }
       if (app.state.vehicle !== vehicle || app.state.type !== app.setupType)
@@ -78,6 +79,7 @@ export function bindEvents(app) {
     app.state.mode = app.setupMode;
     app.state.vehicle = app.setupMode === 'rebuild' ? vehicle : '';
     if (!app.editMode || vehicleChanged) {
+      delete app.state.cockpit;
       app.state.specs.motorCount = vehicleStockProfile(app.state.vehicle)?.motors || 1;
       delete app.state.specs.motorCountOverride;
     }

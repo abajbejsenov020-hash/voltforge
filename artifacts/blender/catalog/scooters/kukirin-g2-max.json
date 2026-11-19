@@ -2,15 +2,13 @@
   "key": "kukirin-g2-max",
   "name": "KuKirin G2 Max",
   "family": "G2 Max single motor",
-  "observed": "Solid orange swingarms, open front wheel, rear hub motor; long telescopic stem and low round headlight.",
+  "observed": "Black telescopic mast, tubular low headlamp, sculpted orange solid arms, open front rim, rear hub, and split X-pattern grip tape.",
   "reference": "/assets/vehicles/kukirin-g2-max.webp",
   "source": "https://kukirin-escooter.com/products/kukirin-g2-max-electric-scooter-adults",
-  "triangles": 70776,
-  "meshes": 39,
-  "bytes": 2099996,
-  "blendBytes": 850855,
+  "triangles": 79524,
+  "meshes": 56,
+  "bytes": 2311724,
+  "blendBytes": 967913,
   "render": "artifacts/blender/catalog/scooters/kukirin-g2-max.png",
-  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
-  "minHeight": 0.000238936030655168,
-  "boundsNormalized": true
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters."
 }

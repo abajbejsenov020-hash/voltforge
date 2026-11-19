@@ -15,8 +15,9 @@ export const BLENDER_VEHICLES = [
     name: 'KuKirin G4',
     key: 'kukirin-g4',
     url: '/models/kukirin-g4.glb',
-    nativeSource: 'assets/blender/kukirin-g4.blend',
-    bytes: 4209580,
+    nativeSource: 'assets/blender/kukirin-g4-revised.blend',
+    bytes: 5281056,
+    revision: '9e22b63c582d',
   },
   {
     name: 'Sur-Ron Light Bee X',

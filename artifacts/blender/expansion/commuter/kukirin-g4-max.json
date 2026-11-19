@@ -5,13 +5,13 @@
   "parameters": {
     "family": "KuKirin G4 Max twin stanchion",
     "r": 0.152,
-    "wide": 0.049,
-    "wb": 1.11,
-    "dl": 0.66,
-    "dw": 0.25,
-    "dz": 0.31,
-    "h": 1.36,
-    "bar": 0.7,
+    "wide": 0.05,
+    "wb": 1.115,
+    "dl": 0.64,
+    "dw": 0.305,
+    "dz": 0.309,
+    "h": 1.34,
+    "bar": 0.64,
     "stem": "telescopic",
     "fork": "longfork",
     "rear": "twinshock",
@@ -20,9 +20,9 @@
     "lamp": "lowround",
     "halo": false,
     "body": [
-      0.035,
-      0.04,
-      0.045
+      0.011,
+      0.014,
+      0.017
     ],
     "accent": [
       0.98,
@@ -32,16 +32,34 @@
     "seat": false,
     "kick": true,
     "signal": false,
-    "solidArm": false
+    "solidArm": false,
+    "depth": 0.093,
+    "rake": 0.164,
+    "head": 0.574,
+    "deck_shift": -0.011,
+    "heel": 0.075,
+    "guard": 0.027,
+    "arm_color": [
+      0.023,
+      0.029,
+      0.034
+    ],
+    "tread": "block",
+    "stand": [
+      0.033,
+      0.02,
+      -0.051
+    ],
+    "grip_style": "diamond",
+    "reference": "https://www.kukirinfactory.com/kukirin-g4-max-specification"
   },
-  "triangles": 35944,
-  "meshes": 27,
-  "bytes": 1127000,
+  "triangles": 90424,
+  "meshes": 46,
+  "bytes": 4136180,
   "source": "https://kukirin-escooter.com/products/kukirin-g4-max-electric-scooter",
   "reference": "/assets/vehicles/expansion/commuter/kukirin-g4-max.webp",
   "nativeSource": "assets/blender/expansion/commuter/kukirin-g4-max.blend",
   "url": "/models/expansion/commuter/kukirin-g4-max.glb",
-  "finalReferenceReview": [
-    "Material finish matched dark anodized hardware"
-  ]
+  "manufacturerReference": "https://www.kukirinfactory.com/kukirin-g4-max-specification",
+  "geometryReview": "Model-specific deck, suspension, steering, grip molds and forged low-angle side stand."
 }

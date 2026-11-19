@@ -4,14 +4,14 @@
   "family": "KuKirin G3 orange cast arms",
   "parameters": {
     "family": "KuKirin G3 orange cast arms",
-    "r": 0.127,
-    "wide": 0.04,
-    "wb": 1.03,
-    "dl": 0.58,
-    "dw": 0.21,
-    "dz": 0.26,
-    "h": 1.27,
-    "bar": 0.62,
+    "r": 0.133,
+    "wide": 0.035,
+    "wb": 0.947,
+    "dl": 0.541,
+    "dw": 0.205,
+    "dz": 0.245,
+    "h": 1.295,
+    "bar": 0.66,
     "stem": "square",
     "fork": "swing",
     "rear": "swing",
@@ -20,9 +20,9 @@
     "lamp": "console",
     "halo": false,
     "body": [
-      0.025,
-      0.035,
-      0.038
+      0.008,
+      0.01,
+      0.012
     ],
     "accent": [
       0.98,
@@ -32,16 +32,34 @@
     "seat": false,
     "kick": true,
     "signal": false,
-    "solidArm": true
+    "solidArm": true,
+    "depth": 0.076,
+    "rake": 0.25,
+    "head": 0.425,
+    "deck_shift": -0.016,
+    "heel": 0.083,
+    "guard": 0.022,
+    "arm_color": [
+      0.82,
+      0.204,
+      0.003
+    ],
+    "tread": "block",
+    "stand": [
+      -0.134,
+      0.012,
+      -0.04
+    ],
+    "grip_style": "diamond",
+    "reference": "https://kukirin-escooter.com/products/kukirin-g3-electric-scooter"
   },
-  "triangles": 30612,
-  "meshes": 29,
-  "bytes": 942080,
+  "triangles": 83844,
+  "meshes": 48,
+  "bytes": 3719556,
   "source": "https://kukirin-escooter.com/products/kukirin-g3-electric-scooter",
   "reference": "/assets/vehicles/expansion/commuter/kukirin-g3.webp",
   "nativeSource": "assets/blender/expansion/commuter/kukirin-g3.blend",
   "url": "/models/expansion/commuter/kukirin-g3.glb",
-  "finalReferenceReview": [
-    "Material finish matched dark anodized hardware"
-  ]
+  "manufacturerReference": "https://kukirin-escooter.com/products/kukirin-g3-electric-scooter",
+  "geometryReview": "Model-specific deck, suspension, steering, grip molds and forged low-angle side stand."
 }

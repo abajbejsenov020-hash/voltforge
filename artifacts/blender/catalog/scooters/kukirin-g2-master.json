@@ -2,15 +2,13 @@
   "key": "kukirin-g2-master",
   "name": "KuKirin G2 Master",
   "family": "G2 Master dual motor",
-  "observed": "Sculpted black dual-sided arms with amber triangular insets; exposed orange front/rear springs and dual hub motors.",
+  "observed": "Compact low deck, low four-optic round lamp, sculpted black castings with orange inserts, exposed orange coils and twin hub motors.",
   "reference": "/assets/vehicles/kukirin-g2-master.webp",
   "source": "https://kukirin-escooter.com/products/kukirin-g2-master-electric-scooter-for-adults",
-  "triangles": 68300,
-  "meshes": 36,
-  "bytes": 2004076,
-  "blendBytes": 839032,
+  "triangles": 80468,
+  "meshes": 55,
+  "bytes": 2575264,
+  "blendBytes": 1057705,
   "render": "artifacts/blender/catalog/scooters/kukirin-g2-master.png",
-  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters.",
-  "minHeight": 0.000238936030655168,
-  "boundsNormalized": true
+  "limitations": "Approximate photographic reconstruction; hidden faces and internal battery/controller inferred. No measured CAD accuracy. Procedural microtexture retained in Blender; GLB has PBR surface parameters."
 }

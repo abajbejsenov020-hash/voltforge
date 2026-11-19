@@ -69,6 +69,8 @@ An original product reference does **not** render your selected modifications. T
 
 **Graphics** controls both the vehicle viewer and component previews. High detail uses the full lighting and shadow setup. Efficient lowers the rendering resolution and uses lighter shadows. The selected mode and reduced-motion preference are remembered in the browser.
 
+The 13 KuKirin G-series Blender builds have a **Cockpit** panel below the viewer. Choose from six grip styles, 13 grip colors, and four handlebar shapes with widths from 560 to 800 mm. The 3D viewer repositions the grips, side controls, and upper cables with the new bar. These choices save with the build.
+
 ## Saved builds
 
 The old `voltforge-v1` browser record (`{ active, builds }`) is retained for migration. Builds save locally and sync through a serialized, revision-checked outbox. Local edits survive server outages; conflicting edits are preserved instead of silently overwriting newer data.

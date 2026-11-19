@@ -5,13 +5,13 @@
   "parameters": {
     "family": "KuKirin Ultra gray swingarms",
     "r": 0.127,
-    "wide": 0.04,
-    "wb": 0.96,
-    "dl": 0.57,
-    "dw": 0.21,
-    "dz": 0.26,
-    "h": 1.27,
-    "bar": 0.62,
+    "wide": 0.038,
+    "wb": 0.961,
+    "dl": 0.555,
+    "dw": 0.197,
+    "dz": 0.242,
+    "h": 1.264,
+    "bar": 0.66,
     "stem": "square",
     "fork": "shortarm",
     "rear": "shortarm",
@@ -20,9 +20,9 @@
     "lamp": "console",
     "halo": false,
     "body": [
-      0.22,
-      0.24,
-      0.25
+      0.071,
+      0.08,
+      0.088
     ],
     "accent": [
       0.98,
@@ -32,16 +32,34 @@
     "seat": false,
     "kick": true,
     "signal": false,
-    "solidArm": true
+    "solidArm": true,
+    "depth": 0.07,
+    "rake": 0.221,
+    "head": 0.425,
+    "deck_shift": -0.016,
+    "heel": 0.08,
+    "guard": 0.032,
+    "arm_color": [
+      0.048,
+      0.054,
+      0.06
+    ],
+    "tread": "block",
+    "stand": [
+      -0.107,
+      0.02,
+      -0.04
+    ],
+    "grip_style": "dimples",
+    "reference": "https://kukirinmobility.com/en-us/products/kukirin-g2-ultra-off-road-electric-scooter"
   },
-  "triangles": 28872,
-  "meshes": 26,
-  "bytes": 964548,
+  "triangles": 87820,
+  "meshes": 47,
+  "bytes": 3905712,
   "source": "https://kukirin-escooter.com/products/kukirin-g2-ultra-electric-scooter",
   "reference": "/assets/vehicles/expansion/commuter/kukirin-g2-ultra.webp",
   "nativeSource": "assets/blender/expansion/commuter/kukirin-g2-ultra.blend",
   "url": "/models/expansion/commuter/kukirin-g2-ultra.glb",
-  "finalReferenceReview": [
-    "Material finish matched dark anodized hardware"
-  ]
+  "manufacturerReference": "https://kukirinmobility.com/en-us/products/kukirin-g2-ultra-off-road-electric-scooter",
+  "geometryReview": "Model-specific deck, suspension, steering, grip molds and forged low-angle side stand."
 }

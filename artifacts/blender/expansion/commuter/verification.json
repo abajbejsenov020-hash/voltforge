@@ -5,24 +5,24 @@
     {
       "name": "KuKirin G2 VMP",
       "key": "kukirin-g2-vmp",
-      "triangles": 26852,
-      "meshes": 27,
-      "bytes": 896504,
+      "triangles": 103584,
+      "meshes": 45,
+      "bytes": 4791156,
       "packedReferences": 1,
-      "nativeMeshCount": 27,
+      "nativeMeshCount": 45,
       "boundsMin": [
-        -0.6174284815788269,
-        -0.3114204406738281,
-        0.0
+        -0.6079285740852356,
+        -0.31462398171424866,
+        -7.4706740633700974e-06
       ],
       "boundsMax": [
-        0.597000002861023,
-        0.3114204406738281,
-        1.2403000593185425
+        0.5875074863433838,
+        0.31462398171424866,
+        1.2610975503921509
       ],
       "requiredGroups": {
         "FrontWheel": 4,
-        "RearWheel": 3,
+        "RearWheel": 4,
         "BatteryMount": 1,
         "ControllerMount": 1,
         "MotorMount": 3
@@ -32,24 +32,24 @@
     {
       "name": "KuKirin G2 Ultra",
       "key": "kukirin-g2-ultra",
-      "triangles": 28872,
-      "meshes": 26,
-      "bytes": 964548,
+      "triangles": 87820,
+      "meshes": 47,
+      "bytes": 3905712,
       "packedReferences": 1,
-      "nativeMeshCount": 26,
+      "nativeMeshCount": 47,
       "boundsMin": [
-        -0.6274285316467285,
-        -0.3114204704761505,
+        -0.6279284954071045,
+        -0.3321239650249481,
         0.0
       ],
       "boundsMax": [
-        0.6069999933242798,
-        0.31142041087150574,
-        1.2903000116348267
+        0.6092048287391663,
+        0.3321239650249481,
+        1.27680242061615
       ],
       "requiredGroups": {
-        "FrontWheel": 3,
-        "RearWheel": 3,
+        "FrontWheel": 4,
+        "RearWheel": 4,
         "BatteryMount": 1,
         "ControllerMount": 1,
         "MotorMount": 3
@@ -59,24 +59,24 @@
     {
       "name": "KuKirin G3",
       "key": "kukirin-g3",
-      "triangles": 30612,
-      "meshes": 29,
-      "bytes": 942080,
+      "triangles": 83844,
+      "meshes": 48,
+      "bytes": 3719556,
       "packedReferences": 1,
-      "nativeMeshCount": 29,
+      "nativeMeshCount": 48,
       "boundsMin": [
-        -0.6624284982681274,
-        -0.3114204704761505,
+        -0.6272285580635071,
+        -0.3321239650249481,
         0.0
       ],
       "boundsMax": [
-        0.6420000195503235,
-        0.31142038106918335,
-        1.2903000116348267
+        0.6082046031951904,
+        0.3321239650249481,
+        1.3078020811080933
       ],
       "requiredGroups": {
         "FrontWheel": 5,
-        "RearWheel": 4,
+        "RearWheel": 5,
         "BatteryMount": 1,
         "ControllerMount": 1,
         "MotorMount": 3
@@ -86,20 +86,20 @@
     {
       "name": "KuKirin G4 Max",
       "key": "kukirin-g4-max",
-      "triangles": 35944,
-      "meshes": 27,
-      "bytes": 1127000,
+      "triangles": 90424,
+      "meshes": 46,
+      "bytes": 4136180,
       "packedReferences": 1,
-      "nativeMeshCount": 27,
+      "nativeMeshCount": 46,
       "boundsMin": [
-        -0.7286785244941711,
-        -0.3512600362300873,
+        -0.7311785221099854,
+        -0.3220297694206238,
         0.0
       ],
       "boundsMax": [
-        0.7070000171661377,
-        0.35126006603240967,
-        1.3803000450134277
+        0.7194923162460327,
+        0.3220297694206238,
+        1.3488013744354248
       ],
       "requiredGroups": {
         "FrontWheel": 3,

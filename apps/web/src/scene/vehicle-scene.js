@@ -12,6 +12,7 @@ import { createReflectionMap } from './render-lighting.js';
 import { createVehicleContactShadow } from './vehicle-contact-shadow.js';
 import { refineVehicleFinishes } from './vehicle-finishes.js';
 import { createVehiclePaint } from './vehicle-paint.js';
+import { createVehicleCockpit } from './vehicle-cockpit.js';
 import {
   BLENDER_MODELS,
   blenderModelKey,
@@ -70,6 +71,8 @@ export function createVehicleScene() {
     assembly = null,
     paintModel = null,
     paint = {},
+    cockpitModel = null,
+    cockpit = {},
     swaps = {},
     requestedProfile = '',
     assembledFit = null,
@@ -113,6 +116,8 @@ export function createVehicleScene() {
       refineVehicleFinishes(model);
       paintModel = createVehiclePaint(model);
       paintModel.setPaint(paint);
+      cockpitModel = createVehicleCockpit(model);
+      applyCockpit();
       mountParts();
       modelState('blender', 'ready', 'Blender · photo-based 3D model');
       setView(view);
@@ -709,8 +714,11 @@ export function createVehicleScene() {
   function disposeModel() {
     assembly?.dispose();
     paintModel?.dispose();
+    cockpitModel?.dispose();
     assembly = null;
     paintModel = null;
+    cockpitModel = null;
+    delete canvas.dataset.cockpitWidth;
     swaps = {};
     disposeModelResources(model, new Set(Object.values(M)));
     scene.remove(model);
@@ -733,6 +741,11 @@ export function createVehicleScene() {
     assembly = createBlenderAssembly(model, (part) => PartPreviews.createModel(part, T));
     swaps = assembly.setSelection(parts, { motorCount });
     measureAssembly();
+  }
+  function applyCockpit() {
+    if (!cockpitModel) return;
+    cockpitModel.apply(cockpit);
+    canvas.dataset.cockpitWidth = cockpitModel.width;
   }
   function fitGeometry() {
     model.updateMatrixWorld(true);
@@ -759,7 +772,13 @@ export function createVehicleScene() {
     contact.fit(bounds, model);
     assembledTargets.overall.copy(center);
     const size = bounds.getSize(new T.Vector3());
-    assembledTargets.cockpit.set(center.x + size.x * 0.15, bounds.max.y - size.y * 0.08, center.z);
+    if (cockpitModel) assembledTargets.cockpit.copy(cockpitModel.centerWorld());
+    else
+      assembledTargets.cockpit.set(
+        center.x + size.x * 0.15,
+        bounds.max.y - size.y * 0.08,
+        center.z,
+      );
     assembledTargets.frame.set(center.x, center.y - size.y * 0.08, center.z);
     const wheel = model.getObjectByName('RearWheel') || model.getObjectByName('MotorMount');
     if (wheel) new T.Box3().setFromObject(wheel).getCenter(assembledTargets.drivetrain);
@@ -796,6 +815,7 @@ export function createVehicleScene() {
   function build() {
     if (paintModel && requestedProfile === visual.profile) {
       swaps = assembly.setSelection(parts, { motorCount });
+      applyCockpit();
       measureAssembly();
       canvas.dispatchEvent(new CustomEvent('modelsourcechange'));
       requestDraw();
@@ -1098,10 +1118,18 @@ export function createVehicleScene() {
     setRenderPreferences,
     getPaintZones: () => paintModel?.zones || [],
     getPaintColors: () => paintModel?.colors || {},
+    hasCockpit: () => Boolean(cockpitModel),
     getSwaps: () => swaps,
     setPaint(next) {
       paint = next;
       paintModel?.setPaint(paint);
+      requestDraw();
+    },
+    setCockpit(next) {
+      cockpit = next;
+      if (!cockpitModel) return;
+      applyCockpit();
+      measureAssembly();
       requestDraw();
     },
     resize,
@@ -1119,6 +1147,7 @@ export function createVehicleScene() {
       cancelAnimationFrame(frameId);
       assembly?.dispose();
       paintModel?.dispose();
+      cockpitModel?.dispose();
       disposeModelResources(model);
       const materialRoot = new T.Group();
       for (const material of Object.values(M)) {
@@ -1135,11 +1164,21 @@ export function createVehicleScene() {
       studioEnvironment.dispose();
       renderer.dispose();
     },
-    update(type, selection, category, vehicleName = '', nextPaint = {}, nextMotorCount) {
+    update(
+      type,
+      selection,
+      category,
+      vehicleName = '',
+      nextPaint = {},
+      nextMotorCount,
+      nextCockpit = {},
+    ) {
       if (disposed) return;
       if (paint !== nextPaint) this.setPaint(nextPaint);
       motorCount = nextMotorCount;
       const k = JSON.stringify([type, vehicleName, selection, motorCount]);
+      const cockpitChanged = cockpit !== nextCockpit;
+      cockpit = nextCockpit;
       visual = getVehicleVisual(vehicleName, type);
       const modelKey = blenderModelKey(vehicleName);
       visual.profile =
@@ -1169,7 +1208,8 @@ export function createVehicleScene() {
         parts = selection;
         selectionKey = k;
         build();
-      } else requestDraw();
+      } else if (cockpitChanged) this.setCockpit(cockpit);
+      else requestDraw();
     },
   };
 }

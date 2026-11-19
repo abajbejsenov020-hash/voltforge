@@ -16,7 +16,11 @@ def descendants(o):
  for ch in o.children:out.append(ch);out.extend(descendants(ch))
  return out
 for e in rows:
- key=e['key'];name=e['name'];f=O/(key+'.json');note=json.load(open(f));c=note['parameters'];bpy.ops.wm.open_mainfile(filepath=str(R/note['nativeSource']));root=bpy.data.objects[name];gr={n:bpy.data.objects[n] for n in ['Chassis','Steering','FrontWheel','RearWheel','BatteryMount','ControllerMount','MotorMount']};paint=bpy.data.materials['Model powder coat'];black=bpy.data.materials['Black molded polymer'];accent=bpy.data.materials['Model accents'];changes=[]
+ key=e['key'];name=e['name'];f=O/(key+'.json');note=json.load(open(f))
+ if note.get('geometryReview'):
+  print('Finish already authored in model generator:',key,flush=True)
+  continue
+ c=note['parameters'];bpy.ops.wm.open_mainfile(filepath=str(R/note['nativeSource']));root=bpy.data.objects[name];gr={n:bpy.data.objects[n] for n in ['Chassis','Steering','FrontWheel','RearWheel','BatteryMount','ControllerMount','MotorMount']};paint=bpy.data.materials['Model powder coat'];black=bpy.data.materials['Black molded polymer'];accent=bpy.data.materials['Model accents'];changes=[]
  # Real scooters use dark anodized cast wheels, not bright chrome toy-like trim.
  for matname,col,metal,rough in [('Silver machining',(.065,.077,.087),.65,.40),('Steel',(.028,.034,.039),.65,.45),('Black molded polymer',(.007,.009,.012),.08,.52),('Textured grip rubber',(.009,.011,.013),0,.79)]:
   m=bpy.data.materials.get(matname)

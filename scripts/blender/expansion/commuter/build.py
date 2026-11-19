@@ -6,6 +6,7 @@ from pathlib import Path
 from mathutils import Vector,Matrix
 from math import sin,cos,pi
 ROOT=Path(__file__).resolve().parents[4];HERE=ROOT/'scripts/blender/expansion/commuter';exec((HERE/'primitives.py').read_text())
+exec((HERE/'kukirin_g.py').read_text())
 O=ROOT/'artifacts/blender/expansion/commuter';OUT=ROOT/'apps/web/public/models/expansion/commuter';BL=ROOT/'assets/blender/expansion/commuter'
 
 def config(e):
@@ -105,6 +106,7 @@ def config(e):
  if n in ['Segway Ninebot E2 Pro','NIU KQi1 Pro']:c.update(frontcover='vented',frontspokes=8)
  if n in ['Segway Ninebot ES1','Segway Ninebot ES2','Segway Ninebot ES4']:c.update(rearcover='cast',rearspokes=3)
  if n in ['Segway Ninebot P65','Segway Ninebot P100S','Segway Ninebot GT1','Segway Ninebot GT3']:c['frontcover']='closed'
+ c.update(KUKIRIN_G.get(e['key'],{}))
  return c
 
 def wheel(x,parent,c):
@@ -116,9 +118,12 @@ def wheel(x,parent,c):
  for j in range(nb):
   for i in range(na):a=j*na+i;f.append((a,j*na+(i+1)%na,(j+1)*na+(i+1)%na,a+na))
  mesh(parent+' rubber tread',v,f,rubber,parent,True)
+ if entry['key'] in KUKIRIN_G:
+  kukirin_tread(x,c,parent)
  motor=c['motor']=='both' or c['motor']==('front' if parent=='FrontWheel' else 'rear');rim=r-.032
+ rim_finish=steel if entry['key'] in KUKIRIN_G and entry['key']!='kukirin-g4-max' else silver
  for sy in [-1,1]:
-  ring('Rim bead',x,sy*wide*.95,r,rim,rim-.007,.005,silver,parent,n=40)
+  ring('Rim bead',x,sy*wide*.95,r,rim,rim-.007,.005,rim_finish,parent,n=40)
   if c['family'] in ['Ausom K20 gold rims','KuKirin G3 orange cast arms'] or 'KQi 300X' in entry['name']:ring('Rim color pinstripe',x,sy*(wide+.001),r,rim-.001,rim-.004,.001,accent,parent,n=56)
  if motor:
   rod('Enclosed hub motor',(x,-wide*.9,r),(x,wide*.9,r),rim*.88,black,'MotorMount',48)
@@ -157,18 +162,7 @@ def wheel(x,parent,c):
  for sy in [-1,1]:bolt('Axle nut',(x,sy*(wide+.025),r),.008,parent)
 
 
-def build(e):
- global groups,parts,black,edge,paint,rubber,grip,silver,steel,orange,gold,red,rotor,lens,screen,white,purple,R,accent,entry
- entry=e;c=config(e);key=e['key'];bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0
- black=mat('Black molded polymer',(.018,.022,.026),.15,.45);edge=mat('Anodized dark metal',(.047,.057,.066),.7,.38);steel=mat('Steel',(.12,.15,.17),.8,.32);silver=mat('Silver machining',(.23,.27,.31),.75,.34);rubber=mat('Tire rubber',(.022,.026,.03),0,.8);grip=mat('Textured grip rubber',(.035,.04,.045),0,.75);orange=mat('Safety orange',(.98,.27,.01),.2,.4);gold=mat('Gold',(.92,.50,.02),.55,.3);accent=mat('Model accents',tuple(v**2.2 for v in c['accent']),.25,.45);red=mat('Red optical lens',(.60,.008,.005),.3,.27);rotor=silver;lens=mat('Headlamp diffuser',(.78,.88,.96),.2,.2);screen=mat('Display glass',(.009,.03,.045),.25,.16);white=mat('Printed markings',(.64,.69,.71),.1,.5);purple=mat('Deck LED',(.12,.02,.70),.2,.3);paint=mat('Model powder coat',tuple(v*.24 for v in c['body']),.30,.48)
- for m in [rubber,grip]:
-  nt=m.node_tree;ns=nt.nodes.new('ShaderNodeTexNoise');ns.inputs['Scale'].default_value=240;bp=nt.nodes.new('ShaderNodeBump');bp.inputs['Strength'].default_value=.15;bp.inputs['Distance'].default_value=.0004;nt.links.new(ns.outputs['Fac'],bp.inputs['Height']);nt.links.new(bp.outputs['Normal'],nt.nodes.get('Principled BSDF').inputs['Normal'])
- root=bpy.data.objects.new(e['name'],None);bpy.context.collection.objects.link(root);root['canonicalKey']=key;root['frontAxis']='+X';root['source']=e['source'];root['reference']=e['image'];root['accuracy']='Photographic proportions, inferred hidden/internal surfaces. Not measured CAD.'
- groups={};parts=[]
- for n in ['Chassis','Steering','FrontWheel','RearWheel','BatteryMount','ControllerMount','MotorMount']:
-  o=bpy.data.objects.new(n,None);bpy.context.collection.objects.link(o);o.parent=root;groups[n]=o
- R=c['r'];front=c['wb']/2;rear=-front;dz=c['dz'];dl=c['dl'];dw=c['dw'];H=c['h'];sx=front-.09;tx=sx-.15;bar=c['bar'];lo=dz+.18;wide=c['wide'];offroad=c['family'] not in ['rigid commuter','Xiaomi curved-neck commuter','Ninebot rigid commuter','NIU curved-neck halo commuter','iScooter i9 rigid commuter','Kugoo M2 Pro commuter'] and dz>.22
- wheel(front,'FrontWheel',c);wheel(rear,'RearWheel',c)
+def generic_body(e,c,front,rear,R,dz,dl,dw,H,sx,tx,bar,lo,wide,offroad):
  profile('Battery enclosure silhouette',[(-dl/2-.03,dz-.065),(dl/2-.01,dz-.065),(dl/2+.03,dz-.017),(dl/2,dz+.006),(-dl/2,dz+.006),(-dl/2-.035,dz-.015)],dw,paint,b=.008)
  cube('Battery sealed tray',(-.03,0,dz-.035),(dl*.77,dw*.81,.045),black,'BatteryMount',.004);cube('Controller enclosure',(dl*.34,0,dz-.035),(.07,dw*.7,.035),edge,'ControllerMount',.003)
  cube('Deck traction mat',(-.01,0,dz+.012),(dl*.93,dw*.92,.013),grip,b=.009)
@@ -326,6 +320,37 @@ def build(e):
  rod('Charging port',(dl*.26,-dw/2-.003,dz-.030),(dl*.26,-dw/2-.009,dz-.030),.008,black)
  curve('Side stand',[(-.13,-dw*.45,dz-.06),(-.18,-dw*.70,.04),(-.19,-dw*.73,.008)],.0055,steel)
  cube('Stand foot',(-.19,-dw*.73,.007),(.025,.020,.012),black,b=.002)
+
+
+def build(e):
+ global groups,parts,black,edge,paint,rubber,grip,silver,steel,orange,gold,red,rotor,lens,screen,white,purple,R,accent,entry
+ entry=e;c=config(e);key=e['key'];bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0
+ revised=key in KUKIRIN_G
+ black=mat('Black molded polymer',(.007,.009,.011) if revised else (.018,.022,.026),.08 if revised else .15,.45)
+ edge=mat('Anodized dark metal',(.018,.023,.029) if revised else (.047,.057,.066),.60 if revised else .70,.38)
+ steel=mat('Steel',(.035,.042,.048) if revised else (.12,.15,.17),.75 if revised else .80,.37 if revised else .32)
+ silver=mat('Silver machining',(.19,.22,.25) if revised else (.23,.27,.31),.75,.34)
+ rubber=mat('Tire rubber',(.008,.010,.012) if revised else (.022,.026,.03),0,.80)
+ grip=mat('Textured grip rubber',(.012,.014,.016) if revised else (.035,.04,.045),0,.75)
+ orange=mat('Safety orange',(.98,.27,.01),.2,.4);gold=mat('Gold',(.92,.50,.02),.55,.3)
+ accent=mat('Model accents',tuple(v**2.2 for v in c['accent']),.08 if revised else .25,.45)
+ red=mat('Red optical lens',(.60,.008,.005),.3,.27);rotor=silver;lens=mat('Headlamp diffuser',(.78,.88,.96),.2,.2)
+ screen=mat('Display glass',(.009,.03,.045),.25,.16);white=mat('Printed markings',(.64,.69,.71),.1,.5)
+ purple=mat('Deck LED',(.12,.02,.70),.2,.3)
+ paint=mat('Model powder coat',c['body'] if revised else tuple(v*.24 for v in c['body']),.18 if revised else .30,.39 if revised else .48)
+ for m in [rubber,grip]:
+  nt=m.node_tree;ns=nt.nodes.new('ShaderNodeTexNoise');ns.inputs['Scale'].default_value=240;bp=nt.nodes.new('ShaderNodeBump');bp.inputs['Strength'].default_value=.15;bp.inputs['Distance'].default_value=.0004;nt.links.new(ns.outputs['Fac'],bp.inputs['Height']);nt.links.new(bp.outputs['Normal'],nt.nodes.get('Principled BSDF').inputs['Normal'])
+ root_reference=c['reference'] if revised else e['source']
+ root=bpy.data.objects.new(e['name'],None);bpy.context.collection.objects.link(root);root['canonicalKey']=key;root['frontAxis']='+X';root['source']=root_reference;root['reference']=e['image'];root['accuracy']='Photographic proportions, inferred hidden/internal surfaces. Not measured CAD.'
+ groups={};parts=[]
+ for n in ['Chassis','Steering','FrontWheel','RearWheel','BatteryMount','ControllerMount','MotorMount']:
+  o=bpy.data.objects.new(n,None);bpy.context.collection.objects.link(o);o.parent=root;groups[n]=o
+ R=c['r'];front=c['wb']/2;rear=-front;dz=c['dz'];dl=c['dl'];dw=c['dw'];H=c['h'];sx=front-.09;tx=sx-.15;bar=c['bar'];lo=dz+.18;wide=c['wide'];offroad=c['family'] not in ['rigid commuter','Xiaomi curved-neck commuter','Ninebot rigid commuter','NIU curved-neck halo commuter','iScooter i9 rigid commuter','Kugoo M2 Pro commuter'] and dz>.22
+ wheel(front,'FrontWheel',c);wheel(rear,'RearWheel',c)
+ if revised:
+  kukirin_g_body(e,c,front,rear)
+ else:
+  generic_body(e,c,front,rear,R,dz,dl,dw,H,sx,tx,bar,lo,wide,offroad)
  # Convert and compact by assembly/material for a small editable/exportable asset.
  for o in list(parts):
   bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o
@@ -336,17 +361,19 @@ def build(e):
  for p in groups.values():
   buckets={}
   for o in list(p.children):
-   if o.type=='MESH':buckets.setdefault(o.data.materials[0].name,[]).append(o)
-  for mn,objs in buckets.items():
+   if o.type=='MESH':buckets.setdefault((o.data.materials[0].name,o.get('vfCockpit','')),[]).append(o)
+  for (mn,cockpit),objs in buckets.items():
    bpy.ops.object.select_all(action='DESELECT')
    for o in objs:o.select_set(True)
    bpy.context.view_layer.objects.active=objs[0]
    if len(objs)>1:bpy.ops.object.join()
-   objs[0].name=p.name+' | '+mn;bpy.ops.object.transform_apply(location=True,rotation=True,scale=True)
+   objs[0].name=' | '.join(filter(None,(p.name,mn,cockpit)));bpy.ops.object.transform_apply(location=True,rotation=True,scale=True)
  model=[o for p in groups.values() for o in p.children if o.type=='MESH'];tri=0
  for o in model:o.data.calc_loop_triangles();tri+=len(o.data.loop_triangles)
  bpy.context.view_layer.update();minz=min((o.matrix_world@Vector(v)).z for o in model for v in o.bound_box)
  if minz<-.001:
+  for o in groups['Steering'].children:
+   if o.name.startswith('VF_Cockpit_'):o.location.z-=minz
   for o in model:o.location.z-=minz
   for o in model:
    bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o;bpy.ops.object.transform_apply(location=True,rotation=True,scale=True)
@@ -363,6 +390,9 @@ def build(e):
  bpy.ops.object.camera_add(location=(2.7,-4.8,2.1));cam=bpy.context.object;cam.name='STUDIO camera';cam.rotation_euler=(Vector((0,0,H*.48))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.type='ORTHO';cam.data.ortho_scale=max(H+.28,c['wb']+R*2+.24);sc.camera=cam;sc.render.filepath=str(O/(key+'.png'));bpy.ops.render.render(write_still=True)
  bpy.data.orphans_purge(do_local_ids=True,do_linked_ids=True,do_recursive=True);bpy.ops.wm.save_as_mainfile(filepath=str(BL/(key+'.blend')),compress=True)
  note=dict(key=key,name=e['name'],family=c['family'],parameters=c,triangles=tri,meshes=len(model),bytes=export.stat().st_size,source=e['source'],reference=e['image'],nativeSource='assets/blender/expansion/commuter/'+key+'.blend',url='/models/expansion/commuter/'+key+'.glb')
+ if revised:
+  note['manufacturerReference']=c['reference']
+  note['geometryReview']='Model-specific deck, suspension, steering, grip molds and forged low-angle side stand.'
  assert tri<120000 and len(model)<65 and export.stat().st_size<5000000,note
  json.dump(note,open(O/(key+'.json'),'w'),indent=2);print('COMPLETE '+key,flush=True)
 if __name__=='__main__':

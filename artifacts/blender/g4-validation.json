@@ -1,38 +1,78 @@
 {
   "validGlb2": true,
-  "triangles": 141520,
-  "meshes": 36,
-  "materials": 12,
-  "bytes": 4209580,
+  "triangles": 172188,
+  "meshes": 53,
+  "materials": 14,
+  "bytes": 5281056,
   "dimensionsYUp": [
-    1.336,
-    1.29839,
-    0.692
+    1.35,
+    1.29455,
+    0.66
   ],
   "boundsMinYUp": [
-    -0.679,
+    -0.69,
     0.00014,
-    -0.346
+    -0.33
   ],
   "boundsMaxYUp": [
-    0.657,
-    1.29853,
-    0.346
+    0.66,
+    1.29468,
+    0.33
   ],
   "requiredGroups": [
+    "Chassis",
+    "Steering",
     "FrontWheel",
     "RearWheel",
     "BatteryMount",
     "ControllerMount",
     "MotorMount"
   ],
+  "cockpitAnchorsYUp": {
+    "Center": [
+      0.23,
+      1.23,
+      0
+    ],
+    "GripA": [
+      0.199,
+      1.247,
+      0.2685
+    ],
+    "GripB": [
+      0.199,
+      1.247,
+      -0.2685
+    ],
+    "CableA": [
+      0.32878,
+      0.992,
+      0.035
+    ],
+    "CableB": [
+      0.32878,
+      0.992,
+      -0.035
+    ]
+  },
+  "cockpitMeshes": {
+    "controlA": 4,
+    "controlB": 4,
+    "bar": 1,
+    "cable": 1,
+    "gripA": 2,
+    "gripB": 2
+  },
+  "kickstandMeshes": 3,
   "rootExtras": {
+    "name": "KuKirin_G4",
     "assetCreator": "Blender",
     "reference": "kukirin-g4.webp",
     "accuracy": "Reference-guided visual reconstruction; not measured CAD",
     "frontAxis": "+X",
     "units": "metres",
-    "dimensionsApprox": "1.32m long, 0.69m handlebar width, 1.30m high"
+    "stockHandlebarMm": 660,
+    "dimensionsApprox": "1.34m long, 660mm handlebar width, 1.30m high"
   },
   "studioObjectsExported": false
 }
